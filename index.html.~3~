@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Nelson Luís Dias</title>
-<!-- 2016-11-05 Sáb 18:00 -->
+<!-- 2016-11-05 Sáb 13:50 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -88,13 +88,13 @@
 </style>
 <link rel="stylesheet" type="text/css" href="readtheorg.css" />
 
-<script type="text/javascript" src="org-info.min.js">
+<script type="text/javascript" src="http://thomasf.github.io/solarized-css/org-info.min.js">
 /**
  *
- * @source: org-info.min.js
+ * @source: http://thomasf.github.io/solarized-css/org-info.min.js
  *
  * @licstart  The following is the entire license notice for the
- *  JavaScript code in org-info.min.js.
+ *  JavaScript code in http://thomasf.github.io/solarized-css/org-info.min.js.
  *
  * Copyright (C) 2012-2013 Free Software Foundation, Inc.
  *
@@ -114,7 +114,7 @@
  * through which recipients can access the Corresponding Source.
  *
  * @licend  The above is the entire license notice
- * for the JavaScript code in org-info.min.js.
+ * for the JavaScript code in http://thomasf.github.io/solarized-css/org-info.min.js.
  *
  */
 </script>
@@ -334,7 +334,7 @@ Program in Numerical Methods in Engineering, all at UFPR.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2016-11-05 Sáb 18:00</p>
+<p class="date">Created: 2016-11-05 Sáb 13:50</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.4)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
