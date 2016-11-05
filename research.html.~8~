@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Pesquisa (Research)</title>
-<!-- 2016-11-05 Sáb 17:55 -->
+<!-- 2016-11-05 Sáb 18:42 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -87,6 +87,78 @@
   /*]]>*/-->
 </style>
 <link rel="stylesheet" type="text/css" href="readtheorg.css" />
+
+<script type="text/javascript" src="org-info.min.js">
+/**
+ *
+ * @source: org-info.min.js
+ *
+ * @licstart  The following is the entire license notice for the
+ *  JavaScript code in org-info.min.js.
+ *
+ * Copyright (C) 2012-2013 Free Software Foundation, Inc.
+ *
+ *
+ * The JavaScript code in this tag is free software: you can
+ * redistribute it and/or modify it under the terms of the GNU
+ * General Public License (GNU GPL) as published by the Free Software
+ * Foundation, either version 3 of the License, or (at your option)
+ * any later version.  The code is distributed WITHOUT ANY WARRANTY;
+ * without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+ *
+ * As additional permission under GNU GPL version 3 section 7, you
+ * may distribute non-source (e.g., minimized or compacted) forms of
+ * that code without the copy of the GNU GPL normally required by
+ * section 4, provided you include this license notice and a URL
+ * through which recipients can access the Corresponding Source.
+ *
+ * @licend  The above is the entire license notice
+ * for the JavaScript code in org-info.min.js.
+ *
+ */
+</script>
+
+<script type="text/javascript">
+
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+
+<!--/*--><![CDATA[/*><!--*/
+org_html_manager.set("TOC_DEPTH", "4");
+org_html_manager.set("LINK_HOME", "");
+org_html_manager.set("LINK_UP", "");
+org_html_manager.set("LOCAL_TOC", "1");
+org_html_manager.set("VIEW_BUTTONS", "0");
+org_html_manager.set("MOUSE_HINT", "underline");
+org_html_manager.set("FIXED_TOC", "0");
+org_html_manager.set("TOC", "1");
+org_html_manager.set("VIEW", "1");
+org_html_manager.setup();  // activate after the parameters are set
+/*]]>*///-->
+</script>
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -155,9 +227,6 @@ for the JavaScript code in this tag.
 </ul>
 </div>
 </div>
-<p>
-##+INFOJS<sub>OPT</sub>: view:t toc:t ltoc:t mouse:underline buttons:0 path:<a href="http://thomasf.github.io/solarized-css/org-info.min.js">http://thomasf.github.io/solarized-css/org-info.min.js</a>
-</p>
 <p>
 This site is searchable. See HELP on the right.
 </p>
@@ -329,15 +398,29 @@ P. C.; Katul, G.; Fitzjarrald, D.; Manzi, A.; Gerken, T.; Trowbridge, A.;
 Freire, L. S.; Ruiz-Plancarte, J.; Maia, J. M. F.; Tóta, J.; Dias, N. L.;
 Fisch, G.; Schumacher, C.; Acevedo, O. &amp; Mercer, J. R. Linking meteorology,
 turbulence, and air chemistry in the Amazon rainforest. Bulletin of the
-American Meteorological Society., 2016, 1, 1
+American Meteorological Society., 2016, 1, 1.
+</li>
+<li>Zahn, E.; Dias, N. L.; Araújo, A.; Sá, L. D. A.; Sörgel, M.; Trebs, I.;
+Wolff, S. &amp; Manzi, A. Scalar turbulent behavior in the roughness sublayer of
+an Amazonian forest Atmospheric Chemistry and Physics, 2016, 16, 11349-11366.
+</li>
+<li>Wei, D.; Ruiz-Plancarte, J.; Freire, L. S.; Gerken, T.; Chamecki, M.;
+Fuentes, J. D.; Stoy, P.; Trowbridge, A.; Santos, R. M. N.; Acevedo, O. C. &amp;
+Dias, N. L. Relação entre a turbulência do dossel e distribuição vertical de
+gases reativos na floresta triopical da Amazônia Central Ciência e Natura,
+2016, 38, 543.
 </li>
 </ul>
+
+<p>
+<a href="index.html">Home</a>
+</p>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2016-11-05 Sáb 17:55</p>
+<p class="date">Created: 2016-11-05 Sáb 18:42</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.4)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
