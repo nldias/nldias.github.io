@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Blog: thoughts on computing, teaching, and most anything</title>
-<!-- 2016-11-05 Sáb 19:55 -->
+<!-- 2016-11-05 Sáb 19:52 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -213,7 +213,7 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#sec-1">1. 2016-11-05T19:45:22 &#x2013; Setting up a Homepage</a></li>
+<li><a href="#sec-1">1. 2016-11-05T19:45:22 &#x2013; Setting up a Blog</a></li>
 </ul>
 </div>
 </div>
@@ -244,7 +244,7 @@ not pass judgment or comment on the usual controversial themes.
 </ul>
 
 <div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> 2016-11-05T19:45:22 &#x2013; Setting up a Homepage</h2>
+<h2 id="sec-1"><span class="section-number-2">1</span> 2016-11-05T19:45:22 &#x2013; Setting up a Blog</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 It is painful not to be able to follow the pace of those who set up their
@@ -263,7 +263,7 @@ I may give you the detailed "how-to" later, or maybe not. But the fact is, I
 am in business, my pages don't look too bad (many thanks to all of those who
 contributed the .css files and other stuff that I resorted to when setting up
 this site), and this will ultimately be beneficial to those I work with, teach
-to, etc.. As the sky grows darker in gray, and the Saturday night sets in, I
+to, etc.. As the sky grows darker in grey, and the Saturday night sets in, I
 can only wish you all a good end of Weekend.
 </p>
 </div>
@@ -271,7 +271,7 @@ can only wish you all a good end of Weekend.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2016-11-05 Sáb 19:55</p>
+<p class="date">Created: 2016-11-05 Sáb 19:52</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.4)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
