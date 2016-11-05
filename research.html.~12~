@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Pesquisa (Research)</title>
-<!-- 2016-11-05 Sáb 18:42 -->
+<!-- 2016-11-05 Sáb 18:59 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -228,7 +228,7 @@ for the JavaScript code in this tag.
 </div>
 </div>
 <p>
-This site is searchable. See HELP on the right.
+This site is searchable. See HELP on the right. 
 </p>
 
 <p>
@@ -290,7 +290,7 @@ See <a href="https://www.dropbox.com/s/oohm0lv1dydnd0x/nldias-bpwide2.pdf?dl=0">
 <p>
 Below is a sample of research themes I am currently working on. They are more
 focused than the broad Research Interests sketched above, and of course change
-a little bit as time goes by
+a little bit as time goes by.
 </p>
 <ul class="org-ul">
 <li>Episodes of Ozone increase caused by convective storms in the Amazon region.
@@ -313,15 +313,16 @@ scalar.
 the search for new analytical solutions.
 </li>
 <li>Better estimates of wind velocity at 50 m from surface data and reanalysis
-(I am currently looking at CSFR (<a href="http://cfs.ncep.noaa.gov/cfsr/">http://cfs.ncep.noaa.gov/cfsr/</a>)).
+(I am currently looking at CFSR (<a href="http://cfs.ncep.noaa.gov/cfsr/">http://cfs.ncep.noaa.gov/cfsr/</a>)).
 </li>
 <li>Time-series analysis tools. Spectra and ogives.
 </li>
-<li>Air-quality (Ozone) diagnostics for the City of Curitiba
+<li>Air-quality (Ozone) diagnostics for the City of Curitiba, PR, Brazil.
 </li>
 </ul>
 </div>
 </div>
+
 <div id="outline-container-sec-4" class="outline-2">
 <h2 id="sec-4"><span class="section-number-2">4</span> Novos temas/New themes</h2>
 <div class="outline-text-2" id="text-4">
@@ -407,10 +408,42 @@ an Amazonian forest Atmospheric Chemistry and Physics, 2016, 16, 11349-11366.
 <li>Wei, D.; Ruiz-Plancarte, J.; Freire, L. S.; Gerken, T.; Chamecki, M.;
 Fuentes, J. D.; Stoy, P.; Trowbridge, A.; Santos, R. M. N.; Acevedo, O. C. &amp;
 Dias, N. L. Relação entre a turbulência do dossel e distribuição vertical de
-gases reativos na floresta triopical da Amazônia Central Ciência e Natura,
+gases reativos na floresta triopical da Amazônia Central. Ciência e Natura,
 2016, 38, 543.
 </li>
+<li>Cancelli, D. M.; Chamecki, M. &amp;amp; Dias, N. L. A Study of the Similarity
+between Scalars over a Heterogeneous Surface Using Large-Eddy Simulation.
+Am. J. Environ. Eng., 2015, 5, 9-14.
+</li>
+<li>Technical Note: A simple generalization of the Brutsaert and Nieber analysis.
+Hydrol. Earth Syst. Sci., Copernicus GmbH, 2015, 19, 2755-2761.
+</li>
+<li>Andreae, M. O.; Acevedo, O. C.; Araùjo, A.; Artaxo, P.; Barbosa, C. G. G.;
+Barbosa, H. M. J.; Brito, J.; Carbone, S.; Chi, X.; Cintra, B. B. L.; da
+Silva, N. F.; Dias, N. L.; Dias-Júnior, C. Q.; Ditas, F.; Ditz, R.; Godoi,
+A. F. L.; Godoi, R. H. M.; Heimann, M.; Hoffmann, T.; Kesselmeier, J.;
+Könemann, T.; Krüger, M. L.; Lavric, J. V.; Manzi, A. O.; Lopes, A. P.;
+Martins, D. L.; Mikhailov, E. F.; Moran-Zuloaga, D.; Nelson, B. W.;
+Nölscher, A. C.; Santos Nogueira, D.; Piedade, M. T. F.; Pöhlker, C.;
+Pöschl, U.; Quesada, C. A.; Rizzo, L. V.; Ro, C.-U.; Ruckteschler, N.; Sá,
+L. D. A.; de Oliveira Sá, M.; Sales, C. B.; dos Santos, R. M. N.; Saturno,
+J.; Schöngart, J.; Sörgel, M.; de Souza, C. M.; de Souza, R. A. F.; Su, H.;
+Targhetta, N.; Tóta, J.; Trebs, I.; Trumbore, S.; van Eijck, A.; Walter, D.;
+Wang, Z.; Weber, B.; Williams, J.; Winderlich, J.; Wittmann, F.; Wolff, S. &amp;
+Yañez-Serrano, A. M.. The Amazon Tall Tower Observatory (ATTO): overview of
+pilot measurements on ecosystem ecology, meteorology, trace gases, and
+aerosols. Atmospheric Chemistry and Physics, 2015, 15, 10723-10776.
+</li>
+<li>Cancelli, D. M. &amp; Dias, N. L.. BRevê: uma metodologia objetiva de cálculo de
+emissões para a frota de veículos brasileira. Revista de Engenharia
+Sanitária e Ambiental, 2014, Edição especial, 13-20.
+</li>
+<li>Armani, F.; de Carvalho, R. A. &amp; Dias, N. L. Statistical evaluation of a new
+air dispersion model against AERMOD using the Praire Grass data set. Journal
+of the Air &amp; Waste Management Association, 2014, 64, 219-226.
+</li>
 </ul>
+
 
 <p>
 <a href="index.html">Home</a>
@@ -420,7 +453,7 @@ gases reativos na floresta triopical da Amazônia Central Ciência e Natura,
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2016-11-05 Sáb 18:42</p>
+<p class="date">Created: 2016-11-05 Sáb 18:59</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.4)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
