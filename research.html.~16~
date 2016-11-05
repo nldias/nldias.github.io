@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Pesquisa (Research)</title>
-<!-- 2016-11-05 Sáb 18:57 -->
+<!-- 2016-11-05 Sáb 19:30 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -228,7 +228,7 @@ for the JavaScript code in this tag.
 </div>
 </div>
 <p>
-This site is searchable. See HELP on the right. +
+This site is searchable. See HELP on the right. 
 </p>
 
 <p>
@@ -442,6 +442,38 @@ Sanitária e Ambiental, 2014, Edição especial, 13-20.
 air dispersion model against AERMOD using the Praire Grass data set. Journal
 of the Air &amp; Waste Management Association, 2014, 64, 219-226.
 </li>
+<li>Cancelli, D. M.; Chamecki, M. &amp; Dias, N. L.. A large-eddy simulation study
+of scalar dissimilarity in the convective atmospheric boundary layer.
+J. Atmos. Sci., 2014, 71, 3-15.
+</li>
+<li>Dias, N. L.; Chor, T. L. &amp; de Zárate, A. R.. A semianalytical solution for
+the Boussinesq equation with nonhomogeneous constant boundary conditions.
+Water Resour. Res., Wiley-Blackwell, 2014, 50, 6549-6556.
+</li>
+<li>Dias, N. L.. Alternativas de processamento numérico eficiente para a
+Engenharia do século XXI. Revista de Ensino de Engenharia, 2014, 33, 25-36.
+</li>
+<li>Crivellaro, B. L.; Dias, N. L. &amp; Chor, T.. Spectral Effects on Scalar
+Correlations and Fluxes. Am. J. Environ. Eng., 2013, 3, 3-17.
+</li>
+<li>Dias, N. L.. Reconciling radiation dissipation in the spatial and spectral
+domains under stable conditions. Water Resour. Res., 2013, 49, 7150-7153.
+</li>
+<li>Dias, N. L.. Research on atmospheric turbulence by Wilfried Brutsaert and
+collaborators. Water Resour. Res., 2013, 49, 7169-7184.
+</li>
+<li>Armani, F. A. S.; Dias, N. L.; Crivellaro, B. L. &amp; Chor, T. L. G.. Fluxos
+turbulentos de dióxido de carbono sobre o reservatório da usina hidrelétrica
+de Itaipu &#x2013; PR. Ciência e Natura, 2013, Volume Especial, 128-132.
+</li>
+<li>Crivellaro, B. L. &amp; Dias, N. L.. Aplicação do método de Salesky et al. (2012)
+usando um filtro temporal para estimar o erro do fluxo de calor sensível em
+Tijucas Do Sul &#x2013; PR e em Missal &#x2013; PR. Ciência e Natura, 2013, 61-71.
+</li>
+<li>Vissotto Jr., D. &amp; Dias, N. L.. Método empírico para determinação de outliers em
+séries de fluxos de dados micrometeorológicos pós-processados. Ciência e
+Natura, 2013, Edição Especial, 150-152.
+</li>
 </ul>
 
 
@@ -453,7 +485,7 @@ of the Air &amp; Waste Management Association, 2014, 64, 219-226.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2016-11-05 Sáb 18:57</p>
+<p class="date">Created: 2016-11-05 Sáb 19:30</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.4)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
