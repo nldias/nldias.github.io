@@ -3,8 +3,8 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<title>Blog: thoughts on computing, teaching, and most anything</title>
-<!-- 2016-11-05 Sáb 19:43 -->
+<title>Blog</title>
+<!-- 2016-11-05 Sáb 19:40 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -208,7 +208,7 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Blog: thoughts on computing, teaching, and most anything</h1>
+<h1 class="title">Blog</h1>
 <p>
 Os artigos deste <i>Blog</i> seguirão algumas regras de conduta auto-impostas:
 </p>
@@ -226,18 +226,18 @@ juízos de valor ou foro íntimo sobre as questões polêmicas usuais.
 The articles in this Blog will follow self-imposed rules of conduct:
 </p>
 <ul class="org-ul">
-<li>There will be no criticism against nominated persons. If I don't like you, you
+<li>There will be no criticism against nominated persons. If I don't like, you
 can rest assured that your name will not appear here under criticism or any
 kind of attack, in no sense whatsoever.
 </li>
-<li>I will neither defend, nor comment on, political or religious views. I will
+<li>I will neither defend nor comment on political or religious views. I will
 not pass judgment or comment on the usual controversial themes.
 </li>
 </ul>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2016-11-05 Sáb 19:43</p>
+<p class="date">Created: 2016-11-05 Sáb 19:40</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.4)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
