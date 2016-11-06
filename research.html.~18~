@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Pesquisa (Research)</title>
-<!-- 2016-11-05 Sáb 19:09 -->
+<!-- 2016-11-06 Dom 08:25 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -332,6 +332,8 @@ para alunos interessados em serem orientados por mim (em qualquer nível:
 graduação (IC/TCC), mestrado, ou doutorado).
 </p>
 
+<hr  />
+
 <p>
 Here are a few sequels of the current themes, and possible new themes for
 students interested in my supervision (at any level: Undergraduate Research or
@@ -456,7 +458,26 @@ Engenharia do século XXI. Revista de Ensino de Engenharia, 2014, 33, 25-36.
 <li>Crivellaro, B. L.; Dias, N. L. &amp; Chor, T.. Spectral Effects on Scalar
 Correlations and Fluxes. Am. J. Environ. Eng., 2013, 3, 3-17.
 </li>
+<li>Dias, N. L.. Reconciling radiation dissipation in the spatial and spectral
+domains under stable conditions. Water Resour. Res., 2013, 49, 7150-7153.
+</li>
+<li>Dias, N. L.. Research on atmospheric turbulence by Wilfried Brutsaert and
+collaborators. Water Resour. Res., 2013, 49, 7169-7184.
+</li>
+<li>Armani, F. A. S.; Dias, N. L.; Crivellaro, B. L. &amp; Chor, T. L. G.. Fluxos
+turbulentos de dióxido de carbono sobre o reservatório da usina hidrelétrica
+de Itaipu &#x2013; PR. Ciência e Natura, 2013, Volume Especial, 128-132.
+</li>
+<li>Crivellaro, B. L. &amp; Dias, N. L.. Aplicação do método de Salesky et al. (2012)
+usando um filtro temporal para estimar o erro do fluxo de calor sensível em
+Tijucas Do Sul &#x2013; PR e em Missal &#x2013; PR. Ciência e Natura, 2013, 61-71.
+</li>
+<li>Vissotto Jr., D. &amp; Dias, N. L.. Método empírico para determinação de outliers em
+séries de fluxos de dados micrometeorológicos pós-processados. Ciência e
+Natura, 2013, Edição Especial, 150-152.
+</li>
 </ul>
+
 
 <p>
 <a href="index.html">Home</a>
@@ -466,7 +487,7 @@ Correlations and Fluxes. Am. J. Environ. Eng., 2013, 3, 3-17.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2016-11-05 Sáb 19:09</p>
+<p class="date">Created: 2016-11-06 Dom 08:25</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.4)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
