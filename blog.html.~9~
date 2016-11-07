@@ -3,8 +3,8 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<title>Blog: thoughts on computing, teaching, and most anything</title>
-<!-- 2016-11-05 Sáb 19:55 -->
+<title>Blog: thoughts on computing, teaching, and most anything else</title>
+<!-- 2016-11-05 Sáb 21:37 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -208,7 +208,7 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Blog: thoughts on computing, teaching, and most anything</h1>
+<h1 class="title">Blog: thoughts on computing, teaching, and most anything else</h1>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
@@ -217,6 +217,16 @@ for the JavaScript code in this tag.
 </ul>
 </div>
 </div>
+<p>
+This site is searchable. See HELP on the right (you may need to click around a
+few times until HELP shows up). 
+</p>
+
+<p>
+<a href="index.html">Home</a>
+</p>
+
+
 <p>
 Os artigos deste <i>Blog</i> seguirão algumas regras de conduta auto-impostas:
 </p>
@@ -229,6 +239,8 @@ sentido.
 juízos de valor ou foro íntimo sobre as questões polêmicas usuais.
 </li>
 </ul>
+
+<hr  />
 
 <p>
 The articles in this Blog will follow self-imposed rules of conduct:
@@ -249,10 +261,10 @@ not pass judgment or comment on the usual controversial themes.
 <p>
 It is painful not to be able to follow the pace of those who set up their
 homepages by snapping their fingers. But I got here:
-<a href="http://file:nldias.github.io">http://file:nldias.github.io</a> is online as of today. The way I did it was:
+<a href="http://nldias.github.io">http://nldias.github.io</a> is online as of today. The way I did it was:
 </p>
 <ul class="org-ul">
-<li>Using Emacs, and org-mode 
+<li>Using Emacs, and org-mode. 
 </li>
 <li>Using github's <a href="http://github.io">http://github.io</a> impressive, and free, offer of a homepage
 for everyone.
@@ -266,12 +278,18 @@ this site), and this will ultimately be beneficial to those I work with, teach
 to, etc.. As the sky grows darker in gray, and the Saturday night sets in, I
 can only wish you all a good end of Weekend.
 </p>
+
+
+
+<p>
+<a href="index.html">Home</a>
+</p>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2016-11-05 Sáb 19:55</p>
+<p class="date">Created: 2016-11-05 Sáb 21:37</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.4)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
