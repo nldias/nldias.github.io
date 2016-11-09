@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2016-11-07 Seg 09:40 -->
+<!-- 2016-11-08 Ter 14:01 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="viewport" content="width=device-width, initial-scale=1" />
-<title>Blog: thoughts on computing, teaching, and most anything else</title>
+<title>Nelson Luís Dias</title>
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
 <style type="text/css">
@@ -96,13 +96,13 @@
 </style>
 <link rel="stylesheet" type="text/css" href="readtheorg.css" />
 
-<script type="text/javascript" src="org-info.min.js">
+<script type="text/javascript" src="org-info.js">
 /**
  *
- * @source: org-info.min.js
+ * @source: org-info.js
  *
  * @licstart  The following is the entire license notice for the
- *  JavaScript code in org-info.min.js.
+ *  JavaScript code in org-info.js.
  *
  * Copyright (C) 2012-2013 Free Software Foundation, Inc.
  *
@@ -122,7 +122,7 @@
  * through which recipients can access the Corresponding Source.
  *
  * @licend  The above is the entire license notice
- * for the JavaScript code in org-info.min.js.
+ * for the JavaScript code in org-info.js.
  *
  */
 </script>
@@ -159,11 +159,11 @@ org_html_manager.set("TOC_DEPTH", "4");
 org_html_manager.set("LINK_HOME", "");
 org_html_manager.set("LINK_UP", "");
 org_html_manager.set("LOCAL_TOC", "1");
-org_html_manager.set("VIEW_BUTTONS", "0");
+org_html_manager.set("VIEW_BUTTONS", "1");
 org_html_manager.set("MOUSE_HINT", "underline");
 org_html_manager.set("FIXED_TOC", "0");
 org_html_manager.set("TOC", "1");
-org_html_manager.set("VIEW", "1");
+org_html_manager.set("VIEW", "info");
 org_html_manager.setup();  // activate after the parameters are set
 /*]]>*///-->
 </script>
@@ -216,83 +216,137 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Blog: thoughts on computing, teaching, and most anything else</h1>
+<h1 class="title">Nelson Luís Dias</h1>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgheadline1">1. 2016-11-05T19:45:22 &#x2013; Setting up a Homepage</a></li>
+<li><a href="#orgheadline1">1. Bem-vindos (Welcome)</a></li>
+<li><a href="#orgheadline2">2. Afiliação (Affiliation)</a></li>
+<li><a href="#orgheadline3">3. Biografia (Biography)</a></li>
+<li><a href="#orgheadline4">4. Blog</a></li>
+<li><a href="#orgheadline5">5. Pesquisa (Research)</a></li>
 </ul>
 </div>
 </div>
+
+<div id="outline-container-orgheadline1" class="outline-2">
+<h2 id="orgheadline1"><span class="section-number-2">1</span> Bem-vindos (Welcome)</h2>
+<div class="outline-text-2" id="text-1">
 <p>
-This site is searchable. See HELP on the right (you may need to click around a
-few times until HELP shows up). 
+This site is searchable. See HELP on the right. ()
 </p>
 
-<p>
-<a href="index.html">Home</a>
+
+<div class="figure">
+<p><img src="img/nelson-points-smaller.jpg" alt="nelson-points-smaller.jpg" width="240px" />
 </p>
+</div>
+</div>
+</div>
 
 
+<div id="outline-container-orgheadline2" class="outline-2">
+<h2 id="orgheadline2"><span class="section-number-2">2</span> Afiliação (Affiliation)</h2>
+<div class="outline-text-2" id="text-2">
 <p>
-Os artigos deste <i>Blog</i> seguirão algumas regras de conduta auto-impostas:
+Professor Titular, Departamento de Engenharia Ambiental, Universidade Federal
+do Paraná (<a href="http://www.dea.ufpr.br/">http://www.dea.ufpr.br/</a>)
 </p>
 <ul class="org-ul">
-<li>Não haverá críticas nominais a ninguém. Se eu não gosto de você, pode estar
-certo(a) de que seu nome não aparecerá aqui criticado ou atacado em nenhum
-sentido.</li>
-<li>Não haverá defesas nem comentários de posições políticas ou religiosas, ou
-juízos de valor ou foro íntimo sobre as questões polêmicas usuais.</li>
+<li>Curso de Graduação em Engenharia Ambiental (<a href="http://www.ambiental.ufpr.br/">http://www.ambiental.ufpr.br/</a>)</li>
+<li>Programa de Pós-Graduação em Engenharia Ambiental (<a href="http://www.ppgea.ufpr.br/">http://www.ppgea.ufpr.br/</a>)</li>
+<li>Programa de Pós-Graduação em Métodos Numéricos em Engenharia (<a href="http://www.ppgmne.ufpr.br/">http://www.ppgmne.ufpr.br/</a>)</li>
+</ul>
+
+<p>
+Atualmente:
+</p>
+<ul class="org-ul">
+<li>Coordenador do Lemma (Laboratório de Estudos em Monitoramento e Modelagem
+Ambiental: <a href="http://www.lemma.ufpr.br/">http://www.lemma.ufpr.br/</a>)</li>
 </ul>
 
 <hr  />
 
 <p>
-The articles in this Blog will follow self-imposed rules of conduct:
+Professor, Department of Environmental Engineering, Federal University of
+Paraná (<a href="http://www.dea.ufpr.br/">http://www.dea.ufpr.br/</a>)
 </p>
 <ul class="org-ul">
-<li>There will be no criticism against nominated persons. If I don't like you, you
-can rest assured that your name will not appear here under criticism or any
-kind of attack, in no sense whatsoever.</li>
-<li>I will neither defend, nor comment on, political or religious views. I will
-not pass judgment or comment on the usual controversial themes.</li>
+<li>Environmental Engineering Course (<a href="http://www.ambiental.ufpr.br/">http://www.ambiental.ufpr.br/</a>)</li>
+<li>Graduate Program in Environmental Engineering (<a href="http://www.ppgea.ufpr.br/">http://www.ppgea.ufpr.br/</a>)</li>
+<li>Graduate Program in Numerical Methods in Engineering (<a href="http://www.ppgmne.ufpr.br/">http://www.ppgmne.ufpr.br/</a>)</li>
 </ul>
 
-
-<div id="outline-container-orgheadline1" class="outline-2">
-<h2 id="orgheadline1"><span class="section-number-2">1</span> 2016-11-05T19:45:22 &#x2013; Setting up a Homepage</h2>
-<div class="outline-text-2" id="text-1">
 <p>
-It is painful not to be able to follow the pace of those who set up their
-homepages by snapping their fingers. But I got here:
-<a href="http://nldias.github.io/">http://nldias.github.io/</a> is online as of today. The way I did it was:
+Currently:
 </p>
 <ul class="org-ul">
-<li>Using Emacs, and org-mode.</li>
-<li>Using github's <a href="http://github.io/">http://github.io/</a> impressive, and free, offer of a homepage
-for everyone.</li>
+<li>Head of Lemma (Lab for Environmental Monitoring and Modeling Analysis: <a href="http://www.lemma.ufpr.br/">http://www.lemma.ufpr.br/</a> )</li>
 </ul>
+
 <p>
-I may give you the detailed "how-to" later, or maybe not. But the fact is, I
-am in business, my pages don't look too bad (many thanks to all of those who
-contributed the .css files and other stuff that I resorted to when setting up
-this site), and this will ultimately be beneficial to those I work with, teach
-to, etc.. As the sky grows darker in gray, and the Saturday night sets in, I
-can only wish you all a good end of Weekend.
+CV Lattes (Vita):  <a href="http://lattes.cnpq.br/5149356080083086">http://lattes.cnpq.br/5149356080083086</a>
 </p>
 
-
+<p>
+Tel: +55-41-3320-2025
+</p>
 
 <p>
-<a href="index.html">Home</a>
+<a href="mailto:nldias@ufpr.br">mailto:nldias@ufpr.br</a>
 </p>
 </div>
+</div>
+
+
+<div id="outline-container-orgheadline3" class="outline-2">
+<h2 id="orgheadline3"><span class="section-number-2">3</span> Biografia (Biography)</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Nasci no Rio de Janeiro em 1961. Fiz minha graduação em Engenharia Civil pela
+Universidade Federal do Rio de Janeiro (1983). Sou Mestre em Ciências em
+Engenharia Civil pela Universidade Federal do Rio de Janeiro (1986), e Doutor
+em Ciências em Engenharia Civil e Ambiental pela Universidade Cornell
+(1993). Em 2007, fiz um estágio sabático na Universidade da Geórgia. Desde
+1995, sou Professor da Universidade Federal do Paraná, onde atualmente sou
+Professor Titular no Departamento de Engenharia Ambiental. Leciono no Curso de
+Engenharia Ambiental, no Programa de Pós-Graduação em Métodos Numéricos em
+Engenharia, e no Programa de Pós-Graduação em Engenharia Ambiental.
+</p>
+
+<p>
+I was born in Rio de Janeiro, Brazil, in 1961. I graduated in Civil
+Engineering at the Federal University of Rio de Janeiro in 1983. In 1986, I
+got My Master's in Civil Engineering at the same university. I have a Ph.D. in
+Civil and Environmental Engineering from Cornell University (1993). In 2007, I
+spent a sabbatical year at the University of Georgia. Since 1995, I have been a
+professor at the Federal University of Paraná (UFPR) in Brazil. I am currently
+a Professor at the Environmental Engineering Department, and I teach
+undergraduate courses at the Environmental Engineering Course, and Graduate
+Courses at the Graduate Program in Environmental Engineering, and at the
+Program in Numerical Methods in Engineering, all at UFPR.
+</p>
+</div>
+</div>
+
+
+
+
+
+<div id="outline-container-orgheadline4" class="outline-2">
+<h2 id="orgheadline4"><span class="section-number-2">4</span> <a href="blog.html">Blog</a></h2>
+</div>
+
+
+<div id="outline-container-orgheadline5" class="outline-2">
+<h2 id="orgheadline5"><span class="section-number-2">5</span> <a href="research.html">Pesquisa (Research)</a></h2>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2016-11-07 Seg 09:40</p>
+<p class="date">Created: 2016-11-08 Ter 14:01</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
