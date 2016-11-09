@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Blog: thoughts on computing, teaching, and most anything else</title>
-<!-- 2016-11-09 Qua 16:18 -->
+<!-- 2016-11-09 Qua 16:31 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -263,7 +263,7 @@ TeX/LaTeX (all essential tools in my PhD).
 
 <p>
 I work daily in Linux exclusively (no Windows, no OS/X), at the Internet,
-writing papers and books and course notes (LaTeX), running data analysis or
+writing papers and books and course notes (Emacs/LaTeX), running data analysis or
 numerical models (Python, C, FORTRAN), and occasionally reading someone else's
 document (LibreOffice). 
 </p>
@@ -289,13 +289,28 @@ now, the titlesec package in texlive does not number sections, and org-mode
 8.3 has a bug that prevents folding sections in the HTML pages that it
 generates), but usually there is a fix (for titlesec, I found one), or you can
 live with the bug until some upgrade fixes it. This has something to do with
-the pace of software development, and the distributed and open nature of the
-contributions. The same openess, however, contributes to bugs being found, and
-solutions offered, quite quickly. 
+the pace of open software development, and the distributed and open nature of
+the contributions. The same openess, on the other hand, contributes to bugs
+being found, and solutions offered, quite quickly.
+</p>
+
+<p>
+Linux is also a somewhat lonely road. There are millions of fans and plenty of
+information on the Internet, but the guy next door is likely to only know
+about Windows, and not to understand at all the idea that another OS can be,
+well, <i>better</i>. This is the ordinary man or woman who writes everything, from
+shopping lists to scientific papers to books in Word, and sadly plots graphs and
+does data analysis in Excel. 
+</p>
+
+<p>
+It may sound snobish or arrogant &#x2013;I will only conceed that I have strong
+opinions, though&#x2013;, but there is consolation in knowing (from having used
+Windows many times in the past) that Linux is indeed better, and that the
+Linux way is a very good way.
 </p>
 </div>
 </div>
-
 <div id="outline-container-sec-2" class="outline-2">
 <h2 id="sec-2"><span class="section-number-2">2</span> 2016-11-05T19:45:22 &#x2013; Setting up a Homepage</h2>
 <div class="outline-text-2" id="text-2">
@@ -330,7 +345,7 @@ can only wish you all a good end of Weekend.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2016-11-09 Qua 16:18</p>
+<p class="date">Created: 2016-11-09 Qua 16:31</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.4)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
