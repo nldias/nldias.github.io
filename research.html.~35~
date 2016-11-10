@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Pesquisa (Research)</title>
-<!-- 2016-11-09 Qua 12:38 -->
+<!-- 2016-11-10 Qui 21:02 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -205,6 +205,48 @@ for the JavaScript code in this tag.
  }
 /*]]>*///-->
 </script>
+<script type="text/javascript" src="MathJax.js"></script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
+/*]]>*///-->
+</script>
 </head>
 <body>
 <div id="content">
@@ -301,6 +343,10 @@ a little bit as time goes by.
 Theory (MOST) to the roughness sublayer over the Amazon forest.
 </li>
 <li>Surface Renewal Theory over water.
+</li>
+<li>Use of the length scale \(\ell_\epsilon = u_*^3/\epsilon\) (\(\epsilon\) is the rate of
+dissipation of turbulence kinetic energy) to normalize turbulence statistics
+in the Atmospheric Surface Layer.
 </li>
 <li>CO<sub>2</sub> fluxes to and from Itaipu Lake, and more generally greenhouse gas
 fluxes to and from lakes.
@@ -420,7 +466,7 @@ Dias, N. L. Relação entre a turbulência do dossel e distribuição vertical d
 gases reativos na floresta triopical da Amazônia Central. Ciência e Natura,
 2016, 38, 543.
 </li>
-<li>Cancelli, D. M.; Chamecki, M. &amp;amp; Dias, N. L. A Study of the Similarity
+<li>Cancelli, D. M.; Chamecki, M. &amp;; Dias, N. L. A Study of the Similarity
 between Scalars over a Heterogeneous Surface Using Large-Eddy Simulation.
 Am. J. Environ. Eng., 2015, 5, 9-14.
 </li>
@@ -580,7 +626,7 @@ Agric For Meteorol, 2006, 139, 171-181.
 in the Two Americas". EOS Transactions - American Geophysical Union, 2005,
 86, 370-370.
 </li>
-<li>Dias, N. L.; Chamecki, M.; Kan, A. &amp;amp; Okawa, C. M. P.. A study of spectra,
+<li>Dias, N. L.; Chamecki, M.; Kan, A. &amp; Okawa, C. M. P.. A study of spectra,
 structure and correlation functions and their implication on the
 stationarity of surface-layer turbulence. Boundary-Layer Meteorol., 2004,
 110, 165-189.
@@ -596,7 +642,7 @@ stationarity of surface-layer turbulence. Boundary-Layer Meteorol., 2004,
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2016-11-09 Qua 12:38</p>
+<p class="date">Created: 2016-11-10 Qui 21:02</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.4)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
