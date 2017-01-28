@@ -3,8 +3,8 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<title>Blog: thoughts on computing, teaching, and most anything else</title>
-<!-- 2017-01-28 Sáb 15:51 -->
+<title>Thoughts on computing, teaching, and most anything else &#x2026;</title>
+<!-- 2017-01-28 Sáb 16:25 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -209,7 +209,7 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Blog: thoughts on computing, teaching, and most anything else</h1>
+<h1 class="title">Thoughts on computing, teaching, and most anything else &#x2026;</h1>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
@@ -286,11 +286,12 @@ installer for your Operating System:
 <code>/home/nldias/miniconda3</code>. At the end of installation, in Linux, miniconda
 offers to add Anaconda to the PATH variable. DO NOT
 ACCEPT THAT, because it will create a conflict with your pre-installed
-python in Linux. 
+Python in Linux. 
 
 <p>
-This will leave you with a miniconda installation that is unreachable via
-the command line. I don't mind, because I change my Python shebang to
+Not accepting miniconda to change your PATH will leave you with a miniconda
+installation that is unreachable via the command line. I don't mind, because
+I change my Python shebang to
 </p>
 
 <div class="org-src-container">
@@ -317,7 +318,7 @@ cd ~/miniconda3/bin
 
 <ul class="org-ul">
 <li>In Windows, I install it locally below my home directory, at
-<code>C:\Users\IEUser\miniconda3</code> (I use Windows very seldom, always in a Virtual
+<code>C:\Users\IEUser\Miniconda3</code> (I use Windows very seldom, always in a Virtual
 Machine inside Linux, and for that I use Microsoft's freely available
 Windows Virtual Machines). At the beginning of the installation, miniconda
 offers to add Anaconda to the PATH. ACCEPT THAT if miniconda is the only
@@ -341,9 +342,10 @@ You should change it to something like
 </pre>
 </li>
 <li>Go to File Explorer, right-click on any <code>*.py</code> file that you may have,
-choose Properties, and tell Windows to open the file with 
+choose Properties, and tell Windows to open the files with <code>*.PY</code>
+extension with
 <pre class="example">
-C:\Users\IEUser\miniconda3\Python
+C:\Users\IEUser\Miniconda3\python
 </pre>
 <p>
 That should do it.
@@ -354,7 +356,7 @@ That should do it.
 You still want numpy and numba, however. For that, you should:
 </p>
 <pre class="example">
-cd C:\Users\IEUSER\Miniconda3
+cd C:\Users\IEUser\Miniconda3
 conda install numpy
 conda install numba
 </pre>
@@ -363,7 +365,10 @@ conda install numba
 
 
 <p>
-By now, you should have miniconda running at the command prompt
+By now, you should have miniconda running at the command prompt, and have numpy
+and numba available to you. Next time, I hope to come back with a few
+suggestions on how to use numpy and numba effectively (and without too much
+fuss). 
 </p>
 </div>
 </div>
@@ -1137,7 +1142,7 @@ coniventes: eles estão destruindo o futuro.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2017-01-28 Sáb 15:51</p>
+<p class="date">Created: 2017-01-28 Sáb 16:25</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.4)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
