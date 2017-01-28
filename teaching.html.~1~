@@ -3,8 +3,8 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<title>Blog: thoughts on computing, teaching, and most anything else</title>
-<!-- 2016-11-10 Qui 19:56 -->
+<title>Ensino (Teaching)</title>
+<!-- 2017-01-22 Dom 13:08 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -151,7 +151,7 @@ org_html_manager.set("TOC_DEPTH", "4");
 org_html_manager.set("LINK_HOME", "");
 org_html_manager.set("LINK_UP", "");
 org_html_manager.set("LOCAL_TOC", "1");
-org_html_manager.set("VIEW_BUTTONS", "0");
+org_html_manager.set("VIEW_BUTTONS", "1");
 org_html_manager.set("MOUSE_HINT", "underline");
 org_html_manager.set("FIXED_TOC", "0");
 org_html_manager.set("TOC", "1");
@@ -208,156 +208,56 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Blog: thoughts on computing, teaching, and most anything else</h1>
+<h1 class="title">Ensino (Teaching)</h1>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#sec-1">1. 2016-11-09T12:46:14 &#x2013; Serious work with Linux and Cinnamon</a></li>
-<li><a href="#sec-2">2. 2016-11-05T19:45:22 &#x2013; Setting up a Homepage</a></li>
+<li><a href="#sec-1">1. TEA-034 Tópicos Especiais em Engenharia Ambiental: Técnicas de Aprendizagem Acadêmica</a></li>
 </ul>
 </div>
 </div>
 <p>
 This site is searchable. See HELP on the right (you may need to click around a
-few times until HELP shows up). 
+few times until HELP shows up).
+. 
 </p>
 
 <p>
 <a href="index.html">Home</a>
 </p>
-
-
-<p>
-Os artigos deste <i>Blog</i> obedecerão à seguinte regra de conduta auto-imposta:
-</p>
-<ul class="org-ul">
-<li>Não haverá críticas nominais a ninguém. Se eu não gosto de você, pode estar
-certo(a) de que seu nome não aparecerá aqui criticado ou atacado em nenhum
-sentido. 
-</li>
-</ul>
-
-
-<hr  />
-
-<p>
-The articles in this Blog will obey the following self-imposed rule of conduct:
-</p>
-<ul class="org-ul">
-<li>There will be no criticism against nominated persons. If I don't like you, you
-can rest assured that your name will not appear here under criticism or any
-kind of attack, in no sense whatsoever.
-</li>
-</ul>
 
 <div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> 2016-11-09T12:46:14 &#x2013; Serious work with Linux and Cinnamon</h2>
+<h2 id="sec-1"><span class="section-number-2">1</span> TEA-034 Tópicos Especiais em Engenharia Ambiental: Técnicas de Aprendizagem Acadêmica</h2>
 <div class="outline-text-2" id="text-1">
-<p>
-I have been a Linux user for a long time, and even before that I
-had benefitted greatly from open-source and free software such as DJGPP's Gnu
-C compiler implementation for DOS in the late 80's and early 90's, GnuPlot, and
-TeX/LaTeX (all essential tools in my PhD). 
-</p>
-
-<p>
-I work daily in Linux exclusively (no Windows, no OS/X), at the Internet (Chrome),
-writing papers and books and course notes (Emacs/LaTeX), running data analysis
-or numerical models (Python, C, FORTRAN), and occasionally reading someone
-else's document (LibreOffice). [(Added: 2016-11-10T13:59:00) Of course, one can
-run any of these programs in Windows, or OS/X (I guess), but software is only
-a part of the road to productivity. Linux is superior in providing faster and
-simpler upgrades, in providing more security, and more privacy. Finally, it is
-superior in offering many choices for the Desktop that you will be using.]
-</p>
-
-
-<p>
-A decent Desktop can help a lot, and a bad one can stand a lot in the way of
-work. In Linux, KDE helped me for a long time (until it changed); then Gnome
-helped for a long time (until it changed); Unity was too different for me to
-even try; Xfce helped me for a while, and for about 3 years now Cinnamon has been my
-preferred desktop. I use it on top of both Linux Mint at home, and on top of
-Ubuntu at work. Cinnamon has very good aesthetics. I set it up with only
-one panel (which is more than enough). Cinnamon also has a very rational
-Menu. I usually add a drop-down terminal (tilda) and a quick
-application/document starter (kupfer), although Cinnamon's menu opened via the
-"Windows" (sorry) key already does most of the same. Starting programs,
-killing them, and swapping from applications or workspaces then is easy and
-fast, and productivity is boosted.
-</p>
-
-<p>
-Linux/Ubuntu/Mint/Cinnamon is not perfect: packages sometimes break (right
-now, the titlesec package in texlive does not number sections, and org-mode
-8.3 has a bug that prevents folding sections in the HTML pages that it
-generates), but usually there is a fix (for titlesec, I found one), or you can
-live with the bug until some upgrade fixes it. This has something to do with
-the pace of open software development, and the distributed and open nature of
-the contributions. The same openess, on the other hand, contributes to bugs
-being found, and solutions offered, quite quickly.
-</p>
-
-
-<div class="figure">
-<p><img src="img/cinnamon.png" alt="cinnamon.png" width="540px" />
-</p>
-</div>
-
-
-<p>
-Linux is also a somewhat lonely road. There are millions of fans and plenty of
-information on the Internet, but the guy next door is likely to only know
-about Windows, and not to understand at all the idea that another OS can be,
-well, <i>better</i>. This is the ordinary man or woman who writes everything, from
-shopping lists to scientific papers to books in Word, and sadly plots graphs and
-does data analysis in Excel. 
-</p>
-
-<p>
-It may sound snobish or arrogant &#x2013;I will only conceed that I have strong
-opinions, though&#x2013;, but there is consolation in knowing (from having used
-Windows many times in the past) that Linux is indeed better, and that the
-Linux way is a very good way.
-</p>
-</div>
-</div>
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> 2016-11-05T19:45:22 &#x2013; Setting up a Homepage</h2>
-<div class="outline-text-2" id="text-2">
-<p>
-It is painful not to be able to follow the pace of those who set up their
-homepages by snapping their fingers. But I got here:
-<a href="http://nldias.github.io">http://nldias.github.io</a> is online as of today. The way I did it was:
-</p>
 <ul class="org-ul">
-<li>Using Emacs, and org-mode. 
+<li>Horário
+<ul class="org-ul">
+<li>Aulas: 6<sup>as</sup>, PF-??, 07:30&#x2013;09:10
 </li>
-<li>Using github's <a href="http://github.io">http://github.io</a> impressive, and free, offer of a homepage
-for everyone.
+<li>Atendimento: Por agendamento emminha sala
 </li>
 </ul>
-<p>
-I may give you the detailed "how-to" later, or maybe not. But the fact is, I
-am in business, my pages don't look too bad (many thanks to all of those who
-contributed the .css files and other stuff that I resorted to when setting up
-this site), and this will ultimately be beneficial to those I work with, teach
-to, etc.. As the sky grows darker in gray, and the Saturday night sets in, I
-can only wish you all a good end of Weekend.
-</p>
-
-
-
-<p>
-<a href="index.html">Home</a>
-</p>
+</li>
+<li>Programa <a href="./tea034-prog-2017-1.pdf">tea034-tea034-prog-2017-1.pdf</a>
+</li>
+<li>Avaliação da disciplina pelos alunos: Esta disciplina nunca foi avaliada
+</li>
+<li>Notas
+<ul class="org-ul">
+<li>2016-04-09: Estão abertas as revisões da P1
+</li>
+</ul>
+</li>
+<li>Progresso?
+</li>
+</ul>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2016-11-10 Qui 19:56</p>
+<p class="date">Created: 2017-01-22 Dom 13:08</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.4)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>

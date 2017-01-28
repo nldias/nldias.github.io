@@ -3,8 +3,8 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<title>Thoughts on computing, teaching, and most anything else</title>
-<!-- 2017-01-28 Sáb 15:59 -->
+<title>Blog: thoughts on computing, teaching, and most anything else</title>
+<!-- 2017-01-28 Sáb 15:40 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -209,12 +209,12 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Thoughts on computing, teaching, and most anything else</h1>
+<h1 class="title">Blog: thoughts on computing, teaching, and most anything else</h1>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#sec-1">1. 2017-01-28T10:45:21 &#x2013; Installing miniconda in Linux and Windows</a></li>
+<li><a href="#sec-1">1. 2017-01-28T10:45:21 &#x2013; Python tricks</a></li>
 <li><a href="#sec-2">2. 2016-11-19T17:36:35 &#x2013; Opinião</a></li>
 <li><a href="#sec-3">3. 2016-11-09T12:46:14 &#x2013; Serious work with Linux and Cinnamon</a></li>
 <li><a href="#sec-4">4. 2016-11-05T19:45:22 &#x2013; Setting up a Homepage</a></li>
@@ -264,7 +264,7 @@ kind of attack, in no sense whatsoever.
 </ul>
 
 <div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> 2017-01-28T10:45:21 &#x2013; Installing miniconda in Linux and Windows</h2>
+<h2 id="sec-1"><span class="section-number-2">1</span> 2017-01-28T10:45:21 &#x2013; Python tricks</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Python is very popular, for good reason. Programming, debugging, and testing in
@@ -289,10 +289,11 @@ ACCEPT THAT, because it will create a conflict with your pre-installed
 python in Linux. 
 
 <p>
-Not accepting miniconda to change your PATH will leave you with a miniconda
-installation that is unreachable via the command line. I don't mind, because
-I change my Python shebang to
+This will leave you with a miniconda installation that is unreachable via
+the command line. I don't mind, because I change my Python shebang to
 </p>
+</li>
+</ul>
 
 <div class="org-src-container">
 
@@ -302,23 +303,12 @@ I change my Python shebang to
 
 <p>
 This is all that is needed: whenever I execute a python script having the
-comment above as the first line, it runs the local miniconda
-installation. You still want numpy and numba, however. For that, you should:
+comment above as the first line, it runs the local miniconda installation.
 </p>
-<pre class="example">
-cd ~/miniconda3/bin
-./conda install numpy
-./conda install numba
-</pre>
-</li>
-</ul>
-
-
-
 
 <ul class="org-ul">
 <li>In Windows, I install it locally below my home directory, at
-<code>C:\Users\IEUser\Miniconda3</code> (I use Windows very seldom, always in a Virtual
+<code>C:\Users\IEUser\miniconda3</code> (I use Windows very seldom, always in a Virtual
 Machine inside Linux, and for that I use Microsoft's freely available
 Windows Virtual Machines). At the beginning of the installation, miniconda
 offers to add Anaconda to the PATH. ACCEPT THAT if miniconda is the only
@@ -342,34 +332,30 @@ You should change it to something like
 </pre>
 </li>
 <li>Go to File Explorer, right-click on any <code>*.py</code> file that you may have,
-choose Properties, and tell Windows to open the files with <code>*.PY</code>
-extension with
+choose Properties, and tell Windows to open the file with 
 <pre class="example">
-C:\Users\IEUser\Miniconda3\python
+C:\Users\IEUser\miniconda3\Python
 </pre>
 <p>
 That should do it.
 </p>
 </li>
 </ol>
-<p>
-You still want numpy and numba, however. For that, you should:
-</p>
-<pre class="example">
-cd C:\Users\IEUSER\Miniconda3
-conda install numpy
-conda install numba
-</pre>
 </li>
 </ul>
 
 
-<p>
-By now, you should have miniconda running at the command prompt, and have numpy
-and numba available to you. Next time, I hope to come back with a few
-suggestions on how to use numpy and numba effectively (and without too much
-fuss). 
-</p>
+<pre class="example">
+Some example from a text file.
+</pre>
+
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #b22222;">#</span><span style="color: #b22222;">!/usr/bin/python</span>
+<span style="color: #a020f0;">print</span>(<span style="color: #8b2252;">"Hello world"</span>)
+</pre>
+</div>
 </div>
 </div>
 
@@ -1142,7 +1128,7 @@ coniventes: eles estão destruindo o futuro.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2017-01-28 Sáb 15:59</p>
+<p class="date">Created: 2017-01-28 Sáb 15:40</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.4)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>

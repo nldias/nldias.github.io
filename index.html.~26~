@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Nelson Luís Dias</title>
-<!-- 2016-11-09 Qua 12:38 -->
+<!-- 2016-11-13 Dom 18:33 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -155,7 +155,7 @@ org_html_manager.set("VIEW_BUTTONS", "1");
 org_html_manager.set("MOUSE_HINT", "underline");
 org_html_manager.set("FIXED_TOC", "0");
 org_html_manager.set("TOC", "1");
-org_html_manager.set("VIEW", "info");
+org_html_manager.set("VIEW", "1");
 org_html_manager.setup();  // activate after the parameters are set
 /*]]>*///-->
 </script>
@@ -226,7 +226,7 @@ for the JavaScript code in this tag.
 <h2 id="sec-1"><span class="section-number-2">1</span> Bem-vindos (Welcome)</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-This site is searchable. See HELP on the right.
+This site is searchable. See HELP on the right. 
 </p>
 
 
@@ -343,7 +343,7 @@ Program in Numerical Methods in Engineering, all at UFPR.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2016-11-09 Qua 12:38</p>
+<p class="date">Created: 2016-11-13 Dom 18:33</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.4)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
