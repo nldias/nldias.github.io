@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Nelson Luís Dias</title>
-<!-- 2016-11-13 Dom 18:33 -->
+<!-- 2017-01-28 Sáb 10:47 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -218,6 +218,7 @@ for the JavaScript code in this tag.
 <li><a href="#sec-3">3. Biografia (Biography)</a></li>
 <li><a href="#sec-4">4. Blog</a></li>
 <li><a href="#sec-5">5. Pesquisa (Research)</a></li>
+<li><a href="#sec-6">6. Ensino (Teaching)</a></li>
 </ul>
 </div>
 </div>
@@ -226,7 +227,7 @@ for the JavaScript code in this tag.
 <h2 id="sec-1"><span class="section-number-2">1</span> Bem-vindos (Welcome)</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-This site is searchable. See HELP on the right. &#x2013;
+This site is searchable. See HELP on the right. 
 </p>
 
 
@@ -336,14 +337,17 @@ Program in Numerical Methods in Engineering, all at UFPR.
 <h2 id="sec-4"><span class="section-number-2">4</span> <a href="blog.html">Blog</a></h2>
 </div>
 
-
 <div id="outline-container-sec-5" class="outline-2">
 <h2 id="sec-5"><span class="section-number-2">5</span> <a href="research.html">Pesquisa (Research)</a></h2>
+</div>
+
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> <a href="teaching.html">Ensino (Teaching)</a></h2>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2016-11-13 Dom 18:33</p>
+<p class="date">Created: 2017-01-28 Sáb 10:47</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.4)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
