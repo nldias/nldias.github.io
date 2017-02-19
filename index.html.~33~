@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Nelson Luís Dias</title>
-<!-- 2017-02-19 Dom 10:21 -->
+<!-- 2017-02-19 Dom 10:04 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -219,7 +219,12 @@ for the JavaScript code in this tag.
 <li><a href="#sec-4">4. Blog</a></li>
 <li><a href="#sec-5">5. Pesquisa (Research)</a></li>
 <li><a href="#sec-6">6. Ensino (Teaching)</a></li>
-<li><a href="#sec-7">7. Livros e material didático (Books and educational material)</a></li>
+<li><a href="#sec-7">7. Livros e material didático (books and educational material)</a>
+<ul>
+<li><a href="#sec-7-1">7.1. Pequena Introdução aos Números: link da editora</a></li>
+<li><a href="#sec-7-2">7.2. Uma Introdução aos Métodos Matemáticos para Engenharia (sem editora, nem ISBN ainda) (Portuguese): matappa.pdf</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -345,16 +350,24 @@ Program in Numerical Methods in Engineering, all at UFPR.
 
 
 <div id="outline-container-sec-6" class="outline-2">
-<h2 id="sec-6"><span class="section-number-2">6</span> <a href="teaching.html">Ensino</a> (Teaching)</h2>
+<h2 id="sec-6"><span class="section-number-2">6</span> <a href="teaching.html">Ensino (Teaching)</a></h2>
 </div>
 
 <div id="outline-container-sec-7" class="outline-2">
-<h2 id="sec-7"><span class="section-number-2">7</span> <a href="books.html">Livros e material didático</a> (Books and educational material)</h2>
+<h2 id="sec-7"><span class="section-number-2">7</span> Livros e material didático (books and educational material)</h2>
+<div class="outline-text-2" id="text-7">
+</div><div id="outline-container-sec-7-1" class="outline-3">
+<h3 id="sec-7-1"><span class="section-number-3">7.1</span> Pequena Introdução aos Números: <a href="http://www.intersaberes.com/item-catalogo/pequena-introducao-aos-numeros/">link da editora</a></h3>
+</div>
+
+<div id="outline-container-sec-7-2" class="outline-3">
+<h3 id="sec-7-2"><span class="section-number-3">7.2</span> Uma Introdução aos Métodos Matemáticos para Engenharia (sem editora, nem ISBN ainda) (Portuguese): <a href="./pdf/matappa.pdf">matappa.pdf</a></h3>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2017-02-19 Dom 10:21</p>
+<p class="date">Created: 2017-02-19 Dom 10:04</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.4)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
