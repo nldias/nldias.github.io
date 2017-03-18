@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Pesquisa (Research)</title>
-<!-- 2016-11-13 Dom 18:29 -->
+<!-- 2017-03-16 Qui 18:32 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -403,10 +403,35 @@ regionais (CNpq 303581/2013-1) <a href="pdf/declif.pdf">declif</a>
 <h2 id="sec-6"><span class="section-number-2">6</span> Publications</h2>
 <div class="outline-text-2" id="text-6">
 <ul class="org-ul">
+<li>Chor, T. L.; Dias, N. L.; Araújo, A.; Wolff, S.; Zahn, E.; Manzi, A.; Trebs,
+I.; Sá, M. O.; Teixeira, P. R. &amp; Sörgel, M. Flux-variance and flux-gradient
+relationships in the roughness sublayer over the Amazon forest Agricultural
+and Forest Meteorology (Accepted), 2017
+</li>
+
+<li>Freire, L. S.; Gerken, T.; Ruiz-Plancarte, J.; Wei, D.; Fuentes, J. D.;
+Katul, G. G.; Dias, N. L.; Acevedo, O. C. &amp; Chamecki, M. Turbulent mixing
+and removal of ozone within an Amazon rainforest canopy. Journal of
+Geophysical Research: Atmospheres, 2017, 2016JD026009.
+<a href="http://dx.doi.org/10.1002/2016JD026009">http://dx.doi.org/10.1002/2016JD026009</a>
+</li>
+
+<li>Dias-Junior, C. Q.; Dias, N. L.; Fuentes, J. D. &amp; Chamecki,
+M. Convective storms and non-classical low-level jets during high
+ozone level episodes in the Amazon region: An ARM/GOAMAZON case
+study. Atmospheric Environment, 155, 199&#x2013;209, 2017.
+<a href="http://dx.doi.org/10.1016/j.atmosenv.2017.02.006">http://dx.doi.org/10.1016/j.atmosenv.2017.02.006</a>
+</li>
+
+<li>Chamecki, M.; Dias, N. L.; Salesky, S. T. &amp; Pan, Y. Scaling laws for the
+longitudinal structure function in the atmospheric surface layer. Journal of
+the Atmospheric Sciences, 2017.  <a href="http://dx.doi.org/10.1175/JAS-D-16-0228.1">http://dx.doi.org/10.1175/JAS-D-16-0228.1</a>
+</li>
+
 <li>Dias, N. L. &amp; Vissotto, D.. The effect of temperature-humidity similarity on
 Bowen ratios, dimensionless standard deviations, and mass transfer
 coefficients over a lake Hydrological
-Processes, 2016. <a href="http://dx.doi.org/10.1002/hyp.10925">http://dx.doi.org/10.1002/hyp.10925</a>
+Processes, 2017, 31, 256-269. <a href="http://dx.doi.org/10.1002/hyp.10925">http://dx.doi.org/10.1002/hyp.10925</a>
 </li>
 <li>Fuentes, J. D.; Chamecki, M.; dos Santos, R. M. N.; von Randow, C.; Stoy,
 P. C.; Katul, G.; Fitzjarrald, D.; Manzi, A.; Gerken, T.; Trowbridge, A.;
@@ -417,7 +442,12 @@ American Meteorological Society., 2016, 1, 1.
 </li>
 <li>Zahn, E.; Dias, N. L.; Araújo, A.; Sá, L. D. A.; Sörgel, M.; Trebs, I.;
 Wolff, S. &amp; Manzi, A. Scalar turbulent behavior in the roughness sublayer of
-an Amazonian forest Atmospheric Chemistry and Physics, 2016, 16, 11349-11366.
+an Amazonian forest Atmospheric Chemistry and Physics, 2016, 16,
+11349-11366.
+</li>
+<li>Zahn, E. &amp; Dias, N. L. Controle de qualidade em dados de alta frequência no
+projeto ATTO. Ciência e Natura, Universidade Federal de Santa Maria, 2016,
+38, 498-503.
 </li>
 <li>Wei, D.; Ruiz-Plancarte, J.; Freire, L. S.; Gerken, T.; Chamecki, M.;
 Fuentes, J. D.; Stoy, P.; Trowbridge, A.; Santos, R. M. N.; Acevedo, O. C. &amp;
@@ -667,7 +697,7 @@ Brasileira de Engenharia, Caderno de Recursos Hídricos, 1988, 6, 65-91.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2016-11-13 Dom 18:29</p>
+<p class="date">Created: 2017-03-16 Qui 18:32</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.4)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
