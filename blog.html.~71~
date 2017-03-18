@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Thoughts on computing, teaching, and most anything else &#x2026;</title>
-<!-- 2017-03-01 Qua 12:45 -->
+<!-- 2017-03-16 Qui 20:02 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -214,20 +214,21 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#sec-1">1. 2017-03-01T12:09:55 &#x2013; Prá tudo se acabar na 4<sup>a</sup> feira</a></li>
-<li><a href="#sec-2">2. 2017-01-28T10:45:21 &#x2013; Installing miniconda in Linux and Windows</a></li>
-<li><a href="#sec-3">3. 2016-11-19T17:36:35 &#x2013; Opinião</a></li>
-<li><a href="#sec-4">4. 2016-11-09T12:46:14 &#x2013; Serious work with Linux and Cinnamon</a></li>
-<li><a href="#sec-5">5. 2016-11-05T19:45:22 &#x2013; Setting up a Homepage</a></li>
-<li><a href="#sec-6">6. 2009-06-23T00:00:00 &#x2013; Professores podem errar (mas quanto?)</a></li>
-<li><a href="#sec-7">7. 2009-03-20T00:00:00 &#x2013; O esforço de pensar</a></li>
-<li><a href="#sec-8">8. 2009-03-12T00:00:00 &#x2013; O distante passado recente dos computadores</a></li>
-<li><a href="#sec-9">9. 2008-08-06T00:00:00 &#x2013; Jovens e Velhos</a></li>
-<li><a href="#sec-10">10. 2008-06-10T00:00:00 &#x2013; O olhar hipnótico da serpente</a></li>
-<li><a href="#sec-11">11. 2008-06-01T00:00:00 &#x2013; Faça da Internet uma amiga</a></li>
-<li><a href="#sec-12">12. 2008-05-17T00:00:00 &#x2013; Ensino e Aprendizado são Diversão</a></li>
-<li><a href="#sec-13">13. 2008-04-08T00:00:00 Recuperando o Saber</a></li>
-<li><a href="#sec-14">14. 2008-03-25: Disciplina</a></li>
+<li><a href="#sec-1">1. 2017-03-16T19:28:07 &#x2013; O tempo do fim das ilusões</a></li>
+<li><a href="#sec-2">2. 2017-03-01T12:09:55 &#x2013; Prá tudo se acabar na 4<sup>a</sup> feira</a></li>
+<li><a href="#sec-3">3. 2017-01-28T10:45:21 &#x2013; Installing miniconda in Linux and Windows</a></li>
+<li><a href="#sec-4">4. 2016-11-19T17:36:35 &#x2013; Opinião</a></li>
+<li><a href="#sec-5">5. 2016-11-09T12:46:14 &#x2013; Serious work with Linux and Cinnamon</a></li>
+<li><a href="#sec-6">6. 2016-11-05T19:45:22 &#x2013; Setting up a Homepage</a></li>
+<li><a href="#sec-7">7. 2009-06-23T00:00:00 &#x2013; Professores podem errar (mas quanto?)</a></li>
+<li><a href="#sec-8">8. 2009-03-20T00:00:00 &#x2013; O esforço de pensar</a></li>
+<li><a href="#sec-9">9. 2009-03-12T00:00:00 &#x2013; O distante passado recente dos computadores</a></li>
+<li><a href="#sec-10">10. 2008-08-06T00:00:00 &#x2013; Jovens e Velhos</a></li>
+<li><a href="#sec-11">11. 2008-06-10T00:00:00 &#x2013; O olhar hipnótico da serpente</a></li>
+<li><a href="#sec-12">12. 2008-06-01T00:00:00 &#x2013; Faça da Internet uma amiga</a></li>
+<li><a href="#sec-13">13. 2008-05-17T00:00:00 &#x2013; Ensino e Aprendizado são Diversão</a></li>
+<li><a href="#sec-14">14. 2008-04-08T00:00:00 Recuperando o Saber</a></li>
+<li><a href="#sec-15">15. 2008-03-25: Disciplina</a></li>
 </ul>
 </div>
 </div>
@@ -265,8 +266,100 @@ kind of attack, in no sense whatsoever.
 </ul>
 
 <div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> 2017-03-01T12:09:55 &#x2013; Prá tudo se acabar na 4<sup>a</sup> feira</h2>
+<h2 id="sec-1"><span class="section-number-2">1</span> 2017-03-16T19:28:07 &#x2013; O tempo do fim das ilusões</h2>
 <div class="outline-text-2" id="text-1">
+<p>
+Por algum motivo, talvez alguma vantagem evolutiva, nós seres
+humanos somos atraídos por ilusões do fácil, do rápido, e do
+indolor. Desde sempre, nos vendem pirâmides para ficar
+ricos. Compramos (eu também comprei uma). Os políticos, é claro, nos
+vendem o paraíso. Compramos. E as agências de publicidade nos vendem
+tudo de que não precisamos: um novo carro, um novo computador, um
+novo apartamento, uma viagem para um lugar que não precisamos
+conhecer. 
+</p>
+
+<p>
+Compramos.
+</p>
+
+<p>
+Ah sim: o governo nos vende loterias, esse imposto dos mais cruéis,
+porque quem compra um bilhete de loteria é justamente alguém que
+precisa <b>muito</b> do dinheiro. 
+</p>
+
+<p>
+Mas não me cabe lhe dizer, prezado leitor, prezada leitora, que você
+não deve jogar na mega-sena, ou que aquela viagem para um <i>resort</i>
+com tudo incluído (grátis?) talvez não seja a maneira mais sábia de
+usar seu sofrido dinheiro. Você, que me lê, sabe de tudo isso.
+</p>
+
+<p>
+Gostaria entretanto de escrever sobre outra
+loteria/propaganda/ilusão que nos afeta tanto em Educação: a
+promessa de aprender brincando. A ilusão de que existe um "método"
+que ensina sem esforço, que turbina o desempenho dos alunos e, por
+que não, alivia a carga de trabalho do instrutor. Sim, eu já comprei
+doses moderadas dessa pirâmide.
+</p>
+
+<p>
+Temos que fazê-lo, mesmo nós mais comedidos e racionais, se gostamos
+de ensinar. Se existe uma maneira melhor, temos que tentar. E
+tentamos, e tentamos. 
+</p>
+
+<p>
+Claro, existem facilitadores: livros bons, carteiras confortáveis,
+salas de aula arejadas. Boas bibliotecas. E sobretudo, tempo para
+nossos alunos estudarem, sem terem que se balançar em ônibus e trens
+por horas; sem terem que estudar à noite cansados após o trabalho;
+sem terem que assistir a aulas de 3 ou 4 horas de duração porque
+isso é conveniente para alguns professores, etc..
+</p>
+
+<p>
+Tudo isso ajuda, mas não responde a uma pergunta impossível: "Como é
+possível aprender ou ensinar sem esforço?"
+</p>
+
+<p>
+Não é. Tentamos sim, métodos e ideias, porque afinal se somos
+educadores queremos ensinar melhor e mais. Porém, depois das salas
+de aula reformadas, depois dos horários decentes de aulas e estudo,
+depois da biblioteca nova e das condições de estudar; depois de tudo
+o que é decentemente razoável e possível, se ainda assim o Paraíso
+não foi atingido, é porque&#x2026;
+</p>
+
+<p>
+É muito difícil aprender, mas também é muito difícil ensinar. Exige
+trabalho, tempo, dedicação, persistência, honestidade, foco, suor,
+capacidade de lidar com a frustração de não conseguir superar os
+obstáculos. No processo, lemos e estudamos no ônibus; preparamos
+aulas à noite, até tarde; fazemos no quadro-negro ruim e com o giz
+de péssima qualidade o milagre da transmissão do conhecimento. 
+</p>
+
+<p>
+Somente aqueles entre nós que entendem que é preciso voltar, e
+voltar, e voltar; refazer, refazer, e refazer; melhorar sempre,
+trabalhar muito, não desistir nunca, realmente chegamos ao Paraíso
+(relativo) em que alguém <b>realmente</b> ensina, e em que alguém
+<b>realmente</b> aprende. 
+</p>
+
+<p>
+Os demais continuam a comprar pirâmides, e a se banhar em ilusões,
+muitas vezes, a respeito de si próprios.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> 2017-03-01T12:09:55 &#x2013; Prá tudo se acabar na 4<sup>a</sup> feira</h2>
+<div class="outline-text-2" id="text-2">
 <p>
 O primeiro dia depois do Carnaval, esta 4<sup>a</sup> feira, 1<sup>o</sup> de março de 2017,
 amanheceu nublada em Curitiba. É impossível não sentir um pouco da tristeza
@@ -305,7 +398,7 @@ mais triste e fechado, e mais frio, faz parte da vida. Precisamos dele também,
 para produzir e ganhar a vida. Para equilibrar cérebro ora banhado de
 endorfinas e talvez mergulhado em dolorosa ressaca. Precisamos também dessa
 coisa sem-graça de acordar cedo, ir para o trabalho e a escola, voltar
-cansados para assistir às notícias do fim do dia na televisão, tomar banho,
+cansado para assistir às notícias do fim do dia na televisão, tomar banho,
 jantar e dormir.  Em alguns dias, a tristeza passa, e o nosso cérebro entende
 que precisamos trabalhar para pagar nossa comida. Sentimos mesmo um orgulho
 justificado de sermos capazes do equilíbrio, de não sermos ratos de
@@ -320,10 +413,9 @@ próximo Carnaval. Feliz 2017.
 </p>
 </div>
 </div>
-
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> 2017-01-28T10:45:21 &#x2013; Installing miniconda in Linux and Windows</h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> 2017-01-28T10:45:21 &#x2013; Installing miniconda in Linux and Windows</h2>
+<div class="outline-text-2" id="text-3">
 <p>
 Python is very popular, for good reason. Programming, debugging, and testing in
 Python is much faster than in older languages such as FORTRAN, Pascal, or
@@ -430,9 +522,9 @@ fuss).
 </p>
 </div>
 </div>
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> 2016-11-19T17:36:35 &#x2013; Opinião</h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> 2016-11-19T17:36:35 &#x2013; Opinião</h2>
+<div class="outline-text-2" id="text-4">
 <p>
 Ter opinião, posicionar-se.  Ver, diante de cada fato da vida que se apresenta
 para nós, a necessidade de tomar atitude, tomar partido ou simplesmente
@@ -476,9 +568,9 @@ E estamos precisando tanto avançar.
 </p>
 </div>
 </div>
-<div id="outline-container-sec-4" class="outline-2">
-<h2 id="sec-4"><span class="section-number-2">4</span> 2016-11-09T12:46:14 &#x2013; Serious work with Linux and Cinnamon</h2>
-<div class="outline-text-2" id="text-4">
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> 2016-11-09T12:46:14 &#x2013; Serious work with Linux and Cinnamon</h2>
+<div class="outline-text-2" id="text-5">
 <p>
 I have been a Linux user for a long time, and even before that I
 had benefitted greatly from open-source and free software such as DJGPP's Gnu
@@ -548,9 +640,9 @@ Linux way is a very good way.
 </p>
 </div>
 </div>
-<div id="outline-container-sec-5" class="outline-2">
-<h2 id="sec-5"><span class="section-number-2">5</span> 2016-11-05T19:45:22 &#x2013; Setting up a Homepage</h2>
-<div class="outline-text-2" id="text-5">
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> 2016-11-05T19:45:22 &#x2013; Setting up a Homepage</h2>
+<div class="outline-text-2" id="text-6">
 <p>
 It is painful not to be able to follow the pace of those who set up their
 homepages by snapping their fingers. But I got here:
@@ -580,9 +672,9 @@ can only wish you all a good end of Weekend.
 </div>
 </div>
 
-<div id="outline-container-sec-6" class="outline-2">
-<h2 id="sec-6"><span class="section-number-2">6</span> 2009-06-23T00:00:00 &#x2013; Professores podem errar (mas quanto?)</h2>
-<div class="outline-text-2" id="text-6">
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7"><span class="section-number-2">7</span> 2009-06-23T00:00:00 &#x2013; Professores podem errar (mas quanto?)</h2>
+<div class="outline-text-2" id="text-7">
 <p>
 Professores podem errar, e engana-se quem pensa o contrário. É impossível em
 uma sequência de dez, vinte aulas, não cometer erros: interpretações
@@ -643,9 +735,9 @@ fé. Tudo aquilo que um mau professor não faz.
 </p>
 </div>
 </div>
-<div id="outline-container-sec-7" class="outline-2">
-<h2 id="sec-7"><span class="section-number-2">7</span> 2009-03-20T00:00:00 &#x2013; O esforço de pensar</h2>
-<div class="outline-text-2" id="text-7">
+<div id="outline-container-sec-8" class="outline-2">
+<h2 id="sec-8"><span class="section-number-2">8</span> 2009-03-20T00:00:00 &#x2013; O esforço de pensar</h2>
+<div class="outline-text-2" id="text-8">
 <p>
 Na 4a feira, 2009-03-18, reuni-me com 3 alunos de pós-graduação para discutir
 um artigo que submetemos a uma revista, e que agora precisamos revisar à luz
@@ -705,9 +797,9 @@ se este artigo vai ser aceito.
 </p>
 </div>
 </div>
-<div id="outline-container-sec-8" class="outline-2">
-<h2 id="sec-8"><span class="section-number-2">8</span> 2009-03-12T00:00:00 &#x2013; O distante passado recente dos computadores</h2>
-<div class="outline-text-2" id="text-8">
+<div id="outline-container-sec-9" class="outline-2">
+<h2 id="sec-9"><span class="section-number-2">9</span> 2009-03-12T00:00:00 &#x2013; O distante passado recente dos computadores</h2>
+<div class="outline-text-2" id="text-9">
 <p>
 Segundo a Wikipedia, o primeiro compilador FORTRAN veio ao mundo em abril
 de 1957. FORTRAN é mais velho do que eu, que cheguei em junho de 1961. Nesta
@@ -763,9 +855,9 @@ filme.
 </p>
 </div>
 </div>
-<div id="outline-container-sec-9" class="outline-2">
-<h2 id="sec-9"><span class="section-number-2">9</span> 2008-08-06T00:00:00 &#x2013; Jovens e Velhos</h2>
-<div class="outline-text-2" id="text-9">
+<div id="outline-container-sec-10" class="outline-2">
+<h2 id="sec-10"><span class="section-number-2">10</span> 2008-08-06T00:00:00 &#x2013; Jovens e Velhos</h2>
+<div class="outline-text-2" id="text-10">
 <p>
 <b>(Ou a dialética do bom conflito de gerações)</b>
 </p>
@@ -900,9 +992,9 @@ urgentemente voltar aos hábitos da tribo: respeitar e ouvir os mais velhos.
 </p>
 </div>
 </div>
-<div id="outline-container-sec-10" class="outline-2">
-<h2 id="sec-10"><span class="section-number-2">10</span> 2008-06-10T00:00:00 &#x2013; O olhar hipnótico da serpente</h2>
-<div class="outline-text-2" id="text-10">
+<div id="outline-container-sec-11" class="outline-2">
+<h2 id="sec-11"><span class="section-number-2">11</span> 2008-06-10T00:00:00 &#x2013; O olhar hipnótico da serpente</h2>
+<div class="outline-text-2" id="text-11">
 <p>
 Há quem diga, mas deve ser um mito, que a serpente hipnotiza sua presa antes
 de dar o bote. A vítima fica imóvel, imobilizada, destinada a ser abocanhada
@@ -968,9 +1060,9 @@ vencer. Só nos resta, como São Jorge, Santo Guerreiro, combater.
 </p>
 </div>
 </div>
-<div id="outline-container-sec-11" class="outline-2">
-<h2 id="sec-11"><span class="section-number-2">11</span> 2008-06-01T00:00:00 &#x2013; Faça da Internet uma amiga</h2>
-<div class="outline-text-2" id="text-11">
+<div id="outline-container-sec-12" class="outline-2">
+<h2 id="sec-12"><span class="section-number-2">12</span> 2008-06-01T00:00:00 &#x2013; Faça da Internet uma amiga</h2>
+<div class="outline-text-2" id="text-12">
 <p>
 Tanto quanto eu sei, foi no século XVIII que se procurou fazer pela primeira
 vez uma Enciclopédia. A tentativa deu nome a um grupo de <i>savants</i>:
@@ -1015,9 +1107,9 @@ fofocas e abobrinhas na rede.
 </p>
 </div>
 </div>
-<div id="outline-container-sec-12" class="outline-2">
-<h2 id="sec-12"><span class="section-number-2">12</span> 2008-05-17T00:00:00 &#x2013; Ensino e Aprendizado são Diversão</h2>
-<div class="outline-text-2" id="text-12">
+<div id="outline-container-sec-13" class="outline-2">
+<h2 id="sec-13"><span class="section-number-2">13</span> 2008-05-17T00:00:00 &#x2013; Ensino e Aprendizado são Diversão</h2>
+<div class="outline-text-2" id="text-13">
 <p>
 Nunca consigo formular um bom motivo para alguém estudar: por que você deveria
 estudar? Porque isto é uma garantia de segurança financeira? Idealmente sim,
@@ -1097,9 +1189,9 @@ das coisas mais divertidas, mais prazeirosas, do mundo.
 </p>
 </div>
 </div>
-<div id="outline-container-sec-13" class="outline-2">
-<h2 id="sec-13"><span class="section-number-2">13</span> 2008-04-08T00:00:00 Recuperando o Saber</h2>
-<div class="outline-text-2" id="text-13">
+<div id="outline-container-sec-14" class="outline-2">
+<h2 id="sec-14"><span class="section-number-2">14</span> 2008-04-08T00:00:00 Recuperando o Saber</h2>
+<div class="outline-text-2" id="text-14">
 <p>
 Enquanto o ensino médio continua em sua queda livre, a Universidade quer
 aumentar a sua eficiência, diminuir as desistências, reduzir as suas taxas de
@@ -1163,9 +1255,9 @@ realidade de nossa ignorância.
 </p>
 </div>
 </div>
-<div id="outline-container-sec-14" class="outline-2">
-<h2 id="sec-14"><span class="section-number-2">14</span> 2008-03-25: Disciplina</h2>
-<div class="outline-text-2" id="text-14">
+<div id="outline-container-sec-15" class="outline-2">
+<h2 id="sec-15"><span class="section-number-2">15</span> 2008-03-25: Disciplina</h2>
+<div class="outline-text-2" id="text-15">
 <p>
 Hoje de manhã, na CBN, Cláudio Moura e Castro deu uma entrevista sobre a
 qualidade do ensino fundamental brasileiro. Tocou na ferida, comentou que este
@@ -1199,7 +1291,7 @@ coniventes: eles estão destruindo o futuro.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2017-03-01 Qua 12:45</p>
+<p class="date">Created: 2017-03-16 Qui 20:02</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.4)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
