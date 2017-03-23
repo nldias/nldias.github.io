@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Thoughts on computing, teaching, and most anything else &#x2026;</title>
-<!-- 2017-03-18 Sáb 17:53 -->
+<!-- 2017-03-18 Sáb 18:00 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -287,7 +287,7 @@ Android tablet can project on any screen via Google's Chromecast.
 <p>
 Therefore, I invested considerable money in buying a Samsung Galaxy Tab A (very
 light, 8-inch display book size), a cover/bookstand, the Chromecast, and a
-64-G SD external disk.
+64-G SD external card.
 </p>
 
 <p>
@@ -300,7 +300,7 @@ weigh 54 kg) uphill three times a week; and I am overall a happier lecturer.
 </p>
 
 <p>
-I also found out that the SD disk was almost useless, because very few
+I also found out that the SD card was almost useless, because very few
 applications can use it (Microsoft's Office and Dropbox cannot). But the
 device is so light and at the same time powerful (email, browsing, office
 documents, <a href="https://play.google.com/store/apps/details?id=com.rhmsoft.edit&hl=en">decent text editor</a>) that it was very tempting to think about also
@@ -341,7 +341,7 @@ Android LaTeX applications, and I even bought one of them, but none is
 flexible and good enough. It is not difficult to understand why LaTeX is
 missing as a native app for Android: it is <i>huge</i> (more than 1.5G), and
 Android internal storage is usually small (My Tab A has a 16G disk, and about
-5 are used up by the Operating System). <i>If only</i> the external SD disk could
+5 are used up by the Operating System). <i>If only</i> the external SD card could
 be used to install it.
 </p>
 
@@ -371,8 +371,8 @@ to GnuRoot for LaTeX and Maxima.
 
 <p>
 But for all this to be possible, and for internal disk space not to be a
-severe restriction, I wanted GnuRoot to be installed in the SD Disk. In the
-last week (or was it the week before the last), the second missing piece came
+severe restriction, I wanted GnuRoot to be installed in the SD card. In the
+last week (or was it the week before the last?), the second missing piece came
 into place. Samsung finally allowed by Tab A to upgrade to Android 6.0
 Marshmallow. In this version, you can make the external SD card "adoptable"
 (horrible name), meaning that it is seen by Android as a part of the internal
@@ -387,7 +387,7 @@ adoptable storage</a>.
 <p>
 It was a long route, and (unfortunately) people less inclined to hacking may
 not pull the trick, but it shows how promising cheap and light computing with
-tablets are. Here is the summary: my Samsung Galaxy Tab A now has a linux
+tablets is. Here is the summary: my Samsung Galaxy Tab A now has a linux
 sub-system called GnuRoot. I can see the files I create in this sub-system by
 going to what now is effectively only "internal memory" (but which actually
 includes the 64G SD card at some unseen mount point) and looking at the folder
@@ -408,11 +408,11 @@ storage may fill up. Therefore, I will still be careful not to bring too much
 data to live locally in Dropbox, and will also take a few other precautions
 because, after all, this is a tablet, not a computer. Android's file system is
 also complicated to understand when you navigate it, much differently from
-living in the simplicity of a Linux <i>\/home</i>. I don't care, because I will
+living in the simplicity of a Linux <i>home</i>. I don't care, because I will
 only use the Tab A for work on the go, and will always do this in a restricted
 mode: reading emails, fixing some LaTeX documents, opening some Word document
 sent by a less-illuminated creature, etc.. But this is so much more than I
-expected so thought possible when I bought the Tab A that I am really happy I did
+expected or thought possible when I bought the Tab A that I am really happy I did
 it.
 </p>
 
@@ -1467,7 +1467,7 @@ coniventes: eles estão destruindo o futuro.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2017-03-18 Sáb 17:53</p>
+<p class="date">Created: 2017-03-18 Sáb 18:00</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.4)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
