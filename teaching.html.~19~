@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2017-04-29 Sáb 14:44 -->
+<!-- 2017-04-18 Ter 11:00 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="viewport" content="width=device-width, initial-scale=1" />
 <title>Ensino (Teaching)</title>
@@ -235,7 +235,7 @@ for the JavaScript code in this tag.
 <li><a href="#orgheadline7">2.2. Avaliação da disciplina pelos alunos</a></li>
 <li><a href="#orgheadline8">2.3. Programa: tea010-prog-2017-1.pdf</a></li>
 <li><a href="#orgheadline9">2.4. Programa-como-realizado: tea010-prog-2017-1-check.pdf</a></li>
-<li><a href="#orgheadline10">2.5. Livro-texto: matappa-1ed.pdf</a></li>
+<li><a href="#orgheadline10">2.5. Livro-texto: matappa.pdf</a></li>
 <li><a href="#orgheadline11">2.6. Notas</a></li>
 <li><a href="#orgheadline12">2.7. Provas</a></li>
 <li><a href="#orgheadline13">2.8. Arquivos de provas passadas</a></li>
@@ -327,7 +327,7 @@ few times until HELP shows up).
 <h3 id="orgheadline9"><span class="section-number-3">2.4</span> Programa-como-realizado: <a href="./pdf/tea010-prog-2017-1-check.pdf">tea010-prog-2017-1-check.pdf</a></h3>
 </div>
 <div id="outline-container-orgheadline10" class="outline-3">
-<h3 id="orgheadline10"><span class="section-number-3">2.5</span> Livro-texto: <a href="./pdf/matappa-1ed.pdf">matappa-1ed.pdf</a></h3>
+<h3 id="orgheadline10"><span class="section-number-3">2.5</span> Livro-texto: <a href="./pdf/matappa.pdf">matappa.pdf</a></h3>
 </div>
 <div id="outline-container-orgheadline11" class="outline-3">
 <h3 id="orgheadline11"><span class="section-number-3">2.6</span> Notas</h3>
@@ -404,7 +404,7 @@ Faça o download do gabarito da P1: <a href="./pdf/2017-1-p01-sol.pdf">2017-1-p0
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2017-04-29 Sáb 14:44</p>
+<p class="date">Created: 2017-04-18 Ter 11:00</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
