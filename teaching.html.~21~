@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2017-03-23 Qui 09:14 -->
+<!-- 2017-05-01 Seg 09:37 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="viewport" content="width=device-width, initial-scale=1" />
 <title>Ensino (Teaching)</title>
@@ -235,18 +235,19 @@ for the JavaScript code in this tag.
 <li><a href="#orgheadline7">2.2. Avaliação da disciplina pelos alunos</a></li>
 <li><a href="#orgheadline8">2.3. Programa: tea010-prog-2017-1.pdf</a></li>
 <li><a href="#orgheadline9">2.4. Programa-como-realizado: tea010-prog-2017-1-check.pdf</a></li>
-<li><a href="#orgheadline10">2.5. Livro-texto: matappa.pdf</a></li>
+<li><a href="#orgheadline10">2.5. Livro-texto: matappa-1ed.pdf</a></li>
 <li><a href="#orgheadline11">2.6. Notas</a></li>
 <li><a href="#orgheadline12">2.7. Provas</a></li>
 <li><a href="#orgheadline13">2.8. Arquivos de provas passadas</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline19">3. TEA-752 Métodos Matemáticos em Engenharia Ambiental</a>
+<li><a href="#orgheadline20">3. TEA-752 Métodos Matemáticos em Engenharia Ambiental</a>
 <ul>
 <li><a href="#orgheadline15">3.1. Horário</a></li>
 <li><a href="#orgheadline16">3.2. Programa:  tea752-prog-2017-1.pdf</a></li>
 <li><a href="#orgheadline17">3.3. Programa-como-realizado: tea752-prog-2017-1-check.pdf</a></li>
 <li><a href="#orgheadline18">3.4. Notas de aula:  apple.pdf</a></li>
+<li><a href="#orgheadline19">3.5. Provas</a></li>
 </ul>
 </li>
 </ul>
@@ -326,16 +327,31 @@ few times until HELP shows up).
 <div id="outline-container-orgheadline9" class="outline-3">
 <h3 id="orgheadline9"><span class="section-number-3">2.4</span> Programa-como-realizado: <a href="./pdf/tea010-prog-2017-1-check.pdf">tea010-prog-2017-1-check.pdf</a></h3>
 </div>
-
 <div id="outline-container-orgheadline10" class="outline-3">
-<h3 id="orgheadline10"><span class="section-number-3">2.5</span> Livro-texto: <a href="./pdf/matappa.pdf">matappa.pdf</a></h3>
+<h3 id="orgheadline10"><span class="section-number-3">2.5</span> Livro-texto: <a href="./pdf/matappa-1ed.pdf">matappa-1ed.pdf</a></h3>
 </div>
 <div id="outline-container-orgheadline11" class="outline-3">
 <h3 id="orgheadline11"><span class="section-number-3">2.6</span> Notas</h3>
+<div class="outline-text-3" id="text-2-6">
+<p>
+Veja as <a href="./pdf/notpre2017-1.pdf">notas</a> até a P1: 
+</p>
+
+<p>
+2017-04-15: Estão abertas as revisões da P1.
+</p>
 </div>
+</div>
+
+
 
 <div id="outline-container-orgheadline12" class="outline-3">
 <h3 id="orgheadline12"><span class="section-number-3">2.7</span> Provas</h3>
+<div class="outline-text-3" id="text-2-7">
+<p>
+Faça o download do gabarito da P1: <a href="./pdf/2017-1-p01-sol.pdf">2017-1-p01-sol.pdf</a>
+</p>
+</div>
 </div>
 
 <div id="outline-container-orgheadline13" class="outline-3">
@@ -361,8 +377,8 @@ few times until HELP shows up).
 </div>
 
 
-<div id="outline-container-orgheadline19" class="outline-2">
-<h2 id="orgheadline19"><span class="section-number-2">3</span> TEA-752 Métodos Matemáticos em Engenharia Ambiental</h2>
+<div id="outline-container-orgheadline20" class="outline-2">
+<h2 id="orgheadline20"><span class="section-number-2">3</span> TEA-752 Métodos Matemáticos em Engenharia Ambiental</h2>
 <div class="outline-text-2" id="text-3">
 </div><div id="outline-container-orgheadline15" class="outline-3">
 <h3 id="orgheadline15"><span class="section-number-3">3.1</span> Horário</h3>
@@ -378,18 +394,29 @@ few times until HELP shows up).
 <h3 id="orgheadline16"><span class="section-number-3">3.2</span> Programa:  <a href="./pdf/tea752-prog-2017-1.pdf">tea752-prog-2017-1.pdf</a></h3>
 </div>
 
+
 <div id="outline-container-orgheadline17" class="outline-3">
 <h3 id="orgheadline17"><span class="section-number-3">3.3</span> Programa-como-realizado: <a href="./pdf/tea752-prog-2017-1-check.pdf">tea752-prog-2017-1-check.pdf</a></h3>
 </div>
 
+
 <div id="outline-container-orgheadline18" class="outline-3">
 <h3 id="orgheadline18"><span class="section-number-3">3.4</span> Notas de aula:  <a href="./pdf/apple.pdf">apple.pdf</a></h3>
+</div>
+
+<div id="outline-container-orgheadline19" class="outline-3">
+<h3 id="orgheadline19"><span class="section-number-3">3.5</span> Provas</h3>
+<div class="outline-text-3" id="text-3-5">
+<p>
+Faça o download do gabarito da P1: [[./pdf/tea752-2017-1-p01-sol.pdf][tea752-2017-1-p01-sol.pdf]
+</p>
+</div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2017-03-23 Qui 09:14</p>
+<p class="date">Created: 2017-05-01 Seg 09:37</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
