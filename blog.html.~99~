@@ -3,23 +3,30 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
+<!-- 2017-05-06 Sáb 13:20 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Thoughts on computing, teaching, and most anything else &#x2026;</title>
-<!-- 2017-03-18 Sáb 17:56 -->
-<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta  name="generator" content="Org-mode" />
-<meta  name="author" content="Nelson Luís Dias" />
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Nelson Luís Dias" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
-  .title  { text-align: center; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
   .todo   { font-family: monospace; color: red; }
-  .done   { color: green; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
   .tag    { background-color: #eee; font-family: monospace;
             padding: 2px; font-size: 80%; font-weight: normal; }
   .timestamp { color: #bebebe; }
   .timestamp-kwd { color: #5f9ea0; }
-  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
-  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
-  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
   .underline { text-decoration: underline; }
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
@@ -46,25 +53,110 @@
     border: 1px solid black;
   }
   pre.src:hover:before { display: inline;}
-  pre.src-sh:before    { content: 'sh'; }
-  pre.src-bash:before  { content: 'sh'; }
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
   pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-R:before     { content: 'R'; }
-  pre.src-perl:before  { content: 'Perl'; }
-  pre.src-java:before  { content: 'Java'; }
-  pre.src-sql:before   { content: 'SQL'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
 
   table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
   td, th { vertical-align:top;  }
-  th.right  { text-align: center;  }
-  th.left   { text-align: center;   }
-  th.center { text-align: center; }
-  td.right  { text-align: right;  }
-  td.left   { text-align: left;   }
-  td.center { text-align: center; }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
   dt { font-weight: bold; }
-  .footpara:nth-child(2) { display: inline; }
-  .footpara { display: block; }
+  .footpara { display: inline; }
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
@@ -84,9 +176,10 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
-<link rel="stylesheet" type="text/css" href="readtheorg.css" />
+<link rel="stylesheet" type="text/css" href="light.css" />
 
 <script type="text/javascript" src="org-info.js">
 /**
@@ -214,22 +307,22 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#sec-1">1. 2017-03-18T12:12:57 &#x2013; LaTeX on the go in an Android Tablet (and much more)</a></li>
-<li><a href="#sec-2">2. 2017-03-16T19:28:07 &#x2013; O tempo do fim das ilusões</a></li>
-<li><a href="#sec-3">3. 2017-03-01T12:09:55 &#x2013; Prá tudo se acabar na 4<sup>a</sup> feira</a></li>
-<li><a href="#sec-4">4. 2017-01-28T10:45:21 &#x2013; Installing miniconda in Linux and Windows</a></li>
-<li><a href="#sec-5">5. 2016-11-19T17:36:35 &#x2013; Opinião</a></li>
-<li><a href="#sec-6">6. 2016-11-09T12:46:14 &#x2013; Serious work with Linux and Cinnamon</a></li>
-<li><a href="#sec-7">7. 2016-11-05T19:45:22 &#x2013; Setting up a Homepage</a></li>
-<li><a href="#sec-8">8. 2009-06-23T00:00:00 &#x2013; Professores podem errar (mas quanto?)</a></li>
-<li><a href="#sec-9">9. 2009-03-20T00:00:00 &#x2013; O esforço de pensar</a></li>
-<li><a href="#sec-10">10. 2009-03-12T00:00:00 &#x2013; O distante passado recente dos computadores</a></li>
-<li><a href="#sec-11">11. 2008-08-06T00:00:00 &#x2013; Jovens e Velhos</a></li>
-<li><a href="#sec-12">12. 2008-06-10T00:00:00 &#x2013; O olhar hipnótico da serpente</a></li>
-<li><a href="#sec-13">13. 2008-06-01T00:00:00 &#x2013; Faça da Internet uma amiga</a></li>
-<li><a href="#sec-14">14. 2008-05-17T00:00:00 &#x2013; Ensino e Aprendizado são Diversão</a></li>
-<li><a href="#sec-15">15. 2008-04-08T00:00:00 Recuperando o Saber</a></li>
-<li><a href="#sec-16">16. 2008-03-25: Disciplina</a></li>
+<li><a href="#org964a39c">1. 2017-03-18T12:12:57 &#x2013; LaTeX on the go in an Android Tablet (and much more)</a></li>
+<li><a href="#org51534d3">2. 2017-03-16T19:28:07 &#x2013; O tempo do fim das ilusões</a></li>
+<li><a href="#orgcc2784d">3. 2017-03-01T12:09:55 &#x2013; Prá tudo se acabar na 4<sup>a</sup> feira</a></li>
+<li><a href="#org46b19f0">4. 2017-01-28T10:45:21 &#x2013; Installing miniconda in Linux and Windows</a></li>
+<li><a href="#org89b9549">5. 2016-11-19T17:36:35 &#x2013; Opinião</a></li>
+<li><a href="#org77c2f63">6. 2016-11-09T12:46:14 &#x2013; Serious work with Linux and Cinnamon</a></li>
+<li><a href="#orge84310a">7. 2016-11-05T19:45:22 &#x2013; Setting up a Homepage</a></li>
+<li><a href="#orgb8eb392">8. 2009-06-23T00:00:00 &#x2013; Professores podem errar (mas quanto?)</a></li>
+<li><a href="#org97d74d8">9. 2009-03-20T00:00:00 &#x2013; O esforço de pensar</a></li>
+<li><a href="#org86196db">10. 2009-03-12T00:00:00 &#x2013; O distante passado recente dos computadores</a></li>
+<li><a href="#org774ec0a">11. 2008-08-06T00:00:00 &#x2013; Jovens e Velhos</a></li>
+<li><a href="#orgaaa1211">12. 2008-06-10T00:00:00 &#x2013; O olhar hipnótico da serpente</a></li>
+<li><a href="#org21609ab">13. 2008-06-01T00:00:00 &#x2013; Faça da Internet uma amiga</a></li>
+<li><a href="#org41ad527">14. 2008-05-17T00:00:00 &#x2013; Ensino e Aprendizado são Diversão</a></li>
+<li><a href="#org124849d">15. 2008-04-08T00:00:00 Recuperando o Saber</a></li>
+<li><a href="#orgb3fe20e">16. 2008-03-25: Disciplina</a></li>
 </ul>
 </div>
 </div>
@@ -249,12 +342,11 @@ Os artigos deste <i>Blog</i> obedecerão à seguinte regra de conduta auto-impos
 <ul class="org-ul">
 <li>Não haverá críticas nominais a ninguém. Se eu não gosto de você, pode estar
 certo(a) de que seu nome não aparecerá aqui criticado ou atacado em nenhum
-sentido. 
-</li>
+sentido.</li>
 </ul>
 
 
-<hr  />
+<hr />
 
 <p>
 The articles in this Blog will obey the following self-imposed rule of conduct:
@@ -262,13 +354,12 @@ The articles in this Blog will obey the following self-imposed rule of conduct:
 <ul class="org-ul">
 <li>There will be no criticism against nominated persons. If I don't like you, you
 can rest assured that your name will not appear here under criticism or any
-kind of attack, in no sense whatsoever.
-</li>
+kind of attack, in no sense whatsoever.</li>
 </ul>
 
 
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> 2017-03-18T12:12:57 &#x2013; LaTeX on the go in an Android Tablet (and much more)</h2>
+<div id="outline-container-org964a39c" class="outline-2">
+<h2 id="org964a39c"><span class="section-number-2">1</span> 2017-03-18T12:12:57 &#x2013; LaTeX on the go in an Android Tablet (and much more)</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 A little more than a year ago, I decided that carrying a notebook and a slide
@@ -303,7 +394,7 @@ weigh 54 kg) uphill three times a week; and I am overall a happier lecturer.
 I also found out that the SD card was almost useless, because very few
 applications can use it (Microsoft's Office and Dropbox cannot). But the
 device is so light and at the same time powerful (email, browsing, office
-documents, <a href="https://play.google.com/store/apps/details?id=com.rhmsoft.edit&hl=en">decent text editor</a>) that it was very tempting to think about also
+documents, <a href="https://play.google.com/store/apps/details?id=com.rhmsoft.edit&amp;hl=en">decent text editor</a>) that it was very tempting to think about also
 using it alone when attending conferences and away from home and office. This
 means leaving my slim ultrabook (a Lenovo Yoga 2) at home. It also means that
 instead of 6 hours maximum battery time, I would have perhaps 24 hours. 
@@ -317,14 +408,14 @@ bluetooth keyboard that we had bought for her to use with an Ipad. Best
 present she ever gave me: the Tab A recognizes it and everything works fine. I
 also type a lot in Portuguese (my native language) and for that I need
 accents!  When Android links to an external Bluetooth keyboard it does not
-seem to be very generous with that demand. <a href="https://play.google.com/store/apps/details?id=com.apedroid.hwkeyboardhelper&hl=en">EKH</a> is a premium app that allowed
+seem to be very generous with that demand. <a href="https://play.google.com/store/apps/details?id=com.apedroid.hwkeyboardhelper&amp;hl=en">EKH</a> is a premium app that allowed
 me to configure dead keys in the Keyboard to a "US-International" layout. It
 cost a few bucks, but it is well worth it (and worked with the two keyboards
 that I tried).
 </p>
 
 <p>
-But to do <i>real</i> work, I need <a href="https://www.python.org/Python">Python</a>, <a href="http://maxima.sourceforge.net/Maxima">Maxima</a>, <a href="http://www.gnuplot.info">Gnuplot</a>, <a href="https://www.gnu.org/software/emacs/">Emacs</a>, and, most of
+But to do <i>real</i> work, I need <a href="https://www.python.org/Python">Python</a>, <a href="http://maxima.sourceforge.net/Maxima">Maxima</a>, <a href="http://www.gnuplot.info/">Gnuplot</a>, <a href="https://www.gnu.org/software/emacs/">Emacs</a>, and, most of
 all, I need <a href="https://www.latex-project.org/">LaTeX</a>. This complicates matters a lot. Python, Gnuplot and Emacs
 come via a very nice app called <a href="https://termux.com/">Termux</a>. Termux runs a bash shell and allows to
 install many Linux/Unix command-line utilities. Discovering Termux allowed me
@@ -347,7 +438,7 @@ be used to install it.
 
 <p>
 The two missing pieces came together during last week. First, I found an app
-called <a href="https://play.google.com/store/apps/details?id=com.apedroid.hwkeyboardhelper&hl=en">GnuRoot Debian</a>. There are others (GnuRoot Wheezy, GnuRoot, etc.), but
+called <a href="https://play.google.com/store/apps/details?id=com.apedroid.hwkeyboardhelper&amp;hl=en">GnuRoot Debian</a>. There are others (GnuRoot Wheezy, GnuRoot, etc.), but
 after some trials this was what made me happiest. After installation, GnuRoot
 provides many more applications than Termux. These are actually (from what I
 can understand) Linux, not Android, native applications, only compiled for the
@@ -365,7 +456,7 @@ shif-option).
 <p>
 Redundancy (Termux and GnuRoot) is important in real life, so I kept the two
 of them. I go to Termux for Emacs and Python (but I may use Python in GnuRoot
-as well, particularly if I ever need <a href="#sec-4">Miniconda</a> in the tablet), and (for now)
+as well, particularly if I ever need <a href="#org46b19f0">Miniconda</a> in the tablet), and (for now)
 to GnuRoot for LaTeX and Maxima. 
 </p>
 
@@ -387,7 +478,7 @@ adoptable storage</a>.
 <p>
 It was a long route, and (unfortunately) people less inclined to hacking may
 not pull the trick, but it shows how promising cheap and light computing with
-tablets are. Here is the summary: my Samsung Galaxy Tab A now has a linux
+tablets is. Here is the summary: my Samsung Galaxy Tab A now has a linux
 sub-system called GnuRoot. I can see the files I create in this sub-system by
 going to what now is effectively only "internal memory" (but which actually
 includes the 64G SD card at some unseen mount point) and looking at the folder
@@ -396,7 +487,7 @@ via USB, I can copy and paste files in both directions. Whenever I come back
 from a trip, whatever documents and presentations I created in LaTeX can be
 backed up. I can also do it directly from the tablet using Dropbox. Very
 serious research work can be done in GnuRoot, as well, with Python, Gnuplot,
-Maxima, and if need be, FORTRAN, C, or <a href="#sec-4">Miniconda</a> (for numba; Termux has numpy
+Maxima, and if need be, FORTRAN, C, or <a href="#org46b19f0">Miniconda</a> (for numba; Termux has numpy
 as well as GnuRoot).
 </p>
 
@@ -408,11 +499,11 @@ storage may fill up. Therefore, I will still be careful not to bring too much
 data to live locally in Dropbox, and will also take a few other precautions
 because, after all, this is a tablet, not a computer. Android's file system is
 also complicated to understand when you navigate it, much differently from
-living in the simplicity of a Linux <i>\/home</i>. I don't care, because I will
+living in the simplicity of a Linux <i>home</i>. I don't care, because I will
 only use the Tab A for work on the go, and will always do this in a restricted
 mode: reading emails, fixing some LaTeX documents, opening some Word document
 sent by a less-illuminated creature, etc.. But this is so much more than I
-expected so thought possible when I bought the Tab A that I am really happy I did
+expected or thought possible when I bought the Tab A that I am really happy I did
 it.
 </p>
 
@@ -437,8 +528,9 @@ Brazil. I hope to see it happen very soon.
 </div>
 </div>
 
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> 2017-03-16T19:28:07 &#x2013; O tempo do fim das ilusões</h2>
+
+<div id="outline-container-org51534d3" class="outline-2">
+<h2 id="org51534d3"><span class="section-number-2">2</span> 2017-03-16T19:28:07 &#x2013; O tempo do fim das ilusões</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Por algum motivo, talvez alguma vantagem evolutiva, nós seres
@@ -531,8 +623,9 @@ muitas vezes, a respeito de si próprios.
 </div>
 </div>
 
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> 2017-03-01T12:09:55 &#x2013; Prá tudo se acabar na 4<sup>a</sup> feira</h2>
+
+<div id="outline-container-orgcc2784d" class="outline-2">
+<h2 id="orgcc2784d"><span class="section-number-2">3</span> 2017-03-01T12:09:55 &#x2013; Prá tudo se acabar na 4<sup>a</sup> feira</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 O primeiro dia depois do Carnaval, esta 4<sup>a</sup> feira, 1<sup>o</sup> de março de 2017,
@@ -588,8 +681,9 @@ próximo Carnaval. Feliz 2017.
 </div>
 </div>
 
-<div id="outline-container-sec-4" class="outline-2">
-<h2 id="sec-4"><span class="section-number-2">4</span> 2017-01-28T10:45:21 &#x2013; Installing miniconda in Linux and Windows</h2>
+
+<div id="outline-container-org46b19f0" class="outline-2">
+<h2 id="org46b19f0"><span class="section-number-2">4</span> 2017-01-28T10:45:21 &#x2013; Installing miniconda in Linux and Windows</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 Python is very popular, for good reason. Programming, debugging, and testing in
@@ -607,11 +701,13 @@ both, free of trouble, you should use miniconda
 installer for your Operating System:
 </p>
 <ul class="org-ul">
-<li>In Linux, I install it locally below my home directory, at
+<li><p>
+In Linux, I install it locally below my home directory, at
 <code>/home/nldias/miniconda3</code>. At the end of installation, in Linux, miniconda
 offers to add Anaconda to the PATH variable. DO NOT
 ACCEPT THAT, because it will create a conflict with your pre-installed
 Python in Linux. 
+</p>
 
 <p>
 Not accepting miniconda to change your PATH will leave you with a miniconda
@@ -620,8 +716,7 @@ I change my Python shebang to
 </p>
 
 <div class="org-src-container">
-
-<pre class="src src-python"><span style="color: #b22222;">#</span><span style="color: #b22222;">!/home/nldias/miniconda3/bin/python</span>
+<pre class="src src-python">#!/home/nldias/miniconda3/bin/python
 </pre>
 </div>
 
@@ -634,28 +729,31 @@ installation. You still want numpy and numba, however. For that, you should:
 cd ~/miniconda3/bin
 ./conda install numpy
 ./conda install numba
-</pre>
-</li>
+</pre></li>
 </ul>
 
 
 
 
 <ul class="org-ul">
-<li>In Windows, I install it locally below my home directory, at
+<li><p>
+In Windows, I install it locally below my home directory, at
 <code>C:\Users\IEUser\Miniconda3</code> (I use Windows very seldom, always in a Virtual
 Machine inside Linux, and for that I use Microsoft's freely available
 Windows Virtual Machines). At the beginning of the installation, miniconda
 offers to add Anaconda to the PATH. ACCEPT THAT if miniconda is the only
 Python you have in Windows.
+</p>
 
 <p>
 Two more steps are needed in Windows, unfortunately:
 </p>
 <ol class="org-ol">
-<li>Make files with the <code>.PY</code> extension executable, by going to Control Panel
+<li><p>
+Make files with the <code>.PY</code> extension executable, by going to Control Panel
 -&gt; System and Security -&gt; System -&gt; Advanced Configurations, and editing
 the System Variable PATHEXT. The variable looks something like
+</p>
 <pre class="example">
 .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
 </pre>
@@ -664,18 +762,18 @@ You should change it to something like
 </p>
 <pre class="example">
 .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY
-</pre>
-</li>
-<li>Go to File Explorer, right-click on any <code>*.py</code> file that you may have,
+</pre></li>
+<li><p>
+Go to File Explorer, right-click on any <code>*.py</code> file that you may have,
 choose Properties, and tell Windows to open the files with <code>*.PY</code>
 extension with
+</p>
 <pre class="example">
 C:\Users\IEUser\Miniconda3\python
 </pre>
 <p>
 That should do it.
-</p>
-</li>
+</p></li>
 </ol>
 <p>
 You still want numpy and numba, however. For that, you should:
@@ -684,8 +782,7 @@ You still want numpy and numba, however. For that, you should:
 cd C:\Users\IEUser\Miniconda3
 conda install numpy
 conda install numba
-</pre>
-</li>
+</pre></li>
 </ul>
 
 
@@ -698,8 +795,9 @@ fuss).
 </div>
 </div>
 
-<div id="outline-container-sec-5" class="outline-2">
-<h2 id="sec-5"><span class="section-number-2">5</span> 2016-11-19T17:36:35 &#x2013; Opinião</h2>
+
+<div id="outline-container-org89b9549" class="outline-2">
+<h2 id="org89b9549"><span class="section-number-2">5</span> 2016-11-19T17:36:35 &#x2013; Opinião</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 Ter opinião, posicionar-se.  Ver, diante de cada fato da vida que se apresenta
@@ -744,8 +842,9 @@ E estamos precisando tanto avançar.
 </p>
 </div>
 </div>
-<div id="outline-container-sec-6" class="outline-2">
-<h2 id="sec-6"><span class="section-number-2">6</span> 2016-11-09T12:46:14 &#x2013; Serious work with Linux and Cinnamon</h2>
+
+<div id="outline-container-org77c2f63" class="outline-2">
+<h2 id="org77c2f63"><span class="section-number-2">6</span> 2016-11-09T12:46:14 &#x2013; Serious work with Linux and Cinnamon</h2>
 <div class="outline-text-2" id="text-6">
 <p>
 I have been a Linux user for a long time, and even before that I
@@ -816,20 +915,19 @@ Linux way is a very good way.
 </p>
 </div>
 </div>
-<div id="outline-container-sec-7" class="outline-2">
-<h2 id="sec-7"><span class="section-number-2">7</span> 2016-11-05T19:45:22 &#x2013; Setting up a Homepage</h2>
+
+<div id="outline-container-orge84310a" class="outline-2">
+<h2 id="orge84310a"><span class="section-number-2">7</span> 2016-11-05T19:45:22 &#x2013; Setting up a Homepage</h2>
 <div class="outline-text-2" id="text-7">
 <p>
 It is painful not to be able to follow the pace of those who set up their
 homepages by snapping their fingers. But I got here:
-<a href="http://nldias.github.io">http://nldias.github.io</a> is online as of today. The way I did it was:
+<a href="http://nldias.github.io/">http://nldias.github.io/</a> is online as of today. The way I did it was:
 </p>
 <ul class="org-ul">
-<li>Using Emacs, and org-mode. 
-</li>
-<li>Using github's <a href="http://github.io">http://github.io</a> impressive, and free, offer of a homepage
-for everyone.
-</li>
+<li>Using Emacs, and org-mode.</li>
+<li>Using github's <a href="http://github.io/">http://github.io/</a> impressive, and free, offer of a homepage
+for everyone.</li>
 </ul>
 <p>
 I may give you the detailed "how-to" later, or maybe not. But the fact is, I
@@ -847,9 +945,8 @@ can only wish you all a good end of Weekend.
 </p>
 </div>
 </div>
-
-<div id="outline-container-sec-8" class="outline-2">
-<h2 id="sec-8"><span class="section-number-2">8</span> 2009-06-23T00:00:00 &#x2013; Professores podem errar (mas quanto?)</h2>
+<div id="outline-container-orgb8eb392" class="outline-2">
+<h2 id="orgb8eb392"><span class="section-number-2">8</span> 2009-06-23T00:00:00 &#x2013; Professores podem errar (mas quanto?)</h2>
 <div class="outline-text-2" id="text-8">
 <p>
 Professores podem errar, e engana-se quem pensa o contrário. É impossível em
@@ -911,8 +1008,9 @@ fé. Tudo aquilo que um mau professor não faz.
 </p>
 </div>
 </div>
-<div id="outline-container-sec-9" class="outline-2">
-<h2 id="sec-9"><span class="section-number-2">9</span> 2009-03-20T00:00:00 &#x2013; O esforço de pensar</h2>
+
+<div id="outline-container-org97d74d8" class="outline-2">
+<h2 id="org97d74d8"><span class="section-number-2">9</span> 2009-03-20T00:00:00 &#x2013; O esforço de pensar</h2>
 <div class="outline-text-2" id="text-9">
 <p>
 Na 4a feira, 2009-03-18, reuni-me com 3 alunos de pós-graduação para discutir
@@ -973,8 +1071,9 @@ se este artigo vai ser aceito.
 </p>
 </div>
 </div>
-<div id="outline-container-sec-10" class="outline-2">
-<h2 id="sec-10"><span class="section-number-2">10</span> 2009-03-12T00:00:00 &#x2013; O distante passado recente dos computadores</h2>
+
+<div id="outline-container-org86196db" class="outline-2">
+<h2 id="org86196db"><span class="section-number-2">10</span> 2009-03-12T00:00:00 &#x2013; O distante passado recente dos computadores</h2>
 <div class="outline-text-2" id="text-10">
 <p>
 Segundo a Wikipedia, o primeiro compilador FORTRAN veio ao mundo em abril
@@ -1031,8 +1130,9 @@ filme.
 </p>
 </div>
 </div>
-<div id="outline-container-sec-11" class="outline-2">
-<h2 id="sec-11"><span class="section-number-2">11</span> 2008-08-06T00:00:00 &#x2013; Jovens e Velhos</h2>
+
+<div id="outline-container-org774ec0a" class="outline-2">
+<h2 id="org774ec0a"><span class="section-number-2">11</span> 2008-08-06T00:00:00 &#x2013; Jovens e Velhos</h2>
 <div class="outline-text-2" id="text-11">
 <p>
 <b>(Ou a dialética do bom conflito de gerações)</b>
@@ -1168,8 +1268,9 @@ urgentemente voltar aos hábitos da tribo: respeitar e ouvir os mais velhos.
 </p>
 </div>
 </div>
-<div id="outline-container-sec-12" class="outline-2">
-<h2 id="sec-12"><span class="section-number-2">12</span> 2008-06-10T00:00:00 &#x2013; O olhar hipnótico da serpente</h2>
+
+<div id="outline-container-orgaaa1211" class="outline-2">
+<h2 id="orgaaa1211"><span class="section-number-2">12</span> 2008-06-10T00:00:00 &#x2013; O olhar hipnótico da serpente</h2>
 <div class="outline-text-2" id="text-12">
 <p>
 Há quem diga, mas deve ser um mito, que a serpente hipnotiza sua presa antes
@@ -1236,8 +1337,9 @@ vencer. Só nos resta, como São Jorge, Santo Guerreiro, combater.
 </p>
 </div>
 </div>
-<div id="outline-container-sec-13" class="outline-2">
-<h2 id="sec-13"><span class="section-number-2">13</span> 2008-06-01T00:00:00 &#x2013; Faça da Internet uma amiga</h2>
+
+<div id="outline-container-org21609ab" class="outline-2">
+<h2 id="org21609ab"><span class="section-number-2">13</span> 2008-06-01T00:00:00 &#x2013; Faça da Internet uma amiga</h2>
 <div class="outline-text-2" id="text-13">
 <p>
 Tanto quanto eu sei, foi no século XVIII que se procurou fazer pela primeira
@@ -1283,8 +1385,9 @@ fofocas e abobrinhas na rede.
 </p>
 </div>
 </div>
-<div id="outline-container-sec-14" class="outline-2">
-<h2 id="sec-14"><span class="section-number-2">14</span> 2008-05-17T00:00:00 &#x2013; Ensino e Aprendizado são Diversão</h2>
+
+<div id="outline-container-org41ad527" class="outline-2">
+<h2 id="org41ad527"><span class="section-number-2">14</span> 2008-05-17T00:00:00 &#x2013; Ensino e Aprendizado são Diversão</h2>
 <div class="outline-text-2" id="text-14">
 <p>
 Nunca consigo formular um bom motivo para alguém estudar: por que você deveria
@@ -1365,8 +1468,9 @@ das coisas mais divertidas, mais prazeirosas, do mundo.
 </p>
 </div>
 </div>
-<div id="outline-container-sec-15" class="outline-2">
-<h2 id="sec-15"><span class="section-number-2">15</span> 2008-04-08T00:00:00 Recuperando o Saber</h2>
+
+<div id="outline-container-org124849d" class="outline-2">
+<h2 id="org124849d"><span class="section-number-2">15</span> 2008-04-08T00:00:00 Recuperando o Saber</h2>
 <div class="outline-text-2" id="text-15">
 <p>
 Enquanto o ensino médio continua em sua queda livre, a Universidade quer
@@ -1431,8 +1535,9 @@ realidade de nossa ignorância.
 </p>
 </div>
 </div>
-<div id="outline-container-sec-16" class="outline-2">
-<h2 id="sec-16"><span class="section-number-2">16</span> 2008-03-25: Disciplina</h2>
+
+<div id="outline-container-orgb3fe20e" class="outline-2">
+<h2 id="orgb3fe20e"><span class="section-number-2">16</span> 2008-03-25: Disciplina</h2>
 <div class="outline-text-2" id="text-16">
 <p>
 Hoje de manhã, na CBN, Cláudio Moura e Castro deu uma entrevista sobre a
@@ -1467,8 +1572,7 @@ coniventes: eles estão destruindo o futuro.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2017-03-18 Sáb 17:56</p>
-<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.4)</p>
+<p class="date">Created: 2017-05-06 Sáb 13:20</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

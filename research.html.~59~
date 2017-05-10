@@ -3,12 +3,12 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2017-03-23 Qui 09:14 -->
-<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta  name="viewport" content="width=device-width, initial-scale=1" />
+<!-- 2017-05-06 Sáb 14:02 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Pesquisa (Research)</title>
-<meta  name="generator" content="Org-mode" />
-<meta  name="author" content="Nelson Luís Dias" />
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Nelson Luís Dias" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
@@ -53,13 +53,97 @@
     border: 1px solid black;
   }
   pre.src:hover:before { display: inline;}
-  pre.src-sh:before    { content: 'sh'; }
-  pre.src-bash:before  { content: 'sh'; }
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
   pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-R:before     { content: 'R'; }
-  pre.src-perl:before  { content: 'Perl'; }
-  pre.src-java:before  { content: 'Java'; }
-  pre.src-sql:before   { content: 'SQL'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
 
   table { border-collapse:collapse; }
   caption.t-above { caption-side: top; }
@@ -92,9 +176,10 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
-<link rel="stylesheet" type="text/css" href="readtheorg.css" />
+<link rel="stylesheet" type="text/css" href="light.css" />
 
 <script type="text/javascript" src="org-info.js">
 /**
@@ -222,17 +307,17 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgheadline1">1. Interesses de pesquisa (Research interests)</a></li>
-<li><a href="#orgheadline2">2. Talks</a></li>
-<li><a href="#orgheadline3">3. Current themes</a></li>
-<li><a href="#orgheadline4">4. Novos temas/New themes</a></li>
-<li><a href="#orgheadline7">5. Projects</a>
+<li><a href="#org00181b7">1. Interesses de pesquisa (Research interests)</a></li>
+<li><a href="#org44a14d1">2. Talks</a></li>
+<li><a href="#org98fa7dc">3. Current themes</a></li>
+<li><a href="#org5217963">4. Novos temas/New themes</a></li>
+<li><a href="#orga4de7ef">5. Projects</a>
 <ul>
-<li><a href="#orgheadline5">5.1. Large (many people, many institutions) projects</a></li>
-<li><a href="#orgheadline6">5.2. Small (few people, few institutions) projects</a></li>
+<li><a href="#org8fef3ba">5.1. Large (many people, many institutions) projects</a></li>
+<li><a href="#orgcaa4420">5.2. Small (few people, few institutions) projects</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline8">6. Publications</a></li>
+<li><a href="#orgc43a6fb">6. Publications</a></li>
 </ul>
 </div>
 </div>
@@ -246,8 +331,8 @@ few times until HELP shows up).
 <a href="index.html">Home</a>
 </p>
 
-<div id="outline-container-orgheadline1" class="outline-2">
-<h2 id="orgheadline1"><span class="section-number-2">1</span> Interesses de pesquisa (Research interests)</h2>
+<div id="outline-container-org00181b7" class="outline-2">
+<h2 id="org00181b7"><span class="section-number-2">1</span> Interesses de pesquisa (Research interests)</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Meus interesses de pesquisa incluem Hidrologia, Micrometeorologia, Turbulência
@@ -265,8 +350,8 @@ Evaporation, Rainfall-Runoof Models, Air Quality Models, etc..
 </div>
 
 
-<div id="outline-container-orgheadline2" class="outline-2">
-<h2 id="orgheadline2"><span class="section-number-2">2</span> Talks</h2>
+<div id="outline-container-org44a14d1" class="outline-2">
+<h2 id="org44a14d1"><span class="section-number-2">2</span> Talks</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 You  may have a glimpse of my research by looking at some of my talks. Here is a sample.
@@ -297,8 +382,8 @@ See <a href="https://www.dropbox.com/s/oohm0lv1dydnd0x/nldias-bpwide2.pdf?dl=0">
 
 
 
-<div id="outline-container-orgheadline3" class="outline-2">
-<h2 id="orgheadline3"><span class="section-number-2">3</span> Current themes</h2>
+<div id="outline-container-org98fa7dc" class="outline-2">
+<h2 id="org98fa7dc"><span class="section-number-2">3</span> Current themes</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 Below is a sample of research themes I am currently working on. They are more
@@ -330,8 +415,8 @@ the search for new analytical solutions.</li>
 </div>
 
 
-<div id="outline-container-orgheadline4" class="outline-2">
-<h2 id="orgheadline4"><span class="section-number-2">4</span> Novos temas/New themes</h2>
+<div id="outline-container-org5217963" class="outline-2">
+<h2 id="org5217963"><span class="section-number-2">4</span> Novos temas/New themes</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 Eis aqui alguns desdobramentos dos meus temas atuais, e novos possíveis temas,
@@ -339,7 +424,7 @@ para alunos interessados em serem orientados por mim (em qualquer nível:
 graduação (IC/TCC), mestrado, ou doutorado).
 </p>
 
-<hr  />
+<hr />
 
 <p>
 Here are a few sequels of the current themes, and possible new themes for
@@ -359,8 +444,8 @@ subterrâneas.</li>
 
 
 
-<div id="outline-container-orgheadline7" class="outline-2">
-<h2 id="orgheadline7"><span class="section-number-2">5</span> Projects</h2>
+<div id="outline-container-orga4de7ef" class="outline-2">
+<h2 id="orga4de7ef"><span class="section-number-2">5</span> Projects</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 I participate in projects large and small. There is no implication that the
@@ -368,8 +453,8 @@ large ones are better than the small ones. They are just bigger.
 </p>
 </div>
 
-<div id="outline-container-orgheadline5" class="outline-3">
-<h3 id="orgheadline5"><span class="section-number-3">5.1</span> Large (many people, many institutions) projects</h3>
+<div id="outline-container-org8fef3ba" class="outline-3">
+<h3 id="org8fef3ba"><span class="section-number-3">5.1</span> Large (many people, many institutions) projects</h3>
 <div class="outline-text-3" id="text-5-1">
 <ul class="org-ul">
 <li>Go Amazon <a href="http://campaign.arm.gov/goamazon2014/">http://campaign.arm.gov/goamazon2014/</a></li>
@@ -378,8 +463,8 @@ large ones are better than the small ones. They are just bigger.
 </div>
 </div>
 
-<div id="outline-container-orgheadline6" class="outline-3">
-<h3 id="orgheadline6"><span class="section-number-3">5.2</span> Small (few people, few institutions) projects</h3>
+<div id="outline-container-orgcaa4420" class="outline-3">
+<h3 id="orgcaa4420"><span class="section-number-3">5.2</span> Small (few people, few institutions) projects</h3>
 <div class="outline-text-3" id="text-5-2">
 <ul class="org-ul">
 <li>Disurg: Dinâmica da sub-camada rugosa sobre florestas (Dynamics of the
@@ -394,14 +479,15 @@ regionais (CNpq 303581/2013-1) <a href="pdf/declif.pdf">declif</a></li>
 </div>
 
 
-<div id="outline-container-orgheadline8" class="outline-2">
-<h2 id="orgheadline8"><span class="section-number-2">6</span> Publications</h2>
+<div id="outline-container-orgc43a6fb" class="outline-2">
+<h2 id="orgc43a6fb"><span class="section-number-2">6</span> Publications</h2>
 <div class="outline-text-2" id="text-6">
 <ul class="org-ul">
 <li>Chor, T. L.; Dias, N. L.; Araújo, A.; Wolff, S.; Zahn, E.; Manzi, A.; Trebs,
 I.; Sá, M. O.; Teixeira, P. R. &amp; Sörgel, M. Flux-variance and flux-gradient
 relationships in the roughness sublayer over the Amazon forest Agricultural
-and Forest Meteorology (Accepted), 2017</li>
+and Forest Meteorology, Elsevier, 2017, 239, 213-222.
+<a href="http://doi.org/10.1016/j.agrformet.2017.03.009">http://doi.org/10.1016/j.agrformet.2017.03.009</a></li>
 
 <li>Freire, L. S.; Gerken, T.; Ruiz-Plancarte, J.; Wei, D.; Fuentes, J. D.;
 Katul, G. G.; Dias, N. L.; Acevedo, O. C. &amp; Chamecki, M. Turbulent mixing
@@ -628,7 +714,7 @@ Brasileira de Engenharia, Caderno de Recursos Hídricos, 1988, 6, 65-91.</li>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2017-03-23 Qui 09:14</p>
+<p class="date">Created: 2017-05-06 Sáb 14:02</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

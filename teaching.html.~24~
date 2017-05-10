@@ -3,12 +3,12 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2017-04-18 Ter 11:00 -->
-<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta  name="viewport" content="width=device-width, initial-scale=1" />
+<!-- 2017-05-06 Sáb 14:02 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Ensino (Teaching)</title>
-<meta  name="generator" content="Org-mode" />
-<meta  name="author" content="Nelson Luís Dias" />
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Nelson Luís Dias" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
@@ -53,13 +53,97 @@
     border: 1px solid black;
   }
   pre.src:hover:before { display: inline;}
-  pre.src-sh:before    { content: 'sh'; }
-  pre.src-bash:before  { content: 'sh'; }
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
   pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-R:before     { content: 'R'; }
-  pre.src-perl:before  { content: 'Perl'; }
-  pre.src-java:before  { content: 'Java'; }
-  pre.src-sql:before   { content: 'SQL'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
 
   table { border-collapse:collapse; }
   caption.t-above { caption-side: top; }
@@ -92,9 +176,10 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
-<link rel="stylesheet" type="text/css" href="readtheorg.css" />
+<link rel="stylesheet" type="text/css" href="light.css" />
 
 <script type="text/javascript" src="org-info.js">
 /**
@@ -221,32 +306,33 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgheadline5">1. TEA-034 Tópicos Especiais em Engenharia Ambiental: Técnicas de Aprendizagem Acadêmica</a>
+<li><a href="#orgcb39ec8">1. TEA-034 Tópicos Especiais em Engenharia Ambiental: Técnicas de Aprendizagem Acadêmica</a>
 <ul>
-<li><a href="#orgheadline1">1.1. Horário</a></li>
-<li><a href="#orgheadline2">1.2. Programa: tea034-prog-2017-1.pdf</a></li>
-<li><a href="#orgheadline3">1.3. Avaliação da disciplina pelos alunos: Esta disciplina nunca foi avaliada</a></li>
-<li><a href="#orgheadline4">1.4. Notas</a></li>
+<li><a href="#org5175c40">1.1. Horário</a></li>
+<li><a href="#orgd798c33">1.2. Programa: tea034-prog-2017-1.pdf</a></li>
+<li><a href="#org09077f7">1.3. Avaliação da disciplina pelos alunos: Esta disciplina nunca foi avaliada</a></li>
+<li><a href="#orgb05d8fe">1.4. Notas</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline14">2. TEA-010 Matemática Aplicada I</a>
+<li><a href="#org9a40479">2. TEA-010 Matemática Aplicada I</a>
 <ul>
-<li><a href="#orgheadline6">2.1. Horário</a></li>
-<li><a href="#orgheadline7">2.2. Avaliação da disciplina pelos alunos</a></li>
-<li><a href="#orgheadline8">2.3. Programa: tea010-prog-2017-1.pdf</a></li>
-<li><a href="#orgheadline9">2.4. Programa-como-realizado: tea010-prog-2017-1-check.pdf</a></li>
-<li><a href="#orgheadline10">2.5. Livro-texto: matappa.pdf</a></li>
-<li><a href="#orgheadline11">2.6. Notas</a></li>
-<li><a href="#orgheadline12">2.7. Provas</a></li>
-<li><a href="#orgheadline13">2.8. Arquivos de provas passadas</a></li>
+<li><a href="#org25157f7">2.1. Horário</a></li>
+<li><a href="#org8a4ab40">2.2. Avaliação da disciplina pelos alunos</a></li>
+<li><a href="#org5112a92">2.3. Programa: tea010-prog-2017-1.pdf</a></li>
+<li><a href="#org8a89883">2.4. Programa-como-realizado: tea010-prog-2017-1-check.pdf</a></li>
+<li><a href="#org9773add">2.5. Livro-texto: matappa-1ed.pdf</a></li>
+<li><a href="#org7e4fd34">2.6. Notas</a></li>
+<li><a href="#org5f3cbac">2.7. Provas</a></li>
+<li><a href="#orgaaaa0a9">2.8. Arquivos de provas passadas</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline19">3. TEA-752 Métodos Matemáticos em Engenharia Ambiental</a>
+<li><a href="#org807586e">3. TEA-752 Métodos Matemáticos em Engenharia Ambiental</a>
 <ul>
-<li><a href="#orgheadline15">3.1. Horário</a></li>
-<li><a href="#orgheadline16">3.2. Programa:  tea752-prog-2017-1.pdf</a></li>
-<li><a href="#orgheadline17">3.3. Programa-como-realizado: tea752-prog-2017-1-check.pdf</a></li>
-<li><a href="#orgheadline18">3.4. Notas de aula:  apple.pdf</a></li>
+<li><a href="#org270e0e1">3.1. Horário</a></li>
+<li><a href="#org0ad7b63">3.2. Programa:  tea752-prog-2017-1.pdf</a></li>
+<li><a href="#org1aab086">3.3. Programa-como-realizado: tea752-prog-2017-1-check.pdf</a></li>
+<li><a href="#org17eafca">3.4. Notas de aula:  apple.pdf</a></li>
+<li><a href="#org7a21113">3.5. Provas</a></li>
 </ul>
 </li>
 </ul>
@@ -262,11 +348,11 @@ few times until HELP shows up).
 <a href="index.html">Home</a>
 </p>
 
-<div id="outline-container-orgheadline5" class="outline-2">
-<h2 id="orgheadline5"><span class="section-number-2">1</span> TEA-034 Tópicos Especiais em Engenharia Ambiental: Técnicas de Aprendizagem Acadêmica</h2>
+<div id="outline-container-orgcb39ec8" class="outline-2">
+<h2 id="orgcb39ec8"><span class="section-number-2">1</span> TEA-034 Tópicos Especiais em Engenharia Ambiental: Técnicas de Aprendizagem Acadêmica</h2>
 <div class="outline-text-2" id="text-1">
-</div><div id="outline-container-orgheadline1" class="outline-3">
-<h3 id="orgheadline1"><span class="section-number-3">1.1</span> Horário</h3>
+</div><div id="outline-container-org5175c40" class="outline-3">
+<h3 id="org5175c40"><span class="section-number-3">1.1</span> Horário</h3>
 <div class="outline-text-3" id="text-1-1">
 <ul class="org-ul">
 <li>Aulas: 6<sup>as</sup>, PF-2, 07:30&#x2013;09:10</li>
@@ -275,16 +361,16 @@ few times until HELP shows up).
 </div>
 </div>
 
-<div id="outline-container-orgheadline2" class="outline-3">
-<h3 id="orgheadline2"><span class="section-number-3">1.2</span> Programa: <a href="./pdf/tea034-prog-2017-1.pdf">tea034-prog-2017-1.pdf</a></h3>
+<div id="outline-container-orgd798c33" class="outline-3">
+<h3 id="orgd798c33"><span class="section-number-3">1.2</span> Programa: <a href="./pdf/tea034-prog-2017-1.pdf">tea034-prog-2017-1.pdf</a></h3>
 </div>
 
-<div id="outline-container-orgheadline3" class="outline-3">
-<h3 id="orgheadline3"><span class="section-number-3">1.3</span> Avaliação da disciplina pelos alunos: Esta disciplina nunca foi avaliada</h3>
+<div id="outline-container-org09077f7" class="outline-3">
+<h3 id="org09077f7"><span class="section-number-3">1.3</span> Avaliação da disciplina pelos alunos: Esta disciplina nunca foi avaliada</h3>
 </div>
 
-<div id="outline-container-orgheadline4" class="outline-3">
-<h3 id="orgheadline4"><span class="section-number-3">1.4</span> Notas</h3>
+<div id="outline-container-orgb05d8fe" class="outline-3">
+<h3 id="orgb05d8fe"><span class="section-number-3">1.4</span> Notas</h3>
 <div class="outline-text-3" id="text-1-4">
 <ul class="org-ul">
 <li>2017-03-03T14:59:13 As primeiras tarefas de cada aluno foram especificadas</li>
@@ -294,11 +380,11 @@ few times until HELP shows up).
 </div>
 
 
-<div id="outline-container-orgheadline14" class="outline-2">
-<h2 id="orgheadline14"><span class="section-number-2">2</span> TEA-010 Matemática Aplicada I</h2>
+<div id="outline-container-org9a40479" class="outline-2">
+<h2 id="org9a40479"><span class="section-number-2">2</span> TEA-010 Matemática Aplicada I</h2>
 <div class="outline-text-2" id="text-2">
-</div><div id="outline-container-orgheadline6" class="outline-3">
-<h3 id="orgheadline6"><span class="section-number-3">2.1</span> Horário</h3>
+</div><div id="outline-container-org25157f7" class="outline-3">
+<h3 id="org25157f7"><span class="section-number-3">2.1</span> Horário</h3>
 <div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li>Aulas: 2<sup>as</sup>, 4<sup>as</sup> e 6<sup>as</sup>, 07:30&#x2013;09:10 PM02</li>
@@ -308,8 +394,8 @@ few times until HELP shows up).
 </div>
 
 
-<div id="outline-container-orgheadline7" class="outline-3">
-<h3 id="orgheadline7"><span class="section-number-3">2.2</span> Avaliação da disciplina pelos alunos</h3>
+<div id="outline-container-org8a4ab40" class="outline-3">
+<h3 id="org8a4ab40"><span class="section-number-3">2.2</span> Avaliação da disciplina pelos alunos</h3>
 <div class="outline-text-3" id="text-2-2">
 <ul class="org-ul">
 <li><a href="./pdf/Avaliacao-2015-1.pdf">2015</a></li>
@@ -319,18 +405,18 @@ few times until HELP shows up).
 </div>
 
 
-<div id="outline-container-orgheadline8" class="outline-3">
-<h3 id="orgheadline8"><span class="section-number-3">2.3</span> Programa: <a href="./pdf/tea010-prog-2017-1.pdf">tea010-prog-2017-1.pdf</a></h3>
+<div id="outline-container-org5112a92" class="outline-3">
+<h3 id="org5112a92"><span class="section-number-3">2.3</span> Programa: <a href="./pdf/tea010-prog-2017-1.pdf">tea010-prog-2017-1.pdf</a></h3>
 </div>
 
-<div id="outline-container-orgheadline9" class="outline-3">
-<h3 id="orgheadline9"><span class="section-number-3">2.4</span> Programa-como-realizado: <a href="./pdf/tea010-prog-2017-1-check.pdf">tea010-prog-2017-1-check.pdf</a></h3>
+<div id="outline-container-org8a89883" class="outline-3">
+<h3 id="org8a89883"><span class="section-number-3">2.4</span> Programa-como-realizado: <a href="./pdf/tea010-prog-2017-1-check.pdf">tea010-prog-2017-1-check.pdf</a></h3>
 </div>
-<div id="outline-container-orgheadline10" class="outline-3">
-<h3 id="orgheadline10"><span class="section-number-3">2.5</span> Livro-texto: <a href="./pdf/matappa.pdf">matappa.pdf</a></h3>
+<div id="outline-container-org9773add" class="outline-3">
+<h3 id="org9773add"><span class="section-number-3">2.5</span> Livro-texto: <a href="./pdf/matappa-1ed.pdf">matappa-1ed.pdf</a></h3>
 </div>
-<div id="outline-container-orgheadline11" class="outline-3">
-<h3 id="orgheadline11"><span class="section-number-3">2.6</span> Notas</h3>
+<div id="outline-container-org7e4fd34" class="outline-3">
+<h3 id="org7e4fd34"><span class="section-number-3">2.6</span> Notas</h3>
 <div class="outline-text-3" id="text-2-6">
 <p>
 Veja as <a href="./pdf/notpre2017-1.pdf">notas</a> até a P1: 
@@ -344,8 +430,8 @@ Veja as <a href="./pdf/notpre2017-1.pdf">notas</a> até a P1:
 
 
 
-<div id="outline-container-orgheadline12" class="outline-3">
-<h3 id="orgheadline12"><span class="section-number-3">2.7</span> Provas</h3>
+<div id="outline-container-org5f3cbac" class="outline-3">
+<h3 id="org5f3cbac"><span class="section-number-3">2.7</span> Provas</h3>
 <div class="outline-text-3" id="text-2-7">
 <p>
 Faça o download do gabarito da P1: <a href="./pdf/2017-1-p01-sol.pdf">2017-1-p01-sol.pdf</a>
@@ -353,8 +439,9 @@ Faça o download do gabarito da P1: <a href="./pdf/2017-1-p01-sol.pdf">2017-1-p0
 </div>
 </div>
 
-<div id="outline-container-orgheadline13" class="outline-3">
-<h3 id="orgheadline13"><span class="section-number-3">2.8</span> Arquivos de provas passadas</h3>
+
+<div id="outline-container-orgaaaa0a9" class="outline-3">
+<h3 id="orgaaaa0a9"><span class="section-number-3">2.8</span> Arquivos de provas passadas</h3>
 <div class="outline-text-3" id="text-2-8">
 <ul class="org-ul">
 <li><a href="./pdf/2003-1-sol.pdf">2003-1-sol.pdf</a></li>
@@ -376,11 +463,11 @@ Faça o download do gabarito da P1: <a href="./pdf/2017-1-p01-sol.pdf">2017-1-p0
 </div>
 
 
-<div id="outline-container-orgheadline19" class="outline-2">
-<h2 id="orgheadline19"><span class="section-number-2">3</span> TEA-752 Métodos Matemáticos em Engenharia Ambiental</h2>
+<div id="outline-container-org807586e" class="outline-2">
+<h2 id="org807586e"><span class="section-number-2">3</span> TEA-752 Métodos Matemáticos em Engenharia Ambiental</h2>
 <div class="outline-text-2" id="text-3">
-</div><div id="outline-container-orgheadline15" class="outline-3">
-<h3 id="orgheadline15"><span class="section-number-3">3.1</span> Horário</h3>
+</div><div id="outline-container-org270e0e1" class="outline-3">
+<h3 id="org270e0e1"><span class="section-number-3">3.1</span> Horário</h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 2<sup>as</sup> e 4<sup>as</sup>, PF-16, 09:30&#x2013;11:10
@@ -389,22 +476,33 @@ Faça o download do gabarito da P1: <a href="./pdf/2017-1-p01-sol.pdf">2017-1-p0
 </div>
 
 
-<div id="outline-container-orgheadline16" class="outline-3">
-<h3 id="orgheadline16"><span class="section-number-3">3.2</span> Programa:  <a href="./pdf/tea752-prog-2017-1.pdf">tea752-prog-2017-1.pdf</a></h3>
+<div id="outline-container-org0ad7b63" class="outline-3">
+<h3 id="org0ad7b63"><span class="section-number-3">3.2</span> Programa:  <a href="./pdf/tea752-prog-2017-1.pdf">tea752-prog-2017-1.pdf</a></h3>
 </div>
 
-<div id="outline-container-orgheadline17" class="outline-3">
-<h3 id="orgheadline17"><span class="section-number-3">3.3</span> Programa-como-realizado: <a href="./pdf/tea752-prog-2017-1-check.pdf">tea752-prog-2017-1-check.pdf</a></h3>
+
+<div id="outline-container-org1aab086" class="outline-3">
+<h3 id="org1aab086"><span class="section-number-3">3.3</span> Programa-como-realizado: <a href="./pdf/tea752-prog-2017-1-check.pdf">tea752-prog-2017-1-check.pdf</a></h3>
 </div>
 
-<div id="outline-container-orgheadline18" class="outline-3">
-<h3 id="orgheadline18"><span class="section-number-3">3.4</span> Notas de aula:  <a href="./pdf/apple.pdf">apple.pdf</a></h3>
+
+<div id="outline-container-org17eafca" class="outline-3">
+<h3 id="org17eafca"><span class="section-number-3">3.4</span> Notas de aula:  <a href="./pdf/apple.pdf">apple.pdf</a></h3>
+</div>
+
+<div id="outline-container-org7a21113" class="outline-3">
+<h3 id="org7a21113"><span class="section-number-3">3.5</span> Provas</h3>
+<div class="outline-text-3" id="text-3-5">
+<p>
+Faça o download do gabarito da P1: <a href="./pdf/tea752-2017-1-p01-sol.pdf">tea752-2017-1-p01-sol.pdf</a>
+</p>
+</div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2017-04-18 Ter 11:00</p>
+<p class="date">Created: 2017-05-06 Sáb 14:02</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
