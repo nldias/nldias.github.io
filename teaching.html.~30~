@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2017-05-06 Sáb 14:02 -->
+<!-- 2017-05-10 Qua 17:25 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Ensino (Teaching)</title>
@@ -179,7 +179,7 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
-<link rel="stylesheet" type="text/css" href="light.css" />
+<link rel="stylesheet" type="text/css" href="readtheorg.css" />
 
 <script type="text/javascript" src="org-info.js">
 /**
@@ -308,31 +308,42 @@ for the JavaScript code in this tag.
 <ul>
 <li><a href="#orgcb39ec8">1. TEA-034 Tópicos Especiais em Engenharia Ambiental: Técnicas de Aprendizagem Acadêmica</a>
 <ul>
-<li><a href="#org5175c40">1.1. Horário</a></li>
+<li><a href="#orgb71cef4">1.1. Horário</a></li>
 <li><a href="#orgd798c33">1.2. Programa: tea034-prog-2017-1.pdf</a></li>
 <li><a href="#org09077f7">1.3. Avaliação da disciplina pelos alunos: Esta disciplina nunca foi avaliada</a></li>
-<li><a href="#orgb05d8fe">1.4. Notas</a></li>
+<li><a href="#org031376f">1.4. Notas</a></li>
 </ul>
 </li>
 <li><a href="#org9a40479">2. TEA-010 Matemática Aplicada I</a>
 <ul>
-<li><a href="#org25157f7">2.1. Horário</a></li>
-<li><a href="#org8a4ab40">2.2. Avaliação da disciplina pelos alunos</a></li>
-<li><a href="#org5112a92">2.3. Programa: tea010-prog-2017-1.pdf</a></li>
-<li><a href="#org8a89883">2.4. Programa-como-realizado: tea010-prog-2017-1-check.pdf</a></li>
-<li><a href="#org9773add">2.5. Livro-texto: matappa-1ed.pdf</a></li>
-<li><a href="#org7e4fd34">2.6. Notas</a></li>
-<li><a href="#org5f3cbac">2.7. Provas</a></li>
-<li><a href="#orgaaaa0a9">2.8. Arquivos de provas passadas</a></li>
+<li><a href="#org068da3d">2.1. Ementa</a></li>
+<li><a href="#orgd03e6f8">2.2. Horário</a></li>
+<li><a href="#org8a4ab40">2.3. Avaliação da disciplina pelos alunos</a></li>
+<li><a href="#org5112a92">2.4. Programa: tea010-prog-2017-1.pdf</a></li>
+<li><a href="#org8a89883">2.5. Programa-como-realizado: tea010-prog-2017-1-check.pdf</a></li>
+<li><a href="#org9773add">2.6. Livro-texto: matappa-1ed.pdf</a></li>
+<li><a href="#orgf52c5dd">2.7. Notas</a></li>
+<li><a href="#org9506d68">2.8. Provas</a></li>
+<li><a href="#orgaaaa0a9">2.9. Arquivos de provas passadas</a></li>
 </ul>
 </li>
 <li><a href="#org807586e">3. TEA-752 Métodos Matemáticos em Engenharia Ambiental</a>
 <ul>
-<li><a href="#org270e0e1">3.1. Horário</a></li>
+<li><a href="#orgd08ecde">3.1. Horário</a></li>
 <li><a href="#org0ad7b63">3.2. Programa:  tea752-prog-2017-1.pdf</a></li>
 <li><a href="#org1aab086">3.3. Programa-como-realizado: tea752-prog-2017-1-check.pdf</a></li>
 <li><a href="#org17eafca">3.4. Notas de aula:  apple.pdf</a></li>
-<li><a href="#org7a21113">3.5. Provas</a></li>
+<li><a href="#org8f3baad">3.5. Provas</a></li>
+</ul>
+</li>
+<li><a href="#org7842ccd">4. TEA-013 Matemática Aplicada II</a>
+<ul>
+<li><a href="#org507193b">4.1. Ementa</a></li>
+</ul>
+</li>
+<li><a href="#orga6510e1">5. TEA-757 Camadas-Limite Naturais e Transporte de Poluentes</a>
+<ul>
+<li><a href="#org099f77c">5.1. Ementa</a></li>
 </ul>
 </li>
 </ul>
@@ -351,8 +362,8 @@ few times until HELP shows up).
 <div id="outline-container-orgcb39ec8" class="outline-2">
 <h2 id="orgcb39ec8"><span class="section-number-2">1</span> TEA-034 Tópicos Especiais em Engenharia Ambiental: Técnicas de Aprendizagem Acadêmica</h2>
 <div class="outline-text-2" id="text-1">
-</div><div id="outline-container-org5175c40" class="outline-3">
-<h3 id="org5175c40"><span class="section-number-3">1.1</span> Horário</h3>
+</div><div id="outline-container-orgb71cef4" class="outline-3">
+<h3 id="orgb71cef4"><span class="section-number-3">1.1</span> Horário</h3>
 <div class="outline-text-3" id="text-1-1">
 <ul class="org-ul">
 <li>Aulas: 6<sup>as</sup>, PF-2, 07:30&#x2013;09:10</li>
@@ -369,8 +380,8 @@ few times until HELP shows up).
 <h3 id="org09077f7"><span class="section-number-3">1.3</span> Avaliação da disciplina pelos alunos: Esta disciplina nunca foi avaliada</h3>
 </div>
 
-<div id="outline-container-orgb05d8fe" class="outline-3">
-<h3 id="orgb05d8fe"><span class="section-number-3">1.4</span> Notas</h3>
+<div id="outline-container-org031376f" class="outline-3">
+<h3 id="org031376f"><span class="section-number-3">1.4</span> Notas</h3>
 <div class="outline-text-3" id="text-1-4">
 <ul class="org-ul">
 <li>2017-03-03T14:59:13 As primeiras tarefas de cada aluno foram especificadas</li>
@@ -383,9 +394,23 @@ few times until HELP shows up).
 <div id="outline-container-org9a40479" class="outline-2">
 <h2 id="org9a40479"><span class="section-number-2">2</span> TEA-010 Matemática Aplicada I</h2>
 <div class="outline-text-2" id="text-2">
-</div><div id="outline-container-org25157f7" class="outline-3">
-<h3 id="org25157f7"><span class="section-number-3">2.1</span> Horário</h3>
+</div><div id="outline-container-org068da3d" class="outline-3">
+<h3 id="org068da3d"><span class="section-number-3">2.1</span> Ementa</h3>
 <div class="outline-text-3" id="text-2-1">
+<p>
+1- Ferramentas computacionais para programação, processamento simbólico e plotagem. 2-
+Revisão de programação científica. 3- Vetores, matrizes e coordenadas. 4- Campos escalares e
+vetoriais. 5- Equações diferenciais de 1a e 2a ordens. 6- Teoria de variáveis complexas:
+analiticidade, séries. 7- Soluções em série de equações diferenciais. 8- Transformada de Laplace.
+9- Teoria de Distribuições. 10- Teoria de variáveis complexas: teorema do resíduo e integração de
+contorno.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd03e6f8" class="outline-3">
+<h3 id="orgd03e6f8"><span class="section-number-3">2.2</span> Horário</h3>
+<div class="outline-text-3" id="text-2-2">
 <ul class="org-ul">
 <li>Aulas: 2<sup>as</sup>, 4<sup>as</sup> e 6<sup>as</sup>, 07:30&#x2013;09:10 PM02</li>
 <li>Atendimento: Por agendamento em minha sala</li>
@@ -395,8 +420,8 @@ few times until HELP shows up).
 
 
 <div id="outline-container-org8a4ab40" class="outline-3">
-<h3 id="org8a4ab40"><span class="section-number-3">2.2</span> Avaliação da disciplina pelos alunos</h3>
-<div class="outline-text-3" id="text-2-2">
+<h3 id="org8a4ab40"><span class="section-number-3">2.3</span> Avaliação da disciplina pelos alunos</h3>
+<div class="outline-text-3" id="text-2-3">
 <ul class="org-ul">
 <li><a href="./pdf/Avaliacao-2015-1.pdf">2015</a></li>
 <li><a href="./pdf/Avaliacao-2016-1.pdf">2016</a></li>
@@ -406,18 +431,18 @@ few times until HELP shows up).
 
 
 <div id="outline-container-org5112a92" class="outline-3">
-<h3 id="org5112a92"><span class="section-number-3">2.3</span> Programa: <a href="./pdf/tea010-prog-2017-1.pdf">tea010-prog-2017-1.pdf</a></h3>
+<h3 id="org5112a92"><span class="section-number-3">2.4</span> Programa: <a href="./pdf/tea010-prog-2017-1.pdf">tea010-prog-2017-1.pdf</a></h3>
 </div>
 
 <div id="outline-container-org8a89883" class="outline-3">
-<h3 id="org8a89883"><span class="section-number-3">2.4</span> Programa-como-realizado: <a href="./pdf/tea010-prog-2017-1-check.pdf">tea010-prog-2017-1-check.pdf</a></h3>
+<h3 id="org8a89883"><span class="section-number-3">2.5</span> Programa-como-realizado: <a href="./pdf/tea010-prog-2017-1-check.pdf">tea010-prog-2017-1-check.pdf</a></h3>
 </div>
 <div id="outline-container-org9773add" class="outline-3">
-<h3 id="org9773add"><span class="section-number-3">2.5</span> Livro-texto: <a href="./pdf/matappa-1ed.pdf">matappa-1ed.pdf</a></h3>
+<h3 id="org9773add"><span class="section-number-3">2.6</span> Livro-texto: <a href="./pdf/matappa-1ed.pdf">matappa-1ed.pdf</a></h3>
 </div>
-<div id="outline-container-org7e4fd34" class="outline-3">
-<h3 id="org7e4fd34"><span class="section-number-3">2.6</span> Notas</h3>
-<div class="outline-text-3" id="text-2-6">
+<div id="outline-container-orgf52c5dd" class="outline-3">
+<h3 id="orgf52c5dd"><span class="section-number-3">2.7</span> Notas</h3>
+<div class="outline-text-3" id="text-2-7">
 <p>
 Veja as <a href="./pdf/notpre2017-1.pdf">notas</a> até a P1: 
 </p>
@@ -430,9 +455,9 @@ Veja as <a href="./pdf/notpre2017-1.pdf">notas</a> até a P1:
 
 
 
-<div id="outline-container-org5f3cbac" class="outline-3">
-<h3 id="org5f3cbac"><span class="section-number-3">2.7</span> Provas</h3>
-<div class="outline-text-3" id="text-2-7">
+<div id="outline-container-org9506d68" class="outline-3">
+<h3 id="org9506d68"><span class="section-number-3">2.8</span> Provas</h3>
+<div class="outline-text-3" id="text-2-8">
 <p>
 Faça o download do gabarito da P1: <a href="./pdf/2017-1-p01-sol.pdf">2017-1-p01-sol.pdf</a>
 </p>
@@ -441,8 +466,8 @@ Faça o download do gabarito da P1: <a href="./pdf/2017-1-p01-sol.pdf">2017-1-p0
 
 
 <div id="outline-container-orgaaaa0a9" class="outline-3">
-<h3 id="orgaaaa0a9"><span class="section-number-3">2.8</span> Arquivos de provas passadas</h3>
-<div class="outline-text-3" id="text-2-8">
+<h3 id="orgaaaa0a9"><span class="section-number-3">2.9</span> Arquivos de provas passadas</h3>
+<div class="outline-text-3" id="text-2-9">
 <ul class="org-ul">
 <li><a href="./pdf/2003-1-sol.pdf">2003-1-sol.pdf</a></li>
 <li><a href="./pdf/2004-1-sol.pdf">2004-1-sol.pdf</a></li>
@@ -466,8 +491,8 @@ Faça o download do gabarito da P1: <a href="./pdf/2017-1-p01-sol.pdf">2017-1-p0
 <div id="outline-container-org807586e" class="outline-2">
 <h2 id="org807586e"><span class="section-number-2">3</span> TEA-752 Métodos Matemáticos em Engenharia Ambiental</h2>
 <div class="outline-text-2" id="text-3">
-</div><div id="outline-container-org270e0e1" class="outline-3">
-<h3 id="org270e0e1"><span class="section-number-3">3.1</span> Horário</h3>
+</div><div id="outline-container-orgd08ecde" class="outline-3">
+<h3 id="orgd08ecde"><span class="section-number-3">3.1</span> Horário</h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 2<sup>as</sup> e 4<sup>as</sup>, PF-16, 09:30&#x2013;11:10
@@ -490,8 +515,8 @@ Faça o download do gabarito da P1: <a href="./pdf/2017-1-p01-sol.pdf">2017-1-p0
 <h3 id="org17eafca"><span class="section-number-3">3.4</span> Notas de aula:  <a href="./pdf/apple.pdf">apple.pdf</a></h3>
 </div>
 
-<div id="outline-container-org7a21113" class="outline-3">
-<h3 id="org7a21113"><span class="section-number-3">3.5</span> Provas</h3>
+<div id="outline-container-org8f3baad" class="outline-3">
+<h3 id="org8f3baad"><span class="section-number-3">3.5</span> Provas</h3>
 <div class="outline-text-3" id="text-3-5">
 <p>
 Faça o download do gabarito da P1: <a href="./pdf/tea752-2017-1-p01-sol.pdf">tea752-2017-1-p01-sol.pdf</a>
@@ -499,10 +524,60 @@ Faça o download do gabarito da P1: <a href="./pdf/tea752-2017-1-p01-sol.pdf">te
 </div>
 </div>
 </div>
+
+<div id="outline-container-org7842ccd" class="outline-2">
+<h2 id="org7842ccd"><span class="section-number-2">4</span> TEA-013 Matemática Aplicada II</h2>
+<div class="outline-text-2" id="text-4">
+</div><div id="outline-container-org507193b" class="outline-3">
+<h3 id="org507193b"><span class="section-number-3">4.1</span> Ementa</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+1- Ferramentas computacionais e solução numérica com diferenças finitas de equações diferenciais
+parciais: análise de estabilidade de von Neumman e exemplos escolhidos entre a equação da
+difusão, equação da onda, equação de Laplace, e outras de uso comum em Engenharia Ambiental.
+2- Análise linear, sistemas lineares em Engenharia. 3- Séries e Transformadas de Fourier. Solução
+de equações diferenciais, análise espectral e análise de periodicidade em séries de dados naturais.
+4- Funções de Green e Identidades de Green em Engenharia: Hidrógrafa Unitária Instanânea,
+Problemas de Dispersão de Poluentes. 5- Teoria de Sturm-Liouville e algumas funções especiais
+adicionais (Legendre, Laguerre, Hermite). Importância da teoria no método de separação de
+variáveis para equações diferenciais parciais. 6- Equações Diferenciais Parciais: problemas lineares
+e não-lineares em escoamentos na atmosfera, nos oceanos, em rios e no solo, e problemas de
+dispersão de poluentes. 7- Classificação e o método das características: escoamento em canais.
+Solução por separação de variáveis, transformadas integrais e transformada de Boltzmann.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga6510e1" class="outline-2">
+<h2 id="orga6510e1"><span class="section-number-2">5</span> TEA-757 Camadas-Limite Naturais e Transporte de Poluentes</h2>
+<div class="outline-text-2" id="text-5">
+</div><div id="outline-container-org099f77c" class="outline-3">
+<h3 id="org099f77c"><span class="section-number-3">5.1</span> Ementa</h3>
+<div class="outline-text-3" id="text-5-1">
+<p>
+Revisão das equações de Navier-Stokes e das equações de transporte para
+temperatura e para um escalar passivo ou ativo; simplificações e soluções
+analíticas de problemas laminares, incluindo escoamento sob pressão em tubos, e
+escoamento com superfície livre em canal unidimensional. As equações de
+camada-limite de Blasius: soluções numéricas para escoamentos
+laminares. Turbulência: o conceito estatístico de escala turbulenta; escala
+integral; micro-escalas de Kolmogorov; micro-escala de Taylor; as equações de
+Reynolds de ordem 1 e 2; modelos de fechamento. Camadas-limite turbulentas:
+transferência convectiva de momentum, calor e massa.  Transferência de calor por
+radiação. Escoamentos turbulentos em tubos: obtenção semi-analítica das equações
+de perda de carga (Diagrama de Moody). Escoamentos em canais: obtenção
+semi-analítica da equações de perda de carga (Manning). A Camada-Limite
+Atmosférica e a Camada-Limite Oceânica: efeitos de flutuabilidade, número de
+Richardson e comprimento de estabilidade de Obukhov.
+</p>
+</div>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2017-05-06 Sáb 14:02</p>
+<p class="date">Created: 2017-05-10 Qua 17:25</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
