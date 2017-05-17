@@ -3,12 +3,12 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2017-05-10 Qua 17:31 -->
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- 2017-05-15 Seg 13:53 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="viewport" content="width=device-width, initial-scale=1" />
 <title>Ensino (Teaching)</title>
-<meta name="generator" content="Org mode" />
-<meta name="author" content="Nelson Luís Dias" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Nelson Luís Dias" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
@@ -53,97 +53,13 @@
     border: 1px solid black;
   }
   pre.src:hover:before { display: inline;}
-  /* Languages per Org manual */
-  pre.src-asymptote:before { content: 'Asymptote'; }
-  pre.src-awk:before { content: 'Awk'; }
-  pre.src-C:before { content: 'C'; }
-  /* pre.src-C++ doesn't work in CSS */
-  pre.src-clojure:before { content: 'Clojure'; }
-  pre.src-css:before { content: 'CSS'; }
-  pre.src-D:before { content: 'D'; }
-  pre.src-ditaa:before { content: 'ditaa'; }
-  pre.src-dot:before { content: 'Graphviz'; }
-  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
   pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-fortran:before { content: 'Fortran'; }
-  pre.src-gnuplot:before { content: 'gnuplot'; }
-  pre.src-haskell:before { content: 'Haskell'; }
-  pre.src-java:before { content: 'Java'; }
-  pre.src-js:before { content: 'Javascript'; }
-  pre.src-latex:before { content: 'LaTeX'; }
-  pre.src-ledger:before { content: 'Ledger'; }
-  pre.src-lisp:before { content: 'Lisp'; }
-  pre.src-lilypond:before { content: 'Lilypond'; }
-  pre.src-lua:before { content: 'Lua'; }
-  pre.src-matlab:before { content: 'MATLAB'; }
-  pre.src-mscgen:before { content: 'Mscgen'; }
-  pre.src-ocaml:before { content: 'Objective Caml'; }
-  pre.src-octave:before { content: 'Octave'; }
-  pre.src-org:before { content: 'Org mode'; }
-  pre.src-oz:before { content: 'OZ'; }
-  pre.src-plantuml:before { content: 'Plantuml'; }
-  pre.src-processing:before { content: 'Processing.js'; }
-  pre.src-python:before { content: 'Python'; }
-  pre.src-R:before { content: 'R'; }
-  pre.src-ruby:before { content: 'Ruby'; }
-  pre.src-sass:before { content: 'Sass'; }
-  pre.src-scheme:before { content: 'Scheme'; }
-  pre.src-screen:before { content: 'Gnu Screen'; }
-  pre.src-sed:before { content: 'Sed'; }
-  pre.src-sh:before { content: 'shell'; }
-  pre.src-sql:before { content: 'SQL'; }
-  pre.src-sqlite:before { content: 'SQLite'; }
-  /* additional languages in org.el's org-babel-load-languages alist */
-  pre.src-forth:before { content: 'Forth'; }
-  pre.src-io:before { content: 'IO'; }
-  pre.src-J:before { content: 'J'; }
-  pre.src-makefile:before { content: 'Makefile'; }
-  pre.src-maxima:before { content: 'Maxima'; }
-  pre.src-perl:before { content: 'Perl'; }
-  pre.src-picolisp:before { content: 'Pico Lisp'; }
-  pre.src-scala:before { content: 'Scala'; }
-  pre.src-shell:before { content: 'Shell Script'; }
-  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
-  /* additional language identifiers per "defun org-babel-execute"
-       in ob-*.el */
-  pre.src-cpp:before  { content: 'C++'; }
-  pre.src-abc:before  { content: 'ABC'; }
-  pre.src-coq:before  { content: 'Coq'; }
-  pre.src-groovy:before  { content: 'Groovy'; }
-  /* additional language identifiers from org-babel-shell-names in
-     ob-shell.el: ob-shell is the only babel language using a lambda to put
-     the execution function name together. */
-  pre.src-bash:before  { content: 'bash'; }
-  pre.src-csh:before  { content: 'csh'; }
-  pre.src-ash:before  { content: 'ash'; }
-  pre.src-dash:before  { content: 'dash'; }
-  pre.src-ksh:before  { content: 'ksh'; }
-  pre.src-mksh:before  { content: 'mksh'; }
-  pre.src-posh:before  { content: 'posh'; }
-  /* Additional Emacs modes also supported by the LaTeX listings package */
-  pre.src-ada:before { content: 'Ada'; }
-  pre.src-asm:before { content: 'Assembler'; }
-  pre.src-caml:before { content: 'Caml'; }
-  pre.src-delphi:before { content: 'Delphi'; }
-  pre.src-html:before { content: 'HTML'; }
-  pre.src-idl:before { content: 'IDL'; }
-  pre.src-mercury:before { content: 'Mercury'; }
-  pre.src-metapost:before { content: 'MetaPost'; }
-  pre.src-modula-2:before { content: 'Modula-2'; }
-  pre.src-pascal:before { content: 'Pascal'; }
-  pre.src-ps:before { content: 'PostScript'; }
-  pre.src-prolog:before { content: 'Prolog'; }
-  pre.src-simula:before { content: 'Simula'; }
-  pre.src-tcl:before { content: 'tcl'; }
-  pre.src-tex:before { content: 'TeX'; }
-  pre.src-plain-tex:before { content: 'Plain TeX'; }
-  pre.src-verilog:before { content: 'Verilog'; }
-  pre.src-vhdl:before { content: 'VHDL'; }
-  pre.src-xml:before { content: 'XML'; }
-  pre.src-nxml:before { content: 'XML'; }
-  /* add a generic configuration mode; LaTeX export needs an additional
-     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
-  pre.src-conf:before { content: 'Configuration File'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
 
   table { border-collapse:collapse; }
   caption.t-above { caption-side: top; }
@@ -176,7 +92,6 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
 <link rel="stylesheet" type="text/css" href="readtheorg.css" />
@@ -306,45 +221,46 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org9a40479">1. TEA-010 Matemática Aplicada I</a>
+<li><a href="#orgheadline10">1. TEA-010 Matemática Aplicada I</a>
 <ul>
-<li><a href="#orgcb11aa8">1.1. Ementa</a></li>
-<li><a href="#org074a1b8">1.2. Horário</a></li>
-<li><a href="#org8a4ab40">1.3. Avaliação da disciplina pelos alunos</a></li>
-<li><a href="#org5112a92">1.4. Programa: tea010-prog-2017-1.pdf</a></li>
-<li><a href="#org8a89883">1.5. Programa-como-realizado: tea010-prog-2017-1-check.pdf</a></li>
-<li><a href="#org9773add">1.6. Livro-texto: matappa-1ed.pdf</a></li>
-<li><a href="#orgd4064a7">1.7. Notas</a></li>
-<li><a href="#orgbf923b5">1.8. Provas</a></li>
-<li><a href="#orgaaaa0a9">1.9. Arquivos de provas passadas</a></li>
+<li><a href="#orgheadline1">1.1. Ementa</a></li>
+<li><a href="#orgheadline2">1.2. Horário</a></li>
+<li><a href="#orgheadline3">1.3. Avaliação da disciplina pelos alunos</a></li>
+<li><a href="#orgheadline4">1.4. Programa: tea010-prog-2017-1.pdf</a></li>
+<li><a href="#orgheadline5">1.5. Programa-como-realizado: tea010-prog-2017-1-check.pdf</a></li>
+<li><a href="#orgheadline6">1.6. Livro-texto: matappa-1ed.pdf</a></li>
+<li><a href="#orgheadline7">1.7. Notas</a></li>
+<li><a href="#orgheadline8">1.8. Provas</a></li>
+<li><a href="#orgheadline9">1.9. Arquivos de provas passadas</a></li>
 </ul>
 </li>
-<li><a href="#orgcb39ec8">2. TEA-034 Tópicos Especiais em Engenharia Ambiental: Técnicas de Aprendizagem Acadêmica</a>
+<li><a href="#orgheadline15">2. TEA-034 Tópicos Especiais em Engenharia Ambiental: Técnicas de Aprendizagem Acadêmica</a>
 <ul>
-<li><a href="#org39b68ea">2.1. Horário</a></li>
-<li><a href="#orgd798c33">2.2. Programa: tea034-prog-2017-1.pdf</a></li>
-<li><a href="#org09077f7">2.3. Avaliação da disciplina pelos alunos: Esta disciplina nunca foi avaliada</a></li>
-<li><a href="#org2961766">2.4. Notas</a></li>
+<li><a href="#orgheadline11">2.1. Horário</a></li>
+<li><a href="#orgheadline12">2.2. Programa: tea034-prog-2017-1.pdf</a></li>
+<li><a href="#orgheadline13">2.3. Avaliação da disciplina pelos alunos: Esta disciplina nunca foi avaliada</a></li>
+<li><a href="#orgheadline14">2.4. Notas</a></li>
 </ul>
 </li>
-<li><a href="#org7842ccd">3. TEA-013 Matemática Aplicada II</a>
+<li><a href="#orgheadline17">3. TEA-013 Matemática Aplicada II</a>
 <ul>
-<li><a href="#org93adfe2">3.1. Ementa</a></li>
+<li><a href="#orgheadline16">3.1. Ementa</a></li>
 </ul>
 </li>
-<li><a href="#org807586e">4. TEA-752 Métodos Matemáticos em Engenharia Ambiental</a>
+<li><a href="#orgheadline24">4. TEA-752 Métodos Matemáticos em Engenharia Ambiental</a>
 <ul>
-<li><a href="#org74a0a9c">4.1. Ementa</a></li>
-<li><a href="#org54bf856">4.2. Horário</a></li>
-<li><a href="#org0ad7b63">4.3. Programa:  tea752-prog-2017-1.pdf</a></li>
-<li><a href="#org1aab086">4.4. Programa-como-realizado: tea752-prog-2017-1-check.pdf</a></li>
-<li><a href="#org17eafca">4.5. Notas de aula:  apple.pdf</a></li>
-<li><a href="#org97116cf">4.6. Provas</a></li>
+<li><a href="#orgheadline18">4.1. Ementa</a></li>
+<li><a href="#orgheadline19">4.2. Horário</a></li>
+<li><a href="#orgheadline20">4.3. Programa:  tea752-prog-2017-1.pdf</a></li>
+<li><a href="#orgheadline21">4.4. Programa-como-realizado: tea752-prog-2017-1-check.pdf</a></li>
+<li><a href="#orgheadline22">4.5. Notas de aula:  apple.pdf</a></li>
+<li><a href="#orgheadline23">4.6. Provas</a></li>
 </ul>
 </li>
-<li><a href="#orga6510e1">5. TEA-757 Camadas-Limite Naturais e Transporte de Poluentes</a>
+<li><a href="#orgheadline27">5. TEA-757 Camadas-Limite Naturais e Transporte de Poluentes</a>
 <ul>
-<li><a href="#org3641706">5.1. Ementa</a></li>
+<li><a href="#orgheadline25">5.1. Ementa</a></li>
+<li><a href="#orgheadline26">5.2. Notas de aula:  mecturbi.pdf</a></li>
 </ul>
 </li>
 </ul>
@@ -361,11 +277,11 @@ few times until HELP shows up).
 </p>
 
 
-<div id="outline-container-org9a40479" class="outline-2">
-<h2 id="org9a40479"><span class="section-number-2">1</span> TEA-010 Matemática Aplicada I</h2>
+<div id="outline-container-orgheadline10" class="outline-2">
+<h2 id="orgheadline10"><span class="section-number-2">1</span> TEA-010 Matemática Aplicada I</h2>
 <div class="outline-text-2" id="text-1">
-</div><div id="outline-container-orgcb11aa8" class="outline-3">
-<h3 id="orgcb11aa8"><span class="section-number-3">1.1</span> Ementa</h3>
+</div><div id="outline-container-orgheadline1" class="outline-3">
+<h3 id="orgheadline1"><span class="section-number-3">1.1</span> Ementa</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 1- Ferramentas computacionais para programação, processamento simbólico e plotagem. 2-
@@ -378,8 +294,9 @@ contorno.
 </div>
 </div>
 
-<div id="outline-container-org074a1b8" class="outline-3">
-<h3 id="org074a1b8"><span class="section-number-3">1.2</span> Horário</h3>
+
+<div id="outline-container-orgheadline2" class="outline-3">
+<h3 id="orgheadline2"><span class="section-number-3">1.2</span> Horário</h3>
 <div class="outline-text-3" id="text-1-2">
 <ul class="org-ul">
 <li>Aulas: 2<sup>as</sup>, 4<sup>as</sup> e 6<sup>as</sup>, 07:30&#x2013;09:10 PM02</li>
@@ -389,8 +306,8 @@ contorno.
 </div>
 
 
-<div id="outline-container-org8a4ab40" class="outline-3">
-<h3 id="org8a4ab40"><span class="section-number-3">1.3</span> Avaliação da disciplina pelos alunos</h3>
+<div id="outline-container-orgheadline3" class="outline-3">
+<h3 id="orgheadline3"><span class="section-number-3">1.3</span> Avaliação da disciplina pelos alunos</h3>
 <div class="outline-text-3" id="text-1-3">
 <ul class="org-ul">
 <li><a href="./pdf/Avaliacao-2015-1.pdf">2015</a></li>
@@ -400,43 +317,52 @@ contorno.
 </div>
 
 
-<div id="outline-container-org5112a92" class="outline-3">
-<h3 id="org5112a92"><span class="section-number-3">1.4</span> Programa: <a href="./pdf/tea010-prog-2017-1.pdf">tea010-prog-2017-1.pdf</a></h3>
+<div id="outline-container-orgheadline4" class="outline-3">
+<h3 id="orgheadline4"><span class="section-number-3">1.4</span> Programa: <a href="./pdf/tea010-prog-2017-1.pdf">tea010-prog-2017-1.pdf</a></h3>
 </div>
 
-<div id="outline-container-org8a89883" class="outline-3">
-<h3 id="org8a89883"><span class="section-number-3">1.5</span> Programa-como-realizado: <a href="./pdf/tea010-prog-2017-1-check.pdf">tea010-prog-2017-1-check.pdf</a></h3>
+
+<div id="outline-container-orgheadline5" class="outline-3">
+<h3 id="orgheadline5"><span class="section-number-3">1.5</span> Programa-como-realizado: <a href="./pdf/tea010-prog-2017-1-check.pdf">tea010-prog-2017-1-check.pdf</a></h3>
 </div>
-<div id="outline-container-org9773add" class="outline-3">
-<h3 id="org9773add"><span class="section-number-3">1.6</span> Livro-texto: <a href="./pdf/matappa-1ed.pdf">matappa-1ed.pdf</a></h3>
+
+<div id="outline-container-orgheadline6" class="outline-3">
+<h3 id="orgheadline6"><span class="section-number-3">1.6</span> Livro-texto: <a href="./pdf/matappa-1ed.pdf">matappa-1ed.pdf</a></h3>
 </div>
-<div id="outline-container-orgd4064a7" class="outline-3">
-<h3 id="orgd4064a7"><span class="section-number-3">1.7</span> Notas</h3>
+
+<div id="outline-container-orgheadline7" class="outline-3">
+<h3 id="orgheadline7"><span class="section-number-3">1.7</span> Notas</h3>
 <div class="outline-text-3" id="text-1-7">
 <p>
-Veja as <a href="./pdf/notpre2017-1.pdf">notas</a> até a P1: 
+Veja as <a href="./pdf/notpre2017-1.pdf">notas</a> até a P2 (Incluindo o Trabalho Computacional): 
 </p>
 
 <p>
 2017-04-15: Estão abertas as revisões da P1.
 </p>
-</div>
-</div>
 
-
-
-<div id="outline-container-orgbf923b5" class="outline-3">
-<h3 id="orgbf923b5"><span class="section-number-3">1.8</span> Provas</h3>
-<div class="outline-text-3" id="text-1-8">
 <p>
-Faça o download do gabarito da P1: <a href="./pdf/2017-1-p01-sol.pdf">2017-1-p01-sol.pdf</a>
+2017-05-14: Estão encerradas as revisões da P1. Estão abertas as revisões da P2.
 </p>
 </div>
 </div>
 
 
-<div id="outline-container-orgaaaa0a9" class="outline-3">
-<h3 id="orgaaaa0a9"><span class="section-number-3">1.9</span> Arquivos de provas passadas</h3>
+<div id="outline-container-orgheadline8" class="outline-3">
+<h3 id="orgheadline8"><span class="section-number-3">1.8</span> Provas</h3>
+<div class="outline-text-3" id="text-1-8">
+<p>
+Faça o download do gabarito da P1: <a href="./pdf/2017-1-p01-sol.pdf">2017-1-p01-sol.pdf</a>
+</p>
+
+<p>
+Faça o download do gabarito da P2: <a href="./pdf/2017-1-p02-sol.pdf">2017-1-p02-sol.pdf</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgheadline9" class="outline-3">
+<h3 id="orgheadline9"><span class="section-number-3">1.9</span> Arquivos de provas passadas</h3>
 <div class="outline-text-3" id="text-1-9">
 <ul class="org-ul">
 <li><a href="./pdf/2003-1-sol.pdf">2003-1-sol.pdf</a></li>
@@ -458,11 +384,11 @@ Faça o download do gabarito da P1: <a href="./pdf/2017-1-p01-sol.pdf">2017-1-p0
 </div>
 
 
-<div id="outline-container-orgcb39ec8" class="outline-2">
-<h2 id="orgcb39ec8"><span class="section-number-2">2</span> TEA-034 Tópicos Especiais em Engenharia Ambiental: Técnicas de Aprendizagem Acadêmica</h2>
+<div id="outline-container-orgheadline15" class="outline-2">
+<h2 id="orgheadline15"><span class="section-number-2">2</span> TEA-034 Tópicos Especiais em Engenharia Ambiental: Técnicas de Aprendizagem Acadêmica</h2>
 <div class="outline-text-2" id="text-2">
-</div><div id="outline-container-org39b68ea" class="outline-3">
-<h3 id="org39b68ea"><span class="section-number-3">2.1</span> Horário</h3>
+</div><div id="outline-container-orgheadline11" class="outline-3">
+<h3 id="orgheadline11"><span class="section-number-3">2.1</span> Horário</h3>
 <div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li>Aulas: 6<sup>as</sup>, PF-2, 07:30&#x2013;09:10</li>
@@ -471,16 +397,16 @@ Faça o download do gabarito da P1: <a href="./pdf/2017-1-p01-sol.pdf">2017-1-p0
 </div>
 </div>
 
-<div id="outline-container-orgd798c33" class="outline-3">
-<h3 id="orgd798c33"><span class="section-number-3">2.2</span> Programa: <a href="./pdf/tea034-prog-2017-1.pdf">tea034-prog-2017-1.pdf</a></h3>
+<div id="outline-container-orgheadline12" class="outline-3">
+<h3 id="orgheadline12"><span class="section-number-3">2.2</span> Programa: <a href="./pdf/tea034-prog-2017-1.pdf">tea034-prog-2017-1.pdf</a></h3>
 </div>
 
-<div id="outline-container-org09077f7" class="outline-3">
-<h3 id="org09077f7"><span class="section-number-3">2.3</span> Avaliação da disciplina pelos alunos: Esta disciplina nunca foi avaliada</h3>
+<div id="outline-container-orgheadline13" class="outline-3">
+<h3 id="orgheadline13"><span class="section-number-3">2.3</span> Avaliação da disciplina pelos alunos: Esta disciplina nunca foi avaliada</h3>
 </div>
 
-<div id="outline-container-org2961766" class="outline-3">
-<h3 id="org2961766"><span class="section-number-3">2.4</span> Notas</h3>
+<div id="outline-container-orgheadline14" class="outline-3">
+<h3 id="orgheadline14"><span class="section-number-3">2.4</span> Notas</h3>
 <div class="outline-text-3" id="text-2-4">
 <ul class="org-ul">
 <li>2017-03-03T14:59:13 As primeiras tarefas de cada aluno foram especificadas</li>
@@ -491,11 +417,11 @@ Faça o download do gabarito da P1: <a href="./pdf/2017-1-p01-sol.pdf">2017-1-p0
 
 
 
-<div id="outline-container-org7842ccd" class="outline-2">
-<h2 id="org7842ccd"><span class="section-number-2">3</span> TEA-013 Matemática Aplicada II</h2>
+<div id="outline-container-orgheadline17" class="outline-2">
+<h2 id="orgheadline17"><span class="section-number-2">3</span> TEA-013 Matemática Aplicada II</h2>
 <div class="outline-text-2" id="text-3">
-</div><div id="outline-container-org93adfe2" class="outline-3">
-<h3 id="org93adfe2"><span class="section-number-3">3.1</span> Ementa</h3>
+</div><div id="outline-container-orgheadline16" class="outline-3">
+<h3 id="orgheadline16"><span class="section-number-3">3.1</span> Ementa</h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 1- Ferramentas computacionais e solução numérica com diferenças finitas de equações diferenciais
@@ -516,11 +442,11 @@ Solução por separação de variáveis, transformadas integrais e transformada 
 </div>
 
 
-<div id="outline-container-org807586e" class="outline-2">
-<h2 id="org807586e"><span class="section-number-2">4</span> TEA-752 Métodos Matemáticos em Engenharia Ambiental</h2>
+<div id="outline-container-orgheadline24" class="outline-2">
+<h2 id="orgheadline24"><span class="section-number-2">4</span> TEA-752 Métodos Matemáticos em Engenharia Ambiental</h2>
 <div class="outline-text-2" id="text-4">
-</div><div id="outline-container-org74a0a9c" class="outline-3">
-<h3 id="org74a0a9c"><span class="section-number-3">4.1</span> Ementa</h3>
+</div><div id="outline-container-orgheadline18" class="outline-3">
+<h3 id="orgheadline18"><span class="section-number-3">4.1</span> Ementa</h3>
 <div class="outline-text-3" id="text-4-1">
 <p>
 Ementa: Tensores cartesianos. Funções de várias variáveis: Teorema da função
@@ -532,8 +458,8 @@ de Fourier e Equações Diferenciais Parciais: método de separação de variáv
 </div>
 
 
-<div id="outline-container-org54bf856" class="outline-3">
-<h3 id="org54bf856"><span class="section-number-3">4.2</span> Horário</h3>
+<div id="outline-container-orgheadline19" class="outline-3">
+<h3 id="orgheadline19"><span class="section-number-3">4.2</span> Horário</h3>
 <div class="outline-text-3" id="text-4-2">
 <p>
 2<sup>as</sup> e 4<sup>as</sup>, PF-16, 09:30&#x2013;11:10
@@ -542,22 +468,23 @@ de Fourier e Equações Diferenciais Parciais: método de separação de variáv
 </div>
 
 
-<div id="outline-container-org0ad7b63" class="outline-3">
-<h3 id="org0ad7b63"><span class="section-number-3">4.3</span> Programa:  <a href="./pdf/tea752-prog-2017-1.pdf">tea752-prog-2017-1.pdf</a></h3>
+<div id="outline-container-orgheadline20" class="outline-3">
+<h3 id="orgheadline20"><span class="section-number-3">4.3</span> Programa:  <a href="./pdf/tea752-prog-2017-1.pdf">tea752-prog-2017-1.pdf</a></h3>
 </div>
 
 
-<div id="outline-container-org1aab086" class="outline-3">
-<h3 id="org1aab086"><span class="section-number-3">4.4</span> Programa-como-realizado: <a href="./pdf/tea752-prog-2017-1-check.pdf">tea752-prog-2017-1-check.pdf</a></h3>
+<div id="outline-container-orgheadline21" class="outline-3">
+<h3 id="orgheadline21"><span class="section-number-3">4.4</span> Programa-como-realizado: <a href="./pdf/tea752-prog-2017-1-check.pdf">tea752-prog-2017-1-check.pdf</a></h3>
 </div>
 
 
-<div id="outline-container-org17eafca" class="outline-3">
-<h3 id="org17eafca"><span class="section-number-3">4.5</span> Notas de aula:  <a href="./pdf/apple.pdf">apple.pdf</a></h3>
+<div id="outline-container-orgheadline22" class="outline-3">
+<h3 id="orgheadline22"><span class="section-number-3">4.5</span> Notas de aula:  <a href="./pdf/apple.pdf">apple.pdf</a></h3>
 </div>
 
-<div id="outline-container-org97116cf" class="outline-3">
-<h3 id="org97116cf"><span class="section-number-3">4.6</span> Provas</h3>
+
+<div id="outline-container-orgheadline23" class="outline-3">
+<h3 id="orgheadline23"><span class="section-number-3">4.6</span> Provas</h3>
 <div class="outline-text-3" id="text-4-6">
 <p>
 Faça o download do gabarito da P1: <a href="./pdf/tea752-2017-1-p01-sol.pdf">tea752-2017-1-p01-sol.pdf</a>
@@ -566,12 +493,11 @@ Faça o download do gabarito da P1: <a href="./pdf/tea752-2017-1-p01-sol.pdf">te
 </div>
 </div>
 
-
-<div id="outline-container-orga6510e1" class="outline-2">
-<h2 id="orga6510e1"><span class="section-number-2">5</span> TEA-757 Camadas-Limite Naturais e Transporte de Poluentes</h2>
+<div id="outline-container-orgheadline27" class="outline-2">
+<h2 id="orgheadline27"><span class="section-number-2">5</span> TEA-757 Camadas-Limite Naturais e Transporte de Poluentes</h2>
 <div class="outline-text-2" id="text-5">
-</div><div id="outline-container-org3641706" class="outline-3">
-<h3 id="org3641706"><span class="section-number-3">5.1</span> Ementa</h3>
+</div><div id="outline-container-orgheadline25" class="outline-3">
+<h3 id="orgheadline25"><span class="section-number-3">5.1</span> Ementa</h3>
 <div class="outline-text-3" id="text-5-1">
 <p>
 Revisão das equações de Navier-Stokes e das equações de transporte para
@@ -591,11 +517,16 @@ Richardson e comprimento de estabilidade de Obukhov.
 </p>
 </div>
 </div>
+
+
+<div id="outline-container-orgheadline26" class="outline-3">
+<h3 id="orgheadline26"><span class="section-number-3">5.2</span> Notas de aula:  <a href="./pdf/mecturbi.pdf">mecturbi.pdf</a></h3>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2017-05-10 Qua 17:31</p>
+<p class="date">Created: 2017-05-15 Seg 13:53</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
