@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2017-05-15 Seg 13:53 -->
+<!-- 2017-05-31 Qua 14:06 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="viewport" content="width=device-width, initial-scale=1" />
 <title>Ensino (Teaching)</title>
@@ -257,10 +257,14 @@ for the JavaScript code in this tag.
 <li><a href="#orgheadline23">4.6. Provas</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline27">5. TEA-757 Camadas-Limite Naturais e Transporte de Poluentes</a>
+<li><a href="#orgheadline31">5. TEA-757 Camadas-Limite Naturais e Transporte de Poluentes</a>
 <ul>
 <li><a href="#orgheadline25">5.1. Ementa</a></li>
-<li><a href="#orgheadline26">5.2. Notas de aula:  mecturbi.pdf</a></li>
+<li><a href="#orgheadline26">5.2. Horário</a></li>
+<li><a href="#orgheadline27">5.3. Programa:  tea757-prog-2017-2.pdf</a></li>
+<li><a href="#orgheadline28">5.4. Programa-como-realizado:  tea757-prog-2017-2-check.pdf</a></li>
+<li><a href="#orgheadline29">5.5. Notas de aula:  mecturbi.pdf</a></li>
+<li><a href="#orgheadline30">5.6. Provas</a></li>
 </ul>
 </li>
 </ul>
@@ -489,12 +493,20 @@ de Fourier e Equações Diferenciais Parciais: método de separação de variáv
 <p>
 Faça o download do gabarito da P1: <a href="./pdf/tea752-2017-1-p01-sol.pdf">tea752-2017-1-p01-sol.pdf</a>
 </p>
+
+<p>
+Faça o download do gabarito da P2: <a href="./pdf/tea752-2017-1-p02-sol.pdf">tea752-2017-1-p02-sol.pdf</a>
+</p>
+
+<p>
+Faça o download do gabarito da P3: <a href="./pdf/tea752-2017-1-p03-sol.pdf">tea752-2017-1-p03-sol.pdf</a>
+</p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgheadline27" class="outline-2">
-<h2 id="orgheadline27"><span class="section-number-2">5</span> TEA-757 Camadas-Limite Naturais e Transporte de Poluentes</h2>
+<div id="outline-container-orgheadline31" class="outline-2">
+<h2 id="orgheadline31"><span class="section-number-2">5</span> TEA-757 Camadas-Limite Naturais e Transporte de Poluentes</h2>
 <div class="outline-text-2" id="text-5">
 </div><div id="outline-container-orgheadline25" class="outline-3">
 <h3 id="orgheadline25"><span class="section-number-3">5.1</span> Ementa</h3>
@@ -520,13 +532,35 @@ Richardson e comprimento de estabilidade de Obukhov.
 
 
 <div id="outline-container-orgheadline26" class="outline-3">
-<h3 id="orgheadline26"><span class="section-number-3">5.2</span> Notas de aula:  <a href="./pdf/mecturbi.pdf">mecturbi.pdf</a></h3>
+<h3 id="orgheadline26"><span class="section-number-3">5.2</span> Horário</h3>
+<div class="outline-text-3" id="text-5-2">
+<p>
+2<sup>as</sup> e 4<sup>as</sup>, PF-16, 09:30&#x2013;11:10
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgheadline27" class="outline-3">
+<h3 id="orgheadline27"><span class="section-number-3">5.3</span> Programa:  <a href="./pdf/tea757-prog-2017-2.pdf">tea757-prog-2017-2.pdf</a></h3>
+</div>
+
+<div id="outline-container-orgheadline28" class="outline-3">
+<h3 id="orgheadline28"><span class="section-number-3">5.4</span> Programa-como-realizado:  <a href="./pdf/tea757-prog-2017-2-check.pdf">tea757-prog-2017-2-check.pdf</a></h3>
+</div>
+
+<div id="outline-container-orgheadline29" class="outline-3">
+<h3 id="orgheadline29"><span class="section-number-3">5.5</span> Notas de aula:  <a href="./pdf/mecturbi.pdf">mecturbi.pdf</a></h3>
+</div>
+
+<div id="outline-container-orgheadline30" class="outline-3">
+<h3 id="orgheadline30"><span class="section-number-3">5.6</span> Provas</h3>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2017-05-15 Seg 13:53</p>
+<p class="date">Created: 2017-05-31 Qua 14:06</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
