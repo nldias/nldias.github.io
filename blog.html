@@ -3,12 +3,12 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2017-05-06 Sáb 14:18 -->
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- 2017-06-23 Sex 14:48 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="viewport" content="width=device-width, initial-scale=1" />
 <title>Thoughts on computing, teaching, and most anything else &#x2026;</title>
-<meta name="generator" content="Org mode" />
-<meta name="author" content="Nelson Luís Dias" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Nelson Luís Dias" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
@@ -53,97 +53,13 @@
     border: 1px solid black;
   }
   pre.src:hover:before { display: inline;}
-  /* Languages per Org manual */
-  pre.src-asymptote:before { content: 'Asymptote'; }
-  pre.src-awk:before { content: 'Awk'; }
-  pre.src-C:before { content: 'C'; }
-  /* pre.src-C++ doesn't work in CSS */
-  pre.src-clojure:before { content: 'Clojure'; }
-  pre.src-css:before { content: 'CSS'; }
-  pre.src-D:before { content: 'D'; }
-  pre.src-ditaa:before { content: 'ditaa'; }
-  pre.src-dot:before { content: 'Graphviz'; }
-  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
   pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-fortran:before { content: 'Fortran'; }
-  pre.src-gnuplot:before { content: 'gnuplot'; }
-  pre.src-haskell:before { content: 'Haskell'; }
-  pre.src-java:before { content: 'Java'; }
-  pre.src-js:before { content: 'Javascript'; }
-  pre.src-latex:before { content: 'LaTeX'; }
-  pre.src-ledger:before { content: 'Ledger'; }
-  pre.src-lisp:before { content: 'Lisp'; }
-  pre.src-lilypond:before { content: 'Lilypond'; }
-  pre.src-lua:before { content: 'Lua'; }
-  pre.src-matlab:before { content: 'MATLAB'; }
-  pre.src-mscgen:before { content: 'Mscgen'; }
-  pre.src-ocaml:before { content: 'Objective Caml'; }
-  pre.src-octave:before { content: 'Octave'; }
-  pre.src-org:before { content: 'Org mode'; }
-  pre.src-oz:before { content: 'OZ'; }
-  pre.src-plantuml:before { content: 'Plantuml'; }
-  pre.src-processing:before { content: 'Processing.js'; }
-  pre.src-python:before { content: 'Python'; }
-  pre.src-R:before { content: 'R'; }
-  pre.src-ruby:before { content: 'Ruby'; }
-  pre.src-sass:before { content: 'Sass'; }
-  pre.src-scheme:before { content: 'Scheme'; }
-  pre.src-screen:before { content: 'Gnu Screen'; }
-  pre.src-sed:before { content: 'Sed'; }
-  pre.src-sh:before { content: 'shell'; }
-  pre.src-sql:before { content: 'SQL'; }
-  pre.src-sqlite:before { content: 'SQLite'; }
-  /* additional languages in org.el's org-babel-load-languages alist */
-  pre.src-forth:before { content: 'Forth'; }
-  pre.src-io:before { content: 'IO'; }
-  pre.src-J:before { content: 'J'; }
-  pre.src-makefile:before { content: 'Makefile'; }
-  pre.src-maxima:before { content: 'Maxima'; }
-  pre.src-perl:before { content: 'Perl'; }
-  pre.src-picolisp:before { content: 'Pico Lisp'; }
-  pre.src-scala:before { content: 'Scala'; }
-  pre.src-shell:before { content: 'Shell Script'; }
-  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
-  /* additional language identifiers per "defun org-babel-execute"
-       in ob-*.el */
-  pre.src-cpp:before  { content: 'C++'; }
-  pre.src-abc:before  { content: 'ABC'; }
-  pre.src-coq:before  { content: 'Coq'; }
-  pre.src-groovy:before  { content: 'Groovy'; }
-  /* additional language identifiers from org-babel-shell-names in
-     ob-shell.el: ob-shell is the only babel language using a lambda to put
-     the execution function name together. */
-  pre.src-bash:before  { content: 'bash'; }
-  pre.src-csh:before  { content: 'csh'; }
-  pre.src-ash:before  { content: 'ash'; }
-  pre.src-dash:before  { content: 'dash'; }
-  pre.src-ksh:before  { content: 'ksh'; }
-  pre.src-mksh:before  { content: 'mksh'; }
-  pre.src-posh:before  { content: 'posh'; }
-  /* Additional Emacs modes also supported by the LaTeX listings package */
-  pre.src-ada:before { content: 'Ada'; }
-  pre.src-asm:before { content: 'Assembler'; }
-  pre.src-caml:before { content: 'Caml'; }
-  pre.src-delphi:before { content: 'Delphi'; }
-  pre.src-html:before { content: 'HTML'; }
-  pre.src-idl:before { content: 'IDL'; }
-  pre.src-mercury:before { content: 'Mercury'; }
-  pre.src-metapost:before { content: 'MetaPost'; }
-  pre.src-modula-2:before { content: 'Modula-2'; }
-  pre.src-pascal:before { content: 'Pascal'; }
-  pre.src-ps:before { content: 'PostScript'; }
-  pre.src-prolog:before { content: 'Prolog'; }
-  pre.src-simula:before { content: 'Simula'; }
-  pre.src-tcl:before { content: 'tcl'; }
-  pre.src-tex:before { content: 'TeX'; }
-  pre.src-plain-tex:before { content: 'Plain TeX'; }
-  pre.src-verilog:before { content: 'Verilog'; }
-  pre.src-vhdl:before { content: 'VHDL'; }
-  pre.src-xml:before { content: 'XML'; }
-  pre.src-nxml:before { content: 'XML'; }
-  /* add a generic configuration mode; LaTeX export needs an additional
-     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
-  pre.src-conf:before { content: 'Configuration File'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
 
   table { border-collapse:collapse; }
   caption.t-above { caption-side: top; }
@@ -176,7 +92,6 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
 <link rel="stylesheet" type="text/css" href="readtheorg.css" />
@@ -307,22 +222,23 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org964a39c">1. 2017-03-18T12:12:57 &#x2013; LaTeX on the go in an Android Tablet (and much more)</a></li>
-<li><a href="#org51534d3">2. 2017-03-16T19:28:07 &#x2013; O tempo do fim das ilusões</a></li>
-<li><a href="#orgcc2784d">3. 2017-03-01T12:09:55 &#x2013; Prá tudo se acabar na 4<sup>a</sup> feira</a></li>
-<li><a href="#org46b19f0">4. 2017-01-28T10:45:21 &#x2013; Installing miniconda in Linux and Windows</a></li>
-<li><a href="#org89b9549">5. 2016-11-19T17:36:35 &#x2013; Opinião</a></li>
-<li><a href="#org77c2f63">6. 2016-11-09T12:46:14 &#x2013; Serious work with Linux and Cinnamon</a></li>
-<li><a href="#orge84310a">7. 2016-11-05T19:45:22 &#x2013; Setting up a Homepage</a></li>
-<li><a href="#orgb8eb392">8. 2009-06-23T00:00:00 &#x2013; Professores podem errar (mas quanto?)</a></li>
-<li><a href="#org97d74d8">9. 2009-03-20T00:00:00 &#x2013; O esforço de pensar</a></li>
-<li><a href="#org86196db">10. 2009-03-12T00:00:00 &#x2013; O distante passado recente dos computadores</a></li>
-<li><a href="#org774ec0a">11. 2008-08-06T00:00:00 &#x2013; Jovens e Velhos</a></li>
-<li><a href="#orgaaa1211">12. 2008-06-10T00:00:00 &#x2013; O olhar hipnótico da serpente</a></li>
-<li><a href="#org21609ab">13. 2008-06-01T00:00:00 &#x2013; Faça da Internet uma amiga</a></li>
-<li><a href="#org41ad527">14. 2008-05-17T00:00:00 &#x2013; Ensino e Aprendizado são Diversão</a></li>
-<li><a href="#org124849d">15. 2008-04-08T00:00:00 Recuperando o Saber</a></li>
-<li><a href="#orgb3fe20e">16. 2008-03-25: Disciplina</a></li>
+<li><a href="#orgheadline1">1. 2017-06-23T14:46:52 &#x2013; Fim de semestre</a></li>
+<li><a href="#orgheadline3">2. 2017-03-18T12:12:57 &#x2013; LaTeX on the go in an Android Tablet (and much more)</a></li>
+<li><a href="#orgheadline4">3. 2017-03-16T19:28:07 &#x2013; O tempo do fim das ilusões</a></li>
+<li><a href="#orgheadline5">4. 2017-03-01T12:09:55 &#x2013; Prá tudo se acabar na 4<sup>a</sup> feira</a></li>
+<li><a href="#orgheadline2">5. 2017-01-28T10:45:21 &#x2013; Installing miniconda in Linux and Windows</a></li>
+<li><a href="#orgheadline6">6. 2016-11-19T17:36:35 &#x2013; Opinião</a></li>
+<li><a href="#orgheadline7">7. 2016-11-09T12:46:14 &#x2013; Serious work with Linux and Cinnamon</a></li>
+<li><a href="#orgheadline8">8. 2016-11-05T19:45:22 &#x2013; Setting up a Homepage</a></li>
+<li><a href="#orgheadline9">9. 2009-06-23T00:00:00 &#x2013; Professores podem errar (mas quanto?)</a></li>
+<li><a href="#orgheadline10">10. 2009-03-20T00:00:00 &#x2013; O esforço de pensar</a></li>
+<li><a href="#orgheadline11">11. 2009-03-12T00:00:00 &#x2013; O distante passado recente dos computadores</a></li>
+<li><a href="#orgheadline12">12. 2008-08-06T00:00:00 &#x2013; Jovens e Velhos</a></li>
+<li><a href="#orgheadline13">13. 2008-06-10T00:00:00 &#x2013; O olhar hipnótico da serpente</a></li>
+<li><a href="#orgheadline14">14. 2008-06-01T00:00:00 &#x2013; Faça da Internet uma amiga</a></li>
+<li><a href="#orgheadline15">15. 2008-05-17T00:00:00 &#x2013; Ensino e Aprendizado são Diversão</a></li>
+<li><a href="#orgheadline16">16. 2008-04-08T00:00:00 Recuperando o Saber</a></li>
+<li><a href="#orgheadline17">17. 2008-03-25: Disciplina</a></li>
 </ul>
 </div>
 </div>
@@ -346,7 +262,7 @@ sentido.</li>
 </ul>
 
 
-<hr />
+<hr  />
 
 <p>
 The articles in this Blog will obey the following self-imposed rule of conduct:
@@ -358,9 +274,62 @@ kind of attack, in no sense whatsoever.</li>
 </ul>
 
 
-<div id="outline-container-org964a39c" class="outline-2">
-<h2 id="org964a39c"><span class="section-number-2">1</span> 2017-03-18T12:12:57 &#x2013; LaTeX on the go in an Android Tablet (and much more)</h2>
+<div id="outline-container-orgheadline1" class="outline-2">
+<h2 id="orgheadline1"><span class="section-number-2">1</span> 2017-06-23T14:46:52 &#x2013; Fim de semestre</h2>
 <div class="outline-text-2" id="text-1">
+<p>
+Em sala, última prova do ano antes da final . Dos 22 alunos que começaram o
+semestre, há 16 fazendo a prova . Quase 1/3 dos alunos já desistiram.
+</p>
+
+<p>
+Escrever pressupõe ter algo para dizer, e eu me pergunto o que tenho a dizer
+para esses 2/3: que estudem mais, ou que serão recompensados por seu esforço e
+por sua dedicação? Que minha disciplina é importante ou que pode haver imenso
+prazer no ato de aprender?
+</p>
+
+<p>
+Sim, há muito para lhes dizer que poderia, quem sabe, ajudá-los muitíssimo na
+longa luta que têm pela frente, na construção de suas vidas.
+</p>
+
+<p>
+Mas a ausência eloquente dos 6 que já desistiram, e o silêncio obrigatório
+(pois estão em prova) dos demais me emudecem também.  Logo, começo a receber
+algumas provas de volta. Em silêncio.
+</p>
+
+<p>
+O texto progride, portanto, rapidamente, para o vácuo, a falta de
+assunto. Para o silêncio entre desconhecidos, que é tão diferente do silêncio
+alegre, rico, cheio de harmonia que tantas vezes existe entre grandes amigos,
+ou entre amantes depois.
+</p>
+
+<p>
+É isto! Afinal, onde estão nossos assuntos em comum, nossos mútuos interesses?
+Onde estão nossa paixão por nossa profissão, nossa curiosidade intelectual,
+nossa esperança de estarmos investindo em nosso futuro?  Na formatura desses
+alunos, tenho certeza, essas palavras certamente serão ditas (com convicção?).
+</p>
+
+<p>
+E é este o segredo de ensinar e aprender: querer ensinar, e querer aprender.
+</p>
+
+<p>
+Mas hoje eles estão cansados. Foi um longo semestre; estão em silêncio; e nao
+me dirão se para eles valeu a pena ou não eu ter querido lhes ensinar algo.
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgheadline3" class="outline-2">
+<h2 id="orgheadline3"><span class="section-number-2">2</span> 2017-03-18T12:12:57 &#x2013; LaTeX on the go in an Android Tablet (and much more)</h2>
+<div class="outline-text-2" id="text-2">
 <p>
 A little more than a year ago, I decided that carrying a notebook and a slide
 projector (projectors are still big and heavy at my university) to the classroom
@@ -456,7 +425,7 @@ shif-option).
 <p>
 Redundancy (Termux and GnuRoot) is important in real life, so I kept the two
 of them. I go to Termux for Emacs and Python (but I may use Python in GnuRoot
-as well, particularly if I ever need <a href="#org46b19f0">Miniconda</a> in the tablet), and (for now)
+as well, particularly if I ever need <a href="#orgheadline2">Miniconda</a> in the tablet), and (for now)
 to GnuRoot for LaTeX and Maxima. 
 </p>
 
@@ -487,7 +456,7 @@ via USB, I can copy and paste files in both directions. Whenever I come back
 from a trip, whatever documents and presentations I created in LaTeX can be
 backed up. I can also do it directly from the tablet using Dropbox. Very
 serious research work can be done in GnuRoot, as well, with Python, Gnuplot,
-Maxima, and if need be, FORTRAN, C, or <a href="#org46b19f0">Miniconda</a> (for numba; Termux has numpy
+Maxima, and if need be, FORTRAN, C, or <a href="#orgheadline2">Miniconda</a> (for numba; Termux has numpy
 as well as GnuRoot).
 </p>
 
@@ -529,9 +498,9 @@ Brazil. I hope to see it happen very soon.
 </div>
 
 
-<div id="outline-container-org51534d3" class="outline-2">
-<h2 id="org51534d3"><span class="section-number-2">2</span> 2017-03-16T19:28:07 &#x2013; O tempo do fim das ilusões</h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-orgheadline4" class="outline-2">
+<h2 id="orgheadline4"><span class="section-number-2">3</span> 2017-03-16T19:28:07 &#x2013; O tempo do fim das ilusões</h2>
+<div class="outline-text-2" id="text-3">
 <p>
 Por algum motivo, talvez alguma vantagem evolutiva, nós seres
 humanos somos atraídos por ilusões do fácil, do rápido, e do
@@ -624,9 +593,9 @@ muitas vezes, a respeito de si próprios.
 </div>
 
 
-<div id="outline-container-orgcc2784d" class="outline-2">
-<h2 id="orgcc2784d"><span class="section-number-2">3</span> 2017-03-01T12:09:55 &#x2013; Prá tudo se acabar na 4<sup>a</sup> feira</h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-orgheadline5" class="outline-2">
+<h2 id="orgheadline5"><span class="section-number-2">4</span> 2017-03-01T12:09:55 &#x2013; Prá tudo se acabar na 4<sup>a</sup> feira</h2>
+<div class="outline-text-2" id="text-4">
 <p>
 O primeiro dia depois do Carnaval, esta 4<sup>a</sup> feira, 1<sup>o</sup> de março de 2017,
 amanheceu nublado em Curitiba. É impossível não sentir um pouco da tristeza
@@ -682,9 +651,9 @@ próximo Carnaval. Feliz 2017.
 </div>
 
 
-<div id="outline-container-org46b19f0" class="outline-2">
-<h2 id="org46b19f0"><span class="section-number-2">4</span> 2017-01-28T10:45:21 &#x2013; Installing miniconda in Linux and Windows</h2>
-<div class="outline-text-2" id="text-4">
+<div id="outline-container-orgheadline2" class="outline-2">
+<h2 id="orgheadline2"><span class="section-number-2">5</span> 2017-01-28T10:45:21 &#x2013; Installing miniconda in Linux and Windows</h2>
+<div class="outline-text-2" id="text-5">
 <p>
 Python is very popular, for good reason. Programming, debugging, and testing in
 Python is much faster than in older languages such as FORTRAN, Pascal, or
@@ -716,7 +685,8 @@ I change my Python shebang to
 </p>
 
 <div class="org-src-container">
-<pre class="src src-python">#!/home/nldias/miniconda3/bin/python
+
+<pre class="src src-python"><span style="color: #b22222;">#</span><span style="color: #b22222;">!/home/nldias/miniconda3/bin/python</span>
 </pre>
 </div>
 
@@ -796,9 +766,9 @@ fuss).
 </div>
 
 
-<div id="outline-container-org89b9549" class="outline-2">
-<h2 id="org89b9549"><span class="section-number-2">5</span> 2016-11-19T17:36:35 &#x2013; Opinião</h2>
-<div class="outline-text-2" id="text-5">
+<div id="outline-container-orgheadline6" class="outline-2">
+<h2 id="orgheadline6"><span class="section-number-2">6</span> 2016-11-19T17:36:35 &#x2013; Opinião</h2>
+<div class="outline-text-2" id="text-6">
 <p>
 Ter opinião, posicionar-se.  Ver, diante de cada fato da vida que se apresenta
 para nós, a necessidade de tomar atitude, tomar partido ou simplesmente
@@ -843,9 +813,9 @@ E estamos precisando tanto avançar.
 </div>
 </div>
 
-<div id="outline-container-org77c2f63" class="outline-2">
-<h2 id="org77c2f63"><span class="section-number-2">6</span> 2016-11-09T12:46:14 &#x2013; Serious work with Linux and Cinnamon</h2>
-<div class="outline-text-2" id="text-6">
+<div id="outline-container-orgheadline7" class="outline-2">
+<h2 id="orgheadline7"><span class="section-number-2">7</span> 2016-11-09T12:46:14 &#x2013; Serious work with Linux and Cinnamon</h2>
+<div class="outline-text-2" id="text-7">
 <p>
 I have been a Linux user for a long time, and even before that I
 had benefitted greatly from open-source and free software such as DJGPP's Gnu
@@ -916,9 +886,9 @@ Linux way is a very good way.
 </div>
 </div>
 
-<div id="outline-container-orge84310a" class="outline-2">
-<h2 id="orge84310a"><span class="section-number-2">7</span> 2016-11-05T19:45:22 &#x2013; Setting up a Homepage</h2>
-<div class="outline-text-2" id="text-7">
+<div id="outline-container-orgheadline8" class="outline-2">
+<h2 id="orgheadline8"><span class="section-number-2">8</span> 2016-11-05T19:45:22 &#x2013; Setting up a Homepage</h2>
+<div class="outline-text-2" id="text-8">
 <p>
 It is painful not to be able to follow the pace of those who set up their
 homepages by snapping their fingers. But I got here:
@@ -945,9 +915,9 @@ can only wish you all a good end of Weekend.
 </p>
 </div>
 </div>
-<div id="outline-container-orgb8eb392" class="outline-2">
-<h2 id="orgb8eb392"><span class="section-number-2">8</span> 2009-06-23T00:00:00 &#x2013; Professores podem errar (mas quanto?)</h2>
-<div class="outline-text-2" id="text-8">
+<div id="outline-container-orgheadline9" class="outline-2">
+<h2 id="orgheadline9"><span class="section-number-2">9</span> 2009-06-23T00:00:00 &#x2013; Professores podem errar (mas quanto?)</h2>
+<div class="outline-text-2" id="text-9">
 <p>
 Professores podem errar, e engana-se quem pensa o contrário. É impossível em
 uma sequência de dez, vinte aulas, não cometer erros: interpretações
@@ -1009,9 +979,9 @@ fé. Tudo aquilo que um mau professor não faz.
 </div>
 </div>
 
-<div id="outline-container-org97d74d8" class="outline-2">
-<h2 id="org97d74d8"><span class="section-number-2">9</span> 2009-03-20T00:00:00 &#x2013; O esforço de pensar</h2>
-<div class="outline-text-2" id="text-9">
+<div id="outline-container-orgheadline10" class="outline-2">
+<h2 id="orgheadline10"><span class="section-number-2">10</span> 2009-03-20T00:00:00 &#x2013; O esforço de pensar</h2>
+<div class="outline-text-2" id="text-10">
 <p>
 Na 4a feira, 2009-03-18, reuni-me com 3 alunos de pós-graduação para discutir
 um artigo que submetemos a uma revista, e que agora precisamos revisar à luz
@@ -1072,9 +1042,9 @@ se este artigo vai ser aceito.
 </div>
 </div>
 
-<div id="outline-container-org86196db" class="outline-2">
-<h2 id="org86196db"><span class="section-number-2">10</span> 2009-03-12T00:00:00 &#x2013; O distante passado recente dos computadores</h2>
-<div class="outline-text-2" id="text-10">
+<div id="outline-container-orgheadline11" class="outline-2">
+<h2 id="orgheadline11"><span class="section-number-2">11</span> 2009-03-12T00:00:00 &#x2013; O distante passado recente dos computadores</h2>
+<div class="outline-text-2" id="text-11">
 <p>
 Segundo a Wikipedia, o primeiro compilador FORTRAN veio ao mundo em abril
 de 1957. FORTRAN é mais velho do que eu, que cheguei em junho de 1961. Nesta
@@ -1131,9 +1101,9 @@ filme.
 </div>
 </div>
 
-<div id="outline-container-org774ec0a" class="outline-2">
-<h2 id="org774ec0a"><span class="section-number-2">11</span> 2008-08-06T00:00:00 &#x2013; Jovens e Velhos</h2>
-<div class="outline-text-2" id="text-11">
+<div id="outline-container-orgheadline12" class="outline-2">
+<h2 id="orgheadline12"><span class="section-number-2">12</span> 2008-08-06T00:00:00 &#x2013; Jovens e Velhos</h2>
+<div class="outline-text-2" id="text-12">
 <p>
 <b>(Ou a dialética do bom conflito de gerações)</b>
 </p>
@@ -1269,9 +1239,9 @@ urgentemente voltar aos hábitos da tribo: respeitar e ouvir os mais velhos.
 </div>
 </div>
 
-<div id="outline-container-orgaaa1211" class="outline-2">
-<h2 id="orgaaa1211"><span class="section-number-2">12</span> 2008-06-10T00:00:00 &#x2013; O olhar hipnótico da serpente</h2>
-<div class="outline-text-2" id="text-12">
+<div id="outline-container-orgheadline13" class="outline-2">
+<h2 id="orgheadline13"><span class="section-number-2">13</span> 2008-06-10T00:00:00 &#x2013; O olhar hipnótico da serpente</h2>
+<div class="outline-text-2" id="text-13">
 <p>
 Há quem diga, mas deve ser um mito, que a serpente hipnotiza sua presa antes
 de dar o bote. A vítima fica imóvel, imobilizada, destinada a ser abocanhada
@@ -1338,9 +1308,9 @@ vencer. Só nos resta, como São Jorge, Santo Guerreiro, combater.
 </div>
 </div>
 
-<div id="outline-container-org21609ab" class="outline-2">
-<h2 id="org21609ab"><span class="section-number-2">13</span> 2008-06-01T00:00:00 &#x2013; Faça da Internet uma amiga</h2>
-<div class="outline-text-2" id="text-13">
+<div id="outline-container-orgheadline14" class="outline-2">
+<h2 id="orgheadline14"><span class="section-number-2">14</span> 2008-06-01T00:00:00 &#x2013; Faça da Internet uma amiga</h2>
+<div class="outline-text-2" id="text-14">
 <p>
 Tanto quanto eu sei, foi no século XVIII que se procurou fazer pela primeira
 vez uma Enciclopédia. A tentativa deu nome a um grupo de <i>savants</i>:
@@ -1386,9 +1356,9 @@ fofocas e abobrinhas na rede.
 </div>
 </div>
 
-<div id="outline-container-org41ad527" class="outline-2">
-<h2 id="org41ad527"><span class="section-number-2">14</span> 2008-05-17T00:00:00 &#x2013; Ensino e Aprendizado são Diversão</h2>
-<div class="outline-text-2" id="text-14">
+<div id="outline-container-orgheadline15" class="outline-2">
+<h2 id="orgheadline15"><span class="section-number-2">15</span> 2008-05-17T00:00:00 &#x2013; Ensino e Aprendizado são Diversão</h2>
+<div class="outline-text-2" id="text-15">
 <p>
 Nunca consigo formular um bom motivo para alguém estudar: por que você deveria
 estudar? Porque isto é uma garantia de segurança financeira? Idealmente sim,
@@ -1469,9 +1439,9 @@ das coisas mais divertidas, mais prazeirosas, do mundo.
 </div>
 </div>
 
-<div id="outline-container-org124849d" class="outline-2">
-<h2 id="org124849d"><span class="section-number-2">15</span> 2008-04-08T00:00:00 Recuperando o Saber</h2>
-<div class="outline-text-2" id="text-15">
+<div id="outline-container-orgheadline16" class="outline-2">
+<h2 id="orgheadline16"><span class="section-number-2">16</span> 2008-04-08T00:00:00 Recuperando o Saber</h2>
+<div class="outline-text-2" id="text-16">
 <p>
 Enquanto o ensino médio continua em sua queda livre, a Universidade quer
 aumentar a sua eficiência, diminuir as desistências, reduzir as suas taxas de
@@ -1536,9 +1506,9 @@ realidade de nossa ignorância.
 </div>
 </div>
 
-<div id="outline-container-orgb3fe20e" class="outline-2">
-<h2 id="orgb3fe20e"><span class="section-number-2">16</span> 2008-03-25: Disciplina</h2>
-<div class="outline-text-2" id="text-16">
+<div id="outline-container-orgheadline17" class="outline-2">
+<h2 id="orgheadline17"><span class="section-number-2">17</span> 2008-03-25: Disciplina</h2>
+<div class="outline-text-2" id="text-17">
 <p>
 Hoje de manhã, na CBN, Cláudio Moura e Castro deu uma entrevista sobre a
 qualidade do ensino fundamental brasileiro. Tocou na ferida, comentou que este
@@ -1572,7 +1542,7 @@ coniventes: eles estão destruindo o futuro.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2017-05-06 Sáb 14:18</p>
+<p class="date">Created: 2017-06-23 Sex 14:48</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
