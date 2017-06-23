@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2017-05-31 Qua 14:06 -->
+<!-- 2017-06-23 Sex 14:05 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="viewport" content="width=device-width, initial-scale=1" />
 <title>Ensino (Teaching)</title>
@@ -263,7 +263,7 @@ for the JavaScript code in this tag.
 <li><a href="#orgheadline26">5.2. Horário</a></li>
 <li><a href="#orgheadline27">5.3. Programa:  tea757-prog-2017-2.pdf</a></li>
 <li><a href="#orgheadline28">5.4. Programa-como-realizado:  tea757-prog-2017-2-check.pdf</a></li>
-<li><a href="#orgheadline29">5.5. Notas de aula:  mecturbi.pdf</a></li>
+<li><a href="#orgheadline29">5.5. Notas de aula:  mecturbi.pdf (atualizadas em 2017-06-07T19:37:07)</a></li>
 <li><a href="#orgheadline30">5.6. Provas</a></li>
 </ul>
 </li>
@@ -330,15 +330,17 @@ contorno.
 <h3 id="orgheadline5"><span class="section-number-3">1.5</span> Programa-como-realizado: <a href="./pdf/tea010-prog-2017-1-check.pdf">tea010-prog-2017-1-check.pdf</a></h3>
 </div>
 
+
 <div id="outline-container-orgheadline6" class="outline-3">
 <h3 id="orgheadline6"><span class="section-number-3">1.6</span> Livro-texto: <a href="./pdf/matappa-1ed.pdf">matappa-1ed.pdf</a></h3>
 </div>
+
 
 <div id="outline-container-orgheadline7" class="outline-3">
 <h3 id="orgheadline7"><span class="section-number-3">1.7</span> Notas</h3>
 <div class="outline-text-3" id="text-1-7">
 <p>
-Veja as <a href="./pdf/notpre2017-1.pdf">notas</a> até a P2 (Incluindo o Trabalho Computacional): 
+Veja as <a href="./pdf/notpre2017-1.pdf">notas</a> até a P4 (Incluindo o Trabalho Computacional): 
 </p>
 
 <p>
@@ -348,9 +350,16 @@ Veja as <a href="./pdf/notpre2017-1.pdf">notas</a> até a P2 (Incluindo o Trabal
 <p>
 2017-05-14: Estão encerradas as revisões da P1. Estão abertas as revisões da P2.
 </p>
-</div>
-</div>
 
+<p>
+2017-06-02: Estão encerradas as revisões da P2. Estão abertas as revisões da P3.
+</p>
+
+<p>
+2017-06-23: Estão encerradas as revisões da P2. Estão abertas as revisões da P3.
+</p>
+</div>
+</div>
 
 <div id="outline-container-orgheadline8" class="outline-3">
 <h3 id="orgheadline8"><span class="section-number-3">1.8</span> Provas</h3>
@@ -362,8 +371,19 @@ Faça o download do gabarito da P1: <a href="./pdf/2017-1-p01-sol.pdf">2017-1-p0
 <p>
 Faça o download do gabarito da P2: <a href="./pdf/2017-1-p02-sol.pdf">2017-1-p02-sol.pdf</a>
 </p>
+
+<p>
+Faça o download do gabarito da P3: <a href="./pdf/2017-1-p03-sol.pdf">2017-1-p03-sol.pdf</a>
+</p>
+
+<p>
+Faça o download do gabarito da P4: <a href="./pdf/2017-1-p04-sol.pdf">2017-1-p04-sol.pdf</a>
+</p>
 </div>
 </div>
+
+
+
 
 <div id="outline-container-orgheadline9" class="outline-3">
 <h3 id="orgheadline9"><span class="section-number-3">1.9</span> Arquivos de provas passadas</h3>
@@ -545,12 +565,14 @@ Richardson e comprimento de estabilidade de Obukhov.
 <h3 id="orgheadline27"><span class="section-number-3">5.3</span> Programa:  <a href="./pdf/tea757-prog-2017-2.pdf">tea757-prog-2017-2.pdf</a></h3>
 </div>
 
+
 <div id="outline-container-orgheadline28" class="outline-3">
 <h3 id="orgheadline28"><span class="section-number-3">5.4</span> Programa-como-realizado:  <a href="./pdf/tea757-prog-2017-2-check.pdf">tea757-prog-2017-2-check.pdf</a></h3>
 </div>
 
+
 <div id="outline-container-orgheadline29" class="outline-3">
-<h3 id="orgheadline29"><span class="section-number-3">5.5</span> Notas de aula:  <a href="./pdf/mecturbi.pdf">mecturbi.pdf</a></h3>
+<h3 id="orgheadline29"><span class="section-number-3">5.5</span> Notas de aula:  <a href="./pdf/mecturbi.pdf">mecturbi.pdf</a> (atualizadas em 2017-06-07T19:37:07)</h3>
 </div>
 
 <div id="outline-container-orgheadline30" class="outline-3">
@@ -560,7 +582,7 @@ Richardson e comprimento de estabilidade de Obukhov.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2017-05-31 Qua 14:06</p>
+<p class="date">Created: 2017-06-23 Sex 14:05</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
