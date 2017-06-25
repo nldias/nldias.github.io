@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2017-06-07 Qua 19:37 -->
+<!-- 2017-06-23 Sex 17:54 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Ensino (Teaching)</title>
@@ -308,48 +308,48 @@ for the JavaScript code in this tag.
 <ul>
 <li><a href="#org9a40479">1. TEA-010 Matemática Aplicada I</a>
 <ul>
-<li><a href="#orgc1b5d08">1.1. Ementa</a></li>
-<li><a href="#org52252bd">1.2. Horário</a></li>
+<li><a href="#org53efa1a">1.1. Ementa</a></li>
+<li><a href="#orgaef7dbd">1.2. Horário</a></li>
 <li><a href="#org8a4ab40">1.3. Avaliação da disciplina pelos alunos</a></li>
 <li><a href="#org5112a92">1.4. Programa: tea010-prog-2017-1.pdf</a></li>
 <li><a href="#org8a89883">1.5. Programa-como-realizado: tea010-prog-2017-1-check.pdf</a></li>
 <li><a href="#org9773add">1.6. Livro-texto: matappa-1ed.pdf</a></li>
-<li><a href="#org821f466">1.7. Notas</a></li>
-<li><a href="#org00b2be1">1.8. Provas</a></li>
+<li><a href="#org5dc4574">1.7. Notas</a></li>
+<li><a href="#org45bf4e2">1.8. Provas</a></li>
 <li><a href="#orgaaaa0a9">1.9. Arquivos de provas passadas</a></li>
 </ul>
 </li>
 <li><a href="#orgcb39ec8">2. TEA-034 Tópicos Especiais em Engenharia Ambiental: Técnicas de Aprendizagem Acadêmica</a>
 <ul>
-<li><a href="#org68df228">2.1. Horário</a></li>
+<li><a href="#orgc6b9095">2.1. Horário</a></li>
 <li><a href="#orgd798c33">2.2. Programa: tea034-prog-2017-1.pdf</a></li>
 <li><a href="#org09077f7">2.3. Avaliação da disciplina pelos alunos: Esta disciplina nunca foi avaliada</a></li>
-<li><a href="#org711f2fe">2.4. Notas</a></li>
+<li><a href="#orga866014">2.4. Notas</a></li>
 </ul>
 </li>
 <li><a href="#org7842ccd">3. TEA-013 Matemática Aplicada II</a>
 <ul>
-<li><a href="#org0a939ee">3.1. Ementa</a></li>
+<li><a href="#orgb1a7e62">3.1. Ementa</a></li>
 </ul>
 </li>
 <li><a href="#org807586e">4. TEA-752 Métodos Matemáticos em Engenharia Ambiental</a>
 <ul>
-<li><a href="#org2f775fc">4.1. Ementa</a></li>
-<li><a href="#org59a3da0">4.2. Horário</a></li>
+<li><a href="#org4caede5">4.1. Ementa</a></li>
+<li><a href="#org75cbacd">4.2. Horário</a></li>
 <li><a href="#org0ad7b63">4.3. Programa:  tea752-prog-2017-1.pdf</a></li>
 <li><a href="#org1aab086">4.4. Programa-como-realizado: tea752-prog-2017-1-check.pdf</a></li>
 <li><a href="#org17eafca">4.5. Notas de aula:  apple.pdf</a></li>
-<li><a href="#org9a22a9e">4.6. Provas</a></li>
+<li><a href="#org39f96cf">4.6. Provas</a></li>
 </ul>
 </li>
 <li><a href="#orga6510e1">5. TEA-757 Camadas-Limite Naturais e Transporte de Poluentes</a>
 <ul>
-<li><a href="#org2f0a6f7">5.1. Ementa</a></li>
-<li><a href="#org2efd2be">5.2. Horário</a></li>
+<li><a href="#org20cda17">5.1. Ementa</a></li>
+<li><a href="#orgdcc1739">5.2. Horário</a></li>
 <li><a href="#orgc8f5ab9">5.3. Programa:  tea757-prog-2017-2.pdf</a></li>
 <li><a href="#org7c20990">5.4. Programa-como-realizado:  tea757-prog-2017-2-check.pdf</a></li>
 <li><a href="#orgf3a0218">5.5. Notas de aula:  mecturbi.pdf (atualizadas em 2017-06-07T19:37:07)</a></li>
-<li><a href="#org903049d">5.6. Provas</a></li>
+<li><a href="#org663915d">5.6. Provas</a></li>
 </ul>
 </li>
 </ul>
@@ -369,8 +369,8 @@ few times until HELP shows up).
 <div id="outline-container-org9a40479" class="outline-2">
 <h2 id="org9a40479"><span class="section-number-2">1</span> TEA-010 Matemática Aplicada I</h2>
 <div class="outline-text-2" id="text-1">
-</div><div id="outline-container-orgc1b5d08" class="outline-3">
-<h3 id="orgc1b5d08"><span class="section-number-3">1.1</span> Ementa</h3>
+</div><div id="outline-container-org53efa1a" class="outline-3">
+<h3 id="org53efa1a"><span class="section-number-3">1.1</span> Ementa</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 1- Ferramentas computacionais para programação, processamento simbólico e plotagem. 2-
@@ -384,11 +384,11 @@ contorno.
 </div>
 
 
-<div id="outline-container-org52252bd" class="outline-3">
-<h3 id="org52252bd"><span class="section-number-3">1.2</span> Horário</h3>
+<div id="outline-container-orgaef7dbd" class="outline-3">
+<h3 id="orgaef7dbd"><span class="section-number-3">1.2</span> Horário</h3>
 <div class="outline-text-3" id="text-1-2">
 <ul class="org-ul">
-<li>Aulas: 2<sup>as</sup>, 4<sup>as</sup> e 6<sup>as</sup>, 07:30&#x2013;09:10 PM02</li>
+<li>Aulas: 2<sup>as</sup>, 4<sup>as</sup> e 6<sup>as</sup>, 07:30&#x2013;09:10 PG07</li>
 <li>Atendimento: Por agendamento em minha sala</li>
 </ul>
 </div>
@@ -421,11 +421,11 @@ contorno.
 </div>
 
 
-<div id="outline-container-org821f466" class="outline-3">
-<h3 id="org821f466"><span class="section-number-3">1.7</span> Notas</h3>
+<div id="outline-container-org5dc4574" class="outline-3">
+<h3 id="org5dc4574"><span class="section-number-3">1.7</span> Notas</h3>
 <div class="outline-text-3" id="text-1-7">
 <p>
-Veja as <a href="./pdf/notpre2017-1.pdf">notas</a> até a P3 (Incluindo o Trabalho Computacional): 
+Veja as <a href="./pdf/notpre2017-1.pdf">notas</a> até a P4 (Incluindo o Trabalho Computacional): 
 </p>
 
 <p>
@@ -439,13 +439,17 @@ Veja as <a href="./pdf/notpre2017-1.pdf">notas</a> até a P3 (Incluindo o Trabal
 <p>
 2017-06-02: Estão encerradas as revisões da P2. Estão abertas as revisões da P3.
 </p>
+
+<p>
+2017-06-23: Estão encerradas as revisões da P2. Estão abertas as revisões da P3.
+</p>
 </div>
 </div>
 
 
 
-<div id="outline-container-org00b2be1" class="outline-3">
-<h3 id="org00b2be1"><span class="section-number-3">1.8</span> Provas</h3>
+<div id="outline-container-org45bf4e2" class="outline-3">
+<h3 id="org45bf4e2"><span class="section-number-3">1.8</span> Provas</h3>
 <div class="outline-text-3" id="text-1-8">
 <p>
 Faça o download do gabarito da P1: <a href="./pdf/2017-1-p01-sol.pdf">2017-1-p01-sol.pdf</a>
@@ -458,8 +462,14 @@ Faça o download do gabarito da P2: <a href="./pdf/2017-1-p02-sol.pdf">2017-1-p0
 <p>
 Faça o download do gabarito da P3: <a href="./pdf/2017-1-p03-sol.pdf">2017-1-p03-sol.pdf</a>
 </p>
+
+<p>
+Faça o download do gabarito da P4: <a href="./pdf/2017-1-p04-sol.pdf">2017-1-p04-sol.pdf</a>
+</p>
 </div>
 </div>
+
+
 
 
 <div id="outline-container-orgaaaa0a9" class="outline-3">
@@ -488,8 +498,8 @@ Faça o download do gabarito da P3: <a href="./pdf/2017-1-p03-sol.pdf">2017-1-p0
 <div id="outline-container-orgcb39ec8" class="outline-2">
 <h2 id="orgcb39ec8"><span class="section-number-2">2</span> TEA-034 Tópicos Especiais em Engenharia Ambiental: Técnicas de Aprendizagem Acadêmica</h2>
 <div class="outline-text-2" id="text-2">
-</div><div id="outline-container-org68df228" class="outline-3">
-<h3 id="org68df228"><span class="section-number-3">2.1</span> Horário</h3>
+</div><div id="outline-container-orgc6b9095" class="outline-3">
+<h3 id="orgc6b9095"><span class="section-number-3">2.1</span> Horário</h3>
 <div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li>Aulas: 6<sup>as</sup>, PF-2, 07:30&#x2013;09:10</li>
@@ -506,23 +516,97 @@ Faça o download do gabarito da P3: <a href="./pdf/2017-1-p03-sol.pdf">2017-1-p0
 <h3 id="org09077f7"><span class="section-number-3">2.3</span> Avaliação da disciplina pelos alunos: Esta disciplina nunca foi avaliada</h3>
 </div>
 
-<div id="outline-container-org711f2fe" class="outline-3">
-<h3 id="org711f2fe"><span class="section-number-3">2.4</span> Notas</h3>
+
+<div id="outline-container-orga866014" class="outline-3">
+<h3 id="orga866014"><span class="section-number-3">2.4</span> Notas</h3>
 <div class="outline-text-3" id="text-2-4">
-<ul class="org-ul">
-<li>2017-03-03T14:59:13 As primeiras tarefas de cada aluno foram especificadas</li>
-</ul>
+<p>
+Veja abaixo as notas finais da disciplina
+</p>
+
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">GRR</th>
+<th scope="col" class="org-right">Nota</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">GRR20141496</td>
+<td class="org-right">3.0</td>
+</tr>
+
+<tr>
+<td class="org-left">GRR20141697</td>
+<td class="org-right">9.0</td>
+</tr>
+
+<tr>
+<td class="org-left">GRR20141639</td>
+<td class="org-right">9.0</td>
+</tr>
+
+<tr>
+<td class="org-left">GRR20151802</td>
+<td class="org-right">9.5</td>
+</tr>
+
+<tr>
+<td class="org-left">GRR20148696</td>
+<td class="org-right">10.0</td>
+</tr>
+
+<tr>
+<td class="org-left">GRR20142181</td>
+<td class="org-right">10.0</td>
+</tr>
+
+<tr>
+<td class="org-left">GRR20156128</td>
+<td class="org-right">8.5</td>
+</tr>
+
+<tr>
+<td class="org-left">GRR20150066</td>
+<td class="org-right">8.0</td>
+</tr>
+
+<tr>
+<td class="org-left">GRR20159026</td>
+<td class="org-right">10.0</td>
+</tr>
+
+<tr>
+<td class="org-left">GRR20148707</td>
+<td class="org-right">10.0</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
+
+
+
+
 
 
 
 <div id="outline-container-org7842ccd" class="outline-2">
 <h2 id="org7842ccd"><span class="section-number-2">3</span> TEA-013 Matemática Aplicada II</h2>
 <div class="outline-text-2" id="text-3">
-</div><div id="outline-container-org0a939ee" class="outline-3">
-<h3 id="org0a939ee"><span class="section-number-3">3.1</span> Ementa</h3>
+</div><div id="outline-container-orgb1a7e62" class="outline-3">
+<h3 id="orgb1a7e62"><span class="section-number-3">3.1</span> Ementa</h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 1- Ferramentas computacionais e solução numérica com diferenças finitas de equações diferenciais
@@ -546,8 +630,8 @@ Solução por separação de variáveis, transformadas integrais e transformada 
 <div id="outline-container-org807586e" class="outline-2">
 <h2 id="org807586e"><span class="section-number-2">4</span> TEA-752 Métodos Matemáticos em Engenharia Ambiental</h2>
 <div class="outline-text-2" id="text-4">
-</div><div id="outline-container-org2f775fc" class="outline-3">
-<h3 id="org2f775fc"><span class="section-number-3">4.1</span> Ementa</h3>
+</div><div id="outline-container-org4caede5" class="outline-3">
+<h3 id="org4caede5"><span class="section-number-3">4.1</span> Ementa</h3>
 <div class="outline-text-3" id="text-4-1">
 <p>
 Ementa: Tensores cartesianos. Funções de várias variáveis: Teorema da função
@@ -559,8 +643,8 @@ de Fourier e Equações Diferenciais Parciais: método de separação de variáv
 </div>
 
 
-<div id="outline-container-org59a3da0" class="outline-3">
-<h3 id="org59a3da0"><span class="section-number-3">4.2</span> Horário</h3>
+<div id="outline-container-org75cbacd" class="outline-3">
+<h3 id="org75cbacd"><span class="section-number-3">4.2</span> Horário</h3>
 <div class="outline-text-3" id="text-4-2">
 <p>
 2<sup>as</sup> e 4<sup>as</sup>, PF-16, 09:30&#x2013;11:10
@@ -584,8 +668,8 @@ de Fourier e Equações Diferenciais Parciais: método de separação de variáv
 </div>
 
 
-<div id="outline-container-org9a22a9e" class="outline-3">
-<h3 id="org9a22a9e"><span class="section-number-3">4.6</span> Provas</h3>
+<div id="outline-container-org39f96cf" class="outline-3">
+<h3 id="org39f96cf"><span class="section-number-3">4.6</span> Provas</h3>
 <div class="outline-text-3" id="text-4-6">
 <p>
 Faça o download do gabarito da P1: <a href="./pdf/tea752-2017-1-p01-sol.pdf">tea752-2017-1-p01-sol.pdf</a>
@@ -606,8 +690,8 @@ Faça o download do gabarito da P3: <a href="./pdf/tea752-2017-1-p03-sol.pdf">te
 <div id="outline-container-orga6510e1" class="outline-2">
 <h2 id="orga6510e1"><span class="section-number-2">5</span> TEA-757 Camadas-Limite Naturais e Transporte de Poluentes</h2>
 <div class="outline-text-2" id="text-5">
-</div><div id="outline-container-org2f0a6f7" class="outline-3">
-<h3 id="org2f0a6f7"><span class="section-number-3">5.1</span> Ementa</h3>
+</div><div id="outline-container-org20cda17" class="outline-3">
+<h3 id="org20cda17"><span class="section-number-3">5.1</span> Ementa</h3>
 <div class="outline-text-3" id="text-5-1">
 <p>
 Revisão das equações de Navier-Stokes e das equações de transporte para
@@ -629,8 +713,8 @@ Richardson e comprimento de estabilidade de Obukhov.
 </div>
 
 
-<div id="outline-container-org2efd2be" class="outline-3">
-<h3 id="org2efd2be"><span class="section-number-3">5.2</span> Horário</h3>
+<div id="outline-container-orgdcc1739" class="outline-3">
+<h3 id="orgdcc1739"><span class="section-number-3">5.2</span> Horário</h3>
 <div class="outline-text-3" id="text-5-2">
 <p>
 2<sup>as</sup> e 4<sup>as</sup>, PF-16, 09:30&#x2013;11:10
@@ -643,6 +727,7 @@ Richardson e comprimento de estabilidade de Obukhov.
 <h3 id="orgc8f5ab9"><span class="section-number-3">5.3</span> Programa:  <a href="./pdf/tea757-prog-2017-2.pdf">tea757-prog-2017-2.pdf</a></h3>
 </div>
 
+
 <div id="outline-container-org7c20990" class="outline-3">
 <h3 id="org7c20990"><span class="section-number-3">5.4</span> Programa-como-realizado:  <a href="./pdf/tea757-prog-2017-2-check.pdf">tea757-prog-2017-2-check.pdf</a></h3>
 </div>
@@ -652,14 +737,14 @@ Richardson e comprimento de estabilidade de Obukhov.
 <h3 id="orgf3a0218"><span class="section-number-3">5.5</span> Notas de aula:  <a href="./pdf/mecturbi.pdf">mecturbi.pdf</a> (atualizadas em 2017-06-07T19:37:07)</h3>
 </div>
 
-<div id="outline-container-org903049d" class="outline-3">
-<h3 id="org903049d"><span class="section-number-3">5.6</span> Provas</h3>
+<div id="outline-container-org663915d" class="outline-3">
+<h3 id="org663915d"><span class="section-number-3">5.6</span> Provas</h3>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2017-06-07 Qua 19:37</p>
+<p class="date">Created: 2017-06-23 Sex 17:54</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
