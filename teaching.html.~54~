@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2017-06-23 Sex 14:08 -->
+<!-- 2017-06-29 Qui 15:38 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="viewport" content="width=device-width, initial-scale=1" />
 <title>Ensino (Teaching)</title>
@@ -263,7 +263,7 @@ for the JavaScript code in this tag.
 <li><a href="#orgheadline26">5.2. Horário</a></li>
 <li><a href="#orgheadline27">5.3. Programa:  tea757-prog-2017-2.pdf</a></li>
 <li><a href="#orgheadline28">5.4. Programa-como-realizado:  tea757-prog-2017-2-check.pdf</a></li>
-<li><a href="#orgheadline29">5.5. Notas de aula:  mecturbi.pdf (atualizadas em 2017-06-07T19:37:07)</a></li>
+<li><a href="#orgheadline29">5.5. Notas de aula:  mecturbi.pdf (atualizadas em 2017-06-29T15:38:50)</a></li>
 <li><a href="#orgheadline30">5.6. Provas</a></li>
 </ul>
 </li>
@@ -429,15 +429,89 @@ Faça o download do gabarito da P4: <a href="./pdf/2017-1-p04-sol.pdf">2017-1-p0
 <h3 id="orgheadline13"><span class="section-number-3">2.3</span> Avaliação da disciplina pelos alunos: Esta disciplina nunca foi avaliada</h3>
 </div>
 
+
 <div id="outline-container-orgheadline14" class="outline-3">
 <h3 id="orgheadline14"><span class="section-number-3">2.4</span> Notas</h3>
 <div class="outline-text-3" id="text-2-4">
-<ul class="org-ul">
-<li>2017-03-03T14:59:13 As primeiras tarefas de cada aluno foram especificadas</li>
-</ul>
+<p>
+Veja abaixo as notas finais da disciplina
+</p>
+
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">GRR</th>
+<th scope="col" class="org-right">Nota</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">GRR20141496</td>
+<td class="org-right">3.0</td>
+</tr>
+
+<tr>
+<td class="org-left">GRR20141697</td>
+<td class="org-right">9.0</td>
+</tr>
+
+<tr>
+<td class="org-left">GRR20141639</td>
+<td class="org-right">9.0</td>
+</tr>
+
+<tr>
+<td class="org-left">GRR20151802</td>
+<td class="org-right">9.5</td>
+</tr>
+
+<tr>
+<td class="org-left">GRR20148696</td>
+<td class="org-right">10.0</td>
+</tr>
+
+<tr>
+<td class="org-left">GRR20142181</td>
+<td class="org-right">10.0</td>
+</tr>
+
+<tr>
+<td class="org-left">GRR20156128</td>
+<td class="org-right">8.5</td>
+</tr>
+
+<tr>
+<td class="org-left">GRR20150066</td>
+<td class="org-right">8.0</td>
+</tr>
+
+<tr>
+<td class="org-left">GRR20159026</td>
+<td class="org-right">10.0</td>
+</tr>
+
+<tr>
+<td class="org-left">GRR20148707</td>
+<td class="org-right">10.0</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
+
+
+
+
 
 
 
@@ -572,7 +646,7 @@ Richardson e comprimento de estabilidade de Obukhov.
 
 
 <div id="outline-container-orgheadline29" class="outline-3">
-<h3 id="orgheadline29"><span class="section-number-3">5.5</span> Notas de aula:  <a href="./pdf/mecturbi.pdf">mecturbi.pdf</a> (atualizadas em 2017-06-07T19:37:07)</h3>
+<h3 id="orgheadline29"><span class="section-number-3">5.5</span> Notas de aula:  <a href="./pdf/mecturbi.pdf">mecturbi.pdf</a> (atualizadas em 2017-06-29T15:38:50)</h3>
 </div>
 
 <div id="outline-container-orgheadline30" class="outline-3">
@@ -582,7 +656,7 @@ Richardson e comprimento de estabilidade de Obukhov.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2017-06-23 Sex 14:08</p>
+<p class="date">Created: 2017-06-29 Qui 15:38</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
