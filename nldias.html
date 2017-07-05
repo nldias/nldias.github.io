@@ -3,30 +3,23 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2017-05-06 Sáb 14:18 -->
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Nelson Luís Dias</title>
-<meta name="generator" content="Org mode" />
-<meta name="author" content="Nelson Luís Dias" />
+<!-- 2017-07-04 Ter 18:59 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Nelson Luís Dias" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
-  .title  { text-align: center;
-             margin-bottom: .2em; }
-  .subtitle { text-align: center;
-              font-size: medium;
-              font-weight: bold;
-              margin-top:0; }
+  .title  { text-align: center; }
   .todo   { font-family: monospace; color: red; }
-  .done   { font-family: monospace; color: green; }
-  .priority { font-family: monospace; color: orange; }
+  .done   { color: green; }
   .tag    { background-color: #eee; font-family: monospace;
             padding: 2px; font-size: 80%; font-weight: normal; }
   .timestamp { color: #bebebe; }
   .timestamp-kwd { color: #5f9ea0; }
-  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
-  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
-  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
   .underline { text-decoration: underline; }
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
@@ -53,110 +46,25 @@
     border: 1px solid black;
   }
   pre.src:hover:before { display: inline;}
-  /* Languages per Org manual */
-  pre.src-asymptote:before { content: 'Asymptote'; }
-  pre.src-awk:before { content: 'Awk'; }
-  pre.src-C:before { content: 'C'; }
-  /* pre.src-C++ doesn't work in CSS */
-  pre.src-clojure:before { content: 'Clojure'; }
-  pre.src-css:before { content: 'CSS'; }
-  pre.src-D:before { content: 'D'; }
-  pre.src-ditaa:before { content: 'ditaa'; }
-  pre.src-dot:before { content: 'Graphviz'; }
-  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
   pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-fortran:before { content: 'Fortran'; }
-  pre.src-gnuplot:before { content: 'gnuplot'; }
-  pre.src-haskell:before { content: 'Haskell'; }
-  pre.src-java:before { content: 'Java'; }
-  pre.src-js:before { content: 'Javascript'; }
-  pre.src-latex:before { content: 'LaTeX'; }
-  pre.src-ledger:before { content: 'Ledger'; }
-  pre.src-lisp:before { content: 'Lisp'; }
-  pre.src-lilypond:before { content: 'Lilypond'; }
-  pre.src-lua:before { content: 'Lua'; }
-  pre.src-matlab:before { content: 'MATLAB'; }
-  pre.src-mscgen:before { content: 'Mscgen'; }
-  pre.src-ocaml:before { content: 'Objective Caml'; }
-  pre.src-octave:before { content: 'Octave'; }
-  pre.src-org:before { content: 'Org mode'; }
-  pre.src-oz:before { content: 'OZ'; }
-  pre.src-plantuml:before { content: 'Plantuml'; }
-  pre.src-processing:before { content: 'Processing.js'; }
-  pre.src-python:before { content: 'Python'; }
-  pre.src-R:before { content: 'R'; }
-  pre.src-ruby:before { content: 'Ruby'; }
-  pre.src-sass:before { content: 'Sass'; }
-  pre.src-scheme:before { content: 'Scheme'; }
-  pre.src-screen:before { content: 'Gnu Screen'; }
-  pre.src-sed:before { content: 'Sed'; }
-  pre.src-sh:before { content: 'shell'; }
-  pre.src-sql:before { content: 'SQL'; }
-  pre.src-sqlite:before { content: 'SQLite'; }
-  /* additional languages in org.el's org-babel-load-languages alist */
-  pre.src-forth:before { content: 'Forth'; }
-  pre.src-io:before { content: 'IO'; }
-  pre.src-J:before { content: 'J'; }
-  pre.src-makefile:before { content: 'Makefile'; }
-  pre.src-maxima:before { content: 'Maxima'; }
-  pre.src-perl:before { content: 'Perl'; }
-  pre.src-picolisp:before { content: 'Pico Lisp'; }
-  pre.src-scala:before { content: 'Scala'; }
-  pre.src-shell:before { content: 'Shell Script'; }
-  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
-  /* additional language identifiers per "defun org-babel-execute"
-       in ob-*.el */
-  pre.src-cpp:before  { content: 'C++'; }
-  pre.src-abc:before  { content: 'ABC'; }
-  pre.src-coq:before  { content: 'Coq'; }
-  pre.src-groovy:before  { content: 'Groovy'; }
-  /* additional language identifiers from org-babel-shell-names in
-     ob-shell.el: ob-shell is the only babel language using a lambda to put
-     the execution function name together. */
-  pre.src-bash:before  { content: 'bash'; }
-  pre.src-csh:before  { content: 'csh'; }
-  pre.src-ash:before  { content: 'ash'; }
-  pre.src-dash:before  { content: 'dash'; }
-  pre.src-ksh:before  { content: 'ksh'; }
-  pre.src-mksh:before  { content: 'mksh'; }
-  pre.src-posh:before  { content: 'posh'; }
-  /* Additional Emacs modes also supported by the LaTeX listings package */
-  pre.src-ada:before { content: 'Ada'; }
-  pre.src-asm:before { content: 'Assembler'; }
-  pre.src-caml:before { content: 'Caml'; }
-  pre.src-delphi:before { content: 'Delphi'; }
-  pre.src-html:before { content: 'HTML'; }
-  pre.src-idl:before { content: 'IDL'; }
-  pre.src-mercury:before { content: 'Mercury'; }
-  pre.src-metapost:before { content: 'MetaPost'; }
-  pre.src-modula-2:before { content: 'Modula-2'; }
-  pre.src-pascal:before { content: 'Pascal'; }
-  pre.src-ps:before { content: 'PostScript'; }
-  pre.src-prolog:before { content: 'Prolog'; }
-  pre.src-simula:before { content: 'Simula'; }
-  pre.src-tcl:before { content: 'tcl'; }
-  pre.src-tex:before { content: 'TeX'; }
-  pre.src-plain-tex:before { content: 'Plain TeX'; }
-  pre.src-verilog:before { content: 'Verilog'; }
-  pre.src-vhdl:before { content: 'VHDL'; }
-  pre.src-xml:before { content: 'XML'; }
-  pre.src-nxml:before { content: 'XML'; }
-  /* add a generic configuration mode; LaTeX export needs an additional
-     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
-  pre.src-conf:before { content: 'Configuration File'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
 
   table { border-collapse:collapse; }
-  caption.t-above { caption-side: top; }
-  caption.t-bottom { caption-side: bottom; }
   td, th { vertical-align:top;  }
-  th.org-right  { text-align: center;  }
-  th.org-left   { text-align: center;   }
-  th.org-center { text-align: center; }
-  td.org-right  { text-align: right;  }
-  td.org-left   { text-align: left;   }
-  td.org-center { text-align: center; }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
   dt { font-weight: bold; }
-  .footpara { display: inline; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
@@ -176,7 +84,6 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
 <link rel="stylesheet" type="text/css" href="readtheorg.css" />
@@ -306,24 +213,24 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org7f56c07">1. Afiliação (Affiliation)</a></li>
-<li><a href="#orgcdf7adc">2. Biografia (Biography)</a></li>
-<li><a href="#orga277c8f">3. Interesses de pesquisa (Research interests)</a>
+<li><a href="#sec-1">1. Afiliação (Affiliation)</a></li>
+<li><a href="#sec-2">2. Biografia (Biography)</a></li>
+<li><a href="#sec-3">3. Interesses de pesquisa (Research interests)</a>
 <ul>
-<li><a href="#org9de3498">3.1. Talks</a></li>
+<li><a href="#sec-3-1">3.1. Talks</a></li>
 </ul>
 </li>
-<li><a href="#org6b6790c">4. Textos</a>
+<li><a href="#sec-4">4. Textos</a>
 <ul>
-<li><a href="#org1fd48aa">4.1. Pequena Introdução aos Números</a></li>
-<li><a href="#orgf1b5633">4.2. Versão preliminar de meu livro de Matemática Aplicada</a></li>
-<li><a href="#org5af5710">4.3. Versão preliminar de meu livro de Turbulência</a></li>
+<li><a href="#sec-4-1">4.1. Pequena Introdução aos Números</a></li>
+<li><a href="#sec-4-2">4.2. Versão preliminar de meu livro de Matemática Aplicada</a></li>
+<li><a href="#sec-4-3">4.3. Versão preliminar de meu livro de Turbulência</a></li>
 </ul>
 </li>
-<li><a href="#org84b8c1a">5. Ensino</a>
+<li><a href="#sec-5">5. Ensino</a>
 <ul>
-<li><a href="#orga31f95a">5.1. TT009 Matemática Aplicada I</a></li>
-<li><a href="#orgc4daf0a">5.2. TT010 Matemática Aplicada II</a></li>
+<li><a href="#sec-5-1">5.1. TT009 Matemática Aplicada I</a></li>
+<li><a href="#sec-5-2">5.2. TT010 Matemática Aplicada II</a></li>
 </ul>
 </li>
 </ul>
@@ -340,17 +247,20 @@ This site is searchable. See HELP on the right.
 </div>
 
 
-<div id="outline-container-org7f56c07" class="outline-2">
-<h2 id="org7f56c07"><span class="section-number-2">1</span> Afiliação (Affiliation)</h2>
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Afiliação (Affiliation)</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Professor Titular, Departamento de Engenharia Ambiental, Universidade Federal
-do Paraná (<a href="http://www.dea.ufpr.br/">http://www.dea.ufpr.br/</a>)
+do Paraná (<a href="http://www.dea.ufpr.br">http://www.dea.ufpr.br</a>)
 </p>
 <ul class="org-ul">
-<li>Curso de Graduação em Engenharia Ambiental (<a href="http://www.ambiental.ufpr.br/">http://www.ambiental.ufpr.br/</a>)</li>
-<li>Programa de Pós-Graduação em Engenharia Ambiental (<a href="http://www.ppgea.ufpr.br/">http://www.ppgea.ufpr.br/</a>)</li>
-<li>Programa de Pós-Graduação em Métodos Numéricos em Engenharia (<a href="http://www.ppgmne.ufpr.br/">http://www.ppgmne.ufpr.br/</a>)</li>
+<li>Curso de Graduação em Engenharia Ambiental (<a href="http://www.ambiental.ufpr.br">http://www.ambiental.ufpr.br</a>)
+</li>
+<li>Programa de Pós-Graduação em Engenharia Ambiental (<a href="http://www.ppgea.ufpr.br">http://www.ppgea.ufpr.br</a>)
+</li>
+<li>Programa de Pós-Graduação em Métodos Numéricos em Engenharia (<a href="http://www.ppgmne.ufpr.br">http://www.ppgmne.ufpr.br</a>)
+</li>
 </ul>
 
 <p>
@@ -358,25 +268,30 @@ Atualmente:
 </p>
 <ul class="org-ul">
 <li>Coordenador do Lemma (Laboratório de Estudos em Monitoramento e Modelagem
-Ambiental: <a href="http://www.lemma.ufpr.br/">http://www.lemma.ufpr.br/</a>)</li>
+Ambiental: <a href="http://www.lemma.ufpr.br">http://www.lemma.ufpr.br</a>)
+</li>
 </ul>
 
 
 <p>
 Professor, Department of Environmental Engineering, Federal University of
-Paraná (<a href="http://www.dea.ufpr.br/">http://www.dea.ufpr.br/</a>)
+Paraná (<a href="http://www.dea.ufpr.br">http://www.dea.ufpr.br</a>)
 </p>
 <ul class="org-ul">
-<li>Environmental Engineering Course (<a href="http://www.ambiental.ufpr.br/">http://www.ambiental.ufpr.br/</a>)</li>
-<li>Graduate Program in Environmental Engineering (<a href="http://www.ppgea.ufpr.br/">http://www.ppgea.ufpr.br/</a>)</li>
-<li>Graduate Program in Numerical Methods in Engineering (<a href="http://www.ppgmne.ufpr.br/">http://www.ppgmne.ufpr.br/</a>)</li>
+<li>Environmental Engineering Course (<a href="http://www.ambiental.ufpr.br">http://www.ambiental.ufpr.br</a>)
+</li>
+<li>Graduate Program in Environmental Engineering (<a href="http://www.ppgea.ufpr.br">http://www.ppgea.ufpr.br</a>)
+</li>
+<li>Graduate Program in Numerical Methods in Engineering (<a href="http://www.ppgmne.ufpr.br">http://www.ppgmne.ufpr.br</a>)
+</li>
 </ul>
 
 <p>
 Currently:
 </p>
 <ul class="org-ul">
-<li>Head of Lemma (Lab for Environmental Monitoring and Modeling Analysis: <a href="http://www.lemma.ufpr.br/">http://www.lemma.ufpr.br/</a> )</li>
+<li>Head of Lemma (Lab for Environmental Monitoring and Modeling Analysis: <a href="http://www.lemma.ufpr.br">http://www.lemma.ufpr.br</a> )
+</li>
 </ul>
 
 <p>
@@ -393,9 +308,8 @@ Tel: +55-41-3320-2025
 </div>
 </div>
 
-
-<div id="outline-container-orgcdf7adc" class="outline-2">
-<h2 id="orgcdf7adc"><span class="section-number-2">2</span> Biografia (Biography)</h2>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Biografia (Biography)</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Nasci no Rio de Janeiro em 1961. Fiz minha graduação em Engenharia Civil pela
@@ -423,9 +337,8 @@ Program in Numerical Methods in Engineering, all at UFPR.
 </p>
 </div>
 </div>
-
-<div id="outline-container-orga277c8f" class="outline-2">
-<h2 id="orga277c8f"><span class="section-number-2">3</span> Interesses de pesquisa (Research interests)</h2>
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Interesses de pesquisa (Research interests)</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 Meus interesses de pesquisa incluem Hidrologia, Micrometeorologia, Turbulência
@@ -435,8 +348,8 @@ Modelos de Qualidade do Ar, etc..
 </p>
 </div>
 
-<div id="outline-container-org9de3498" class="outline-3">
-<h3 id="org9de3498"><span class="section-number-3">3.1</span> Talks</h3>
+<div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> Talks</h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 You  may have a glimpse of my research by looking at some of my talks. Here is a sample.
@@ -458,30 +371,27 @@ See <a href="https://www.dropbox.com/s/oohm0lv1dydnd0x/nldias-bpwide2.pdf?dl=0">
 </div>
 </div>
 
-
-<div id="outline-container-org6b6790c" class="outline-2">
-<h2 id="org6b6790c"><span class="section-number-2">4</span> Textos</h2>
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Textos</h2>
 <div class="outline-text-2" id="text-4">
-</div><div id="outline-container-org1fd48aa" class="outline-3">
-<h3 id="org1fd48aa"><span class="section-number-3">4.1</span> Pequena Introdução aos Números</h3>
+</div><div id="outline-container-sec-4-1" class="outline-3">
+<h3 id="sec-4-1"><span class="section-number-3">4.1</span> Pequena Introdução aos Números</h3>
 <div class="outline-text-3" id="text-4-1">
 <p>
 (Editora Intersaberes)
 </p>
 </div>
 </div>
-
-<div id="outline-container-orgf1b5633" class="outline-3">
-<h3 id="orgf1b5633"><span class="section-number-3">4.2</span> Versão preliminar de meu livro de Matemática Aplicada</h3>
+<div id="outline-container-sec-4-2" class="outline-3">
+<h3 id="sec-4-2"><span class="section-number-3">4.2</span> Versão preliminar de meu livro de Matemática Aplicada</h3>
 <div class="outline-text-3" id="text-4-2">
 <p>
 <a href="https://www.dropbox.com/s/0nqcxwff1s58rj5/matappa-2016-03-01.pdf?dl=0">versão~de~2016-03-01</a>
 </p>
 </div>
 </div>
-
-<div id="outline-container-org5af5710" class="outline-3">
-<h3 id="org5af5710"><span class="section-number-3">4.3</span> Versão preliminar de meu livro de Turbulência</h3>
+<div id="outline-container-sec-4-3" class="outline-3">
+<h3 id="sec-4-3"><span class="section-number-3">4.3</span> Versão preliminar de meu livro de Turbulência</h3>
 <div class="outline-text-3" id="text-4-3">
 <p>
 <a href="https://www.dropbox.com/s/se34binnnb245gh/mecturbi-2016-05-28.pdf?dl=0">versão~de~2016-05-28</a>
@@ -489,76 +399,116 @@ See <a href="https://www.dropbox.com/s/oohm0lv1dydnd0x/nldias-bpwide2.pdf?dl=0">
 </div>
 </div>
 </div>
-
-<div id="outline-container-org84b8c1a" class="outline-2">
-<h2 id="org84b8c1a"><span class="section-number-2">5</span> Ensino</h2>
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Ensino</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 Graduação:
 </p>
 </div>
 
-<div id="outline-container-orga31f95a" class="outline-3">
-<h3 id="orga31f95a"><span class="section-number-3">5.1</span> TT009 Matemática Aplicada I</h3>
+<div id="outline-container-sec-5-1" class="outline-3">
+<h3 id="sec-5-1"><span class="section-number-3">5.1</span> TT009 Matemática Aplicada I</h3>
 <div class="outline-text-3" id="text-5-1">
 <ul class="org-ul">
 <li>Horário
 <ul class="org-ul">
-<li>Aulas: 2<sup>as</sup>, 4<sup>as</sup> e 6<sup>as</sup>, PF-15, 07:30&#x2013;09:10</li>
-<li>Atendimento: 6<sup>as</sup>, 15:00&#x2013;17:00</li>
-</ul></li>
+<li>Aulas: 2<sup>as</sup>, 4<sup>as</sup> e 6<sup>as</sup>, PF-15, 07:30&#x2013;09:10
+</li>
+<li>Atendimento: 6<sup>as</sup>, 15:00&#x2013;17:00
+</li>
+</ul>
+</li>
 <li>Avaliação da disciplina pelos alunos: veja <a href="https://www.dropbox.com/s/73see47fhvy51fr/aval-2015-1.pdf?dl=0">aqui</a> as últimas avaliações de
-Matemática Aplicada I feitas por meus alunos.</li>
+Matemática Aplicada I feitas por meus alunos.
+</li>
 <li>Notas
 <ul class="org-ul">
-<li>2016-04-09: Estão abertas as revisões da P1</li>
+<li>2016-04-09: Estão abertas as revisões da P1
+</li>
 <li>2016-04-29: Estão <b>encerradas</b> as revisões da P1. Estão abertas as
 revisões da P2. Faça o <i>download</i> da planilha de notas e presenças,
-atualizadas até a P2: <a href="./notpre2016-1.pdf">notpre2016-1.pdf</a></li>
-</ul></li>
+atualizadas até a P2: <a href="./notpre2016-1.pdf">notpre2016-1.pdf</a> 
+</li>
+</ul>
+</li>
 <li>Provas
 <ul class="org-ul">
 <li>Faça o <i>download</i> das listas de grupos e instruções para o Trabalho
-Computacional: <a href="2016-1-tc1.pdf">2016-1-tc1.pdf</a></li>
-<li>Faça o <i>download</i> do gabarito da P1: <a href="2016-p01-sol.pdf">2016-p01-sol.pdf</a></li>
-<li>Faça o <i>download</i> do gabarito da P2: <a href="2016-p02-sol.pdf">2016-p02-sol.pdf</a></li>
-</ul></li>
+Computacional: <a href="2016-1-tc1.pdf">2016-1-tc1.pdf</a> 
+</li>
+<li>Faça o <i>download</i> do gabarito da P1: <a href="2016-p01-sol.pdf">2016-p01-sol.pdf</a> 
+</li>
+<li>Faça o <i>download</i> do gabarito da P2: <a href="2016-p02-sol.pdf">2016-p02-sol.pdf</a> 
+</li>
+</ul>
+</li>
 <li>Arquivos de provas passadas
 <ul class="org-ul">
-<li>2015-1 - <a href="2015-1-sol.pdf">Solução de todas as provas</a></li>
-<li>2014-1 - <a href="2014-1-sol.pdf">Solução de todas as provas</a></li>
-<li>2013-1 - <a href="2013-1-sol.pdf">Solução de todas as provas</a></li>
-<li>2012-1 - <a href="2012-1-sol.pdf">Solução de todas as provas</a></li>
-<li>2011-1 - <a href="2011-1-sol.pdf">Solução de todas as provas</a></li>
-<li>2010-1 - <a href="2010-1-sol.pdf">Solução de todas as provas</a></li>
-<li>2009-1 - <a href="2009-1-sol.pdf">Solução de todas as provas</a></li>
-<li>2008-1 - <a href="2008-1-sol.pdf">Solução de todas as provas</a></li>
-<li>2006-1 - <a href="2006-1-sol.pdf">Solução de todas as provas</a></li>
-<li>2005-1 - <a href="2005-1-sol.pdf">Solução de todas as provas</a></li>
+<li>2015-1 - <a href="2015-1-sol.pdf">Solução de todas as provas</a>
+</li>
+<li>2014-1 - <a href="2014-1-sol.pdf">Solução de todas as provas</a>
+</li>
+<li>2013-1 - <a href="2013-1-sol.pdf">Solução de todas as provas</a>
+</li>
+<li>2012-1 - <a href="2012-1-sol.pdf">Solução de todas as provas</a>
+</li>
+<li>2011-1 - <a href="2011-1-sol.pdf">Solução de todas as provas</a>
+</li>
+<li>2010-1 - <a href="2010-1-sol.pdf">Solução de todas as provas</a>
+</li>
+<li>2009-1 - <a href="2009-1-sol.pdf">Solução de todas as provas</a>
+</li>
+<li>2008-1 - <a href="2008-1-sol.pdf">Solução de todas as provas</a>
+</li>
+<li>2006-1 - <a href="2006-1-sol.pdf">Solução de todas as provas</a>
+</li>
+<li>2005-1 - <a href="2005-1-sol.pdf">Solução de todas as provas</a>
+</li>
 <li>2004-1 
 <ul class="org-ul">
-<li><a href="2004-1-sol.pdf">Solução de todas as provas, exceto&#x2026;</a></li>
-<li><a href="2004-1-f.pdf">2<sup>a</sup> chamada da prova final</a></li>
-</ul></li>
+<li><a href="2004-1-sol.pdf">Solução de todas as provas, exceto&#x2026;</a>
+</li>
+<li><a href="2004-1-f.pdf">2<sup>a</sup> chamada da prova final</a>
+</li>
+</ul>
+</li>
 <li>2003-1 
 <ul class="org-ul">
-<li><a href="2003-1-p1.pdf">1<sup>a</sup> Prova</a></li>
-<li><a href="2003-1-p2.pdf">2<sup>a</sup> Prova</a></li>
-<li><a href="2003-1-p3.pdf">3<sup>a</sup> Prova</a></li>
-<li><a href="2003-1-p4.pdf">4<sup>a</sup> Prova</a></li>
-<li><a href="2003-1-p5.pdf">5<sup>a</sup> Prova</a></li>
-<li><a href="2003-1-p6.pdf">6<sup>a</sup> Prova</a></li>
-<li><a href="2003-1-p7.pdf">7<sup>a</sup> Prova</a></li>
-<li><a href="2003-1-p8.pdf">8<sup>a</sup> Prova</a></li>
-<li><a href="2003-1-p9.pdf">9<sup>a</sup> Prova</a></li>
-<li><a href="2003-1-p10.pdf">10<sup>a</sup> Prova</a></li>
-<li><a href="2003-1-p11.pdf">11<sup>a</sup> Prova</a></li>
-<li><a href="2003-1-p12.pdf">12<sup>a</sup> Prova</a></li>
-<li><a href="2003-1-p13.pdf">13<sup>a</sup> Prova</a></li>
-<li><a href="2003-1-p14.pdf">14<sup>a</sup> Prova</a></li>
-<li><a href="2003-1-final.pdf">Prova Final</a></li>
-</ul></li>
-</ul></li>
+<li><a href="2003-1-p1.pdf">1<sup>a</sup> Prova</a>
+</li>
+<li><a href="2003-1-p2.pdf">2<sup>a</sup> Prova</a>
+</li>
+<li><a href="2003-1-p3.pdf">3<sup>a</sup> Prova</a>
+</li>
+<li><a href="2003-1-p4.pdf">4<sup>a</sup> Prova</a>
+</li>
+<li><a href="2003-1-p5.pdf">5<sup>a</sup> Prova</a>
+</li>
+<li><a href="2003-1-p6.pdf">6<sup>a</sup> Prova</a>
+</li>
+<li><a href="2003-1-p7.pdf">7<sup>a</sup> Prova</a>
+</li>
+<li><a href="2003-1-p8.pdf">8<sup>a</sup> Prova</a>
+</li>
+<li><a href="2003-1-p9.pdf">9<sup>a</sup> Prova</a>
+</li>
+<li><a href="2003-1-p10.pdf">10<sup>a</sup> Prova</a>
+</li>
+<li><a href="2003-1-p11.pdf">11<sup>a</sup> Prova</a>
+</li>
+<li><a href="2003-1-p12.pdf">12<sup>a</sup> Prova</a>
+</li>
+<li><a href="2003-1-p13.pdf">13<sup>a</sup> Prova</a>
+</li>
+<li><a href="2003-1-p14.pdf">14<sup>a</sup> Prova</a>
+</li>
+<li><a href="2003-1-final.pdf">Prova Final</a> 
+</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -566,15 +516,15 @@ Computacional: <a href="2016-1-tc1.pdf">2016-1-tc1.pdf</a></li>
 
 
 
-
-<div id="outline-container-orgc4daf0a" class="outline-3">
-<h3 id="orgc4daf0a"><span class="section-number-3">5.2</span> TT010 Matemática Aplicada II</h3>
+<div id="outline-container-sec-5-2" class="outline-3">
+<h3 id="sec-5-2"><span class="section-number-3">5.2</span> TT010 Matemática Aplicada II</h3>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2017-05-06 Sáb 14:18</p>
+<p class="date">Created: 2017-07-04 Ter 18:59</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.4)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
