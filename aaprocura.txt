@@ -1,0 +1,24 @@
+À procura de uma métrica para o ensino
+
+Existem para a pesquisa uma boa quantidade de índices numéricos que tentam avaliar -- mais ou menos -- quão bom pesquisador você é.  Esses índices levam em conta, além do número de artigos que você consegue (ou não) publicar por ano, a qualidade dos mesmos. Eles consideram o "impacto" das revistas em que você publica seus artigos, o que mais ou menos significa quão prestigiosas essas revistas são, assim como o seu próprio "impacto" -- quantos estão lendo você, etc.. 
+
+Os índices são questionáveis, como quase tudo que tenta quantificar a atividade humana, mas funcionam em um certo nível. Quando eu leio o Currículo Lattes (www.lattes, etc.) de um pesquisador, dá para ter uma boa ideia da sua importância relativa no cenário nacional e no internacional, pela quantidade e qualidade da pesquisa que ele publica, e por seu papel de liderança, ou não, nas publicações.
+
+Para o ensino, isso é muito mais difícil. Não basta saber o nome de uma disciplina, nem sua ementa, e nem mesmo o prestígio da instituição em que o professor trabalha, para se ter uma ideia boa de quão bom professor ele é!
+
+Para sabermos de "X" é um bom professor, precisamos olhar para outras coisas, que na maioria das vezes apenas os alunos de "X" --- e às vezes nem eles --- sabem.
+
+O mais difícil naturalmente é medir se "X" tem o "dom" de ensinar: se tem didática, se sabe explicar, etc.. A única métrica que eu consigo imaginar para isso é a média (ou a mediana) da percepção dos alunos. Felizmente, duas ou três questões de múltipla escolha feitas aos alunos e respondidas honestamente *são* capazes de identificar se "X" é ou não um bom professor neste sentido, estritamente didático. 
+
+Porém, há muito mais para tornar "X" não só um bom professor diante de seus alunos, mas também um bom professor /para/ os seus alunos, /para/ sua instituição, /para/ o seu país, etc.. Vamos a isso, sem a pretensão de fazer uma lista completa. Entre colchetes, no final de cada item, faço um comentário sobre como medir, e se é fácil medir, o item.
+
+0. Respeito, cordialidade, neutralidade:: O professor respeita os alunos? É cordial com eles? Limita-se a ensinar, não emitindo juízos de valor sobre temas extra-acadêmicos? [Os alunos podem reportar o comportamento do professor em um questionário objetivo.]
+
+1. Pontualidade e assiduidade::   Não há ensino sem ritmo, sem exemplo, sem comprometimento. Preciso dizer mais alguma coisa? [Os alunos podem reportar, em um questionário, se o professor é pontual e assíduo. Um cartão eletrônico de ponto na sala de aula também.]
+
+2. Cumprimento da ementa:: Além de educar, motivar, estimular a imaginação dos alunos, etc., etc., o professor tem, sim, que ensinar um conteúdo, uma "matéria".  São muito numerosos --- e dolorosos para mim --- os casos que ouço de colegas que ensinam apenas parte das ementas. Para não falar dos casos mais escabrosos ainda daqueles que ensinam o que querem, ou o que acham que devem!  Ao longo de seu percurso acadêmico, ou depois de formado, o meu aluno pode precisar do conteúdo que está na ementa de minha disciplina. É meu dever para com o aluno, e com a minha instituição, ensinar esse conteúdo. [Os alunos podem reportar se o professor cumpriu a ementa, mas talvez isso seja um pouco difícil para eles. Muitos nem leem a ementa da disciplina que cursam!  Talvez seja melhor requerer que o professor faça um plano de conteúdos /aula por aula/, e que preencha em uma coluna ao lado aquilo que lecionou /de fato/ em cada aula. No final do período letivo, é possivel calcular o percentual da ementa que foi efetivamente cumprido.]
+
+3. Material didático:: Há livros-texto?  São de boa qualidade? Há listas de exercício e/ou trabalhos para casa que permitem ao aluno fixar o conteúdo? [Os alunos podem reportar a qualidade do material didático em um questionário.]
+
+4. Provas, exames e trabalhos para nota:: As provas e trabalhos cobram aquilo que foi ensinado? Cobrem a ementa? O professor corrige com critério e justiça? [Os alunos são é claro excelentes juízes deste item, que pode ser avaliado em um questionário objetivo.]
+
