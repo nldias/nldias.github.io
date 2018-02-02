@@ -1,16 +1,16 @@
 //------------------------------------------------------------------------------
 //
-// Sistema de InformaÁıes HidrolÛgicas
-// Vers„o Web 3.0
-// © 2001 AgÍncia Nacional de ¡guas (ANA)
+// Sistema de Informa√ß√µes Hidrol√≥gicas
+// Vers√£o Web 3.0
+// ¬© 2001 Ag√™ncia Nacional de √Åguas (ANA)
 //
 // NivelConsistencia: 1 = Bruto, 2 = Consistido
-// MediaDiaria: 0 = N„o, 1 = Sim
-// MetodoObtencaoVazoes: 1 = Curva de descarga, 2 = TransferÍncia de vazıes, 3 = Soma de vazıes, 4 = ADCP
-// Status: 0 = Branco, 1 = Real, 2 = Estimado, 3 = Duvidoso, 4 = RÈgua Seca
+// MediaDiaria: 0 = N√£o, 1 = Sim
+// MetodoObtencaoVazoes: 1 = Curva de descarga, 2 = Transfer√™ncia de vaz√µes, 3 = Soma de vaz√µes, 4 = ADCP
+// Status: 0 = Branco, 1 = Real, 2 = Estimado, 3 = Duvidoso, 4 = R√©gua Seca
 //
-// RestriÁıes da consulta:
-//   CÛdigo da EstaÁ„o: 65310000
+// Restri√ß√µes da consulta:
+//   C√≥digo da Esta√ß√£o: 65310000
 //
 //------------------------------------------------------------------------------
 
