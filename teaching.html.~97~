@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2018-02-02 sex 09:50 -->
+<!-- 2018-02-02 sex 11:42 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Ensino (Teaching)</title>
@@ -308,72 +308,72 @@ for the JavaScript code in this tag.
 <ul>
 <li><a href="#org0188e98">1. TEA-010 Matemática Aplicada I</a>
 <ul>
-<li><a href="#org9510928">1.1. Ementa</a></li>
+<li><a href="#org189bcba">1.1. Ementa</a></li>
 <li><a href="#org6584f25">1.2. Sala e Horário</a></li>
-<li><a href="#org670d9ef">1.3. Avaliação da disciplina pelos alunos</a></li>
+<li><a href="#org5b8a7bd">1.3. Avaliação da disciplina pelos alunos</a></li>
 <li><a href="#orgfc0c531">1.4. Programa: tea010-prog-2018-1.pdf</a></li>
 <li><a href="#orga5b3e00">1.5. Livro-texto</a></li>
-<li><a href="#orgec4d549">1.6. Notas</a></li>
+<li><a href="#org360fdbd">1.6. Notas</a></li>
 <li><a href="#org6df8a1b">1.7. Provas e Trabalhos</a>
 <ul>
 <li><a href="#orgea29437">1.7.1. TC1</a></li>
-<li><a href="#org47bcc8e">1.7.2. TC2 (em preparação)</a></li>
+<li><a href="#orgaa54265">1.7.2. TC2</a></li>
 <li><a href="#orgb753ebd">1.7.3. TC3 (em preparação)</a></li>
 <li><a href="#org7f01871">1.7.4. TC4 (em preparação)</a></li>
-<li><a href="#org1dac3cb">1.7.5. Gabaritos</a></li>
 </ul>
 </li>
-<li><a href="#org8712a31">1.8. Arquivos de provas passadas</a></li>
+<li><a href="#org1dac3cb">1.8. Gabaritos</a></li>
+<li><a href="#org8712a31">1.9. Arquivos de provas passadas</a></li>
 </ul>
 </li>
 <li><a href="#org564bf0b">2. TEA-782 Mecânica dos Fluidos Ambiental Intermediária</a>
 <ul>
-<li><a href="#org0be7605">2.1. Ementa</a></li>
+<li><a href="#org86b2b7b">2.1. Ementa</a></li>
 <li><a href="#org354fa52">2.2. Sala de Aula e Horário</a></li>
 <li><a href="#orgdd50b0e">2.3. Programa:  tea782-prog-2018-1.pdf</a></li>
 <li><a href="#orgce4e2d2">2.4. Notas de aula:  maine.pdf</a></li>
-<li><a href="#org6869956">2.5. Provas</a></li>
+<li><a href="#org2527318">2.5. Provas</a></li>
 </ul>
 </li>
 <li><a href="#org674eb1f">3. TEA-034 Tópicos Especiais em Engenharia Ambiental: Técnicas de Aprendizagem Acadêmica</a>
 <ul>
-<li><a href="#org64f9c71">3.1. Horário</a></li>
+<li><a href="#org8ea8e6d">3.1. Horário</a></li>
 <li><a href="#orgfe9e63a">3.2. Programa: tea034-prog-2017-1.pdf</a></li>
 <li><a href="#orgf69eaf3">3.3. Avaliação da disciplina pelos alunos: Esta disciplina nunca foi avaliada</a></li>
-<li><a href="#org3969370">3.4. Notas</a></li>
+<li><a href="#orgc91f152">3.4. Notas</a></li>
 </ul>
 </li>
 <li><a href="#orga463ed9">4. TEA-013 Matemática Aplicada II</a>
 <ul>
-<li><a href="#org9ba99f7">4.1. Ementa</a></li>
-<li><a href="#orge9b19bf">4.2. Horário</a></li>
-<li><a href="#orgdc94aae">4.3. Avaliação da disciplina pelos alunos</a></li>
+<li><a href="#org20bf668">4.1. Ementa</a></li>
+<li><a href="#orga567f2a">4.2. Horário</a></li>
+<li><a href="#org0b5873a">4.3. Avaliação da disciplina pelos alunos</a></li>
 <li><a href="#orge4c53f8">4.4. Programa: tea013-prog-2017-2.pdf</a></li>
 <li><a href="#org745d4bb">4.5. Programa-como-realizado: tea013-prog-2017-2-check.pdf</a></li>
 <li><a href="#org43f6385">4.6. Livro-texto: matappa-1ed.pdf</a></li>
-<li><a href="#org5d922dc">4.7. Notas</a></li>
-<li><a href="#orgc1660e5">4.8. Provas</a></li>
+<li><a href="#org0f14296">4.7. Notas</a></li>
+<li><a href="#orge42e1c4">4.8. Provas</a></li>
 <li><a href="#org50bcb10">4.9. Arquivos com as soluções de provas passadas</a></li>
 </ul>
 </li>
 <li><a href="#org5467bbc">5. TEA-752 Métodos Matemáticos em Engenharia Ambiental</a>
 <ul>
-<li><a href="#orgbb5b9c8">5.1. Ementa</a></li>
-<li><a href="#org5973fce">5.2. Horário</a></li>
+<li><a href="#org04e0367">5.1. Ementa</a></li>
+<li><a href="#org252db70">5.2. Horário</a></li>
 <li><a href="#orgfa6ffde">5.3. Programa:  tea752-prog-2017-1.pdf</a></li>
 <li><a href="#org9fa1d79">5.4. Programa-como-realizado: tea752-prog-2017-1-check.pdf</a></li>
 <li><a href="#org5845a47">5.5. Notas de aula:  apple.pdf</a></li>
-<li><a href="#org6e0aca9">5.6. Provas</a></li>
+<li><a href="#orgfaa2e37">5.6. Provas</a></li>
 </ul>
 </li>
 <li><a href="#orgccf0b7c">6. TEA-757 Camadas-Limite Naturais e Transporte de Poluentes</a>
 <ul>
-<li><a href="#org37fed14">6.1. Ementa</a></li>
-<li><a href="#orgc877f0a">6.2. Horário</a></li>
+<li><a href="#orgd19d1d4">6.1. Ementa</a></li>
+<li><a href="#org594b761">6.2. Horário</a></li>
 <li><a href="#orgeb54281">6.3. Programa:  tea757-prog-2017-2.pdf</a></li>
 <li><a href="#orge1a4674">6.4. Programa-como-realizado:  tea757-prog-2017-2-check.pdf</a></li>
 <li><a href="#org54c0f3d">6.5. Notas de aula:  mecturbi.pdf (atualizadas em 2017-06-29T15:42:04)</a></li>
-<li><a href="#orgdc9abae">6.6. Provas</a></li>
+<li><a href="#org4a92f1b">6.6. Provas</a></li>
 </ul>
 </li>
 </ul>
@@ -393,8 +393,8 @@ few times until HELP shows up).
 <div id="outline-container-org0188e98" class="outline-2">
 <h2 id="org0188e98"><span class="section-number-2">1</span> TEA-010 Matemática Aplicada I</h2>
 <div class="outline-text-2" id="text-1">
-</div><div id="outline-container-org9510928" class="outline-3">
-<h3 id="org9510928"><span class="section-number-3">1.1</span> Ementa</h3>
+</div><div id="outline-container-org189bcba" class="outline-3">
+<h3 id="org189bcba"><span class="section-number-3">1.1</span> Ementa</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 1- Ferramentas computacionais para programação e processamento simbólico. 2-
@@ -419,8 +419,8 @@ contorno.
 </div>
 
 
-<div id="outline-container-org670d9ef" class="outline-3">
-<h3 id="org670d9ef"><span class="section-number-3">1.3</span> Avaliação da disciplina pelos alunos</h3>
+<div id="outline-container-org5b8a7bd" class="outline-3">
+<h3 id="org5b8a7bd"><span class="section-number-3">1.3</span> Avaliação da disciplina pelos alunos</h3>
 <div class="outline-text-3" id="text-1-3">
 <ul class="org-ul">
 <li><a href="./pdf/Avaliacao-2015-1.pdf">2015</a></li>
@@ -453,8 +453,8 @@ contorno.
 
 
 
-<div id="outline-container-orgec4d549" class="outline-3">
-<h3 id="orgec4d549"><span class="section-number-3">1.6</span> Notas</h3>
+<div id="outline-container-org360fdbd" class="outline-3">
+<h3 id="org360fdbd"><span class="section-number-3">1.6</span> Notas</h3>
 <div class="outline-text-3" id="text-1-6">
 </div>
 </div>
@@ -468,6 +468,10 @@ contorno.
 </div><div id="outline-container-orgea29437" class="outline-4">
 <h4 id="orgea29437"><span class="section-number-4">1.7.1</span> TC1</h4>
 <div class="outline-text-4" id="text-1-7-1">
+<p>
+<a href="./pdf/tc1-2018-1.pdf">Enunciado do trabalho</a>
+</p>
+
 <p>
 Faça o download do inventário de estações fluviométricas da Agência Nacional de
 Águas <a href="./pdf/InventariodasEstacoesFluviometricas.pdf">Aqui</a>
@@ -487,10 +491,15 @@ Faça o download do arquivo com as médias diárias <code>qmeddia.txt</code>  <a
 </div>
 </div>
 
-<div id="outline-container-org47bcc8e" class="outline-4">
-<h4 id="org47bcc8e"><span class="section-number-4">1.7.2</span> TC2 (em preparação)</h4>
-</div>
 
+<div id="outline-container-orgaa54265" class="outline-4">
+<h4 id="orgaa54265"><span class="section-number-4">1.7.2</span> TC2</h4>
+<div class="outline-text-4" id="text-1-7-2">
+<p>
+<a href="./pdf/tc2-2018-1.pdf">Enunciado do trabalho</a>
+</p>
+</div>
+</div>
 
 <div id="outline-container-orgb753ebd" class="outline-4">
 <h4 id="orgb753ebd"><span class="section-number-4">1.7.3</span> TC3 (em preparação)</h4>
@@ -499,11 +508,12 @@ Faça o download do arquivo com as médias diárias <code>qmeddia.txt</code>  <a
 <div id="outline-container-org7f01871" class="outline-4">
 <h4 id="org7f01871"><span class="section-number-4">1.7.4</span> TC4 (em preparação)</h4>
 </div>
-
-<div id="outline-container-org1dac3cb" class="outline-4">
-<h4 id="org1dac3cb"><span class="section-number-4">1.7.5</span> Gabaritos</h4>
-<div class="outline-text-4" id="text-1-7-5">
 </div>
+
+
+<div id="outline-container-org1dac3cb" class="outline-3">
+<h3 id="org1dac3cb"><span class="section-number-3">1.8</span> Gabaritos</h3>
+<div class="outline-text-3" id="text-1-8">
 </div>
 </div>
 
@@ -512,8 +522,8 @@ Faça o download do arquivo com as médias diárias <code>qmeddia.txt</code>  <a
 
 
 <div id="outline-container-org8712a31" class="outline-3">
-<h3 id="org8712a31"><span class="section-number-3">1.8</span> Arquivos de provas passadas</h3>
-<div class="outline-text-3" id="text-1-8">
+<h3 id="org8712a31"><span class="section-number-3">1.9</span> Arquivos de provas passadas</h3>
+<div class="outline-text-3" id="text-1-9">
 <ul class="org-ul">
 <li><a href="./pdf/2003-1-sol.pdf">2003-1-sol.pdf</a></li>
 <li><a href="./pdf/2004-1-sol.pdf">2004-1-sol.pdf</a></li>
@@ -528,6 +538,7 @@ Faça o download do arquivo com as médias diárias <code>qmeddia.txt</code>  <a
 <li><a href="./pdf/2014-1-sol.pdf">2014-1-sol.pdf</a></li>
 <li><a href="./pdf/2015-1-sol.pdf">2015-1-sol.pdf</a></li>
 <li><a href="./pdf/2016-1-sol.pdf">2016-1-sol.pdf</a></li>
+<li><a href="./pdf/2017-1-sol.pdf">2017-1-sol.pdf</a></li>
 </ul>
 </div>
 </div>
@@ -544,8 +555,8 @@ Faça o download do arquivo com as médias diárias <code>qmeddia.txt</code>  <a
 </div>
 </div>
 
-<div id="outline-container-org0be7605" class="outline-3">
-<h3 id="org0be7605"><span class="section-number-3">2.1</span> Ementa</h3>
+<div id="outline-container-org86b2b7b" class="outline-3">
+<h3 id="org86b2b7b"><span class="section-number-3">2.1</span> Ementa</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Ementa: Teorema do Transporte de Reynolds e Balanços Integrais em Volume de
@@ -575,8 +586,8 @@ Introdução à turbulência. Camada Limite.
 <h3 id="orgce4e2d2"><span class="section-number-3">2.4</span> Notas de aula:  <a href="./pdf/maine.pdf">maine.pdf</a></h3>
 </div>
 
-<div id="outline-container-org6869956" class="outline-3">
-<h3 id="org6869956"><span class="section-number-3">2.5</span> Provas</h3>
+<div id="outline-container-org2527318" class="outline-3">
+<h3 id="org2527318"><span class="section-number-3">2.5</span> Provas</h3>
 <div class="outline-text-3" id="text-2-5">
 </div>
 </div>
@@ -587,8 +598,8 @@ Introdução à turbulência. Camada Limite.
 <div id="outline-container-org674eb1f" class="outline-2">
 <h2 id="org674eb1f"><span class="section-number-2">3</span> TEA-034 Tópicos Especiais em Engenharia Ambiental: Técnicas de Aprendizagem Acadêmica</h2>
 <div class="outline-text-2" id="text-3">
-</div><div id="outline-container-org64f9c71" class="outline-3">
-<h3 id="org64f9c71"><span class="section-number-3">3.1</span> Horário</h3>
+</div><div id="outline-container-org8ea8e6d" class="outline-3">
+<h3 id="org8ea8e6d"><span class="section-number-3">3.1</span> Horário</h3>
 <div class="outline-text-3" id="text-3-1">
 <ul class="org-ul">
 <li>Aulas: 6<sup>as</sup>, PF-2, 07:30&#x2013;09:10</li>
@@ -606,8 +617,8 @@ Introdução à turbulência. Camada Limite.
 </div>
 
 
-<div id="outline-container-org3969370" class="outline-3">
-<h3 id="org3969370"><span class="section-number-3">3.4</span> Notas</h3>
+<div id="outline-container-orgc91f152" class="outline-3">
+<h3 id="orgc91f152"><span class="section-number-3">3.4</span> Notas</h3>
 <div class="outline-text-3" id="text-3-4">
 <p>
 Veja abaixo as notas finais da disciplina
@@ -694,8 +705,8 @@ Veja abaixo as notas finais da disciplina
 <div id="outline-container-orga463ed9" class="outline-2">
 <h2 id="orga463ed9"><span class="section-number-2">4</span> TEA-013 Matemática Aplicada II</h2>
 <div class="outline-text-2" id="text-4">
-</div><div id="outline-container-org9ba99f7" class="outline-3">
-<h3 id="org9ba99f7"><span class="section-number-3">4.1</span> Ementa</h3>
+</div><div id="outline-container-org20bf668" class="outline-3">
+<h3 id="org20bf668"><span class="section-number-3">4.1</span> Ementa</h3>
 <div class="outline-text-3" id="text-4-1">
 <p>
 1- Ferramentas computacionais e solução numérica com diferenças finitas de equações diferenciais
@@ -714,8 +725,8 @@ Solução por separação de variáveis, transformadas integrais e transformada 
 </div>
 </div>
 
-<div id="outline-container-orge9b19bf" class="outline-3">
-<h3 id="orge9b19bf"><span class="section-number-3">4.2</span> Horário</h3>
+<div id="outline-container-orga567f2a" class="outline-3">
+<h3 id="orga567f2a"><span class="section-number-3">4.2</span> Horário</h3>
 <div class="outline-text-3" id="text-4-2">
 <ul class="org-ul">
 <li>Aulas: 2<sup>as</sup>, 4<sup>as</sup>, 6<sup>as</sup>, 07:30&#x2013;09:10 PM02</li>
@@ -725,8 +736,8 @@ Solução por separação de variáveis, transformadas integrais e transformada 
 </div>
 
 
-<div id="outline-container-orgdc94aae" class="outline-3">
-<h3 id="orgdc94aae"><span class="section-number-3">4.3</span> Avaliação da disciplina pelos alunos</h3>
+<div id="outline-container-org0b5873a" class="outline-3">
+<h3 id="org0b5873a"><span class="section-number-3">4.3</span> Avaliação da disciplina pelos alunos</h3>
 <div class="outline-text-3" id="text-4-3">
 <ul class="org-ul">
 <li><a href="./pdf/Avaliacao-2016-2.pdf">2016</a></li>
@@ -750,8 +761,8 @@ Solução por separação de variáveis, transformadas integrais e transformada 
 </div>
 
 
-<div id="outline-container-org5d922dc" class="outline-3">
-<h3 id="org5d922dc"><span class="section-number-3">4.7</span> Notas</h3>
+<div id="outline-container-org0f14296" class="outline-3">
+<h3 id="org0f14296"><span class="section-number-3">4.7</span> Notas</h3>
 <div class="outline-text-3" id="text-4-7">
 <p>
 Veja as <a href="./pdf/notpre2017-2.pdf">notas</a> até a F (Incluindo o Trabalho Computacional).
@@ -781,8 +792,8 @@ Veja as <a href="./pdf/notpre2017-2.pdf">notas</a> até a F (Incluindo o Trabalh
 
 
 
-<div id="outline-container-orgc1660e5" class="outline-3">
-<h3 id="orgc1660e5"><span class="section-number-3">4.8</span> Provas</h3>
+<div id="outline-container-orge42e1c4" class="outline-3">
+<h3 id="orge42e1c4"><span class="section-number-3">4.8</span> Provas</h3>
 <div class="outline-text-3" id="text-4-8">
 <p>
 Faça o download do gabarito da P1: <a href="./pdf/2017-2-p01-sol.pdf">2017-2-p01-sol.pdf</a>
@@ -838,8 +849,8 @@ Faça o download do gabarito da F: <a href="./pdf/2017-2-f-sol.pdf">2017-2-f-sol
 <div id="outline-container-org5467bbc" class="outline-2">
 <h2 id="org5467bbc"><span class="section-number-2">5</span> TEA-752 Métodos Matemáticos em Engenharia Ambiental</h2>
 <div class="outline-text-2" id="text-5">
-</div><div id="outline-container-orgbb5b9c8" class="outline-3">
-<h3 id="orgbb5b9c8"><span class="section-number-3">5.1</span> Ementa</h3>
+</div><div id="outline-container-org04e0367" class="outline-3">
+<h3 id="org04e0367"><span class="section-number-3">5.1</span> Ementa</h3>
 <div class="outline-text-3" id="text-5-1">
 <p>
 Ementa: Tensores cartesianos. Funções de várias variáveis: Teorema da função
@@ -851,8 +862,8 @@ de Fourier e Equações Diferenciais Parciais: método de separação de variáv
 </div>
 
 
-<div id="outline-container-org5973fce" class="outline-3">
-<h3 id="org5973fce"><span class="section-number-3">5.2</span> Horário</h3>
+<div id="outline-container-org252db70" class="outline-3">
+<h3 id="org252db70"><span class="section-number-3">5.2</span> Horário</h3>
 <div class="outline-text-3" id="text-5-2">
 <p>
 2<sup>as</sup> e 4<sup>as</sup>, PF-16, 09:30&#x2013;11:10
@@ -876,8 +887,8 @@ de Fourier e Equações Diferenciais Parciais: método de separação de variáv
 </div>
 
 
-<div id="outline-container-org6e0aca9" class="outline-3">
-<h3 id="org6e0aca9"><span class="section-number-3">5.6</span> Provas</h3>
+<div id="outline-container-orgfaa2e37" class="outline-3">
+<h3 id="orgfaa2e37"><span class="section-number-3">5.6</span> Provas</h3>
 <div class="outline-text-3" id="text-5-6">
 <p>
 Faça o download do gabarito da P1: <a href="./pdf/tea752-2017-1-p01-sol.pdf">tea752-2017-1-p01-sol.pdf</a>
@@ -898,8 +909,8 @@ Faça o download do gabarito da P3: <a href="./pdf/tea752-2017-1-p03-sol.pdf">te
 <div id="outline-container-orgccf0b7c" class="outline-2">
 <h2 id="orgccf0b7c"><span class="section-number-2">6</span> TEA-757 Camadas-Limite Naturais e Transporte de Poluentes</h2>
 <div class="outline-text-2" id="text-6">
-</div><div id="outline-container-org37fed14" class="outline-3">
-<h3 id="org37fed14"><span class="section-number-3">6.1</span> Ementa</h3>
+</div><div id="outline-container-orgd19d1d4" class="outline-3">
+<h3 id="orgd19d1d4"><span class="section-number-3">6.1</span> Ementa</h3>
 <div class="outline-text-3" id="text-6-1">
 <p>
 Revisão das equações de Navier-Stokes e das equações de transporte para
@@ -921,8 +932,8 @@ Richardson e comprimento de estabilidade de Obukhov.
 </div>
 
 
-<div id="outline-container-orgc877f0a" class="outline-3">
-<h3 id="orgc877f0a"><span class="section-number-3">6.2</span> Horário</h3>
+<div id="outline-container-org594b761" class="outline-3">
+<h3 id="org594b761"><span class="section-number-3">6.2</span> Horário</h3>
 <div class="outline-text-3" id="text-6-2">
 <p>
 2<sup>as</sup> e 4<sup>as</sup>, PF-16, 09:30&#x2013;11:10
@@ -945,14 +956,14 @@ Richardson e comprimento de estabilidade de Obukhov.
 <h3 id="org54c0f3d"><span class="section-number-3">6.5</span> Notas de aula:  <a href="./pdf/mecturbi.pdf">mecturbi.pdf</a> (atualizadas em 2017-06-29T15:42:04)</h3>
 </div>
 
-<div id="outline-container-orgdc9abae" class="outline-3">
-<h3 id="orgdc9abae"><span class="section-number-3">6.6</span> Provas</h3>
+<div id="outline-container-org4a92f1b" class="outline-3">
+<h3 id="org4a92f1b"><span class="section-number-3">6.6</span> Provas</h3>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2018-02-02 sex 09:50</p>
+<p class="date">Created: 2018-02-02 sex 11:42</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
