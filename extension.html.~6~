@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2017-05-19 Sex 18:53 -->
+<!-- 2018-01-31 qua 09:53 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Nelson Luís Dias</title>
+<title>Extensão (Extension)</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Nelson Luís Dias" />
 <style type="text/css">
@@ -248,7 +248,7 @@ org_html_manager.set("VIEW_BUTTONS", "1");
 org_html_manager.set("MOUSE_HINT", "underline");
 org_html_manager.set("FIXED_TOC", "0");
 org_html_manager.set("TOC", "1");
-org_html_manager.set("VIEW", "overview");
+org_html_manager.set("VIEW", "1");
 org_html_manager.setup();  // activate after the parameters are set
 /*]]>*///-->
 </script>
@@ -257,7 +257,7 @@ org_html_manager.setup();  // activate after the parameters are set
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2013 Free Software Foundation, Inc.
+Copyright (C) 2012-2017 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -301,154 +301,42 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Nelson Luís Dias</h1>
+<h1 class="title">Extensão (Extension)</h1>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org9adb287">1. Bem-vindos (Welcome)</a></li>
-<li><a href="#org82052ce">2. Afiliação (Affiliation)</a></li>
-<li><a href="#org5c94f7e">3. Biografia (Biography)</a></li>
-<li><a href="#org14ba2f1">4. Blog</a></li>
-<li><a href="#orgb741907">5. Pesquisa (Research)</a></li>
-<li><a href="#orgdeac776">6. Ensino (Teaching)</a></li>
-<li><a href="#orgcb6cf17">7. Extensão (Extension)</a></li>
-<li><a href="#org1626c8e">8. Livros e material didático (Books and educational material)</a></li>
+<li><a href="#org205384f">1. Uma escola de engenharia utópica ESSET</a></li>
 </ul>
 </div>
 </div>
-
-<div id="outline-container-org9adb287" class="outline-2">
-<h2 id="org9adb287"><span class="section-number-2">1</span> Bem-vindos (Welcome)</h2>
-<div class="outline-text-2" id="text-1">
 <p>
-This site is searchable. See HELP on the right. 
-</p>
-
-
-<div class="figure">
-<p><img src="img/nelson-points-smaller.jpg" alt="nelson-points-smaller.jpg" width="240px" />
-</p>
-</div>
-</div>
-</div>
-
-
-<div id="outline-container-org82052ce" class="outline-2">
-<h2 id="org82052ce"><span class="section-number-2">2</span> Afiliação (Affiliation)</h2>
-<div class="outline-text-2" id="text-2">
-<p>
-Professor Titular, Departamento de Engenharia Ambiental, Universidade Federal
-do Paraná (<a href="http://www.dea.ufpr.br/">http://www.dea.ufpr.br/</a>)
-</p>
-<ul class="org-ul">
-<li>Curso de Graduação em Engenharia Ambiental (<a href="http://www.ambiental.ufpr.br/">http://www.ambiental.ufpr.br/</a>)</li>
-<li>Programa de Pós-Graduação em Engenharia Ambiental (<a href="http://www.ppgea.ufpr.br/">http://www.ppgea.ufpr.br/</a>)</li>
-<li>Programa de Pós-Graduação em Métodos Numéricos em Engenharia (<a href="http://www.ppgmne.ufpr.br/">http://www.ppgmne.ufpr.br/</a>)</li>
-</ul>
-
-<p>
-Atualmente:
-</p>
-<ul class="org-ul">
-<li>Coordenador do Lemma (Laboratório de Estudos em Monitoramento e Modelagem
-Ambiental: <a href="http://www.lemma.ufpr.br/">http://www.lemma.ufpr.br/</a>)</li>
-</ul>
-
-<hr />
-
-<p>
-Professor, Department of Environmental Engineering, Federal University of
-Paraná (<a href="http://www.dea.ufpr.br/">http://www.dea.ufpr.br/</a>)
-</p>
-<ul class="org-ul">
-<li>Environmental Engineering Course (<a href="http://www.ambiental.ufpr.br/">http://www.ambiental.ufpr.br/</a>)</li>
-<li>Graduate Program in Environmental Engineering (<a href="http://www.ppgea.ufpr.br/">http://www.ppgea.ufpr.br/</a>)</li>
-<li>Graduate Program in Numerical Methods in Engineering (<a href="http://www.ppgmne.ufpr.br/">http://www.ppgmne.ufpr.br/</a>)</li>
-</ul>
-
-<p>
-Currently:
-</p>
-<ul class="org-ul">
-<li>Head of Lemma (Lab for Environmental Monitoring and Modeling Analysis: <a href="http://www.lemma.ufpr.br/">http://www.lemma.ufpr.br/</a> )</li>
-</ul>
-
-<p>
-CV Lattes (Vita):  <a href="http://lattes.cnpq.br/5149356080083086">http://lattes.cnpq.br/5149356080083086</a>
+This site is searchable. See HELP on the right (you may need to click around a
+few times until HELP shows up).
+. 
 </p>
 
 <p>
-Tel: +55-41-3320-2025
+<a href="index.html">Home</a>
 </p>
+
 
 <p>
-<a href="mailto:nldias@ufpr.br">mailto:nldias@ufpr.br</a>
-</p>
-</div>
-</div>
-
-
-<div id="outline-container-org5c94f7e" class="outline-2">
-<h2 id="org5c94f7e"><span class="section-number-2">3</span> Biografia (Biography)</h2>
-<div class="outline-text-2" id="text-3">
-<p>
-Nasci no Rio de Janeiro em 1961. Fiz minha graduação em Engenharia Civil pela
-Universidade Federal do Rio de Janeiro (1983). Sou Mestre em Ciências em
-Engenharia Civil pela Universidade Federal do Rio de Janeiro (1986), e Doutor
-em Ciências em Engenharia Civil e Ambiental pela Universidade Cornell
-(1993). Em 2007, fiz um estágio sabático na Universidade da Geórgia. Desde
-1995, sou Professor da Universidade Federal do Paraná, onde atualmente sou
-Professor Titular no Departamento de Engenharia Ambiental. Leciono no Curso de
-Engenharia Ambiental, no Programa de Pós-Graduação em Métodos Numéricos em
-Engenharia, e no Programa de Pós-Graduação em Engenharia Ambiental.
+Esta é uma página de popularização de C&amp;T voltada principalmente para Engenharia
+Ambiental.  Ela contém apresentações de palestras, e textos curtos voltados para
+familiarizar o público em geral, e nossos próprios alunos, com diversos temas de
+Engenharia Ambiental.
 </p>
 
-<p>
-I was born in Rio de Janeiro, Brazil, in 1961. I graduated in Civil
-Engineering at the Federal University of Rio de Janeiro in 1983. In 1986, I
-got My Master's in Civil Engineering at the same university. I have a Ph.D. in
-Civil and Environmental Engineering from Cornell University (1993). In 2007, I
-spent a sabbatical year at the University of Georgia. Since 1995, I have been a
-professor at the Federal University of Paraná (UFPR) in Brazil. I am currently
-a Professor at the Environmental Engineering Department, and I teach
-undergraduate courses at the Environmental Engineering Course, and Graduate
-Courses at the Graduate Program in Environmental Engineering, and at the
-Program in Numerical Methods in Engineering, all at UFPR.
-</p>
-</div>
-</div>
 
 
-
-
-
-<div id="outline-container-org14ba2f1" class="outline-2">
-<h2 id="org14ba2f1"><span class="section-number-2">4</span> <a href="blog.html">Blog</a></h2>
-</div>
-
-
-<div id="outline-container-orgb741907" class="outline-2">
-<h2 id="orgb741907"><span class="section-number-2">5</span> <a href="research.html">Pesquisa (Research)</a></h2>
-</div>
-
-
-<div id="outline-container-orgdeac776" class="outline-2">
-<h2 id="orgdeac776"><span class="section-number-2">6</span> <a href="teaching.html">Ensino (Teaching)</a></h2>
-</div>
-
-<div id="outline-container-orgcb6cf17" class="outline-2">
-<h2 id="orgcb6cf17"><span class="section-number-2">7</span> <a href="extension.html">Extensão (Extension)</a></h2>
-</div>
-
-
-<div id="outline-container-org1626c8e" class="outline-2">
-<h2 id="org1626c8e"><span class="section-number-2">8</span> <a href="books.html">Livros e material didático (Books and educational material)</a></h2>
+<div id="outline-container-org205384f" class="outline-2">
+<h2 id="org205384f"><span class="section-number-2">1</span> Uma escola de engenharia utópica <a href="esset.html">ESSET</a></h2>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2017-05-19 Sex 18:53</p>
+<p class="date">Created: 2018-01-31 qua 09:53</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
