@@ -1,0 +1,650 @@
+#+TITLE: Projeto da Escola Superior de Engenharia & Tecnologia (ESSET) da UF...
+#+AUTHOR:    Nelson Luís Dias
+#+EMAIL:     nldias@ufpr.br
+#+INFOJS_OPT: view:t toc:t ltoc:t mouse:underline buttons:t path:org-info.js
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="readtheorg.css" />
+#+LANGUAGE: pt_BR
+
+# #+BIBLIOGRAPHY: all aaai-named
+
+
+
+[[file:index.org][Home]]
+
+
+* Motivação
+
+Este é o projeto de uma Escola de Engenharia utópica. Colegas de Universidades Federais brasileiras, que o lerem, certamente notarão as grandes diferenças de nossas escolas reais. Provavelmente, o lugar em que trabalho, assim como tantos outros similares, nunca será assim. Mas não custa sonhar. E não custa sugerir que, partindo do que temos hoje, uma escola assim seria /possível/.
+
+
+Este é o projeto da /Escola Superior de Engenharia e Tecnologia/ (ESSET) da
+UF... Nossa visão é de que em 2030 a ESSET será:
+
+
+   * Uma Escola de Engenharia voltada para a pesquisa e para a inovação, ao par das
+     melhores instituições nacionais de graduação e de pós-graduação em Engenharia.
+   * Uma escola onde o ensino de graduação e de pós-graduação sejam 100%
+     integrados.
+   * Uma escola onde a educação dos alunos seja /flexível/ e /continuada/,
+     propiciando a melhor formação possível em todas as modalidades do ensino
+     superior de Engenharia.
+   * Uma escola meritocrática, mas também justa, repleta de oportunidades para
+     todos os seus alunos, independentemente de suas origens ou condições.
+
+
+
+A organização acadêmica e a organização institucional são as bases da construção
+de uma ESSET bem-sucedida. /Não é possível fazer ensino e pesquisa de alto  nível sem organização, cuidado com a eficiência, e bom uso do tempo e dos  recursos à nossa disposição/.
+
+Também não é possível fragmentar o ensino e a governança da ESSET em uma miríade
+de experiências e formatos locais (locais significando: departamentos, cursos de
+graduação e programas de pós-graduação), todos com suas virtudes e defeitos, se
+essas experiências e formatos criarem conflitos e /overhead/ administrativo. Em
+vez disso, a ESSET deve construir a partir das fundações uma cultura acadêmica
+única, suficientemente flexível para abrigar todas as suas unidades
+administrativas e acadêmicas, porém ainda assim identificável por todos os seus
+membros, e conducente ao bom funcionamento e ao sucesso da ESSET.
+
+Eis portanto nossa visão: os departamentos deverão ser tanto quanto possível
+/pequenos/. Nossa principal preocupação deve ser com /qualidade/, e
+não com /quantidade/. Nossas disciplinas devem ser desenhadas com extremo
+cuidado e atenção à qualidade do conhecimento ensinado.  Além disso, as conexões
+entre as diversas disciplinas devem ser a parte mais importante, e mais
+cuidadosamente considerada, de cada projeto pedagógico.
+
+A experiência bem sucedida dos programas de pós-graduação brasileiros deve ser emulada na graduação. Isso deve ser feito /não para criar instâncias administrativas adicionais/, mas para tornar a administração acadêmica mais orgânica e simples. À imagem da Pós-Graduação, um conceito novo --- o Programa de Graduação de cada departamento --- poderá incluir vários cursos, sob um mesmo coordenador e
+administrado por um colegiado único. Neste momento, vislumbramos pelo menos dois cursos quase mandatórios: o Curso de Engenheiro, e o Curso de Tecnólogo (note a analogia com os Cursos de Mestrado e de Doutorado na Pós-Graduação).
+
+Pertencer à ESSET precisa ser motivo de orgulho e de entusiasmo. Queremos atrair
+alunos e professores de todo o País (e de todo o Mundo), porque queremos
+oferecer um ambiente altamente produtivo de trabalho e de estudo. Finalmente,
+
+#+BEGIN_QUOTE
+Não queremos ser os melhores do País e do Mundo /ainda/, mas queremos ser tão
+bons quanto possível, e queremos ser vistos como uma escola que melhora sempre,
+com humildade e espírito de trabalho e superação.
+#+END_QUOTE
+
+
+
+* Princípios fundamentais da ESSET
+
+Para que o projeto da ESSET seja bem-sucedido, é fundamental que ela seja
+estabelecida sobre /princípios/ a serem firmemente mantidos durante toda a sua
+construção. Esses princípios são os seguintes:
+   - Ensino antes de tudo (/super omnes docentes/) ::  O principal objetivo da
+        ESSET é a formação de engenheiros, tecnólogos e outros profissionais de
+        nível superior /altamente qualificados/. Nossos egressos devem possuir
+        um dos melhores ensinos superiores em Engenharia do país, e uma formação
+        equivalente em nível, profundidade e abrangência de conhecimentos à das
+        melhores escolas de Engenharia do mundo.  Nossos professores devem dar
+        excelentes aulas, bem preparadas, que motivem os alunos e os entusiasmem
+        para o exercício da Engenharia. Nossa sugestão é que /super omnes
+        docentes/ seja o lema da ESSET. *Atenção:* a frase em Latim não
+        significa ``docentes acima de tudo'', mas sim ``Ensino acima de tudo''.
+
+   - Ética e Honestidade :: Todas as atividades, processos seletivos, provas,
+        pesquisas, etc., em suma, toda a vida acadêmica que ocorre dentro da
+        ESSET dever ser norteada por um rígido código de ética e de conduta, que
+        oriente as ações de professores, funcionários e de alunos sempre com
+        base no respeito às leis, na convivência cordial e pacífica, na
+        honestidade, e no respeito irrestrito a todos os seres humanos
+        independentemente de suas origens e condições.
+
+   - Pesquisa de ponta :: A pesquisa inovadora e de alto nível é uma condição
+        /sine qua/ para todo o corpo docente da ESSET, e é de fato um
+        instrumento de melhoria constante do ensino. Nossos docentes devem estar
+        entre os melhores pesquisadores do país em suas áreas de atuação,
+        /sem prejuízo de nosso comprometimento com a formação em sala de aula de
+        nossos alunos de graduação e de pós-graduação/
+
+   - Projetos para mudar o Mundo :: Nossa principal atividade de /extensão/ deve
+        ser a participação em projetos desafiadores de Engenharia no país e no
+        exterior. Consequentemente, nossos professores e nossos alunos devem ser
+        igualmente estimulados a participar de atividades de boa Engenharia, e
+        de Engenharia de alto nível, além dos portões da ESSET.
+
+   - Igualdade :: A visão meritocrática da ESSET não pode ser excludente:
+      1. O mérito apenas, e não considerações de classe, raça, ou gênero,
+         deverão ser os critérios norteadores para a seleção de alunos e professores.
+      2. A ESSET deverá implementar mecanismos de inclusão social que sejam
+         /sustentáveis/ e de /longo prazo/, incluindo atividades de nivelamento,
+         e formação gradual (mais sobre isso a seguir) que permitam aos nossos
+         alunos estender a sua formação ao longo de períodos mais longos durante
+         os quais possam também trabalhar, etc..
+
+
+
+
+
+* A estrutura administrativa
+# \label{sec:admin}
+
+
+** A estrutura básica
+# \label{sec-3-1}
+
+A ESSET deverá ser formada basicamente sobre departamentos. Esses departamentos
+precisam ser muito mais do que aquilo que entendemos hoje pelo nome. Eles devem
+/voltar a zelar diretamente pelo ensino e pela pesquisa/, além dos aspectos
+financeiros, administrativos, e de gestão de pessoal. Isso na verdade não é
+difícil, e será detalhado na sequência.
+
+A ESSET será constituída, portanto, dos seguintes departamentos:
+    1. Departamento de Ciências de Engenharia (DCIE)
+    2. Departamento de Engenharia Ambiental (DEA)
+    3. Departamento de Engenharia Civil (DEC)
+    4. Departamento de Engenharia Elétrica (DEE)
+    5. Departamento de Engenharia Mecânica (DEM)
+    6. Departamento de Engenharia de Materiais (DEMAT)
+    7. Departamento de Engenharia de Produção (DEP)
+    7. Departamento de Engenharia Química (DEQ)
+
+
+O órgão máximo da ESSET, o Conselho da Escola de Engenharia (CEE), será constituído
+pelos:
+   * Diretor-geral da ESSET.
+   * Diretor de graduação da ESSET (e 1^{o} suplente).
+   * Diretor de pesquisa, pós-graduação e extensão da ESSET (e 2^{o} suplente).
+   * Chefes de Departamento.
+   * Representantes técnico-administrativos, perfazendo um total de 10% dos membros do CEE.
+   * Representates discentes, dividos igualmente entre representantes discentes de graduação e de pós-graduação, perfazendo um total de 20% dos membros do CEE.
+
+
+A figura [[fig:cesset]]  mostra essa estrutura.
+
+
+
+#+CAPTION: A estrutura departamental da ESSET
+#+NAME:   fig:cesset
+     [[./img/cesset.jpg]]
+
+# \subsection{Os órgãos acessores}
+# \label{subsec:orgaos}
+
+# A ESSET contará ainda com dois órgãos assessores:
+# \begin{itemize}
+# \item O Conselho de Graduação (CGR), constituído pelos:
+# \begin{itemize}
+# \item Diretor de Graduação da ESSET (que o presidirá).
+# \item Coordenadores dos Programas de Graduação da ESSET (PGR-ESSET).
+# \item Representantes discentes, dividos igualmente entre representantes
+# discentes de graduação e de pós-graduação, perfazendo um total de 20\% dos
+# membros do CGR.
+# \end{itemize}
+# \item O Conselho de Extensão, Pesquisa e Pós-Graduação (CEPPG), constituído pelos:
+# \begin{itemize}
+# \item Diretor de Pós-Graduação da ESSET (que o presidirá).
+# \item Coordenadores dos Programas de Pós-Graduação da ESSET (PPG-ESSET).
+# \item Representantes discentes, dividos igualmente entre representantes
+# discentes de graduação e de pós-graduação, perfazendo um total de 20\% dos
+# membros do CEPPG.
+# \end{itemize}
+# \end{itemize}
+
+# \textbf{Os CGR e CEPPG cuidarão}, exclusivamente, das questões acadêmicas
+# respectivas, incluindo reformas curriculares, recursos,
+# cri\-a\-ção/fe\-cha\-men\-to de cursos, aprovação de projetos de pesquisa do
+# ponto de vista do seu mérito acadêmico, processos disciplinares de estudantes,
+# etc..  Com relação às decisões do CGR e do CEPPG, valerão os seguintes
+# princípios norteadores:
+# \begin{itemize}
+# \item As decisões dos CGR e CEPPG terão efeito imediato, desde que não
+#   necessitem da emissão de resoluções e atos normativos, que serão de exclusiva
+#   competência do CEE.
+# \item De todas as decisões das CGR e CEEPG caberá recurso, em última instância, ao CEE.
+# \item As decisões dos CGR e CEEPG que requeiram resoluções e atos normativos
+# correspondentes serão enviadas sob a forma de projetos de resolução, etc.,
+# ao CEE, que os aprovará ou não, modificando-os quando necessário.
+# \end{itemize}
+
+
+# \subsection{Departamentos}
+# \label{sec-3-3}
+
+# Cada departamento contará com um conselho departamental, constituído pelos:
+# \begin{itemize}
+# \item Chefe de Departamento.
+# \item Coordenador do Programa de Graduação (PGR) do respectivo Departamento, e
+#   1\iro\ suplente.
+# \item Coordenador do Programa de Pesquisa e Pós-Graduação (PPG) do respectivo Departamento, e
+# 2\iro\ suplente.
+# \item Docentes do Departamento, em sua totalidade.
+# \item Representantes Discentes de Graduação, perfazendo 10\% do colegiado.
+# \item Representantes Discentes de Pós-Graduação, perfazendo 10\% do colegiado.
+# \item Representantes Técnico-Administrativos, perfazendo 10\% do colegiado.
+# \end{itemize}
+
+# \subsection{Programas de Graduação}
+# \label{sec:progra}
+
+# Propomos a unificação em um único órgão do Colegiado de Curso e do Núcleo
+# Docente Estruturante, sob o nome de \emph{Colegiado do Programa de Graduação}.  É
+# fundamental entender que um mesmo Programa de Graduação, sob a liderança de
+# um único Coordenador de Graduação, ofertará \emph{diversos diplomas de graduação},
+# e pelo menos dois: o Diploma de Tecnólogo em Engenharia $X$, e o Diploma de
+# Engenheiro em Engenharia $X$.  O Colegiado do Programa de Graduação em
+# Engenharia $X$ será constituído pelos:
+# \begin{itemize}
+# \item Coordenador do Programa de Graduação.
+# \item Vice-coordenador do Programa de Graduação.
+# \item Representantes Docentes do Departamento, perfazendo 60\% do colegiado.
+# \item Representantes dos demais Setores da UFPR que contribuem com o Programa de
+# Graduação, com pelo menos 1 representante por Setor, perfazendo 20\% do
+# colegiado.
+# \item Representantes Discentes de Graduação, perfazendo 20\% do colegiado.
+# \end{itemize}
+
+# \subsection{Programas de Pós-Graduação}
+# \label{sec-3-5}
+
+# O Programa de Pós-Graduação ligado a cada departamento seguirá as regras
+# usuais nas universidades brasileiras.  O Colegiado do Programa de Pós-Graduação
+# em Engenharia $X$ será constituído pelos:
+# \begin{itemize}
+# \item Coordenador do Programa de Pós-Graduação.
+# \item Vice-coordenador do Programa de Pós-Graduação.
+# \item Representantes Docentes do Departamento, perfazendo 60\% do colegiado.
+# \item Representantes dos demais Departamentos da UFPR que contribuem com o
+# Programa, perfazendo 20\% do colegiado.
+# \item Representantes Discentes de Pós-Graduação, perfazendo 20\% do colegiado.
+# \end{itemize}
+
+# \subsection{As inter-conexões}
+# \label{sec-3-6}
+
+# Enfim, a idéia é criar uma estrutura administrativa que \emph{facilite as decisões},
+# e que \emph{deixe claras as responsabilidades}. Acreditamos que bons mecanismos de
+# gestão não são impeditivos de transparência e participação, em sua justa
+# medida. 
+
+# A figura \ref{fig:artic} mostra as articulações propostas entre as diversas
+# instâncias administrativas da ESSET.
+
+# \begin{figure}
+# \centering
+# \includegraphics[width=.9\linewidth]{./artic.pdf}
+# \caption{\label{fig:artic}Articulações entre as diversas instâncias administrativas da ESSET}
+# \end{figure}
+
+
+
+# \section{Escolha dos coordenadores, chefes departamentais e diretores da ESSET}
+# \label{sec:coord-chef-dir}
+
+# \subsection{Diretoria}
+# \label{subsec:diretoria}
+
+# O Diretor-Geral, Diretor de Graduação, e Diretor de Pesquisa, Pós-Graduação e
+# Extensão serão eleitos em chapa única para um mandato de 4 anos com direito a
+# reeleição. Eles trabalharão harmonicamente, sob a chefia do diretor-geral.
+
+# \subsection{Chefias departamentais e Coordenações de Curso}
+# \label{sec-4-2}
+
+
+# \textbf{Escolha dos chefes departamentais e coordenadores:\thinspace} Os chefes
+# departamentais e respectivos coordenadores serão eleitos em chapa única para um
+# mandato de 4 anos com direito a reeleição. Eles trabalharão harmonicamente, sob
+# a condução do chefe de departamento.
+
+
+
+# \section{A organização acadêmica: horários e cursos}
+# \label{sec:org-acad}
+
+# \subsection{Novos horários para as aulas}
+
+# Uma boa utilização do tempo disponível pode trazer numerosos benefícios
+# acadêmicos. Aulas longas demais tornam-se improdutivas e quebram o
+# \emph{attention span} do aluno (período máximo durante o qual o aluno consegue
+# manter sua atenção na aula). Longos intervalos entre as aulas, e entre os
+# períodos matutino e vespertino também contribuem para desviar a concentração e o
+# foco dos alunos. Finalmente, a impossibilidade de concentrar todas (ou a
+# maioria) das aulas em um único período (manhã, tarde ou noite) traz diversos
+# outros inconvenientes: os alunos têm menos tempo para estudar ou para estagiar,
+# e a demanda por espaço físico para salas de aula cresce. Tendo tudo isso em
+# vista, propomos um conjunto de princípios norteadores da alocação e uso do tempo
+# na ESSET:
+# \begin{enumerate}
+# \item Aulas de 90 minutos (nem menos, nem mais). Proibição de aulas mais
+# longas. Em particular, proibição de combinar duas aulas de uma mesma
+# disciplina em horários contíguos, eliminando um hábito comum de lecionar
+# uma disciplina uma única vez na semana, ao longo de 3 ou 4 horas.
+# \item Três tempos de 90 minutos de manhã, três à tarde, e dois à noite, com
+# intervalos de 15 minutos entre as aulas. Intervalo de 1 hora entre os
+# períodos matutino e vespertino, e de 30 minutos entre os períodos vespertino e
+# noturno.
+# \item Contabilização da chamda ``hora-relógio'' para a integralização curricular,
+# atendendo a Portaria 003/2007 do CNE (Conselho Nacional de Educação),
+# reproduzida no anexo \ref{sec:res003-2007}.
+# \end{enumerate}
+
+# A adoção desse novo horário precisa ser feita não somente pela ESSET, mas também
+# pelos demais setores da UFPR presentes no Centro Politécnico (pelo
+# menos). Portanto, não é tarefa fácil. No entanto, os seus benefícios seriam
+# imensos, inclusive em termos de alocação eficiente de espaço físico, assim como
+# de considerável melhora no desempenho acadêmico e tempo disponível para todos os
+# alunos. A tabela \ref{tab:newtime} descreve o horário proposto.
+
+# \begin{table}
+# \caption{Horários das aulas de 90 minutos}\label{tab:newtime}
+# \begin{tabu}[t]{|X|X|X|X|X|X|X|X|}
+# \toprule
+# \multicolumn{3}{c}{Período Matutino} & \multicolumn{3}{c}{Período Vespertino} & \multicolumn{2}{c}{Período Noturno} \\
+# \midrule
+# 07:30--09:00 & 09:15--10:45 & 11:00--12:30 & 13:30--15:00 & 15:15--16:45 & 17:00--18:30 & 19:00--20:30 & 20:45--22:15 \\
+# \bottomrule
+# \end{tabu}
+# \end{table}
+
+# \subsection{Programas de graduação: uma nova visão pedagógica}\label{sec:pgr}
+
+# Tanto quanto seja de nosso conhecimento, o conceito de ``Programas de
+# Graduação'' nunca foi proposto. Baseamo-nos no amplo sucesso do conceito análogo
+# na pós-gradu\-ação brasileira para sugeri-lo. Conforme mencionado na seção
+# \ref{sec:progra}, na ESSET, a cada departamento da Escola corresponderiam (pelo
+# menos) um Programa de Graduação e um Programa de Pós-Graduação. Em particular na
+# Pós-Gra\-du\-a\-ção, há hoje no Setor de Tecnologia da UFPR programas
+# desvinculados de uma graduação específica, assim como programas
+# intersetoriais. Esses casos serão discutidos mais à frente. Por outro lado, a
+# ampla maioria dos Programas de Pós-graduação do hoje Setor de Tecnologia já se
+# identifica com uma das Engenharias, ou a Arquitetura. Vemos portanto como
+# natural a adoção dessa idéia, de ``um departamento, uma pós-graduação, uma
+# graduação''. Isso já estava esboçado na descrição da estrutura administrativa da
+# ESSET na seção \ref{sec:admin}.
+
+# A graduação em Engenharia no século XXI contempla desafios específicos que
+# precisam ser enfrentados de forma criativa, inovadora, e sobretudo
+# corajosa. Alguns pontos fundamentais precisam ser levados em consideração:
+# \begin{enumerate}
+# \item O ensino médio brasileiro não tem conseguido formar alunos com o conteúdos
+#   de Matemática, Física e Química necessários para um bom desempenho em cursos de
+#   engenharia. Essa ``falha'' acadêmica e de conhecimento custa a ser reconhecida
+#   pela Universidade, que continua a ensinar da mesma maneira que o fazia há 25
+#   ou 30 anos atrás. É urgente o reconhecimento dessa falha, e sua correção,
+#   tanto pelo ensino médio, quanto pela Universidade. Propomos a disponibilização
+#   de disciplinas niveladoras como parte integral do currículo de graduação de
+#   nossos alunos. Neste projeto, elas são: Matemática Geral, Física Geral e
+#   Química Geral, como disciplinas  obrigatórias e disponibilizadas no
+#   1\iro\ semestre do curso de Engenharia.
+# \item Os alunos precisam de flexibilidade acadêmica para a integralização de
+#   seus cursos de graduação. Para muitos alunos de hoje, a obtenção do diploma de
+#   Engenheiro em um único esforço contínuo de 5 anos de duração tem se mostrado
+#   muito difícil, ou mesmo impossível. Isso tem levado a uma elevada taxa de
+#   desistência, quando existem alternativas que, ao reconhecer a questão,
+#   permitem efetivamente transformar desistências e perdas em sucessos
+#   gradativos, na medida da possibilidade de dedicação de cada aluno. É claro que
+#   ao adotarmos essa abordagem estamos reconhecendo que muitos alunos se formarão
+#   em mais tempo, se contabilizados os interregnos entre diversos diplomas
+#   intermediários de graduação. Ao assim agirmos, por outro lado, estaremos
+#   aumentando as chances de sucesso de nossos alunos e proporcionando
+#   oportunidades e alternativas onde hoje eles só encontram obstáculos
+#   intransponíveis. Na sequência, portanto, nós sugerimos a adoção de 3 diplomas
+#   de graduação na ESSET, correspondentes a 3 cursos. Um curso superior
+#   sequencial de formação específica, correspondente ao ``ciclo básico'' de
+#   Engenharia (dois primeiros anos); um curso de Tecnologia (formando
+#   tecnólogos); e um curso de Engenharia. A existência de cursos sequenciais é
+#   preconizada pela Lei de Diretrizes e Bases (Lei no 9.394, de 20 de dezembro de
+#   1996) e sua caracterização é detalhada no Parecer CES 968/98 do Conselho
+#   Nacional de Educação, parecer este que se encontra no Anexo \ref{sec:curseq}.
+# \end{enumerate}
+
+# Em primeiro lugar, portanto, a ESSET disponibilizará um ciclo básico único de
+# Engenharia (a Arquitetura talvez não se encaixe nesse modelo, e precise de um
+# projeto específico). Esses dois primeiros anos serão denominados \emph{Curso
+#   Superior Politécnico}. Um novo departamento da ESSET (não necessariamente com
+# novos professores nem mais pressão sobre vagas! Na verdade, preferencialmente a
+# ser formado a partir dos quadros já existentes no atual Setor de Tecnologia), o
+# Departamento de Ciências de Engenharia (DCIE), será criado para administrar e
+# ofertar disciplinas para o Curso Superior Politécnico. A composição desse curso
+# --- um retorno à ideia de ``Ciclo Básico'' de Engenharia --- em termos de
+# disciplinas está mostrada na tabela \ref{tab:cspoli}. Nessa tabela, a carga
+# horária proposta (contemplando 18 semanas de aulas e aulas de 90 minutos) consta
+# na primeira linha de cada entrada.
+
+# \newcommand{\nl}{\newline}
+# \newcommand{\cdis}[2]{\parbox[t][1.5cm][t]{3cm}{\footnotesize\raggedright #1\newline #2}}
+
+# \begin{table}
+# \caption{O Curso Superior Politécnico da ESSET. As cargas horárias são
+#   calculadas para  18 semanas de aula e aulas de 90 minutos.}\label{tab:cspoli}
+# \begin{tabu}[t]{|X|X|X|X|}
+# \toprule
+# 1\iro\ sem & 2\iro\ sem & 3\iro\ sem & 4\iro\ sem \\
+# \midrule
+# \cdis{81}{Cálculo I}    & \cdis{81}{Cálculo II} & \cdis{81}{Cálculo III} & \cdis{81}{Cálculo IV} \\
+# \midrule
+# \cdis{81}{Física Geral} & \cdis{81}{Física I}   & \cdis{81}{Física II}   & \cdis{81}{Física III} \\
+# \midrule
+# \cdis{54}{Expressão Gráfica} & \cdis{54}{Leitura e Produção de Textos Acadêmicos} & \cdis{54}{Mecânica dos Sólidos I} & \cdis{54}{Mecânica dos Sólidos II} \\
+# \midrule
+# \cdis{54}{Geometria Analítica} & \cdis{54}{Álgebra Linear} & \cdis{54}{Introdução às Ciências Ambientais} & \cdis{54}{Introdução às Ciências Térmicas e de Fluidos} \\ 
+# \midrule
+# \cdis{54}{Química Geral} & \cdis{54}{Introdução à Ciência de Materiais} & \cdis{54}{Introdução à Economia} & \cdis{54}{Introdução à Eletricidade Aplicada} \\
+# \midrule
+# \cdis{54}{Matemática Geral} & \cdis{54}{Programação} & \cdis{54}{Cálculo Numérico} & \cdis{54}{Probabilidade \& Estatística} \\
+# \midrule
+#                             & \cdis{27}{Física Experimental I} &                   & \cdis{27}{Física Experimental II} \\
+# \bottomrule
+# \end{tabu}
+# \end{table}
+
+# A tabela \ref{tab:cspoli} é relativamente conservadora e procura
+# manter boa compatibilidade com as disciplinas hoje ofertadas aos
+# alunos de Engenharia da UFPR. Entretanto, ela também inova, e muito,
+# nos seguintes aspectos:
+# \begin{itemize}
+# \item A criação das disciplinas ``Química Geral'', ``Física Geral'' e
+#   ``Matemática Geral'' (a cargo do Setor de Ciências Exatas) como disciplinas
+#   niveladoras do conhecimento do Ensino Médio.
+# \item Uma pequena reformulação das Físicas, para encaixar a disciplina de ``Física
+#   Geral'', e para reduzir o impacto do Cálculo nos cursos de Física. Grosso
+#   modo, a nova Física I lida com Mecânica e Termodinâmica; a nova Física II com
+#   Eletromagnetismo; e a nova Física III com Física Moderna. Novamente, a cargo
+#   do Setor de Ciências Exatas.
+# \item A \emph{visão politécnica}: os egressos do Curso Superior
+#   Politécnico devem possuir uma visão ampla de Engenharia; de fato, de certa
+#   forma esse curso de dois anos pode e deve ser visto como um curso de
+#   \emph{Introdução à Engenharia}. 
+# \item Ainda com relação à visão politécnica, a oferta de disciplinas que
+#   efetivamente começam a ensinar nossos alunos o que é, e como fazer,
+#   Engenharia. Essas disciplinas são: Mecânica dos Sólidos I e II, e as seguintes
+#   ``Introduções'': Introdução à Ciência dos Materiais, Introdução às Ciências
+#   Ambientais, Introdução à Economia, Introdução às Ciências Térmicas e de
+#   Fluidos, e Introdução à Eletricidade Aplicada. 
+# \end{itemize}
+
+# Evitaremos estendermo-nos demasiadamente sobre as disciplinas; afinal, este
+# texto não é um projeto pedagógico, mas sim um convite à reflexão e à elaboração
+# de novos projetos pedagógicos. Ressaltamos, entretanto, os seguintes pontos:
+# Mecânica dos Sólidos I e II (a rigor, corpos rígidos) são disciplinas clássicas
+# e devem continuar a ser ensinadas de acordo com a boa tradição. Já as
+# ``Introduções'' são uma relativa novidade, e é importante explicar a motivação
+# que levou à sua proposição. Elas devem formar, já dissemos, um amplo leque de
+# introdução à Engenharia. \emph{No entanto, elas não devem substituir as
+#   disciplinas clássicas, e fundamentais, de cada curso}.  Por exemplo,
+# ``Introdução à Ciência de Materiais'' não deve substituir, ainda que
+# parcialmente, Resistência de Materiais (ou Mecânica de Materiais), nem Materiais
+# de Construção em Engenharia Civil. ``Introdução às Ciências Térmicas e de
+# Fluidos'' não deve substituir Mecânica dos Fluidos, Termodinâmica, Transferência
+# de Calor, etc., em Engenharia Mecânica.
+
+# Elas devem entretanto ser realistas, e envolver muitos cálculos,
+# dimensionamentos, etc. (na medida do possível dada a maturidade dos alunos nesta
+# altura do curso), de tal forma a proporcionar uma visão do que é Engenharia, e a
+# motivar os alunos a aprenderem os fundamentos (Cálculo, Mecânica,
+# Eletromagnetismo, Probabilidade e Estatística, etc.). Mencionamos, finalmente, a
+# absolutamente essencial ``Leitura e Produção de Textos Acadêmicos''. Precisamos
+# ajudar nossos alunos a ler, compreender o que leem, e expressar-se em bom
+# Português. Novamente, não podemos mais contar apenas com o ensino
+# médio. Precisamos ensinar proativamente Expressão Oral e Escrita a nossos
+# alunos.
+
+# Cumpridos os dois primeiros anos do ``Básico'', nossos alunos receberão seus
+# diplomas do Curso Superior Politécnico, e prosseguirão, ou não, para a obtenção
+# do Diploma de Engenheiro. \emph{Para aqueles que desejarem interromper seus
+#   estudos neste ponto, devemos criar mecanismos de reentrada}. É possível também
+# que vários alunos não desejem cumprir esses dois anos longos e relativamente
+# áridos da formação do Engenheiro. Para estes últimos, devemos ofertar também a
+# opção de um Diploma de Tecnólogo. O curso de Tecnólogo pode ser composto por uma
+# parte menos árida e teórica do Curso Superior Politécnico, somada a disciplinas
+# igualmente aplicadas ofertadas no Ciclo Profissional do curso pleno de
+# Engenharia $X$.
+
+# Apenas a título de exemplo, considere um aluno que, tendo entrado para o
+# Programa de Graduação em Engenharia Ambiental, deseje inicialmente um diploma de
+# \emph{Tecnólogo em Meio Ambiente} (um dos cursos constantes do \emph{Catálogo
+#   Nacional de Cursos Superiores de Tecnologia}, apresentado no Anexo
+# \ref{sec:catatec}).
+
+# Esse aluno terá uma grade curricular específica para a formação de
+# Tecnólogos. Tipicamente, essa grade incluirá disciplinas majoritariamente do
+# 1\iro\ ano do Ciclo Básico, e disciplinas mais aplicadas do Curso de Engenharia
+# Ambiental. Por exemplo, ela poderia incluir todas as disciplinas do 1\iro\ ano
+# constantes da tabela \ref{tab:cspoli}, exceto ``Introdução à Ciência dos
+# Materiais''; as disciplinas ``Mecânica dos Sólidos I'', ``Introdução às Ciências
+# Ambientais'', e ``Introdução às Ciências Térmicas e de Fluidos'', além de
+# ``Probabilidade e Estatística''. Do Ciclo Profissional de Engenharia Ambiental
+# (que obviamente não apresentaremos aqui), esse aluno poderia ter que cursar
+# disciplinas tais como ``Hidráulica Ambiental'', ``Ecologia'', ``Química
+# Ambiental'', ``Topografia'', ``Saneamento Básico'', ``Tratamento de Águas e
+# Esgotos'', etc..
+
+# Note que essa abordagem não onera os cursos, nem exige espaço físico adicional
+# ou docentes adicionais. De fato, se tal ocorrer, algo estará profundamente
+# errado com a implementação deste projeto. O que essa abordagem proporciona é uma
+# utilização racional dos nossos recursos físicos e de docentes/disciplinas. Um
+# aluno que opte por se formar como Tecnólogo nesse esquema de coisas poderá
+# concluir o curso em 3--3\nicefrac{1}{2} anos. \emph{Novamente, devemos prever
+#   mecanismos de reentrada para aqueles que, tendo obtido seu diploma de
+#   Tecnólogo, desejem retornar para obter o diploma de Engenheiro}.
+
+
+# \section{O espaço da interdisciplinaridade}\label{sec:inter}
+
+# Uma das belezas da Universidade como instituição é a sua plasticidade. Não
+# faltam, na História das Universidades, exemplos de indivíduos e de ideias
+# criando novos cursos, novos departamentos, e literalmente abrindo amplas
+# avenidas de conhecimento. 
+
+# Não seria justo conceber uma ESSET sem lugar para as ideias, os cursos, e os
+# departamentos do futuro, os quais nem podemos ainda vislumbrar. 
+
+# Mantém-se portanto a possibilidade de existirem programas de graduação e de
+# pós-graduação independentes da estrutura departamental. Esses programas exigirão
+# sempre cuidado para que sejam sustentáveis, oportunos, e não sejam
+# demasiadamente onerosos. Feita essa ressalva, é evidente que não podemos nos
+# opor a tais programas independentes \emph{em princípio}. Quando um desses
+# programas for criado, haverá um lugar natural na estrutura da ESSET para sua
+# representação: no Conselho de Graduação (CGR) ou no Conselho de Extensão,
+# Pesquisa e Pós-Graduação (CEPPG), onde o Coordenador respectivo terá assento. 
+
+# \section{O Departamento de Ciências de Engenharia}\label{sec:dcie}
+
+# O cenário das Engenharias no Brasil é bastante confuso. Uma busca por
+# informações sobre que cursos estão regulamentados não é fácil. Aparentemente,
+# uma proposta de simplificação e redução do número de Engenharias, feita pelo
+# MEC, não se concluiu, mas mesmo assim haveria 22 cursos, que seriam: Agronomia,
+# Arquitetura e Urbanismo, Engenharia Aeronáutica, Engenharia Agrícola, Engenharia
+# Ambiental, Engenharia Civil, Engenharia de Agrimensura, Engenharia de Alimentos,
+# Engenharia de Computação, Engenharia de Controle e Automação, Engenharia de
+# Materiais, Engenharia de Minas, Engenharia de Pesca, Engenharia de Produção,
+# Engenharia de Telecomunicações, Engenharia Elétrica, Engenharia Eletrônica,
+# Engenharia Florestal, Engenharia Mecânica, Engenharia Metalúrgica, Engenharia
+# Naval, e Engenharia Química.
+
+
+# Alguns acontecimentos recentes, como a saída do curso de Arquitetura dos CREAs,
+# complicou ainda mais o cenário. Mas mesmo que só houvesse as 22 acima, nota-se a
+# total ausência de uma ``Engenharia Científica''. Nossa interpretação é que ainda
+# prevalece em nosso país uma visão estreita e profissionalizante: segundo essa
+# visão, o Engenheiro que formamos irá desempenhar um papel único de acordo com um
+# perfil relativamente rígido. Mas as demandas do Mercado de Trabalho são muito
+# mais genéricas, e uma rápida busca sobre o que nossos alunos engenheiros estão
+# fazendo 10, 20 anos depois de formados mostra uma enorme variedade de atuações.
+
+# Cabe portanto formar um Engenheiro de mais amplo espectro, menos formado para
+# exercer esta ou aquela Engenharia e mais formado para pensar criticamente e
+# ajudar a resolver problemas, quaisquer que eles sejam.  Em grande medida, a
+# recriação de um Ciclo Básico com o nome de Curso Superior Politécnico atende a
+# essa concepção.  Por outro lado, infelizmente, formar um Engenheiro que não seja
+# reconhecido pelos órgãos de credenciamento é demasiadamente quixotesco.
+
+# Mesmo assim, consideramos que a existência na ESSET de um Departamento voltado a
+# uma visão mais científica da Engenharia, e preocupado com aspectos
+# físico-matemáticos, seria extremamente benéfica para a formação de alto nível
+# tanto de graduação quanto de pós-graduação de nossos alunos, e proporcionaria um
+# elemento indispensável de apoio às demais Engenharias, sempre que um problema se
+# tornasse diferente demais, ou interdisciplinar demais, para poder ser atacado
+# apenas com as ferramentas padrão de uma delas. 
+
+# Preconizamos portanto um Departamento de Ciências de Engenharia, de um Programa
+# de Graduação em Ciências de Engenharia, e de um Programa de Pós-Graduação em
+# Ciências de Engenharia, com as seguintes funções:
+# \begin{itemize}
+# \item A administração, e a oferta de disciplinas, do Curso Superior Politécnico,
+#   vulgo ``Básico''. 
+# \item A oferta do diploma correspondente.
+# \item A oferta do diploma de Engenheiro Pleno em \emph{algumas} de nossas
+#   Engenharias. Isso seria possível combinando-se um núcleo de disciplinas de
+#   Engenharia de caráter mais teórico (Mecânica dos Materiais, Métodos Numéricos,
+#   Matemática Aplicada, Mecânica dos Fluidos, Termodinâmica, Eletromagnetismo,
+#   etc.) com disciplinas ofertadas pelos demais departamentos. Os alunos do
+#   Programa de Graduação em Ciências de Engenharia deveriam consequentemente
+#   poder se formar \emph{em algumas das Engenharias da ESSET}, por meio de
+#   colaboração com o respectivo departamento.
+# \item Da mesma forma, a oferta de diplomas de Mestre e Doutor em Ciências de
+#   Engenharia pelo Programa de Pós-Graduação em Ciências de Engenharia, com uma
+#   clara chamada no diploma correspondente. Por exemplo: \emph{Mestre em Ciências
+#     de Engenharia --- Engenharia Civil}.
+# \end{itemize}
+# Dessa forma, o DCIE e seus programas de graduação e de pós-graduação se
+# constituiriam não em  meros coadjuvantes na formação básica de nossos
+# Engenheiros, mas em parceiros iguais entre as Engenharias da ESSET.
+
+# \section{Conclusão}
+
+# Este documento é um convite a repensar nossas Engenharias. Ele também é um
+# convite ao mérito e à qualidade, que em nossa visão não precisam ser socialmente
+# excludentes --- muito pelo contrário.  Ele é um convite a olhar para as novas
+# gerações que entram em nossas escolas como portadoras de novas mensagens e
+# comportamentos novos, que nós, os ``velhos professores'', temos a obrigação (por
+# dever de ofício) de tentar entender e acolher.
+
+# Felizmente, continuam a valer as leis naturais, e os teoremas da
+# Matemática. Acolher e entender, portanto, não pode significar abdicar da
+# qualidade e da seriedade na solução dos problemas de Engenharia, que só se
+# tornam mais difíceis e complicados com o passar do tempo. A ESSET seria uma
+# resposta à altura.
+
+# \vspace*{1cm}
+# \noindent \includegraphics{/home/nldias/Dropbox/texnld/latex2e/sig-nldias.jpeg}\\
+# \noindent Nelson Luís Dias,\\[0.5cm]
+
+# \noindent Curitiba,\\
+# \today.
+
+
+# \appendix
+
+# \section{Resolução CNE 003/2007}\label{sec:res003-2007}
+
+# %\includepdf[pages=-,
+# %scale=0.8]{/home/nldias/Dropbox/engamb/graduacao/reforma-2020/rces003_07.pdf}
+# \begin{center}
+# \includegraphics[width=\textwidth]{/home/nldias/Dropbox/engamb/graduacao/reforma-2020/rces003_07.pdf}
+# \end{center}
+
+# \section{Parecer CES 968/98}\label{sec:curseq}
+
+# \includepdf[pages=-,scale=0.8]{/home/nldias/Dropbox/engamb/graduacao/reforma-2020/parecer-ces968_98-cursos-sequenciais.pdf}
+
+
+# %\needspace{3cm}
+
+# \section{Catálogo Nacional de Cursos Superiores de Tecnologia}\label{sec:catatec}
+
+# \includepdf[pages=-,scale=0.8]{/home/nldias/Dropbox/engamb/graduacao/reforma-2020/catalogo_nacional_cursos_superiores_tecnologia_2010.pdf}
+
+# \end{document}
