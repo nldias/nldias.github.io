@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Ensino (Teaching)</title>
-<!-- 2018-05-11 Sex 10:26 -->
+<!-- 2018-06-08 Sex 17:24 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -370,11 +370,11 @@ contorno.
 <h3 id="sec-1-6"><span class="section-number-3">1.6</span> Notas</h3>
 <div class="outline-text-3" id="text-1-6">
 <p>
-Veja as <a href="./pdf/notpre2018-1.pdf">notas</a> até a P2.
+Veja as <a href="./pdf/notpre2018-1.pdf">notas</a> até a P3.
 </p>
 
 <p>
-2017-03-28: Estão abertas as revisões da P1.
+2018-06-08: Estão encerradas as revisões da P2. Estão abertas as revisões da P3.
 </p>
 </div>
 </div>
@@ -452,6 +452,10 @@ Faça o download do gabarito da P1: <a href="./pdf/2018-1-p01-sol.pdf">2018-1-p0
 
 <p>
 Faça o download do gabarito da P2: <a href="./pdf/2018-1-p02-sol.pdf">2018-1-p02-sol.pdf</a>
+</p>
+
+<p>
+Faça o download do gabarito da P3: <a href="./pdf/2018-1-p03-sol.pdf">2018-1-p03-sol.pdf</a>
 </p>
 </div>
 </div>
@@ -544,6 +548,14 @@ Introdução à turbulência. Camada Limite.
 <div class="outline-text-3" id="text-2-5">
 <p>
 Faça o download do gabarito da P1: <a href="./pdf/eamb7021-2018-1-p01-sol.pdf">eamb7021-2018-1-p01-sol.pdf</a>
+</p>
+
+<p>
+Faça o download do gabarito da P2: <a href="./pdf/eamb7021-2018-1-p02-sol.pdf">eamb7021-2018-1-p02-sol.pdf</a>
+</p>
+
+<p>
+&#x2013;
 </p>
 </div>
 </div>
@@ -930,14 +942,44 @@ Richardson e comprimento de estabilidade de Obukhov.
 <h3 id="sec-6-5"><span class="section-number-3">6.5</span> Notas de aula:  <a href="./pdf/mecturbi.pdf">mecturbi.pdf</a> (atualizadas em 2017-06-29T15:42:04)</h3>
 </div>
 
+
 <div id="outline-container-sec-6-6" class="outline-3">
 <h3 id="sec-6-6"><span class="section-number-3">6.6</span> Provas</h3>
+<div class="outline-text-3" id="text-6-6">
+<p>
+Os seguintes temas de trabalhos estão disponíveis em 2018:
+</p>
+
+<ul class="org-ul">
+<li>A Teoria de Similaridade de Monin-Obukhov à luz dos experimentos de
+Kansas. Discussão dos artigos de J. C. Wyngaard e colaboradores.
+</li>
+
+<li>Turbulência bidimensional em escoamentos de larga escala na atmosfera.
+</li>
+
+<li>Turbulência em lagos naturais ou artificiais com estratificação térmica.
+</li>
+
+<li>Taylor, Richardson e Kolmogorov: microescalas, cascata de energia,
+isotropia. Conte uma história coerente.
+</li>
+
+<li>Turbulência na camada-limite convectiva (atmosfera): fluxos superficiais e de
+entranhamento, perfis.
+</li>
+
+<li>Retorno à isotropia: modelos de fechamento: Rotta, Uberoi, MIlls, Lumley e
+todos os outros.
+</li>
+</ul>
+</div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2018-05-11 Sex 10:26</p>
+<p class="date">Created: 2018-06-08 Sex 17:24</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
