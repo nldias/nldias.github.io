@@ -3,8 +3,8 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<title>Extensão (Extension)</title>
-<!-- 2018-09-19 qua 13:46 -->
+<title>betteru</title>
+<!-- 2018-06-15 Sex 15:48 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -88,79 +88,6 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   /*]]>*/-->
 </style>
-<link rel="stylesheet" type="text/css" href="readtheorg.css" />
-
-<script type="text/javascript" src="org-info.js">
-/**
- *
- * @source: org-info.js
- *
- * @licstart  The following is the entire license notice for the
- *  JavaScript code in org-info.js.
- *
- * Copyright (C) 2012-2013 Free Software Foundation, Inc.
- *
- *
- * The JavaScript code in this tag is free software: you can
- * redistribute it and/or modify it under the terms of the GNU
- * General Public License (GNU GPL) as published by the Free Software
- * Foundation, either version 3 of the License, or (at your option)
- * any later version.  The code is distributed WITHOUT ANY WARRANTY;
- * without even the implied warranty of MERCHANTABILITY or FITNESS
- * FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
- *
- * As additional permission under GNU GPL version 3 section 7, you
- * may distribute non-source (e.g., minimized or compacted) forms of
- * that code without the copy of the GNU GPL normally required by
- * section 4, provided you include this license notice and a URL
- * through which recipients can access the Corresponding Source.
- *
- * @licend  The above is the entire license notice
- * for the JavaScript code in org-info.js.
- *
- */
-</script>
-
-<script type="text/javascript">
-
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2013 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-
-<!--/*--><![CDATA[/*><!--*/
-org_html_manager.set("TOC_DEPTH", "4");
-org_html_manager.set("LINK_HOME", "");
-org_html_manager.set("LINK_UP", "");
-org_html_manager.set("LOCAL_TOC", "1");
-org_html_manager.set("VIEW_BUTTONS", "1");
-org_html_manager.set("MOUSE_HINT", "underline");
-org_html_manager.set("FIXED_TOC", "0");
-org_html_manager.set("TOC", "1");
-org_html_manager.set("VIEW", "1");
-org_html_manager.setup();  // activate after the parameters are set
-/*]]>*///-->
-</script>
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -207,46 +134,67 @@ for the JavaScript code in this tag.
  }
 /*]]>*///-->
 </script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 <body>
 <div id="content">
-<h1 class="title">Extensão (Extension)</h1>
-<div id="table-of-contents">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents">
-<ul>
-<li><a href="#sec-1">1. Uma escola de engenharia utópica ESSET</a></li>
-</ul>
-</div>
-</div>
+<h1 class="title">betteru</h1>
 <p>
-This site is searchable. See HELP on the right (you may need to click around a
-few times until HELP shows up).
-. 
+TÍTULOS GERAIS E ABRANGENTES
+<code>==========================</code>
 </p>
 
 <p>
-<a href="index.html">Home</a>
+As universidades federais não vão muito bem. As formas de gestão não
+mudam há décadas; a organização é confusa; a burocracia, intensa. É
+possível mudar e melhorar. Eis aqui algumas sugestões.
 </p>
 
-
+<ol class="org-ol">
+<li>Horários:: As aulas poderiam ser um pouco mais curtas. Aulas de 1
+hora são raras nas universidades, sendo mais comuns aulas de 2
+horas seguidas, aí incluídos intervalos, mais isso é penoso para o
+intervalo de atenção dos alunos. Poderíamos mudar para aulas de 90
+minutos:
+<hr  />
 <p>
-Esta é uma página de popularização de C&amp;T voltada principalmente para Engenharia
-Ambiental.  Ela contém apresentações de palestras, e textos curtos voltados para
-familiarizar o público em geral, e nossos próprios alunos, com diversos temas de
-Engenharia Ambiental.
+07:30&#x2013;09:00
+09:15&#x2013;10:45
+11:00&#x2013;12:30
 </p>
+<hr  />
+</li>
 
+<li>Curso de especialização em direito ambiental. É muito importante
+ter direito ambiental. Se não tiver direito, não é ambiental. Como
+é possível fazer alguma coisa, se é sempre impossível fazer quase
+tudo?
+</li>
 
+<li>Modelo matemático para uso de resíduos blá blá blá. É muito blá blá
+blá. Há muitas falhas técnicas, mas a questão é a seguinte: o que é
+possível fazer, <b>e o que não é</b>, quando se tem um computador em
+mãos???
+</li>
 
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> Uma escola de engenharia utópica <a href="esset.html">ESSET</a></h2>
-</div>
+<li>É possível mudar drasticamente de área. Será possível mesmo?  Que
+loucura. Lá vamos nós discutir sobre o nada absoluto. Não há nada a
+dizer. Irreversível só mesmo a morte.  A questão é se vai ser útil
+mesmo. 
+</li>
+
+<li>Agora é a hora de discutir sobre o nada :-) Tudo o que é possível
+fazer é não fazer nada. Ah sim: a depressão é a causa de tudo&#x2026;.
+\(Q = m c_p \Delta T\).
+</li>
+
+<li></li>
+</ol>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2018-09-19 qua 13:46</p>
-<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.2 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="date">Created: 2018-06-15 Sex 15:48</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Pesquisa (Research)</title>
-<!-- 2017-10-12 Qui 14:26 -->
+<!-- 2018-06-15 Sex 15:48 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -55,6 +55,8 @@
   pre.src-sql:before   { content: 'SQL'; }
 
   table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
   td, th { vertical-align:top;  }
   th.right  { text-align: center;  }
   th.left   { text-align: center;   }
@@ -256,6 +258,7 @@ Evaporation, Rainfall-Runoof Models, Air Quality Models, etc..
 </div>
 </div>
 
+
 <div id="outline-container-sec-2" class="outline-2">
 <h2 id="sec-2"><span class="section-number-2">2</span> Talks</h2>
 <div class="outline-text-2" id="text-2">
@@ -283,6 +286,7 @@ See <a href="https://www.dropbox.com/s/oohm0lv1dydnd0x/nldias-bpwide2.pdf?dl=0">
 </p>
 </div>
 </div>
+
 
 
 
@@ -330,6 +334,7 @@ the search for new analytical solutions.
 </div>
 </div>
 
+
 <div id="outline-container-sec-4" class="outline-2">
 <h2 id="sec-4"><span class="section-number-2">4</span> Novos temas/New themes</h2>
 <div class="outline-text-2" id="text-4">
@@ -361,6 +366,7 @@ subterrâneas.
 </div>
 
 
+
 <div id="outline-container-sec-5" class="outline-2">
 <h2 id="sec-5"><span class="section-number-2">5</span> Projects</h2>
 <div class="outline-text-2" id="text-5">
@@ -381,6 +387,7 @@ large ones are better than the small ones. They are just bigger.
 </ul>
 </div>
 </div>
+
 
 <div id="outline-container-sec-5-2" class="outline-3">
 <h3 id="sec-5-2"><span class="section-number-3">5.2</span> Small (few people, few institutions) projects</h3>
@@ -403,6 +410,7 @@ e longo prazos.
 </div>
 </div>
 </div>
+
 
 <div id="outline-container-sec-6" class="outline-2">
 <h2 id="sec-6"><span class="section-number-2">6</span> Publications</h2>
@@ -428,10 +436,15 @@ Geophysical Research: Atmospheres, 2017, 2016JD026009.
 </li>
 
 <li>Dias-Junior, C. Q.; Dias, N. L.; Fuentes, J. D. &amp; Chamecki,
-M. Convective storms and non-classical low-level jets during high
+<ol class="org-ol">
+<li>Convective storms and non-classical low-level jets during high
+</li>
+</ol>
+<p>
 ozone level episodes in the Amazon region: An ARM/GOAMAZON case
 study. Atmospheric Environment, 155, 199&#x2013;209, 2017.
 <a href="http://dx.doi.org/10.1016/j.atmosenv.2017.02.006">http://dx.doi.org/10.1016/j.atmosenv.2017.02.006</a>
+</p>
 </li>
 
 <li>Chamecki, M.; Dias, N. L.; Salesky, S. T. &amp; Pan, Y. Scaling laws for the
@@ -446,11 +459,16 @@ Processes, 2017, 31, 256-269. <a href="http://dx.doi.org/10.1002/hyp.10925">http
 </li>
 
 <li>Fuentes, J. D.; Chamecki, M.; dos Santos, R. M. N.; von Randow, C.; Stoy,
-P. C.; Katul, G.; Fitzjarrald, D.; Manzi, A.; Gerken, T.; Trowbridge, A.;
+<ol class="org-ol">
+<li>C.; Katul, G.; Fitzjarrald, D.; Manzi, A.; Gerken, T.; Trowbridge, A.;
+</li>
+</ol>
+<p>
 Freire, L. S.; Ruiz-Plancarte, J.; Maia, J. M. F.; Tóta, J.; Dias, N. L.;
 Fisch, G.; Schumacher, C.; Acevedo, O. &amp; Mercer, J. R. Linking meteorology,
 turbulence, and air chemistry in the Amazon rainforest. Bulletin of the
 American Meteorological Society, 2016, 97, 2329-2342.
+</p>
 </li>
 <li>Zahn, E.; Dias, N. L.; Araújo, A.; Sá, L. D. A.; Sörgel, M.; Trebs, I.;
 Wolff, S. &amp; Manzi, A. Scalar turbulent behavior in the roughness sublayer of
@@ -477,18 +495,28 @@ Hydrol. Earth Syst. Sci., Copernicus GmbH, 2015, 19, 2755-2761.
 <li>Andreae, M. O.; Acevedo, O. C.; Araùjo, A.; Artaxo, P.; Barbosa, C. G. G.;
 Barbosa, H. M. J.; Brito, J.; Carbone, S.; Chi, X.; Cintra, B. B. L.; da
 Silva, N. F.; Dias, N. L.; Dias-Júnior, C. Q.; Ditas, F.; Ditz, R.; Godoi,
-A. F. L.; Godoi, R. H. M.; Heimann, M.; Hoffmann, T.; Kesselmeier, J.;
+<ol class="org-ol">
+<li>F. L.; Godoi, R. H. M.; Heimann, M.; Hoffmann, T.; Kesselmeier, J.;
+</li>
+</ol>
+<p>
 Könemann, T.; Krüger, M. L.; Lavric, J. V.; Manzi, A. O.; Lopes, A. P.;
 Martins, D. L.; Mikhailov, E. F.; Moran-Zuloaga, D.; Nelson, B. W.;
 Nölscher, A. C.; Santos Nogueira, D.; Piedade, M. T. F.; Pöhlker, C.;
 Pöschl, U.; Quesada, C. A.; Rizzo, L. V.; Ro, C.-U.; Ruckteschler, N.; Sá,
-L. D. A.; de Oliveira Sá, M.; Sales, C. B.; dos Santos, R. M. N.; Saturno,
+</p>
+<ol class="org-ol">
+<li>D. A.; de Oliveira Sá, M.; Sales, C. B.; dos Santos, R. M. N.; Saturno,
+</li>
+</ol>
+<p>
 J.; Schöngart, J.; Sörgel, M.; de Souza, C. M.; de Souza, R. A. F.; Su, H.;
 Targhetta, N.; Tóta, J.; Trebs, I.; Trumbore, S.; van Eijck, A.; Walter, D.;
 Wang, Z.; Weber, B.; Williams, J.; Winderlich, J.; Wittmann, F.; Wolff, S. &amp;
 Yañez-Serrano, A. M.. The Amazon Tall Tower Observatory (ATTO): overview of
 pilot measurements on ecosystem ecology, meteorology, trace gases, and
 aerosols. Atmospheric Chemistry and Physics, 2015, 15, 10723-10776.
+</p>
 </li>
 <li>Cancelli, D. M. &amp; Dias, N. L.. BRevê: uma metodologia objetiva de cálculo de
 emissões para a frota de veículos brasileira. Revista de Engenharia
@@ -500,7 +528,10 @@ of the Air &amp; Waste Management Association, 2014, 64, 219-226.
 </li>
 <li>Cancelli, D. M.; Chamecki, M. &amp; Dias, N. L.. A large-eddy simulation study
 of scalar dissimilarity in the convective atmospheric boundary layer.
-J. Atmos. Sci., 2014, 71, 3-15.
+<ol class="org-ol">
+<li>Atmos. Sci., 2014, 71, 3-15.
+</li>
+</ol>
 </li>
 <li>Dias, N. L.; Chor, T. L. &amp; de Zárate, A. R.. A semianalytical solution for
 the Boussinesq equation with nonhomogeneous constant boundary conditions.
@@ -547,9 +578,14 @@ production-dissipation equilibrium of scalar fluctuations and their
 implications for scalar similarity. Water Resour. Res., 2012, 48, W10522.
 </li>
 <li>Dias, N. L.; Gonçalves, J. E.; Freire, L. S.; Hasegawa, T. &amp; Malheiros,
-A. L.. Obtaining Potential Virtual Temperature Profiles, Entrainment Fluxes,
+<ol class="org-ol">
+<li>L.. Obtaining Potential Virtual Temperature Profiles, Entrainment Fluxes,
+</li>
+</ol>
+<p>
 and Spectra from Mini Unmanned Aerial Vehicle Data. Boundary-Layer
 Meteorol., 2012, 145, 93-111.
+</p>
 </li>
 <li>Salesky, S. T.; Chamecki, M. &amp; Dias, N. L.. Estimating the random error in
 eddy-covariance fluxes and other turbulence statistics: the filtering method.
@@ -597,9 +633,14 @@ telemétricas de superfície. Revista Brasileira de Recursos hídricos, 2007,
 12, 225-240.
 </li>
 <li>Prevedello, C. L.; Maggiotto, S. R.; Loyola, J. M. T.; Dias, N. L. &amp; Neto,
-G. B.. Balanço de água por aquisição automática de dados em cultura de trigo
+<ol class="org-ol">
+<li>B.. Balanço de água por aquisição automática de dados em cultura de trigo
+</li>
+</ol>
+<p>
 (Triticum aestivum L.).  Revista Brasileira de Ciência do Solo, 2007, 31,
 1-8.
+</p>
 </li>
 <li>Dias, N. L.; Duarte, H. F.; Maggiotto, S. R. &amp; Grodzki, L.. An attenuated
 eddy covariance method for latent heat flux measurements. Water Resour. Res.,
@@ -610,9 +651,14 @@ for minimizing aliasing effects in the atmospheric turbulent surface layer
 spectra. Water Resour. Res., 2006, 42, W03405.
 </li>
 <li>Chamecki, M. &amp; Dias, N. L.. Reply to a comment by R. J Smalley and
-R. A. Antonia on `The local isotropy hypothesis and the turbulent kinetic
+<ol class="org-ol">
+<li>A. Antonia on `The local isotropy hypothesis and the turbulent kinetic
+</li>
+</ol>
+<p>
 energy dissipation rate in the atmospheric surface layer' (October B, 2004,
 130:2733&#x2013;2752). Q J Roy Meteorol Soc, 2006, 132, 685-686.
+</p>
 </li>
 <li>Dias, N. L.. Book review: M. Bonell, L.A. Bruijnzeel (Eds.), Forests, Water
 and People in the Humid Tropics, Cambridge University Press, 2005. Agric For
@@ -710,8 +756,8 @@ Brasileira de Engenharia, Caderno de Recursos Hídricos, 1988, 6, 65-91.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2017-10-12 Qui 14:26</p>
-<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.4)</p>
+<p class="date">Created: 2018-06-15 Sex 15:48</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

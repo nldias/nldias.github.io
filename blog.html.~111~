@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Thoughts on computing, teaching, and most anything else &#x2026;</title>
-<!-- 2018-03-11 Dom 03:52 -->
+<!-- 2018-06-15 Sex 15:48 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -275,18 +275,19 @@ kind of attack, in no sense whatsoever.
 <div class="outline-text-2" id="text-1">
 <p>
 Eu sei, foi tempo demais. Começo lentamente, dolorosamente, a colaborar em um
-"plano científico" de um grande projeto. Uma honra!  A ferramenta
-computacional escolhida foi um documento colaborativo usando <i>google
-docs</i>. Que é fantástico. Muito bom. Até o momento em que eu preciso inserir
-uma referência bibliográfica. Consegui, muito rápido (pesquise <i>google docs
-bibliography</i> no Google), mas não há (na versão gratuita do <i>add-on</i> que
-baixei) como incluir referências cruzadas. 
+plano científico de um grande projeto &#x2014; um documento que explica para que
+serve o projeto, e que tipo de questões ele prentende responder. Uma honra!  A
+ferramenta computacional escolhida foi um documento colaborativo usando
+<i>google docs</i>. Que é fantástico. Muito bom. Até o momento em que eu preciso
+inserir uma referência bibliográfica. Consegui, muito rápido (pesquise <i>google
+docs bibliography</i> no Google), mas não há (na versão gratuita do <i>add-on</i> que
+baixei) como incluir referências cruzadas.
 </p>
 
 <p>
 Compare isso com LaTeX, que já no final dos anos 1980 possuía uma ferramenta
 muito completa, BibTeX, para incluir referências bibliográficas. Ou com Jabref 
-(<i>www.jabref.org</i>), um gerenciador de bibliografias que utiliza o formato .bib
+([[<a href="http://www.jabref.org">http://www.jabref.org</a>]]), um gerenciador de bibliografias que utiliza o formato .bib
 de BibTeX, e você verá que 30 anos depois não foi possível produzir nada nem
 sequer parecido para uso generalizado.
 </p>
@@ -715,7 +716,7 @@ I change my Python shebang to
 
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #b22222;">#</span><span style="color: #b22222;">!/home/nldias/miniconda3/bin/python</span>
+<pre class="src src-python">#!/home/nldias/miniconda3/bin/python
 </pre>
 </div>
 
@@ -1571,7 +1572,7 @@ coniventes: eles estão destruindo o futuro.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2018-03-11 Dom 03:52</p>
+<p class="date">Created: 2018-06-15 Sex 15:48</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
