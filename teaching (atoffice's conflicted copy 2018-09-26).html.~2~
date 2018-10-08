@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Ensino (Teaching)</title>
-<!-- 2018-10-08 Mon 13:38 -->
+<!-- 2018-09-27 qui 11:15 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -257,17 +257,11 @@ for the JavaScript code in this tag.
 <li><a href="#sec-4-1">4.1. Ementa</a></li>
 <li><a href="#sec-4-2">4.2. Horário</a></li>
 <li><a href="#sec-4-3">4.3. Avaliação da disciplina pelos alunos</a></li>
-<li><a href="#sec-4-4">4.4. Programa: tea013-prog-2018-2.pdf</a></li>
-<li><a href="#sec-4-5">4.5. Livro-texto: matappa-2ed.pdf</a></li>
-<li><a href="#sec-4-6">4.6. Notas</a></li>
-<li><a href="#sec-4-7">4.7. Provas e Trabalhos</a>
-<ul>
-<li><a href="#sec-4-7-1">4.7.1. TC1</a></li>
-<li><a href="#sec-4-7-2">4.7.2. TC2</a></li>
-<li><a href="#sec-4-7-3">4.7.3. TC3</a></li>
-</ul>
-</li>
-<li><a href="#sec-4-8">4.8. Gabaritos</a></li>
+<li><a href="#sec-4-4">4.4. Programa: tea013-prog-2017-2.pdf</a></li>
+<li><a href="#sec-4-5">4.5. Programa-como-realizado: tea013-prog-2017-2-check.pdf</a></li>
+<li><a href="#sec-4-6">4.6. Livro-texto: matappa-1ed.pdf</a></li>
+<li><a href="#sec-4-7">4.7. Notas</a></li>
+<li><a href="#sec-4-8">4.8. Provas</a></li>
 <li><a href="#sec-4-9">4.9. Arquivos com as soluções de provas passadas</a></li>
 </ul>
 </li>
@@ -709,7 +703,6 @@ Solução por separação de variáveis, transformadas integrais e transformada 
 </div>
 </div>
 
-
 <div id="outline-container-sec-4-2" class="outline-3">
 <h3 id="sec-4-2"><span class="section-number-3">4.2</span> Horário</h3>
 <div class="outline-text-3" id="text-4-2">
@@ -729,81 +722,78 @@ Solução por separação de variáveis, transformadas integrais e transformada 
 <ul class="org-ul">
 <li><a href="./pdf/Avaliacao-2016-2.pdf">2016</a>
 </li>
-<li><a href="./pdf/Avaliacao-2017-2.pdf">2017</a>
-</li>
 </ul>
 </div>
 </div>
 
 
 <div id="outline-container-sec-4-4" class="outline-3">
-<h3 id="sec-4-4"><span class="section-number-3">4.4</span> Programa: <a href="./pdf/tea013-prog-2018-2.pdf">tea013-prog-2018-2.pdf</a></h3>
+<h3 id="sec-4-4"><span class="section-number-3">4.4</span> Programa: <a href="./pdf/tea013-prog-2017-2.pdf">tea013-prog-2017-2.pdf</a></h3>
 </div>
 
 
 <div id="outline-container-sec-4-5" class="outline-3">
-<h3 id="sec-4-5"><span class="section-number-3">4.5</span> Livro-texto: <a href="./pdf/matappa-2ed.pdf">matappa-2ed.pdf</a></h3>
+<h3 id="sec-4-5"><span class="section-number-3">4.5</span> Programa-como-realizado: <a href="./pdf/tea013-prog-2017-2-check.pdf">tea013-prog-2017-2-check.pdf</a></h3>
 </div>
 
 
 <div id="outline-container-sec-4-6" class="outline-3">
-<h3 id="sec-4-6"><span class="section-number-3">4.6</span> Notas</h3>
-<div class="outline-text-3" id="text-4-6">
-<p>
-Veja as <a href="./pdf/notpre2018-2.pdf">notas</a> até a P2
-</p>
-
-<p>
-2018-10-05T10:41:19 Estão encerradas as revisões da P1. Estão abertas as revisões da P2.
-</p>
-</div>
+<h3 id="sec-4-6"><span class="section-number-3">4.6</span> Livro-texto: <a href="./pdf/matappa-1ed.pdf">matappa-1ed.pdf</a></h3>
 </div>
 
 
 <div id="outline-container-sec-4-7" class="outline-3">
-<h3 id="sec-4-7"><span class="section-number-3">4.7</span> Provas e Trabalhos</h3>
+<h3 id="sec-4-7"><span class="section-number-3">4.7</span> Notas</h3>
 <div class="outline-text-3" id="text-4-7">
-</div><div id="outline-container-sec-4-7-1" class="outline-4">
-<h4 id="sec-4-7-1"><span class="section-number-4">4.7.1</span> TC1</h4>
-<div class="outline-text-4" id="text-4-7-1">
 <p>
-<a href="./pdf/tc1-2018-2.pdf">Enunciado do trabalho</a>
+Veja as <a href="./pdf/notpre2017-2.pdf">notas</a> até a F (Incluindo o Trabalho Computacional).
+</p>
+
+<p>
+2017-09-02: Estão abertas as revisões da P1.
+</p>
+
+<p>
+2017-10-09: Estão encerradas as revisões da P1. Estão abertas as revisões da P2.
+</p>
+
+<p>
+2017-11-27: Estão encerradas as revisões da P2. Estão abertas as revisões da P3.
+</p>
+
+<p>
+2017-12-02: Estão encerradas as revisões da P3. Estão abertas as revisões da P4.
+</p>
+
+<p>
+2017-12-13: Estão encerradas as revisões da P4. Estão abertas as revisões da F.
 </p>
 </div>
 </div>
-
-
-<div id="outline-container-sec-4-7-2" class="outline-4">
-<h4 id="sec-4-7-2"><span class="section-number-4">4.7.2</span> TC2</h4>
-<div class="outline-text-4" id="text-4-7-2">
-<p>
-<a href="./pdf/tc2-2018-2.pdf">Enunciado do trabalho</a>
-</p>
-</div>
-</div>
-
-<div id="outline-container-sec-4-7-3" class="outline-4">
-<h4 id="sec-4-7-3"><span class="section-number-4">4.7.3</span> TC3</h4>
-<div class="outline-text-4" id="text-4-7-3">
-<p>
-<a href="./pdf/tc3-2018-2.pdf">Enunciado do trabalho</a>
-</p>
-</div>
-</div>
-</div>
-
 
 
 
 <div id="outline-container-sec-4-8" class="outline-3">
-<h3 id="sec-4-8"><span class="section-number-3">4.8</span> Gabaritos</h3>
+<h3 id="sec-4-8"><span class="section-number-3">4.8</span> Provas</h3>
 <div class="outline-text-3" id="text-4-8">
 <p>
-Faça o download do gabarito da P1: <a href="./pdf/2018-2-p01-sol.pdf">2018-2-p01-sol.pdf</a>
+Faça o download do gabarito da P1: <a href="./pdf/2017-2-p01-sol.pdf">2017-2-p01-sol.pdf</a>
 </p>
 
 <p>
-Faça o download do gabarito da P2: <a href="./pdf/2018-2-p02-sol.pdf">2018-2-p02-sol.pdf</a>
+Faça o download do gabarito da P2: <a href="./pdf/2017-2-p02-sol.pdf">2017-2-p02-sol.pdf</a>
+</p>
+
+<p>
+Faça o download do gabarito da P3: <a href="./pdf/2017-2-p03-sol.pdf">2017-2-p03-sol.pdf</a>
+</p>
+
+<p>
+Faça o download do gabarito da P4: <a href="./pdf/2017-2-p04-sol.pdf">2017-2-p04-sol.pdf</a>
+</p>
+
+<p>
+Faça o download do gabarito da F: <a href="./pdf/2017-2-f-sol.pdf">2017-2-f-sol.pdf</a>
 </p>
 </div>
 </div>
@@ -840,8 +830,6 @@ Faça o download do gabarito da P2: <a href="./pdf/2018-2-p02-sol.pdf">2018-2-p0
 <li><a href="./pdf/2015-2-sol.pdf">2015-2-sol.pdf</a>
 </li>
 <li><a href="./pdf/2016-2-sol.pdf">2016-2-sol.pdf</a>
-</li>
-<li><a href="./pdf/2017-2-sol.pdf">2017-2-sol.pdf</a>
 </li>
 </ul>
 </div>
@@ -999,7 +987,7 @@ todos os outros.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2018-10-08 Mon 13:38</p>
+<p class="date">Created: 2018-09-27 qui 11:15</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.2 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>

@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Thoughts on computing, teaching, and most anything else &#x2026;</title>
-<!-- 2018-03-28 Qua 20:22 -->
+<!-- 2018-10-07 Sun 12:26 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -216,24 +216,25 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#sec-1">1. 2018-03-11T03:44:08 &#x2013; Long time, no see</a></li>
-<li><a href="#sec-2">2. 2017-06-23T14:46:52 &#x2013; Fim de semestre</a></li>
-<li><a href="#sec-3">3. 2017-03-18T12:12:57 &#x2013; LaTeX on the go in an Android Tablet (and much more)</a></li>
-<li><a href="#sec-4">4. 2017-03-16T19:28:07 &#x2013; O tempo do fim das ilusões</a></li>
-<li><a href="#sec-5">5. 2017-03-01T12:09:55 &#x2013; Prá tudo se acabar na 4<sup>a</sup> feira</a></li>
-<li><a href="#sec-6">6. 2017-01-28T10:45:21 &#x2013; Installing miniconda in Linux and Windows</a></li>
-<li><a href="#sec-7">7. 2016-11-19T17:36:35 &#x2013; Opinião</a></li>
-<li><a href="#sec-8">8. 2016-11-09T12:46:14 &#x2013; Serious work with Linux and Cinnamon</a></li>
-<li><a href="#sec-9">9. 2016-11-05T19:45:22 &#x2013; Setting up a Homepage</a></li>
-<li><a href="#sec-10">10. 2009-06-23T00:00:00 &#x2013; Professores podem errar (mas quanto?)</a></li>
-<li><a href="#sec-11">11. 2009-03-20T00:00:00 &#x2013; O esforço de pensar</a></li>
-<li><a href="#sec-12">12. 2009-03-12T00:00:00 &#x2013; O distante passado recente dos computadores</a></li>
-<li><a href="#sec-13">13. 2008-08-06T00:00:00 &#x2013; Jovens e Velhos</a></li>
-<li><a href="#sec-14">14. 2008-06-10T00:00:00 &#x2013; O olhar hipnótico da serpente</a></li>
-<li><a href="#sec-15">15. 2008-06-01T00:00:00 &#x2013; Faça da Internet uma amiga</a></li>
-<li><a href="#sec-16">16. 2008-05-17T00:00:00 &#x2013; Ensino e Aprendizado são Diversão</a></li>
-<li><a href="#sec-17">17. 2008-04-08T00:00:00 Recuperando o Saber</a></li>
-<li><a href="#sec-18">18. 2008-03-25: Disciplina</a></li>
+<li><a href="#sec-1">1. 2018-10-07T12:10:15 &#x2013; something in the way she moves</a></li>
+<li><a href="#sec-2">2. 2018-03-11T03:44:08 &#x2013; Long time, no see</a></li>
+<li><a href="#sec-3">3. 2017-06-23T14:46:52 &#x2013; Fim de semestre</a></li>
+<li><a href="#sec-4">4. 2017-03-18T12:12:57 &#x2013; LaTeX on the go in an Android Tablet (and much more)</a></li>
+<li><a href="#sec-5">5. 2017-03-16T19:28:07 &#x2013; O tempo do fim das ilusões</a></li>
+<li><a href="#sec-6">6. 2017-03-01T12:09:55 &#x2013; Prá tudo se acabar na 4<sup>a</sup> feira</a></li>
+<li><a href="#sec-7">7. 2017-01-28T10:45:21 &#x2013; Installing miniconda in Linux and Windows</a></li>
+<li><a href="#sec-8">8. 2016-11-19T17:36:35 &#x2013; Opinião</a></li>
+<li><a href="#sec-9">9. 2016-11-09T12:46:14 &#x2013; Serious work with Linux and Cinnamon</a></li>
+<li><a href="#sec-10">10. 2016-11-05T19:45:22 &#x2013; Setting up a Homepage</a></li>
+<li><a href="#sec-11">11. 2009-06-23T00:00:00 &#x2013; Professores podem errar (mas quanto?)</a></li>
+<li><a href="#sec-12">12. 2009-03-20T00:00:00 &#x2013; O esforço de pensar</a></li>
+<li><a href="#sec-13">13. 2009-03-12T00:00:00 &#x2013; O distante passado recente dos computadores</a></li>
+<li><a href="#sec-14">14. 2008-08-06T00:00:00 &#x2013; Jovens e Velhos</a></li>
+<li><a href="#sec-15">15. 2008-06-10T00:00:00 &#x2013; O olhar hipnótico da serpente</a></li>
+<li><a href="#sec-16">16. 2008-06-01T00:00:00 &#x2013; Faça da Internet uma amiga</a></li>
+<li><a href="#sec-17">17. 2008-05-17T00:00:00 &#x2013; Ensino e Aprendizado são Diversão</a></li>
+<li><a href="#sec-18">18. 2008-04-08T00:00:00 Recuperando o Saber</a></li>
+<li><a href="#sec-19">19. 2008-03-25: Disciplina</a></li>
 </ul>
 </div>
 </div>
@@ -271,8 +272,18 @@ kind of attack, in no sense whatsoever.
 </ul>
 
 <div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> 2018-03-11T03:44:08 &#x2013; Long time, no see</h2>
+<h2 id="sec-1"><span class="section-number-2">1</span> 2018-10-07T12:10:15 &#x2013; something in the way she moves</h2>
 <div class="outline-text-2" id="text-1">
+<p>
+attracts me like no other lover has ever before
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> 2018-03-11T03:44:08 &#x2013; Long time, no see</h2>
+<div class="outline-text-2" id="text-2">
 <p>
 Eu sei, foi tempo demais. Começo lentamente, dolorosamente, a colaborar em um
 plano científico de um grande projeto &#x2014; um documento que explica para que
@@ -301,9 +312,9 @@ que não têm, tristes deles, nenhuma opção&#x2026;
 </div>
 
 
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> 2017-06-23T14:46:52 &#x2013; Fim de semestre</h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> 2017-06-23T14:46:52 &#x2013; Fim de semestre</h2>
+<div class="outline-text-2" id="text-3">
 <p>
 Em sala, última prova do ano antes da final . Dos 22 alunos que começaram o
 semestre, há 16 fazendo a prova . Quase 1/3 dos alunos já desistiram.
@@ -354,9 +365,9 @@ me dirão se para eles valeu a pena ou não eu ter querido lhes ensinar algo.
 
 
 
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> 2017-03-18T12:12:57 &#x2013; LaTeX on the go in an Android Tablet (and much more)</h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> 2017-03-18T12:12:57 &#x2013; LaTeX on the go in an Android Tablet (and much more)</h2>
+<div class="outline-text-2" id="text-4">
 <p>
 A little more than a year ago, I decided that carrying a notebook and a slide
 projector (projectors are still big and heavy at my university) to the classroom
@@ -452,7 +463,7 @@ shif-option).
 <p>
 Redundancy (Termux and GnuRoot) is important in real life, so I kept the two
 of them. I go to Termux for Emacs and Python (but I may use Python in GnuRoot
-as well, particularly if I ever need <a href="#sec-6">Miniconda</a> in the tablet), and (for now)
+as well, particularly if I ever need <a href="#sec-7">Miniconda</a> in the tablet), and (for now)
 to GnuRoot for LaTeX and Maxima. 
 </p>
 
@@ -483,7 +494,7 @@ via USB, I can copy and paste files in both directions. Whenever I come back
 from a trip, whatever documents and presentations I created in LaTeX can be
 backed up. I can also do it directly from the tablet using Dropbox. Very
 serious research work can be done in GnuRoot, as well, with Python, Gnuplot,
-Maxima, and if need be, FORTRAN, C, or <a href="#sec-6">Miniconda</a> (for numba; Termux has numpy
+Maxima, and if need be, FORTRAN, C, or <a href="#sec-7">Miniconda</a> (for numba; Termux has numpy
 as well as GnuRoot).
 </p>
 
@@ -525,9 +536,9 @@ Brazil. I hope to see it happen very soon.
 </div>
 
 
-<div id="outline-container-sec-4" class="outline-2">
-<h2 id="sec-4"><span class="section-number-2">4</span> 2017-03-16T19:28:07 &#x2013; O tempo do fim das ilusões</h2>
-<div class="outline-text-2" id="text-4">
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> 2017-03-16T19:28:07 &#x2013; O tempo do fim das ilusões</h2>
+<div class="outline-text-2" id="text-5">
 <p>
 Por algum motivo, talvez alguma vantagem evolutiva, nós seres
 humanos somos atraídos por ilusões do fácil, do rápido, e do
@@ -620,9 +631,9 @@ muitas vezes, a respeito de si próprios.
 </div>
 
 
-<div id="outline-container-sec-5" class="outline-2">
-<h2 id="sec-5"><span class="section-number-2">5</span> 2017-03-01T12:09:55 &#x2013; Prá tudo se acabar na 4<sup>a</sup> feira</h2>
-<div class="outline-text-2" id="text-5">
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> 2017-03-01T12:09:55 &#x2013; Prá tudo se acabar na 4<sup>a</sup> feira</h2>
+<div class="outline-text-2" id="text-6">
 <p>
 O primeiro dia depois do Carnaval, esta 4<sup>a</sup> feira, 1<sup>o</sup> de março de 2017,
 amanheceu nublado em Curitiba. É impossível não sentir um pouco da tristeza
@@ -678,9 +689,9 @@ próximo Carnaval. Feliz 2017.
 </div>
 
 
-<div id="outline-container-sec-6" class="outline-2">
-<h2 id="sec-6"><span class="section-number-2">6</span> 2017-01-28T10:45:21 &#x2013; Installing miniconda in Linux and Windows</h2>
-<div class="outline-text-2" id="text-6">
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7"><span class="section-number-2">7</span> 2017-01-28T10:45:21 &#x2013; Installing miniconda in Linux and Windows</h2>
+<div class="outline-text-2" id="text-7">
 <p>
 Python is very popular, for good reason. Programming, debugging, and testing in
 Python is much faster than in older languages such as FORTRAN, Pascal, or
@@ -794,9 +805,9 @@ fuss).
 </div>
 
 
-<div id="outline-container-sec-7" class="outline-2">
-<h2 id="sec-7"><span class="section-number-2">7</span> 2016-11-19T17:36:35 &#x2013; Opinião</h2>
-<div class="outline-text-2" id="text-7">
+<div id="outline-container-sec-8" class="outline-2">
+<h2 id="sec-8"><span class="section-number-2">8</span> 2016-11-19T17:36:35 &#x2013; Opinião</h2>
+<div class="outline-text-2" id="text-8">
 <p>
 Ter opinião, posicionar-se.  Ver, diante de cada fato da vida que se apresenta
 para nós, a necessidade de tomar atitude, tomar partido ou simplesmente
@@ -841,9 +852,9 @@ E estamos precisando tanto avançar.
 </div>
 </div>
 
-<div id="outline-container-sec-8" class="outline-2">
-<h2 id="sec-8"><span class="section-number-2">8</span> 2016-11-09T12:46:14 &#x2013; Serious work with Linux and Cinnamon</h2>
-<div class="outline-text-2" id="text-8">
+<div id="outline-container-sec-9" class="outline-2">
+<h2 id="sec-9"><span class="section-number-2">9</span> 2016-11-09T12:46:14 &#x2013; Serious work with Linux and Cinnamon</h2>
+<div class="outline-text-2" id="text-9">
 <p>
 I have been a Linux user for a long time, and even before that I
 had benefitted greatly from open-source and free software such as DJGPP's Gnu
@@ -914,9 +925,9 @@ Linux way is a very good way.
 </div>
 </div>
 
-<div id="outline-container-sec-9" class="outline-2">
-<h2 id="sec-9"><span class="section-number-2">9</span> 2016-11-05T19:45:22 &#x2013; Setting up a Homepage</h2>
-<div class="outline-text-2" id="text-9">
+<div id="outline-container-sec-10" class="outline-2">
+<h2 id="sec-10"><span class="section-number-2">10</span> 2016-11-05T19:45:22 &#x2013; Setting up a Homepage</h2>
+<div class="outline-text-2" id="text-10">
 <p>
 It is painful not to be able to follow the pace of those who set up their
 homepages by snapping their fingers. But I got here:
@@ -945,9 +956,9 @@ can only wish you all a good end of Weekend.
 </p>
 </div>
 </div>
-<div id="outline-container-sec-10" class="outline-2">
-<h2 id="sec-10"><span class="section-number-2">10</span> 2009-06-23T00:00:00 &#x2013; Professores podem errar (mas quanto?)</h2>
-<div class="outline-text-2" id="text-10">
+<div id="outline-container-sec-11" class="outline-2">
+<h2 id="sec-11"><span class="section-number-2">11</span> 2009-06-23T00:00:00 &#x2013; Professores podem errar (mas quanto?)</h2>
+<div class="outline-text-2" id="text-11">
 <p>
 Professores podem errar, e engana-se quem pensa o contrário. É impossível em
 uma sequência de dez, vinte aulas, não cometer erros: interpretações
@@ -1009,9 +1020,9 @@ fé. Tudo aquilo que um mau professor não faz.
 </div>
 </div>
 
-<div id="outline-container-sec-11" class="outline-2">
-<h2 id="sec-11"><span class="section-number-2">11</span> 2009-03-20T00:00:00 &#x2013; O esforço de pensar</h2>
-<div class="outline-text-2" id="text-11">
+<div id="outline-container-sec-12" class="outline-2">
+<h2 id="sec-12"><span class="section-number-2">12</span> 2009-03-20T00:00:00 &#x2013; O esforço de pensar</h2>
+<div class="outline-text-2" id="text-12">
 <p>
 Na 4a feira, 2009-03-18, reuni-me com 3 alunos de pós-graduação para discutir
 um artigo que submetemos a uma revista, e que agora precisamos revisar à luz
@@ -1072,9 +1083,9 @@ se este artigo vai ser aceito.
 </div>
 </div>
 
-<div id="outline-container-sec-12" class="outline-2">
-<h2 id="sec-12"><span class="section-number-2">12</span> 2009-03-12T00:00:00 &#x2013; O distante passado recente dos computadores</h2>
-<div class="outline-text-2" id="text-12">
+<div id="outline-container-sec-13" class="outline-2">
+<h2 id="sec-13"><span class="section-number-2">13</span> 2009-03-12T00:00:00 &#x2013; O distante passado recente dos computadores</h2>
+<div class="outline-text-2" id="text-13">
 <p>
 Segundo a Wikipedia, o primeiro compilador FORTRAN veio ao mundo em abril
 de 1957. FORTRAN é mais velho do que eu, que cheguei em junho de 1961. Nesta
@@ -1131,9 +1142,9 @@ filme.
 </div>
 </div>
 
-<div id="outline-container-sec-13" class="outline-2">
-<h2 id="sec-13"><span class="section-number-2">13</span> 2008-08-06T00:00:00 &#x2013; Jovens e Velhos</h2>
-<div class="outline-text-2" id="text-13">
+<div id="outline-container-sec-14" class="outline-2">
+<h2 id="sec-14"><span class="section-number-2">14</span> 2008-08-06T00:00:00 &#x2013; Jovens e Velhos</h2>
+<div class="outline-text-2" id="text-14">
 <p>
 <b>(Ou a dialética do bom conflito de gerações)</b>
 </p>
@@ -1269,9 +1280,9 @@ urgentemente voltar aos hábitos da tribo: respeitar e ouvir os mais velhos.
 </div>
 </div>
 
-<div id="outline-container-sec-14" class="outline-2">
-<h2 id="sec-14"><span class="section-number-2">14</span> 2008-06-10T00:00:00 &#x2013; O olhar hipnótico da serpente</h2>
-<div class="outline-text-2" id="text-14">
+<div id="outline-container-sec-15" class="outline-2">
+<h2 id="sec-15"><span class="section-number-2">15</span> 2008-06-10T00:00:00 &#x2013; O olhar hipnótico da serpente</h2>
+<div class="outline-text-2" id="text-15">
 <p>
 Há quem diga, mas deve ser um mito, que a serpente hipnotiza sua presa antes
 de dar o bote. A vítima fica imóvel, imobilizada, destinada a ser abocanhada
@@ -1338,9 +1349,9 @@ vencer. Só nos resta, como São Jorge, Santo Guerreiro, combater.
 </div>
 </div>
 
-<div id="outline-container-sec-15" class="outline-2">
-<h2 id="sec-15"><span class="section-number-2">15</span> 2008-06-01T00:00:00 &#x2013; Faça da Internet uma amiga</h2>
-<div class="outline-text-2" id="text-15">
+<div id="outline-container-sec-16" class="outline-2">
+<h2 id="sec-16"><span class="section-number-2">16</span> 2008-06-01T00:00:00 &#x2013; Faça da Internet uma amiga</h2>
+<div class="outline-text-2" id="text-16">
 <p>
 Tanto quanto eu sei, foi no século XVIII que se procurou fazer pela primeira
 vez uma Enciclopédia. A tentativa deu nome a um grupo de <i>savants</i>:
@@ -1386,9 +1397,9 @@ fofocas e abobrinhas na rede.
 </div>
 </div>
 
-<div id="outline-container-sec-16" class="outline-2">
-<h2 id="sec-16"><span class="section-number-2">16</span> 2008-05-17T00:00:00 &#x2013; Ensino e Aprendizado são Diversão</h2>
-<div class="outline-text-2" id="text-16">
+<div id="outline-container-sec-17" class="outline-2">
+<h2 id="sec-17"><span class="section-number-2">17</span> 2008-05-17T00:00:00 &#x2013; Ensino e Aprendizado são Diversão</h2>
+<div class="outline-text-2" id="text-17">
 <p>
 Nunca consigo formular um bom motivo para alguém estudar: por que você deveria
 estudar? Porque isto é uma garantia de segurança financeira? Idealmente sim,
@@ -1469,9 +1480,9 @@ das coisas mais divertidas, mais prazeirosas, do mundo.
 </div>
 </div>
 
-<div id="outline-container-sec-17" class="outline-2">
-<h2 id="sec-17"><span class="section-number-2">17</span> 2008-04-08T00:00:00 Recuperando o Saber</h2>
-<div class="outline-text-2" id="text-17">
+<div id="outline-container-sec-18" class="outline-2">
+<h2 id="sec-18"><span class="section-number-2">18</span> 2008-04-08T00:00:00 Recuperando o Saber</h2>
+<div class="outline-text-2" id="text-18">
 <p>
 Enquanto o ensino médio continua em sua queda livre, a Universidade quer
 aumentar a sua eficiência, diminuir as desistências, reduzir as suas taxas de
@@ -1536,9 +1547,9 @@ realidade de nossa ignorância.
 </div>
 </div>
 
-<div id="outline-container-sec-18" class="outline-2">
-<h2 id="sec-18"><span class="section-number-2">18</span> 2008-03-25: Disciplina</h2>
-<div class="outline-text-2" id="text-18">
+<div id="outline-container-sec-19" class="outline-2">
+<h2 id="sec-19"><span class="section-number-2">19</span> 2008-03-25: Disciplina</h2>
+<div class="outline-text-2" id="text-19">
 <p>
 Hoje de manhã, na CBN, Cláudio Moura e Castro deu uma entrevista sobre a
 qualidade do ensino fundamental brasileiro. Tocou na ferida, comentou que este
@@ -1572,7 +1583,7 @@ coniventes: eles estão destruindo o futuro.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2018-03-28 Qua 20:22</p>
+<p class="date">Created: 2018-10-07 Sun 12:26</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
