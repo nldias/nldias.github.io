@@ -3,23 +3,30 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<title>Pesquisa (Research)</title>
-<!-- 2018-10-26 Fri 09:37 -->
+<!-- 2019-03-23 Sáb 11:10 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="viewport" content="width=device-width, initial-scale=1" />
+<title>Pesquisa (Research)</title>
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
-  .title  { text-align: center; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
   .todo   { font-family: monospace; color: red; }
-  .done   { color: green; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
   .tag    { background-color: #eee; font-family: monospace;
             padding: 2px; font-size: 80%; font-weight: normal; }
   .timestamp { color: #bebebe; }
   .timestamp-kwd { color: #5f9ea0; }
-  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
-  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
-  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
   .underline { text-decoration: underline; }
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
@@ -58,15 +65,14 @@
   caption.t-above { caption-side: top; }
   caption.t-bottom { caption-side: bottom; }
   td, th { vertical-align:top;  }
-  th.right  { text-align: center;  }
-  th.left   { text-align: center;   }
-  th.center { text-align: center; }
-  td.right  { text-align: right;  }
-  td.left   { text-align: left;   }
-  td.center { text-align: center; }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
   dt { font-weight: bold; }
-  .footpara:nth-child(2) { display: inline; }
-  .footpara { display: block; }
+  .footpara { display: inline; }
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
@@ -216,17 +222,17 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#sec-1">1. Interesses de pesquisa (Research interests)</a></li>
-<li><a href="#sec-2">2. Talks</a></li>
-<li><a href="#sec-3">3. Current themes</a></li>
-<li><a href="#sec-4">4. Novos temas/New themes</a></li>
-<li><a href="#sec-5">5. Projects</a>
+<li><a href="#orgheadline1">1. Interesses de pesquisa (Research interests)</a></li>
+<li><a href="#orgheadline2">2. Talks</a></li>
+<li><a href="#orgheadline3">3. Current themes</a></li>
+<li><a href="#orgheadline4">4. Novos temas/New themes</a></li>
+<li><a href="#orgheadline7">5. Projects</a>
 <ul>
-<li><a href="#sec-5-1">5.1. Large (many people, many institutions) projects</a></li>
-<li><a href="#sec-5-2">5.2. Small (few people, few institutions) projects</a></li>
+<li><a href="#orgheadline5">5.1. Large (many people, many institutions) projects</a></li>
+<li><a href="#orgheadline6">5.2. Small (few people, few institutions) projects</a></li>
 </ul>
 </li>
-<li><a href="#sec-6">6. Publications</a></li>
+<li><a href="#orgheadline8">6. Publications</a></li>
 </ul>
 </div>
 </div>
@@ -240,8 +246,8 @@ few times until HELP shows up).
 <a href="index.html">Home</a>
 </p>
 
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> Interesses de pesquisa (Research interests)</h2>
+<div id="outline-container-orgheadline1" class="outline-2">
+<h2 id="orgheadline1"><span class="section-number-2">1</span> Interesses de pesquisa (Research interests)</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Meus interesses de pesquisa incluem Hidrologia, Micrometeorologia, Turbulência
@@ -259,11 +265,22 @@ Evaporation, Rainfall-Runoof Models, Air Quality Models, etc..
 </div>
 
 
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> Talks</h2>
+<div id="outline-container-orgheadline2" class="outline-2">
+<h2 id="orgheadline2"><span class="section-number-2">2</span> Talks</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 You  may have a glimpse of my research by looking at some of my talks. Here is a sample.
+</p>
+
+<p>
+See <a href="https://www.dropbox.com/s/aconc54ncs7nhb6/absummerlayer.pdf?dl=0">here</a> my presentation at the ICMC Meeting on Differential Equations &#x2013; 2019
+Chapter, São Carlos, SP, Brazil.
+</p>
+
+
+<p>
+See <a href="https://www.dropbox.com/s/4lq5959mvdv2ea4/ablayer.pdf?dl=0">here</a> my presentation at the 3rd Simposium on Numerical Methods, Curitiba,
+PR, October 25 2018
 </p>
 
 <p>
@@ -279,10 +296,6 @@ See <a href="https://www.dropbox.com/s/oohm0lv1dydnd0x/nldias-bpwide2.pdf?dl=0">
 (or you can <a href="http://ecommons.library.cornell.edu/bitstream/1813/29563/2/E2_Dias_Turbulence-HD_for_Apple_Devices_5Mbps.m4v">watch the video</a>)
 </p>
 
-<p>
-See <a href="https://www.dropbox.com/s/4lq5959mvdv2ea4/ablayer.pdf?dl=0">here</a> my presentation at the 3rd Simposium on Numerical Methods, Curitiba,
-PR, October 25 2018
-</p>
 
 
 <p>
@@ -295,8 +308,8 @@ PR, October 25 2018
 
 
 
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> Current themes</h2>
+<div id="outline-container-orgheadline3" class="outline-2">
+<h2 id="orgheadline3"><span class="section-number-2">3</span> Current themes</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 Below is a sample of research themes I am currently working on. They are more
@@ -306,48 +319,36 @@ a little bit as time goes by.
 <ul class="org-ul">
 <li>Hydrologic modelling based on simple dynamical systems identified from
 streamflow and precipitation data; inclusion of physically-based
-evapotranspiration estimates.
-</li>
+evapotranspiration estimates.</li>
 <li>Dynamic equations and models for the spectral tensor \(\Phi_{i,j}(\vec{k},t)\)
-    in turbulence.
-</li>
+    in turbulence.</li>
 <li>The applicability, or not, of Monin-Obukhov Similarity
-Theory (MOST) (and extension or alternatives) over the Amazon forest.
-</li>
-<li>Surface Renewal Theory over water.
-</li>
+Theory (MOST) (and extension or alternatives) over the Amazon forest.</li>
+<li>Surface Renewal Theory over water.</li>
 <li>Corrections for Atmospheric Turbulence Measurements: sensor separation, path
-averaging and time response, among others.
-</li>
-<li>Time-series analysis tools. Spectra and ogives.
-</li>
+averaging and time response, among others.</li>
+<li>Time-series analysis tools. Spectra and ogives.</li>
 <li>Use of the length scale \(\ell_\epsilon = u_*^3/\epsilon\) (\(\epsilon\) is the rate of
 dissipation of turbulence kinetic energy) to normalize turbulence statistics
-in the Atmospheric Surface Layer.
-</li>
+in the Atmospheric Surface Layer.</li>
 <li>CO<sub>2</sub> fluxes to and from Itaipu Lake, and more generally greenhouse gas
-fluxes to and from lakes.
-</li>
+fluxes to and from lakes.</li>
 <li>The Hurst Phenomenon in Turbulence, and the existence, or not, of the
-Integral Scale.
-</li>
+Integral Scale.</li>
 <li>Rayleigh-Bénard convection and similarity between temperature and a passive
-scalar. 
-</li>
+scalar.</li>
 <li>The nonlinear Boussinesq differential equation, its many incarnations, and
-the search for new analytical solutions.
-</li>
+the search for new analytical solutions.</li>
 <li>Better estimates of wind velocity at 50 m from surface data and reanalysis
-(I am currently looking at CFSR (<a href="http://cfs.ncep.noaa.gov/cfsr/">http://cfs.ncep.noaa.gov/cfsr/</a>)).
-</li>
+(I am currently looking at CFSR (<a href="http://cfs.ncep.noaa.gov/cfsr/">http://cfs.ncep.noaa.gov/cfsr/</a>)).</li>
 </ul>
 </div>
 </div>
 
 
 
-<div id="outline-container-sec-4" class="outline-2">
-<h2 id="sec-4"><span class="section-number-2">4</span> Novos temas/New themes</h2>
+<div id="outline-container-orgheadline4" class="outline-2">
+<h2 id="orgheadline4"><span class="section-number-2">4</span> Novos temas/New themes</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 Eis aqui alguns desdobramentos dos meus temas atuais, e novos possíveis temas,
@@ -365,28 +366,23 @@ Thesis, Master, or Doctoral research).
 
 <ul class="org-ul">
 <li>Diagnósticos quantitativos da qualidade do ar em Curitiba, com base nas
-séries de qualidade do ar disponíveis.
-</li>
-<li>Modelos de evaporação em lagos.
-</li>
+séries de qualidade do ar disponíveis.</li>
+<li>Modelos de evaporação em lagos.</li>
 <li>Utilização do modelo de balanço hídrico sazonal para evapotranspiração em diversas bacias
-hidrográficas e comparação com outros modelos.
-</li>
+hidrográficas e comparação com outros modelos.</li>
 <li>Soluções numéricias e/ou analíticas da Equação de Boussinesq para águas
-subterrâneas. 
-</li>
+subterrâneas.</li>
 <li>Um método da variância simplificado: comparação de regressões diretas entre
 \(\sigma_w\) e \(u_*\), e \(\sigma_c\) e \(c_*\) com o uso da Teoria de Similaridade
-de Monin-Obukhov para a obtenção de \(u_*\) e \(c_*\) na sub-camada rugosa.
-</li>
+de Monin-Obukhov para a obtenção de \(u_*\) e \(c_*\) na sub-camada rugosa.</li>
 </ul>
 </div>
 </div>
 
 
 
-<div id="outline-container-sec-5" class="outline-2">
-<h2 id="sec-5"><span class="section-number-2">5</span> Projects</h2>
+<div id="outline-container-orgheadline7" class="outline-2">
+<h2 id="orgheadline7"><span class="section-number-2">5</span> Projects</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 I participate in projects large and small. There is no implication that the
@@ -394,128 +390,113 @@ large ones are better than the small ones. They are just bigger.
 </p>
 </div>
 
-<div id="outline-container-sec-5-1" class="outline-3">
-<h3 id="sec-5-1"><span class="section-number-3">5.1</span> Large (many people, many institutions) projects</h3>
+<div id="outline-container-orgheadline5" class="outline-3">
+<h3 id="orgheadline5"><span class="section-number-3">5.1</span> Large (many people, many institutions) projects</h3>
 <div class="outline-text-3" id="text-5-1">
 <ul class="org-ul">
-<li>Go Amazon <a href="http://campaign.arm.gov/goamazon2014/">http://campaign.arm.gov/goamazon2014/</a>
-</li>
-<li>ATTO <a href="https://www.mpg.de/9358794/atto-inauguration">https://www.mpg.de/9358794/atto-inauguration</a>
-</li>
+<li>Go Amazon <a href="http://campaign.arm.gov/goamazon2014/">http://campaign.arm.gov/goamazon2014/</a></li>
+<li>ATTO <a href="https://www.mpg.de/9358794/atto-inauguration">https://www.mpg.de/9358794/atto-inauguration</a></li>
 </ul>
 </div>
 </div>
 
 
-<div id="outline-container-sec-5-2" class="outline-3">
-<h3 id="sec-5-2"><span class="section-number-3">5.2</span> Small (few people, few institutions) projects</h3>
+<div id="outline-container-orgheadline6" class="outline-3">
+<h3 id="orgheadline6"><span class="section-number-3">5.2</span> Small (few people, few institutions) projects</h3>
 <div class="outline-text-3" id="text-5-2">
 <ul class="org-ul">
 <li>Disurg: Dinâmica da sub-camada rugosa sobre florestas (Dynamics of the
-roughness sublayer over forests) (CNPq 401146/2014-6) <a href="pdf/disurg.pdf">disurg</a> 
-</li>
+roughness sublayer over forests) (CNPq 401146/2014-6) <a href="pdf/disurg.pdf">disurg</a></li>
 <li>Geesverde: Métodos de medição de fluxos de gases de efeito estufa: estudo de caso para o reservatório
-do Rio Verde, PR (CNPq 444462/2014-7) <a href="pdf/geesverde.pdf">geesverde</a>
-</li>
+do Rio Verde, PR (CNPq 444462/2014-7) <a href="pdf/geesverde.pdf">geesverde</a></li>
 <li>Declif: Dinâmica espaço-temporal da camada-limite e fluxos superficiais
-regionais (CNpq 303581/2013-1) <a href="pdf/declif.pdf">declif</a>
-</li>
+regionais (CNpq 303581/2013-1) <a href="pdf/declif.pdf">declif</a></li>
 <li>FAPEMIG/CEMIG GT555: Desenvolvimento de modelos, métodos e sistema
 computacional para a previsão da velocidade do vento em horizontes de curto
-e longo prazos.
-</li>
+e longo prazos.</li>
 </ul>
 </div>
 </div>
 </div>
 
 
-<div id="outline-container-sec-6" class="outline-2">
-<h2 id="sec-6"><span class="section-number-2">6</span> Publications</h2>
+<div id="outline-container-orgheadline8" class="outline-2">
+<h2 id="orgheadline8"><span class="section-number-2">6</span> Publications</h2>
 <div class="outline-text-2" id="text-6">
 <ul class="org-ul">
 <li>Dias, N. L. Smoothed spectra, ogives, and error estimates for atmospheric
 turbulence data. Boundary-Layer Meteorol., 2017. 
-<a href="https://doi.org/10.1007/s10546-017-0293-7">https://doi.org/10.1007/s10546-017-0293-7</a>
-</li>
+<a href="https://doi.org/10.1007/s10546-017-0293-7">https://doi.org/10.1007/s10546-017-0293-7</a></li>
 
 <li>Chor, T. L.; Dias, N. L.; Araújo, A.; Wolff, S.; Zahn, E.; Manzi, A.; Trebs,
 I.; Sá, M. O.; Teixeira, P. R. &amp; Sörgel, M. Flux-variance and flux-gradient
 relationships in the roughness sublayer over the Amazon forest Agricultural
 and Forest Meteorology, Elsevier, 2017, 239, 213-222.
-<a href="http://doi.org/10.1016/j.agrformet.2017.03.009">http://doi.org/10.1016/j.agrformet.2017.03.009</a>
-</li>
+<a href="http://doi.org/10.1016/j.agrformet.2017.03.009">http://doi.org/10.1016/j.agrformet.2017.03.009</a></li>
 
 <li>Freire, L. S.; Gerken, T.; Ruiz-Plancarte, J.; Wei, D.; Fuentes, J. D.;
 Katul, G. G.; Dias, N. L.; Acevedo, O. C. &amp; Chamecki, M. Turbulent mixing
 and removal of ozone within an Amazon rainforest canopy. Journal of
 Geophysical Research: Atmospheres, 2017, 2016JD026009.
-<a href="http://dx.doi.org/10.1002/2016JD026009">http://dx.doi.org/10.1002/2016JD026009</a>
-</li>
+<a href="http://dx.doi.org/10.1002/2016JD026009">http://dx.doi.org/10.1002/2016JD026009</a></li>
 
-<li>Dias-Junior, C. Q.; Dias, N. L.; Fuentes, J. D. &amp; Chamecki,
+<li><p>
+Dias-Junior, C. Q.; Dias, N. L.; Fuentes, J. D. &amp; Chamecki,
+</p>
 <ol class="org-ol">
-<li>Convective storms and non-classical low-level jets during high
-</li>
+<li>Convective storms and non-classical low-level jets during high</li>
 </ol>
 <p>
 ozone level episodes in the Amazon region: An ARM/GOAMAZON case
 study. Atmospheric Environment, 155, 199&#x2013;209, 2017.
 <a href="http://dx.doi.org/10.1016/j.atmosenv.2017.02.006">http://dx.doi.org/10.1016/j.atmosenv.2017.02.006</a>
-</p>
-</li>
+</p></li>
 
 <li>Chamecki, M.; Dias, N. L.; Salesky, S. T. &amp; Pan, Y. Scaling laws for the
 longitudinal structure function in the atmospheric surface layer. Journal of
-the Atmospheric Sciences, 2017, 74, 1127-1147.  <a href="http://dx.doi.org/10.1175/JAS-D-16-0228.1">http://dx.doi.org/10.1175/JAS-D-16-0228.1</a>
-</li>
+the Atmospheric Sciences, 2017, 74, 1127-1147.  <a href="http://dx.doi.org/10.1175/JAS-D-16-0228.1">http://dx.doi.org/10.1175/JAS-D-16-0228.1</a></li>
 
 <li>Dias, N. L. &amp; Vissotto, D.. The effect of temperature-humidity similarity on
 Bowen ratios, dimensionless standard deviations, and mass transfer
 coefficients over a lake. Hydrological
-Processes, 2017, 31, 256-269. <a href="http://dx.doi.org/10.1002/hyp.10925">http://dx.doi.org/10.1002/hyp.10925</a>
-</li>
+Processes, 2017, 31, 256-269. <a href="http://dx.doi.org/10.1002/hyp.10925">http://dx.doi.org/10.1002/hyp.10925</a></li>
 
-<li>Fuentes, J. D.; Chamecki, M.; dos Santos, R. M. N.; von Randow, C.; Stoy,
+<li><p>
+Fuentes, J. D.; Chamecki, M.; dos Santos, R. M. N.; von Randow, C.; Stoy,
+</p>
 <ol class="org-ol">
-<li>C.; Katul, G.; Fitzjarrald, D.; Manzi, A.; Gerken, T.; Trowbridge, A.;
-</li>
+<li>C.; Katul, G.; Fitzjarrald, D.; Manzi, A.; Gerken, T.; Trowbridge, A.;</li>
 </ol>
 <p>
 Freire, L. S.; Ruiz-Plancarte, J.; Maia, J. M. F.; Tóta, J.; Dias, N. L.;
 Fisch, G.; Schumacher, C.; Acevedo, O. &amp; Mercer, J. R. Linking meteorology,
 turbulence, and air chemistry in the Amazon rainforest. Bulletin of the
 American Meteorological Society, 2016, 97, 2329-2342.
-</p>
-</li>
+</p></li>
 <li>Zahn, E.; Dias, N. L.; Araújo, A.; Sá, L. D. A.; Sörgel, M.; Trebs, I.;
 Wolff, S. &amp; Manzi, A. Scalar turbulent behavior in the roughness sublayer of
 an Amazonian forest Atmospheric Chemistry and Physics, 2016, 16,
-11349-11366.
-</li>
+11349-11366.</li>
 <li>Zahn, E. &amp; Dias, N. L. Controle de qualidade em dados de alta frequência no
 projeto ATTO. Ciência e Natura, Universidade Federal de Santa Maria, 2016,
-38, 498-503.
-</li>
+38, 498-503.</li>
 <li>Wei, D.; Ruiz-Plancarte, J.; Freire, L. S.; Gerken, T.; Chamecki, M.;
 Fuentes, J. D.; Stoy, P.; Trowbridge, A.; Santos, R. M. N.; Acevedo, O. C. &amp;
 Dias, N. L. Relação entre a turbulência do dossel e distribuição vertical de
 gases reativos na floresta triopical da Amazônia Central. Ciência e Natura,
-2016, 38, 543.
-</li>
+2016, 38, 543.</li>
 <li>Cancelli, D. M.; Chamecki, M. &amp;; Dias, N. L. A Study of the Similarity
 between Scalars over a Heterogeneous Surface Using Large-Eddy Simulation.
-Am. J. Environ. Eng., 2015, 5, 9-14.
-</li>
+Am. J. Environ. Eng., 2015, 5, 9-14.</li>
 <li>Chor, T. &amp; Dias, N. L. Technical Note: A simple generalization of the Brutsaert and Nieber analysis.
-Hydrol. Earth Syst. Sci., Copernicus GmbH, 2015, 19, 2755-2761.
-</li>
-<li>Andreae, M. O.; Acevedo, O. C.; Araùjo, A.; Artaxo, P.; Barbosa, C. G. G.;
+Hydrol. Earth Syst. Sci., Copernicus GmbH, 2015, 19, 2755-2761.</li>
+<li><p>
+Andreae, M. O.; Acevedo, O. C.; Araùjo, A.; Artaxo, P.; Barbosa, C. G. G.;
 Barbosa, H. M. J.; Brito, J.; Carbone, S.; Chi, X.; Cintra, B. B. L.; da
 Silva, N. F.; Dias, N. L.; Dias-Júnior, C. Q.; Ditas, F.; Ditz, R.; Godoi,
+</p>
 <ol class="org-ol">
-<li>F. L.; Godoi, R. H. M.; Heimann, M.; Hoffmann, T.; Kesselmeier, J.;
-</li>
+<li>F. L.; Godoi, R. H. M.; Heimann, M.; Hoffmann, T.; Kesselmeier, J.;</li>
 </ol>
 <p>
 Könemann, T.; Krüger, M. L.; Lavric, J. V.; Manzi, A. O.; Lopes, A. P.;
@@ -524,8 +505,7 @@ Nölscher, A. C.; Santos Nogueira, D.; Piedade, M. T. F.; Pöhlker, C.;
 Pöschl, U.; Quesada, C. A.; Rizzo, L. V.; Ro, C.-U.; Ruckteschler, N.; Sá,
 </p>
 <ol class="org-ol">
-<li>D. A.; de Oliveira Sá, M.; Sales, C. B.; dos Santos, R. M. N.; Saturno,
-</li>
+<li>D. A.; de Oliveira Sá, M.; Sales, C. B.; dos Santos, R. M. N.; Saturno,</li>
 </ol>
 <p>
 J.; Schöngart, J.; Sörgel, M.; de Souza, C. M.; de Souza, R. A. F.; Su, H.;
@@ -534,234 +514,183 @@ Wang, Z.; Weber, B.; Williams, J.; Winderlich, J.; Wittmann, F.; Wolff, S. &amp;
 Yañez-Serrano, A. M.. The Amazon Tall Tower Observatory (ATTO): overview of
 pilot measurements on ecosystem ecology, meteorology, trace gases, and
 aerosols. Atmospheric Chemistry and Physics, 2015, 15, 10723-10776.
-</p>
-</li>
+</p></li>
 <li>Cancelli, D. M. &amp; Dias, N. L.. BRevê: uma metodologia objetiva de cálculo de
 emissões para a frota de veículos brasileira. Revista de Engenharia
-Sanitária e Ambiental, 2014, Edição especial, 13-20.
-</li>
+Sanitária e Ambiental, 2014, Edição especial, 13-20.</li>
 <li>Armani, F.; de Carvalho, R. A. &amp; Dias, N. L. Statistical evaluation of a new
 air dispersion model against AERMOD using the Praire Grass data set. Journal
-of the Air &amp; Waste Management Association, 2014, 64, 219-226.
-</li>
+of the Air &amp; Waste Management Association, 2014, 64, 219-226.</li>
 <li>Cancelli, D. M.; Chamecki, M. &amp; Dias, N. L.. A large-eddy simulation study
 of scalar dissimilarity in the convective atmospheric boundary layer.
 <ol class="org-ol">
-<li>Atmos. Sci., 2014, 71, 3-15.
-</li>
-</ol>
-</li>
+<li>Atmos. Sci., 2014, 71, 3-15.</li>
+</ol></li>
 <li>Dias, N. L.; Chor, T. L. &amp; de Zárate, A. R.. A semianalytical solution for
 the Boussinesq equation with nonhomogeneous constant boundary conditions.
-Water Resour. Res., Wiley-Blackwell, 2014, 50, 6549-6556.
-</li>
+Water Resour. Res., Wiley-Blackwell, 2014, 50, 6549-6556.</li>
 <li>Dias, N. L.. Alternativas de processamento numérico eficiente para a
-Engenharia do século XXI. Revista de Ensino de Engenharia, 2014, 33, 25-36.
-</li>
+Engenharia do século XXI. Revista de Ensino de Engenharia, 2014, 33, 25-36.</li>
 <li>Crivellaro, B. L.; Dias, N. L. &amp; Chor, T.. Spectral Effects on Scalar
-Correlations and Fluxes. Am. J. Environ. Eng., 2013, 3, 3-17.
-</li>
+Correlations and Fluxes. Am. J. Environ. Eng., 2013, 3, 3-17.</li>
 <li>Dias, N. L.. Reconciling radiation dissipation in the spatial and spectral
-domains under stable conditions. Water Resour. Res., 2013, 49, 7150-7153.
-</li>
+domains under stable conditions. Water Resour. Res., 2013, 49, 7150-7153.</li>
 <li>Dias, N. L.. Research on atmospheric turbulence by Wilfried Brutsaert and
-collaborators. Water Resour. Res., 2013, 49, 7169-7184.
-</li>
+collaborators. Water Resour. Res., 2013, 49, 7169-7184.</li>
 <li>Armani, F. A. S.; Dias, N. L.; Crivellaro, B. L. &amp; Chor, T. L. G.. Fluxos
 turbulentos de dióxido de carbono sobre o reservatório da usina hidrelétrica
-de Itaipu &#x2013; PR. Ciência e Natura, 2013, Volume Especial, 128-132.
-</li>
+de Itaipu &#x2013; PR. Ciência e Natura, 2013, Volume Especial, 128-132.</li>
 <li>Crivellaro, B. L. &amp; Dias, N. L.. Aplicação do método de Salesky et al. (2012)
 usando um filtro temporal para estimar o erro do fluxo de calor sensível em
-Tijucas Do Sul &#x2013; PR e em Missal &#x2013; PR. Ciência e Natura, 2013, 61-71.
-</li>
+Tijucas Do Sul &#x2013; PR e em Missal &#x2013; PR. Ciência e Natura, 2013, 61-71.</li>
 <li>Vissotto Jr., D. &amp; Dias, N. L.. Método empírico para determinação de outliers em
 séries de fluxos de dados micrometeorológicos pós-processados. Ciência e
-Natura, 2013, Volume Especial, 150-152.
-</li>
+Natura, 2013, Volume Especial, 150-152.</li>
 <li>Cancelli, D. M.; Chamecki, M. &amp; Dias, N. L.. Estudo da similaridade entre
 escalares sobre uma superfície heterogênea utilizando Large-Eddy
-Simulation. Ciência e Natura, 2013, V. Especial, 178-180.
-</li>
+Simulation. Ciência e Natura, 2013, V. Especial, 178-180.</li>
 <li>Freire, L. S. &amp; Dias, N. L.. Residual layer effects on the modeling of
 convective boundary layer growth rates with a slab model using FIFE
-data. J. of Geophys. Res., 2013, 118, 1-10.
-</li>
+data. J. of Geophys. Res., 2013, 118, 1-10.</li>
 <li>Chor, T.; Dias, N. L. &amp; de Zárate, A. R.. An exact series and improved
 numerical and approximate solutions for the Boussinesq equation. Water
-Resour. Res., 2013, 49, 7380-7387.
-</li>
+Resour. Res., 2013, 49, 7380-7387.</li>
 <li>Cancelli, D. M.; Dias, N. L. &amp; Chamecki, M.. Dimensionless criteria for the
 production-dissipation equilibrium of scalar fluctuations and their
-implications for scalar similarity. Water Resour. Res., 2012, 48, W10522.
-</li>
-<li>Dias, N. L.; Gonçalves, J. E.; Freire, L. S.; Hasegawa, T. &amp; Malheiros,
+implications for scalar similarity. Water Resour. Res., 2012, 48, W10522.</li>
+<li><p>
+Dias, N. L.; Gonçalves, J. E.; Freire, L. S.; Hasegawa, T. &amp; Malheiros,
+</p>
 <ol class="org-ol">
-<li>L.. Obtaining Potential Virtual Temperature Profiles, Entrainment Fluxes,
-</li>
+<li>L.. Obtaining Potential Virtual Temperature Profiles, Entrainment Fluxes,</li>
 </ol>
 <p>
 and Spectra from Mini Unmanned Aerial Vehicle Data. Boundary-Layer
 Meteorol., 2012, 145, 93-111.
-</p>
-</li>
+</p></li>
 <li>Salesky, S. T.; Chamecki, M. &amp; Dias, N. L.. Estimating the random error in
 eddy-covariance fluxes and other turbulence statistics: the filtering method.
-Boundary-Layer Meteorol., 2012, 144, 113-135.
-</li>
+Boundary-Layer Meteorol., 2012, 144, 113-135.</li>
 <li>Werth, D.; Kurzeja, R.; Dias, N. L.; Zhang, G.; Duarte, H.; Fischer, M.;
 Parker, M. &amp; Leclerc, M. Y.. The Simulation of the Southern Great Plains
 Nocturnal Boundary Layer and the Low-Level Jet with a High-Resolution
 Meso-Scale Atmospheric Model. J. Appl. Meteorol. and Climatol.,
-2011, 50, 1497-1513.
-</li>
+2011, 50, 1497-1513.</li>
 <li>Crivellaro, B. L.; Dias, N. L. &amp; Chor, T.. Um método espectral Passa-Banda
 para CO<sub>2</sub>. Ciência e Natura, 2011, Volume Especial,
-75-78.
-</li>
+75-78.</li>
 <li>Freire, L. S. F. S.; Dias, N. L.; de Campos, C. P. &amp; Almeida, J. C..
 A importância da subsidência na modelagem do crescimento da camada limite
-convectiva. Ciência e Natura, 2011, Volume Especial, 19-21.
-</li>
+convectiva. Ciência e Natura, 2011, Volume Especial, 19-21.</li>
 <li>de Jong, R.; Chor, T. &amp; Dias, N. L.. Medição da velocidade do vento a bordo
 de um Veículo Aéreo Não-Tripulado. Ciência e Natura, 2011, Volume Especial,
-71-74.
-</li>
+71-74.</li>
 <li>Bernardes, M. &amp; Dias, N. L.. The alignment of the mean wind and stress
 vectors in the unstable surface layer. Boundary-Layer Meteorol., 2010, 134,
-41-59.
-</li>
+41-59.</li>
 <li>Dias, N. L.. Básia, Mediânia e Dífria: uma utopia do ensino de matemática em
-engenharia. Revista de Ensino de Engenharia, 2009, 28, 55-64.
-</li>
+engenharia. Revista de Ensino de Engenharia, 2009, 28, 55-64.</li>
 <li>Dias, N. L.; Hong, J.; Leclerc, M.; Black; Nesic, Z. &amp; Krishnan, P.. A simple
 method of estimating scalar fluxes over forests. Boundary-Layer Meteorol.,
-2009, 132, 401-414.
-</li>
+2009, 132, 401-414.</li>
 
 <li>Dias, N. L. &amp; Kan, A.. Evaporação líquida no reservatório de Foz do Areia,
 PR: Estimativas dos modelos de relação complementar versus balanço hídrico
 sazonal e balanço de energia. Revista Brasileira de Recursos hídricos, 2008,
-13, 31-43.
-</li>
+13, 31-43.</li>
 
 <li>Maggiotto, S. R.; Dias, N. L.; Grodzki, L.; Vissotto, S.; Prevedello, C. L.;
 Nascimento, E. L. &amp; Souza, M. F.. Diretrizes para redes automáticas e
 telemétricas de superfície. Revista Brasileira de Recursos hídricos, 2007,
-12, 225-240.
-</li>
-<li>Prevedello, C. L.; Maggiotto, S. R.; Loyola, J. M. T.; Dias, N. L. &amp; Neto,
+12, 225-240.</li>
+<li><p>
+Prevedello, C. L.; Maggiotto, S. R.; Loyola, J. M. T.; Dias, N. L. &amp; Neto,
+</p>
 <ol class="org-ol">
-<li>B.. Balanço de água por aquisição automática de dados em cultura de trigo
-</li>
+<li>B.. Balanço de água por aquisição automática de dados em cultura de trigo</li>
 </ol>
 <p>
 (Triticum aestivum L.).  Revista Brasileira de Ciência do Solo, 2007, 31,
 1-8.
-</p>
-</li>
+</p></li>
 <li>Dias, N. L.; Duarte, H. F.; Maggiotto, S. R. &amp; Grodzki, L.. An attenuated
 eddy covariance method for latent heat flux measurements. Water Resour. Res.,
-2007, 43, W04415.
-</li>
+2007, 43, W04415.</li>
 <li>Gobbi, M. F.; Chamecki, M. &amp; Dias, N. L.. Application of digital filtering
 for minimizing aliasing effects in the atmospheric turbulent surface layer
-spectra. Water Resour. Res., 2006, 42, W03405.
-</li>
-<li>Chamecki, M. &amp; Dias, N. L.. Reply to a comment by R. J Smalley and
+spectra. Water Resour. Res., 2006, 42, W03405.</li>
+<li><p>
+Chamecki, M. &amp; Dias, N. L.. Reply to a comment by R. J Smalley and
+</p>
 <ol class="org-ol">
-<li>A. Antonia on `The local isotropy hypothesis and the turbulent kinetic
-</li>
+<li>A. Antonia on `The local isotropy hypothesis and the turbulent kinetic</li>
 </ol>
 <p>
 energy dissipation rate in the atmospheric surface layer' (October B, 2004,
 130:2733&#x2013;2752). Q J Roy Meteorol Soc, 2006, 132, 685-686.
-</p>
-</li>
+</p></li>
 <li>Dias, N. L.. Book review: M. Bonell, L.A. Bruijnzeel (Eds.), Forests, Water
 and People in the Humid Tropics, Cambridge University Press, 2005. Agric For
-Meteorol, 2006.
-</li>
+Meteorol, 2006.</li>
 <li>Duarte, H. F.; Dias, N. L. &amp; Maggiotto, S. R.. Assessing daytime downward
 longwave radiation estimates for clear and cloudy skies in Southern Brazil.
-Agric For Meteorol, 2006, 139, 171-181.
-</li>
+Agric For Meteorol, 2006, 139, 171-181.</li>
 <li>Dias, N. L.. Comment on "The Need for Better Contacts Between Hydrologists
 in the Two Americas". EOS Transactions - American Geophysical Union, 2005,
-86, 370-370.
-</li>
+86, 370-370.</li>
 <li>Dias, N. L.; Chamecki, M.; Kan, A. &amp; Okawa, C. M. P.. A study of spectra,
 structure and correlation functions and their implication on the
 stationarity of surface-layer turbulence. Boundary-Layer Meteorol., 2004,
-110, 165-189.
-</li>
+110, 165-189.</li>
 <li>Chamecki, M. &amp; Dias, N. L.. The local isotropy assumption and the turbulent
 kinetic energy dissipation rate in the atmospheric surface layer. Q J Roy
-Meteorol Soc, 2004, 130, 2733-2752.
-</li>
+Meteorol Soc, 2004, 130, 2733-2752.</li>
 <li>Dias, N. L.. Book Review: Fundamentals of Biometeorology. Agric For
-Meteorol, 2004, 125, 173-175.
-</li>
+Meteorol, 2004, 125, 173-175.</li>
 <li>Dias, N. L.. Obtenção de uma solução analítica da equação de difusão-advecção
 com decaimento de 1<sup><span class="underline">a</span></sup> ordem pelo método da transformação
 de similaridade generalizada. Revista Brasileira de Recursos Hídricos, 2003,
-8, 181-188.
-</li>
+8, 181-188.</li>
 <li>Dias, N. L.; Gobbi, M. F. &amp; Gobbi, E. F.. Formulação de um modelo matemático
 do efeito de efluentes térmicos em rios e suas implicações para a legislação
 ambiental brasileira. Revista Brasileira de Recursos Hídricos, 2003, 8,
-169-180.
-</li>
+169-180.</li>
 <li>Kim, I. S. &amp; Dias, N. L.. Variabilidade e previsão climática de vazões na
 margem esquerda da bacia do Alto Paraná (Brasil). Revista Brasileira de
-Recursos hídricos, 2003, 8, 173-186.
-</li>
+Recursos hídricos, 2003, 8, 173-186.</li>
 <li>Dias, N. L.; Kan, A.; Grodzki, L.; Sanchez, S. D. &amp; Vissotto, D.. O método de
 covariâncias turbulentas atenuadas (MCTA) para medição dos fluxos de calor
 sensível e latente: aplicação ao lago de Itaipu e seu redor. Revista
-Brasileira de Recursos hídricos, 2002, 7, 143-160.
-</li>
+Brasileira de Recursos hídricos, 2002, 7, 143-160.</li>
 <li>Asanuma, J.; Dias, N. L.; Kustas, W. P. &amp; Brutsaert, W.. Observations of
 neutral profiles of wind speed and specific humidity above a gently rolling
-land surface. J of the Meteorological Society of Japan, 2000, 78, 719-730.
-</li>
+land surface. J of the Meteorological Society of Japan, 2000, 78, 719-730.</li>
 <li>Kan, A. &amp; Dias, N. L..  Evaporação, evapotranspiração e evaporação líquida no
 reservatório de Foz do Areia. Revista Brasileira de Recursos hídricos, 1999,
-4, 29-38.
-</li>
+4, 29-38.</li>
 <li>Dias, N. L. &amp; Rocha, L. S.. Cálculo da taxa de variação da entalpia para os
 lagos de Itaipu e Foz do Areia. Revista Brasileira de Recursos Hídricos,
-1999, 4, 39-52.
-</li>
+1999, 4, 39-52.</li>
 <li>Dias, N. L. &amp; Kan, A.. A hydrometeorological model for basin-wide seasonal
-evapotranspiration. Water Resour. Res., 1999, 35, 3409-3418.
-</li>
+evapotranspiration. Water Resour. Res., 1999, 35, 3409-3418.</li>
 <li>Reis, R. J. &amp; Dias, N. L.. Multi-season lake evaporation: energy-budget
-estimates and CRLE model assessment. J. of Hydrol., 1998, 208, 135-147.
-</li>
+estimates and CRLE model assessment. J. of Hydrol., 1998, 208, 135-147.</li>
 <li>Dias, N. L.. &amp; Reis, R. J..  Métodos de cálculo do balanço de entalpia em lagos
-e erros associados. Revista Brasileira de Recursos hídricos, 1998, 3, 45-56.
-</li>
+e erros associados. Revista Brasileira de Recursos hídricos, 1998, 3, 45-56.</li>
 <li>Dias, N. L.. &amp; Brutsaert, W.. Radiative effects on temperature in the stable
-surface layer. Boundary-Layer Meteorol., 1998, 89, 141-159.
-</li>
+surface layer. Boundary-Layer Meteorol., 1998, 89, 141-159.</li>
 <li>Dias, N. L. &amp; Brutsaert, W.. Similarity of scalars under stable conditions
-Boundary-Layer Meteorol., 1996, 80, 355-373.
-</li>
+Boundary-Layer Meteorol., 1996, 80, 355-373.</li>
 <li>Dias, N. L.; Brutsaert, W. &amp; Wesely, M. L.. Z-less stratification under
-stable conditions Boundary-Layer Meteorol., 1995, 75, 175-187.
-</li>
+stable conditions Boundary-Layer Meteorol., 1995, 75, 175-187.</li>
 <li>Dias, N. L.. Unificação formal de metodologias para cálculo de evaporação em
-lagos. Revista Brasileira de Engenharia, 1992, 10, 61-84. <a href="pdf/rbe92.pdf">pdf</a>
-</li>
+lagos. Revista Brasileira de Engenharia, 1992, 10, 61-84. <a href="pdf/rbe92.pdf">pdf</a></li>
 <li>Dias, N. L.. Modelação dos Coeficientes de Vazão e Contração para Escoamento
 Turbulento Através de Uma Placa de Orifício. Revista Brasileira de
-Engenharia, Caderno de Recursos hídricos, 1989, 7, 69-82.
-</li>
+Engenharia, Caderno de Recursos hídricos, 1989, 7, 69-82.</li>
 <li>Dias, N. L.; Rotunno, O. C.; Salim, M. &amp; Moreano, N. B.. Implementação de Um
 Banco de Dados Hidrometeorológicos Diários em Microcomputador. Revista
-Brasileira de Engenharia, Caderno de Recursos Hídricos, 1988, 6, 65-91.
-</li>
+Brasileira de Engenharia, Caderno de Recursos Hídricos, 1988, 6, 65-91.</li>
 </ul>
 
 
@@ -774,8 +703,7 @@ Brasileira de Engenharia, Caderno de Recursos Hídricos, 1988, 6, 65-91.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2018-10-26 Fri 09:37</p>
-<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.2 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="date">Created: 2019-03-23 Sáb 11:10</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
