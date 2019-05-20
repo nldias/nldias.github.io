@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2019-03-23 Sáb 11:10 -->
+<!-- 2019-04-30 Ter 16:24 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="viewport" content="width=device-width, initial-scale=1" />
 <title>Ensino (Teaching)</title>
@@ -396,12 +396,16 @@ contorno.
 <h3 id="orgheadline6"><span class="section-number-3">1.6</span> Notas</h3>
 <div class="outline-text-3" id="text-1-6">
 <p>
-Veja as <a href="./pdf/notpre2019-1.pdf">notas</a> até a F
+Veja as <a href="./pdf/notpre2019-1.pdf">notas</a> até a P2
 </p>
 
 
 <p>
 2019-03-23: Estão abertas as revisões da P1.
+</p>
+
+<p>
+2019-04-30: Estão encerradas as revisões da P1. Estão abertas as revisões da P2.
 </p>
 </div>
 </div>
@@ -470,7 +474,11 @@ Faça o download do arquivo com as médias diárias <code>qmeddia.txt</code>  <a
 <h3 id="orgheadline12"><span class="section-number-3">1.8</span> Gabaritos</h3>
 <div class="outline-text-3" id="text-1-8">
 <p>
-Faça o download do gabarito da P1: [[./pdf/2019-1-p01-sol.pdf][2019-1-p01-sol.pdf]
+Faça o download do gabarito da P1: <a href="./pdf/2019-1-p01-sol.pdf">2019-1-p01-sol.pdf</a>
+</p>
+
+<p>
+Faça o download do gabarito da P2: <a href="./pdf/2019-1-p02-sol.pdf">2019-1-p02-sol.pdf</a>
 </p>
 </div>
 </div>
@@ -551,6 +559,7 @@ limite estável: modelos de dispersão na camada limite estável.
 <h3 id="orgheadline17"><span class="section-number-3">2.3</span> Programa:  <a href="./pdf/eamb7003-prog-2019-1.pdf">eamb7003-prog-2019-1.pdf</a></h3>
 </div>
 
+
 <div id="outline-container-orgheadline18" class="outline-3">
 <h3 id="orgheadline18"><span class="section-number-3">2.4</span> Notas de aula:</h3>
 <div class="outline-text-3" id="text-2-4">
@@ -566,8 +575,14 @@ recomendado. Favor não citar como referência, nem redistribuir.
 </div>
 </div>
 
+
 <div id="outline-container-orgheadline19" class="outline-3">
 <h3 id="orgheadline19"><span class="section-number-3">2.5</span> Provas</h3>
+<div class="outline-text-3" id="text-2-5">
+<p>
+Faça o download do gabarito da P1: <a href="./pdf/eamb7003-2019-1-p01-sol.pdf">eamb7003-2019-1-p01-sol.pdf</a>
+</p>
+</div>
 </div>
 </div>
 
@@ -1102,7 +1117,7 @@ Faça o download do gabarito da P1: <a href="./pdf/eamb7009-2018-3-p01-sol.pdf">
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2019-03-23 Sáb 11:10</p>
+<p class="date">Created: 2019-04-30 Ter 16:24</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
