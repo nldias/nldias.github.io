@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2019-03-23 Sáb 11:10 -->
+<!-- 2019-05-25 Sáb 12:13 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="viewport" content="width=device-width, initial-scale=1" />
 <title>Pesquisa (Research)</title>
@@ -424,8 +424,41 @@ e longo prazos.</li>
 <h2 id="orgheadline8"><span class="section-number-2">6</span> Publications</h2>
 <div class="outline-text-2" id="text-6">
 <ul class="org-ul">
+<li>Freire, L. S. ; Chamecki, M. ; Bou-Zeid, E. ; Dias, N. L. Critical flux
+Richardson number for Kolmogorov turbulence enabled by TKE
+transport. Quarterly Journal of the Royal Meteorological
+Society, v. 1, p. 1, 2019.</li>
+
+<li>Chor, T. ; Ruiz de Zárate, A. ; Dias, N. L. A generalized series solution
+for the boussinesq equation with constant boundary conditions. Water
+Resources Research, v. 55, p. 3567-3575, 2019.</li>
+
+<li>Dias, N. L. ; Crivellaro, B. L. ; Chamecki, M. The Hurst phenomenon
+in error estimates related to atmospheric turbulence. Boundary-Layer
+Meteorology, v. 168, p. 387-416, 2018.</li>
+
+<li>Freire, L. S. ; Dias, N. L. ; Grion, A. L. Uma comparação dos erros de
+estimativa da taxa de dissipação de energia cinética da turbulência por
+diferentes métodos na Uma comparação dos erros de estimativa camada-limite
+da taxa de dissipação de atmosférica. Ciência e
+Natura, v. 40, p. 07-13, 2018.</li>
+
+<li>Chamecki, M.; Dias, N. L.; Freire, L. S. A TKE-based
+framework for studying disturbed atmospheric surface layer flows and
+application to vertical velocity variance over canopies. Geophysical
+Research letters, v. 45, p. 6734-6740, 2018.</li>
+
+<li>Micalichen, M. L. M. M. ; Dias, N. L. Análise comparativa da
+velocidade do vento e da temperatura do ar, entre dados gerados por
+reanálises meteorológicas e dados observacionais na região de Minas
+Gerais. Ciência e Natura, v. 40, p. 20-25, 2018.</li>
+
+<li>Rodakoviski, R. B. ; Dias, N. L. Statistical Description of
+Rayleigh-Bénard Convection Using the Lorenz Equations. American Journal of
+Environmental Engineering, v. 8, p. 75-87, 2018.</li>
+
 <li>Dias, N. L. Smoothed spectra, ogives, and error estimates for atmospheric
-turbulence data. Boundary-Layer Meteorol., 2017. 
+turbulence data. Boundary-Layer Meteorol., v. 166, p. 2-29, 2017. 
 <a href="https://doi.org/10.1007/s10546-017-0293-7">https://doi.org/10.1007/s10546-017-0293-7</a></li>
 
 <li>Chor, T. L.; Dias, N. L.; Araújo, A.; Wolff, S.; Zahn, E.; Manzi, A.; Trebs,
@@ -703,7 +736,7 @@ Brasileira de Engenharia, Caderno de Recursos Hídricos, 1988, 6, 65-91.</li>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2019-03-23 Sáb 11:10</p>
+<p class="date">Created: 2019-05-25 Sáb 12:13</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
