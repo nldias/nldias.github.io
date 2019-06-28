@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2019-05-20 Mon 11:21 -->
+<!-- 2019-06-20 Thu 11:40 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="viewport" content="width=device-width, initial-scale=1" />
 <title>Ensino (Teaching)</title>
@@ -370,8 +370,6 @@ contorno.
 </div>
 
 
-
-
 <div id="outline-container-orgheadline4" class="outline-3">
 <h3 id="orgheadline4"><span class="section-number-3">1.4</span> Programa: <a href="./pdf/tea010-prog-2019-1.pdf">tea010-prog-2019-1.pdf</a></h3>
 </div>
@@ -396,7 +394,7 @@ contorno.
 <h3 id="orgheadline6"><span class="section-number-3">1.6</span> Notas</h3>
 <div class="outline-text-3" id="text-1-6">
 <p>
-Veja as <a href="./pdf/notpre2019-1.pdf">notas</a> até a P2
+Veja as <a href="./pdf/notpre2019-1.pdf">notas</a> até a P4
 </p>
 
 
@@ -406,6 +404,14 @@ Veja as <a href="./pdf/notpre2019-1.pdf">notas</a> até a P2
 
 <p>
 2019-04-30: Estão encerradas as revisões da P1. Estão abertas as revisões da P2.
+</p>
+
+<p>
+2019-05-25: Estão encerradas as revisões da P2. Estão abertas as revisões da P3.
+</p>
+
+<p>
+2019-06-20: Estão encerradas as revisões da P3. Estão abertas as revisões da P4.
 </p>
 </div>
 </div>
@@ -469,7 +475,6 @@ Faça o download do arquivo com as médias diárias <code>qmeddia.txt</code>  <a
 </div>
 </div>
 
-
 <div id="outline-container-orgheadline12" class="outline-3">
 <h3 id="orgheadline12"><span class="section-number-3">1.8</span> Gabaritos</h3>
 <div class="outline-text-3" id="text-1-8">
@@ -479,6 +484,14 @@ Faça o download do gabarito da P1: <a href="./pdf/2019-1-p01-sol.pdf">2019-1-p0
 
 <p>
 Faça o download do gabarito da P2: <a href="./pdf/2019-1-p02-sol.pdf">2019-1-p02-sol.pdf</a>
+</p>
+
+<p>
+Faça o download do gabarito da P3: <a href="./pdf/2019-1-p03-sol.pdf">2019-1-p03-sol.pdf</a>
+</p>
+
+<p>
+Faça o download do gabarito da P4: <a href="./pdf/2019-1-p04-sol.pdf">2019-1-p04-sol.pdf</a>
 </p>
 </div>
 </div>
@@ -581,6 +594,10 @@ recomendado. Favor não citar como referência, nem redistribuir.
 <div class="outline-text-3" id="text-2-5">
 <p>
 Faça o download do gabarito da P1: <a href="./pdf/eamb7003-2019-1-p01-sol.pdf">eamb7003-2019-1-p01-sol.pdf</a>
+</p>
+
+<p>
+Faça o download do gabarito da P2: <a href="./pdf/eamb7003-2019-1-p02-sol.pdf">eamb7003-2019-1-p02-sol.pdf</a>
 </p>
 </div>
 </div>
@@ -1117,7 +1134,7 @@ Faça o download do gabarito da P1: <a href="./pdf/eamb7009-2018-3-p01-sol.pdf">
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2019-05-20 Mon 11:21</p>
+<p class="date">Created: 2019-06-20 Thu 11:40</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
