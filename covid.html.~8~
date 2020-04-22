@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Covid19: Uma previsão dia-a-dia da extensão da crise</title>
-<!-- 2020-04-21 ter 18:02 -->
+<!-- 2020-04-21 Tue 19:00 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -224,7 +224,7 @@ few times until HELP shows up).
 
 
 <p>
-2020-04-21T17:43:30
+2020-04-21T18:59:47
 </p>
 
 <p>
@@ -236,7 +236,7 @@ com aplicações.  Editora HARBRA Ltda., ou o exemplo 8.4 do <a href="./pdf/mata
 livro</a>),cuja equação é
 \[
 P(t) = \frac{P_{\infty}}
-            {\left[\frac{P_{\infty}}{P_0}-1 \right]e^{-\lambda t} + 1}
+            {\left[\frac{P_{\infty}}{P_0}-1 \right]e^{-\lambda t} + 1}.
 \]
 Portanto, a cada dia, um novo conjunto de \((P_0, P_\infty, \lambda)\) é
 obtido. A curva converge para um valor máximo de casos, \(P_\infty\). No
@@ -258,12 +258,297 @@ as mais antigas)
 
 <p>
 2020-04-21:
-[[./png/coordtime-0055.png]
 </p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0055.png" alt="cordtime-0055.png" />
+</p>
+</div>
+
+<p>
+2020-04-20:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0054.png" alt="cordtime-0054.png" />
+</p>
+</div>
+
+<p>
+2020-04-19:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0053.png" alt="cordtime-0053.png" />
+</p>
+</div>
+
+<p>
+2020-04-18:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0052.png" alt="cordtime-0052.png" />
+</p>
+</div>
+
+<p>
+2020-04-17:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0051.png" alt="cordtime-0051.png" />
+</p>
+</div>
+
+<p>
+2020-04-16:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0050.png" alt="cordtime-0050.png" />
+</p>
+</div>
+
+<p>
+2020-04-15:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0049.png" alt="cordtime-0049.png" />
+</p>
+</div>
+
+<p>
+2020-04-14:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0048.png" alt="cordtime-0048.png" />
+</p>
+</div>
+
+<p>
+2020-04-13:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0047.png" alt="cordtime-0047.png" />
+</p>
+</div>
+
+<p>
+2020-04-12:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0046.png" alt="cordtime-0046.png" />
+</p>
+</div>
+
+<p>
+2020-04-11:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0045.png" alt="cordtime-0045.png" />
+</p>
+</div>
+
+<p>
+2020-04-10:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0044.png" alt="cordtime-0044.png" />
+</p>
+</div>
+
+<p>
+2020-04-09:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0043.png" alt="cordtime-0043.png" />
+</p>
+</div>
+
+<p>
+2020-04-08:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0042.png" alt="cordtime-0042.png" />
+</p>
+</div>
+
+<p>
+2020-04-07:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0041.png" alt="cordtime-0041.png" />
+</p>
+</div>
+
+<p>
+2020-04-06:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0040.png" alt="cordtime-0040.png" />
+</p>
+</div>
+
+<p>
+2020-04-05:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0039.png" alt="cordtime-0039.png" />
+</p>
+</div>
+
+<p>
+2020-04-06:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0038.png" alt="cordtime-0038.png" />
+</p>
+</div>
+
+<p>
+2020-04-05:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0037.png" alt="cordtime-0037.png" />
+</p>
+</div>
+
+<p>
+2020-04-04:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0036.png" alt="cordtime-0036.png" />
+</p>
+</div>
+
+<p>
+2020-04-03:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0035.png" alt="cordtime-0035.png" />
+</p>
+</div>
+
+<p>
+2020-04-02:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0034.png" alt="cordtime-0034.png" />
+</p>
+</div>
+
+<p>
+2020-04-01:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0033.png" alt="cordtime-0033.png" />
+</p>
+</div>
+
+<p>
+2020-03-31:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0032.png" alt="cordtime-0032.png" />
+</p>
+</div>
+
+<p>
+2020-03-30:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0031.png" alt="cordtime-0031.png" />
+</p>
+</div>
+
+<p>
+2020-03-29:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0030.png" alt="cordtime-0030.png" />
+</p>
+</div>
+
+<p>
+2020-03-28:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0029.png" alt="cordtime-0029.png" />
+</p>
+</div>
+
+<p>
+2020-03-27:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0026.png" alt="cordtime-0026.png" />
+</p>
+</div>
+
+<p>
+2020-03-26:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0025.png" alt="cordtime-0025.png" />
+</p>
+</div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2020-04-21 ter 18:02</p>
+<p class="date">Created: 2020-04-21 Tue 19:00</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.2 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
