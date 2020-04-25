@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Covid19: Uma previsão dia-a-dia da extensão da crise</title>
-<!-- 2020-04-24 sex 16:45 -->
+<!-- 2020-04-25 sáb 17:43 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -247,15 +247,14 @@ que o fim da crise está se aproximando.
 
 
 <p>
-2020-04-23T17:41:36
+2020-04-25T17:41:22
 </p>
 
 <p>
-A curva de \(P_{\infty}(t)\) continua a aumentar, sugerindo que o pico
-da epidemia de covid19 no Brasil ainda não foi alcançado. O número de
-casos novos aumentou muito de ontem para hoje. A situação do país como
-um todo continua sugerindo cautela e manutenção de medidas de controle
-da contaminação entre as pessoas.
+O número de novos casos continua a aumentar,
+e o valor de \(P_{\infty}(t)\) já ultrapassa 80000.
+Tudo indica que ainda não alcançamos o pico da epidemia.
+Cautela, e isolamento, continuam importantes.
 </p>
 
 
@@ -271,6 +270,26 @@ valores de \(P_\infty\) dia-a-dia:
 Eis aqui o ajuste das curvas ao longo do tempo (das mais recentes para
 as mais antigas)
 </p>
+
+<p>
+2020-04-25:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0059.png" alt="cordtime-0059.png" />
+</p>
+</div>
+
+<p>
+2020-04-24:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0058.png" alt="cordtime-0058.png" />
+</p>
+</div>
 
 <p>
 2020-04-23:
@@ -584,7 +603,7 @@ as mais antigas)
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2020-04-24 sex 16:45</p>
+<p class="date">Created: 2020-04-25 sáb 17:43</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.2 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
