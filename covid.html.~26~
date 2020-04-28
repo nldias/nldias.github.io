@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Covid19: Uma previsão dia-a-dia da extensão da crise</title>
-<!-- 2020-04-25 sáb 17:44 -->
+<!-- 2020-04-28 Tue 18:19 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -247,14 +247,15 @@ que o fim da crise está se aproximando.
 
 
 <p>
-2020-04-25T17:41:22
+2020-04-28T18:06:24
 </p>
 
 <p>
-O número de novos casos continua a aumentar,
-e o valor de \(P_{\infty}(t)\) já ultrapassa 80000.
-Tudo indica que ainda não alcançamos o pico da epidemia.
-Cautela, e isolamento, continuam <b>extremamente</b> importantes.
+Hoje, o valor de \(P_{\infty}(t)\) hello já chega perto de 120000.  Não é
+possível saber se já estamos no pico nacional da epidemia ainda. O
+número de casos novos a cada dia não tem clara tendência sequer de
+estabilização.  Cautela, e isolamento, continuam <b>extremamente</b>
+importantes.
 </p>
 
 
@@ -270,6 +271,36 @@ valores de \(P_\infty\) dia-a-dia:
 Eis aqui o ajuste das curvas ao longo do tempo (das mais recentes para
 as mais antigas)
 </p>
+
+<p>
+2020-04-28:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0062.png" alt="cordtime-0062.png" />
+</p>
+</div>
+
+<p>
+2020-04-27:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0061.png" alt="cordtime-0061.png" />
+</p>
+</div>
+
+<p>
+2020-04-26:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0060.png" alt="cordtime-0060.png" />
+</p>
+</div>
 
 <p>
 2020-04-25:
@@ -603,7 +634,7 @@ as mais antigas)
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2020-04-25 sáb 17:44</p>
+<p class="date">Created: 2020-04-28 Tue 18:19</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.2 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
