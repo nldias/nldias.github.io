@@ -1,0 +1,158 @@
+\documentclass[12pt]{article}
+\usepackage[margin=3cm,paper=a4paper]{geometry}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[brazil]{babel}
+%\usepackage{indentfirst}
+\usepackage{authblk}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[colorlinks=true,%
+   urlcolor=blue,
+   linkcolor=blue,
+   citecolor=blue,
+   filecolor=blue]{hyperref}
+
+
+
+
+
+\author[1]{Bruno dos Santos Solheid}
+\author[1,2]{Nelson Luís Dias}
+\author[1,3]{Fernando Augusto Silveira Armani}
+\author[1,4]{Dornelles Vissotto Jr.}
+
+\affil[1]{\small Programa de Métodos Numéricos em Engenharia, Universidade Federal do Paraná}
+\affil[2]{\small Departamento de Engenharia Ambiental, Universidade
+  Federal do Paraná}
+\affil[3]{\small Centro de Estudos do Mar, Universidade Federal do Paraná}
+\affil[4]{\small Departamento de Engenharia e Tecnologia Florestal, Universidade
+  Federal do Paraná}
+
+
+\date{\today}
+\title{Minha terceira aula, 2020-05-15}
+
+\parindent=0pt
+\parskip=6pt
+
+\begin{document}
+
+\maketitle
+
+\section{Introdução}\label{sec:intro}
+
+Esta disciplina está apresentada em \url{http://nldias.github.io/teaching.html}
+
+O ciclo de desenvolvimento envolve entrar no editor,
+fazer modificações, salvar o arquivo, recompilar em LaTeX,
+e revisualizar no visualizador de pdf.
+
+Mas agora, como é que eu posso dizer que fiz 100\% do trabalho.
+
+\section*{Fontes de material didático}
+
+
+Se eu quiser comprar um máquina de cortar cabela, ela $\backslash$ 
+vai custar cerca de R\$ 500 reais. O que mais? \^{}, \&, \_, \{, \}, \~{},
+
+Um traço simples serve para palavras compostas. Por exemplo
+auto-estima.
+
+Vamos começar um novo parágrafo e escrever que houve uma epidemia
+de gripe espanhola nos anos 1918--19. Ou: as rugosidades do fundo
+do canal variam no interval 0.001--0.01 m. Isso não é o mesmo
+que 1918-1919.
+
+A noite em São Petersburgo 
+--- uma das cidades mais setentrionais do planeta --- pode 
+durar muito mais do que 12 horas.
+
+Em São Petersburgo, as temperaturas vão de $-20$ até $+30$ graus centígrados.
+
+Em São Petersburgo, as temperaturas vão de -20 até +30 graus centígrados.
+
+Como sabemos, $0 \ge -1$. ou: $a < b$ ou: $a \le b$.
+
+
+Na figura \ref{fig:mbook} podemos ver duas páginas de
+um livro feito manualmente na Idade Média. O \texttt{pdflatex}
+``gosta'' mais de figuras nos formatos \texttt{png}, 
+\texttt{jpg} e \texttt{pdf}.
+
+\begin{figure}\centering
+\includegraphics*[width=0.6\textwidth]{mbook.jpg}
+\caption{Um livro medieval aberto.\label{fig:mbook}}
+\end{figure}
+
+Na tabela \ref{tab:frutas}, temos uma lista de compras para frutas.
+
+Eis aqui um texto bem longo, em que a gente essencialmente
+não diz nada.  A economia brasileira registrou retração de 
+1{,}95\% no primeiro trimestre de 2020, segundo o 
+Índice de Atividade Econômica (IBC-Br), uma espécie de `prévia' 
+do Produto Interno Bruto (PIB), divulgado pelo Banco Central (BC) 
+nesta sexta-feira (15).
+
+\begin{table}\centering
+\caption{Uma lista de compras.\label{tab:frutas}}
+\begin{tabular}{lrc}
+\toprule
+Fruta   & Sub-fruta       & Quantidade \\
+\midrule
+Banana  & caturra         & 6          \\
+Banana  & maçã            & 6{,}5          \\
+Laranja & lima            & 12         \\
+\multicolumn{2}{l}{Mamão} & 1          \\     
+\multicolumn{2}{c}{Mamão} & 1          \\     
+\multicolumn{2}{r}{Mamão} & 1          \\     
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+O recuo entre janeiro e março deste ano foi verificado na 
+comparação com o quarto trimestre de 2019. O número foi calculado após 
+ajuste sazonal, uma ``compensação'' para comparar períodos diferentes de um ano.
+Quando a comparação é feita com o resultado do primeiro trimestre 
+de 2019, porém, o IBC-Br indica uma queda menor, de 0{,}28\% (sem ajuste sazonal).
+O Produto Interno Bruto (PIB) é a soma de todos os bens e 
+serviços produzidos no país e serve para medir a evolução da economia.
+
+A pandemia do novo coronavírus começou a atingir a economia de forma 
+mais intensa a partir de meados de março, quando foi declarada pela 
+Organização Mundial de Saúde (OMS) no dia 11 de março.
+
+
+Os estados brasileiros começaram a anunciar medidas de distanciamento 
+social também a partir de meados de março --- quando o Distrito Federal 
+suspendeu as aulas. 
+Em 13 de março, São Paulo e Rio de Janeiro anunciaram medidas 
+para limitar a circulação e a concentração de pessoas.
+
+O IBC-BR do Banco Central é um indicador criado para tentar antecipar 
+o resultado do PIB, mas os números oficiais do PIB do primeiro 
+trimestre serão divulgados pelo Instituto Brasileiro de 
+Geografia e Estatística (IBGE) em 29 de maio.
+
+
+Os reflexos da pandemia têm derrubado a economia 
+mundial e colocado o mundo no caminho de uma forte recessão.
+
+O BC informou, nesta semana, BC, que seu cenário 
+básico pressupõe ``queda forte do PIB na primeira metade deste ano'', 
+seguida de uma recuperação gradual a partir do terceiro trimestre de 2020.
+
+O governo, por sua vez, previu uma retração de 4{,}7\% 
+para este ano --- considerando que as medidas de distanciamento social 
+terminarão em maio.
+
+O Banco Mundial e o Fundo Monetário 
+Internacional (FMI) estimam queda do PIB brasileiro de, 
+respectivamente, 5\% e 5{,}3\%.
+
+
+
+
+\end{document}
