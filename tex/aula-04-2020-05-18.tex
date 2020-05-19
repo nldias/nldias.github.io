@@ -1,0 +1,295 @@
+\documentclass[12pt]{article}
+\usepackage[margin=3cm,top=2cm,bottom=1.5cm,paper=a4paper]{geometry}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[brazil]{babel}
+%\usepackage{indentfirst}
+\usepackage{authblk}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[colorlinks=true,%
+   urlcolor=blue,
+   linkcolor=blue,
+   citecolor=blue,
+   filecolor=blue]{hyperref}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{tabu}
+
+\input{ira.tex}
+
+
+\author[1]{Bruno dos Santos Solheid}
+\author[1,2]{Nelson Luís Dias}
+\author[1,3]{Fernando Augusto Silveira Armani}
+\author[1,4]{Dornelles Vissotto Jr.}
+
+\affil[1]{\small Programa de Métodos Numéricos em Engenharia, Universidade Federal do Paraná}
+\affil[2]{\small Departamento de Engenharia Ambiental, Universidade
+  Federal do Paraná}
+\affil[3]{\small Centro de Estudos do Mar, Universidade Federal do Paraná}
+\affil[4]{\small Departamento de Engenharia e Tecnologia Florestal, Universidade
+  Federal do Paraná}
+
+
+\date{\today}
+\title{Minha quarta aula, 2020-05-18}
+
+\parindent=0pt
+\parskip=6pt
+
+\begin{document}
+
+\maketitle
+
+\section{Introdução}\label{sec:intro}
+
+Esta disciplina está apresentada em \url{http://nldias.github.io/teaching.html}
+
+\textbf{Nem todos os orientadores gostam de \LaTeX!}
+Na verdade, alguns odeiam\ldots Nós continuamos a trabalhar, mesmo assim.
+
+O ciclo de desenvolvimento envolve entrar no editor,
+fazer modificações, salvar o arquivo, recompilar em LaTeX, e revisualizar no visualizador de pdf.
+
+Mas agora, como é que eu posso dizer que fiz 100\% do trabalho.
+
+\section{Tamanhos de letra}
+
+{\tiny This is tiny}
+
+{\scriptsize This is scriptsize}
+
+{\footnotesize This is footnotesize}
+
+{\small This is small}
+
+{\normalsize This is normalsize}
+
+{\large This is large}
+
+{\Large This is Large}
+
+{\huge This is huge}
+
+{\Huge This is Huge}
+
+\section{Ênfase, negrito, etc.}
+
+\textbf{Isto é negrito}
+
+\textit{Isto é itálico}
+
+\textsl{Isto é ``slanted''}
+
+\underline{Isto é sublinhado}
+
+\renewcommand{\emph}{\underline}
+
+\emph{E finalmente isto é ``emph''}
+
+
+Esta é a minha 4\ira\ aula. \LaTeX\ é um símbolo.
+
+Esta é a minha $4^{a}$ aula.
+
+
+\section*{Fontes de material didático}
+
+
+Se eu quiser comprar um máquina de cortar cabela, ela $\backslash$ vai custar cerca de R\$ 500 reais. O que mais? \^{}, \&, \_, \{, \}, \~{},
+
+Um traço simples serve para palavras compostas. Por exemplo auto-estima.
+
+Vamos começar um novo parágrafo e escrever que houve uma epidemia de gripe espanhola nos anos 1918--19. Ou: as rugosidades do fundo do canal variam no interval 0.001--0.01 m. Isso não é o mesmo que 1918-1919.
+
+A noite em São Petersburgo --- uma das cidades mais setentrionais do planeta --- pode durar muito mais do que 12 horas.
+
+Em São Petersburgo, as temperaturas vão de $-20$ até $+30$ graus centígrados.
+
+Em São Petersburgo, as temperaturas vão de -20 até +30 graus centígrados.
+
+Como sabemos, $0 \ge -1$. ou: $a < b$ ou: $a \le b$.
+
+
+Na figura \ref{fig:mbook} podemos ver duas páginas de
+um livro feito manualmente na Idade Média. O \texttt{pdflatex}
+``gosta'' mais de figuras nos formatos \texttt{png}, 
+\texttt{jpg} e \texttt{pdf}.
+
+\begin{figure}\centering
+\includegraphics*[width=0.6\textwidth]{mbook.jpg}
+\caption{Um livro medieval aberto.\label{fig:mbook}}
+\end{figure}
+
+Na tabela \ref{tab:frutas}, temos uma lista de compras para frutas.
+
+Eis aqui um texto bem longo, em que a gente essencialmente não diz nada.  A economia brasileira registrou retração de 1{,}95\% no primeiro trimestre de 2020, segundo o Índice de Atividade Econômica (IBC-Br), uma espécie de ``prévia'' do Produto Interno Bruto (PIB), divulgado pelo Banco Central (BC) nesta sexta-feira (15). A questão é como fazer as linhas ``dobrarem'' quando eu passo de 70 colunas. Como vocês podem ver, o Notepad++ ``dobra'' (na verdade, pode dobrar) as linhas quando elas ficam mais longas do que a ``janela'' 
+em que  você está digitando. Mas isso
+é apenas um efeito visual. Será possível que este editor dobre 
+as linhas como nós gostaríamos? Ele já está fazendo isso! Nós continuamos 
+a tentar\ldots O segredo de fazer goiabada é contar com boas goiabas. 
+Exatamente! Por incrível que pareça, para fazer goiabada, nós precisamos de frutas chamadas goiabas! E quantas goiabas existem no mundo???
+
+
+\begin{table}\centering
+\rotcaption{Uma lista de compras rotacionada.\label{tab:frutas}}
+\begin{sideways}
+\begin{tabular}{lrc}
+\toprule
+Fruta   & Sub-fruta       & Quantidade \\
+\midrule
+Banana  & caturra         & 6          \\
+Banana  & maçã            & 6{,}5          \\
+Laranja & lima            & 12         \\
+\multicolumn{2}{l}{Mamão} & 1          \\     
+\multicolumn{2}{c}{Mamão} & 1          \\     
+\multicolumn{2}{r}{Mamão} & 1          \\     
+\bottomrule
+\end{tabular}
+\end{sideways}
+\end{table}
+
+
+
+O recuo entre janeiro e março deste ano foi verificado na comparação com o quarto trimestre de 2019. O número foi calculado após ajuste sazonal, uma ``compensação'' para comparar períodos diferentes de um ano. Quando a comparação é feita com o resultado do primeiro trimestre de 2019, porém, o IBC-Br indica uma queda menor, de 0{,}28\% (sem ajuste sazonal).  O Produto Interno Bruto (PIB) é a soma de todos os bens e serviços produzidos no país e serve para medir a evolução da economia.
+
+A pandemia do novo coronavírus começou a atingir a economia de forma mais intensa a partir de meados de março, quando foi declarada pela Organização Mundial de Saúde (OMS) no dia 11 de março.
+
+
+Os estados brasileiros começaram a anunciar medidas de distanciamento social também a partir de meados de março --- quando o Distrito Federal suspendeu as aulas. Em 13 de março, São Paulo e Rio de Janeiro anunciaram medidas para limitar a circulação e a concentração de pessoas.
+
+O IBC-BR do Banco Central é um indicador criado para tentar antecipar 
+o resultado do PIB, mas os números oficiais do PIB do primeiro 
+trimestre serão divulgados pelo Instituto Brasileiro de 
+Geografia e Estatística (IBGE) em 29 de maio.
+
+
+Os reflexos da pandemia têm derrubado a economia mundial e colocado o mundo no caminho de uma forte recessão.
+
+O BC informou, nesta semana, BC, que seu cenário básico pressupõe ``queda forte do PIB na primeira metade deste ano'', 
+seguida de uma recuperação gradual a partir do terceiro trimestre de 2020.
+
+O governo, por sua vez, previu uma retração de 4{,}7\% para este ano --- considerando que as medidas de distanciamento social terminarão em maio.
+
+O Banco Mundial e o Fundo Monetário Internacional (FMI) estimam queda do PIB brasileiro de, respectivamente, 5\% e 5{,}3\%.
+
+
+\section{Tabelas rotacionadas}
+
+
+\begin{sidewaystable}
+\centering
+\caption{Summary results for all methods and AmeriFlux stations
+tested. Each horizontal block list the error statistics as a mean
+from the four $n$-hour artificial gaps. The $^{*}$ symbol indicates
+which method was better against the compararable method, and bold
+text marks the overall best method.\label{tab:commet}}
+{\footnotesize
+\begin{tabular}{cc|c|cc|cc|cc|cc|c}
+\toprule
+	& Station	& \phantom{$-$}REddy\phantom{$^{*}$} & \phantom{$-$}APM\phantom{$^{*}$} & \phantom{$-$}MDV\phantom{$^{*}$} & \phantom{$-$}APM1\phantom{$^{*}$} & \phantom{$-$}LR1\phantom{$^{*}$} & \phantom{$-$}APM2\phantom{$^{*}$} & \phantom{$-$}LR2\phantom{$^{*}$} & \phantom{$-$}APM3\phantom{$^{*}$} & \phantom{$-$}LR3\phantom{$^{*}$} & \phantom{$-$}EF \\
+\midrule
+ \multirow{5}{*}{\rotatebox[origin=c]{90}{\tiny{RMSE ($\mathrm{W\,m^{-2}}$)}}}			& US-Me6	& \phantom{$-$}39.35\phantom{$^{*}$} & \phantom{$-$}44.75\phantom{$^{*}$} & \phantom{$-$}44.51$^{*}$ & \phantom{$-$}42.43$^{*}$ & \phantom{$-$}43.06\phantom{$^{*}$} & \phantom{$-$}38.64$^{*}$ & \phantom{$-$}39.56\phantom{$^{*}$} & \textbf{\phantom{$-$}37.11$^{*}$} & \phantom{$-$}38.49\phantom{$^{*}$} & \phantom{$-$}52.32 \\
+	& US-MMS	& \phantom{$-$}21.17\phantom{$^{*}$} & \phantom{$-$}20.94$^{*}$ & \phantom{$-$}21.21\phantom{$^{*}$} & \textbf{\phantom{$-$}19.25$^{*}$} & \phantom{$-$}20.67\phantom{$^{*}$} & \phantom{$-$}19.45$^{*}$ & \phantom{$-$}20.73\phantom{$^{*}$} & \phantom{$-$}21.00$^{*}$ & \phantom{$-$}21.96\phantom{$^{*}$} & \phantom{$-$}24.86 \\
+	& US-Ne3	& \phantom{$-$}32.77\phantom{$^{*}$} & \phantom{$-$}36.75$^{*}$ & \phantom{$-$}38.78\phantom{$^{*}$} & \phantom{$-$}29.37$^{*}$ & \phantom{$-$}30.05\phantom{$^{*}$} & \phantom{$-$}33.39\phantom{$^{*}$} & \phantom{$-$}29.09$^{*}$ & \phantom{$-$}28.73\phantom{$^{*}$} & \textbf{\phantom{$-$}28.63$^{*}$} & \phantom{$-$}36.17 \\
+	& US-Skr	& \phantom{$-$}58.11\phantom{$^{*}$} & \phantom{$-$}58.16$^{*}$ & \phantom{$-$}59.94\phantom{$^{*}$} & \phantom{$-$}54.87$^{*}$ & \phantom{$-$}56.28\phantom{$^{*}$} & \textbf{\phantom{$-$}52.71$^{*}$} & \phantom{$-$}56.77\phantom{$^{*}$} & \phantom{$-$}52.72$^{*}$ & \phantom{$-$}57.98\phantom{$^{*}$} & \phantom{$-$}83.57 \\
+	& US-SO2	& \phantom{$-$}18.49\phantom{$^{*}$} & \phantom{$-$}18.04$^{*}$ & \phantom{$-$}19.79\phantom{$^{*}$} & \textbf{\phantom{$-$}15.70$^{*}$} & \phantom{$-$}20.42\phantom{$^{*}$} & \phantom{$-$}16.39$^{*}$ & \phantom{$-$}20.24\phantom{$^{*}$} & \phantom{$-$}16.00$^{*}$ & \phantom{$-$}19.21\phantom{$^{*}$} & \phantom{$-$}22.41 \\
+\midrule
+\multirow{5}{*}{\rotatebox[origin=c]{90}{\tiny{BIAS ($\mathrm{W\,m^{-2}}$)}}}			& US-Me6	&	\phantom{$-$}0.81\phantom{$^{*}$}	&	$-$5.69\phantom{$^{*}$}			&	$-$4.74$^{*}$				&	\textbf{$-$0.78$^{*}$}						&	$-$2.29\phantom{$^{*}$}				&	$-$2.58$^{*}$				&	$-$4.19\phantom{$^{*}$}				&	$-$2.10$^{*}$				&	$-$3.42\phantom{$^{*}$}			&	$-$16.21 \\
+	& US-MMS	&	$-$1.16\phantom{$^{*}$}			&	$-$1.80$^{*}$			&	$-$2.12\phantom{$^{*}$}					&	$-$0.79$^{*}$						&	\phantom{$-$}1.02\phantom{$^{*}$}	&	$-$0.47$^{*}$				&	\phantom{$-$}0.93\phantom{$^{*}$}	&	\textbf{\phantom{$-$}0.06$^{*}$}	&	\phantom{$-$}1.88\phantom{$^{*}$}	&	$-$5.93 \\
+	& US-Ne3	&	$-$1.30\phantom{$^{*}$}			&	\phantom{$-$}2.09\phantom{$^{*}$}	&	\phantom{$-$}0.77$^{*}$		&	\textbf{$-$0.03$^{*}$}						&	$-$1.16\phantom{$^{*}$}				&	$-$0.29\phantom{$^{*}$}				&	$-$0.27$^{*}$				&	\phantom{$-$}0.69$^{*}$	&	\phantom{$-$}1.02\phantom{$^{*}$}	&	$-$5.38 \\
+	& US-Skr	&	$-$1.55\phantom{$^{*}$}			&	\phantom{$-$}2.51\phantom{$^{*}$}	&	\phantom{$-$}1.80$^{*}$		&	\phantom{$-$}1.69\phantom{$^{*}$}	&	\textbf{$-$0.03$^{*}$}						&	$-$0.19$^{*}$				&	\phantom{$-$}0.70\phantom{$^{*}$}	&	\phantom{$-$}2.21\phantom{$^{*}$}	&	\phantom{$-$}0.44$^{*}$	&	$-$28.56 \\
+	& US-SO2	&	\textbf{\phantom{$-$}1.76\phantom{$^{*}$}}	&	\phantom{$-$}2.41\phantom{$^{*}$}	&	\phantom{$-$}1.81$^{*}$	&	\phantom{$-$}2.09$^{*}$	&	\phantom{$-$}4.14\phantom{$^{*}$}				&	\phantom{$-$}2.32$^{*}$	&	\phantom{$-$}3.69\phantom{$^{*}$}		&	\phantom{$-$}2.32$^{*}$	&	\phantom{$-$}3.66\phantom{$^{*}$}	&	$-$4.53 \\
+\midrule
+\multirow{5}{*}{\rotatebox[origin=c]{90}{\tiny{$r$}}}									& US-Me6	& \phantom{$-$}0.926\phantom{$^{*}$} & \phantom{$-$}0.916$^{*}$ & \phantom{$-$}0.910\phantom{$^{*}$} & \phantom{$-$}0.904\phantom{$^{*}$} & \phantom{$-$}0.908$^{*}$ & \phantom{$-$}0.928$^{*}$ & \phantom{$-$}0.923\phantom{$^{*}$} & \textbf{\phantom{$-$}0.935$^{*}$} & \phantom{$-$}0.929\phantom{$^{*}$} & \phantom{$-$}0.876 \\
+	& US-MMS	& \phantom{$-$}0.794\phantom{$^{*}$} & \textbf{\phantom{$-$}0.812$^{*}$} & \phantom{$-$}0.800\phantom{$^{*}$} & \phantom{$-$}0.816$^{*}$ & \phantom{$-$}0.798\phantom{$^{*}$} & \phantom{$-$}0.815$^{*}$ & \phantom{$-$}0.799\phantom{$^{*}$} & \phantom{$-$}0.813$^{*}$ & \phantom{$-$}0.801\phantom{$^{*}$} & \phantom{$-$}0.778 \\
+	& US-Ne3	& \phantom{$-$}0.878\phantom{$^{*}$} & \phantom{$-$}0.846$^{*}$ & \phantom{$-$}0.834\phantom{$^{*}$} & \phantom{$-$}0.896$^{*}$ & \phantom{$-$}0.892\phantom{$^{*}$} & \phantom{$-$}0.876\phantom{$^{*}$} & \phantom{$-$}0.901$^{*}$ & \phantom{$-$}0.900\phantom{$^{*}$} & \textbf{\phantom{$-$}0.902$^{*}$} & \phantom{$-$}0.895 \\
+	& US-Skr	& \phantom{$-$}0.859\phantom{$^{*}$} & \phantom{$-$}0.868$^{*}$ & \phantom{$-$}0.858\phantom{$^{*}$} & \phantom{$-$}0.882$^{*}$ & \phantom{$-$}0.870\phantom{$^{*}$} & \phantom{$-$}0.887$^{*}$ & \phantom{$-$}0.867\phantom{$^{*}$} & \textbf{\phantom{$-$}0.888$^{*}$} & \phantom{$-$}0.859\phantom{$^{*}$} & \phantom{$-$}0.831 \\
+	& US-SO2	& \phantom{$-$}0.891\phantom{$^{*}$} & \phantom{$-$}0.895$^{*}$ & \phantom{$-$}0.877\phantom{$^{*}$} & \phantom{$-$}0.922$^{*}$ & \phantom{$-$}0.878\phantom{$^{*}$} & \phantom{$-$}0.916$^{*}$ & \phantom{$-$}0.879\phantom{$^{*}$} & \textbf{\phantom{$-$}0.925$^{*}$} & \phantom{$-$}0.895\phantom{$^{*}$} & \phantom{$-$}0.860 \\
+\midrule
+\multirow{5}{*}{\rotatebox[origin=c]{90}{\tiny{NASH}}}									& US-Me6	& \phantom{$-$}0.851\phantom{$^{*}$} & \phantom{$-$}0.809$^{*}$ & \phantom{$-$}0.809$^{*}$ 				& \phantom{$-$}0.816\phantom{$^{*}$} & \phantom{$-$}0.820$^{*}$ & \phantom{$-$}0.854$^{*}$ & \phantom{$-$}0.849\phantom{$^{*}$} & \textbf{\phantom{$-$}0.865$^{*}$} & \phantom{$-$}0.856\phantom{$^{*}$} & \phantom{$-$}0.731 \\
+	& US-MMS	& \phantom{$-$}0.605\phantom{$^{*}$} & \phantom{$-$}0.626$^{*}$ & \phantom{$-$}0.622\phantom{$^{*}$}	& \textbf{\phantom{$-$}0.656$^{*}$} & \phantom{$-$}0.582\phantom{$^{*}$} & \phantom{$-$}0.654$^{*}$ & \phantom{$-$}0.577\phantom{$^{*}$} & \phantom{$-$}0.511$^{*}$ & \phantom{$-$}0.440\phantom{$^{*}$} & \phantom{$-$}0.458 \\
+	& US-Ne3	& \phantom{$-$}0.767\phantom{$^{*}$} & \phantom{$-$}0.702$^{*}$ & \phantom{$-$}0.691\phantom{$^{*}$}	& \phantom{$-$}0.794$^{*}$ & \phantom{$-$}0.784\phantom{$^{*}$} & \phantom{$-$}0.754\phantom{$^{*}$} & \phantom{$-$}0.799$^{*}$ & \phantom{$-$}0.805\phantom{$^{*}$} & \textbf{\phantom{$-$}0.807$^{*}$} & \phantom{$-$}0.684 \\
+	& US-Skr	& \phantom{$-$}0.731\phantom{$^{*}$} & \phantom{$-$}0.734$^{*}$ & \phantom{$-$}0.718\phantom{$^{*}$}	& \phantom{$-$}0.759$^{*}$ & \phantom{$-$}0.750\phantom{$^{*}$} & \textbf{\phantom{$-$}0.779$^{*}$} & \phantom{$-$}0.746\phantom{$^{*}$} & \phantom{$-$}0.779$^{*}$ & \phantom{$-$}0.734\phantom{$^{*}$} & \phantom{$-$}0.430 \\
+	& US-SO2	& \phantom{$-$}0.777\phantom{$^{*}$} & \phantom{$-$}0.786$^{*}$ & \phantom{$-$}0.745\phantom{$^{*}$}	& \textbf{\phantom{$-$}0.831$^{*}$} & \phantom{$-$}0.725\phantom{$^{*}$} & \phantom{$-$}0.816$^{*}$ & \phantom{$-$}0.725\phantom{$^{*}$} & \phantom{$-$}0.830$^{*}$ & \phantom{$-$}0.751\phantom{$^{*}$} & \phantom{$-$}0.674 \\
+\midrule                                                                                                                                                     
+\multirow{5}{*}{\rotatebox[origin=c]{90}{\tiny{EBAL (\%)}}}								& US-Me6	& \phantom{$-$}2.42\phantom{$^{*}$} &  \phantom{$-$}1.69\phantom{$^{*}$} &  \textbf{\phantom{$-$}1.50$^{*}$} 		& \phantom{$-$}2.23$^{*}$ & \phantom{$-$}3.67\phantom{$^{*}$} & \phantom{$-$}2.84$^{*}$	& \phantom{$-$}3.30\phantom{$^{*}$} &  \phantom{$-$}1.90$^{*}$ & \phantom{$-$}2.15\phantom{$^{*}$} & \phantom{$-$}2.62 \\
+	& US-MMS	& \phantom{$-$}1.22\phantom{$^{*}$} &  \textbf{\phantom{$-$}0.75$^{*}$} & \phantom{$-$}0.92\phantom{$^{*}$} 		& \phantom{$-$}1.27$^{*}$ & \phantom{$-$}1.55\phantom{$^{*}$} & \phantom{$-$}1.33$^{*}$	& \phantom{$-$}1.44\phantom{$^{*}$} &  \phantom{$-$}0.77$^{*}$ & \phantom{$-$}1.07\phantom{$^{*}$} & \phantom{$-$}1.74 \\
+	& US-Ne3	& $-$0.29\phantom{$^{*}$} & $-$0.99$^{*}$ & $-$2.07\phantom{$^{*}$} &  \phantom{$-$}0.61\phantom{$^{*}$} 	& \phantom{$-$}0.59$^{*}$ 									  & \textbf{\phantom{$-$}0.00$^{*}$} & \phantom{$-$}0.78\phantom{$^{*}$} &  \phantom{$-$}1.89$^{*}$ & \phantom{$-$}2.20\phantom{$^{*}$} & \phantom{$-$}0.75 \\
+	& US-Skr	& \phantom{$-$}3.99\phantom{$^{*}$} &  \phantom{$-$}2.47\phantom{$^{*}$} &\textbf{\phantom{$-$}2.45$^{*}$}			& \phantom{$-$}4.13$^{*}$ & \phantom{$-$}4.94\phantom{$^{*}$} & \phantom{$-$}4.08$^{*}$	& \phantom{$-$}4.52\phantom{$^{*}$} &  \phantom{$-$}4.03$^{*}$ & \phantom{$-$}4.63\phantom{$^{*}$} & \phantom{$-$}2.96 \\
+	& US-SO2	& \phantom{$-$}0.43\phantom{$^{*}$} &  \phantom{$-$}0.45\phantom{$^{*}$} &\phantom{$-$}0.29$^{*}$			& \phantom{$-$}0.77$^{*}$ & \phantom{$-$}0.93\phantom{$^{*}$} & \phantom{$-$}0.63$^{*}$ & \phantom{$-$}0.75\phantom{$^{*}$} &  \phantom{$-$}0.62\phantom{$^{*}$} & \textbf{\phantom{$-$}0.28$^{*}$} & \phantom{$-$}1.18 \\
+\midrule
+\multirow{5}{*}{\rotatebox[origin=c]{90}{\tiny{$\chi^{2}$ (\%)}}}						& US-Me6	&  \textbf{$-$4.89\phantom{$^{*}$}} & $-$20.14\phantom{$^{*}$} & $-$14.73$^{*}$ & $-$9.17\phantom{$^{*}$} 			& $-$7.92$^{*}$ 			& $-$8.61\phantom{$^{*}$} &  $-$5.33$^{*}$ 						& $-$8.49\phantom{$^{*}$} 			& $-$7.11$^{*}$ & \phantom{$-$}13.52 \\
+	& US-MMS	& $-$15.22\phantom{$^{*}$} & $-$22.81\phantom{$^{*}$} & $-$13.85$^{*}$ & $-$8.05\phantom{$^{*}$} 			& $-$6.49$^{*}$ 			& $-$7.54\phantom{$^{*}$} &  $-$3.27$^{*}$ 						& \phantom{$-$}2.38\phantom{$^{*}$} & \textbf{\phantom{$-$}0.84$^{*}$} & \phantom{$-$}21.93 \\
+	& US-Ne3	& $-$13.47\phantom{$^{*}$} & $-$17.88$^{*}$ & $-$18.44\phantom{$^{*}$} & $-$15.31\phantom{$^{*}$} 			& $-$13.78$^{*}$			& $-$14.19\phantom{$^{*}$} & $-$13.94$^{*}$ 					& $-$12.90\phantom{$^{*}$} 			& \textbf{$-$12.86$^{*}$} & \phantom{$-$}18.67 \\
+	& US-Skr	&  $-$7.48\phantom{$^{*}$} & $-$15.99\phantom{$^{*}$} &  \textbf{$-$5.00$^{*}$} & $-$5.79$^{*}$ 			& $-$10.21\phantom{$^{*}$} 				&  $-$6.23$^{*}$ & $-$10.11\phantom{$^{*}$} 					& $-$5.34$^{*}$ 			& $-$8.54\phantom{$^{*}$} & \phantom{$-$}50.62 \\
+	& US-SO2	&  $-$7.88\phantom{$^{*}$} & $-$12.61\phantom{$^{*}$} &  $-$8.37$^{*}$ & $-$4.24\phantom{$^{*}$} 			& $-$4.14$^{*}$ 			&  $-$2.42$^{*}$ &  $-$2.46\phantom{$^{*}$} 					& $-$5.27\phantom{$^{*}$} 			& \textbf{\phantom{$-$}0.09$^{*}$} & \phantom{$-$}15.03 \\
+\bottomrule
+\end{tabular}}
+\end{sidewaystable}
+
+
+\section{Package tabu}
+
+\newcommand{\nl}{\newline}
+
+Lembre-se:\\
+o ```barra-barra'' termina uma linha em \LaTeX, mas \emph{também} (infelizmente)
+termina uma linha de uma tabela\ldots
+
+\begin{table}
+  \caption{Cronologia das atividades de importação de equipamentos e de medições
+    do projeto\label{tab:cronos}}
+\begin{center}\tabulinesep=3pt
+\begin{tabu} to 0.8\textwidth {XX[4.5r]}
+\toprule
+      Data & Evento  \\
+\midrule
+2017-02-02 & Abertura do processo de importação na UFPR \\
+2017-03-17 & Pagamento do GRU em nome da UFPR\\
+2017-03-27 & Esclarecimentos à procuradoria da UFPR sobre a importação dos sensores \\
+2017-06-17 & Retorno do processo ao Setor de Tecnologia\nl para informação sobre
+fontes de recursos \\
+2017-06-30 & Fechamento de contrato de câmbio \\
+2017-07-28 & Chegada dos equipamentos ao Brasil \\
+2017-08-22 & Reunião com técnico da PETROBRAS responsável\nl pelo acesso ao
+             Reservatório do Verde \\
+2017-09-20 & Autorização de acesso ao reservatório concedida\\
+2017-09-25 & Início da campanha de intercomparação. Instalação de sistemas de
+             aquisição de dados; de 5 GMP343, 2 CS500, 2 81000, 1 CSAT3, 1 IRGASON, e 1
+             LI7500.\\
+2017-09-27 & Reprogramação dos GMP343; reposicionamento dos GMP343 na mesma
+             altura do LI7500 e do IRGASON; instalação de um 3\iro\ painel solar; instalação
+             de uma 6\ira\ bateria; coleta dos dados gravados até então.\\
+2017-09-29 & Manutenção: retirada de baterias para recarga no laboratório.\\
+2017-10-02 & Instalação de painéis solares no teto da tomada
+             d'água. Reprogramação dos GMP343.\\
+2017-10-04 & Visita para coleta de dados. \\
+2017-10-06 & Visita para coleta de dados. \\
+2017-10-11 & Visita para coleta de dados. Manutenção de painéis que se
+             desprenderam com vendaval. Sistema religado apenas nas baterias.\\
+2017-10-13 & Coleta de dados. Baterias retiradas para recarga no laboratório.\\
+2017-10-16 & Reinstalação de painéis solares, e religamento do sistma.\\
+2017-10-18 & Coleta de dados\\
+2017-10-20 & Desmontagem, coleta de dados e fim do experimento de
+intercomparação.\\
+2017-12-12 & Interrupção da autorização de acesso à barragem pela PETROBRÁS. \\
+2018-05-02 & Reinício da autorização de acesso à barragem pela PETROBRÁS. \\
+2018-05-28 & Início da instalação dos mastros. \\
+2018-05-30 & Continuação da instalação de mastros e sensores. \\
+2018-06-04 & Finalização da instalação dos sensores. \\
+2018-06-11 & Início das medições.\\
+2018-06-25 & Manutenção para correção de problemas com o suprimento de energia
+           para os sensores. \\
+2018-06-29 & Solução dos problemas de suprimento de energia e início de
+           aquisição contínua de dados.\\
+\bottomrule
+\end{tabu}
+\end{center}
+\end{table}
+
+
+
+\end{document}
