@@ -1,0 +1,256 @@
+\documentclass[12pt]{article}
+\usepackage[margin=3cm,top=2cm,bottom=1.5cm,paper=a4paper]{geometry}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[brazil]{babel}
+%\usepackage{indentfirst}
+\usepackage{authblk}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[colorlinks=true,%
+   urlcolor=blue,
+   linkcolor=blue,
+   citecolor=blue,
+   filecolor=blue]{hyperref}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{tabu}
+\usepackage{dcolumn}
+\usepackage[version=4]{mhchem}
+
+
+\input{ira.tex}
+
+
+\author[1]{Bruno dos Santos Solheid}
+\author[1,2]{Nelson Luís Dias}
+\author[1,3]{Fernando Augusto Silveira Armani}
+\author[1,4]{Dornelles Vissotto Jr.}
+
+\affil[1]{\small Programa de Métodos Numéricos em Engenharia, Universidade Federal do Paraná}
+\affil[2]{\small Departamento de Engenharia Ambiental, Universidade
+  Federal do Paraná}
+\affil[3]{\small Centro de Estudos do Mar, Universidade Federal do Paraná}
+\affil[4]{\small Departamento de Engenharia e Tecnologia Florestal, Universidade
+  Federal do Paraná}
+
+
+\date{\today}
+\title{Minha 5\ira\ aula, 2020-05-20}
+
+\parindent=0pt
+\parskip=6pt
+
+\begin{document}
+
+\maketitle
+
+\section{Introdução}\label{sec:intro}
+
+Esta disciplina está apresentada em \url{http://nldias.github.io/teaching.html}
+
+\textbf{Nem todos os orientadores gostam de \LaTeX!}
+Na verdade, alguns odeiam\ldots Nós continuamos a trabalhar, mesmo assim.
+
+O ciclo de desenvolvimento envolve entrar no editor,
+fazer modificações, salvar o arquivo, recompilar em LaTeX, e revisualizar no visualizador de pdf.
+
+Mas agora, como é que eu posso dizer que fiz 100\% do trabalho.
+
+\section{Tamanhos de letra}
+
+{\tiny This is tiny}
+
+{\scriptsize This is scriptsize}
+
+{\footnotesize This is footnotesize}
+
+{\small This is small}
+
+{\normalsize This is normalsize}
+
+{\large This is large}
+
+{\Large This is Large}
+
+{\huge This is huge}
+
+{\Huge This is Huge}
+
+\section{Ênfase, negrito, etc.}
+
+\textbf{Isto é negrito}
+
+\textit{Isto é itálico}
+
+\textsl{Isto é ``slanted''}
+
+\underline{Isto é sublinhado}
+
+\renewcommand{\emph}{\underline}
+
+\emph{E finalmente isto é ``emph''}
+
+
+Esta é a minha 4\ira\ aula. \LaTeX\ é um símbolo.
+
+Esta é a minha $4^{a}$ aula.
+
+
+
+
+Na figura \ref{fig:mbook} podemos ver duas páginas de
+um livro feito manualmente na Idade Média. O \texttt{pdflatex}
+``gosta'' mais de figuras nos formatos \texttt{png}, 
+\texttt{jpg} e \texttt{pdf}.
+
+\begin{figure}\centering
+\includegraphics[width=0.6\textwidth]{mbook.jpg}
+\caption{Um livro medieval aberto.\label{fig:mbook}}
+\end{figure}
+
+
+
+O recuo entre janeiro e março deste ano foi verificado na comparação com o quarto trimestre de 2019. O número foi calculado após ajuste sazonal, uma ``compensação'' para comparar períodos diferentes de um ano. Quando a comparação é feita com o resultado do primeiro trimestre de 2019, porém, o IBC-Br indica uma queda menor, de 0{,}28\% (sem ajuste sazonal).  O Produto Interno Bruto (PIB) é a soma de todos os bens e serviços produzidos no país e serve para medir a evolução da economia.
+
+A pandemia do novo coronavírus começou a atingir a economia de forma mais intensa a partir de meados de março, quando foi declarada pela Organização Mundial de Saúde (OMS) no dia 11 de março.
+
+
+Os estados brasileiros começaram a anunciar medidas de distanciamento social também a partir de meados de março --- quando o Distrito Federal suspendeu as aulas. Em 13 de março, São Paulo e Rio de Janeiro anunciaram medidas para limitar a circulação e a concentração de pessoas.
+
+O IBC-BR do Banco Central é um indicador criado para tentar antecipar 
+o resultado do PIB, mas os números oficiais do PIB do primeiro 
+trimestre serão divulgados pelo Instituto Brasileiro de 
+Geografia e Estatística (IBGE) em 29 de maio.
+
+
+Os reflexos da pandemia têm derrubado a economia mundial e colocado o mundo no caminho de uma forte recessão.
+
+O BC informou, nesta semana, BC, que seu cenário básico pressupõe ``queda forte do PIB na primeira metade deste ano'', 
+seguida de uma recuperação gradual a partir do terceiro trimestre de 2020.
+
+O governo, por sua vez, previu uma retração de 4{,}7\% para este ano --- considerando que as medidas de distanciamento social terminarão em maio.
+
+O Banco Mundial e o Fundo Monetário Internacional (FMI) estimam queda do PIB brasileiro de, respectivamente, 5\% e 5{,}3\%.
+
+
+\section{Tabelas em geral: alinha pelo ponto decimal}
+
+O default do modo matemático é usar o tipo itálico:
+\[
+E = mc^2
+\]
+
+Eu posso dizer que a força medida no laboratório foi igual a 95.7 N.
+
+Eu posso dizer que a força medida no laboratório foi igual a $\mathrm{95.7\,N}$.
+
+\newcolumntype{d}[1]{D{.}{,}{#1}}
+
+\begin{table}\centering\footnotesize
+\caption{Constitution of a ``dry'' atmosphere (not including water
+  vapor). The values are approximate, and adjusted to ensure that
+  the molar fractions sum up to 1.\label{tab:ppgas}}
+\begin{tabular}{cd{8}d{8}}
+\hline
+\toprule
+Gas      & \multicolumn{1}{c}{$M_i$}                     & \multicolumn{1}{c}{$x_{i}$}                     \\
+         & \multicolumn{1}{c}{$ (\mathrm{g\,mol^{-1}})$} & \multicolumn{1}{c}{$(\mathrm{mol\,mol^{-1}})$} \\
+\midrule
+\ce{N2}  & 28.0134                     & 0.78078700                  \\
+\ce{O2}  & 31.9988                     & 0.20943200                  \\
+\ce{Ar}  & 39.948                      & 0.00934000                  \\
+\ce{CO2} & 44.0095                     & 0.00041390                  \\
+\ce{Ne}  & 20.1797                     & 0.00001818                  \\
+\ce{He}  & 4.002602                    & 0.00000524                  \\
+\ce{CH4} & 16.0425                     & 0.00000170                  \\
+\ce{Kr}  & 83.798                      & 0.00000110                  \\
+\ce{H2}  & 2.01588                     & 0.00000055                  \\
+\ce{N2O} & 44.0128                     & 0.00000033                  \\
+\midrule
+sum      &                             & 1.00000000                  \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Uma tentativa fazer a tabela \ref{tab:txcresc} solicitada pelo Andrei:
+
+\begin{table}\centering
+\caption{Taxa de crescimento populacional por região: 1900--2005\label{tab:txcresc}}
+\begin{tabular}{ccccccc}
+\toprule
+\multirow[c]{2}{*}{Região} & \multicolumn{6}{c}{Taxa de crescimento} \\
+                           \cline{2-7}
+                           & 1900 & 1905 & 1910 & 1920 & $\cdots$ & 1965 \\
+\midrule
+Região A                   & 8{,}45 & 8{,}45 & 8{,}45 & 8{,}45 & $\cdots$ & 6{,}45 \\
+Região B				   & 6{,}45 & 6{,}45 & 6{,}45 & 6{,}45 & $\cdots$ & 6{,}45 \\
+\bottomrule
+\multicolumn{7}{l}{Fonte: IBGE}\\
+\multicolumn{7}{l}{Nota: Dados Fictícios}
+\end{tabular}
+\end{table}
+
+\section{Package tabu}
+
+\newcommand{\nl}{\newline}
+
+Lembre-se:\\
+o ```barra-barra'' termina uma linha em \LaTeX, mas \emph{também} (infelizmente)
+termina uma linha de uma tabela\ldots
+
+\begin{table}
+  \caption{Cronologia das atividades de importação de equipamentos e de medições
+    do projeto\label{tab:cronos}}
+\begin{center}\tabulinesep=3pt
+\begin{tabu} to 0.8\textwidth {XX[4.5r]}
+\toprule
+      Data & Evento  \\
+\midrule
+2017-02-02 & Abertura do processo de importação na UFPR \\
+2017-03-17 & Pagamento do GRU em nome da UFPR\\
+2017-03-27 & Esclarecimentos à procuradoria da UFPR sobre a importação dos sensores \\
+2017-06-17 & Retorno do processo ao Setor de Tecnologia\nl para informação sobre
+fontes de recursos \\
+2017-06-30 & Fechamento de contrato de câmbio \\
+2017-07-28 & Chegada dos equipamentos ao Brasil \\
+2017-08-22 & Reunião com técnico da PETROBRAS responsável\nl pelo acesso ao
+             Reservatório do Verde \\
+2017-09-20 & Autorização de acesso ao reservatório concedida\\
+2017-09-25 & Início da campanha de intercomparação. Instalação de sistemas de
+             aquisição de dados; de 5 GMP343, 2 CS500, 2 81000, 1 CSAT3, 1 IRGASON, e 1
+             LI7500.\\
+2017-09-27 & Reprogramação dos GMP343; reposicionamento dos GMP343 na mesma
+             altura do LI7500 e do IRGASON; instalação de um 3\iro\ painel solar; instalação
+             de uma 6\ira\ bateria; coleta dos dados gravados até então.\\
+2017-09-29 & Manutenção: retirada de baterias para recarga no laboratório.\\
+2017-10-02 & Instalação de painéis solares no teto da tomada
+             d'água. Reprogramação dos GMP343.\\
+2017-10-04 & Visita para coleta de dados. \\
+2017-10-06 & Visita para coleta de dados. \\
+2017-10-11 & Visita para coleta de dados. Manutenção de painéis que se
+             desprenderam com vendaval. Sistema religado apenas nas baterias.\\
+2017-10-13 & Coleta de dados. Baterias retiradas para recarga no laboratório.\\
+2017-10-16 & Reinstalação de painéis solares, e religamento do sistma.\\
+2017-10-18 & Coleta de dados\\
+2017-10-20 & Desmontagem, coleta de dados e fim do experimento de
+intercomparação.\\
+2017-12-12 & Interrupção da autorização de acesso à barragem pela PETROBRÁS. \\
+2018-05-02 & Reinício da autorização de acesso à barragem pela PETROBRÁS. \\
+2018-05-28 & Início da instalação dos mastros. \\
+2018-05-30 & Continuação da instalação de mastros e sensores. \\
+2018-06-04 & Finalização da instalação dos sensores. \\
+2018-06-11 & Início das medições.\\
+2018-06-25 & Manutenção para correção de problemas com o suprimento de energia
+           para os sensores. \\
+2018-06-29 & Solução dos problemas de suprimento de energia e início de
+           aquisição contínua de dados.\\
+\bottomrule
+\end{tabu}
+\end{center}
+\end{table}
+
+
+
+\end{document}
