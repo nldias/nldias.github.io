@@ -1,0 +1,119 @@
+\documentclass[12pt]{article}
+\usepackage[margin=3cm,top=2cm,bottom=1.5cm,paper=a4paper]{geometry}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[brazil]{babel}
+%\usepackage{indentfirst}
+\usepackage{authblk}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[colorlinks=true,%
+   urlcolor=blue,
+   linkcolor=blue,
+   citecolor=blue,
+   filecolor=blue]{hyperref}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{tabu}
+\usepackage{dcolumn}
+\usepackage[version=4]{mhchem}
+
+
+\input{ira.tex}
+
+
+
+\author[1,2,3]{Nelson Luís Dias}
+
+
+\affil[1]{\small Departamento de Engenharia Ambiental, Universidade Federal do Paraná}
+\affil[2]{\small Programa de Pós-Graduação em Engenharia Ambiental, Universidade Federal do Paraná}
+\affil[3]{\small Programa de Pós-Graduação em Métodos Numéricos em Engenharia, Universidade Federal do Paraná}
+
+
+
+\date{\today}
+\title{7\ira\ aula, 2020-05-25}
+
+%\parindent=0pt
+%\parskip=6pt
+
+\begin{document}
+
+\maketitle
+
+\section{Gnuplot (continuação)}\label{sec:gnuplot}
+
+O que nós já vimos até agora sobre Gnuplot?
+\begin{itemize}
+\item Gnuplot é uma pequena linguagem gráfica de programação.
+\item É preciso instalar o programa, e ele precisa estar no seu caminho
+de programs executáveis (PATH).
+\item Gnuplot interage com \LaTeX, e possibilita o uso de símbolos matemáticos
+nos eixos, em legendas, etc..
+\item Eu fiz um pequeno arquivo de \textit{batch}, denominado \texttt{epslatex.bat} em Windows,
+para automatizar a geração de figuras em pdf.
+\item \texttt{epslatex.bat} exige que nós façamos um \textit{script *.plt} por figura.
+\end{itemize}
+
+%
+% isso é um comentário
+% 
+
+Eis aqui o arquivo epslatex.bat:
+\begin{verbatim}
+rem -------------------------------------------------------
+rem epslatex compiles gnuplot/epslatex scripts 
+rem that use the new standalone option
+rem -------------------------------------------------------
+gnuplot %1.plt
+latex %1         rem run latex (make sure eps is generated)
+dvips %1
+eps2eps %1.ps  %1.eps
+epstopdf %1-inc.eps
+pdflatex %1      rem run pdflatex 
+rem --------------------------------------------------------
+rem check this out *very* carefully
+rem --------------------------------------------------------
+del %1.dvi
+del %1-inc.eps
+del %1-inc.pdf
+del %1.aux
+del %1.log
+del %1.tex
+\end{verbatim}
+
+O primeiro \textit{script} de Gnuplot que nós vimos na aula de hoje
+foi o \texttt{Lambda.plt}. Essa figura mostra um comportamento aproximadamente
+linear da variável $\Lambda^2$ com a temperatura média do ar $\overline{\Theta}$.
+O resultado é mostrado na figura \ref{fig:Lambda}
+
+\begin{figure}\centering
+\includegraphics[width=0.8\textwidth]{Lambda}
+\caption{Um ajuste automático de curvas 
+utilizando Gnuplot.\label{fig:Lambda}}
+\end{figure}
+
+O segundo \textit{script} de Gnuplot foi o \texttt{craebhs.plt},
+que plota precipitações, vazões e estimativas mensais de evapotranspiração
+em alguma bacia hidrográfica. Ele é mostrado na figura \ref{fig:craebhs}.
+
+\begin{figure}\centering
+\includegraphics[width=0.6\textwidth]{craebhs}
+\caption{Precipitações, vazões e evapotranspiração estimada
+pelos modelos CRAE e BHS.\label{fig:craebhs}}
+\end{figure}
+
+Finalmente, o terceiro e último \textit{script} foi o \texttt{square.plt},
+que mostra com fazer gráficos com razão de aspecto 1:1.
+Ele pode ser visto, finalmente, na figura \ref{fig:square}
+
+\begin{figure}\centering
+\includegraphics[width=0.6\textwidth]{square}
+\caption{Uma figura com razão de aspecto 1:1.\label{fig:square}}
+\end{figure}
+
+
+
+\end{document}
