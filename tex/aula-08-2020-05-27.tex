@@ -1,0 +1,169 @@
+\documentclass[12pt]{article}
+\usepackage[margin=3cm,top=2cm,bottom=1.5cm,paper=a4paper]{geometry}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[brazil]{babel}
+%\usepackage{indentfirst}
+\usepackage{authblk}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[colorlinks=true,%
+   urlcolor=blue,
+   linkcolor=blue,
+   citecolor=blue,
+   filecolor=blue]{hyperref}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{tabu}
+\usepackage{dcolumn}
+\usepackage[version=4]{mhchem}
+\usepackage{enumerate}
+
+
+\input{ira.tex}
+
+
+
+\author[1,2,3]{Nelson Luís Dias}
+
+
+\affil[1]{\small Departamento de Engenharia Ambiental, Universidade Federal do Paraná}
+\affil[2]{\small Programa de Pós-Graduação em Engenharia Ambiental, Universidade Federal do Paraná}
+\affil[3]{\small Programa de Pós-Graduação em Métodos Numéricos em Engenharia, Universidade Federal do Paraná}
+
+
+
+\date{\today}
+\title{8\ira\ aula, 2020-05-27}
+
+%\parindent=0pt
+%\parskip=6pt
+
+\begin{document}
+
+\maketitle
+
+\section{Elementos textuais recomendados}\label{sec:dicas}
+
+
+
+
+
+
+\textbf{Atenção: este não é um curso ``clássico'' sobre Metodolgia 
+Científica}
+
+Forma e conteúdo são coisas totalmente diferentes. Forma 
+sem conteúdo não tem valor científico.
+
+ 
+Eu gosto de usar o plural majestático: ``Neste trabalho, 
+nós investigamos a possibilidade de que a Terra seja 
+plana, e discutimos um enorme volume de evidências que 
+apontam para o fato de que ela é redonda''
+
+Não use a primeira pessoa:
+
+Neste trabalho, investiga-se possibilidade de que a 
+Terra seja plana, e discutimos um enorme volume de evidências que apontam para o fato
+de que ela é redonda''
+
+Outro exemplo de exagero, em minha humilde opinião: ``Onde está
+a seção de `Material e Métodos'?''
+
+Elementos importantes, fatos úteis, etc:
+\begin{enumerate}[A\,--]
+\item Conte uma história com começo, meio e fim.
+\item Deixe claro quais são os seus objetivos.
+\item Em algum lugar do texto (às vezes em mais de um)
+deve haver uma revisão de bibliografia que: 
+   \begin{enumerate}[i)]
+   \item Mostre que você domina amplamente o assunto.
+   \item Qual tem sido a evolução do conhecimento? O que se sabe? O que ainda não se sabe? O que é controverso?
+   Etc..
+   \item Você realmente conhece o seu assunto? Isso deve significar conhecer bem os fundamentos (a teoria).
+   \end{enumerate}
+\item Seja claro(a) e tão preciso(a) quanto possível.
+Não obrigue seu leitor a ``ir atrás'' de inúmeras referências para descobrir o que você fez, e como você fez:
+um artigo, tese, relatório, etc., tem que ser \emph{minimamente} autocontido.
+\item Não trate seu leitor nem como um bebê e nem como Deus.
+\item Quando você estiver tratando (ou já tiver obtido)
+o(s) principal(is) resultado(s) do seu trabalho, deixe
+isso bem claro.
+\end{enumerate}
+
+\section{Erros gramaticais e de notação comuns}\label{sec:erros}
+
+Você está se referindo à evapotranspiração potencial.
+No artigo 1, os autores usam $E_p$; no artigo 2
+os autores usam $\mathrm{ETP}$ e no artigo 3,
+os autores usam $E_0$. 
+
+Agora, você vai e na introdução e
+escreve $E_p$. Depois, você escreve Ep.
+Mais algumas linhas, e por estar usando as equações do artigo 2, você usa $\mathrm{ETP}$.
+Finalmente, na conclusão, ``do nada'', você escreve $E_0$.
+
+Em resumo, seja extremamente \textbf{rigoroso} com sua notação.
+
+Dois tipos comuns de erros que eu encontro muito
+entre todo tipo de autor (não somente alunos) são os seguintes:
+\begin{itemize}
+\item Pontuação.
+\item Concordância.
+\end{itemize}
+
+\subsection{Parágrafos, pontuação}.
+
+{\large Correto:}\\[0.125cm]
+
+Maria foi à feira, onde comprou doze maçãs,
+as quais pagou com dinheiro. Em seguida,
+passeando entre os barracas, cheirou as mangas.
+Depois de um tempo, contente com suas compras, 
+voltou para casa.\\[0.5cm]
+
+{\large Incorreto:}\\[0.125cm]
+
+Maria foi à feira, comprou doze maçãs,
+as quais pagou com dinheiro, passeando entre os barracas, cheirou as mangas, contente com suas compras, 
+voltou para casa.
+
+Maria comprou maçãs, laranjas, e abacaxis.
+
+\subsection{Concordância}
+
+\begin{description}
+\item[Errado:] O método de avaliação da epidemia foi testada.
+\item[Certo:] O método de avaliação da epidemia foi \textbf{testado}.
+\item[Errado:] A incidência de desinteria entre
+populações nativas foram muito altas.
+\item[Certo:] A incidência de desinteria entre
+populações nativas \textbf{foi muito alta}.
+\end{description}
+
+\section{Regras de formatação}\label{sec:formato}
+
+Use as convenções e regras prevalentes em sua área
+de pesquisa.
+
+Formate de acordo com os requerimentos da revista ou da instituição, etc.. (E é claro, do seu orientador.)
+
+Boa notícia: quase todas as revistas científicas 
+(ou associações científicas) de boa qualidade e tradicionais possuem 
+classes para \LaTeX.
+
+Idem para referências bibliográficas. 
+
+\section{Famous last words}\label{sec:famous}
+
+Escreva. Leia. Reescreva. Releia.
+Escreva. Releia. Reescreva. Releia. Reescreva \ldots Até que seu texto fique ``certo''. Tudo isso em conjunto configura rigor. Seja rigoroso. O seu texto só pode melhorar com isso.
+
+
+
+
+
+
+\end{document}
