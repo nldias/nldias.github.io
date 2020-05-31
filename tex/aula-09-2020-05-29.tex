@@ -1,0 +1,2127 @@
+% --------------------------------------------------------------------
+% perfismost: a new star is born
+%
+%
+% Nelson Luis Dias
+% 2020-05-29T09:33:00
+% --------------------------------------------------------------------
+\documentclass[a4paper,12pt,oneside]{book}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{lmodern}
+\usepackage[a4paper, lmargin=2.5cm,rmargin=4.5cm,top=3cm,bottom=2cm]{geometry}
+\usepackage[small,compact,pagestyles]{titlesec}
+\usepackage[brazil,american]{babel}
+%\usepackage[defaultlines=4,all]{nowidow}
+\usepackage{booktabs}
+\usepackage{makeidx}
+\usepackage{color}
+\usepackage{comment}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+\usepackage{enumerate}
+%\usepackage{mathtools}
+%\usepackage{textcomp}
+%\usepackage{upquote}
+\usepackage{tabu}
+\usepackage{dcolumn}
+%\usepackage{needspace}
+\usepackage[pdftex,colorlinks=true,%
+   urlcolor=blue,
+   linkcolor=blue,
+   citecolor=blue,
+   filecolor=blue]{hyperref}
+% \usepackage{verbdef}
+% \usepackage{datetime}
+\usepackage[version=4]{mhchem}
+\usepackage{multirow}
+\usepackage[round]{natbib}
+% ---------------------------------------------------------
+% resolve o problema de tenrm
+% ---------------------------------------------------------
+%\usepackage[only,tenrm]{rawfonts}
+% ---------------------------------------------------------
+% fixes font size problems
+% ---------------------------------------------------------
+\usepackage{anyfontsize}
+
+% ---------------------------------------------------------
+% default cmtt
+% ---------------------------------------------------------
+%\renewcommand{\ttdefault}{lmtt}
+\newcommand{\Ro}{\mathrm{Ro}}
+\input{math.tex}
+\input{fixtitle.tex}
+%\input{units.tex}
+%\input{turbul.tex}
+%\input{code.tex}
+%\input{noquote.tex}
+\input{ira.tex}
+
+% ----------------------------------------------------------------------------------------
+% estilo para Python
+% ----------------------------------------------------------------------------------------
+%% \lstdefinestyle{lstpython}{
+%% upquote=true,
+%% numbers=left,
+%% numberstyle=\scriptsize\rmfamily,
+%% basicstyle=\scriptsize\ttfamily,
+%% upquote=true,
+%% aboveskip = \bigskipamount,
+%% language=Python,
+%% breaklines=true,
+%% commentstyle=\ttfamily,
+%% keywordstyle=\underbar,
+%% frame=lines}
+
+
+
+
+
+% ----------------------------------------------------------------------------------------
+% bastam 2 comandos da package titlesec!
+% ----------------------------------------------------------------------------------------
+%% \titleformat{\chapter}                                  % command
+%%    [display]                                            % shape
+%%    {\sffamily\fontsize{24}{24pt}\selectfont\bfseries\raggedright}   % format
+%%    {\fontsize{36}{36pt}\selectfont\thechapter}                      % label
+%%    {0pt}                                                % sep
+%%    {\vspace*{0.5cm}}                                                   % before
+%%    [\titlerule]                                           % after
+%% \titleformat{\section}%
+%%    {\sffamily\fontsize{14}{14pt}\selectfont\bfseries}{\thesection\,--\,}{0pt}{}  
+%% \titleformat{\subsection}%
+%%    {\sffamily\fontsize{12}{12pt}\selectfont\bfseries}{\thesubsection\,--\,}{0pt}{}  
+%% % ----------------------------------------------------------------------------------------
+%% % cabeçalhos e rodapés
+%% % ----------------------------------------------------------------------------------------
+%% \newpagestyle{infront}{\sethead*{}{}{}}
+%% \newpagestyle{summary}{\sethead*{\thepage}{}{Summary}\headrule}
+%% \newpagestyle{preface}{\sethead*{\thepage}{}{Preface}\headrule}
+%% \newpagestyle{inbook}{\sethead[\textbf{\sffamily Basic micrometeorology}][][\thepage]
+%%                               {\thepage}{}{\thesection\,--\,\sectiontitle}\headrule}
+%% \newpagestyle{outbook}{\sethead[\textbf{\sffamily Basic micrometeorology}][][\thepage]
+%%                               {\thepage}{}{\thechapter\,--\,\chaptertitle}\headrule}
+%% \newpagestyle{attend}{\sethead[\textbf{\sffamily References}][][\thepage]
+%%                               {\thepage}{}{References}\headrule}
+%% \newpagestyle{index}{%
+%% \headrule
+%% \sethead[\textbf{\sffamily Basic micrometeorology}][][\thepage]
+%% {\thepage}{}{Index}}
+%% % ----------------------------------------------------------------------------------------
+%% % estes comandos dizem para deixar 12pt antes e depois...
+%% % ----------------------------------------------------------------------------------------
+%% \titlespacing{\section}{0pt}{12pt}{12pt}
+%% \titlespacing{\subsection}{0pt}{12pt}{6pt}
+%% \titlespacing{\subsubsection}{0pt}{12pt}{6pt}
+%% % ----------------------------------------------------------------
+%% % livro define comandos em português, que fica mais bonito
+%% % ----------------------------------------------------------------
+%% %\newcounter{capitulo}             % conta capítulos
+%% \newlength{\comeco}               % tamanho do box contendo número do cap.
+%% \newlength{\sobra}                % diferença para o tamanho do texto
+%% \newlength{\traco}                % espessura dos traços horizontais
+
+%% {\theoremheaderfont{\bfseries}
+%%  \theorembodyfont{\rmfamily\small}
+%%  \theoremprework{\needspace{1cm}\bigskip\hrule height1pt\leavevmode\parindent=0pt}
+%%  \newtheorem{Exe}{Exemplo}[chapter]
+%% }
+
+
+
+%% {\theoremheaderfont{\bfseries}
+%%  \theorembodyfont{\rmfamily\small}
+%%  \newtheorem{Prob}{{\hspace*{-4pt}}}[chapter]
+%% }
+
+%% \newcounter{solcap}
+%% \setcounter{solcap}{0}
+%% \newcounter{solprob}
+%% \newcommand{\nocap}{%
+%% \stepcounter{solcap}
+%% }
+%% \newcommand{\newcap}{%
+%% \setcounter{solprob}{0}
+%% \stepcounter{solcap}
+%% \needspace{5cm}
+%% \noindent\parbox{\textwidth}{\vspace*{1cm}
+%% \noindent\textbf{\Large Chapter \arabic{solcap}}
+%% \vspace*{0.5cm}}
+%% }
+%% \newcommand{\newsol}{%
+%% \stepcounter{solprob}%
+%% \needspace{1cm}
+%% \vspace*{0.25cm}\noindent \textbf{Exercise \arabic{solcap}.\arabic{solprob}}%
+%% }
+
+%% \newcommand{\nosol}{\stepcounter{solprob}%
+%% \noindent\phantom{a}%
+%% }
+
+
+
+
+%% {\theoremheaderfont{\bfseries}
+%%  \theorembodyfont{\rmfamily\small}
+%%  \newtheorem{Proj}{Projeto}[chapter]
+%% }
+
+
+%% {\theoremheaderfont{\bfseries}
+%%  \theorembodyfont{\rmfamily}
+%%  \theoremprework{\needspace{1cm}\bigskip\hrule\leavevmode}
+%%  \theorempostwork{\hrule\bigskip}
+%%  \newtheorem{Teo}{Theorem}[chapter]
+%% }
+
+%% {\theoremheaderfont{\bfseries}
+%%  \theorembodyfont{\rmfamily}
+%%  \theoremprework{\needspace{1cm}\bigskip\hrule\leavevmode}
+%%  \theorempostwork{\hrule\bigskip}
+%%  \newtheorem{Def}{Definition}[chapter]
+%% }
+
+
+%% \newenvironment{Cor}{\noindent\textbf{Corollary}}{}
+
+%% \makeindex
+
+\overfullrule=5mm
+
+
+\begin{document}
+
+%%\pagestyle{infront}
+
+
+\sloppy
+
+%\clubpenalty=10000
+%\widowpenalty=10000
+
+\pagenumbering{arabic}
+\begin{titlepage}
+\title{Basic micrometeorology}
+\author{Nelson Luís Dias}
+\date{\today}
+\maketitle
+\thispagestyle{empty}
+\end{titlepage}
+\setcounter{page}{2}
+
+\tableofcontents
+
+\listoffigures
+
+\listoftables
+
+
+
+\newpage
+
+\selectlanguage{american}
+
+
+\chapter*{Preface}
+
+
+
+Este texto começa com a introdução do conceito de {\em escala}, que é
+fundamental em tudo o que se segue.  Vamos procurar entender a
+globalidade do pro\-ble\-ma descrevendo as várias camadas da atmosfera
+(troposfera, estratosfera, \ldots) e fazendo depois um ``zoom'' na
+Camada-Limite Atmosférica (CLA), que é a parte mais baixa da
+troposfera.  Em seguida, reveremos as equações de Mecânica dos Fluidos
+aplicáveis à CLA , falaremos de turbulência e da sua abordagem
+clássica (decomposição de Reynolds e equações de transporte de
+covariâncias).  Algumas soluções particulares simples destas equações
+proporcionam uma boa idéia da interação das camadas mais altas da
+atmosfera com a CLA.  Estudaremos mais intensamente a parte mais baixa
+da CLA, chamada Camada Superficial (CS).  Na CS, debaixo de algumas
+hipóteses simplificadoras, podemos utilizar a Teoria de Similaridade
+de Monin-Obukhov (SMO), que nos permite des\-cre\-ver uma série de
+grandezas relacionadas com a turbulência de forma extremamente
+simples.  As equações básicas que descrevem a física da turbulência e
+as previsões da Teoria de Similaridade de Monin-Obukhov são utilizadas
+para prever o comportamento das grandezas médias $\overline{u}$, 
+$\overline{T}$ e
+$\overline{q}$ na CS.  Além do comportamento genérico previsto pela teoria
+SMO, dois casos-limite cujo significado físico é importante são
+abordados: a estratificação independente de $z$ numa atmosfera muito
+{\em estável}, e a convecção livre local em uma atmosfera muito {\em
+  instável}.  Com as previsões da teoria sobre o comportamento das
+grandezas médias, é possível então utilizar medições delas para
+calcular os fluxos $\tau$, $H$ e $E$.  Além de alguns métodos que
+utilizam exclusivamente a medição de grandezas médias, apresenta-se ao
+fim do relatório o método da variância, que é um híbrido que utiliza
+tanto grandezas médias como medições de turbulência.
+
+\chapter{Introduction}
+\label{cap:intro}
+
+
+
+\section{The regions of the atmosphere}\label{sec:atmreg}
+           
+
+The atmosphere is a relatively thin layer of gas above the Earth's surface. Upwards of $100\,\mathrm{km}$ above the surface, the density of the atmosphere is very low. Meanwhile, since the Earth's great circle $\mathscr{C}$ is approximately $40\,000\,\mathrm{km}$, if we set the thickness of the atmosphere to $\mathscr{L} = 100\,\mathrm{km}$, the ratio $\mathscr{L}/\mathscr{C}=0{,}0025$ shows how thin the atmosphere really is.
+
+\begin{figure}
+\begin{centering}
+  \vspace*{5cm}
+  %\input{atmos.tex}
+   \caption{Perfil de temperatura numa atmosfera modelo,
+          a $10^{\circ}$N, em junho 
+          \protect\cite[]{houghton--physics}%
+          \label{fig:atmos}}
+\end{centering}          
+\end{figure}
+
+Figure \ref{fig:atmos} shows the main regions of the atmosphere in the first
+$100\,\mathrm{km}$, for a standard atmosphere at $10^\circ\,\mathrm{N}$ in june
+\citep{houghton--physics}: in this case, the troposphere extends to
+$17\,\mathrm{km}$; the stratosphere is a strongly stratified region
+($\deriva{T}{Z}>0$) between $17\,\mathrm{km}$ and $50\,\mathrm{km}$; the
+mesosphere displays a marked temperature fall between $50\,\mathrm{km}$ and
+$95\,\mathrm{km}$; finally, from that point upwards the temperature rises again
+in the termosphere.
+
+
+Existe uma enorme riqueza de fenômenos físicos, que ainda 
+hoje estão sendo estudados, em toda a atmosfera terrestre.
+No entanto, a região mais importante para a vida na Terra,
+e a única que os seres vivos podem ``experimentar'' 
+diretamente, é a troposfera: a montanha mais alta do 
+mundo não chega a $9\,\mathrm{km}$ de altitude.
+A faixa mais diretamente relevante é a Camada-Limite 
+Atmosférica (CLA), que se estende no máximo até cerca de 
+$2\,\mathrm{km}$ de altura (e não altitude) sobre a superfície.
+Isto representa no máximo $2\%$ da figura
+\ref{fig:atmos}.  
+
+
+
+\begin{figure}
+   \begin{centering}
+     \vspace*{5cm}
+     %\input{theta.tex}
+      \caption{perfil de típico de temperatura potencial 
+               durante o dia na CLA (adaptado de
+               \protect\cite[]{stull--introduction})
+         \label{fig:theta}}
+   \end{centering}         
+\end{figure}
+
+Da mesma maneira que utilizamos o perfil de temperatura termodinâmica para
+caracterizar praticamente toda a atmosfera, a CLA é caracterizada pelo perfil de
+temperatura potencial.  Esta será definida na próxima seção; por enquanto, basta
+pensarmos na temperatura potencial como um indicador da densidade do ar: quanto
+maior a temperatura potencial, menor a densidade.  A figura \ref{fig:theta}
+mostra um perfil típico de temperatura potencial durante o dia. Os gradientes de
+temperatura são grandes até cerca de $100\,\mathrm{m}$ de altura, que configuram
+aproximadamente a camada superficial CS; a partir daí, o perfil é praticamente
+constante até cerca de $1100\,\mathrm{m}$ (esta é a camada convectiva CC); daí até
+$1300\,\mathrm{m}$ a temperatura eleva-se gentilmente: esta é a zona de arrasto ZA, onde a
+CLA interage com a ``atmosfera livre'' AL sobre ela, na qual a densidade do ar é
+fortemente estratificada, a intensidade da turbulência muito baixa e valem as
+aproximações invíscidas das equações de Navier-Stokes, que veremos na próxima
+seção sob o nome de ``vento geostrófico''.
+
+Esta breve descrição da atmosfera mostra a grande riqueza 
+de escalas verticais envolvidas.  Neste texto, nós 
+estaremos preocupados essencialmente com os 
+primeiros $100\,\mathrm{m}$ da atmosfera, na camada superficial.
+
+\begin{table}
+\begin{center}
+   \caption{Classificação de escalas horizontais em 
+   meteorologia \label{tab:escalash}}
+   \vspace{0.25cm}
+   \begin{tabular}{lr}
+   \hline
+   Nome   & Dimensão \\
+   \hline
+   macro $\beta$  & $10{.}000\,\mathrm{km}$ \\
+   meso  $\alpha$ &  $~2{.}000\,\mathrm{km}$ \\
+   meso  $\beta$  &  $~~~200\,\mathrm{km}$ \\
+   meso  $\gamma$ &  $~~~~20\,\mathrm{km}$ \\
+   micro $\alpha$ & $~~~~~2\,\mathrm{km}$ \\
+   micro $\beta$  & $~~~200\,\mathrm{\phantom{k}m}$ \\
+   micro $\gamma$ & $~~~~20\,\mathrm{\phantom{k}m}$\\
+   \hline
+   \end{tabular}
+\end{center}   
+\end{table}
+
+
+Como é de se esperar da discussão sobre a razão
+$\mathscr{L}/\mathscr{C}$, as escalas {\em horizontais} sobre
+as quais se observam fenômenos físicos em meteorologia 
+são 
+consideravelmente maiores.  A Tabela
+\ref{tab:escalash} dá uma descrição das escalas 
+horizontais em meteorologia.  Para tornar mais claro o 
+significado da classificação da tabela 
+\ref{tab:escalash}, observe a seguinte lista de 
+fenômenos e suas escalas horizontais correspondentes, 
+dada por Holton 
+\citeyear{holton:introduction}:
+\begin{table}[h]
+   \begin{center}
+\caption{Escalas de movimentos atmosféricos
+\protect\cite[]{holton:introduction}
+\label{tab:escalasH}}   
+\vspace{0.25cm}
+      \begin{tabular}{lr}
+      \hline
+Tipo de movimento & Escala horizontal (m) \\
+\hline
+Caminho livre médio molecular &  $10^{-7}$ \\
+Menores turbilhões turbulentos & $10^{-2}$--$10^{-1}$\\
+Pequenos turbilhões turbulentos & $10^{-1}$--$10^0$ \\
+Vórtices não-turbulentos        & $10^{0}$--$10^{1}$ \\
+Rajadas de vento                & $10^{1}$--$10^{2}$ \\
+Tornados                        & $10^{2}$ \\
+Nuvens Cumulus Nimbus           & $10^{3}$ \\
+Frentes                         & $10^{4}$ \\
+Furacões                        & $10^{5}$ \\
+Ciclones sinóticos              & $10^{6}$ \\
+Ondas planetárias               & $10^{7}$ \\
+\hline
+      \end{tabular}
+   \end{center}
+\end{table}
+
+No nosso caso, estaremos trabalhando dentro das 
+fronteiras da micrometeorologia: nossas escalas 
+horizontais são da ordem de $2\,\mathrm{km}$ ou menores
+(micro-$\alpha$), e nossas escalas 
+verticais da ordem da 
+espessura da camada superficial, cerca de $100\,\mathrm{m}$,
+ou menores.
+Este é o domínio por excelência da turbulência: 
+movimentos turbulentos na atmosfera possuem escalas 
+desde algumas centenas de metros (na 
+horizontal) até poucos milímetros, que é a escala onde a 
+turbulência é dissipada por efeitos viscosos.
+A modelação matemática da CLA é o assunto da próxima 
+seção.
+
+\section{The importance of the surface fluxes}\label{sec:importance}
+
+A great deal of the physical evolution of the atmosphere is influenced by the
+  exchange of mass, momentum and energy with the surface of the Earth. The
+  surface of these quantities are the \emph{surface fluxes}, and their knowledge
+  is essential for applications in meteorology, hydrology and environmental
+  sciences in general. In particular, the values of the \emph{greenhouse gas}
+  surface fluxes are needed to predict their impact on global warming and
+  climate change.
+
+
+A emissão de gases de efeito estufa (GEE) da superfície da Terra para a
+atmosfera é hoje, reconhecidamente, um dos grandes problemas ambientais que
+enfrentamos.  O problema é global, tornando necessária a negociação
+internacional de limites para as emissões, bem como o desenvolvimento
+internacional de metodologias que sejam consensualmente aceitas para estimar
+estas emissões.
+
+
+Uma das abordagens para a estimativa dos fluxos destes gases é a realização de
+medições micrometeorológicas. Ao evitar a complexidade dos processos que ocorrem
+na superfície ou abaixo dela (seja da água ou do solo/vegetação), e ao integrar
+as emissões e capturas de GEE tanto na vertical quanto sobre o comprimento de
+pista do vento, medições micrometeorológicas de GEE podem dar respostas
+importantes sobre o valor dos fluxos superficiais, seu padrão horário e sazonal,
+e sua relação com outras grandezas importantes tais como temperaturas do ar,
+água e solo, a qualidade da água, o tipo de vegetação, etc...
+
+
+
+Medições micrometeorológicas de gases de efeito estufa em geral consistem em
+medições de grandezas atmosféricas relativamente próximo da superfície.
+Convencionalmente, as medições são divididas em ``blocos'', que podem ser tão
+curtos quanto 10 minutos, ou tão longos quanto 1 hora. Dentro de cada bloco, é
+usual supor a estacionariedade das séries temporais medidas. As medições podem
+ser realizadas por sensores relativamente lentos, quando então ``médias'' são
+obtidas, ou com sensores suficientemente rápidos para capturar uma parte
+signficativa das frequências associadas à turbulência atmosférica.  Neste último
+caso, estatísticas da turbulência dentro do bloco, tais como desvios-padrão,
+covariâncias, funções de correlação cruzada e espectros podem ser medidos.
+
+
+
+Medições de grandezas médias estão associadas ao método fluxo-gradiente (MFG)
+para a estimativa de fluxos.  Medições de turbulência estão associadas ao método
+de medição de covariâncias turbulentas (MCT).  
+
+O MFG é mais antigo, e envolve mais hipóteses, do que as ``medições diretas'' 
+realizadas pelo MCT.  Na verdade, como veremos, estas medições não são tão diretas assim,
+e o MCT também envolve um grande número de hipóteses, embora talvez não tão restritivas
+quanto as do MFG.  Devido a dificuldades tecnológicas e custo, o MFG ainda é amplamente
+utilizado para a estimativa de fluxos de gases tais como o CH\sub{4} e o
+N\sub{2}O, para os quais medições (principalmente de longo prazo) de flutuações
+turbulentas ainda são problemáticas.
+
+
+O método de medição de covariâncias turbulentas (MCT), originalmente desenvolvido
+para a medição dos fluxos de quantidade de movimento, calor sensível e massa de
+vapor d'água, possui uma série de características que o tornam uma opção
+interessante para a medição de fluxos de GEE: medições contínuas de fluxos horários
+ou de 30 minutos são possíveis; as medições possuem uma representatividade espacial
+da ordem de centenas de metros corrente acima da torre de medição; e as tecnologias
+de medição envolvidas estão hoje (2011) razoavelmente bem desenvolvidas e possuem
+custos acessíveis.
+
+
+
+
+
+
+
+\chapter[Atmospheric thermodynamics]{A primer on the thermodynamics of
+  the
+  Atmospheric Boundary Layer}\label{cap:abl-thermo}
+
+
+
+
+
+\section{The ideal gas law and specific heats for a pure substance}\label{sec:pVnRT-pure}
+
+The ideal gas law applies well for typical conditions of 
+the troposphere. For a \emph{pure substance}, it is\index{
+ideal gas law} \begin{equation}
+  pV = nR^{\#}T,\label{eq:tudo}
+\end{equation}
+where $p$ is pressure, $V$ is the volume occupied by the 
+gas, $n$ is the number of moles, $R^{\#} = 8.314\,462\,
+618 \,15\, \mathrm{J\,mol^{-1}\,K^{-1}}$ (in the SI) is t
+he u niversal gas constant\index{gas constant!universal }
+, and $T$ is thermodynamic temperature. Still for a pure 
+substance, (\ref{eq:tudo}) can also be written as 
+\begin{align}
+p &= n\frac{R^{\#}}{V} T 
+   = \frac{m}{M}\frac{R^{\#}}{V} T
+   = \frac{m}{V}\frac{R^{\#}}{M} T\;\Rightarrow\nonumber\\
+p &= \rho R T. \label{eq:prhoRt}
+\end{align}
+Above, $M$ is the molar mass\index{molar mass}; $m$ is the mass of the gas, which is related to the number of
+moles by
+\begin{equation}
+m = nM; \label{eq:mnM}
+\end{equation}
+the gas constant is
+\begin{equation}
+R = \frac{R^{\#}}{M},\label{eq:RRM}
+\end{equation}
+which depends on the specific gas through $M$ in
+\ref{eq:RRM}; and
+\begin{equation}
+\rho = \frac{m}{V} \label{eq:def-rho}
+\end{equation}
+is the density; its reciprocal 
+\begin{equation}
+  \vsp = \frac{1}{\rho}\qquad v=\frac{1}{\rho}\label{eq:def-vsp}
+\end{equation}
+is the \emph{specific volume} $\vsp$. Note that (\ref{eq:prhoRt}) is
+more useful than (\ref{eq:tudo}) in practice: $V$ does not
+appear in it, and it only involves intensive quantities (pressure,
+density and temperature), so it applies at every point in the atmosphere.
+
+
+
+
+%\section{Thermodynamics of a pure substance}\label{sec:basic-res}
+
+
+
+The perfect gas law in the form (\ref{eq:tudo}) or (\ref{eq:prhoRt})
+is an example of a state equation in
+thermodynamics. For a \emph{pure substance},
+then, the state equation takes one of the forms
+\[
+p = p(\vsp,T) \qquad\text{or}\qquad 
+\vsp = \vsp(p,T) \qquad \text{or}\qquad
+T = T(p,\vsp).
+\]
+For atmospheric gases, the lower case letters indicate specific
+quantities (per unit mass or unit volume), and are more convenient since we will not usually
+treat individual ``systems'' or ``lumps'' of air.
+
+Two important thermodynamical functions are the specific internal energy
+$\ine$ and the specific enthalpy $\ent$ defined by
+\begin{equation}
+\ent = \ine + p\vsp. \label{eq:def-ent}
+\end{equation}
+For a pure substance,
+they are functions of two variables, chosen between $p$, $\vsp$ and $T$. We usually
+write
+\begin{align}
+\ine &= \ine(\vsp,T), \label{eq:ein}\\
+\ent &= \ent(p,T), \label{eq:ent}
+\end{align}
+since these pairs lead to useful definitions of measurable quantities such as
+specific heats.  Equations (\ref{eq:ein}) and (\ref{eq:ent}) lead to perfect
+differentials
+\begin{align}
+\md \ine &= \left(\parder{\ine}{\vsp}\right)_T\md{\vsp} + \left(\parder{\ine}{T}\right)_{\vsp}\md{T},\label{eq:dein}\\
+\md \ent &= \left(\parder{\ent}{p}\right)_T \md{p} + \left(\parder{\ent}{T}\right)_p\md{T}.\label{eq:dent}
+\end{align}
+
+The specific heats at constant volume and constant temperature are defined by
+\begin{align}
+c_{\vsp} &= \left(\parder{\ine}{T}\right)_{\vsp}, \label{eq:def-cv}\\
+c_p &= \left(\parder{\ent}{T}\right)_p. \label{eq:def-cp}
+\end{align}
+The subscripts $\vsp$ and $p$ on the right-hand side of the equations above are used
+in thermodynamics as reminders that $\ine$ is being taken as a function of
+$\vsp,T$, and that $\ent$ is being taken as a function of $p,T$.
+
+For a perfect gas, from (\ref{eq:prhoRt}) and (\ref{eq:def-vsp}), the
+equation of state takes the form
+\begin{equation}
+p\vsp = RT, \label{eq:pvRT}
+\end{equation}
+where $R$ is a gas constant specific for the pure substance and it is
+possible to show that in this case $\ine$ and $\ent$ are functions of
+$T$ only \citep{adkins--equilibrium}. Then,
+(\ref{eq:def-cv})--(\ref{eq:def-cp}) become ordinary
+derivatives. Also,
+\begin{align}
+\left(\parder{\ent}{T}\right)_p &=
+    \left(\parder{}{T}\left[ \ine + p\vsp\right]\right)_p\nonumber \\
+    &= \left(\parder{\ine}{T}\right)_p + p\left(\parder{\vsp}{T}\right)_p\nonumber \\
+    &= \mderiva{\ine}{T}+ p\frac{R}{p}\;\Rightarrow\nonumber\\
+c_p &= c_{\vsp} + R. \label{eq:cpcvR}
+\end{align}
+Physically, $c_p > c_{\vsp}$ due to the extra energy necessary for the expansion of
+  the air against the constant pressure $p$.
+
+
+
+
+
+\section{The atmosphere as a mixture of ideal gases}\label{sec:mix-gases}
+
+The atmosphere however is not a pure substance, but a mixture of
+gases. The question then is how (\ref{eq:tudo}) can be reasonably
+extended to account for mixtures.  In fact, from now on, often when we
+use one of (\ref{eq:tudo})--(\ref{eq:def-vsp}), we will be referring
+to the total atmospheric pressure $p$ (of a mixture of gases), the
+total density $\rho$, etc..
+
+
+
+Therefore, we start by requiring that (\ref{eq:tudo}) \emph{apply for
+  the mixture}; then, the total number of moles, $n$, is the sum of
+the number of moles of each individual constituent. Let $i$ be the
+index for each gas in a mixture; we have
+\begin{equation}
+n = \sum_{i} n_i,\label{eq:total-n}
+\end{equation}
+where $n_i$ is the number of moles of gas $i$.
+
+We want the perfect gas law to apply for each constituent as well, and
+if we substitute (\ref{eq:total-n}) into (\ref{eq:tudo}), the question
+is what to do with the left-hand side of (\ref{eq:tudo}). There are
+two possibilities: the model of partial pressures, and the model of
+partial volumes. In the first case, we specify for each gas
+\begin{equation}
+p_i V = n_i R^{\#}T.\label{eq:gas-pi}\\
+\end{equation}
+In this model all gases occupy a common volume $V$, each one exerting its
+own partial pressure $p_i$, such that the total 
+pressure is
+\begin{equation}
+p = \sum_{i} p_{i}.\label{eq:sum-p-chi}
+\end{equation}
+In the second case,
+\begin{equation}
+pV_i = n_i R^{\#} T,\label{eq:gas-vi}
+\end{equation}
+and now all gases are subject to the same pressure $p$, each one
+occuping, nominally, a partial volume $V_i$, with
+\begin{equation}
+V = \sum_{i} V_i.\label{eq:sum-V-chi}
+\end{equation}
+
+
+In both cases, summing the individual equations of state recovers the
+perfect gas law for the mixture. For example, starting from
+(\ref{eq:gas-pi}),
+\begin{align*}
+  \sum_{i} \left( p_i V \right) &= \sum_i \left(n_i R^{\#}T\right),\\
+  \left(\sum_{i} p_i  \right)V &= \left( \sum_i  n_i\right)R^{\#}T,\\
+  p V &= nR^{\#}T
+\end{align*}
+(recovering (\ref{eq:tudo})), and similarly for (\ref{eq:gas-vi}).
+
+
+
+From (\ref{eq:tudo}), (\ref{eq:gas-pi}) and (\ref{eq:gas-vi}), it
+follows that
+\begin{equation}
+x_i = \frac{p_i}{p} = \frac{V_i}{V} = \frac{n_i}{n}\label{eq:fracoes-gas}
+\end{equation}
+defines a concentration (traditionally expressed in \%,
+parts per million (ppm), parts per billion (ppb), etc.) either in
+partial pressure fraction, partial volume fraction, or \emph{mole
+  fraction}.  
+The gas law for each constituent can also be written
+\begin{align}
+p_i &= n_i\frac{R^{\#}}{V} T 
+       = \frac{m_i}{M_i}\frac{R^{\#}}{V} T
+       = \frac{m_i}{V}\frac{R^{\#}}{M_i} T\;\Rightarrow\nonumber\\
+p_i &= \rho_i R_i T,\label{eq:prhoRt-chi}
+\end{align}
+where (as before for a pure substance)
+\begin{equation}
+m_i = n_i M_i \label{eq:mnMi}
+\end{equation}
+and
+\begin{align}
+  \rho_i &= m_i/V,\label{eq:def-rho-chi}\\
+  \vsp_i &= \frac{1}{\rho_i},\label{eq:def-vsp-chi}
+\end{align}
+are the density or the specific mass (with mass $m_i$ occuping the
+volume $V$) and the specific volume respectively of the gas $i$,
+and $M_i$ is the molar mass of gas $i$. In (\ref{eq:prhoRt-chi}),
+\begin{equation}
+R_i = \frac{R^{\#}}{M_i} \label{eq:Rchidef}
+\end{equation}
+is the gas constant for gas $i$.
+
+Once more,  (\ref{eq:prhoRt}) holds for the
+mixture. To see how, note that the total mass of the mixture is
+\begin{equation}
+  m = \sum_{i} m_i;\label{eq:mass-total}
+\end{equation}
+and similarly for the total density:
+\begin{equation}
+\rho = \frac{m}{V} = \frac{\sum_i m_i}{V} = \sum_i \frac{m_i}{V} =
+\sum_i \rho_i.\label{eq:rho-total}
+\end{equation}
+We will also need to define the \emph{mass concentration}, or
+\emph{mass fraction} of each
+constituent,
+\begin{equation}
+c_i \equiv \frac{m_i}{m}=\frac{\rho_i}{\rho}.\label{eq:def-c-chi}
+\end{equation}\index{concentration!mass}\index{fraction!mass}
+With (\ref{eq:mass-total})--(\ref{eq:rho-total}) in hand, we sum
+(\ref{eq:prhoRt-chi}) to obtain
+\begin{align*}
+  \sum_{i} p_i &= \sum_{i} \rho_i R_i T,\\
+  p &= \left( \sum_{i} \rho_i R_i \right)T \equiv \rho R T.
+\end{align*}
+This \emph{defines} the gas constant $R$ of the mixture; now
+\begin{align}
+  R &= \frac{\sum_{i} \rho_i R_i}{\rho}\nonumber \\
+  &= \frac{\sum_{i} \frac{m_i}{V}R_i}{\frac{m}{V}}\nonumber\\
+  &= \sum_{i} \frac{m_i}{m} R_i = \sum_{i} c_i R_i. \label{eq:cchi-Rrchi}
+\end{align}\index{gas constant!of a mixture}
+Thus, given the mass concentrations, we can calculate the equivalent
+gas constant.
+
+The \emph{mean molar mass} of the mixture is
+\begin{equation}
+  M = \sum_{i} x_i M_i = \frac{\sum_i n_i M_i}{n} = \frac{m}{n},\label{eq:mnMagain}
+\end{equation}\index{molar mass!mean}
+which recovers (\ref{eq:mnM}). This finally allows us to close the
+circuit to recover (\ref{eq:RRM}) for the mixture. From (\ref{eq:cchi-Rrchi}),
+\begin{align}
+  R &= \frac{1}{m} \left( \sum_i m_i R_i\right)  \nonumber \\
+    &= \frac{1}{m} \left( \sum_i n_i M_i R_i\right)  \nonumber \\
+    &= \frac{1}{m} \left( \sum_i n_i R^{\#}\right) = \frac{1}{m}
+       \left( \sum_i n_i\right) R^{\#} \nonumber \\
+    &= \frac{n}{m} R^{\#}  = \frac{R^{\#}}{M}, \label{eq:RRMagain}
+\end{align}
+by virtue of (\ref{eq:mnMagain}), which recovers (\ref{eq:RRM}).
+
+
+
+\section{Concentrations}\label{sec:concentrations}
+
+\index{concentration}
+
+
+
+A relationship between $x_i$ and $c_i$ can now be readily obtained:
+\begin{equation*}
+  x_i = \frac{n_i}{n} = \frac{\frac{m_i}{M_i}}{\frac{m}{M}} = \frac{m_i}{m}\frac{M}{M_i},
+\end{equation*}
+or
+\begin{equation}
+x_i M_i = c_i M.\label{eq:xici}
+\end{equation}
+
+
+
+
+Other concentration measures are also in use in meteorology, and need
+to be defined. The \emph{mixing ratio}\index{mixing ratio} can be expressed either as
+a \emph{mole ratio},
+\begin{equation}
+  \eta_i = \frac{n_i}{n - n_i},\label{eq:def-mole-ratio}
+\end{equation}\index{mixing ratio!mole ratio}
+or as a \emph{mass ratio}
+\begin{equation}
+  r_i = \frac{m_i}{m - m_i}.\label{eq:def-mass-ratio}
+\end{equation}\index{mixing ratio!mass ratio}
+It is easy to convert mass fractions
+$c_i$ to mixing (mass) ratios $r_i$ and vice-versa:
+\begin{align}
+  r_i &= \frac{\rho_i}{\rho - \rho_i} = \frac{\frac{\rho_i}{\rho}}{1 - \frac{\rho_i}{\rho}};\nonumber\\
+  r_i &= \frac{c_i}{1 - c_i}\; \Rightarrow \label{eq:citori}\\
+  c_i &= \frac{r_i}{1 + r_i}.\label{eq:ritoci}
+\end{align}
+
+The mixing ratio, therefore, is the ratio of the amount (either in
+moles or in mass) of substance $i$ to the amount of all \emph{other}
+substances. It follows that for any substance \emph{other than} water
+vapor, the denominator includes the amount of water vapor present in
+the air at the time of measurement. For this reason, \emph{when $i$ is not
+water vapor}, (\ref{eq:def-mole-ratio})--(\ref{eq:def-mass-ratio}) are
+often called \emph{wet mixing ratios}.
+
+
+
+%% For a temperature $T = 288.15\,\mathrm{K}$ ($15\,^\circ\mathrm{C}$)
+%% and atmospheric pressure $p = 101\,325\,\mathrm{Pa}$ for a standard
+%% atmosphere \citep{coesa1976standard},
+We list on table \ref{tab:ppgas}
+the molar fractions of several atmospheric gases in
+$\mathrm{g\,m^{-3}}$ in a \emph{dry} atmosphere (a fictitious
+atmosphere without water vapor). The $M_i$ values were obtained from
+\cite{nist2020search}. The $x_i$ values are given in
+\cite{dias2020efeito}, and they are \emph{approximations}, based on
+several existing references \citep{iribarne.godson--atmospheric,
+  coesa1976standard, wallace2006atmospheric,
+  wikipedia--atmosphere-of-earth}; the values of $x_i$, particularly
+for \ce{CO2}, are updated to the most recent (as of \the\year)
+available data.  Morever, the values have been manually adjusted to
+ensure that
+\begin{equation}
+  \sum_i x_i = 1 \label{eq:sum-xi-1}.
+\end{equation}
+
+
+
+
+\newcolumntype{d}[1]{D{.}{.}{#1}}
+
+\begin{table}\centering\footnotesize
+\caption{Constitution of a ``dry'' atmosphere (not including water
+  vapor). The values are approximate, and adjusted to ensure that
+  the molar fractions sum up to 1.\label{tab:ppgas}}
+\begin{tabular}{cd{8}d{8}}
+\hline
+\toprule
+Gas      & \multicolumn{1}{c}{$M_i$}                     & \multicolumn{1}{c}{$x_{i}$}                     \\
+         & \multicolumn{1}{c}{$ (\mathrm{g\,mol^{-1}})$} & \multicolumn{1}{c}{$(\mathrm{mol\,mol^{-1}})$} \\
+\midrule
+\ce{N2}  & 28.0134                     & 0.78078700                  \\
+\ce{O2}  & 31.9988                     & 0.20943200                  \\
+\ce{Ar}  & 39.948                      & 0.00934000                  \\
+\ce{CO2} & 44.0095                     & 0.00041390                  \\
+\ce{Ne}  & 20.1797                     & 0.00001818                  \\
+\ce{He}  & 4.002602                    & 0.00000524                  \\
+\ce{CH4} & 16.0425                     & 0.00000170                  \\
+\ce{Kr}  & 83.798                      & 0.00000110                  \\
+\ce{H2}  & 2.01588                     & 0.00000055                  \\
+\ce{N2O} & 44.0128                     & 0.00000033                  \\
+\midrule
+sum      &                             & 1.00000000                  \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+
+
+We are now in a position to calculate the gas constant for \emph{dry
+  air}, $R_d$, by means of (\ref{eq:mnMagain})--~(\ref{eq:RRMagain}),
+using the values in table \ref{tab:ppgas}, obtaining
+\begin{equation}
+R_d = 287.0429\,\mathrm{J\,kg^{-1}\,K^{-1}}.\label{eq:Rdvalue}
+\end{equation}
+This value is slightly less than the one adopted for the standard 1976
+atmosphere ($R_d = 287.0569$), which is compatible with
+\cite{iribarne.godson--atmospheric}'s table I-4. Note however that
+there has been a steady increase in atmospheric \ce{CO2} since the
+publication of the 1976 U. S. Standard Atmosphere, so besides not
+being too different from the \cite{coesa1976standard} figure, the
+value adopted here is probably closer to the current (\the\year) state
+of the atmosphere.
+
+
+
+
+
+
+
+
+
+
+\section{Moist air}\label{sec:moist-air}
+
+
+Note that the equations of section \ref{sec:pVnRT-pure} are not
+strictly valid for atmospheric air, which is not a \emph{pure}
+substance; rather, it is a mixture of many gases. Each new constituent
+makes the thermodynamical equations more complex; in particular,
+functions of state such as $\ine$ and $\ent$ then become also
+functions of the concentrations of each new constituent.
+
+
+
+We will not follow the rigorous path of treating the atmosphere as a
+mixture of several gases and writing down the full thermodynamical
+equations for that mixture; instead, we will consider ``dry air'',
+discussed in sections \ref{sec:mix-gases}--\ref{sec:concentrations}
+and will introduce various humidity indices for the concentration of
+water vapor (the most important varying component). 
+
+Consider now a certain volume $V$, composed of initally dry air with
+mass $m_d$, total number of moles $n_d$, pressure $p_{d}$, and density
+$\rho_d$, to which is added water vapor with mass $m_v$ and $n_v$
+moles.  The equations developed in section \ref{sec:mix-gases} apply
+for moist air. Following (\ref{eq:gas-pi}), each gas component exerts
+its own partial pressure as a funcion of temperature $T$ and number of
+moles $n_i$. If water vapor is added isothermically, the total
+pressure after its addition will increase by \emph{the partial
+  pressure of water vapor}, which, from (\ref{eq:gas-pi}), is
+\begin{equation}
+  e = \frac{1}V n_v R^{\#} T.
+\end{equation}
+Strictly speaking, we should have used $p_v$ instead of $e$ above, but
+it is standard in meteorology to call the partial pressure of water
+vapor $e$, and we will follow that practice.
+
+
+The water vapor content of the air, however, is highly variable in the
+atmosphere; also, in scalar turbulent flux measurements it is often
+better to employ concentrations measured in (an equivalent) dry
+atmosphere \cite[see, for
+  example,][]{butenhoff2002correction}. Therefore, we revisit several
+concentration defintions with respect to the \emph{dry} components only.  For the
+mole fraction we now have the \emph{dry} pressure, volume and molar
+ratios
+\begin{equation}
+  x_{di} = \frac{p_i}{p_d} = \frac{V_i}{V_d} =
+  \frac{n_i}{n_d}\qquad (i \ne v)\label{eq:xdi}
+\end{equation}
+and the \emph{dry} mass fraction or mass concentration,
+\begin{equation}
+c_{di} = \frac{\rho_i}{\rho_d}\qquad (i\ne v).\label{eq:cdi}
+\end{equation}
+Above, note that after addition of water vapor, the volume of the
+\emph{dry} constituents will be $V_d < V$.
+We also have the \emph{dry} mixing ratios
+\begin{equation}
+  \eta_{di} = \frac{n_i}{n_d - n_i},\qquad (i\ne v)\label{eq:def-dry-mole-ratio}
+\end{equation}
+and
+\begin{equation}
+  r_{di} = \frac{m_i}{m_d - m_i}\qquad (i\ne v).\label{eq:def-dry-mass-ratio}
+\end{equation}
+
+Provided the relative concentrations of the dry components remain
+unaltered, the previous calculations of dry air properities, $M_d$ and
+$R_d$ (the mean molecular mass and the gas constant of dry air,
+respectively) also hold in a moist atmosphere. Running the risk of
+being tedious, let us verify this. The total pressure now is
+\begin{equation}
+  p = p_d + e.\label{eq:p-in-moist}
+\end{equation}
+where $p_d$ is calculated as
+\begin{equation}
+  p_d =  \sum_{i\ne v} p_i = \sum_{i\ne v} \rho_i R_i T \equiv \rho_d R_d T.
+  \label{eq:Rd-def-again}
+\end{equation}
+As before, (\ref{eq:Rd-def-again}) defines $R_d$. Therefore, the value
+of the dry gas constant in a moist atmosphere is
+\begin{equation}
+  R_d = \frac{\sum_{i \ne v} \rho_i R_i}{\rho_d}
+      = \sum_{i \ne v} \frac{\rho_i}{\rho_d} R_i = \sum_{i \ne v}
+      c_{di}R_i,
+      \label{eq:Rd-in-moist}
+\end{equation}
+where the weights of the specific gas constants $R_i$ are now the dry
+mass concentrations $c_{di}$.   Proceeding,
+\begin{align}
+  R_d &= \frac{1}{m_d} \sum_{i \ne v} m_i R_i \nonumber \\
+  &= \frac{1}{m_d} \sum_{i \ne v} n_i M_i R_i\nonumber \\
+  &= \frac{1}{m_d} \sum_{i \ne v} n_i R^{\#} = \frac{1}{m_d} \left(
+  \sum_{i\ne v} n_i\right)R^{\#}\nonumber \\
+  &= \frac{n_d}{m_d}R^{\#}\label{eq:Rd-from-ndmd-moist}
+\end{align}
+But the mean molar mass of dry air in the moist atmosphere is, by
+definition,
+\begin{equation}
+  M_d = \sum_{i \ne v} x_{di} M_i = \frac{\sum_{i\ne v}n_i M_i}{n_d}
+  =  
+  \frac{m_d}{n_d}
+  \label{eq:Md-in-moist}
+\end{equation}
+so that, as before,
+\begin{equation}
+  R_d = \frac{R^{\#}}{M_d}.\label{eq:RRMd}
+\end{equation}
+Also note that if the relative concentrations of the dry components do
+not change, then the $x_{di}$'s in (\ref{eq:Md-in-moist}) are the
+same as the $x_i$'s in table \ref{tab:ppgas}, which proves the assertion that
+in this case the values of $M_d$ and $R_d$ do not change.
+
+
+
+
+With these results in hand, we can simplify calculations substantially
+by dividing air occupying $V$ with total mass $m$ into a dry component
+and water vapor, \textit{viz.}
+\begin{align}
+  m &= m_d + m_v, \nonumber \\
+\frac{m}{V} &= \frac{m_d}{V} + \frac{m_v}{V}, \nonumber \\
+\rho &= \rho_d + \rho_v,\label{eq:total-approx-rho}
+\end{align}
+where $\rho_v$ is the water vapor density.  In itself, $\rho_v$ is an
+index of water vapor concentration; in meteorology, it is called
+\emph{the absolute humidity}. Using (\ref{eq:Rchidef}) with $M_v =
+\mathrm{18.0153\, \mathrm{g\,mol^{-1}}}$, we find that
+\begin{equation}
+R_v=461.5230\,\mathrm{J\,kg^{-1}\,K^{-1}}\label{eq:Rvvalue}
+\end{equation}
+is the gas constant for water vapor\index{gas constant!water vapor}.
+From (\ref{eq:prhoRt-chi}), the partial pressure of water vapor is
+\begin{equation}
+e = \rho_v R_v T. \label{eq:par-e}
+\end{equation}
+
+
+
+
+The \emph{specific humidity} $q$ is the same as the mass fraction for
+water vapor, $c_v$ (see (\ref{eq:def-c-chi})) and is defined as
+\begin{equation}
+q = \frac{\rho_v}{\rho}. \label{eq:def-sp-hum}
+\end{equation}
+Again, in meteorology it is standard to use $q$ and not $c_v$ (the latter
+is also easy to confuse with the specific heat at constant volue,
+$c_\vsp$, and will be avoided).
+Summing (\ref{eq:Rd-def-again}) and (\ref{eq:par-e}), one obtains
+\begin{align}
+ p &= \left( \rho_d R_d + \rho_v R_v\right)T\nonumber\\
+   &= \rho\left( \frac{\rho_d}{\rho}R_d + \frac{\rho_v}{\rho}R_v\right)T\nonumber\\
+   &= \rho R_d\left( \frac{\rho_d}{\rho} + \frac{\rho_v}{\rho}\frac{R_v}{R_d}\right)T\nonumber\\
+   &= \rho R_d\left( (1-q) + \frac{R_v}{R_d}q\right)T. \label{eq:PRdvdT}
+\end{align}
+
+
+Replacing
+\begin{align}
+\frac{R_v}{R_d} &= 1.608 \approx 1.61 \qquad \Rightarrow\nonumber\\
+p &= \rho R_d\underbrace{(1 + 0.61q)T}_{T_v}.\label{eq:Tvdef}
+\end{align}
+
+
+The \emph{virtual temperature} $T_v$ defined above is the temperature
+of a dry atmosphere with the same density $\rho$; it is slightly
+greater than $T$. A further index atmospheric moisture is the mixing
+ratio (more specifically, the mass ratio for water vapor). The mixing
+ratio was introduced in section \ref{sec:concentrations}; see
+(\ref{eq:def-mole-ratio})--(\ref{eq:def-mass-ratio}). For
+water vapor, the (mass) mixing ratio is
+\begin{equation}
+ r_v = \frac{\rho_v}{\rho_d}.\label{eq:mix-ratio}
+\end{equation}
+
+
+
+Useful relations for the mixing ratio and specific humidity can be
+derived as follows:
+\begin{align}
+r_v &= \frac{\rho_v}{\rho_d} = \frac{\frac{e}{R_vT}}{\frac{(p-e)}{R_dT}}\nonumber\\
+  &= \frac{R_d}{R_v}\frac{e}{p-e} = 0.622\,\frac{e}{p-e};\label{eq:rep}\\
+q &= \frac{\rho_v}{\rho} = \frac{\frac{e}{R_vT}}{\rho_d + \rho_v}\nonumber\\
+  &= \frac{\frac{e}{R_vT}}{\frac{p-e}{R_dT} + \frac{e}{R_vT}}\nonumber\\
+  &= \frac{R_d}{R_v} \frac{e}{p + \left(\frac{R_d}{R_v} - 1\right)e}\nonumber\\
+  &= 0.622\frac{e}{p - 0.378e}\approx 0.622\frac{e}{p}.\label{eq:qep}
+\end{align}
+
+
+
+
+The latent heat of evaporation of water, $L_w$, is the amount of
+energy used to change the phase of a unit of mass from liquid to
+vapor, in a pure mixture of the two phases. A good approximation for
+obtaining an expression for $L_w$ as a function of temperature is the
+assumption that the heat capacities of the two phases are equal. This
+leads to \cite[Chap. 10, eq. 10.16]{adkins--equilibrium}
+\begin{equation}
+\md{L_w} =  [c_{pv} - c_{pw}]\md{T}
+\end{equation}
+where $c_{pv}$ and $c_{pw}$ are the specific heats at constant pressure of
+water vapor and liquid water, respectively. If the specific heats, in turn, are
+assumed to be constant, we obtain
+\begin{equation}
+L_w = a_L + b_L T\label{eq:Lw-theo}
+\end{equation}
+with $b_L = [c_{pv} - c_{pw}]$.  In the SI, with $T$ in Kelvins,
+\cite{dake1972evaporative} gives
+\begin{equation}
+L_w = 3.142689\times 10^{6} - 2.365601\times 10^{3}T\label{eq:Lw-num}
+\end{equation}
+in $\mathrm{J\,kg^{-1}}$.
+\cite{henderson1984new} argues that a more accurate expression is
+\begin{equation}
+L_w = 1.91846\times 10^6\left[T/(T-33.91)\right]^2. \label{eq:Lw-henderson}
+\end{equation}
+A reasonable alternative is to use a constant value, given the very
+small variation of $L_w$ with $T$. At $T=\mathrm{288.15\,K}$,
+(\ref{eq:Lw-num}) gives $L_w = 2.464\times
+10^{6}\,\mathrm{J\,kg^{-1}}$.
+
+
+For a system composed of water vapor and liquid water in equilibrium,
+an equation can be derived relating the derivative with respect to
+temperature of the \emph{saturation vapor pressure} $e^*$ (the vapor
+pressure of the gas in equilibrium with the liquid water) to the change
+in specific volume $\vsp$ between the two phases and the latent heat,
+\textit{viz.}
+\begin{equation}
+\mderiva{e^*}{T} = \frac{L_w}{T\Delta \vsp}; \label{eq:clausius-clapeyron}
+\end{equation}
+it is the \emph{Clausius-Clapeyron} equation \cite[Chap. 10,
+  eq. (10.11)]{adkins--equilibrium}.  Assuming the validity of the perfect-gas
+law, and that the specific volume of the liquid phase is negligible in
+comparison with that of the vapor phase, the Clausius-Clapeyron equation takes
+the form \cite[Chap. 10, eq. (10.12)]{adkins--equilibrium}
+\begin{equation}
+\mderiva{e^*}{T} = \frac{L_w e^*}{R_vT^2}. \label{eq:clasp}
+\end{equation}
+Note that
+Eqs. (\ref{eq:Lw-theo})--~(\ref{eq:Lw-num}) can be used to integrate 
+(\ref{eq:clasp}), yielding
+\begin{equation}
+  e^*(T) = \left( \frac{T}{T_0}\right)^{\frac{b_L}{R_v}}
+  e^*(T_0)
+  \exp\left[
+    \frac{a_L}{R_v}\left(\frac{1}{T_0} - \frac{1}{T}\right)
+    \right], \label{eq:esnelson}
+\end{equation}
+where $T_0$ is a reference temperature. With $b_L = 0$,
+(\ref{eq:esnelson}) bears a strong resemblance to (but is not the same
+as) Teten's empirical formula
+\citep{murray1966computation,dilley1968computer,stull--meteorology,alduchov1996improved}:
+\begin{equation}
+e^*(T) = e_0 \exp\left[ \frac{b(T - T_1)}{T - T_2}\right],\label{eq:tetens}
+\end{equation}
+with $e_0 = 610.78\,\mathrm{Pa}$,  $b=17.2693882\,\mathrm{K^{-1}}$,
+$T_1 = 273.16\,\mathrm{K}$ and $T_2 = 35.86\,\mathrm{K}$.  For ice,
+the constants change to $b=21.8745584$ and $T_2 = 7.66$.
+
+For most meteorological applications, Teten's formula is more than enough. Note
+however that the constants change for saturation vapor pressure over \emph{ice};
+also, note that the presence of salts in the water alters $e^*$
+significantly. Finally, Richards' equation \citep{brutsaert--evaporation.into} is
+\begin{align}
+  e^*(T) &= 101\,325\exp\left[
+    13.3185t_r - 1.9760t_r^2 - 0.6445t_r^3 - 0.1299t_r^4
+    \right]\label{eq:esat-rich}\\
+    \mderiva{e^*}{T} &=\frac{373.15}{T^2}e^*(T)\left[
+    13.3185 - 3.9520t_r - 1.9335t_r^2 - 0.5996t_r^3  
+    \right],\label{eq:dsat-rich}\\
+    t_r &= 1 - \frac{373.15}{T}.\label{eq:def-tr}
+\end{align}
+
+The concept of saturation now allows for the definition of several humidity
+indices based on it. The \emph{relative humidity} $y$ is the ratio of the actual
+mixing ratio and the mixing ratio in water vapor saturated air at the same
+temperature and pressure:
+\begin{equation}
+y = \frac{r}{r^*}.
+\end{equation}
+Note that, because it is specified at the same temperature and
+pressure, the density of dry air in the saturated atmosphere
+($\rho_{d*}$) is actually smaller than the density of dry air in the
+non-saturated atmosphere ($\rho_d$). The gas law equations are
+\begin{align}
+  p - e &= \rho_d R_d T, &  e &= \rho_v R_v T, \\
+  p - e^* &= \rho_{d*} R_d T,  & e^* &= \rho_v^* R_v T.
+\end{align}
+Therefore,
+\begin{align}
+  y &= \frac{r}{r^*} =
+  \frac{\frac{\rho_v}{\rho_d}}{\frac{\rho_v^*}{\rho_{d*}}} = \frac{\rho_{d*}}{\rho_d} \times \frac{\rho_v}{\rho_v^*}\nonumber \\
+  &= \frac{\frac{p-e^*}{R_d T}}{\frac{p-e}{R_d T}}\times
+     \frac{\frac{e}{R_v T}}{\frac{e^*}{R_vT}}\nonumber \\
+  &= \frac{p-e^*}{p-e}\times \frac{e}{e^*}\nonumber \\
+  &= \frac{p(1 - e^*/p)}{p(1 - e/p)}\times \frac{e}{e^*}\nonumber \\
+  &\approx (1 - e^*/p)(1 + e/p)\frac{e}{e^*}\nonumber \\
+  &\approx \frac{e}{e^*}.\label{eq:relhum}
+\end{align}
+The last form, (\ref{eq:relhum}), is the one commonly used in
+calculations.
+
+
+
+The \emph{dewpoint temperature} $T_d$ is the temperature at which the water
+vapor pressure becomes the saturated vapor pressure:
+
+\begin{equation}
+e^*(T_d) = e.
+\end{equation}
+Usually, temperature varies with height in the atmospheric boundary
+layer. A subscript like $T_x$ or $e_x$ will often be used to specify
+temperature, water vapor pressure, etc., at some specified
+level. Also, we will often use the simplified notation
+\begin{align}
+e^*_x &= e^*(T_x), \\
+d_x   &= \mderiva{e^*(T_x)}{T},\\
+\rho_{vx}^* &= \rho_v^*(T_x).
+\end{align}
+
+\begin{figure}
+  \centering
+  {\includegraphics[width=\textwidth]{moisten.pdf}}
+  \caption{The concepts of atmospheric saturation, relative humidity
+    and dewpoint.
+    Adapted from \cite{dias--estimativas}.\label{fig:moist}}
+\end{figure}
+
+In figure \ref{fig:moist}, we show in frame A the prevailing conditions in the
+atmosphere. In frame B, saturation is reached, from A, through an increase in
+water vapor content. In frame C, saturation conditions are also reached, but
+this time through a continuous drop in temperature down to the dew point
+temperature $T_d$.
+
+
+
+
+%\section{An example of a moist atmosphere}
+
+
+Let us now build an example moist atmosphere. We follow from section
+\ref{sec:moist-air}, where we assumed an initally dry atmosphere with
+molar fractions given by table \ref{tab:ppgas} and total pressure
+$p_d$, to which water vapor is added isothermally, raising the total
+pressure by $e$ to $p$, while the partial pressures of the dry
+components remain unaltered.
+We will assume a total pressure $p=100\,000\,\mathrm{Pa}$,
+an air temperature $T = 20\,\mathrm{\degree{C}} = 293.15\,\mathrm{K}$,
+and a relative humidty $y = 0.70$. The exact vapor pressure is then
+$e = 1647.6712\,\mathrm{Pa}$, and $p_d = p - e =
+98\,352.3288\,\mathrm{Pa}$.
+
+The molar fractions of the \emph{dry components} for the moist atmosphere are
+now
+\begin{equation}
+x_i = \frac{p_i}{p} = \frac{p_i}{p_d} \times \frac{p_d}{p} = x_{di}
+\frac{p_d}{p}, \qquad i \ne v,\label{eq:ximoist}
+\end{equation}
+where the $x_{di}$ are the same as the $x_i$ in a dry atmosphere
+from table \ref{tab:ppgas}.
+The molar fraction of water vapor is
+\begin{equation}
+x_v = \frac{e}{p}.\label{eq:xvmoist}
+\end{equation}
+The densities are obtained from (\ref{eq:fracoes-gas}) and
+(\ref{eq:prhoRt-chi}). From there, mass concentrations (or mass
+fractions) $c_i$, mixing ratios $r_i$ and dry mixing ratios $r_{di}$
+are obtained from (\ref{eq:def-c-chi}), (\ref{eq:citori}) and
+(\ref{eq:def-dry-mass-ratio}).
+
+
+
+The results are given in table \ref{tab:ppmoist}.  The table is
+ordered by $x_i$. We can see that \ce{H2O} is the third most abundant
+element, followed by \ce{Ar}.  Note the drastic progressive density
+reduction of the greenhouse gases \ce{H2O}, \ce{CO2}, \ce{CH4} and
+\ce{N2O}. All gases after the first four in the table are referred to
+as \emph{trace gases}. Note how the molar fractions and the mass
+concentrations add up to 1, but not the mixing ratio and the dry
+mixing ratio. Also note that, except for \ce{N2} and \ce{O2}, the
+difference betwen $c_i$, $r_i$ and $r_{di}$ is very small.
+
+\begin{table}\footnotesize\centering
+%  \newgeometry{lmargin=3cm,rmargin=2cm}\centering
+  \caption{Constitution of an example moist atmosphere.\label{tab:ppmoist}}
+\begin{tabular}{cd{6}ccccc}
+\hline
+\toprule
+Gas       & \multicolumn{1}{c}{$M_i$}                     & $x_{i}$ & $\rho_i$ & $c_i$ & $r_i$ & $r_{di}$    \\
+          & \multicolumn{1}{c}{$ (\mathrm{g\,mol^{-1}})$} &  \multicolumn{1}{c}{$ (\mathrm{mol\,mol^{-1}})$} &\multicolumn{1}{c}{$ (\mathrm{kg\,m^{-3}})$} &\multicolumn{1}{c}{$ (\mathrm{kg\,kg^{-1}})$} &\multicolumn{1}{c}{$ (\mathrm{kg\,kg^{-1}})$} &\multicolumn{1}{c}{$ (\mathrm{kg\,kg^{-1}})$}  \\
+\midrule
+\ce{  N2} & 28.0134   &   0.76792220 &   0.88258991 &   0.74732474 &   2.95764908 &   3.08348888 \\ 
+\ce{  O2} & 31.9988   &   0.20598125 &   0.27041906 &   0.22897480 &   0.29697448 &   0.30100013 \\ 
+\ce{ H2O} & 18.0153   &   0.01647671 &   0.01217834 &   0.01031189 &   0.01041934 &   --- \\
+\ce{  AR} & 39.948    &   0.00918611 &   0.01505575 &   0.01274832 &   0.01291294 &   0.01304924 \\ 
+\ce{ CO2} & 44.0095   &   0.00040708 &   0.00073503 &   0.00062238 &   0.00062276 &   0.00062926 \\ 
+\ce{  NE} & 20.1797   &   0.00001788 &   0.00001480 &   0.00001253 &   0.00001254 &   0.00001267 \\ 
+\ce{  HE} &  4.002602 &   0.00000515 &   0.00000085 &   0.00000072 &   0.00000072 &   0.00000072 \\ 
+\ce{ CH4} & 16.0425   &   0.00000167 &   0.00000110 &   0.00000093 &   0.00000093 &   0.00000094 \\ 
+\ce{  Kr} & 83.798    &   0.00000108 &   0.00000372 &   0.00000315 &   0.00000315 &   0.00000318 \\ 
+\ce{  H2} &  2.01588  &   0.00000054 &   0.00000004 &   0.00000004 &   0.00000004 &   0.00000004 \\ 
+\ce{ N2O} & 44.0128   &   0.00000032 &   0.00000059 &   0.00000050 &   0.00000050 &   0.00000050 \\ 
+\midrule
+ Air      & 28.785494 &   1.00000000 &   1.18099919 &   1.00000000 &   --- &   --- \\ 
+\bottomrule
+\end{tabular}
+%\restoregeometry
+\end{table}
+
+
+What table \ref{tab:ppmoist} reveals is that the measurement of \ce{CO2} is much
+more difficult than the measurement of \ce{H2O}; similarly, \ce{CH4} measurement
+is harder than \ce{CO2}'s, and so on, by the simple fact that it is necessary to
+measure increasingly smaller concentrations.  Although this is possible in
+controlled laboratory conditions with various types of chemical analyzers,
+\textit{in situ} measurements, necessary to obtain continuous data series, are
+substantially more difficult.
+Thus, the task of measuring fluxes and performing greenhouse gas material
+balances is also extraordinarily hard, and one of its greatest scientific
+challenges is still the obtention of accurate error estimates.
+
+%% It is noticeable
+%% that even the \ce{H2O} balance in a watershed (or a reservoir) is still very
+%% hard, and many of the terms of the ``water balance'' of a reservoir remain
+%% highly uncertain.
+
+
+
+
+
+%% 0.02878549372889482
+
+%% \clearpage
+
+
+
+
+\section{Potential temperature}\label{sec:potheta}
+
+
+
+
+
+
+
+
+
+Consider the adiabatic expansion of a parcel of air, from a level (higher up)
+where the ambient pressure is $p$ down to a level where the ambient pressure is
+$p_0$. The first law of thermodynamics is ($\heat$ is heat per unit mass added to the system;
+$\work$ is work per unit mass performed on the system)
+\begin{equation*}
+\md\ine = \dbar\heat + \dbar\work;
+\end{equation*}
+For an adiabatic ($\dbar\heat = 0$) and reversible process,
+\begin{equation}
+\md\ine = - p\md{\vsp} \label{eq:adrevproc}
+\end{equation}
+Differentiation of (\ref{eq:pvRT}) and use of (\ref{eq:def-cv}) (keeping in mind
+that $\ine = \ine(T)$ for a perfect gas) produce
+\begin{align}
+p\md{\vsp} + \vsp\md{p} &= R\md{T}\nonumber\\
+c_{\vsp}\md{T} &= \vsp\md{p} - R\md{T}\nonumber\\
+(c_{\vsp} + R)\md{T} &= \vsp\md{p} = \frac{RT}{p}\md{p} \nonumber\\
+c_p \md{T} &= \vsp\md{p} = \frac{RT}{p}\md{p}\label{eq:adiatm}\\
+\frac{\md{T}}{T} &= \frac{R}{c_p}\frac{\md{p}}{p}.
+\end{align}
+\iflanguage{brazil}{E agora José?}{
+We now integrate between the temperature-pressure pairs $(T,p)$ and
+$(\theta,p_0)$:}
+\begin{equation}
+\theta = T \left( \frac{p_0}{p}\right)^{\frac{R}{c_p}}.\label{eq:def-theta}
+\end{equation}
+The potential temperature $\theta$, defined above, is therefore the temperature
+of a parcel of air brought adiabatically and reversibly from state $p,T$ to a
+reference pressure $p_0$.
+
+
+Equation (\ref{eq:def-theta}) needs to be used with the correct value
+of $R/c_p$ in the case of moist air.  This is because in this case the
+effective gas constant and the effective specific heat at constant
+pressure for moist air depend on the specific humidity $q$.  To see
+this, suppose that the total enthalpy (not the \emph{specific
+  enthalpy}) for a parcel of air with total mass $m$ can be calculated
+by adding the enthalpies of dry and moist air:
+\begin{equation*}
+m \ent = m_d\ent_d + m_v\ent_v.
+\end{equation*}
+This produces
+\begin{align}
+\ent &= \frac{\rho_d}{\rho}\ent_d + \frac{\rho_v}{\rho}\ent_v, \nonumber\\
+\ent &= (1-q)\ent_d + q\ent_v,\nonumber\\
+c_p &= \left(\parder{\ent}{T}\right)_p 
+     = (1-q)c_{pd} + qc_{pv}
+     = (1 + 0.84q)c_{pd}\label{eq:cp-moist}
+\end{align}
+(using tabulated values for $c_{pd}$ and $c_{pv}$).
+
+On the basis of (\ref{eq:Tvdef}),
+the effective gas constant for moist air can be written as
+\begin{equation}
+R = R_d(1 + 0.61q)\label{eq:R-moist}
+\end{equation}
+(note that this is an alternative interpretation to (\ref{eq:Tvdef}): we are now
+changing the gas constant $R$, and keeping the absolute temperature $T$, so that 
+\ref{eq:pvRT} still applies.)
+Therefore,
+\begin{equation}
+\frac{R}{c_p} = \frac{R_d}{c_{pd}}\frac{1 + 0.61q}{1 + 0.84q}.
+\end{equation}
+Using the identity
+\begin{equation}
+\frac{1 + ax}{1 + bx} \equiv 
+1 - (b-a)x + \frac{(b-a)bx^2}{1 + bx} \approx 1 - (b-a)x, \label{eq:good-id}
+\end{equation}
+we find (for small $x=q$)
+\begin{equation}
+\frac{R}{c_p} \approx (1 - 0.23q)\frac{R_d}{c_{pd}}\label{eq:Rcpmoist}
+\end{equation}
+for moist air. Therefore, 
+\begin{equation}
+\theta = T\left(\frac{p_0}{p}\right)^{(1 - 0.23q)\frac{R_d}{c_{pd}}}
+\end{equation}
+It is also straightforward to obtain the specific heat at constant volume for
+moist air:
+\begin{equation}
+c_{\vsp} = \left(\parder{\ine}{T}\right)_{\vsp} = (1-q)c_{\vsp{d}} +
+qc_{\vsp{v}} \label{eq:cvmoist}
+\end{equation}
+
+
+
+Finally, these definitions extend to virtual temperature, \emph{but
+  not uniquely}, as discussed by \citet[section
+  3.2b]{brutsaert--evaporation.into}. The \emph{virtual potential
+  temperature} is the virtual temperature that a parcel of moist air
+would have if changed adiabatically from its actual state to the
+standard pressure $p_0$:
+\begin{equation}
+\theta_{vp} = T_v \left( \frac{p_0}{p}\right)^{(1 - 0.23q)\frac{R_d}{c_{pd}}}.\label{eq:theta-vp}
+\end{equation}
+This is slightly different from \emph{potential virtual temperature}, which is
+the potential temperature of dry air at the same initial pressure and density,
+and which is given by
+\begin{equation}
+\theta_{pv} = T_v \left( \frac{p_0}{p}\right)^{\frac{R_d}{c_{pd}}}.\label{eq:theta-pv}
+\end{equation}
+The two quantities defined by (\ref{eq:theta-vp}) and (\ref{eq:theta-pv}) are,
+evidently, numerically very similar. From here on, we will always use the
+virtual potential temperature (\ref{eq:theta-vp}). Also, for simplicity, we will refer
+to it simply as $\theta_v$.
+
+
+\chapter{The dynamical equations for the ABL}
+\label{cap:eqcla}
+
+
+
+
+The transport equations express the principles of conservation of total mass,
+momentum, energy and  mass of a mixed substance (for instance water vapor) at a point
+in space and instant in time. In principle, any fluid mechanics problem can be
+solved if we know the constitutive equation (the rate of strain -- stress
+relation) and the boundary conditions.
+
+
+
+In practice, the problem is much more
+  complicated. The momentum equations are non-linear, making the solution
+  (either analytical or numerical) much more difficult. Morever, they display
+  chaotic behavior, which causes very small differences in the boundary
+  conditions to amplify very fast \cite[]{ruelle:where}. Finally, their full
+  solution requires the resolution of extremely small scales (the Kolmogorov
+  microscales), rendering the problem impossible to solve on the basis of the
+  fundamental equations alone, and requiring additional hypothesis regarding
+  their closure at some level: this is the well known turbulence closure problem
+  \citep{wyngaard--boundary-layer.modeling}.  
+
+
+
+
+\section{Differential operators}\label{sec:diff-op}
+
+It is convenient to adopt a double notation for the position and
+velocity vectors, and the basis for $\mathbb{R}^3$, \textit{viz.}
+\begin{align}
+      \vet{x} &=(x,y,z) \equiv  (x_1, x_2, x_3), \\
+      \vet{u} &=(u,v,w) \equiv  (u_1, u_2, u_3), \\
+      (\vet{i},\vet{j},\vet{k}) &\equiv 
+      (\vet{e}_1,\vet{e}_2,\vet{e}_3).
+\end{align}
+
+
+
+The equations of fluid mechanics involve four differential operators:
+the divergence, the curl, the laplacian, and the operator for the
+material derivative. They are:
+\begin{align}
+   \vet{\nabla} \cdot \vet{u} 
+   &= \parder{u}{x} +
+       \parder{v}{y} +
+       \parder{w}{z}  \nonumber \\
+   &= \sum_{k=1}^{3} \parder{u_k}{x_k};  \label{eq:div-kk}          
+\end{align}                      
+\begin{align}
+   \vet{\nabla} \vet{\times} \vet{u} 
+   &=
+   \left( \parder{w}{y} - \parder{v}{z} \right) \vet{i} +
+   \left( \parder{u}{z} - \parder{w}{x} \right) \vet{j} +
+   \left( \parder{v}{x} - \parder{u}{y} \right) \vet{k}  
+   \nonumber \\
+   &= \sum_{k=1}^3\sum_{i=1}^{3} \sum_{j=1}^{3} 
+          \epsilon_{ijk} \parder{u_j}{x_i} \vet{e}_k; 
+          \label{eq:curl-ijk}
+\end{align}
+\begin{align}
+   \nabla^2 a 
+   &= 
+   \parpar{a}{x}{x} +
+   \parpar{a}{y}{y} +
+   \parpar{a}{z}{z}  \nonumber \\
+   &= \sum_{k=1}^{3} \parpar{a}{x_k}{x_k};  \label{eq:nabla2-kk}
+\end{align}
+\begin{align}
+   \totder{a}{t} 
+   &= 
+   \parder{a}{t} + u \parder{a}{x} +
+                   v \parder{a}{y} +
+                   w \parder{a}{z}  \nonumber \\
+   &=
+   \parder{a}{t} + \sum_{k=1}^{3} u_k\parder{a}{x_k}, \label{eq:dadt-kk}
+\end{align}
+\iflanguage{brazil}{
+onde $a$ representa um campo escalar qualquer; $\nabla$ é o ``vetor'' simbólico
+$(\parder{}{x},\parder{}{y},\parder{}{z})$; a primeira linha de cada uma das
+equações acima indica o operador ``por extenso''; a segunda linha mostra que
+todos os operadores podem ser escritos de forma compacta como somatórios, se
+identificarmos no caso do rotacional, o símbolo de permutação $\epsilon_{ijk}$ é
+$+1$ para permutações cíclicas (1,2,3), (2,3,1), (3,1,2), $-1$ para permutações
+anti-cíclicas (1,3,2), (2,1,3), (3,1,2) e 0 para $i=j$, $j=k$, $k=i$ ou $i=j=k$;
+na terceira linha de cada equação adota-se a {\em notação indicial}, ou {\em
+  notação de Einstein}: esta consiste em observar que geralmente as somas
+ocorrem sobre índices repetidos; portanto, omite-se o símbolo de somatório, que
+fica implícito na ocorrência de índices repetidos salvo mensão explícita em
+contrário.}
+{where $a$ represents any scalar field and $\vet{\nabla} $ is the ``symbolic'' vector
+$(\parder{}{x},\parder{}{y},\parder{}{z})$. The first line in each of the
+  equations above gives the formula for each operator in $x$, $y$, and $z$
+  notation.
+The second line shows that all operators can be written in a compact form as
+sums. For the curl, the permutation symbol $\epsilon_{ijk}=+1$ for cyclic
+permutations (1,2,3), (2,3,1), (3,1,2); $\epsilon_{ijk}=-1$ for anti-cyclic
+permutations (1,3,2), (2,1,3), (3,1,2); and $\epsilon_{ijk}=0$ if $i=j$, $j=k$,
+$k=i$ or $i=j=k$.}
+
+
+\iflanguage{brazil}{%
+Nas equações de transporte que se seguem, 
+usaremos exclusivamente a notação indicial 
+para as equações completas. 
+Nos casos particulares de interesse na CLA, 
+será mais proveitoso voltar à notação envolvendo 
+$(x,y,z)$ e $(u,v,w)$.}
+{
+In the equations that follow, we will adopt most of the time the compact sum
+notation. In particular cases, it will be more frutiful to shift back to the
+notation involving $(x,y,z)$ and $(u,v,w)$.
+}
+
+\section{The hydrostatic reference state}
+
+Consider again the first law for an adiabatic atmosphere, as in \ref{eq:adiatm},
+repeated here,
+\begin{equation}
+c_p\md{T_r} = \vsp_r\md{p_r}, \label{eq:adiatm-bis}
+\end{equation}
+together with the hydrostatic equation
+\begin{equation}
+\mderiva{p_r}{z} = -\rho_r g.\label{eq:hydrostatic-ref}
+\end{equation}
+Above, the subscript $r$ means the reference state for a hydrostatic
+equation. Together with the state equation (\ref{eq:pvRT}), equations
+(\ref{eq:adiatm-bis})--(\ref{eq:hydrostatic-ref}) form a system from which we
+can eliminate either $T_r$, $p_r$ or $\vsp_r = 1/\rho_r$. Three equations result
+for the reference pressure, temperature or density as a function of $z$ (bear
+in mind that in a moist atmosphere $c_p$, $c_v$ and $R$ are given by
+\ref{eq:cp-moist}, (\ref{eq:cvmoist}) and \ref{eq:R-moist} respectively):
+\begin{align}
+T_r(z) &= T_0 - \frac{g}{c_p}z, \label{eq:Trz} \\
+p_r(z) &= p_0\left( \frac{T_0 -
+  \frac{g}{c_p}z}{T_0}\right)^{c_p/R}\label{eq:prz},\\
+\rho_r(z) &= \rho_0\left( \frac{T_0 -
+  \frac{g}{c_p}z}{T_0}\right)^{c_{\vsp}/R}.\label{eq:rhorz} 
+\end{align}
+
+Figure \ref{fig:pvtref} shows the pressure and density reference states in the
+atmosphere as functions of $z$, for $T_0 = 15\,\mathrm{^\circ{C}}$ and $p_0 =
+101\,325\,\mathrm{Pa}$. The \emph{scale height} is defined as
+\begin{equation}
+D = \left| \frac{1}{\rho_0}\mderiva{\rho_r(0)}{z}\right|^{-1}; \label{eq:scale-height}
+\end{equation}
+it is obtained by extrapolating the straight line with the same slope as the
+reference density profile at the surface up to $\rho_r = 0$, as seen in figure
+\ref{fig:pvtref}-b.
+
+\begin{figure}\centering
+\includegraphics[width=0.48\textwidth]{pvtref}\hfill
+\includegraphics[width=0.48\textwidth]{rhoref}
+\caption{Reference pressure $p_r$ and density $\rho_r$ in a hydrostatic and
+  adiabatic equation.\label{fig:pvtref}}
+\end{figure}
+
+
+\iflanguage{brazil}{
+\section{Conservação de massa e a aproximação de Boussinesq}
+}
+{
+\section{Mass conservation and the Boussinesq approximation}
+}
+\label{sec:mass-bouss}
+
+
+The derivation of the transport equations for $u$, $v$, $w$, $\theta$, $q$,
+$\theta_v$, $\ldots$ is a long process involving a fair amount of physics and
+mathematics. It can be found in various texts, such as 
+\cite{batchelor--introduction}, \cite{bird.etal:transport} and
+\cite{landau.lifshitz:fluidmechanics}.  An excellent 
+itroduction to the equations in a form often used in the ABL is 
+\cite{stull--introduction}'s book.
+
+
+
+We will briefly analyze the dynamical equations in light of the
+\emph{Boussinesq approximation}. First we define a thickness $\ell$
+such that the reference density changes little between $z=0$ and $z =
+\ell$. From figure \ref{fig:pvtref}-b, it can be seen that
+\begin{equation}
+\frac{\Delta \rho_r}{\rho_0} \le \frac{\ell}{D} \equiv \epsilon_b \ll 1, \label{eq:del-ell-D}
+\end{equation}
+where $\rho_0 = \rho_r(0)$.
+In (\ref{eq:del-ell-D}), we use any appropriately small value of $\epsilon_b$
+(say $\epsilon_b = 0.01$), to
+define $\ell$ rigorously.
+
+Next we define the \emph{Boussinesq decompositions}
+\begin{align}
+  u_i  & = 0 + u_{\delta i}, \label{eq:bou-ui}      \\
+  \rho & = \rho_r + \rho_\delta, \label{eq:bou-rho} \\
+  p    & = p_r + p_\delta, \label{eq:bou-p}         \\
+  T    & = T_r + T_\delta. \label{eq:bou-T}
+\end{align}
+Above, $u_\delta$, $\rho_\delta$, $p_\delta$ and $T_\delta$ are the fluctuations
+of velocity, density, pressure, and temperature of an actual (``dynamic'')
+atmosphere with respect to the reference hydrostatic state.
+
+\newcommand{\reyd}[1]{\overline{#1} + #1'}
+
+Of course, (\ref{eq:bou-ui})--(\ref{eq:bou-T}) can be further expanded by
+means of a Reynolds' decomposition, yielding
+\begin{align}
+  \reyd{u_i}  & =  \reyd{u_{\delta i}}, \label{eq:bourey-ui}      \\
+  \reyd{\rho} & = \rho_r + \reyd{\rho_\delta}, \label{eq:bourey-rho} \\
+  \reyd{p}    & = p_r + \reyd{p_\delta}, \label{eq:bourey-p}         \\
+  \reyd{T}    & = T_r + \reyd{T_\delta}. \label{eq:bourey-T}
+\end{align}
+
+
+Then, the following relations hold (trivially) between the Reynolds
+decomposition and the Boussinesq decomposition:
+\begin{align}
+\overline{u_i}  & =  \overline{u_{\delta i}}        & u'_i  & =u_{\delta i}',  \label{eq:boumeio-u}\\
+\overline{\rho} & = \rho_r + \overline{\rho_\delta} & \rho' & = \rho_\delta',  \label{eq:boumeio-rho}\\
+\overline{p}    & = p_r + \overline{p_\delta}       & p'    & = p_\delta',     \label{eq:boumeio-p}\\
+\overline{T}    & = T_r +  \overline{T_\delta}      & T'    & = T_\delta',     \label{eq:boumeio-T}
+\end{align}
+whence
+\begin{align}
+u_i  & = 0 + \overline{u_{\delta i}} + u',         \label{eq:boufin-u}\\
+\rho & = \rho_r + \overline{\rho_\delta} + \rho',  \label{eq:boufin-rho}\\
+p    & = p_r + \overline{p_\delta} + p',           \label{eq:boufin-p}\\
+T    & = T_r + \overline{T_\delta} + T'.           \label{eq:boufin-T}
+\end{align}
+Clearly, the notations $\overline{u_{\delta i}}$ and $u_{\delta i}'$,
+$\rho_\delta'$, $p_\delta'$ and $T_\delta'$ in
+(\ref{eq:boumeio-u})--(\ref{eq:boumeio-T}) are excessive, and will not
+be used any further.
+
+Only now we introduce the Boussinesq approximation proper: it is the
+assumption that the dynamic density fluctuations $\rho_\delta$ are of
+the same order of magnitude of the variation of the reference density
+$\rho_r$ within the layer of thickness $\ell$. In view of the
+definition of $D$ in (\ref{eq:scale-height}) and (\ref{eq:del-ell-D}),
+it is
+\begin{equation}
+\rho_\delta \sim \rho_0 \frac{\ell}{D} \ll \rho_r, \qquad 0 \le z \le
+\ell.
+\label{eq:boussapp}
+\end{equation}
+
+
+Now consider the full form for the equation for (total) mass
+conservation, which reads
+\begin{equation}
+\parder{\rho}{t} + \sum_{k=1}^3 \parder{(\rho u_k)}{x_k} = 0.\label{eq:total-mass}
+\end{equation}
+Its ensemble average is
+\begin{equation}
+\parder{\overline{\rho}}{t} + \sum_{k=1}^3 \parder{\overline{\rho u_k}}{x_k} = 0.\label{eq:avg-total-mass}
+\end{equation}
+
+Expanding all terms with the help of (\ref{eq:boufin-u})--(\ref{eq:boufin-T})
+and Reynolds' postulates
+(\ref{eq:post-media-media})--(\ref{eq:post-comuta-pop}),
+\begin{equation}
+\underbrace{\parder{\overline{\rho_{\delta}}}{t}}_{\text{I}} +
+\sum_{k=1}^3\underbrace{\overline{u_k}\parder{\rho_r}{x_k}}_{\text{II}} + 
+\sum_{k=1}^3\underbrace{\overline{u_k}\parder{\overline{\rho_{\delta}}}{x_k}}_{\text{III}} +
+\sum_{k=1}^3\underbrace{\rho_r\parder{\overline{u_k}}{x_k}}_{\text{IV}} + 
+\sum_{k=1}^3\underbrace{\overline{\rho_{\delta}}\parder{\overline{u_k}}{x_k}}_{\text{V}} + 
+\sum_{k=1}^3\underbrace{\parder{\overline{\rho' u_k'}}{x_k}}_{\text{VI}} = 0.\label{eq:massa-media-allorders}
+\end{equation}
+
+The order of magnitude of each individual term in the sums above can be
+established relatively easily. For that, we need to define in some useful way a
+density scale $\tilde{\rho}$ and a velocity scale $\tilde{u}$. Due to
+(\ref{eq:boufin-rho}) and (\ref{eq:boussapp}), we will define
+\begin{equation}
+\tilde{\rho} \sim \overline{\rho_\delta} \sim \rho',\label{eq:tilde-rho}
+\end{equation}
+and
+\begin{equation}
+\tilde{u} \sim \overline{u_k}; \qquad \tilde{\rho}\tilde{u} \sim \overline{\rho'u'_k}.\label{eq:tilde-u}
+\end{equation}
+With that, one finds
+\begin{align*}
+\text{I} &\sim \frac{\tilde{\rho}\tilde{u}}{\ell};\\
+\text{II} &\sim \frac{\Rho_0\tilde{u}}{D} \sim
+\frac{\tilde{\rho}\tilde{u}}{\ell};\\
+\text{III} &\sim \frac{\tilde{\rho}\tilde{u}}{\ell};\\
+\text{IV}  &\sim \frac{\rho_0 \tilde{u}}{\ell};\\
+\text{V}  &\sim \frac{\tilde{\rho}\tilde{u}}{\ell};\\
+\text{VI}  &\sim \frac{\tilde{\rho} \tilde{u}}{\ell}.
+\end{align*}
+
+The upshot is that all individual terms in I--III, and V--VI, are much smaller
+than the individual terms in IV. The \emph{sum} of all three terms in IV must be
+of the same order of the other terms, whence
+\begin{equation}
+\sum_{k=1}^3\parder{\overline{u_k}}{x_k} \sim \frac{\tilde{\rho}}{\rho_0}
+\frac{\tilde{u}}{\ell} \ll \frac{\tilde{u}}{\ell} \Rightarrow
+\sum_{k=1}^3\parder{\overline{u_k}}{x_k} \approx 0.\label{eq:cont-incompr-media}
+\end{equation}
+Equation (\ref{eq:cont-incompr-media}) is often first found in fluid mechanics
+in the context of mass conservation in an incompressible flow. Here, it is only
+\emph{approximately valid} (we are in the context of the Boussinesq
+\emph{approximation}); it is valid (at this point) for the mean velocity field
+$\overline{\vet{u}}$ only; and \emph{it does not mean that there are no density
+  fluctuations}. 
+
+The same approach can be taken for the full momentum equation, which is (for a
+Newtonian fluid)
+\begin{multline}
+  \left[ \parder{(\rho u_i)}{t} + \sum_{k=1}^3 \parder{(\rho u_i u_k)}{x_k}
+  +\sum_{k=1}^3\sum_{j=1}^3 2 \epsilon_{ijk} \Omega_j u_k \right] =\rho g_i -
+  \parder{p}{x_i} +\\
+\parder{}{x_i}\left(\lambda \sum_{k=1}^3 \parder{u_k}{x_k}\right)+
+  \nu\rho \sum_{k=1}^3 \parder{s_{ik}}{x_k}, \qquad i =
+  1,\ldots,3,\label{eq:Navier-Stokes}
+\end{multline}
+where $\vet{\Omega}$ is the angular velocity of the Earth;
+$\sum_{k=1}^3\sum_{j=1}^3 2\epsilon_{ijk}\Omega_ju_k$ is the Corilis
+acceleration
+along $x_i$; $\vet{g} = (0,0,-g)$ is the accelration of gravity, 
+and $\nu$ is the kinematic viscosity.  Expanding and estimating orders of
+magnitude for (\ref{eq:Navier-Stokes}) however, is now a lengthy and somewhat
+tedious procedure. Perhaps the most revealing part is the effect that
+the Boussinesq decomposition has on the gravity and pressure terms:
+\begin{align}
+  \rho g_i - \parder{p}{x_i} &= (\rho_r + \rho_\delta)g_i - \parder{(p_r
+    + p_\delta)}{x_i} \nonumber \\
+  &= \rho_\delta g_i - \parder{p_\delta}{x_i}, \label{eq:gp-remain}
+\end{align}
+in view of the hydrostatic equation (\ref{eq:hydrostatic-ref}).
+Equation (\ref{eq:gp-remain}) shows very clearly that an important
+part of the acceleration in the fluid is caused by the differences in
+bouyancy caused \emph{Boussinesq fluctuations} in density,
+$\rho_\delta$.
+
+If one now proceeds with the Boussinesq and Reynolds decomposition,
+followed by averaging and simplification with (\ref{eq:total-mass})
+(which we omit, but encourage the reader to undertake!), the final
+result is
+\begin{equation}
+\rho_r\left[\parder{\overline{u_i}}{t} + 
+\overline{u_k}\parder{\overline{u_i}}{x_k} +
+\parder{\overline{u_iu_k}}{x_k}
+\right] -
+\left[\overline{\rho_\delta}g_i -
+\parder{\overline{p_\delta}}{x_i} \right] \sim\frac{\tilde{\rho}\tilde{u}^2}{\ell}.\label{eq:bouss-quantmov-approx1}
+\end{equation}
+Each of the individual terms above can be shown to be $\sim \rho_0
+\tilde{u}^2/\ell$. The Coriolis terms, which do not appear above, are of the
+order of $\rho_0\tilde{u}^2/(\Ro \ell)$ (where $\Ro =
+\tilde{u}/(f\ell)$ is the Rossby number, and $f = 2\Omega\sin(\phi)$
+is the Coriolis parameter). At the scale of the flow, $\ell$, the
+Rossby number is very large and consequently Coriolis effects are
+negligible. For the left-hand side of
+(\ref{eq:bouss-quantmov-approx1}), therefore, one has
+\begin{align}
+g\tilde{\rho} &\sim \rho_0 \frac{\tilde{u}^2}{\ell},\label{eq:ordem-g}\\
+\frac{\tilde{p}}{\ell} &\sim
+\rho_0\frac{\tilde{u}^2}{\ell}\;\Rightarrow\label{eq:ordem-p}\\
+\tilde{p} &\sim \tilde{\rho}g\ell.\label{eq:p-rhogl}
+\end{align}
+
+Pressure fluctuations are extremely difficult to measure in the
+atmosphere. \cite{wyngaard--turbulence.in.the.atmosphere} gives the
+estimate $p'\sim \rho_0\tilde{u}^2$; this is the same as
+(\ref{eq:ordem-p}). \cite{hauf.finke.ea--ground.pressure.fluctuations}
+observed values of $p'$ of the order of $2.5\,\mathrm{Pa}$, which
+again is the same order as given by Wyngaard. The main consequence of
+(\ref{eq:p-rhogl}) is that the effects of the pressure fluctuations
+$p_\delta$ and $p'$ can often be neglected in the atmosphere. 
+
+
+The order of magnitude of the Boussinesq pressure fluctuations now leads to the
+following approximation in the state equation:
+\begin{align*}
+  p &= \rho R_d T_v, \\
+  [p_r + p_\delta] &= [\rho_r + \rho_\delta]R_d[T_{vr} + T_{v\delta}],\\
+  p_r + p_\delta &\approx \rho_r R_d T_{vr} + \rho_r R_d T_{v\delta} +
+  \rho_\delta R_d T_{vr},
+\end{align*}
+where the product $\rho_\delta R_d T_{v\delta}$ has been neglected. By
+definition, the equation of state, $p_r = \rho_r R_d T_{vr}$ holds for the
+hydrostatic reference state; therefore,
+\begin{align*}
+  p_\delta \approx \rho_r R_d T_{v\delta} + \rho_\delta R_d T_{vr}, \\
+  \underbrace{\frac{p_\delta}{p_r}}_{\sim\frac{\tilde{p}}{p_0}}
+  \approx \underbrace{\frac{T_{v\delta}}{T_{vr}}}_{\sim \frac{\tilde{T}}{T_0}}
+  + \underbrace{\frac{\rho_\delta}{\rho_r}}_{\sim \frac{\tilde{\rho}}{\rho_0}}
+\end{align*}
+But
+\begin{align*}
+  \frac{\tilde{\rho}}{\rho_0} &\sim \epsilon_b = 0.01 \qquad\text{by definition},
+    \\
+    \frac{\tilde{p}}{p_0} &\sim \frac{2.5}{101\,325} = 2.47\times10^{-5} \ll 0.01.
+\end{align*}
+Therefore, the Boussinesq pressure fluctuations can be safely dismissed. This
+leads to a much simpler linear equation of state that does not include pressure,
+namely
+\begin{equation}
+\frac{\rho_\delta}{\rho_r} = -\frac{T_{v\delta}}{T_r}.\label{eq:linstate-rho-T}
+\end{equation}
+
+
+
+%% \section{Vento Geostrófico}
+
+%% Considere o escoamento do ar em condições estacionárias  
+%% ($\partial u_i/\partial t = 0$) e 
+%% não-advectivas ($\partial u_i/\partial x_k = 0$) 
+%% na atmosfera livre 
+%% acima da CLA, onde a intensidade da turbulência é baixa:
+%% \begin{equation}
+%%    \frac{\ukuk}
+%%         {\sqrt{\ubar_k \ubar_k}} \ll 1
+%%         \label{eq:intensidade-relativa}
+%% \end{equation}
+%% e (\ref{eq:transporte-geral}) representa bem o vento médio.
+%% Se desprezarmos o termo viscoso,
+%% (\ref{eq:transporte-geral}) 
+%% reduz-se, na horizontal, a 
+%% \begin{eqnarray}
+%%    -\parder{p}{x} + 2\Omega_z v &=& 0 \\
+%%    -\parder{p}{y} - 2\Omega_z u &=& 0
+%% \end{eqnarray}
+%% Para a latitude $\phi$,
+%% \begin{equation}
+%%    \Omega_z = \omega \sen \phi
+%% \end{equation}
+%% onde $\omega = 2\pi\Rad/86400\,{\mathrm{s}}$
+%% é a velocidade angular da terra; 
+%% define-se o parâmetro de Coriolis $f$ como:
+%% \begin{equation}
+%% f = 2\omega\sen\phi
+%% \end{equation}
+%% e as equações do vento geostrófico são
+%% \begin{eqnarray}
+%%    -\parder{p}{x} + f v &=& 0 \\
+%%    -\parder{p}{y} - f u &=& 0
+%% \end{eqnarray}
+%% Estas equações mostram que é possível prever o 
+%% vento que ocorre acima da CLA, na atmosfera livre, 
+%% a partir de dados de pressão atmosférica na superfície.
+
+%% Note que o vento geostrófico é paralelo às isóbaras (linhas de mesma pressão atmosférica na
+%% superfície da Terra).  Dentro da CLA, o vento médio ``gira'' e na superfície ele é oblíquo às
+%% isóbaras, devido ao efeito crescente das tensões turbulentas dentro da CLA. O problema análogo
+%% para escoamento laminar com uma viscosidade constante tem solução analítica obtida por Ekman
+%% \cite[p. 195--200]{batchelor--introduction}, \cite[p. 210--214]{stull--introduction} e que em sua
+%% homenagem é denominada Espiral de Ekman.
+
+\section{The Reynolds-averaged Navier-Stokes equations}\label{eq:rans}
+
+Under the validity of the Boussinesq approximation
+(\ref{eq:boussapp}), the mass and momentum conservation equations
+(\ref{eq:cont-incompr-media}) and (\ref{eq:bouss-quantmov-approx1})
+are correct to order $\epsilon_b$. We are unaware of works that deal with
+the extension of the Boussinesq approximation to the higher-order,
+second-moment equations that are essential to understand the mechanics
+of turbulent flow, and which were introduced by O. Reynolds in 1895
+\citep{reynolds--b-dynamical}. We will however \emph{assume} that 
+the equations for the turbulent fluctuations of velocity and other
+quantities are analogous to (\ref{eq:cont-incompr-media}) and
+(\ref{eq:bouss-quantmov-approx1}) for the means.
+
+Under these further assumptions, application of Reynolds'
+decomposition (\ref{eq:reynolds-decomp}) to the mass and momentum
+equations (\ref{eq:total-mass}) and (\ref{eq:Navier-Stokes}), and
+subtraction of the equations for means,(\ref{eq:cont-incompr-media}) and
+(\ref{eq:bouss-quantmov-approx1}), eventually results in 
+\begin{align}
+    \sum_{k=1}^3\parder{u_k'}{x_k}   & = 0 \label{eq:cont-flut}\\
+     \parder{u'_i}{t} +
+     \sum_{k=1}^3\overline{u_k} \parder{u'_i}{x_k} 
+     &=
+     \sum_{k=1}^3\left[
+        - u'_k \parder{\overline{u_i}}{x_k} 
+        - \parder{u'_i u'_k}{x_k}
+        \right]
+     -\sum_{j=1}^3
+     \sum_{k=1}^3
+        2 \epsilon_{ijk} \Omega_j u'_k \nonumber \\
+        &
+        - \frac{1}{\overline{\rho}} \parder{p'}{x_i}
+        - \frac{g_i}{\overline{\theta_v}}\theta_v' 
+        + 2\nu \sum_{k=1}^3\parder{s'_{ik}}{x_k},
+     \label{eq:din-flut}
+\end{align}
+where $\vet{g}=(0,0,-g)$ with $g = 9.81\,\mathrm{m\,s^{-2}}$.  Note that the
+average of (\ref{eq:cont-flut}) and (\ref{eq:din-flut}) above is zero.
+Multiplication of (\ref{eq:din-flut}) by $u'_j$, exchange of the indices $i$ and
+$j$ and summation of the two resulting equations, followed by averaging, leads
+the the second-order equations
+\begin{comment}
+\begin{align}
+   \underbrace{%
+      \parder{\overline{u'_i u'_j}}{t}
+   }_{\rm I} +
+   \sum_{k=1}^3\underbrace{%
+      \overline{u_k} \parder{\overline{u'_i u'_j}}{x_k}
+   }_{\rm II} 
+   &=
+   \sum_{k=1}^3\underbrace{%
+      -\overline{u'_iu'_k} \parder{\overline{u_j}}{x_k}
+      -\overline{u_j'u_k'} \parder{\overline{u_i}}{x_k}
+   }_{\rm III} - 
+   \sum_{k=1}^3\underbrace{%
+      \parder{\overline{u'_iu'_ju'_k}{x_k}
+   }_{\rm IV} \nonumber \\
+   &
+   \underbrace{%
+      -\frac{1}{\theta_{vr}}
+      \left[
+         g_i \overline{u'_j \theta'_v} + g_j \overline{u'_i\theta'_v}
+      \right]
+   }_{\rm V}  \nonumber \\
+   & -
+   \underbrace{%
+      2\sum_{k=1}^3\sum_{l=1}^3\Omega_l\left(
+         \epsilon_{ilk}\overline{u'_ju'_k} + 
+         \epsilon_{jlk}\overline{u'_iu'_k}
+      \right)
+   }_{\rm VI} \nonumber \\
+   & - 
+   \underbrace{
+      \frac{1}{\rho_r}
+      \left(
+         \parder{\overline{u'_ip'}{x_j} + \parder{\overline{u'_jp'}{x_i}
+      \right)
+   }_{\rm VII} -
+   \underbrace{
+      \overline{
+         \frac{p'}{\rho_r}   
+         \left(
+            \parder{u'_i}{x_j} +\parder{u'_j}{x_i}
+         \right)
+      }
+   }_{\rm VIII} \nonumber \\
+   &+
+   2\nu\sum_{k=1}^3\underbrace{%
+     \parder{}{x_k}\left[
+        \overline{u'_j s'_{ik}} + \overline{u'_js'_{jk}}
+     \right]
+   }_{\rm IX}   \nonumber \\
+   &-2\nu\sum_{k=1}^3\underbrace{%
+       \left[
+         \overline{s'_{ik}\parder{u'_j}{x_k}} +
+         \overline{s'_{jk}\parder{u'_i}{x_k}}
+     \right]
+   }_{\rm X} \label{eq:din-covar}%
+\end{align}
+\end{comment}
+In (\ref{eq:din-covar}),
+\begin{equation}
+s'_{ik} = \frac{1}{2}\left( \parder{u'_i}{x_k} + \parder{u'_k}{x_i}\right) \label{eq:fluct-def-rate}
+\end{equation}
+is the fluctuation rate of deformation.
+
+The set 
+(\ref{eq:din-covar})
+is essential to understand the physics of turbulence.
+We borrow from \citep{stull--introduction} their meanings: 
+\begin{enumerate}
+\renewcommand{\theenumi}{\Roman{enumi}}%
+\item Is the local rate of change of the covariance $\overline{u'_iu'_j}$.
+
+\item Is the advection of $\overline{u'_iu'_j}$ by the mean wind 
+$\overline{u_k}$.
+
+
+\item Is the \emph{gradient production/destruction term}. A loose interpretation is
+that the average profiles are subject to perturbations that generate large-scale
+structures that progressively break into smaller structures, and so on. The
+larger structures are anisotropic, an evidence of this fact being the very
+existence of the mean gradients $\partial \overline{u_j}/\partial x_k$, but the
+smaller structures (``eddies'') become more and more isotropic, and their
+statistics more homogeneous and stationary.
+
+\item This is the \emph{transport term}: it reflects turbulence's \emph{closure
+  problem}: note that in equation (\ref{eq:bouss-quantmov-approx1}) for the mean
+$\overline{u_i}$ there are 2\nd-order moments $\overline{u'_iu'_k}$; here, in
+the equation for the second-order moments $\overline{u'_iu'_j}$ the
+\emph{3\rd-order moments} $\overline{u'_iu'_ju'_k}$ appear, and so on \textit{ad
+  infinitum}. Indeed, Reynold's decomposition always leads to more equations than
+unknowns to any order. In the atmospheric boundary layer, the divergence of
+3\rd-order moments is often important and reflects \emph{non-local}
+redistribution of covariances: it adds considerable difficulty in modeling and
+understanding its physics.
+
+
+\item This is the buoyancy term: the buoyancy flux $\overline{\rho'u_j'}$ has a
+counterpart in the virtual sensible heat flux $\overline{u'_j\theta_{v}'}$, via
+the simplified equation of state (\ref{eq:linstate-rho-T}) that emerges from the
+Boussinesq approximation.  Depending on the sign of
+$\overline{u'_j\theta_{v}'}$, it can either produce or destroy the covariance
+$\overline{u'_iu'_j}$. Production of turbulence by buoyancy makes the atmosphere
+more \emph{unstable}, and destrution makes it more \emph{stable}.
+
+\item This is the Coriolis term: it is negligible in the atmospheric boundary
+layer \citep{stull--introduction}.
+
+\item Like III, this is a divergence term: it is called the \emph{pressure
+  redistribution} term, and also like III it redistributes $\overline{u'_iu'_j}$
+without creating nor destroying covariances in the overall flow domain
+\cite{tennekes.lumley--first}.
+
+
+
+
+\item This is the \emph{return to isotropy} term
+\citep{rotta1951statistische-1,rotta1951statistische-2, hinze--turbulence,
+  lumley.newman--returntoisotropy,choi.lumley--returntoisotropy}. Its sum for
+the 3 components $\overline{u'_1u'_1}$, $\overline{u'_2u'_2}$ and
+$\overline{u'_3u'_3}$ is zero, showing that it acts to reduce the anisotropy of
+turbulence, and to nudge the Reynolds stress tensor $\overline{u'_iu'_j}$ to
+become isotropic.
+
+\item This term accounts for the molecular diffusion of $\overline{u'_iu'_j}$:
+it is very small and can be neglected.
+
+\item This is the viscous dissipation term. It can be shown to be small for the
+case $i\ne j$ \cite{wyngaard--boundary-layer.modeling}, but is very important
+and always when $i=j$; then, it accounts for the dissipation of turbulence
+kinetic energy, and is of the same order of the other important terms in
+(\ref{eq:din-covar}), such as gradient production and buoyancy.
+\end{enumerate}
+
+
+An equation that has a central role in the understanding of the physics (or, at
+least, the phenomenology) of turbulence is the turbulence kinetic energy (TKE)
+equation. It is obtained by setting $i=j$ in (\ref{eq:din-covar}), summing
+from 1 to 3, and dividing by two. The quantity
+\begin{equation}
+\overline{e} = \frac{1}{2}\sum_{i=1}^3 \overline{u'_iu'_i}
+\end{equation}
+is the kinetic energy of the flow that is due to the turbulent velocity
+fluctuations.  The TKE equation is
+\begin{multline}
+\underbrace{\parder{\overline{e}}{t}}_{\text{I}}
++ \sum_{k=1}^3\underbrace{\overline{u_k} \parder{\overline{e}}{x_k}}_{\text{II}} =
+-\sum_{k=1}^3\underbrace{\overline{u_i'u_k'}\parder{\overline{u_i}}{x_k}}_{\text{III}}
+-\sum_{k=1}^3\underbrace{\parder{\overline{e'u_k'}}{x_k}}_{\text{IV}}
+\\
++\underbrace{\frac{g}{\theta_r}\overline{w'\theta'_v}}_{\text{V}}
+-\underbrace{2\sum_{i=1}^3\sum_{k=1}^3\sum_{l=1}^3\epsilon_{ilk}\Omega_l\overline{u_i' u_k'}}_{\text{VI}}
+-\underbrace{\frac{1}{\rho_r} \sum_{i=1}^3\left[ \parder{\overline{u_i' p'}}{x_i}  \right]}_{\text{VII}} \\+
+\underbrace{2\nu\sum_{i=1}^3\sum_{k=1}^3\parder{\overline{u_i' s_{ik}'} }{x_k}}_{\text{VIII}}-
+\underbrace{2\nu\sum_{i=1}^3\sum_{k=1}^3\overline{s_{ik}'s_{ik}'}}_{\text{IX}}.
+\label{eq:ect2}
+\end{multline}
+
+In (\ref{eq:ect2}),
+\begin{enumerate}[I]
+\item is the time rate of change of $\overline{e}$;
+\item is the advection of $\overline{e}$ (the advective derivative of $\overline{e}$);
+\item is the gradient production term;
+\item is the transport term;
+\item is the buoyancy production of $\overline{e}$;
+\item is the (negligible) Coriolis term;
+\item is the pressure redistribution term;
+\item is the (negligible) diffusive transport of $\overline{e}$;
+\item is the dissipation of TKE.
+\end{enumerate}
+Note that, on account of the mass conservation equation for the fluctuations,
+(\ref{eq:cont-flut}), the return to isotropy term in (\ref{eq:din-covar}) now
+sums to zero:
+\begin{equation}
+  \sum_{i=1}^3 \overline{\frac{p'}{\rho_r}\parder{u_i'}{x_i}} =
+  \overline{\frac{p'}{\rho_r}\left[ \sum_{i=1}^3 \parder{u_i'}{x_i}\right]} = 0.\label{eq:returned}
+\end{equation}
+
+Further simplification can be achieved if we assume the conditions under which
+the Monin-Obukhov Similarity Theory is valid: horizontal homogeneity,
+stationarity, mean flow along the $x$ direction only. Then one has
+
+\begin{align}
+0 &= 
+-\overline{u'w'}\parder{\overline{u}}{z}
+-\parder{\overline{e'w'}}{z}
++\frac{g}{\theta_r}\overline{w'\theta'_v}
+-\frac{1}{\rho_r} \parder{\overline{w' p'}}{z}
+-2\nu\sum_{i=1}^3\sum_{k=1}^3\overline{s_{ik}'s_{ik}'}\nonumber\\
+0 &= 
+-\overline{u'w'}\parder{\overline{u}}{z}
+-\parder{\overline{e'w'}}{z}
++\frac{g}{\theta_r}\overline{w'\theta'_v}
+-\frac{1}{\rho_r} \parder{\overline{w' p'}}{z}
+- \epsilon_e
+\label{eq:ect-most}
+\end{align}
+
+
+
+
+
+
+
+
+
+
+%\pagestyle{attend}
+\renewcommand\bibname{References}
+\newcommand{\ape}{}
+\bibliography{abbrevs,extracted}
+\bibliographystyle{chicago}
+
+
+\end{document}
+
+
