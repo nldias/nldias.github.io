@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Covid19: Uma previsão dia-a-dia da extensão da crise</title>
-<!-- 2020-05-29 sex 08:25 -->
+<!-- 2020-05-31 dom 08:02 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -276,25 +276,20 @@ with an end in sight.
 
 
 <p>
-2020-05-28T00:00:00
-</p>
-
-
-<p>
-Ontem (28/05) foi o dia com o maior número de casos novos
-no país desde o início da epidemia. Mesmo assim,
-\(P_{\infty}\) caiu mais um pouco. Ainda não temos como saber se 
-\(P_{\infty}\) se estabilizará, ou se voltará a subir.
+2020-05-30T00:00:00
 </p>
 
 
 
 <p>
-Yesterda, May 28,
-was the day with the largest number of new cases since
-the beginning of the epidemic. Even so,
-\(P_{\infty}\) fell a little bit again. We cannot be sure if 
-\(P_{\infty}\) will level off or if it will start to increase again.
+Infelizmente, \(P_{\infty}\) voltou a subir. 
+</p>
+
+
+
+
+<p>
+Sadly, \(P_{\infty}\) is increasing again. 
 </p>
 
 
@@ -316,6 +311,28 @@ valores de \(P_\infty\) dia-a-dia. Here are the \(P_\infty\) values up to now.
 Eis aqui o ajuste das curvas ao longo do tempo (das mais recentes para
 as mais antigas). Here are the curve fittings, from latest to earliest.
 </p>
+
+<p>
+2020-05-30:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0094.png" alt="cordtime-0094.png" />
+</p>
+</div>
+
+
+<p>
+2020-05-29:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0093.png" alt="cordtime-0093.png" />
+</p>
+</div>
+
 
 <p>
 2020-05-28:
@@ -982,7 +999,7 @@ as mais antigas). Here are the curve fittings, from latest to earliest.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2020-05-29 sex 08:25</p>
+<p class="date">Created: 2020-05-31 dom 08:02</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.2 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
