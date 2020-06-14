@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Thoughts on computing, teaching, and most anything else &#x2026;</title>
-<!-- 2020-05-24 dom 13:06 -->
+<!-- 2020-05-24 dom 13:09 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -296,9 +296,9 @@ c:
 </pre>
 
 <p>
-No caso o diretório é, <code>/home/nldias/dosbox/</code>. Mas será possível
+No caso, o diretório é <code>/home/nldias/dosbox/</code>. Mas será possível
 escrever com acentos usando o teclado "clássico"
-<i>US-International</i>?. Esse é o teclado que uso desde meus tempos de
+<i>US-International</i>? Esse é o teclado que uso desde meus tempos de
 Windows 3.0, e até hoje em Linux. Para obter "átimo" eu bato <code>​'​atimo</code>;
 para obter "açafrão" eu bato <code>a​'​cafr​~​ao</code>, etc. No universo dos gostos
 pessoais, essa é a meu ver uma configuração de teclado infinitamente
@@ -332,7 +332,7 @@ O resultado pode ser visto aqui:
 </p>
 
 <p>
-E isso é tudo, por hoje.
+E isso é tudo, por hoje. P.S.: Sim, eu sei que o trema caiu.
 </p>
 </div>
 </div>
@@ -2030,7 +2030,7 @@ coniventes: eles estão destruindo o futuro.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2020-05-24 dom 13:06</p>
+<p class="date">Created: 2020-05-24 dom 13:09</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.2 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
