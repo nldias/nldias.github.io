@@ -1,0 +1,2143 @@
+% -------------------------------------------------------------------
+% tesex.tex é uma forma mais ou menos despretensiosa de fazer uma "boneca" para 
+% o modelo de teses e dissertações da UFPR
+%
+% Nelson Luís Dias
+% 2015-11-03T19:54:54
+% 2020-06-10T09:43:30
+% -------------------------------------------------------------------
+\documentclass[12pt,notitlepage]{report}
+\usepackage[a4paper,top=3cm,left=3cm,right=2.5cm,bottom=2.5cm]{geometry} 
+\input{math.tex}                            
+\usepackage{amsmath,amsthm}             % Matemática!
+% -------------------------------------------------------------------
+% Escolha uma das 5 abaixo, e comente as outras
+%--------------------------------------------------------------------
+%\usepackage{lmodern}                       % 1. a letra que todos nós amamos
+%\usepackage{newtxtext}                      % 2. Times-Roman
+%\usepackage{newtxmath}                      % 3. Times-Roman, matemática
+\usepackage[utopia]{mathdesign}            % 3. Utopia
+%\usepackage[bitstream-charter]{mathdesign}  % 4. Bitstream Charter
+%\usepackage{mathpazo}                      % 5. Palatino
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[brazil,american]{babel}     % as duas únicas línguas que eu sei falar
+\usepackage{natbib}                     % referências que todos nós amamos
+\usepackage[small,compact]{titlesec}    % um look mais cool
+\usepackage{setspace}                   % ** singlespacing nos títulos
+\usepackage{tocbibind}                  % ** inclui listas de figuras, tabelas, e referências, no sumário 
+%\usepackage{textcomp}                   % extras em texto
+\usepackage{tabu}                       % boas tabelas
+\usepackage{booktabs}                   % e boas linhas horizontais nelas
+\usepackage{upgreek}                    % "micro" management
+%\usepackage{url}                        % cada vez mais usados
+\usepackage[pdftex,colorlinks=true,     % todo o documento fica "linkado"
+   urlcolor=blue,
+   linkcolor=blue,
+   citecolor=blue,
+   filecolor=blue]{hyperref}
+\usepackage{graphicx}                   % figuras
+\usepackage{pdfpages}                   % para o termo de aprovação e outras sutilezas
+
+
+
+\input{ira.tex}
+
+
+% -------------------------------------------------------------------
+% cabeçalhos e rodapés
+% -------------------------------------------------------------------
+\newpagestyle{tudo}{\setfoot*{}{\thepage}{}}
+% -------------------------------------------------------------------
+% basta 1 comando da package titlesec!
+% -------------------------------------------------------------------
+\titleformat{\chapter}                                      % command
+   [display]                                                % shape
+   {\Large\bfseries\singlespacing\raggedright}              % format
+   {Capítulo \thechapter}                                   % label
+   {0pt}                                                    % sep
+   {\vspace*{0.5cm}}                                        % before
+   [\titlerule]	                                            % after
+% ----------------------------------------------------------------------------------------
+% no seu texto, você não vai precisar dos comandos abaixo
+% ----------------------------------------------------------------------------------------
+\newcommand{\cw}{\ensuremath{{C_{w}}}}
+\newcommand{\rw}{\ensuremath{{R_{w}}}}
+% -------------------------------------------------------------------
+% espaço "quase" duplo
+% -------------------------------------------------------------------
+\linespread{1.25}
+
+\begin{document}\selectlanguage{brazil}
+\pagestyle{tudo}
+%\pagenumbering{roman}     %% faça isso se você desejar as primeiras páginas numeradas em algarismos romanos
+%\pagenumbering{arabic}
+
+\begin{titlepage}
+\thispagestyle{tudo}
+\begin{center}
+UNIVERSIDADE FEDERAL DO PARANÁ. \\
+Setor de Tecnologia\\
+Programa de Pós-Graduação em Engenharia Ambiental
+\end{center}
+
+\vfill
+
+\begin{center}\large
+João da Silva
+\end{center}
+
+\vfill
+
+\begin{center}\large
+AULA14: ESTILOS, TIPOS DE LETRAS, FORMATAÇÃO EM GERAL
+\end{center}
+
+\vfill
+
+\hfill \parbox{0.5\textwidth}{%
+Dissertação apresentada ao Programa de Pós-Graduação em Engenharia Ambiental na
+Área de Concentração Monitoramento e Modelagem Ambiental do Setor de Tecnologia,
+Universidade Federal do Paraná, como requisito parcial para a obtenção do título
+de Mestre em Ciências em Engenharia Ambiental.\\[1cm]
+
+Orientador: Confúcio\\
+Coorientador: Buda
+}
+
+\vfill
+
+\begin{center}
+Curitiba, 2020
+\end{center}
+
+\end{titlepage}
+
+% --------------------------------------------------------------------
+% agora vem o Termo de Aprovação
+% --------------------------------------------------------------------
+
+\includepdf[scale=0.8,pagecommand={\stepcounter{page}\thispagestyle{tudo}}]{termo.pdf}
+
+% --------------------------------------------------------------------
+% Dedicatória
+% --------------------------------------------------------------------
+\phantom{nada!}
+
+\vfill
+
+\hfill\parbox{0.5\textwidth}{%
+A quem você quiser dedicar isso!}
+
+% --------------------------------------------------------------------
+% Agradecimentos
+% --------------------------------------------------------------------
+
+\newpage
+
+\begin{center}
+\large
+AGRADECIMENTOS
+\end{center}
+
+A meu orientador, que é o maior pesquisador do mundo. Nem sei como ele ainda não
+ganhou o Prêmio Nobel.
+
+Ao meu coorientador, que é quase tão bom.
+
+Aos meus colegas de laboratório.
+
+Aos meus pais, etc..
+
+\tableofcontents
+
+\listoffigures
+
+\listoftables
+
+\newpage
+\begin{abstract}\selectlanguage{brazil}
+A dificuldade de realizar medições estritamente superficiais da concentração de
+gases de efeito estufa em interfaces água-ar indica a necessidade de se
+desenvolver equações de transferência de massam que operem diretamente com a
+concentração medida na água a uma pequena profundidade e com a concentração
+medida no ar a uma certa altura acima da superfície. Neste relatório, nós
+descrevemos uma metodologia completa para a modelagem de coeficientes de
+transferência de massa com essas características, que levem em conta os aspectos
+importantes da turbulência no ar e na água. O modelo é testado para um conjunto
+de dados medidos no oceano, e tem bom desempenho para os fluxos de calor
+sensível e calor latente. Os resultados obtidos para o fluxo de CO\sub{2} são
+piores, e indicam a necessidade de maiores esforços de pesquisa nessa área.
+\end{abstract}
+
+\newpage
+\selectlanguage{american}
+\begin{abstract}
+The difficulty of making measurements of scalar strictly at the thin film that
+defines a surface \ldots
+\end{abstract}
+
+
+\selectlanguage{brazil}
+
+
+
+
+
+
+
+
+
+\chapter{Introdução e contextualização}\label{cap:intro}
+%\pagenumbering{arabic}  %% descomente se você estava usando romanos e agora quer usar arábicos na numeração de páginas
+
+
+
+\begin{quote}
+\begin{center}
+\textbf{Resumo do Capítulo}
+\end{center}
+
+Nós vamos contextualizar e estrategizar a ergonomia da propedêutica da
+eliminação de resíduos tóxicos.
+\end{quote}
+
+
+
+
+\section{Contextualização do problema e estratégia de pes\-qui\-sa}
+
+
+\label{sec:conceitua}
+
+Reservatórios artificiais para diversos usos são uma elemento central da
+in\-fra-es\-tru\-tu\-ra moderna de qualquer país.  No Brasil, eles existem em
+grande número, sendo construídos e operados para geração de energia,
+abastecimento de água, controle de enchentes, etc.. A resposta física e
+bioquímica desses reservatórios às mudanças climáticas, e a sua própria
+influência sobre as mesmas, permanecem motivo de investigação, devido à
+complexidade dos fenômenos envolvidos.
+
+Apesar dos inegáveis avanços na modelagem tanto dos aspectos físicos
+(balanço hídrico, balanço de energia, etc.) e bioquímicos (balanços
+dos principais grupos de substâncias dissolvidas na água, e reações
+bioquímicas que ocorrem na água de reservatórios), a sua compreensão
+depende fortemente de estudos dos sub-processos físicos e bioquímicos
+envolvidos que permitam melhorar nossas estratégias de modelagem,
+aperfeiçoar as próprias medições, e em última análise realizar
+progressos na compreensão da interação entre os reservatórios e
+atmosfera. Estudos conjuntos de medições de alta qualidade e de
+modelagem são uma ferramenta essencial neste esentido.  Um exemplo dos
+benefícios desta abordagem pode ser encontrado em
+\cite{cunha.carneiro.ea--eutrofizacao.preventiva}.
+
+
+
+Nos reservatórios, os gases de efeito estufa (GEE) têm origem nos
+processos biogeoquímicos que ocorrem na massa líquida e no
+sedimento. Os gases de efeito estufa produzidos de maior relevância
+são o dióxido de carbono (CO\sub{2}), o metano (CH\sub{4}), e o óxido
+nitroso (N\sub{2}O).
+
+
+Recentemente, emissões de GEE por reservatórios de hidrelétricas
+passaram a fazer parte das preocupações da comunidade científica, dos
+governos, e da sociedade.  O primeiro estudo no tema foi devido a
+\cite{rudd.harris.ea--arehydroeletricreservoirs}: nele, os autores
+compararam perfis de concentração de CO\sub{2} e CH\sub{4} em lagos de
+hidrelétricas com perfis observados em corpos d'água naturais.  Seus
+resultados indicaram que durante o período inicial após o enchimento
+do lago as emissões são altas (em comparação com corpos d'água
+naturais), reduzindo-se gradativamente e alcançando valores similares
+aos de lagos naturais após alguns anos. Eles concluíram que,
+dependendo das características do reservatório, a emissão de GEE por
+unidade de energia produzida pode ser significativa.
+
+
+
+No entanto, a real contribuição de reservatórios para a emissão de GEE
+permanece motivo de controvérsias. Estimativas teóricas muitas vezes
+não correspondem às medições em campo \citep{rosa.santos.ea--biogenic}
+e medições de emissões com diferentes métodos fornecem resultados
+diferentes \citep{duchenim.lucotte.ea--comparison}. Revisões recentes
+mostram claramente que ainda não há consenso sobre os valores dos
+fluxos de GEE entre as superfícies líquidas e a atmosfera
+\citep{mendonca.barros.ea--greenhouse.gas.emissions.hydroelectric}.
+
+
+
+  
+
+
+A emissão de GEE por reservatórios é uma consequência do ciclo biogeoquímico do
+carbono nos mesmos. No processo de decomposição da vegetação submersa nos
+reservatórios, o carbono estocado na biomassa é transformado em gás e
+transferido para atmosfera. As dificuldades teóricas e logísticas de medição
+desses fluxos são muito grandes. Aqui, fazemos um breve resumo de estudos
+realizados nesse sentido, e de alguns valores encontrados.
+\cite{abril.guerin.ea--carbon.dioxide} investigaram a emissão de GEE durante a
+formação do reservatório da usina hidrelétrica Petit Saut na Guiana
+Francesa. Antes do enchimento, a área do reservatório era coberta por vegetação:
+o enchimento começou em janeiro de 1994 e alcançou seu nível máximo em julho de
+1995. \cite{abril.guerin.ea--carbon.dioxide} observaram que as emissões de
+sulfeto de hidrogênio não eram relevantes em comparação com as emissões
+CO\sub{2} e CH\sub{4}. O transporte difusivo do metano para atmosfera foi
+dominante apenas no primeiro ano de alagamento, reduzindo-se posteriormente.
+\citeauthor{abril.guerin.ea--carbon.dioxide} também monitoraram a emissão de
+gases de efeito estufa a jusante da barragem. As medições indicaram que as
+concentrações dos gases diminuíam com a distância a jusante, sendo o metano
+emitido principalmente no canal de fuga por degaseificação da água que passa
+pelas
+turbinas. \cite{mendonca.barros.ea--greenhouse.gas.emissions.hydroelectric}
+também constataram emissões de gases de efeito estufa nas turbinas das
+hidroelétricas, com efeitos importantes de degaseificação. Eles monitoraram o
+fluxo difusivo do gás carbônico e do metano em seis reservatórios de usinas
+hidroelétricas dos Estados Unidos. Quatro dos reservatórios agiam como fixadores
+de dióxido de carbono nos períodos diurnos, enquanto que os outros dois sempre
+emitiam esse gás. Em termos de emissões líquidas, os reservatórios agiam como
+uma apreciável fonte de metano e gás carbônico para atmosfera.  Já existe
+atualmente um volume razoável de medições de gases de efeito estufa em
+reservatórios brasileiros e balanços de carbono correspondentes.  A maioria das
+medições dos fluxos superficiais de GEE foram realizadas com câmeras
+flutuantes. \cite{rosa.santos.ea--scientific.errors} compararam a emissão de
+dióxido de carbono e metano de diversos reservatórios de usinas hidrelétricas do
+Brasil com emissões de termelétricas fictícias com mesma capacidade de geração
+de energia. Os resultados indicaram que as emissões das hidrelétricas com menor
+densidade de energia (produção de energia por unidade de área) podem ser
+comparáveis às emissões de termoelétricas, mas, em geral, os reservatórios das
+usinas hidrelétricas emitem, por unidade de energia gerada, bem menos gases
+estufa para atmosfera do que as termoelétricas.  \cite{rosa.santos.ea--biogenic}
+também investigaram as emissões de gases de efeito estufa de reservatórios de
+hidrelétricas. Eles observaram que a emissão de metano para atmosfera variava
+para os locais de maiores profundidades e que havia intensa emissão de metano em
+áreas que eram sazonalmente expostas à atmosfera devido à biodegradação de
+vegetais e seres vivos que colonizavam a área, e à exposição ao oxigênio da
+matéria orgânica que estava alagada. Eles também enfatizaram a importância de se
+analisar o efeito do vento sobre a emissão dos gases, pois o vento é um forçante
+da emissão dos gases para atmosfera devido à agitação mecânica da água, e
+propicia oxigenação das camadas mais profundas, inibindo a metanogênese.
+\cite{rosa.santos.ea--biogenic} notaram o decaimento das emissões de metano com
+a idade dos reservatórios, enquanto que a emissão de dióxido de carbono não
+apresentou variação significativa com o tempo. O mesmo foi observado por
+\cite{rosa.santos.ea--greenhouse.gas.tropical}. Embora esses dois estudos não
+tenham observado decaimento dos fluxos de CO\sub{2} com a idade do reservatório,
+existem evidências de que as emissões de CO\sub{2} e CH\sub{4} são maiores nos
+primeiros anos do reservatório.  De fato, \cite{barros.cole.ea--carbon}
+verificaram essa tendência ao analisar a emissão de 85 reservatórios globalmente
+distribuídos, cuja soma das áreas correspondia a 20\% da área de todos os
+reservatórios de hidrelétricas do planeta terra.  Eles encontraram correlação
+entre as emissões dos gases estufa com a latitude e com a idade do reservatório,
+sendo que as maiores taxas de emissão eram as dos reservatórios localizados nas
+regiões tropicais. Entretanto, também observaram algumas excessões, em que
+alguns dos reservatórios monitorados estavam fixando carbono da atmosfera por
+estarem eutrofizados, e, nesses casos, a fixação de carbono independia da idade
+do reservatório e da latitude de localização.
+\cite{ometto.cimbleris.ea--carbon.emission.function} investigaram as emissões de
+dióxido de carbono e metano de oito reservatórios brasileiros durante 3 anos, de
+2003 a 2007. Sete dos oito reservatórios estavam localizados em região de Bioma
+Cerrado e um deles de Bioma de Floresta Atlântica, situado na cidade de Rezende,
+RJ. Eles observaram que as emissões de GEE por unidade de potência gerada
+decresciam com a idade do reservatório, com exceção dos reservatórios que
+recebiam grande aporte de matéria orgânica oriunda de esgotos de cidades.  Na
+Tabela 1 consta um pequeno resumo das faixas de valores de fluxos de CO\sub{2}
+em reservatórios encontrados na literatura.
+
+Eu uso \LaTeX\ para escrever meus documents. A uni\,dade de umidade específica é 
+$\mathrm{g\, kg^{-1}}$
+
+Você pode encontrar esta informação em [??]. Nos séculos XIX e XX,
+aconteceram grandes descobertas em mecânica estatística
+\citep{maxwell--dynamical.theory.gases,
+  einstein--uber.molekularkinetischen, reynolds--dynamical}
+
+
+
+
+\section{Medições com o método de covariâncias tur\-bu\-len\-tas}\label{sec:medmct}
+
+Em uma linha fortemente relacionada com as medições de fluxos de GEE, O Método
+de Medições de Covariâncias Turbulentas (MCT) \citep{dias.gobbi.ea--abordagens}
+tem sido amplamente utilizado para estudar questões relacionadas ao aquecimento
+global. Na literatura, encontram-se trabalhos que utilizam esse método para
+investigar tanto os fluxos dos gases de efeito estufa para atmosfera, quanto o
+possível impacto do aquecimento global no meio ambiente. Nessa segunda
+abordagem, \cite{liu.zhang.ea--eddy.cool} e \cite{blanken.rouse.ea--eddy}
+utilizaram o MCT para medir os fluxos de calor sensível e latente em
+reservatórios, e com isso estimar o seu balanço de energia e suas taxas de
+evaporação.  \cite{liu.zhang.ea--eddy.cool} observaram que alterações nas
+frentes frias como resultado do aquecimento global poderiam conduzir a uma
+substancial mudança no balanço de energia e no balanço hidrológico das regiões
+com abundantes corpos hídricos. No trabalho de \cite{blanken.rouse.ea--eddy}, os
+autores constataram que em um ano de El Niño, em que a temperatura do ar estava
+4\textdegree{C} acima do normal, a perda por evaporação foi significativamente
+maior. Concluíram então que mudanças climáticas podem alterar a magnitude e a
+sazonalidade da evaporação em lagos, com impactos sobre a disponibilidade
+hídrica.
+
+
+
+\begin{table}
+\caption{Fluxos de CO\sub{2} [mínimo:máximo] encontrados em diversos estudos de GEE em
+reservatórios}\label{tab:minmaxflux}
+\begin{tabu}[t]{X[3]X[3c]X[3c]X[2r]}
+\toprule
+Referência & Fluxo de CO\sub{2} ($\mathrm{\upmu\,mol\, m^{-2}\, s^{-1}}$) 
+           &Local  & {Número de reservatórios} \\
+\midrule
+\cite{abril.guerin.ea--carbon.dioxide} & $0{,}34$ : 2{,7} &  Guiana Francesa & 1 \\
+\cite{soumis.duchemin.ea--greenhouse.western.us}
+                    & $-0{,}31$ : 0{,}33 & Estados Unidos & 6 \\
+\cite{rosa.santos.ea--scientific.errors}
+                    & $-0{,}036$ : 2{,}6 & Brasil         & 11 \\
+\cite{rosa.santos.ea--biogenic}
+                    & $1{,}42$ : 2{,}7   & Brasil         & 4 \\
+\cite{barros.cole.ea--carbon}
+                    & $-0,13$ : 0{,}79   & Globo          & 85 \\
+\cite{ometto.cimbleris.ea--carbon.emission.function}
+                    & $0{,}53$ : 5{,}26  & Brasil         & 9 \\
+\bottomrule
+\end{tabu}
+\end{table}
+
+
+
+Além disso, conforme os estudos de \cite{blanken.rouse.ea--eddy} e de
+\cite{liu.zhang.ea--eddy.cool} mostraram, o balanço hídrico dos
+reservatórios pode ser altamente suscetível às modificações nos
+forçantes atmosféricos devidas às mudanças climáticas.  Neste sentido,
+nosso estudo também contribui para melhorar a compreensão da resposta
+dos reservatórios aos cenários de mudanças climáticas, contribuindo
+para um melhor planejamento das estratégias de gestão de recursos
+hídricos em face dessas mudanças.
+
+
+
+
+
+
+\chapter{Métodos de estimativa de cálculo de flu\-xos, e estudos  as\-so\-ci\-a\-dos}\label{cap:metod-estima}
+
+
+
+
+\section{O fluxo através de uma série de resistências}\label{sec:fluxo-serie-resist}
+
+Os modelos com que vamos trabalhar neste relatório assemelham-se à lei de Ohm
+aplicada a um conjunto de resistores em série. Em nossos modelos, um único fluxo
+$F$ atravessa uma série de $n$ camadas, e para cada uma delas admite-se uma relação
+fluxo-gradiente (integrada) do tipo
+\begin{equation}
+F = {\rho}k_i(c_i - c_{i-1}), \qquad i = 0, \ldots,
+n.\label{eq:analogia-ohm}x
+\end{equation}
+Em (\ref{eq:analogia-ohm}), $F$ é o fluxo, $\rho$ é a massa específica do
+fluido, $k_i$ são condutâncias ou velocidades de transferência, e $c_i$ são
+concentrações mássicas. Dimensionalmente, $\dimof{F} = \mathsf{M_\chi L^{-2}T^{-1}}$,
+$\dimof{\rho}=\mathsf{M\,L^{-3}}$,
+$\dimof{k_i}=\mathsf{L\,T^{-1}}$ e $\dimof{c_i}=\mathsf{M_\chi\,M^{-1}}$.
+
+A estrutura das equacões (\ref{eq:analogia-ohm}) permite que elas sejam escritas
+em forma escalonada,
+\begin{equation*}
+\begin{array}{rrrrrrrl}
+c_0 & - c_1 &      &        &        &      & = & F/(\rho k_1), \\
+    &   c_1 & -c_2 &        &        &      & = & F/(\rho k_2), \\ 
+    &       &      & \ddots &        &      &   & \\
+    &       &      &        &c_{n-1} & -c_n & = & F/(\rho k_n)  \\ \hline
+c_0 &       &      &        &        & -c_n & = &\sum_{i=1}^n F/(\rho k_i)
+\end{array}
+\end{equation*}
+
+
+
+
+Sem nos preocuparmos, ainda, com as bases físicas de (\ref{eq:analogia-ohm}),
+observe que podemos escrever
+\begin{align}
+\frac{F}{\rho} \sum_{i=1}^n \frac{1}{k_i} & \equiv \frac{F}{\rho k} = c_0 -
+c_n,\\
+F &= \rho k (c_0 - c_n),\label{eq:fluxo-global-gradiente}\\
+\intertext{com}
+\frac{1}{k} = \sum_{i=1}^n \frac{1}{k_i}.\label{eq:soma-resist}
+\end{align}
+Se as ``resistências'', neste caso, forem definidas como o inverso das
+condutâncias $k_i$, (\ref{eq:soma-resist}) simplesmente afirma que a resistência
+total é a soma das resistências. Conhecendo-se as condutâncias de cada camada,
+portanto, podemos escrever uma relação ``global'' fluxo-gradiente,
+(\ref{eq:fluxo-global-gradiente}).
+
+Para escoamentos turbulentos na atmosfera, $c_0$ em geral é a concentração do
+escalar \emph{na superfície}, e um modelo de duas camadas (a sub-camada
+interfacial e a camada superficial) foi proposto por
+\cite{brutsaert--b.roughness.length,brutsaert--a.theory.local.evaporation}
+para
+parametrizar $k$. A dificuldade de medir concentrações (ou temperaturas)
+\emph{exatamente} na superfície, entretanto, sugere que uma escolha melhor
+talvez seja adotar $c_0$ como uma concentração \emph{abaixo} da superfície, e
+eliminar a concentração superficial com um procedimento análogo ao esboçado
+acima. Na sequência, nós discutimos diversas formas de levar em conta medições
+de concentração na água, abaixo da superfície, em relações globais
+fluxo-gradiente. 
+
+
+
+
+
+\section{A parametrização de fluxos turbulentos}
+
+O fluxo de um escalar entre uma porção da superfície terrestre e a atmosfera é
+frequentemente parametrizado em termos de coeficientes de transferência de
+massa. Se $F$ é o fluxo de massa do escalar $\chi$, com dimensões
+$\mathsf{M_\chi\,L^{-2}\,T^{-1}}$, a definição do coeficiente de transferência
+$\mathrm{Cf}_a$ (entre a superfície e o nível $z=z_a$) é
+\begin{equation}
+F \equiv \overline{\rho} u_* c_* \equiv \overline{\rho}\, 
+  \overline{u_b} \mathrm{Cf}_a (\overline{c_0} - \overline{c_a}).
+\label{eq:wtf-is}
+\end{equation}
+Em (\ref{eq:wtf-is}), $\overline{\rho}$ é a densidade média
+($\mathsf{M\,L^{-3}}$), ou massa específica média, do ar; $u_*$ é a velocidade
+de atrito; $c_*$ é a escala turbulenta da concentração do escalar;
+$\overline{u}_b$ é a velocidade média do vento na altura $z_b$; $\mathrm{Cf}_a$ é
+o coeficiente de transferência de massa para o escalar entre a superfície (em $z
+= 0$) e a atmosfera; $\overline{c_0}$ é a concentração mássica
+($\mathsf{M_\chi\,M^{-1}}$) média do escalar imediatamente acima da superfície;
+e $\overline{c_a}$ é a concentração mássica média do escalar na altura $z_a$.
+
+Nas definições
+acima, as dimensões $\mathsf{M}$ (massa de fluido) e $\mathsf{M_\chi}$ (massa do
+gás $\chi$) são \emph{distintas}. $\mathsf{L}$ e $\mathsf{T}$ são as dimensões de
+comprimento e tempo.
+
+
+Um coeficiente de arrasto (entre a superfície e um nível $z=z_b$) pode ser
+definido de forma análoga por
+\begin{equation}
+\tau \equiv \overline{\rho}u_*^2 = \overline{\rho}
+\,\mathrm{Cd}_b \, \overline{u_b}^2.\label{eq:tau-is}
+\end{equation}
+
+
+Para superfícies com elementos de rugosidade rígidos, existe uma
+teoria bem estabelecida para o cálculo de $\mathrm{Cd}_b$ e
+$\mathrm{Cf}_a$ em termos de rugosidades para \textit{momentum} e para o
+escalar, e da Teoria de Similaridade de Monin-Obukhov (MOST): veja
+\cite{brutsaert--model.evaporation.molecular.diffusion,
+  brutsaert--b.roughness.length,brutsaert--a.theory.local.evaporation}
+e o artigo de revisão de \cite{dias--whbresearchabl}.
+
+
+Nossa principal preocupação aqui é com a transferência de um escalar através de
+superfícies líquidas, principalmente lagos e oceanos. Para essas superfícies,
+não é muito difícil medir a temperatura superficial da água com termômetros
+flutuantes ou infravermelhos, com resultados ra\-zo\-a\-vel\-men\-te bons. Isso significa
+que tanto a temperatura da superfície $\overline{T_0}$ quanto a umidade específica
+superficial $\overline{q_0}$ médias podem ser obtidas com relativa facilidade, a
+segunda a partir da primeira via a curva de pressão de saturação de vapor
+d'água. Modelos para o cálculo de $\mathrm{Cd}_b$ e $\mathrm{Cf}_a$ para superfícies
+líquidas também existem: ver \citet[][seção 5.1.b]{brutsaert--evaporation.into}.
+
+
+
+Para outros escalares, tais como CO\sub{2} e CH\sub{4}, entretanto,
+concentrações superficiais realmente representativas são consideravelmente mais
+difíceis de se obter: analisadores e amostradores para esses gases são volumosos
+(da ordem de 10 cm ou maiores), e portanto não podem medir, na prática,
+concentrações estritamente superficiais. Consequentemente, na realidade
+concentrações do gás na água são geralmente medidas a algumas dezenas de
+centímetros de profundidade, e às vezes muito mais fundo. A lei de Henry é então
+aplicada para converter essas concentrações para concentrações equivalentes na
+atmosfera; e somente então uma equação de transferência do tipo
+(\ref{eq:wtf-is}) é aplicada, levando em conta ou não a real profundidade de
+medição na água.
+
+
+
+
+É fundamental que se desenvolvam procedimentos objetivos que possam levar em
+consideração a real profundidade de medição da concentração do escalar na
+água. Neste trabalho, nós revisamos teorias existentes, as estendemos e então
+procuramos produzir estimativas consistentes dos coeficientes de transferência
+levando em conta a profundidade das medições de concentração na água próximo à,
+mas não na, superfície. O desempenho dessas metodologias é avaliado então contra
+medições de campo do fluxo $F$.
+
+Em micrometeorologia, o método direto de medição se chama Método das
+Covariâncias Turbulentas (MCT), ou método de covariância de vórtices
+(\textit{eddy covariance method}), e necessita somente da medição das flutuações
+turbulentas dos escalares medidos em um nível perto da superfície
+simultaneamente com as flutuações de velocidade do vento. Os métodos indiretos
+usam dados de campo mais fáceis de serem obtidos (\textit{i.e.}, concentrações
+médias, velocidades do vento médias, etc.), a partir das quais expressões
+semi-empíricas ou totalmente empíricas são utilizadas para a obtenção de uma
+estimativa do fluxo de massa de gás.  A equação (\ref{eq:wtf-is}) é um exemplo
+de um método indireto.  Entretanto, ao contrário de muitos outros casos
+encontrados na literatura, (\ref{eq:wtf-is}) tem a vantagem de ser
+dimensionalmente consistente e permitir a formulação de $\mathrm{Cf}_a$ em
+termos de variáveis adimensionais que descrevem e explicam, corretamente, a
+dinâmica do processo de transferência. Grande parte do presente trabalho é
+dedicada a essa formulação.
+
+Como um exemplo de parametrização de $\mathrm{Cf}_a$ em (\ref{eq:wtf-is}), os dados
+obtidos com um estudo realizado com um gás traço por \cite{Wanninkhof-1985}
+foram utilizados em uma parametrização proposta por \cite{liss.merlivat--role}.
+As expressões de \citeauthor{liss.merlivat--role} procuraram relacionar a
+velocidade de transferência com a velocidade média do vento sobre o oceano.
+
+A parametrização de \citet{liss.merlivat--role} consiste em três segmentos
+lineares em função da velocidade média do vento a 10 m de altura,
+$\overline{u}_{10}$. A primeira relação vale para ventos $\overline{u}_{10} <
+3{,}6\, \mathrm{m\,s^{-1}}$, que é o limite em que começam a se formar ondas
+capilares. O segundo segmento vale para ventos no intervalo $3{,}6 <
+\overline{u}_{10} < 13\,\mathrm{m\,s^{-1}}$, onde o limite superior corresponde
+à situação em que começam a ocorrer quebras de ondas e surgimento de espuma. O
+terceiro segmento vale para velocidades de vento $\overline{u}_{10} >
+13\,\mathrm{m\,s^{-1}}$. Este último segmento foi calibrado com dados
+extrapolados de um estudo de túnel de vento realizado por \cite{Broecker-1979} e
+\cite{Broecker-1984}. Outra parametrização da velocidade de transferência foi
+originalmente proposta por \cite{Smethie-1985} e é baseada em um estudo de
+transferência de gás utilizando a metodologia denominada \textit{radon deficit method}. Na
+parametrização de \citeauthor{Smethie-1985} a velocidade de transferência é nula
+para ventos ($\overline{u}_{10}$)
+menores que $3\,\mathrm{m\,s^{-1}}$ e segue uma relação linear com a velocidade média do
+vento para ventos maiores que $3\,\mathrm{m\,s^{-1}}$.
+
+Posteriormente essa metodologia foi utilizada em \cite{Takahashi-1989} e
+\cite{tans.fund.ea--observational} com algumas revisões para adequar a relação da velocidade de
+transferência com a média global de velocidades de transferência obtidos no
+oceano através da metodologia denominada \textit{bomb-$\mathit{^{14}C}$
+  inventory}. O trabalho de \cite{wanninkhof--relationship} apresentou outra
+parametrização utilizando uma dependência quadrática da velocidade de
+transferência com $\overline{u}_{10}$. O autor também apresentou uma metodologia para
+incluir o efeito do enriquecimento químico no fluxo de massa, que pode acontecer
+para alguns gases na presença de ventos moderados. 
+
+Desde então, outras 
+parametrizações foram propostas, por exemplo por \cite{Nightingale-2000},
+\cite{Wanninkhof-1999} e \cite{Hare-2004}. \cite{Soloviev-2007}
+apresenta uma síntese sobre as diferentes parametrizações citadas anteriormente.
+O autor também ressalta a importância de outros fatores físicos como a quebra de
+ondas para o aumento da velocidade de transferência de massa. A influência da
+quebra das ondas também foi verificada em \citep{Blomquist-2006}, que comparou a
+velocidade de transferência do CO\sub{2} com o gás sulfeto de dimetila (DMS). O DMS
+apresenta uma solubilidade diferente do CO\sub{2}, e essa diferença de solubilidade
+influencia a transferência de massa na presença da quebra de ondas. A influência
+das bolhas na transferência de massa foi estudada nos trabalhos de
+\cite{Woolf-1997}, \cite{Woolf-2005} e \cite{bowyer.woolf--gas.exchange.bubble}.
+
+
+
+Conforme mencionado no capítulo \ref{cap:intro}, em estudos de emissão de gases
+de efeito estufa em lagos, é muito comum também o uso de câmaras
+flutuantes. Embora baseadas em princípios totalmente diferentes, medições de
+fluxos de massa com câmaras são consideradas, por muitos autores, como um método
+direto de medição \citep{damazio--diretrizes}.
+
+
+
+
+
+
+\chapter{Modelagem das sub-camadas interfacial  e superficial}\label{cap:modelagem-sub}
+
+
+
+
+Neste trabalho, nós usamos a separação de Reynolds com a notação genérica
+\begin{equation}
+a = \overline{a} + a',\label{eq:sep-reynolds}
+\end{equation}
+onde $\overline{a}$ indica uma média probabilística da grandeza instantânea $a$,
+e $a'$ a sua flutuação turbulenta.  Em micrometeorologia, em geral são usadas
+médias temporais e diversos métodos de filtragem para a extração das flutuações
+turbulentas: ver, por exemplo, \cite{dias.gobbi.ea--abordagens}. 
+
+
+
+
+
+\section{Fluxos superficiais e a Teoria de Si\-mi\-la\-ri\-da\-de de
+  \newline Mo\-nin-Obu\-khov}\label{sec:TSMO}
+
+Os fluxos superficiais $\tau$, $H$, $H_v$, $E$ e $F$  de
+\emph{momentum}, calor sensível, calor sensível virtual, massa de vapor de
+água, e massa do gás $\chi$ são dados, respectivamente, por
+\begin{align}
+\tau &= - \overline{\rho} \overline{w'u'} \equiv \overline{\rho}u_*^2,\label{eq:04r}\\
+H &=  \overline{\rho} c_p \overline{w'\theta'} \equiv \overline{\rho}u_* \theta_*,\label{eq:05r}\\
+H_v &=  \overline{\rho}  c_p \overline{w'\theta_v'} \equiv \overline{\rho} u_*\theta_{v*},\label{eq:05rr}\\
+E &= \overline{\rho}\overline{w' q'} \equiv \overline{\rho}u_* q_*,\label{eq:06r}\\
+F&= \overline{\rho}\overline{w' c'}\equiv \overline{\rho}u_* c_{*},\label{eq:07r}
+\end{align}
+onde $u'$, $w'$, $\theta'$, $q'$, $\theta_v'$ e $c'$ são as flutuações
+turbulentas da velocidade horizontal, velocidade vertical, temperatura, umidade
+específica, temperatura virtual e concentração mássica do gás $\chi$
+respectivamente, e $\overline{\rho}$ é a densidade do ar.
+
+Em (\ref{eq:04r})--(\ref{eq:07r}), as barras e linhas indicam a separação de
+Reynolds (\ref{eq:sep-reynolds}).  É importante observar que as covariâncias
+$\overline{w'u'}$, \ldots, $\overline{w'c'}$ precisam ser medidas
+suficientemente próximo da superfície para que representem, de fato, os fluxos
+superficiais.  Essas equações servem também para definir as diversas variáveis e
+escalas de turbulência necessárias na Teoria de Similaridade de Monin Obukhov
+\citep{obukhov--turbulence}: a distância a partir da superfície, $z$; a
+velocidade de atrito $u_*$, as escalas turbulentas de temperatura virtual
+$\theta_{v*}$, de temperatura $\theta_*$, umidade específica $q_*$ e
+concentração do gás $\chi$, $c_{*}$. As três primeiras definem a variável
+de estabilidade de Obukhov,
+\begin{equation}
+\zeta \equiv -\frac{\kappa g z \theta_{v*}}{\overline{\theta_v}u_*^2},\label{eq:def-zeta}
+\end{equation}
+onde $\kappa = 0{,}4$ é a constante de vón Kármán.  Os aspectos relevantes da
+TSMO podem ser encontrados, entre outros, em
+\cite{stull--introduction}, \cite{garratt--atmospheric} e
+\cite{wyngaard--atmospheric.turbulence}.
+ 
+Além disso, é importante observar que quando, em lugar de concentrações mássicas $q'$ e
+$c'$ em (\ref{eq:06r})--(\ref{eq:07r}), são medidas densidades $\rho_v'$ e
+$\rho'_\chi$, é necessário aplicar a correção WPL
+\citep{webb.pearman.ea--correction}: ver, por exemplo,
+\cite{dias.gobbi.ea--abordagens}. 
+
+
+
+
+
+A TSMO prevê a seguinte forma para os gradientes adimensionais de velocidade e
+de escalares:
+\begin{align}
+\frac{\kappa z}{u_*}\frac{\partial \overline{u}}{\partial z} &\equiv\phi_\tau
+(\zeta); \label{eq:phi-tau-def}\\ \frac{\kappa
+  z}{\theta_*}\frac{\partial\overline{\theta}}{\partial z} &\equiv\phi_H
+(\zeta); \label{eq:phi-H-def}\\ \frac{\kappa z}{q_*}\frac{\partial
+  \overline{q}}{\partial z} &\equiv\phi_E
+(\zeta); \label{eq:phi-E-def}\\ \frac{\kappa
+  z}{c_{*}}\frac{\partial\overline{c}}{\partial z}&\equiv\phi_{F}
+(\zeta).\label{eq:phi-Fchi-def}
+\end{align}
+
+
+
+É importante notar também, neste ponto, que as funções $\phi$ precisam ser
+obtidas experimentalmente, como sempre é o caso com Análise Dimensional.
+Talvez as funções $\phi$ mais utilizadas ainda sejam as de Businger-Dyer
+\citep{brutsaert--evaporation.into}, que são dadas, para $\zeta
+< 0$, por
+\begin{equation}
+\phi_\tau^2= \phi_H=\phi_E=\phi_F=(1-16\zeta)^{-\frac{1}{2}},\label{eq:18r}
+\end{equation}
+e para $\zeta > 0$ por 
+\begin{equation}
+\phi_\tau= \phi_H=\phi_E=\phi_F=1+5\zeta.\label{eq:19r}
+\end{equation}
+
+Na sub-camada dinâmica da camada superficial \citep{kader.yaglom--meanfields},
+os perfis de velocidade média e de concetração média dos escalares são
+logarítmicos: na prática, é conveniente trabalhar com os \emph{desvios} em
+relação a esses perfis causados pela estratficação de densidade ($\zeta \ne
+0$). Para isso, define-se
+\begin{equation}
+\Psi \equiv \int \frac{1-\phi}{\zeta} d\zeta = \ln \vert \zeta \vert
+- \Phi(\zeta);\label{eq:def-Psi}
+\end{equation}
+substituindo (\ref{eq:18r}) e (\ref{eq:19r}) em (\ref{eq:def-Psi}) nós
+temos que para $\zeta < 0$
+\begin{align}
+\Psi_\tau &= \ln \frac{\zeta^2 +1}{2} + 2\ln 
+\frac{\zeta +1}{2} - 2\arctg\zeta + \frac{\uppi}{2},\label{eq:Psi-tau}\\
+\Psi_H = \Psi_E = \Psi_{F_\chi} &= 2\ln \left[ 
+\frac{(1-16\zeta)^{1/2} + 1}{2}\right],\label{eq:Psi-F}
+\end{align}
+e para $\zeta > 0$
+\begin{equation}
+\Psi_\tau=\Psi_H=\Psi_E= \Psi_F \approx -5\zeta.\label{eq:Psi-all-stable}
+\end{equation}
+
+
+Utilizando (\ref{eq:def-Psi}), obtém-se a partir de
+(\ref{eq:phi-tau-def})--(\ref{eq:phi-Fchi-def}) expressões muito mais úteis para o
+cálculo das escalas da turbulência:
+\begin{align}
+u_* &= \kappa 
+    \frac{\overline{u}_2- \overline{u}_1}
+         {\ln\frac{\zeta_2}{\zeta_1}-\left[\Psi_\tau(\zeta_2)-\Psi_\tau(\zeta_1)\right]};
+\label{eq:ustar-from-Psi}\\
+\theta_* &= \kappa 
+   \frac{\overline{\theta}_1-\overline{\theta}_2}
+        {\ln\frac{\zeta_2}{\zeta_1}-\left[\Psi_H(\zeta_2)-\Psi_H(\zeta_1)\right]};
+\label{eq:tstar-from-Psi}\\
+q_* &= \kappa 
+   \frac{\overline{q}_1- \overline{q}_2}
+        {\ln\frac{\zeta_2}{\zeta_1}-\left[\Psi_E(\zeta_2)-\Psi_E(\zeta_1)\right]};
+\label{eq:qstar-from-Psi}\\
+c_{*} &= \kappa 
+    \frac{\overline{c}_{1}- \overline{c}_{2}}
+         {\ln\frac{\zeta_2}{\zeta_1}-\left[\Psi_F(\zeta_2)-\Psi_F(\zeta_1)\right]};
+\label{eq:cstar-from-Psi}
+\end{align}
+
+Para completar a descrição das escalas turbulentas precisamos definir os limites
+inferiores da integral em (\ref{eq:def-Psi}): esses limites estão associados ao
+conceito de comprimentos de rugosidade de \textit{momentum} e dos diversos
+escalares.
+
+
+
+
+
+\section{Comprimentos de Rugosidade}\label{sec:CompRug}
+
+O comprimento de rugosidade para \textit{momentum} $z_0$ é definido como a
+altura acima da superfície onde a velocidade média do vento se torna nula ao
+extrapolarmos a mesma através dos perfis previstos pela TSMO para
+além de seu domínio de aplicação. O comprimento de rugosidade $z_0$ pode
+ser definido matematicamente por meio de
+\begin{equation}
+u_* = \kappa \frac{\overline{u_b}}{\ln
+\frac{z_b}{z_0}-\Psi_\tau(\zeta_b)};\label{eq:ustar-with-z0}
+\end{equation}
+na expressão acima, obtida a partir de (\ref{eq:ustar-from-Psi}), nós consideramos
+$\Psi_\tau\left(\frac{z_0}{L_0}\right) \approx 0$ e $\overline{u_b}$ medido em um
+nível $z_b$ dentro da camada superficial e acima da sub-camada rugosa.
+
+De certa forma, o comprimento de rugosidade resume as características dos
+elementos de rugosidade da superfície tais como geometria, espaçamento, etc..
+Sendo assim, superfícies sólidas são mais fáceis de serem modeladas pois não
+apresentam variações temporais drásticas nas suas características. No caso de
+interfaces água-atmosfera as características do corpo d'água assim como as
+características do escoamento atmosférico influenciam a forma da superfície,
+devido à presença de ondas.
+
+Para oceanos abertos a primeira parametrização para $z_0$ foi proposta em
+\citep{charnock--wind.stress} com base em argumentos
+dimensionais. \citeauthor{charnock--wind.stress} propôs
+\begin{equation}
+z_0=\alpha\frac{ u_{*}^2}{g}.\label{eq:zo-charnock-def}
+\end{equation}
+O coeficiente $\alpha=0.001 $ é chamado constante de Charnock. Posteriormente
+trabalhos experimentais mostraram uma dependência do comprimento de rugosidade
+com os diferentes regimes de ondas encontrados
+\citep{Merzi-1985,Geenaert-1987,Toba-1990,Smith-1992,Donelan-1993}. Os esforços
+experimentais dos estudos citados não foram suficientes para determinar
+inequivocamente uma forma analítica para prever o comprimento de rugosidade de
+\textit{momentum} sobre a água.  A metodologia para estimar fluxos superficiais
+descrita por \cite{fairall2003bulk} utiliza uma expressão baseada na
+parametrização de Charnock, acrescentada de um termo sugerido por
+\cite{Smith-1988}, que descreve melhor os dados obtidos para o caso de
+escoamentos turbulentos lisos:
+\begin{equation}
+z_0=\alpha\frac{ u_{*}^2}{g} + \frac{0.11 \nu_{u}}{u_{*}},\label{eq:z0-charnock-defPlus}
+\end{equation}
+onde $\nu_{u}$ é a viscosidade cinemática do ar.  Comprimentos de
+rugosidade para outros escalares podem ser definidos de maneira similar à de
+\textit{momentum}:
+\begin{align}
+\theta_* &= \kappa 
+\frac{\overline{\theta_0}-\overline{\theta_a}}
+{\ln \frac{z_a}{z_{0H}}-\Psi_H(\zeta_a)};\label{eq:thetastar-with-z0H}\\
+q_* &= \kappa 
+\frac{\overline{q_0}- \overline{q_a}}
+{\ln\frac{z_a}{z_{0E}}-\Psi_E(\zeta_a)};\label{eq:qstar-with-z0E}\\
+c_{*} &= \kappa 
+\frac{\overline{c_0} - \overline{c_a}}
+{\ln\frac{z_a}{z_{0F}}-\Psi_F(\zeta_a)}.\label{eq:cstar-with-z0F}
+\end{align}
+Nas expressões acima o índice $0$ denota valores medidos na superfície e o
+índice $a$ indica valores medidos em uma altura de referência conveniente
+$z=z_a$, \emph{que deve estar na camada superficial, acima da sub-camada
+  rugosa}.
+
+Agora vamos retraçar o raciocínio desenvolvido por
+\cite{brutsaert--b.roughness.length}, que permite relacionar os comprimentos de
+rugosidade dos escalares com o de \textit{momentum}.  
+
+Conforme mostrado por \cite{brutsaert--b.roughness.length}, os comprimentos de
+rugosidade de escalares podem ser relacionados com o de
+\textit{momentum}. Considere as equações de transferência de um escalar. 
+Um coeficiente de transferência de massa $\mathrm{Cf}_a$ foi definido em
+(\ref{eq:wtf-is}); um coeficiente similar entre os níveis $z=0$ e $z=h$, $\mathrm{Cf}_0$, pode
+também ser definido:
+\begin{equation}
+F =\overline{\rho} \mathrm{Cf}_0 u_* (\overline{c_0}-\overline{c_h});\label{eq:def-Cf0}
+\end{equation}
+Observe que, enquanto que $\mathrm{Cf}_a$ é definido em termos de
+$\overline{u_b}$, $\mathrm{Cf}_0$ é definido em termos de $u_*$.  A grandeza
+$\overline{c_h}$ é a concentração mássica do gás na interface entre a sub-camada
+interfacial, ou rugosa, e o começo da camada superficial ($z=h$). Pela definição
+da escala turbulenta $c_{*}$,
+\begin{align}
+\overline{\rho} u_* c_* &= \overline{\rho} \mathrm{Cf}_0 u_*
+(\overline{c_0}-\overline{c_h});\nonumber\\
+\overline{c_h} &=\overline{c_0}-\frac{c_*}{\mathrm{Cf}_0}.\label{eq:ch-c0-Cf}
+\end{align}
+Utilizando (\ref{eq:cstar-from-Psi}) entre os níveis $z=h$ e $z=z_a$ e
+considerando $\Psi_F(\zeta_h)\approx 0$:
+\begin{equation}
+c_{*} = \kappa \frac{\overline{c_h} - \overline{c_a}}{\ln
+\frac{z_a}{h}-\Psi_F(\zeta_a) }.\label{eq:cstar-sl}
+\end{equation}
+De (\ref{eq:ch-c0-Cf}) e (\ref{eq:cstar-sl}), 
+segue-se que
+\begin{equation}
+c_{*} = \kappa \frac{\overline{c_0}- \overline{c_a}}{\ln
+\frac{z_a}{h}-\Psi_F(\zeta_r) +\kappa \mathrm{Cf}_0^{-1}}.
+\label{eq:cstar-h-za}
+\end{equation}
+Na expressão acima podemos escrever
+\begin{equation}\label{eq:lnztimes}
+\ln \frac{z_a}{h}=\ln \frac{z_a}{z_0}-\ln \frac{h}{z_0};
+\end{equation}
+além disso,
+\begin{align}
+u_* &= \kappa \frac{\overline{u}_h}{\ln
+\frac{h}{z_0}-\Psi_\tau(\zeta_h)},\nonumber \\
+\ln\frac{h}{z_0} &= \kappa
+\frac{\overline{u}_h}{u_*}+\Psi_\tau(\zeta_h)\label{eq:lnhz0}
+\end{align}
+substituindo (\ref{eq:lnhz0}) em (\ref{eq:lnztimes}),
+\begin{equation}\label{eq35rr}
+\ln \frac{z_a}{h}=\ln
+\frac{z_a}{z_0}-\kappa\frac{\overline{u}_h}{u_*}-\Psi_\tau(\zeta_h);
+\end{equation}
+dessa forma, a expressão (\ref{eq:cstar-h-za}) fica
+\begin{equation}\label{eq36rr}
+c_{*} = \kappa \frac{\overline{c_0}-
+\overline{c_a}}{\ln\frac{z_a}{z_0}-\kappa\frac{\overline{u}_h}{u_*}-\Psi_\tau(\zeta_h)-\Psi_F(\zeta_a)
++\kappa \mathrm{Cf}_0^{-1}};
+\end{equation}
+Por outro lado, $c_*$ também é dada por (\ref{eq:cstar-from-Psi}); segue-se que
+\begin{equation}\label{eq40rr}
+\ln
+\frac{z_a}{z_{0F}}-\Psi_F(\zeta_a)=\ln\frac{z_a}{z_0}-\kappa\frac{\overline{u}_h}{u_*}-\Psi_\tau(\zeta_h)-\Psi_F(\zeta_a)
++\kappa \mathrm{Cf}_0^{-1}.
+\end{equation}
+Se supusermos $\Psi_\tau(\zeta_h) \approx 0$,
+\begin{align}
+\frac{z_a}{z_{0F}} &= \frac{z_a}{z_0}
+\exp\left[-\kappa\frac{\overline{u}_h}{u_*} +\kappa
+\mathrm{Cf}_0^{-1}\right];\nonumber\\
+z_{0F} &= {z_0}
+\exp\left[-\kappa\left(\mathrm{Cf}_0^{-1}-\frac{\overline{u}_h}{u_*}\right)\right].\label{eq:z0F-from-z0}
+\end{align}
+A expressão acima diz que o comprimento de rugosidade para os
+escalares é igual ao comprimento de rugosidade de momentum
+corrigido por um fator que depende das características do
+transporte do escalar na sub-camada interfacial. A proxima seção
+apresenta modelos que permitem desenvolver equações similares a
+(\ref{eq:z0F-from-z0}).
+
+
+
+
+
+\section{Transferência de Massa na Sub-Camada Interfacial}
+
+
+
+Como foi visto nas sessões anteriores, as teorias de transporte de
+escalares na atmosfera permitem a construção de uma expressão para
+o fluxo superficial com a forma (\ref{eq:wtf-is}), onde
+\begin{equation}
+\mathrm{Cf}_a = \mathrm{Cf}_a(z_0,z_{0F},\overline{u}_r,\overline{\theta}_{ar},\ldots)
+\label{eq:forma-geral}
+\end{equation}
+Como o gradiente de concentração utilizado em (\ref{eq:wtf-is}) caracteriza toda
+a diferença de concentração, de uma altura de referência $z_a$ até a superfície
+($z=0$), o coeficiente de transferência $\mathrm{Cf}_a$ deve englobar
+informações da camada superficial plenamente turbulenta, assim como deve
+caracterizar a transferência de massa na sub-camada interfacial. A sub-camada
+interfacial é a região proxima da superfície onde a turbulência é atenuada por
+forças viscosas e com isso o transporte de matéria é influenciado por difusão
+molecular. Um modo de incluir a contribuição da sub-camada interfacial no
+coeficiente de transferência $\mathrm{Cf}_a$ da expressão (\ref{eq:forma-geral})
+é parametrizar o fluxo superficial de massa através de uma expressão do tipo
+(\ref{eq:def-Cf0}).  Os primeiros estudos que formularam parametrizações
+semelhantes a (\ref{eq:def-Cf0}) foram publicados na área da engenharia
+química. Entre as teóricas clássicas presentes na literatura, as mais utilizadas
+nos modelos atuais são chamadas de \textit{Two-Film Theory} e \textit{Surface
+  Renewal Theory}. Nesta seção nós vamos descrever brevemente as deduções para a
+parametrização do fluxo superficial, obtidas através das duas teorias.
+
+
+
+
+\subsection{Two-Film Theory}\label{sec:Two-Film}
+
+O primeiro modelo para o transporte de matéria através da interface entre dois
+fluidos foi proposto por \cite{lewis.whitman--principles}. Fazendo uma analogia
+com a sub-camada laminar os autores propõem que existe um filme muito fino de
+fluido estagnado que se forma dos dois lados da interface água-ar.  No interior
+desses filmes a difusão molecular predomina, enquanto fora do filme a difusão
+turbulenta prevalece e torna a concentração do escalar homog\^enea. Esse modelo
+é chamado \emph{Two-Film Theory} e a sua simplicidade matemática permite sem
+maiores dificuldades a inclusão de outros fen\^omenos naturais, como a presença
+de reações químicas na região aquática da interface \citep{liss--processes}.
+
+Nessa teoria, a resistência à transferência de matéria é
+parametrizada através das espessuras dessas camadas hipotéticas.
+As escalas $h_a$ e $h_w$ representam a espessura da sub-camada
+molecular para a atmosfera e para a água, respectivamente. Na
+região interfacial a conservação da massa (para um escalar
+passivo) e a lei de Fick nos fornecem
+\begin{align}
+\nu_{c} \frac{d^2\overline{c}}{dz^2}=0;\label{eq:air-diffu}\\
+\nu_{cw} \frac{d^2\overline{\cw}}{dz^2}=0;\label{eq:water-diffu}
+\end{align}
+onde $\nu_{c}$ e $\nu_{cw}$ são o coeficiente de difusão molecular do escalar na
+atmosfera e na água respectivamente, ${c}$ é a concentração mássica do gás na
+parte atmosférica da região interfacial e \cw\ é a concentração
+mássica do gás na parte líquida da região interfacial. As
+expressões (\ref{eq:air-diffu}) e (\ref{eq:water-diffu}) admitem que o
+transporte de matéria na camada molecular está sendo realizado em regime
+permanente; para isso ocorrer é necessário supor que esses filmes de fluido se
+mantêm estáveis por um tempo suficiente para o transporte de matéria em regime
+permanente prevalecer.  Primeiramente para a parte aquática, espera-se que fora
+da região interfacial a turbulência predomine e deixe a concentração do escalar
+uniforme. Como $h_w$ representa o limite dessa região, nós temos
+
+\begin{equation}
+\overline{\cw}(-h_w)=\overline{\cw_{hw}};\label{eq:cwdeep}
+\end{equation}
+onde $\overline{\cw}_{hw}$ é a concentração mássica média do
+escalar na região imediatamente abaixo da sub-camada interfacial
+aquática. A concentração mássica média  do escalar na água
+imediatamente abaixo da região atmosférica é determinada pelo
+equilíbrio termodinâmico de fases e é denotada por
+$\overline{\cw}_{0}$. Em termos de condições de contorno nós temos
+\begin{equation}\label{eq:cwsurf}
+\overline{\cw}(0)=\overline{\cw_{0}}.
+\end{equation}
+De maneira análoga, para a atmosfera nós temos
+\begin{align}
+\overline{c}(h_a)=\overline{c_{ha}},\label{eq:cahigh}\\
+\overline{c}(0)=\overline{c_{0}},\label{eq:casurf}
+\end{align}
+onde $\overline{c}_{ha}$  é a concentração do escalar na região
+imediatamente acima da sub-camada interfacial atmosférica e
+$\overline{c}_{0}$ é a concentração do escalar na atmosfera,
+imediatamente acima da água ($z=0$). As concentrações 
+$\overline{c}_{0}$ e $\overline{\cw}_{0}$ são relacionadas pela
+lei de Henry, que pode ser escrita como
+\begin{equation}
+\overline{c_{0}}=\rm{He}\,\overline{\cw_{0}};\label{eq:Henry}
+\end{equation}
+onde $\rm{He}$ é a constante de Henry (adimensional). Resolvendo as
+equações (\ref{eq:air-diffu})--(\ref{eq:water-diffu}), sujeitas às condições de
+contorno (\ref{eq:cwdeep})--(\ref{eq:casurf}), nós temos que
+\begin{align}
+\overline{c}(z)=\overline{c_{0}}+\frac{\overline{c_{ha}}-\overline{c_0}}{h_a}z;
+\label{eq:caz-interf}\\
+\overline{\cw}(z)=\overline{\cw_{0}}+\frac{\overline{\cw_0}-\overline{\cw_{hw}}}{h_w}z.
+\label{eq:cwz-interf}
+\end{align}
+O fluxo de massa para a atmosfera pode ser expresso por
+\begin{equation}
+F=-\overline{\rho}\nu_{c}\frac{d
+\overline{c}(0)}{dz}=-\overline{\rho_w}\nu_{cw}\frac{d
+\overline{\cw}(0)}{dz}.\label{eq:flux-across}
+\end{equation}
+
+Prosseguindo,
+\begin{align}
+\mathrm{He}(\overline{\cw_0} - \overline{\cw_{hw}}) &=
+-\mathrm{He}\,Fh_w/(\overline{\rho_w}\nu_{cw}),
+\label{eq:comeca-twof}\\
+\overline{c_{ha}}-\mathrm{He}\,\overline{\cw_0} &=
+-Fh_a/(\overline{\rho}\nu_{c}),\\
+\overline{c_{ha}} - \mathrm{He}\overline{\cw_{hw}} &= 
+-F\left[
+  \frac{\mathrm{He}\,h_w}{\overline{\rho_w}\nu_{cw}} +
+  \frac{h_a}{\overline{\rho}\nu_{c}}
+\right],\\
+F &= k(\mathrm{He}\,\overline{\cw_{hw}} - \overline{c_{ha}}), \label{eq:two-film-transfer}\\
+\frac{1}{k} &= \frac{1}{k_w} + \frac{1}{k_a},\label{eq:Ktransf}\\
+k_w &= \frac{\overline{\rho_w}\nu_{cw}}{\mathrm{He}\,h_w},\\
+k_a &= \frac{\overline{\rho}\nu_{c}}{h_a}.\label{eq:termina-twof}
+\end{align}
+
+Observe que, em sua essência, o desenvolvimento
+em (\ref{eq:comeca-twof})--(\ref{eq:termina-twof}) é o mesmo que foi de\-li\-ne\-a\-do na
+seção \ref{sec:fluxo-serie-resist}.
+Com isso, o fluxo superficial de massa é posto como função
+da concentração do escalar na água e na atmosfera, medidos nas
+alturas não especificadas $h_a$ e $h_w$. O resultado
+(\ref{eq:two-film-transfer}) é uma primeira equação que mostra a possibilidade
+de escrever o fluxo do escalar em termos de uma diferença de concentrações do
+escalar na água \emph{abaixo da superfície} e no ar \emph{acima da
+  superfície}. O problema de (\ref{eq:two-film-transfer}) é que, como
+mencionado, essas alturas não são especificadas. Na prática, $h_a$ e $h_w$ são
+tão pequenas que (\ref{eq:two-film-transfer}) não tem muita utilidade prática
+para os casos que temos em mente, de transferência gasosa na interface água-ar
+de lagos e de oceanos.
+
+
+
+
+
+\subsection{Teoria de Renovação Superficial}\label{subsec:TRS}
+
+As hipóteses físicas utilizadas para deduzir (\ref{eq:two-film-transfer}) em
+alguns casos podem não se verificar na prática. Em particular, pela presença da
+turbulência superficial, a formação e a permanência de uma película onde o
+transporte de materia se dá exclusivamente por difusão molecular não se mostram
+hipóteses fisicamente razoáveis \citep{danckwerts--gas-liquid}. Um modelo
+alternativo ao de Lewis-Whitman para a descrição do transporte de matéria na
+sub-camada interfacial é chamado \emph{Teoria de Renovação Superficial}
+(TRS). Esta teoria foi apresentada por \cite{danckwerts--significance}, e traz
+uma abordagem estocástica para o transporte de massa em escalas pequenas. A base
+da teoria se baseia em dois conceitos: o fluxo instantâneo $f_{\chi}(\tau)$ de
+massa de algum gás $\chi$ e uma função $\phi(\tau)$ chamada distribuição de
+idades (age distribution). A função $f_{\chi}(\tau)$ é o fluxo instantâneo de
+massa de um elemento de fluido com idade de $\tau$ unidades de tempo (tempo de
+permanência na sub-camada interfacial); a função $\phi(\tau)$ descreve a fração
+ermanência na sub-camada interfacial); a função $\phi(\tau)$ descreve a fração
+da área superficial que está ocupada por elementos de fluido com idade entre
+($t_1$,$t_2$) através da expressão
+\begin{equation}
+A_{(t_1,t_2)}=\int^{t_2}_{t_1} \phi(\tau)d\tau.\label{eq:A-from-pdf}
+\end{equation}
+Evidentemente, $\phi(\tau)$ pode ser interpretada como uma função densidade de
+probabilidade. Na superfície, a importância dos elementos de fluido de
+diferentes idades é calculada como se segue: o valor do fluxo instantâneo de um
+elemento com idade $\tau$ é ponderado com a proporção da área unitária ocupada
+pelos elementos com idade $\tau$. Vamos chamar essa ponderação de fluxo parcial
+$F_{p(\tau)}$:
+\begin{equation}\label{eq:def-F-p-tau}
+F_{p(\tau)}=f_{\chi}(\tau)\int^{\tau+d\tau}_{\tau} \phi (\xi)d\xi;
+\end{equation}
+o fluxo médio é a soma de todos os fluxos parciais
+\begin{equation}\label{eqF03}
+F=\sum_i f_{\chi}(\tau_i)\int^{\tau_i+d\tau_i}_{\tau_i}
+\phi(\xi)d\xi;
+\end{equation}
+para pequenos intervalos de tempo podemos aproximar a integral
+(\ref{eqF03}) por uma diferença finita
+\begin{equation}\label{eqF04}
+F=\sum_i f_{\chi}(\tau_i) \phi (\tau_i)\Delta \tau_i;
+\end{equation}
+no limite de $\Delta \tau_i \rightarrow 0$ nós temos
+\begin{equation}\label{eqF05}
+F=\int_0^{\infty}f_{\chi}(\tau)\phi(\tau)d\tau.
+\end{equation}
+
+A equação (\ref{eqF05}) é a expressão geral para o fluxo de massa
+da TRS. Para resolver a integral acima devemos especificar as
+funções $f_{\chi}$ e $\phi$.  Em seu trabalho original,
+\citeauthor{danckwerts--significance} baseou-se no trabalho de
+\cite{higbie--rate.absorption}.
+Nele, \citeauthor{higbie--rate.absorption} propõe que uma película que acabou de se formar na parte
+líquida da interface apresenta o seguinte comportamento:
+\begin{align}
+\frac{\partial \overline{\cw}}{\partial t} &=
+\nu_{cw}\frac{\partial^2 \overline{\cw}}{\partial z^2};\label{eq:higbie-eqdif}\\
+\overline{\cw}(0,t)&=\overline{\cw}_0;\label{eq:higbie-surface}\\
+\overline{\cw}(-\infty,t)&=\overline{\cw}_{hw}.\label{eq:higbie-veryfar}\\
+\overline{\cw}(z,0)&=\overline{\cw}_{hw};\label{eq:higbie-initial}
+\end{align}
+A condição inicial (\ref{eq:higbie-initial}) corresponde à ``chegada'' junto à
+superfície de um elemento de fluido trazendo a concentração prevalecente no
+nível $z = -h_w$.
+
+Assim como na teoria de Lewis-Whitman, longe da interface espera-se que a
+concentração se torne uniforme por causa da turbulência. Essa
+concentração é chamada de $\overline{\cw_{hw}}$. Ao contrário da
+teoria anterior, Higbie não utiliza um conceito de espessura da
+sub-camada interfacial: ao invés de usar a expressão (\ref{eq:cwdeep}),
+ele supõe que a concentração se torna igual a $\overline{\cw_{hw}}$
+suficientemente longe da interface (no limite de $-z$ tendendo ao
+infinito). Essa condição é definida pela expressão (\ref{eq:higbie-veryfar}).
+É possível também utilizar uma condição de contorno finita, como
+proposto por \cite{dobbins--nature.oxygen}:
+\begin{equation}
+\overline{\cw}(-h_w , t)=\overline{\cw_{hw}}.\label{eq:dobbins-notsofar}
+\end{equation}
+Resolvendo (\ref{eq:higbie-eqdif})--(\ref{eq:higbie-initial}) nós obtemos o fluxo
+instantâneo $f_{\chi}$:
+\begin{equation}
+f_{\chi}=+\overline{\rho_w}\nu_{cw}
+\frac{\partial\overline{\cw}(0,t)}{\partial z}=
+\overline{\rho_w}\nu_{cw}
+\frac{(\overline{\cw_{wh}}-\overline{\cw_0})}
+{\sqrt{\nu_{cw} \uppi \,t}}.\label{eq:fchi-TRS}
+\end{equation}
+Observe que os sinais em (\ref{eq:fchi-TRS}) são coerentes com a orientação de
+$Oz$ com sentido positivo da superfície para o ar, e negativo da superfíce para
+a água.  A expressão (\ref{eq:fchi-TRS}) é a escolha original de
+\citeauthor{danckwerts--significance} para o fluxo instantâneo. Em um contexto
+mais geral outras expressões podem ser mais adequadas. Em particular, para o
+transporte de calor sensível, \cite{Veron-2011} sugerem outras expressões para o
+fluxo instantâneo.  Com relação à distribuição de idades $\phi$,
+\cite{danckwerts--significance} utiliza uma distribuição exponencial:
+
+
+
+
+
+\begin{equation}\label{eqd24}
+\phi=s_w \exp(-s_w \theta).
+\end{equation}
+A probabilidade de um elemento de fluido contido na sub-camada
+interfacial ter idade entre o intervalo de tempo ($t_1$,$t_2$) é
+dada pela expressão
+\begin{equation}
+A_{(t_1,t_2)}=\int^{t_2}_{t_1} s_w \exp(-s_w \xi)d\xi.\label{eq:fi-danck}
+\end{equation}
+Substituindo (\ref{eq:fi-danck}) e (\ref{eq:fchi-TRS}) em (\ref{eqF04}), o 
+fluxo médio de massa fica
+\begin{equation}\label{eq:fluxo-medio-danckwerts-quase}
+F=\int_0^{\infty}\sqrt{\frac{\overline{\rho_w}^2\nu_{cw}}{\uppi
+\tau}}\left(\overline{\cw_0}-\overline{\cw_{hw}}\right)s_w \exp(-s_w
+\tau)d\tau.
+\end{equation}
+Resolvendo a integral acima, nós temos a expressão para o fluxo
+superficial deduzida por Dankwerts:
+
+\begin{equation}
+F=\overline{\rho_w}\sqrt{\nu_{cw}
+s_w}\left(\overline{\cw_{hw}}-\overline{\cw_0}\right).
+\label{eq:fluxo-medio-danckwerts-enfim}
+\end{equation}
+A equação (\ref{eq:fluxo-medio-danckwerts-enfim}) implica que o coeficiente de
+transferência de massa na sub-camada interfacial aquática (ver equação
+(\ref{eq:def-Cfw0})) é proporcional a uma potência do coeficiente de difusão
+molecular:
+\begin{equation}\label{eqProp}
+\mathrm{Cf}_{w0}\propto \nu_{cw}^n ; \qquad n \neq1.
+\end{equation}
+
+Relações do coeficiente de transferência com a difusão molecular
+que atendem a equação (\ref{eqProp}) foram sugeridas por
+\cite{king--turbulent.liquid},
+\cite{kozinski.king--influence.diffusivity} , \cite{toor.marchello--film-penetration} e
+\cite{lamont.scott--eddy.cell}. Uma vantagem da abordagem de Dankwerts é que o
+aparato matemático da teoria da transformada de Laplace pode ser
+utilizado para acrescentar com mais facilidade outros fenômenos
+que podem influenciar a transferência de massa nesta escala. A
+equação (\ref{eq:fluxo-medio-danckwerts-quase}) pode ser escrita como
+\begin{equation}\label{eqF27}
+F=\int_0^{\infty} \overline{\rho}_w\nu_{cw} \frac{\partial
+\overline{\cw}(0,\tau)}{\partial z}s_w \exp(-s_w \tau)d\tau;
+\end{equation}
+utilizando a regra de Leibniz  nós temos
+\begin{equation}\label{eqF28}
+F= \overline{\rho}_w\nu_{cw} s_w \frac{d}{d
+z}\left[\int_0^{\infty} \overline{\cw}(z,\tau) \exp(-s_w
+\tau)d\tau\right]_{z=0};
+\end{equation}
+a transformada de Laplace de uma função $f(t)$ é definida como
+\begin{equation}\label{eqF29}
+f^{L}(s_w) \equiv \int_0^{\infty} f(t)\exp (-s_w t) dt;
+\end{equation}
+De (\ref{eqF27}) e (\ref{eqF29}) nós temos
+\begin{equation}\label{eeqF30}
+F=\overline{\rho}_w\nu_{cw} s_w
+\frac{d}{dz}\left[\overline{\cw}(0,s_w)\right]^L.
+\end{equation}
+A expressão (\ref{eeqF30}) oferece uma vantagem analítica para a
+inclusão de novos termos nas equações de transferência.
+Por exemplo, vamos supor que estejamos parametrizando o
+comportamento de um gás que apresenta uma reação química de
+primeira ordem, i.e, o volume de fluido ao entrar na região
+interfacial apresenta o seguinte comportamento:
+
+\begin{align}
+\frac{\partial \overline{\cw}}{\partial t} &= 
+   \nu_{cw}\frac{\partial^2 \overline{\cw}}{\partial z^2}-K\overline{\cw};\label{eq:diff-reac}\\
+\overline{\cw}(z,0) &=\overline{\cw_{hw}};\label{eq:ci-reac}\\
+\overline{\cw}(0,t) &=\overline{\cw_0};\label{eq:cc-reac-0}\\
+\overline{\cw}(-\infty,t)&=\overline{\cw_{hw}}.\label{eq:cc-reac-inf}
+\end{align}
+
+Na expressão (\ref{eq:diff-reac}) $K$ é chamado de coeficiente de
+decaimento e caracteriza a taxa com que a concentração do gás se
+altera espontaneamente, decorrente de reações químicas presentes
+na água. Aplicando a transformada de Laplace em (\ref{eq:diff-reac}),
+
+
+\begin{equation}\label{eqAc05}
+s_w[\overline{\cw}]^L - \overline{\cw}_{hw} =
+\nu_{cw}\frac{\partial^2 [\overline{\cw}]^L}{\partial
+z^2}-K[\overline{\cw}]^L;
+\end{equation}
+a equação (\ref{eqAc05}) apresenta a seguinte solução geral
+\begin{equation}\label{eqAc06}
+[\overline{c}_w]^L= A_1
+\exp\left(\sqrt{\frac{s_w+K}{\nu_{cw}}}z\right)+A_2
+\exp\left(-\sqrt{\frac{s_w+K}{\nu_{cw}}}z\right)+\frac{\overline{\cw}_{hw}}{s_w+K};
+\end{equation}
+na expressão acima, $A_1$ e $A_2$ são constantes de integração.
+
+Como queremos que a solução seja limitada em todo o domínio é
+necessário fazer $A_1=0$. Pela condição (\ref{eq:cc-reac-0}) devemos ter
+\begin{equation}\label{eqAc07}
+A_2=\overline{\cw_0}-\frac{\overline{\cw_{hw}}}{s_w+K};
+\end{equation}
+com isso,
+\begin{equation}\label{eqAc08}
+[\overline{\cw}]^L=
+\left(\overline{\cw_0}-\frac{\overline{\cw}_{hw}}{s_w+K}\right)
+\exp\left(-\sqrt{\frac{s_w+K}{\nu_{cw}}}z\right)+\frac{\overline{\cw_{hw}}}{s_w+K};
+\end{equation}
+neste ponto vamos utilizar diretamente (\ref{eeqF30}):
+\begin{equation}\label{eqAc09}
+\frac{\partial [\overline{c}_w(0,s_w)]^L}{\partial z}=
+-\left(\overline{\cw_0}-\frac{\overline{\cw_{hw}}}{s_w+K}\right)\sqrt{\frac{s_w+K}{\nu_{cw}}}.
+\end{equation}
+Substituindo (\ref{eqAc09}) em (\ref{eeqF30}):
+\begin{equation}
+F=\overline{\rho}_w\sqrt{s_w^2\nu_{cw}(s_w+K)}
+\left(\frac{\overline{\cw_{hw}}}{s_w+K}-\overline{\cw_0}\right).\label{eq:F-lapl-com-K}
+\end{equation}
+
+Como pode ser visto para o caso da presença de difusão com
+decaimento de primeiro ordem, a abordagem de Dankwerts exige menos
+esforço computacional pois ela precisa somente das informações
+referentes à transformada de Laplace da concentração
+$\overline{\cw}(z,t)$. 
+
+A distribuição exponencial não é a única função apresentada na
+literatura. Vários estudos foram realizados com o intuito de
+formalizar os conceitos apresentados por Dankwerts.
+\cite{Kovasy-1969} apresenta uma tentativa de formalizar os conceitos
+utilizados na literatura até 1968. Uma abordagem estatística diferente
+foi apresentada em \citep{Petty-1975}: nesse trabalho, o autor
+generaliza as condições de contorno para o problema difusivo utilizado
+na Teoria da Renovação Superficial. 
+
+Posteriormente essa generalização
+foi utilizada por  \cite{Veron-2011} para explicitar as
+diferenças entre o transporte de calor e massa na sub-camada
+interfacial. \cite{babu.narsihman--surface.renewal} deduzem uma distribuição da
+família Gama e mostra que a função exponencial de Dankwerts é um caso
+particular da função proposta no artigo. O trabalho de Babu utiliza
+conceitos descritos em \cite{Bullin-1972} que apresentou um
+formalismo baseado na teoria de processos estocásticos. 
+
+Dando
+continuidade à teoria exposta no trabalho de \citeauthor{babu.narsihman--surface.renewal},
+\cite{Hatanaka-1982} apresentou uma metodologia para estimar
+os tempos de contato através de grandezas que caracterizam a
+hidrodinâmica na superfície. 
+
+Os esforços teóricos posteriores foram
+sintetizados por \cite{Fan-1993} que apresenta uma síntese do
+formalismo estatístico utilizado na Teoria da Renovação Superficial. O
+autor utiliza a formalização matemática de processos estocásticos
+juntamente com o conceito de processos de Markov para fundamentar
+matematicamente a Teoria da Renovação Superficial. 
+
+Paralelamente aos esforços analíticos, alguns autores desenvolveram métodos que
+permitem medir o tempo de contato médio $t_{w*}$ através de técnicas de
+processamento de imagem e marcadores de calor. Baseado em estudos com marcadores
+de calor, uma distribuição log-normal foi proposta por \cite{Rao-1971} e
+posteriormente utilizada com algum grau de sucesso por
+\cite{asher.pankow--direct}, \cite{Garbe-2004} e
+\cite{atmane.asher.ea--active.infrared}. \cite{Veron-2011} , a partir de dados
+obtidos com traçadores de calor, sugere que a forma da distribuição de tempos de
+contato pode ser diferente para diversos regimes de escoamento. Os autores
+propõem uma distribuição da família $\chi^2$: este tipo de função apresenta uma
+forma similar à distribuição log-normal para valores pequenos da velocidade
+média do vento e se parece com a função exponencial para ventos moderados e
+fortes.
+
+Uma vez determinada uma função $\phi$ adequada, o ultima passo para
+caracterizar o transporte na sub-camada interfacial é determinar uma
+parametrização da taxa de renovação. Para fazer isso vamos definir a
+escala de tempo $t_{*w}$ da seguinte maneira:
+\begin{equation}
+\frac{1}{t_{*w}} \equiv s_w.\label{eq:def-twstar}
+\end{equation}
+O artigo de \cite{higbie--rate.absorption} originou o termo
+\emph{tempo de contato}.  Posteriormente o conceito introduzido por
+Higbie foi utilizado em \cite{danckwerts--significance} no
+desenvolvimento da Teoria de Renovação Superficial. 
+
+\cite{brutsaert--model.evaporation.molecular.diffusion} quantificou
+pela primeira vez a ordem de grandeza do tempo de contato utilizando
+argumentos de análise dimensional baseados na teoria de turbulência de
+\cite{kolmogorov--local.russian}, supondo que a sub-camada interfacial
+é predominantemente afetada por vórtices da ordem das micro-escalas de
+Kolmogorov. 
+
+Utilizando a parametrização proposta em por
+\cite{brutsaert--model.evaporation.molecular.diffusion} (originalmente
+desenvolvida para o caso do fluxo de vapor d'água),
+\cite{liu.businger--temperature.profile} apresentaram um modelo para
+prever a variação de temperatura na sub-camada interfacial aquática
+oceânica, que é chamada na literatura de
+\emph{Cool-Skin}. Paralelamente ao modelo de
+\citeauthor{liu.businger--temperature.profile} para o transporte de
+calor, \cite{brutsaert--a.theory.local.evaporation} propôs modelos
+para o fluxo de vapor d'água e calor, utilizando a Teoria de
+Similaridade de Monin-Obukhov. Os trabalhos que aplicaram o conceito
+de tempo de contato para a parametrização do \emph{Cool-Skin} foram
+\cite{liu.businger--temperature.profile} e
+\cite{soloviev.schlussel--parameterization.cool.skin}. 
+
+Enquanto que
+\citep{liu.katsaros.ea--bulk.parameterization} utilizaram o modelo 
+de \citeauthor{brutsaert--a.theory.local.evaporation},
+\cite{soloviev.schlussel--parameterization.cool.skin}
+apresentaram relações diferentes para tempos de contato característicos
+de diferentes regimes de escoamento. 
+
+Conforme discutido acima (ver (\ref{eq:fluxo-medio-danckwerts-enfim}),
+o fluxo de massa de um gás através da interface água-ar envolvendo
+sub-camadas interfaciais na água e no ar pode ser
+parametrizado como
+\begin{align}
+F&=\overline{\rho_w}\sqrt{\nu_{cw} s_w}(\overline{\cw_{hw}}-\overline{\cw_0}),\label{eq:fluxdanckwater}\\
+F&=\overline{\rho}\sqrt{\nu_{c} s}(\overline{c_0}-\overline{c_{ha}}).\label{eq:fluxdanckair}
+\end{align}
+Os tempos de contato em cada sub-camada interfacial são
+\begin{align}
+s_w &=\frac{1}{t_{*w}},\label{eq:swtw}\\
+s &=\frac{1}{t_{*}}.\label{eq:sata}
+\end{align}
+A primeira parametrização do tempo de contato foi apresentada no
+artigo \citep{brutsaert--model.evaporation.molecular.diffusion},
+que propôs que o fenômeno de renovação superficial é realizado
+pelos menores vértices possíveis. Utilizando a micro-escala de
+tempo de Kolmogorov para estimar a ordem de grandeza dos $t_{*}$'s,
+\begin{align}
+t_{*w}\propto\sqrt{\frac{\nu_{uw}}{\epsilon_w}},\label{eq:tw-from-micro}\\
+t_{*}\propto\sqrt{\frac{\nu_{u}}{\epsilon}},\label{eq:ta-from-micro}
+\end{align}
+onde os $\nu_{\tau}$'s são as viscosidades cinemáticas, e os
+$\epsilon$'s são as taxas de dissipação de energia cinética da turbulência,
+com os indices $a$ e $w$ representando a
+atmosfera e a água respectivamente. Usando um argumento de análise
+dimensional $\epsilon$ é expresso por
+\begin{equation}
+\epsilon \sim \frac{u^3}{l}.\label{eq:epsilon-u3-l}
+\end{equation}
+Na expressão acima $u$ representa a velocidade característica do
+escoamento e $l$ é a escala integral de comprimento. As escalas de (\ref{eq:epsilon-u3-l})
+propostas por
+\cite{brutsaert--model.evaporation.molecular.diffusion} foram
+$u=u_*$ e $l=z_0$. Com essa escolha, os tempos de contato ficam
+\begin{align}
+t_{*w}\propto\sqrt{\frac{\nu_{uw} z_{0w}}{u_{*w}^3}}, \label{eq:twstar-from-brut}\\
+t_{*}\propto\sqrt{\frac{\nu_{u} z_{0}}{u_*^3}}. \label{eq:tastar-from-brut}
+\end{align}
+As expressões (\ref{eq:twstar-from-brut}) e
+(\ref{eq:tastar-from-brut}) são chamadas na literatura de escala de
+tempos de cisalhamento. Caso não seja conveniente utilizar $z_0$
+podemos utilizar o conceito do comprimento da sub-camada laminar
+$\delta$ que pode ser relacionado com o tempo de contato através das
+expressões
+\begin{align}
+\delta_w &=\left( \nu_{cw} t_{*w} \right)^{\frac{1}{2}}, \label{eq:delta-w}\\
+\delta &=\left( \nu_{c} t_{*} \right)^{\frac{1}{2}}. \label{eq:delta-a}
+\end{align}
+Em virtude
+de (\ref{eq:twstar-from-brut}), (\ref{eq:twstar-from-brut}),
+(\ref{eq:delta-w}) e (\ref{eq:delta-a}),
+\begin{align}
+t_{*w}\propto \frac{(\nu_{uw}^2
+\nu_{cw})^{\frac{1}{3}}}{u_{*w}^2},\label{eq:twstar-prop}\\
+t_{*}\propto \frac{(\nu_{u}^2
+\nu_{c})^{\frac{1}{3}}}{u_*^2}.\label{eq:tastar-prop}
+\end{align}
+O comprimento de rugosidade de momentum para a parte aquática da interface pode
+ser inferido utilizando o modelo de \cite{charnock--wind.stress}, vide
+(\ref{eq:zo-charnock-def}) e (\ref{eq:z0-charnock-defPlus}).
+
+A parametrização proposta pelas
+equações (\ref{eq:twstar-from-brut}) e (\ref{eq:twstar-from-brut}) foi comparada com outras
+metodologias em \cite{wick.emery--behavior.bulk-skin}. Os
+autores chegaram à conclusão que (\ref{eq:twstar-from-brut}) é uma boa
+parametrização do tempo de contato aquático para regimes de
+convecção livre, que abrange ventos na faixa de $\overline{u}_{10}
+\in (2,10)$ m s$^{-1}$. Para ventos inferiores a $\mathrm{2\,m\,s^{-1}}$ o
+tempo de contato é melhor representado pela expressão
+\citep{soloviev.schlussel--parameterization.cool.skin}
+\begin{equation}
+t_{*w}\propto \left(\frac{\nu_{uw} c_{pw}
+\overline{\rho}_w}{\alpha_w g H}\right)^{\frac{1}{2}}.\label{eq:twcontact-conv}
+\end{equation}
+Em (\ref{eq:twcontact-conv}), $c_{pw}$ é o calor especifico da água e $\alpha_w$
+é o coeficiente de expansão térmica da água. A expressão (\ref{eq:twcontact-conv}) é
+chamada de tempo de contato convectivo $t_{wConv}$. De maneira análoga para a
+atmosfera vamos supor
+\begin{equation}
+t_{*}\propto \left(\frac{\nu_{u} c_{pa}
+\overline{\rho}_a}{\alpha_a g H}\right)^{\frac{1}{2}}.\label{eq:tacontact-conv}
+\end{equation}
+Para incluir uma transição suave entre os dois regimes
+\cite{wick.emery--behavior.bulk-skin}
+sugeriram a seguinte parametrização para o tempo de contato:
+\begin{equation}
+t_{*w}=t_{wShear}+(t_{wConv}-t_{wShear})\exp
+\left(\frac{-C_1}{\mathrm{Rfw}_{0}}\right);\label{eq:t-contato-D}
+\end{equation}
+na expressão acima $\mathrm{Rfw}_0$ é chamado de numero de Richardson
+interfacial aquático que é definido em
+\cite{soloviev.schlussel--parameterization.cool.skin} para situações noturnas e
+em \cite{soloviev.schlussel--evolution} para situações diurnas. Na presença de
+ventos acima de 10 m s$^{-1}$ começa a ocorrer quebra de ondas e a transferência
+de gás muda consideravelmente \citep{csanady--role.breaking}. A presença de
+bolhas afeta a transferência de massa: a influência desse fenômeno na
+parametrização do coeficiente de transferência de massa foi apresentada em
+\cite{Woolf-1997}. Estudos apresentados em \cite{Soloviev-2007} sugerem que para
+ventos fortes, a parametrização da transferência de massa deve incluir a
+influência da sub-camada interfacial assim como considerar a influência das
+bolhas. Outras formas para o tempo de contato foram apresentadas por
+\cite{castro.wick.ea--further} para diferentes tipos de escoamento. Nesse
+trabalho, diferentes tipos de tempos de contato foram incluídos através de um
+modelo aditivo que é amparado por evidências experimentais apresentadas em
+\cite{bourassa.vincent.ea--flux.parameterization}.
+
+
+
+
+\section{Enriquecimento Químico}
+
+Nesta seção nós vamos deduzir expressões para o fluxo superficial
+de substancias reativas. Neste caso os gradientes de concentração
+dos escalares na sub-camada interfacial proporcionam a existência
+de reações químicas que alteram o perfil de concentração dos
+escalares e com isso modificam o valor dos fluxos superficiais. 
+
+O primeiro modelo que incorporou a presença de reações químicas na
+parametrização do fluxo superficial foi proposto por
+\cite{danckwerts--significance}. Em particular, a influência do enriquecimento
+químico na determinação do fluxo de CO\sub{2} foi determinada através da Teoria
+de Dois Filmes (Two-Film Theory) por \cite{bolin--exchange.carbon},
+\cite{emerson--chemically.enhanced}, \cite{hoover.berkshire--effects.hydration}
+e \cite{quinn.otto--carbon.dioxide}. Com excepção do modelo numérico de Emerson
+todos os outros modelos apresentam simplificações com relação aos perfis de
+concentração dos ions presentes na camada-interfacial.
+\cite{broecker.peng--gas.exchange} apresentaram evidências experimentais da
+presença de enriquecimento químico em um tanque com água do oceano, o que não
+ocorreu com um experimento com água acidificada.
+\cite{hoover.berkshire--effects.hydration} verificaram a presença de
+enriquecimento químico em um estudo de túnel de vento acoplado a um tanque de
+água destilada com diferentes constituintes químicos.  \citep{liss--processes}
+apresentou um experimento semelhante ao de Hoover e comparou o fluxo de
+CO\sub{2} e O\sub{2}, verificando o enriquecimento químico na presença de ventos
+leves. As evidências experimentais indicam que o enriquecimento químico pode ser
+desprezado em situações em que a velocidade média do vento é maior que 5--7
+$\mathrm{m\,s^{-1}}$ \citep{wanninkhof--relationship}.
+
+O enriquecimento químico no fluxo de CO\sub{2} deve ser considerado em
+estimativas globais pois uma considerável porção do oceano apresenta velocidades
+médias abaixo de $\mathrm{5\,m\,s^{-1}}$. O enriquecimento químico pode ser
+acentuado em regiões equatoriais pois elas apresentam grandes gradientes de
+concentração de CO\sub{2} na interface \citep{Smethie-1985,
+  feely.gammon.ea--distribution.chemical}. Essas regiões apresentam ventos
+moderados e grandes gradientes de concentração de massa, resultando em uma
+grande influência do enriquecimento químico no fluxo superficial de massa
+\citep{tans.fund.ea--observational,murphy.feely.ea--assessment}.  No decorrer da seção serão
+apresentados duas metodologias para incluir a influência das reações químicas no
+coeficiente de transferência de massa. A primeira abordagem foi apresentada por
+\cite{bolin--exchange.carbon} e utiliza as hipóteses do trabalho pioneiro de
+\cite{lewis.whitman--principles}. A segunda abordagem utiliza as idéias de
+\citeauthor{bolin--exchange.carbon}, mas inclui a influência da turbulência na
+interface através da teoria de \cite{danckwerts--significance}.  
+
+Como foi dito
+anteriormente, as hipóteses utilizadas por Bolin são os mesmos do modelo de
+Whitman-Lewis, i.e, a presença de uma película com largura finita, formada na
+parte aquática da interface. A maneira do autor lidar com o fenômeno de
+enriquecimento químico foi a seguinte: 
+
+
+
+A teoria de \cite{bolin--exchange.carbon} pode ser formulada da seguinte forma:
+na camada interfacial ele separou as substâncias presentes na água em duas: uma
+é o proprio gás que queremos parametrizar e a outra é a soma de todos os
+constituintes que podem reagir quimicamente com o gás em questão. Como exemplo
+dessa abordagem, consideremos o ciclo do carbono no mar. Esse sistema consiste
+em dióxido de carbono dissolvido, ácido carbônico, e ions de carbonato e
+bicarbonato.  Todas essas substâncias estão aproximadamente em equilíbrio.
+Para o pH do mar podemos escrever a seguinte relação:
+%% \begin{equation}\label{qui}
+%% CO_2+H_2O \leftrightarrow H_2CO_3 \leftrightarrow H+HCO_3^-
+%% \leftrightarrow 2H+CO_3^{=}
+%% \end{equation}
+\begin{equation}
+%\ce{CO2 + H2O <=> H2CO3 <=> H + CO3- <=> 2H + CO3^{2-}}\label{eq:qui}
+\end{equation}
+A primeira das reações mostradas acima é chamada hidratação e
+desidratação. Ela acontece com velocidade finita e é caracterizada
+pela taxa de hidratação $\alpha_1$ e desidratação $\alpha_2$. Com
+essas taxas, podemos definir a constante de equilíbrio
+
+\begin{equation}\label{equi}
+K=\frac{\alpha_2}{\alpha_1}.
+\end{equation}
+Todo o sistema de carbono marinho é então divido em duas partes,
+com $\cw$ representando a concentração de dióxido de carbono na água e
+$\rw$ representando a concentração da soma dos componentes restantes.
+As partes $\cw$ e $\rw$ são relacionadas quimicamente pela taxa
+$\alpha_2^{\ast}$ que representa a taxa de transferência de
+%\ce{H2CO3}, \ce{HCO3-} e \ce{CO3^{2-}} em CO\sub{2} dissolvido. Utilizando as
+hipóteses de \cite{lewis.whitman--principles} nós temos que na sub-camada
+interfacial esse sistema pode ser escrito como
+
+\begin{align}
+0&=-\alpha_1\overline{\cw}+\alpha_2\overline{\rw}+\frac{\partial}{\partial
+z}\left(\nu_{cw}\frac{\partial \overline{\cw}}{\partial z}\right),\label{eq:bolin-react-cw}\\
+0&=\alpha_1\overline{\cw}-\alpha_2\overline{\rw}+\frac{\partial}{\partial
+z}\left(\nu_{cw}\frac{\partial \overline{\rw}}{\partial z}\right).\label{eq:bolin-react-rw}
+\end{align}
+As condições de contorno na superfície da água são definidas de tal forma que 
+somente o dióxido de carbono realiza trocas com a atmosfera:
+\begin{align}
+\overline{\cw}(0,t) &= \overline{\cw_0}, \label{eq:bolin-cc-cw-zero}\\
+-\nu_{cw}\frac{\partial \overline{\rw}}{\partial z}(0,t) &= 0.\label{eq:bolin-cc-rw-flux-zero}
+\end{align}
+A última condição de contorno é definida para a concentração de
+$\overline{c}_w$ e $R_w$ serem prescritas na parte inferior da
+camada limite $z=-h_w$. Essa concentração é a concentração de
+mistura $\overline{\cw_{hw}}$ e $\overline{\rw_{hw}}$:
+\begin{align}
+\overline{\cw}(-h_w) &= \overline{\cw_{hw}}, \label{eq:bolin-cc-cw-hw}\\
+\overline{\rw}(-h_w) &= \overline{\rw_{hw}}. \label{eq:bolin-cc-rw-hw}
+\end{align}
+
+
+
+As equações (\ref{eq:bolin-react-cw})--(\ref{eq:bolin-react-rw}), juntamente
+com as condições de con\-tor\-no
+(\ref{eq:bolin-cc-cw-zero}) -- (\ref{eq:bolin-cc-rw-hw}), permitem calcular os
+perfis de $\overline{\cw}$ e $\overline{\rw}$. Em particular,
+\begin{equation}\label{eqB7}
+\overline{\cw}=\frac{\alpha_2}{\alpha_1}(Az+B)-C\exp\left(-\sqrt{\frac{\alpha_1+\alpha_2}{\nu_{cw}}}z\right)-E\exp\left(\sqrt{\frac{\alpha_1+\alpha_2}{\nu_{cw}}}z\right);
+\end{equation}
+os coeficientes $A$, $B$, $C$ e $E$ são funções de $\alpha_2$,
+$\alpha_1$, $h_w$, $\overline{\cw_0}$, $\overline{\cw_{hw}}$ e
+$\nu_{cw}$. O fluxo superficial é calculado como
+\begin{equation}\label{eqB8}
+F=\frac{\alpha_2}{\alpha_1}A+C\gamma-E\gamma;
+\end{equation}
+com
+\begin{equation}\label{eqB9}
+\gamma^2=\frac{\alpha_1+\alpha_2}{\nu_{cw}};
+\end{equation}
+substituindo os valores de $A$,$B$, $C$, $E$ em (\ref{eqB8}) nós
+temos
+\begin{multline}
+F=(\overline{\cw_{hw}}-\overline{\cw_0})\frac{(\alpha_1+\alpha_2)\gamma}{\alpha_1
+} \times \\\left[
+\frac{\exp(\gamma \delta_w)+\exp(-\gamma \delta_w)}{\exp(\gamma
+\delta_w)\left(1+\frac{\alpha_2}{\alpha_1}\gamma
+\delta_w\right)-\exp(-\gamma
+\delta_w)\left(1-\frac{\alpha_2}{\alpha_1}\gamma
+\delta_w\right)}\right].\label{eq:fluxo-bolin-two-film-enrich}
+\end{multline}
+
+Como podemos verificar nas expressões (\ref{eq:F-lapl-com-K}) e
+(\ref{eq:fluxo-bolin-two-film-enrich}), a presença de reações químicas influencia
+fortemente a forma do coeficiente de transferência. 
+
+
+\section{Uma nova proposta para o enriquecimento químico u\-san\-do a teoria de
+  renovação superficial}\label{nova-prop}
+
+Para incluir no coeficiente de transferência o efeito do transporte transiente e
+o enriquecimento químico, vamos utilizar a metodologia de
+\citep{bolin--exchange.carbon} juntamente com as idéias da Teoria da Renovação
+Superficial. Agora um elemento de fluido que chega na sub-camada interfacial
+apresenta o seguinte comportamento
+
+
+
+\begin{align}
+\frac{\partial \overline{\cw}}{\partial
+t} &=-\alpha_1\overline{\cw}+\alpha_2\overline{\rw}+\frac{\partial}{\partial
+z}\left(\nu_{cw}\frac{\partial \overline{\cw}}{\partial z}\right),\label{eq:cw-trs-rich}\\
+\frac{\partial \overline{\rw}}{\partial
+t}&=\alpha_1\overline{\cw}-\alpha_2\rw+\frac{\partial}{\partial
+z}\left(\nu_{cw}\frac{\partial \overline{\rw}}{\partial z}\right),\label{eq:rw-trs-rich}\\
+\overline{\cw}(0,t) &= \overline{\cw_0}, \label{eq:cc-zero-cw-trs-rich}\\
+\overline{\rw}(0,t) &= \overline{\rw_0}, \label{eq:cc-zero-rw-trs-rich}\\
+\overline{\cw}(-\infty,t) &= \overline{\cw_{hw}},\label{eq:cc-inf-cw-trs-rich}\\
+\overline{\rw}(-\infty,t) &= \overline{\rw_{hw}},\label{eq:cc-inf-rw-trs-rich}\\
+\overline{\cw}(z,0) &=\overline{\cw_{hw}}.\label{eq:ci-cw-trs-rich}
+\end{align}
+Escrevendo as expressões (\ref{eq:cc-zero-cw-trs-rich}) e (\ref{eq:rw-trs-rich}) em forma
+vetorial nós temos:
+\begin{equation}
+\frac{\partial \mathbf{C}}{\partial t} =\nu_{cw}\frac{\partial^2
+\mathbf{C} }{\partial z^2} + \mathbf{A}\mathbf{C};\label{eq:sismat-rich}
+\end{equation}
+com
+\begin{equation}
+\mathbf{C} = 
+\begin{bmatrix} \overline{\cw} & \overline{\rw} 
+\end{bmatrix}^{\tr}\label{eq:cmatrix-def-trs-rich}
+\end{equation}
+e
+\begin{equation}
+\mathbf{A}= \left[%
+\begin{array}{cc}
+  -\alpha_1 & \alpha_2 \\
+  \alpha_1 & -\alpha_2 \\
+\end{array}%
+\right].\label{eq:amatrix-def-trs-rich}
+\end{equation}
+Fazendo
+\begin{equation}%\label{eqB23}
+\mathbf{Q}\mathbf{X}=\mathbf{C}\label{eq:CQX}
+\end{equation}
+e substituindo (\ref{eq:CQX}) em (\ref{eq:sismat-rich}),
+\begin{align}
+\mathbf{Q}\frac{\partial \mathbf{X}}{\partial t}
+&=\mathbf{Q} \nu_{cw}\frac{\partial^2 \mathbf{X} }{\partial z^2} +
+\mathbf{AQ}\mathbf{X};\label{eqB36}\\
+\frac{\partial \mathbf{X}}{\partial t} &=\nu_{cw}\frac{\partial^2
+\mathbf{X} }{\partial z^2} + \mathbf{Q}^{-1}\mathbf{AQ}\mathbf{X}.\label{eq:desacopla-X}
+\end{align}
+Se fizermos
+\begin{equation}%\label{eqB38}
+\mathbf{Q}= \left[%
+\begin{array}{cc}
+  \frac{\alpha_2}{\alpha_1} & -1 \\
+  1 & 1 \\
+\end{array}%
+\right],\label{eq:def-qq}
+\end{equation}
+então
+\begin{align}%\label{eqB38}
+\mathbf{Q}^{-1} &= \frac{1}{1+\frac{\alpha_2}{\alpha_1}}\left[%
+\begin{array}{cc}
+  1 & 1 \\
+  -1 & \frac{\alpha_2}{\alpha_1} \\
+\end{array}%
+\right], \label{eq:qinv}\\
+%\label{eqB39}
+\mathbf{Q}^{-1}\mathbf{AQ} &=\mathbf{D}= \left[%
+\begin{array}{cc}
+  0 & 0 \\
+  0 & -(\alpha_2+\alpha_1) \\
+\end{array}%
+\right]. \label{eq:def-D}
+\end{align}
+
+Dessa forma, o sistema (\ref{eq:desacopla-X}) é desacoplado nas variáveis $X_1(z,t)$ e
+$X_2(z,t)$. As duas equações independentes resultantes são
+
+\begin{align}%\label{eqB40}
+\frac{\partial X_1}{\partial t} &=\nu_{cw}\frac{\partial^2 X_1
+}{\partial z^2}, \label{eq:x1rich}\\
+\frac{\partial X_2}{\partial t} &=\nu_{cw}\frac{\partial^2 X_2
+}{\partial z^2}-(\alpha_1+\alpha_2)X_2;\label{eq:x2rich}
+\end{align}
+as condições iniciais e de contorno podem ser postas como
+
+\begin{align}
+X_1(0,t) &=\frac{\overline{\cw_0}+\overline{\rw_0}}{1+\frac{\alpha_2}{\alpha_1}}=X_1^0;\label{eqB42}\\
+X_2(0,t) &=\frac{-\overline{\cw_0}+\frac{\alpha_2}{\alpha_1}\overline{\rw_0}}
+                {1+\frac{\alpha_2}{\alpha_1}}=X_2^0;\label{eqB43}\\
+X_1(z,0) &=X_1(\infty,t)=\frac{\overline{\cw_{hw}}+\overline{\rw_{hw}}}
+                              {1+\frac{\alpha_2}{\alpha_1}}=X_1^b;\label{eqB44}\\
+X_2(z,0)
+&=X_2(\infty,t)=\frac{-\overline{\cw_0}+\frac{\alpha_2}{\alpha_1}\overline{\rw_0}}
+                     {1+\frac{\alpha_2}{\alpha_1}}=X_2^b.\label{eqB45}
+\end{align}
+Vamos primeiramente resolver o problema de $X_1$. Aplicando a
+transformada de Laplace a (\ref{eq:x1rich}) nós temos
+\begin{equation}\label{eqB46}
+s_w [X_1]^L-X_1^b =\nu_{cw}\frac{\partial^2 [X_1]^L }{\partial
+z^2}.
+\end{equation}
+A equação acima apresenta a seguinte solução geral
+\begin{equation}\label{eqB47}
+[X_1]^L=A_1\exp\left[-\sqrt{\frac{s_w}{\nu_{cw}}}z\right]+A_2\exp\left[\sqrt{\frac{s_w}{\nu_{cw}}}z\right]+\frac{X_1^b}{s_w};
+\end{equation}
+as constantes de integração são definidas de tal maneira que
+\begin{equation}\label{eqB48}
+[X_1]^L=\left[\frac{X_1^0-X_1^b}{\mu_w}\right]\exp\left[-\sqrt{\frac{s_w}{\nu_{cw}}}z\right]+\frac{X_1^b}{s_w}.
+\end{equation}
+
+
+Já a expressão (\ref{eq:x2rich}) fica
+\begin{equation}\label{eqB49}
+s_w [X_2]^L-X_2^b
+=-(\alpha_2+\alpha_1)[X_2]^L+\nu_{cw}\frac{\partial^2 [X_2]^L
+}{\partial z^2};
+\end{equation}
+para facilitar a notação vamos chamar $\alpha_1+\alpha_2=\alpha$.
+A equação (\ref{eqB49}) tem solução
+
+\begin{equation}\label{eqB50}
+[X_2]^L=B_1\exp\left[-\sqrt{\frac{s_w+\alpha}{\nu_{cw}}}z\right]+B_2\exp\left[\sqrt{\frac{s_w+\alpha}{\nu_{cw}}}z\right]+\frac{X_2^b}{s_w+\alpha};
+\end{equation}
+pelas condições (\ref{eqB43}) e (\ref{eqB45})
+
+\begin{equation}\label{eqB51}
+[X_2]^L=\left[\frac{X_2^0}{s_w}-\frac{X_2^b}{s_w+\alpha}\right]\exp\left[-\sqrt{\frac{s_w+\alpha}{\nu_{cw}}}z\right]+\frac{X_2^b}{s_w+\alpha};
+\end{equation}
+voltando para a equação original
+
+\begin{equation}\label{eqB52}
+[C]^L(z,s_w)=\frac{\alpha_2}{\alpha_1}[X_1]^L-[X_2]^L.
+\end{equation}
+com a expressão (\ref{eqB52}) em mãos é possível utilizar
+(\ref{eeqF30}) para determinar o coeficiente de transferência
+interfacial de um gás que apresenta reações químicas, através da
+Teoria de Renovação Superficial.
+
+
+
+
+
+
+\section{Transferência de Massa na Camada Superficial Aquática}
+
+Nesta seção será apresentada uma metodologia para estimar coeficientes de
+transferência para regiões aquáticas plenamente turbulentas. A metodologia aqui
+apresentada foi proposta originalmente em
+\cite{liu.katsaros.ea--bulk.parameterization} para estimar gradientes de
+temperatura ($\overline{T_{hw}}-\overline{T_0}$) em regiões aquáticas. Devido à
+semelhança entre a transferência de calor e a transferência de massa nas camadas
+interfaciais, podemos utilizar as idéias apresentadas no trabalho acima para
+estimar gradientes de concentração de gás na água.
+
+O parâmetro adimensional para temperatura
+$S$ da sub-camada interfacial aquática é definido como
+\begin{equation}%\label{eq01Am}
+S=\frac{\overline{T_{hw}}-\overline{T_0}}{T_{*w}},\label{eq:def-S-temp}
+\end{equation}
+com o fluxo de calor sensível através da interface dado por
+\begin{equation}
+H = \overline{\rho_w} c_{pw} u_{*w}T_{*w},\label{eq:H-uwstar-twstar}
+\end{equation}
+onde, naturalmente, $\overline{\rho_w}$ é a densidade média da água; $c_{pw}$ é o calor
+específico a pressão constante da água; $u_{*w}$ é a velocidade de atrito da
+água (na interface com o ar) e $t_{*w}$ é a escala turbulenta de temperatura. 
+
+Na expressão acima $\overline{T_{hw}}$ é a temperatura da água no
+começo da região plenamente turbulenta da água. 
+\cite{liu.katsaros.ea--bulk.parameterization} também definem 
+\begin{equation}%\label{eq03Am}
+S_{w1}= \overline{\rho_w} c_{pw} \nu_{Tw}
+u_{*w}\frac{(\overline{T}_{hw}-\overline{T_0})}{H \nu_{uw}}.\label{eq:def-S1-temp}
+\end{equation}
+Em \ref{eq:def-S1-temp}, $\nu_{Tw}$ é a difusividade térmica na água, e
+$\nu_{uw}$ é a viscosidade cinemática da água.
+Em \ref{eq:def-S1-temp}, substituindo $H$ com (\ref{eq:H-uwstar-twstar}),
+\begin{align}
+S_{w1} &= \overline{\rho_w} c_{pw} \nu_{Tw}u_{*w}
+\frac{(\overline{T_{hw}}-\overline{T_0})}
+     {\overline{\rho_w}c_{pw}u_{*w}t_{*w} \nu_{uw}}\\
+       &= \frac{\nu_{Tw}}{\nu_{uw}}\frac{\overline{T_{0}} -
+       \overline{T_{hw}}}{t_{*w}}\\
+       &= \mathrm{Pr}^{-1} S,\label{eq:S1-Pr-S}
+\end{align}
+onde $\mathrm{Pr} = \nu_{uw}/\nu_{Tw}$ é o número de Prandtl molecular para a
+água. 
+
+
+Naturalmente, resultados totalmente análogos podem ser obtidos para o transporte
+de massa, a saber:
+\begin{align}
+G &= \frac{\overline{\cw_{hw}} - \overline{\cw_0}}{\cw_*}, \\
+F &= \overline{\rho_w} u_{*w} \cw_{*},\\
+G_1 &= \overline{\rho_w} \nu_{cw}u_{*w}
+      \frac{(\overline{\cw_{hw}} -  \overline{\cw_0})}
+           {F \nu_{uw}} = \mathrm{Sc}^{-1}G,
+\end{align}
+com $\mathrm{Sc} = \nu_{uw}/\nu_{cw}$.
+ 
+\cite{liu.katsaros.ea--bulk.parameterization} apresentam uma compilação de
+valores de $S$ e $S_{1}$ obtidos em \cite{hasse--sea.surface},
+\cite{paulson.parker--cooling}, \cite{saunders--temperature.air-ocean},
+\cite{street.miller--determination.aqueous} e \cite{hill--laboratory} que
+podem ser úteis para a obtenção dos análogos $G$ e $G_1$ propostos aqui para a
+transferência de massa.
+
+\section{Quebra de ondas e transferência de massa}
+
+Para a inclusão do efeito da quebra de ondas na transferência de
+massa vamos utilizar a metodologia descrita em \cite{Woolf-2005}.
+O autor utiliza um modelo aditivo que supõe que o coeficiente de
+transferência interfacial aquática $k_{w0t}$ total pode ser
+decomposto em duas partes:
+\begin{equation}\label{decomp}
+k_{w0t}=k_{w0}+k_{wb}.
+\end{equation}
+Na expressão acima $k_{w0}$ é o coeficiente de transferência
+causado por difusão molecular facilitado pela intermitência do
+escoamento perto da superfície e $k_{wb}$ é o coeficiente de
+transferência causado pela presença de bolhas. Este último
+coeficiente é considerado como uma função da cobertura de espuma
+que pode ser observada em campo $W$ (whitecap coverage). O artigo
+\citep{Woolf-1997} apresenta expressões para gases de diferentes
+solubilidades, de maneira geral essas relações podem ser postas
+como
+
+\begin{equation}\label{}
+k_{wb}=\alpha_{\chi}W.
+\end{equation}
+O coeficiente $\alpha_{\chi}$ vária de acordo com a solubilidade
+do gás em questão. A grandeza $W$ pode ser relacionada com a
+velocidade do vento, o artigo \citep{monahan.muircheartaigh--optimal} realizou uma
+análise estatística e apresentou a seguinte relação
+
+\begin{equation}\label{relacOld}
+W=3.84 x 10^{-6} \overline{u}_b^{3.41}.
+\end{equation}
+Uma diferente parametrização de $W$ foi proposta por
+\citep{zhao.toba--dependence}, que coloca
+
+\begin{equation}\label{relacOld2}
+W=2.89 x 10^{-7} \overline{u}_b^{4.04}.
+\end{equation}
+As relações (\ref{relacOld}) e (\ref{relacOld2}) são parte de uma
+família de parametrizações baseadas na velocidade do vento. Entre
+outros trabalhos nesta linha podemos citar
+\citep{bortkovskii.novak--statistical}, \citep{hanson.phillips--wind} e
+\citep{stranska.petelski--observations}.
+
+
+
+
+\chapter{Metodologia para 
+calcular fluxos superficiais de gases em interfaces água-ar 
+através de equações de transferência de escalares}\label{cap:metod-agua-ar}
+
+\section{Resumo do modelo}
+
+O modelo de transferência para a sub-camada interfacial no ar,
+(\ref{eq:def-Cf0}), pode ser estendido naturalmente para a sub-camada
+interfacial aquática. Supondo, como sempre, a continuidade do fluxo através da
+interface, 
+\begin{equation}
+F = \overline{\rho_w} \mathrm{Cf}_{w0} u_{*w}( \overline{\cw_{hw}} -
+\overline{\cw_0}). \label{eq:def-Cfw0}
+\end{equation}
+Essa equação pode ser combinada com (\ref{eq:wtf-is}) para eliminar a
+concentração na superfície, $\overline{\cw_0}$, cuja medição é problemática, por
+meio de um procedimento padrão:
+\begin{align*}
+(\overline{c_0} - \overline{c_{a}}) &= \frac{F}{\overline{\rho}\mathrm{Cf}_a \overline{u_b}}  \\
+\mathrm{He}(\overline{\cw_{hw}} - \overline{\cw_0})
+   &= \frac{F\mathrm{He}}{\overline{\rho_w}\mathrm{Cf}_{w0} u_{*w}}\\
+(\mathrm{He}\overline{\cw_{hw}} - \overline{c_a}) &= F\left( 
+\frac{1}{\overline{\rho}\mathrm{Cf}_a\overline{u_b}} +
+\frac{\mathrm{He}}{\overline{\rho_w}\mathrm{Cf}_{w0}u_{*w}}\right)
+\end{align*}
+A última expressão acima sugere a definição
+\begin{equation}
+\frac{1}{\overline{\rho}\mathrm{Cf}_{wa}\overline{u_b}} \equiv \frac{1}{\overline{\rho}\mathrm{Cf}_a\overline{u_b}} +
+\frac{\mathrm{He}}{\overline{\rho_w}\mathrm{Cf}_{w0}u_{*w}}\label{eq:def-Cwa}
+\end{equation}
+Com isso, a equação de transferência água-atmosfera torna-se
+\begin{equation}
+F = \overline{\rho}\mathrm{Cf}_{wa}
+\left( \mathrm{He}\overline{\cw_{hw}} - \overline{c_a}\right).\label{eq:F-Cwa}
+\end{equation}
+A partir de (\ref{eq:def-Cwa}), podemos escrever
+\begin{align}
+\frac{1}{\overline{\rho}\overline{u_b}\mathrm{Cf}_{wa}} &= 
+   \frac{\overline{\rho_w}\mathrm{Cf}_{w0}u_{*w} + \mathrm{He}\overline{\rho}\mathrm{Cf}_a\overline{u_b}}
+        {\overline{\rho_w}\mathrm{Cf}_{w0}u_{*w} \mathrm{He}\overline{\rho}\mathrm{Cf}_a\overline{u_b}},\nonumber\\
+\overline{\rho}\overline{u_b}\mathrm{Cf}_{wa} &= 
+   \frac{\overline{\rho_w}\mathrm{Cf}_{w0}u_{*w} \mathrm{He}\overline{\rho}\mathrm{Cf}_a\overline{u_b}}
+        {\overline{\rho_w}\mathrm{Cf}_{w0}u_{*w} + \mathrm{He}\overline{\rho}\mathrm{Cf}_a\overline{u_b}};\nonumber\\
+\mathrm{Cf}_{wa}    &= 
+        \frac{\overline{\rho_w}\mathrm{Cf}_{w0}u_{*w} \mathrm{He}\mathrm{Cf}_a}
+        {\overline{\rho_w}\mathrm{Cf}_{w0}u_{*w} + \mathrm{He}\overline{\rho}\mathrm{Cf}_a\overline{u_b}}\nonumber\\
+                    &= 
+        \frac{\mathrm{Cf}_{w0} \mathrm{He}\mathrm{Cf}_a}
+        {\mathrm{Cf}_{w0} + \mathrm{He}\frac{\overline{\rho}}{\overline{\rho_w}}\mathrm{Cf}_a
+         \frac{\overline{u_b}}{\overline{u_{*w}}}}\nonumber\\
+                    &= \frac{\mathrm{Cf}_a}
+                            {\frac{1}{\mathrm{He}} + 
+                             \frac{\overline{\rho}}{\overline{\rho_w}}
+                             \frac{\mathrm{Cf}_a}{\mathrm{Cf}_{w0}}
+                             \frac{\overline{u_b}}{\overline{u_{*w}}}}\label{eq:Cfwa-final}
+\end{align}
+
+As vantagens dessa formulação são as seguintes:
+\begin{enumerate}
+  \item A formulação de $\mathrm{Cf}_a$ está totalmente pronta, a partir da teoria de
+    \cite{brutsaert--b.roughness.length,brutsaert--a.theory.local.evaporation}.
+  \item O valor de $u_{*w}$ pode ser calculado diretamente a partir de $u_*$ e dos valores conhecidos de
+    $\overline{\rho}$ e de $\overline{\rho_w}$, como mostrado a seguir.
+\end{enumerate}
+Segue-se que, se conseguirmos parametrizar $\mathrm{Cf}_{w0}$ com
+argumentos similares aos usados para parametrizar $\mathrm{Cf}_0$, o
+trabalho está feito.
+
+Para estimar $u_{*w}$ a partir de medições (micro)meteorológicas, podemos supor
+que a tensão de cisalhamento é igual através da interface, ou seja:
+\begin{align}
+\overline{\rho_w}u_{*w}^2 &= \overline{\rho}u_*^2,\nonumber\\
+u_{*w} &= u_* \sqrt{\frac{\overline{\rho}}{\overline{\rho_w}}}. \label{eq:tau-thesame}
+\end{align}
+Uma estimativa de $u_*$ faz parte de qualquer parametrização micrometeorológica
+de fluxos superficiais. Portanto, (\ref{eq:tau-thesame}) não apresenta nenhum
+problema.
+
+Conforme antecipado na subseção \ref{subsec:TRS}, a combinação de
+(\ref{eq:fluxo-medio-danckwerts-enfim})
+com (\ref{eq:def-Cfw0}) e (\ref{eq:twstar-from-brut}) produz
+
+\begin{align}
+\mathrm{Cf}_{w0} u_{*w} &= C_{wR}\sqrt{\nu_{cw}/t_{*w}};\nonumber\\
+ \mathrm{Cf}_{w0} &= C_{wR}\frac{1}{u_{*w}}\sqrt{\frac{\nu_{cw}}{t_{*w}}}\nonumber\\
+                  &= C_{wR}\frac{1}{u_{*w}}\nu_{cw}^{1/2}\left(\frac{u_{*w}^3}{\nu_{uw} z_{0w}}\right)^{1/4}\nonumber\\
+                  &= C_{wR}\nu_{cw}^{1/2}\left( \frac{u_{*w}^3}{\nu_{uw} z_0 u_{*w}^4}\right)^{1/4}\nonumber\\
+                  &= C_{wR}\left(\frac{\nu_{cw}}{\nu_{uw}}\right)^{1/2}
+                    \nu_{uw}^{1/2}\left( \frac{1}{\nu_{uw}z_{0w}u_{*w}^4}\right)^{1/4}\nonumber\\
+                  &= C_{wR}\left(\frac{\nu_{cw}}{\nu_{uw}}\right)^{1/2}
+                    \left(\frac{\nu_{cw}^2}{\nu_{cw} z_{0w} u_{*w}}\right)^{1/4}\nonumber\\
+                  &= C_{wR}\left(\frac{\nu_{cw}}{\nu_{uw}}\right)^{1/2}
+                    \left(\frac{\nu_{cw}}{z_{0w} u_{*w}}\right)^{1/4}\nonumber\\
+                  &= C_{wR}\mathrm{Sc}_w^{-1/2}\mathrm{Re}_{0w}^{-1/4}\label{eq:Cf-brutsaert-w}
+\end{align}
+Finalmente, temos em mãos tudo o que é necessário para calcular
+$\mathrm{Cf}_{wa}$ em (\ref{eq:def-Cwa}), exceto pela rugosidade de
+momentum na água, $z_{0w}$. Essa última entretanto pode ser obtida por
+meio de uma expressão análoga à de Charnock, só que para a água
+\citep{michael--simulation}:
+\begin{equation}
+z_{0w}=\alpha_w \frac{u_{*w}}{g}.\label{z0-water}
+\end{equation}
+com $\alpha_w = O(10^5)$.
+
+Na prática, o modelo que construímos é mais complicado do
+que \label{eq:Cf-brutsaert-w}, pois o valor de $t_{*}$ e de $t_{*w}$ que
+utilizamos é basedo no modelo (\ref{eq:t-contato-D}) de
+\cite{wick.emery--behavior.bulk-skin}, e não no modelo mais simples
+(\ref{eq:twstar-prop})--(\ref{eq:tastar-prop}), devido a
+\cite{brutsaert--b.roughness.length,brutsaert--a.theory.local.evaporation}.
+
+Além disso, tanto quanto seja de nosso conhecimento, o uso da teoria de
+renovação superficial \emph{simultaneamente} para as camadas interfaciais
+aquática e aérea é feita aqui pela primeira vez. 
+
+\section{Resultados}
+
+
+Os dados incluem a medição a bordo de um navio dos fluxos turbulentos descritos
+acima, e de temperatura da água e de concentração de CO\sub{2} na água a 5 m de
+profundidade. 
+
+Os dados medidos correspondem ao arquivo \url{2009gl038907-ts01.dat}, com 214
+medições de \textit{runs} de 13.7 minutos de duração. A tabela
+\ref{tab:dados-medidos}, extraída do arquivo de metadados e mantida no original
+em inglês, lista as variáveis medidas.
+
+\begin{table}\tabulinesep=3pt
+\caption{Variáveis medidas em \protect\cite{miller.marandino.ea--air-sea.gas} e
+  utilizadas neste relatório (no original em Inglês)}\label{tab:dados-medidos}
+{\ttfamily \begin{tabu}[t]{X[1]X[3]X[3]X[6]}
+\toprule
+COL	& VARIABLE	& UNITS		  & DESCRIPTION	\\
+\midrule
+1	   & time		& day of year & decimal day of year 2007 \\
+2	   & lat		   & degrees	  & latitude \\
+3	   & lon		   & degrees	  & longitude \\
+4	   & solar 	   & W/m2		  & solar radiation at 16m above sea surface \\
+5	   & sst 		& C		     & sea surface temp at 5m depth  \\
+6	   & Tair 		& C		     & air temperature at 16m \\
+7	   & rh 		   & percent	  & relative humidity at 16m  \\
+8	   & pamb		& mbar		  & barometric pressure at 16m \\
+9	   & co2\_air 	& ppm		     & atmospheric co2 partial pressure at 14m \\
+10	   & co2\_sea 	& ppm		     & sea surface co2 partial pressure at 5m depth \\
+11	   & dpco2 	   & ppm		     & sea-air pco2 difference \\
+12	   & U\_10 		& m/s		     & neutral wind speed at 10 m height \\
+13	   & WD 		   & deg		     & wind direction at 14 m height \\
+14	   & ustar		& m/s		     & friction velocity at 14m \\
+15	   & HS 		   & W/m2		  & eddy covariance sensible heat flux at 14m \\
+16	   & HL 		   & W/m2		  & eddy covariance latent heat flux at 14m \\
+17	   & z\_L 		& na		     & dimensionless ratio of measurement height (14
+                                  m) to Obukhov length \\
+18  	& fco2 		& mol/m2/yr   & eddy covariance co2 flux at 14m \\
+19 	& k\_660		& cm/hr		  & piston velocity at Sc=660 \\
+\bottomrule
+\end{tabu}}
+\end{table}
+
+
+Note que a temperatura superficial e a concentração de CO\sub{2}
+diretamente na superfície \emph{não foram medidas}, ao mesmo tempo em que
+\emph{foram} medidas as grandezas médias correspondentes (por exemplo,
+$\overline{\cw}$ e $\overline{c_a}$) na água e no ar de modo que este é um caso
+de aplicabilidade da teoria aqui desenvolvida.
+
+A figura \ref{fig:HmodelXHmeas} mostra o resultado da comparação entre os fluxos
+de calor sensível medidos (eixo $x$) e modelados (eixo $y$). Uma regressão
+linear clássica produz um coeficiente de correlação $r = 0.86$, um
+coeficiente angular $a = 0.94 \pm 0.05$ e um coeficiente linear
+$b = -3.8 \pm 2.6$ (a incerteza indica um desvio-padrão). A
+dispersão é claramente alta, mas o modelo também mostra uma boa correlação com
+os dados medidos, sendo a dispersão típica de modelos desta natureza.
+
+\begin{figure}\centering
+\includegraphics[width=0.6\textwidth]{HmodelXHmeas}
+\caption{Resultado da aplicação do modelo proposto para os dados de
+  \cite{miller.marandino.ea--air-sea.gas} para o fluxo de calor
+  sensível\label{fig:HmodelXHmeas}}
+\end{figure}
+
+A figura \ref{fig:LEmodelXLEmeas} mostra o resultado da comparação entre os
+fluxos de calor sensível medidos (eixo $x$) e modelados (eixo $y$). Uma
+regressão linear produz um coeficiente de correlação $r = 0.85$, um coeficiente
+angular $a = 0.81 \pm 0.04$ e um coeficiente linear $b = 17.3\pm 3.0$ (a
+incerteza indica um desvio-padrão). A dispersão é novamente alta, mantendo-se as
+tendências gerais observadas para o fluxo de calor latente.
+
+\begin{figure}\centering
+\includegraphics[width=0.6\textwidth]{LEmodelXLEmeas}
+\caption{Resultado da aplicação do modelo proposto para os dados de
+  \cite{miller.marandino.ea--air-sea.gas} para o fluxo de calor latente\label{fig:LEmodelXLEmeas}}
+\end{figure}
+
+
+A figura \ref{fig:FmodelXFmeas} mostra o resultado da comparação entre os fluxos
+de CO\sub{2} medidos (eixo $x$) e modelados (eixo $y$). 
+Como todos os fluxos medidos e modelados foram negativos, na figura plota-se $-F$.
+
+Uma regressão linear pela origem produz um coeficiente de correlação de apenas
+$r = 0.42$, um coeficiente angular $a = 0.47 \pm 0.08$ e um coeficiente linear
+$b = 2.2 \pm 0.3$ (a incerteza indica um desvio-padrão). Os resultados para o
+fluxo de CO\sub{2} são claramente inferiores. Mesmo assimm, o modelo desenvolvido
+apresenta, em nossa opinião, claramente potencial preditivo. Entretanto, mais
+esforços de pesquisa são necessários no sentido de obter melhores resultados para
+o fluxo de CO\sub{2}.
+
+\begin{figure}\centering
+\includegraphics[width=0.6\textwidth]{FmodelXFmeas}
+\caption{Resultado da aplicação do modelo proposto para os dados de
+  \cite{miller.marandino.ea--air-sea.gas} para o fluxo de calor latente\label{fig:FmodelXFmeas}}
+\end{figure}
+
+
+
+\chapter{Conclusões}
+
+Um novo modelo para a troca de calor sensível, calor latente e massa de CO\sub{2}
+através de uma interface água-ar foi desenvolvido, com o objetivo explícito de
+eliminar a necessidade de medição de grandezas na superfície da água. A medição
+dessas grandezas é sempre difícil e, no caso de CO\sub{2}, essencialmente
+impossível devido a limitações instrumentais. O modelo foi aplicado aos dados
+medidos por \cite{miller.marandino.ea--air-sea.gas}. O modelo demonstrou boa
+capacidade de estimativa dos fluxos de energia $H$ e $LE$, mas seu desempenho
+com o fluxo de CO\sub{2} foi pior. Análises específicas estão sendo realizadas
+para determinar as causas do problema, e aperfeiçoar o modelo para o caso do CO\sub{2}.
+
+
+
+
+
+
+
+
+
+
+\newcommand{\ape}{}
+
+\bibliography{abbrevs,tesex}
+\bibliographystyle{belllike}
+%\bibliographystyle{abnt}
+
+
+
+\end{document}
+

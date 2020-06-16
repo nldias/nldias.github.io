@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Ensino (Teaching)</title>
-<!-- 2020-05-29 sex 16:25 -->
+<!-- 2020-06-11 qui 08:24 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -411,6 +411,16 @@ de figuras e tabelas, apêndices)
 </li>
 <li><a href="./tex/aula-09-2020-05-29.tex">Aula09</a>
 </li>
+<li><a href="./tex/aula-10-2020-06-01.tex">Aula10</a>
+</li>
+<li><a href="./tex/aula-11-2020-06-03.tex">Aula11</a>
+</li>
+<li><a href="./tex/aula-12-2020-06-05.tex">Aula12</a>
+</li>
+<li><a href="./tex/aula-13-2020-06-08.tex">Aula13</a>
+</li>
+<li><a href="./tex/aula-14-2020-06-10.tex">Aula14</a>
+</li>
 </ul>
 </div>
 </div>
@@ -447,6 +457,21 @@ de figuras e tabelas, apêndices)
 </li>
 
 <li><a href="https://youtu.be/PSkwk3G9ADE">Aula 09</a>
+</li>
+
+<li><a href="https://youtu.be/iyDEr73KKew">Aula 10</a>
+</li>
+
+<li><a href="https://youtu.be/ke_nIOpLe8w">Aula 11</a>
+</li>
+
+<li><a href="https://youtu.be/9IvqUuIFoYE">Aula 12</a>
+</li>
+
+<li><a href="https://youtu.be/aRAuf1C22ns">Aula 13</a>
+</li>
+
+<li><a href="https://youtu.be/u9p9grr8CmY">Aula 14</a>
 </li>
 </ul>
 </div>
@@ -1335,7 +1360,7 @@ Faça o download do gabarito da P1: <a href="./pdf/eamb7009-2018-3-p01-sol.pdf">
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2020-05-29 sex 16:25</p>
+<p class="date">Created: 2020-06-11 qui 08:24</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.2 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
