@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Covid19: Uma previsão dia-a-dia da extensão da crise</title>
-<!-- 2020-06-14 dom 10:18 -->
+<!-- 2020-06-17 qua 08:42 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -289,23 +289,25 @@ data from Johns Hopkins, from <a href="https://github.com/CSSEGISandData/COVID-1
 <hr  />
 
 <p>
-2020-06-13T00:00:00
+2020-06-16T00:00:00
 </p>
 
 <p>
-\(P_\infty\) ainda sobe, porém bem lentamente. Por equanto, o diagnóstico com os dados
-até hoje é que estamos "no pico". Como sempre,
-isso precisa ser confirmado nos próximos dias: precisamos confirmar a
-estabilidade
-de \(P_\infty\) por no mínimo 7&#x2013;10 dias para sabermos melhor.
+Apesar do número recorde de casos novos reportados em 16/Jun,
+\(P_\infty\) continua estável nos últimos 7 dias. 
+Como sempre, atitudes individuais e governamentais irresponsáveis
+podem piorar a situação. Se cada um de nós fizer a sua parte,
+permaneceremos por mais uma semana no pico e em seguida começaremos a
+ver uma redução progressiva de casos novos.
 </p>
 
 <p>
-\(P_\infty\) is still growing, but very gently.  For the time being, the
-diagnostic with the data available to this date is that we are "at the
-peak". As always this needs confirmation in the next days: we need to
-confirm the stability of \(P_\infty\) during at least 7&#x2013;10 days to know
-better.
+In spite of the record number of new cases reported on June 16,
+\(P_\infty\) has remained stable for the last 7 days. As always,
+irresponsible behavior by individuals and governments can make
+things (much) worse. If each one of us does his/her part, we will
+remain at the peak for another week, and then we will start to see a
+progressive reduction in the number of new cases.
 </p>
 
 
@@ -323,6 +325,28 @@ as mais antigas). Here are the curve fittings, from latest to earliest.
 </p>
 
 <p>
+2020-06-15:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0110.png" alt="cordtime-0110.png" />
+</p>
+</div>
+
+
+<p>
+2020-06-14:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0109.png" alt="cordtime-0109.png" />
+</p>
+</div>
+
+
+<p>
 2020-06-13:
 </p>
 
@@ -331,7 +355,6 @@ as mais antigas). Here are the curve fittings, from latest to earliest.
 <p><img src="./png/cordtime-0108.png" alt="cordtime-0108.png" />
 </p>
 </div>
-
 
 
 <p>
@@ -1165,7 +1188,7 @@ as mais antigas). Here are the curve fittings, from latest to earliest.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2020-06-14 dom 10:18</p>
+<p class="date">Created: 2020-06-17 qua 08:42</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.2 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
