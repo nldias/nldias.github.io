@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Covid19: Uma previsão dia-a-dia da extensão da crise</title>
-<!-- 2020-06-17 qua 08:42 -->
+<!-- 2020-06-21 dom 09:15 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -289,27 +289,26 @@ data from Johns Hopkins, from <a href="https://github.com/CSSEGISandData/COVID-1
 <hr  />
 
 <p>
-2020-06-16T00:00:00
+2020-06-20T00:00:00
 </p>
+
 
 <p>
-Apesar do número recorde de casos novos reportados em 16/Jun,
-\(P_\infty\) continua estável nos últimos 7 dias. 
-Como sempre, atitudes individuais e governamentais irresponsáveis
-podem piorar a situação. Se cada um de nós fizer a sua parte,
-permaneceremos por mais uma semana no pico e em seguida começaremos a
-ver uma redução progressiva de casos novos.
+Os dados dos últimos dois dias puxaram \(P_\infty\) para cima novamente.
+Embora seja que uma nova onda de infecções esteja começando devido à
+interrupção prematura do isolamento social, eu acho mais provável que
+nos próximos dias \(P(t)\) continue seguindo mais ou menos a curva azul
+ajustada hoje.
 </p>
+
 
 <p>
-In spite of the record number of new cases reported on June 16,
-\(P_\infty\) has remained stable for the last 7 days. As always,
-irresponsible behavior by individuals and governments can make
-things (much) worse. If each one of us does his/her part, we will
-remain at the peak for another week, and then we will start to see a
-progressive reduction in the number of new cases.
+The data from the last two days have pulled \(P_\infty\) upwards again.
+Although It is possible, that a new wave of infections is beginning
+due to the premature interruption of social distancing measures, I
+still think it is more likely that in the next days \(P(t)\) will more
+or less follow the blue curve adjusted today.
 </p>
-
 
 
 
@@ -323,6 +322,61 @@ progressive reduction in the number of new cases.
 Eis aqui o ajuste das curvas ao longo do tempo (das mais recentes para
 as mais antigas). Here are the curve fittings, from latest to earliest.
 </p>
+
+<p>
+2020-06-20:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0115.png" alt="cordtime-0115.png" />
+</p>
+</div>
+
+
+<p>
+2020-06-19:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0114.png" alt="cordtime-0114.png" />
+</p>
+</div>
+
+
+<p>
+2020-06-18:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0113.png" alt="cordtime-0113.png" />
+</p>
+</div>
+
+
+<p>
+2020-06-17:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0112.png" alt="cordtime-0112.png" />
+</p>
+</div>
+
+
+<p>
+2020-06-16:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0111.png" alt="cordtime-0111.png" />
+</p>
+</div>
+
 
 <p>
 2020-06-15:
@@ -1188,7 +1242,7 @@ as mais antigas). Here are the curve fittings, from latest to earliest.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2020-06-17 qua 08:42</p>
+<p class="date">Created: 2020-06-21 dom 09:15</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.2 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
