@@ -1,0 +1,891 @@
+\documentclass[biolinum,graylinen,20pt]{marmot}
+%
+% Font shape `T1/ccr/b/n' undefined -> encontrei concmath.sty
+% ccr10, etc. not found ... --> ccfonts
+% ditto eorm10.mf -> ecc
+% ditto ccr10.tfm -> concrete
+%
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[round]{natbib}  
+%\usepackage[brazil]{babel} % muda o idioma para o Português  
+\usepackage{comment}
+\usepackage{fontawesome}
+\usepackage{amssymb}
+\usepackage{mhchem}
+\usepackage{mathrsfs}
+\usepackage{mathtools}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{soul}
+\usepackage{upgreek}
+
+
+\input{math.tex}
+\input{ira.tex}
+
+\renewcommand{\emph}[1]{\textbf{\textit{#1}}}
+%\parskip=6pt
+
+
+
+%\leftlogo{lemmaufprlogo.pdf}
+\centername{\color{SteelBlue} XI Workshop Brasileiro de Micrometeorologia}
+
+\leftlogo{ufpr-new-t.png}
+\rightlogo{wkshop-logo-t.png}
+
+
+\title{Scalar flux measurement: progress and challenges.}
+\author{Nelson Luís Dias}
+\affil{\normalsize Department of Environmental Engineering, Federal University of Paraná,
+  Brazil\\
+  \faEnvelopeO: \url{nldias@ufpr.br}  \hspace*{2cm} \faChain: \url{www.nldias.github.io}}
+\date{XI Brazilian Micrometeorology Workshop, 20-22 Nov 2019}
+
+
+
+\begin{document}
+
+\maketitle
+
+\noslide[Acknowledgements]
+
+This talk draws from collaborative research with may people, including:
+
+\vspace*{1cm}
+
+André Luiz Diniz,
+Bianca Luhm Crivellaro,
+Cléo-Quaresma Dias-Jr,
+Diana M. Cancelli,
+Dornelles Vissotto Jr.,
+Einara Zahn,
+Fernando Augusto S. Armani,
+Lucas Emilio Hoeltgebaum,
+Lívia Freire Souza Grion,
+Marcelo Chamecki,
+Rodrigo Branco Rodakoviski,
+Tomás Luís G. Chor,
+
+and several others.
+
+\noslide[Thanks]
+
+{\large for the invitation:}
+
+\vfill
+
+{\large It is an honor.}
+
+\vfill
+
+\mcontents
+
+%\nosection{Acknowledgements}
+
+
+\msection{Motivation}
+
+\mslide[My approach in this talk]
+
+{\begin{itemize}\large
+  \item Have a quick look at the fundamentals of scalar flux measurement.
+  \item Discuss some (relatively recent) progress that has been made.
+  \item \ul{Discuss difficulties and challenges.}
+  \item Point to interesting research issues that deserve our attention.
+\end{itemize}}
+
+
+
+\mslide[Why is it important to measure scalar fluxes?]
+
+\begin{minipage}[t]{0.51\textwidth}
+  \vspace*{0pt}
+
+  Scalar fluxes are everywhere in Earth Science:
+\begin{itemize}\tightitems
+  \item The ever-important heat fluxes $H$ and $LE$
+  \item Fluxes of greenhouse gases: \ce{CO2}, \ce{CH4}, \ce{N2O}, \ldots
+  \item All sorts of pollutant fluxes
+  \item VOC fluxes, \ce{O3} fluxes, \ldots (towards SOAs and cloud condensation nuclei)
+\end{itemize}
+    {\small Right: figure from \cite{fuentes2016linking}}
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+  \vspace*{0pt}
+  \centering
+  \includegraphics[width=0.8\textwidth]{interactions}
+\end{minipage}
+
+%%{\footnotesize      Below: figure from \url{https://www.power-technology.com/news/smog-reduction-technologies-save-eu-citizens-e183bn-2025/attachment/smoke-air-pollution-air-sun-smog-sunset-pollution/}}
+\vspace*{1cm}
+
+
+\begin{minipage}[t]{0.48\textwidth}
+  \vspace*{0pt}\centering
+  \includegraphics[width=0.7\textwidth]{smog.jpg}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+  \vspace*{0pt}
+Their accurate estimation, therefore, impacts all sorts of areas of human
+activity:
+\begin{itemize}\tightitems
+  \item Weather prediction
+  \item Climate simulation
+  \item Air pollution modelling
+  \item Hydrology and streamflow forecasting
+\end{itemize}
+\end{minipage}
+
+\mslide[Why is it difficult to measure scalar fluxes?]
+
+\begin{itemize}\tightitems
+  \item The fluxes are turbulent
+  \item Depending on the scalar, sensor response time and accuracy can be unable to resolve turbulent fluctuations
+  \item They occur under non-ideal conditions:
+  \begin{itemize}\tightitems
+    \item in nonstationary periods
+    \item under local advective conditions
+    \item over complex terrain or topography
+  \end{itemize}
+  \item Reynolds's analogy may not apply $\Rightarrow$ \emph{Monin-Obukhov
+    Similarity Theory (MOST) may apply to scalar $a$, but not to $b$.}
+\end{itemize}\pause
+
+{\large What lies ahead?}
+
+\begin{minipage}{0.5\textwidth}
+  \vspace*{0pt}
+  \includegraphics[width=0.9\textwidth]{tothebeach.jpg}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+  \vspace*{0pt}
+\begin{itemize}\tightitems
+  \item There is still a lot to be learned about them
+  \item Research on fluxes is not only useful,
+  \item It is a fun (but long) walk (as always).
+\end{itemize}
+\end{minipage}
+
+\msection{Fundamentals}
+
+\mslide[Definition of terms]
+
+\begin{itemize}\tightitems
+  \item $\rho$ ($\mathsf{M\,L^{-3}}$) is fluid density; $\vut{u}=(u,v,w)$ is fluid velocity.
+  \item $\chi$ is a scalar.
+  \item $\rho_\chi$ is scalar density
+   or \emph{volumetric
+    concentration}; $\dimof{\rho_\chi}=\mathsf{M}_\chi\mathsf{L}^{-3}$.
+   \item $c_\chi=\rho_\chi/\rho$ is scalar mass concentration: $\dimof{c_\chi} =
+   \mathsf{M}_\chi\mathsf{M}^{-1}$.
+   \item $r_\chi = \rho_\chi/\rho_d$ is scalar mixing ratio.
+   \item $\mathbf{j}_\chi$ is the (molecular) diffusive flux of $\chi$.
+\end{itemize}
+
+\textbf{Lower concentrations are harder to measure}:
+
+\begin{center}
+{\begin{tabular}{rcrr}
+\toprule
+Gas        & $\chi=$ &\% & $\rho_\chi\, (\mathrm{g\,m^{-3}})$ \\
+\midrule
+\ce{N2}    & \multirow{2}{*}{$\left. \phantom{\bigg|} \right\} s$} & 78.000000  & 908.3679 \\
+\ce{O2}    &                    &21.000000  & 279.3485 \\
+\ce{H2O}   & $v$                  & 2.500000  &  18.7229 \\
+\ce{CO2}   & $c$ & 0.040000     &   0.7318 \\
+\ce{CH4}   & $m$ & 0.000175     &   0.0012 \\
+\ce{N2O}   & $n$ & 0.000031     &   0.0006 \\
+\bottomrule
+\end{tabular}
+}
+\end{center}
+
+
+\mslide[Many assumptions and difficult measurements]
+
+
+  \includegraphics[width=0.58\textwidth]{caixa}\hfill
+  \includegraphics[width=0.40\textwidth]{adv}
+
+Control volume balances:
+\begin{equation*}
+   -\oint_{\mathscr{S}} (\vut{n}\bdot\vut{j}_\chi)\,\md{S} 
+   = \parder{}{t}\int_{\mathscr{V}} \rho_\chi \,\md{V} + \oint_{\mathscr{S}}
+   \rho_\chi(\vut{n}\bdot\vut{u})\,\md{S} \; \Rightarrow 
+   F_\chi = \int_0^{z_a} \parder{\aavg{\rho_\chi}}{t} \,\md{z} +
+   \aavg{w\rho_\chi}\Big|_{z_a}
+\end{equation*}
+
+Above, $\aavg{w\rho_\chi}$ is an ensemble average at height $z_a$
+(the measurement height). \emph{Eddy covariance} measurements produce \emph{estimates}
+$\bavg{w\rho_\chi}$ of $\aavg{w\rho_\chi}$.
+
+\vfill
+
+Above, right: figure from
+\cite{leuning.zegelin.ea--measurement.horizontal.vertical.advection}. 
+
+\vfill
+
+\mslide[But there is a lot of complexity about $\overline{w\rho_\chi}$:]
+
+(Will not discuss the first three)
+\begin{itemize}
+  {\color{SlateBlue}\item Advection is complicated (no standard procedure except for tons of
+  equipments). For a really nice study, see
+  \cite{leuning.zegelin.ea--measurement.horizontal.vertical.advection}.}
+  {\color{SlateBlue}\item The storage term $\int_0^{z_a} \parder{\bavg{\rho_\chi}}{t} \,\md{z}$ is
+  doable, but requires vertical profiles of $\bavg{\rho_\chi}$ measurements
+  (calibrated, intercompared, \ldots)}
+  {\color{SlateBlue}\item WPL correction is mandatory: $\overline{w\rho_\chi} =
+  \overline{w}\,\overline{\rho_\chi} + \overline{w'\rho_\chi'}$.}
+  \item Random \emph{measurement} errors are large, and probably larger than
+  previously thought.
+  \item \emph{Modeling} errors related to incomplete knowledge of the physics
+  are also large.
+  \item Monin-Obukhov Similarity Theory may not apply equally to all scalars.
+  \item Corrections for sensor response and geometry may be needed.
+  \item Flow distortion is likely a larger problem than previously thought, and
+  can affect the value of the measured scalar fluxes.
+  \item Calibration is difficult and tricky.
+\end{itemize}
+
+
+
+\msection{Errors}
+
+\mslide[Different types of errors]
+
+  \textbf{Random errors:}
+  We measure an estimate (usually a time average) of an
+  ensemble average.
+
+Analogous with
+
+\begin{minipage}[t]{0.4\textwidth}
+  \begin{align*}
+    \bavg{x} &= \frac{1}{n}\sum_{i=1}^n x_i, \\
+    \Var\{ \bavg{x} \} &= \frac{\Var\{x\}}{n}.
+  \end{align*}
+\end{minipage}
+\begin{minipage}[t]{0.6\textwidth}
+    \begin{align}
+      \bavg{x}_\Delta &= \frac{1}{\Delta}\int_0^\Delta x(t)\,\md{t},\nonumber\\
+      \MSE(\bavg{x})  &= \frac{2\mathscr{T}}{\Delta}\Var\{x\},
+      \tag{\small Lumley-Panofsky}\\
+      \MSE(\bavg{x})  &= \beta
+      \Var\{x\}\left(\frac{\mathscr{T}_H}{\Delta}\right)^p.\tag{\small Relaxed Filtering Method}
+    \end{align}
+\end{minipage}
+
+$\mathscr{T}$ is the integral scale \citep{lumley.panofsky--structure}; For
+  $p<1$, \emph{it
+    may not exist in the statistical sense}; this is an instance of the
+  \emph{Hurst Phenomenon} in Turbulence \citep{dias2018hurst}.
+
+  \pause
+  \vfill
+
+  \textbf{Modeling errors:}
+We adopt a simplified set of assumptions to estimate
+  the flux $F_\chi$, because \emph{we do not know all of the physics}. This
+  introduces errors around the true values:\\[0.5cm] $\widehat{F_\chi} =
+  f(\zeta,\bavg{u},\Delta \bavg{c_\chi}, \ldots)$, $\qquad$ but $\qquad\left|\widehat{F_\chi}-F_\chi\right|$
+  can be large on average.
+
+  \vfill
+
+  \mslide[Random errors]
+
+  Relaxed filtering method (RFM) \cite{dias2018hurst}:
+  \stepwise{%
+  \step{\begin{minipage}[t]{0.48\textwidth}
+      \vspace*{0pt}%\small
+    $\RMSE(\overline{w'c'}) = c\Delta^{-p/2}$
+    \begin{itemize}\tightitems
+       \item Similar to bootstrapping.
+       \item Power-law fitting with turbulence data.
+       \item $p$ and $\RMSE(\overline{w'c'})$ are calculated for each
+         ``block'' of length $T$.
+    \end{itemize}
+    
+    \includegraphics[width=\textwidth]{urmselaw_u2}
+    \end{minipage}\hfill}
+  \step{\begin{minipage}[t]{0.48\textwidth}
+    \vspace*{0pt}%\small
+
+    The RFM produces $\RMSE$ values \emph{considerably larger} (for scalar fluxes) than
+    those from the Lumley-Panofsky equation:
+    \begin{center}
+      \includegraphics[width=0.7\textwidth]{5-escint_rmse_tijucas_wt_so.pdf}
+    \end{center}
+    Report $\RMSE$ estimates with the measurments!
+  \end{minipage}}}
+
+
+  
+\mslide[Modeling errors]
+
+\begin{itemize}\tightitems
+\item MOST requires a very stringent set of assumptions: stationarity, no horizontal
+advection, the inertial sublayer.
+\item Even when these conditions are met, however, MOST may not apply.
+\item Measurements made in the \emph{roughness sublayer} (where MOST \emph{does not} work) are
+a serious obstacle.
+\end{itemize}
+\pause
+\textbf{Indirect measurements in the roughness sublayer:}
+\begin{itemize}\tightitems
+  \item Direct (Eddy Covariance) flux measurements in the roughness sublayer are
+restricted to a few scalars: temperature, $\mathrm{H_2O}$, $\mathrm{CO_2}$,
+$\mathrm{CH_4}$.
+  \item Some other scalars can also be measured by EC (ozone, $\mathrm{OH^-}$,
+  isoprene, etc.), but at considerable difficulty (campaign-mode, etc.).
+  \item $\Rightarrow$  need of \emph{indirect} methods based on slower scalar sensor
+  measurements:
+  \begin{enumerate}
+    \item Flux-gradient (based on MOST).
+    \item Relaxed eddy accumulation (also based on MOST).
+  \end{enumerate}
+\end{itemize}
+
+\mslide[Examples from ATTO]
+
+
+\stepwise{
+\step{\begin{minipage}[t]{0.4\textwidth}
+    \vspace*{0pt}
+  REA (Relaxed Eddy Accumulation):
+  \[
+  \overline{w'c'} = b_c\sigma_w\left( \overline{c^+} - \overline{c^-}\right);
+  \qquad b_c = \text{const.}
+  \]
+  \cite{zahn.dias.ea--scalarturbulentbehavior}: selection of small zenith angles
+  ($|Z| \le 20^{\circ}$) recovers MOST-like behavior.
+\end{minipage}}
+\step{\begin{minipage}[t]{0.3\textwidth}
+    \vspace*{0pt}
+    {\centering All data.\\
+  \includegraphics[width=\textwidth]{reatotal42c}}
+\end{minipage}}
+\step{\begin{minipage}[t]{0.3\textwidth}
+  \vspace*{0pt}
+  {\centering $|Z| \le 20^{\circ}$\\\includegraphics[width=\textwidth]{rea202042c}}
+\end{minipage}}}
+(But improvement is for a few hours during the day, and a few months per year)
+
+\pause
+
+\newcommand{\boxit}[1]{\parbox[t]{2.5cm}{\centering #1}}
+{\begin{center}
+Error statistics for flux-gradient estimates at the ATTO site. From:
+    \cite{diasjr2019classical}.
+\begin{tabular}{lcccccc}
+\toprule
+Flux & unit                                & \boxit{overall mean} & \boxit{absolute RMSE} & \boxit{relative RMSE} & BIAS     & $r$  \\
+\midrule
+$LE$ & $\mathrm{W\,m^{-2}}$                & 211.70       & 201.58  & 134\%     & $-$46.87 & 0.39 \\
+$F$  & $\mathrm{\upmu{mol}\,m^{-2}\,s^{-1}}$ & $-$0.357     & 0.615   & 6521\%    & $+$0.033    & 0.16 \\
+\bottomrule
+\end{tabular}
+\end{center}}
+
+\mslide[\ldots And the inertial sublayer may not  exist over tall forests]
+
+
+\begin{minipage}[t]{0.58\textwidth}
+  \vspace*{0pt}
+
+  \cite{diasjr2019classical} looked for the inertial sublayer at the ATTO site,
+  but did not find it.
+
+  \begin{center}
+  \includegraphics[width=0.8\textwidth]{amazon-abl.jpg}
+  \end{center}
+
+  Without an inertial sublayer, the flux estimates will be poor if based on MOST.
+\end{minipage}\hfill
+\begin{minipage}[t]{0.38\textwidth}
+  \vspace*{0pt}
+  \includegraphics[width=\textwidth]{assku.png}
+\end{minipage}
+
+\mslide[Alas, sometimes MOST also fails in the inertial sublayer]
+
+\begin{minipage}[t]{0.6\textwidth}
+  \vspace*{0pt}
+  \begin{minipage}[t]{0.59\textwidth}
+    \vspace*{0pt}
+    \includegraphics[width=\textwidth,height=0.25\textheight]{fufetch}\\
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.4\textwidth}
+    \vspace*{0pt}\small
+    On the right \cite{dias2017effect}
+    \[
+    \frac{\sigma_c}{c_*} \stackrel{?}{=} \phi_{c}(\zeta)
+    \]
+    for Furnas and Verde lakes
+  \end{minipage}
+  {Scalar flux number \cite{cancelli.dias.ea--dissimilarity.implicaitons}:
+  $\displaystyle
+  \text{Sf}_{\chi} = \frac{\bavg{w'c_\chi'}\,z}{\nu_\chi\Delta\overline{c_\chi}}
+  $.
+  Below, Dissipation $-$ Gradient production:
+  \begin{center}
+  \includegraphics[width=0.6\textwidth]{phit-phih-sf.pdf}
+  \end{center}}
+  
+\end{minipage}
+\begin{minipage}[t]{0.4\textwidth}\centering
+  \vspace*{0pt}
+  {\small Furnas, temperature}\\
+  \includegraphics[width=\textwidth]{fu-phitt.pdf}
+
+  {\small Verde, temperature and $\mathrm{CO_2}$}\\
+  \includegraphics[width=\textwidth]{green-tt.pdf}
+  \includegraphics[width=\textwidth]{green-cc.pdf}
+
+  
+\end{minipage}
+  
+
+\msection{\parbox{0.8\textwidth}{Corrections:  classification and spectral approach pushing really hard}}
+
+%\msection{Corrections:  classification and spectral approach pushing really hard}
+
+\mslide[Types of corrections]
+
+\cite{foken.leuning.ea--correctionsanddata}:
+\begin{enumerate}
+\item Wind vector component line averaging.
+\item High-cut filtering due to spatial separation.
+\item High-frequency loss (sensor frequency response).
+\item Tube attenuation.
+{\color{SlateBlue} \item Scalar line averaging by the gas analyzer.}
+\end{enumerate}
+(Will not discuss the last one)
+
+
+Plus: flow distortion by the sonic anemometer \citep{pena2019method}.
+
+
+
+
+
+
+
+\mslide[Measured versus real fluxes: spectral corrections]
+\pause
+\[
+\aavg{w'(\vut{x})c'(\vut{x})} \qquad \times \qquad
+\aavg{\tilde{w}'(\vut{x})\tilde{c}'(\vut{x}?)} \qquad \times \qquad
+\bavg{\tilde{w}'(\vut{x})\tilde{c}'(\vut{x}?)}
+\]
+Cross spectra are very useful ($\Phi$s inaccessible; $F$s accessible via
+Taylor's frozen turbulence):
+\begin{align*}
+  R_{wc}(\vut{r}) &\equiv \aavg{w'(\vut{x})c'(\vut{x}+\vut{r})} =
+  \int_{\vut{k}\in\mathbb{R}^3}
+  \Phi_{wc}(\vut{k})\,\me^{+\mi(\vut{k}\bdot\vut{r})}\, \md^3\vut{k} =
+  \int_{\vut{k}\in\mathbb{R}^3}
+  \frac{\tilde{\Phi}_{wc}(\vut{k})}{\tau_{wc}(\vut{k},\ldots)}\,\me^{+\mi(\vut{k}\bdot\vut{r})}\,
+  \md^3\vut{k},\\
+  R^{1}_{wc}(r_1) &= \aavg{w'(0)c'(r_1)} =
+  \int_{k_1\in\mathbb{R}} {F}_{wc}(k_1)\,\me^{+\mi k_1 r_1}\,\md{k_1} =
+  \int_{k_1\in\mathbb{R}} \frac{\tilde{F}_{wc}(k_1)}{\tau^1_{wc}(k_1,\ldots)}\,\me^{+\mi k_1
+    r_1}\,\md{k_1}.%\label{eq:Rij1}
+\end{align*}
+The transfer functions $\tau^1_{wc}$ try to correct the measured spectra
+$\tilde{F}_{wc}(k_1)$ to obtain the ``true'' cross-spectrum $F_{wc}(k_1)$. Then
+($\Co^{\small F}_{wc}(k_1)$ is the cospectrum),
+
+\[
+F_c = \aavg{w'(0)c'(0)} = R^1_{wc}(0) =
+\int_{k_1\in\mathbb{R}}F_{wc}(k_1)\,\md{k_1} =
+\int_{k_1\in\mathbb{R}}\Co^{\small F}_{wc}(k_1)\,\md{k_1}
+\]
+
+\pause Important questions:
+\begin{enumerate}\tightitems
+  \item Does $\Phi$ or $F$ (the ``true'') have non-zero quadrature? Maybe no.
+  \item Does $\tilde{F}$ (the ``measured'') have non-zero quadrature? Often, yes.
+\end{enumerate}
+
+%% \mslide[A collection of useful facts]
+
+%% \begin{itemize}\tightitems
+%%   \item 3D Transfer functions for sonic path averaging are real
+%%   \citep{kaimal.wyngaard.ea--deriving,horst.oncley--correctionstoinertial}, and
+%%   do not \emph{seem} to introduce phase effects.
+%%   \item In some models for $\Phi_{wc}$, it is purely real
+%%   \citep{lumley--spectrum.nearly,kristensen1984effect,ogorman2003velocity-scalar},
+%%   but \cite{horst.lenschow--attenuationscalarfluxes} found an indirect small
+%%   quadrature effect in $F^1_{wc}$.
+  
+%% \end{itemize}
+
+\msection{Line averaging and spatial separation}
+
+\mslide[Line (or path) averaging]
+
+
+
+\begin{minipage}[t]{0.6\textwidth}
+  \vspace*{0pt}
+\begin{itemize}\tightitems
+\item The 3D transfer function is \emph{real} \citep{kaimal.wyngaard.ea--deriving}:
+\[
+\tau_{ij} = \frac{\sin^2(\vut{k}\bdot\vut{l})}{(\vut{k}\bdot\vut{l})^2}.
+\]
+$\Rightarrow$ no phase effects if $\phi_{ij}$ is also real ($\vut{l}$ is path,
+$\vut{k}$ is wavenumber).
+\item Path averaging correction is important for TKE dissipation rate estimation
+\cite{freire2019effects}.
+\item Path averaging also affects the measurement of sonic temperatures
+\citep{horst.oncley--correctionstoinertial}
+\end{itemize}
+\end{minipage}
+\begin{minipage}[t]{0.4\textwidth}\centering
+  \vspace*{0pt}
+  \includegraphics[width=0.9\textwidth]{transfercowc-t}
+\end{minipage}
+
+\textbf{For the $wc$ cospectrum and scalar fluxes}:
+\begin{itemize}\tightitems
+\item line averaging along $x_3$ does not affect scalar
+  fluxes in unstable conditions, but may   have an effect in stable conditions
+  \citep{kristensen1984effect},
+\item but 3-axis anemometers have stronger attenuation
+\citep{vandijk2002extension} (figure above).
+\end{itemize}
+
+\pause
+
+\emph{Implementation of the corrections is sophisticated (geometry of the sonic paths,
+numerical and analytical integration, manipulation of spectra) but worth it.}
+
+
+
+
+
+\mslide[Spatial separation]
+
+Important works:
+
+\begin{itemize}
+  \item \cite{lee.black--relatingeddycorrelation} (corrections based on inertial
+  subrange power laws for the cospectrum),
+  \item \cite{kristensen.mann.ea--howclose} (circular symmetry, small stability effects),
+  \item \cite{horst.lenschow--attenuationscalarfluxes} (\ul{small quadrature effect
+  in $F_{wc}^1$};  stability is important;
+  best to integrate the cospectrum including lower frequencies).
+\end{itemize}
+\begin{align*}
+  R^1_{wc}(r_1) &= \int_{k_1 = -\infty}^{+\infty} \Co^{F}_{wc}(k_1)\cos(k_1r_1)\,\md{k_1},\\
+  \Co^{F}_{wc}(k_1) &= \frac{A(\mu)}{\left[1 + (kL)^{2\mu}\right]^{7/6\mu}},\\
+  R^2_{wc}(r_2) &= \aavg{w'c'}\exp(-k_mr_2)
+\end{align*}
+and further corrections for vertical separation.
+
+
+\mslide[Improvement in time]
+
+\stepwise{\step{%
+\begin{minipage}[t]{0.5\textwidth}
+  \vspace*{0pt}
+  \includegraphics[width=0.95\textwidth]{spatialsep-t.png}
+\end{minipage}}
+\step{\begin{minipage}[t]{0.5\textwidth}
+Left: Figure from \cite{horst.lenschow--attenuationscalarfluxes}.
+\begin{itemize}
+   \item We still know very little about the lateral and vertical separation
+      dependencies, \ldots
+   \item because we know (very?) little about the 3-D $\Phi_{wc}$
+   cross-spectrum.
+\end{itemize}
+\step{\emph{There is  still room for improving on spatial separation
+    corrections:}
+  \begin{itemize}\tightitems
+    \item How do we correct if MOST does not apply?
+    \item How do we correct if turbulence intensity is high and frozen
+    turbulence is a poor assumption?
+  \end{itemize}
+}
+
+\end{minipage}}}
+
+\msection{Frequency response and tube attenuation}
+
+\mslide[Frequency response and tube attenuation]
+
+\begin{itemize}
+  \item Sonic anemometers: adequate frequency response ($\ge \mathrm{20\,Hz}$).
+  \item \ce{H2O}, \ce{CO2} and \ce{CH4} infrared gas analyzers: adequate
+  frequency response ($\ge \mathrm{20\,Hz}$).
+\end{itemize}
+\pause
+
+Are frequency response corrections a thing of the past?
+
+\pause
+No:
+\begin{itemize}
+  \item Tube attenuation is still an important issue.
+  \item Adequate (portable; high accuracy) limited response analyzers may become
+  available for more gases.
+  \item Alternative limited response \ce{H2O} (\textit{e.g.} CS500) and \ce{CO2}
+  (\textit{e.g.} GMP343) sensors \emph{can} be used to measure fluxes. They may
+  be advantageous as backup and in rainy conditions.
+\end{itemize}
+
+\pause
+
+\emph{Frequency response corrections are readily incorporated into Eulerian
+  tower measurements by means of Taylor's frozen turbulence hypothesis.}
+
+
+\mslide[Background for frequency response ]
+
+
+Frequency response: the scalar sensor response time is $T_c$.
+\begin{align}
+  \mderiva{\tilde{c}}{t} + \frac{\tilde{c}}{T_c} &= \frac{c}{T_c} \; \Rightarrow\label{eq:auto-Tc}\\
+  \Co_{wc}(n) &= \Co_{w\tilde{c}}(n) + 2\uppi n T_c \Qu_{w\tilde{c}}(n), \label{eq:Co-correct}\\
+  \Qu_{wc}(n) &= -2\uppi n T_c \Co_{w\tilde{c}}(n)+ \Qu_{w\tilde{c}}(n)\label{eq:Qu-correct}.
+\end{align}
+The zero-phase hypothesis ($\Qu_{wc}(n)\equiv 0$) gives the \emph{widely 
+used equation (in models for correction factors)}
+\begin{equation}
+\Co_{wc}(n) = \left( 1 + 4\uppi^2 n^2 T_c^2\right)\Co_{w\tilde{c}}(n),\label{eq:Co-badcor}
+\end{equation}
+With the above equation and a simplified equation for the $wc$ cospectrum,
+\cite{horst--simple} obtained:
+\begin{equation}
+\overline{{w}'\tilde{c}'} = \frac{1}{1 + (2\uppi  f_m T_c \overline{u})^\alpha}\,\overline{w'c'}
+\end{equation}
+but this is not the best way to do it! Instead, once $T_c$ is known, it is better
+to apply (\ref{eq:Co-correct}) directly and integrate the \emph{recovered}
+cospectrum.
+
+
+
+\pause
+
+\vfill
+
+Call it the RMQ method (Recovered from measured quadrature)
+
+\vfill
+
+\mslide[Proof of concept: with perfect knowledge of the attenuation $T_c$]
+
+$w$ and $\theta$ measured over short grass (30-minute run)
+$\theta$ low-pass filtered with (\ref{eq:auto-Tc}) and $T_c$ = 1, 10 and 100 seconds.
+
+
+\includegraphics[width=0.48\textwidth]{comanyrawtimes}\hfill
+\includegraphics[width=0.48\textwidth]{allwide}
+
+\begin{itemize}\tightitems
+  \item Left, Red line: just integrate the cospectrum using correction (\ref{eq:Co-badcor}).
+  \item Left, All other lines: integrate the cospectrum using correction
+  (\ref{eq:Co-correct}).
+  \item Right, filled symbols: \cite{horst--simple} correction; open symbols:
+  proposed correction.
+\end{itemize}
+
+\mslide[and with  real sensors (CS500 \textit{vs} LI7500):]
+
+\begin{itemize}\tightitems
+  \item Need to estimate $T_c$
+  \item Need to intercompare the slow sensor with a fast reference sensor
+  \item Need to deal with sensor noise in the high frequencies
+\end{itemize}
+
+\begin{center}
+  \includegraphics[width=\textwidth]{magicvapor}
+\end{center}
+
+\mslide[Tube attenuation]
+
+Tube attenuation: \cite{lenschow.raupach--attenuation,foken.leuning.ea--correctionsanddata}
+\[
+  F_{w\tilde{c}}(k_1) = \exp\left[-\frac{DL}{V}k_1^2\right]F_{wc}(k_1)
+  \]
+
+$V$ is the ``discharge velocity'', $L$ is tube length, $D$ is the effective diffusivity.  
+
+Closed-path sensors recommended for rainy conditions and measurements at sea.  
+
+
+\begin{itemize}
+  \item RMQ not tested yet
+  \item Again, the transfer function is purely real.
+  \item But again, the \emph{measured} quadrature spectrum is probably not null
+  $\Rightarrow$ \pause
+  \item Again, need further research.
+\end{itemize}
+
+
+
+%% \mslide[How well are we doing the job?]
+
+
+%% \begin{center}
+%%   \hspace*{1cm}\includegraphics[width=0.42\textwidth]{bestiz0E.pdf}\hfill
+%%   \includegraphics[width=0.42\textwidth]{residual-inst.pdf}\hspace*{1.5cm}
+%% \end{center}
+
+
+  %% Left: Lake evaporation with the bulk transfer method (N. L. Dias, 2019, unpublished).\\
+  %% Right: Air quality modelling
+  %% \citep{armani.carvalho.ea--statistical.evaluation.new} and model evaluation.\pause
+
+
+\mslide[Flow distortion by the sonic itself (and flux loss?)]
+
+\begin{itemize}\tightitems
+   \item Flow distortion corrections lead to increased sensible heat fluxes:
+   between 5\% and 15\% \cite{pena2019method}.
+   \item Can this effect account for non-closure of the surface energy budget?
+   \item Below: Energy Budget and Hydrological Budget: Ameriflux US-Ne3 and
+   enclosing Wahoo river basin: correcting EC-measured LE by 14\% closes the water budget!
+\end{itemize}
+
+\includegraphics[width=0.40\textwidth]{energy-cumulated.pdf}\includegraphics[width=0.40\textwidth]{p-et-q-06804000-cumulated.pdf}
+
+\msection{Calibration and sensor drift}
+
+\mslide[Issues for sustained accuracy of the LI-7500]
+
+\begin{itemize}\tightitems
+  \item Infra-red analyzers need frequent calibration (difficult in long-term
+  projects).
+  \item Open-path sensors suffer from window contamination.
+  \item For the LI-7500 family, the non-linear calibration curve between
+  absorptance and gas density introduces systematic bias \citep{fratini2014eddy}.
+  \item For the LI-7500, sensor heating introduces errors in fluxes
+  \citep{burba2008addressing,Jarvi2009}.
+  \item We think that temperature may affect both linear intercept and slope for
+  the linearized response of the LI-7500 (see below)
+\end{itemize}
+
+\begin{center}
+\includegraphics[width=0.65\textwidth]{ansFig1.pdf}
+\end{center}
+
+\mslide[Field corrections]
+
+May be useful if stable slow sensors are available (which is often the case!):
+put
+\begin{align*}
+  \bavg{x} &= \aavg{\bavg{x}} + \delta \bavg{x}, \\
+    \delta \overline{r_{c}} &= \frac{1}{\left<{\overline{\rho_d}}\right>}\delta\overline{\rho_c}+
+  \frac{\left<\overline{r_c}\right>}{\left<\overline{\theta}\right>}(1+ \left<\overline{r_v}\right>\mu_v)\delta\overline{\theta}
+  + \frac{\left<\overline{r_c}\right>}{\left<\overline{\rho_d}\right>}\mu_v \delta \overline{\rho_v}
+  -\frac{\left<\overline{r_c}\right>}{\left<\overline{p}\right>}(\left<\overline{r_v}\right>\mu_v +
+  1)\delta \overline{p},\\
+  \delta\overline{r_c} &= \beta_1 \delta\overline{\rho_c} +
+  \beta_2\delta\overline{\theta}+\beta_3\delta\overline{\rho_v}+\beta_4\delta\overline{p}
+  \qquad\Rightarrow\qquad
+  {r_c'} = \beta_1 {\rho_c'} +
+  \beta_2{\theta'}+\beta_3{\rho_v'}
+\end{align*}
+(here angle brackets are means over approx 1-month periods)
+
+\begin{minipage}[t]{0.49\textwidth}
+  \vspace*{0pt}
+\begin{center}
+  \includegraphics[width=0.7\textwidth]{Fig9a-t.png}
+\end{center}
+\end{minipage}
+\begin{minipage}[t]{0.49\textwidth}
+  \vspace*{0pt}
+
+  \includegraphics[width=\textwidth,height=0.5\textheight]{Fig10.pdf}
+\end{minipage}
+
+\mslide[Then fluxes can change substantially]
+
+Pearson Correlation ($r$) and slopes  obtained by linear regressions ($m$) of 
+$F_{c,WPL}$ \textit{versus} $F_{c,g}$.
+
+\begin{minipage}[t]{0.49\textwidth}
+  \vspace*{0pt}
+\begin{tabular}{cccccc}
+\hline
+\multirow{2}{*}{Period}  & \multicolumn{2}{c}{Daytime} & & \multicolumn{2}{c}{Nighttime}\\ \cline{2-3} \cline{5-6}
+       &  $m$  & $r$  & & $m$ & $r$\\
+I & 0.85 & 1.00 & & 0.95 & 1.00 \\ 
+II & 0.90 & 0.98 & & 1.00 & 0.98 \\ 
+III & 0.94 & 1.00 & & 0.85 & 0.97 \\ 
+IV & 0.96 & 0.98 & & 0.95 & 0.98 \\ 
+V & 0.99 & 1.00 & & 1.19 & 0.98 \\ 
+VI & 0.58 & 0.89 & & 0.68 & 0.96 \\ 
+VII & 0.93 & 1.00 & & 0.96 & 0.99 \\ 
+VIII & 0.78 & 0.99 & & 0.90 & 0.94 \\ 
+IX & 0.74 & 1.00 & & 0.69 & 1.00 \\ 
+X & 0.86 & 0.99 & & 0.96 & 1.00 \\
+\hline
+\end{tabular}
+\end{minipage}
+\begin{minipage}[t]{0.49\textwidth}\raggedright
+  \vspace*{0pt}
+
+  Concluding:
+  \begin{itemize}
+    \item We need more intercomparisons throughout the experiments.
+    \item We need stable field measurements to control drift and correct fluxes.
+    \item We need to take into account non-linearities and environmental effects
+    on the calibration curve.
+  \end{itemize}
+\end{minipage}
+
+
+\msection{Conclusions}
+
+\mslide[Conclusions]
+
+\begin{itemize}
+  \item Random errors are \emph{large}; integral scales (for error estimation) may not
+  exist.
+  \item Modeling errors are serious. Not all scalars are created equal under
+  MOST.
+  \item Failure of the simple picture ``Gradient Production = Dissipation'' may be
+  at the heart of the problem.
+  \item After all those years, we are still learning how fast-response (and
+  not-so-fast as well) gas sensors and sonic anemometers respond.
+  \item Flux attenuation is an important issue. Corrections for all effects
+  identified so far should be applied, \emph{although they are cumbersome}.
+  \item The measured quadrature holds promise to greatly improve frequency
+  response corrections.
+  \item \texttt{while(true) \{calibrate();  intercompare()\}}
+  \item We will still profit from improved spectral models: they are at the
+  heart of our understanding of how corrections should be applied.
+\end{itemize}
+
+\mslide
+
+{\Large
+
+Thanks
+
+\vfill
+
+for your attention!}
+
+\vfill
+
+
+\small
+%\fancyfoot{}
+\newcommand{\ape}{}
+\bibliography{abbrevs,all}
+\bibliographystyle{chicago}
+
+\end{document}

@@ -1,0 +1,840 @@
+\RequirePackage{fix-cm}
+%
+\documentclass{svjour3}                     % onecolumn (standard format)
+%\documentclass[smallcondensed]{svjour3}     % onecolumn (ditto)
+%\documentclass[smallextended]{svjour3}       % onecolumn (second format)
+%\documentclass[twocolumn]{svjour3}          % twocolumn
+%
+\smartqed  % flush right qed marks, e.g. at end of proof
+%
+\usepackage{appendix}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{lineno}
+\usepackage{array}
+\usepackage{color}
+\usepackage{soul}
+\usepackage{longtable}
+\usepackage{natbib}
+%\usepackage{mathptmx}
+\linenumbers
+
+%
+% \usepackage{mathptmx}      % use Times fonts if available on your TeX system
+%
+% insert here the call for the packages your document requires
+%\usepackage{latexsym}
+% etc.
+%
+% please place your own definitions here and don't use \def but
+% \newcommand{}{}
+%
+% Insert the name of "your journal" with
+% \journalname{myjournal}
+
+%
+\newcommand*\patchAmsMathEnvironmentForLineno[1]{%
+\expandafter\let\csname old#1\expandafter\endcsname\csname #1\endcsname
+\expandafter\let\csname oldend#1\expandafter\endcsname\csname end#1\endcsname
+\renewenvironment{#1}%
+{\linenomath\csname old#1\endcsname}%
+{\csname oldend#1\endcsname\endlinenomath}}% 
+\newcommand*\patchBothAmsMathEnvironmentsForLineno[1]{%
+\patchAmsMathEnvironmentForLineno{#1}%
+\patchAmsMathEnvironmentForLineno{#1*}}%
+\AtBeginDocument{%
+\patchBothAmsMathEnvironmentsForLineno{equation}%
+\patchBothAmsMathEnvironmentsForLineno{align}%
+\patchBothAmsMathEnvironmentsForLineno{flalign}%
+\patchBothAmsMathEnvironmentsForLineno{alignat}%
+\patchBothAmsMathEnvironmentsForLineno{gather}%
+\patchBothAmsMathEnvironmentsForLineno{multline}%
+}
+
+\begin{document}
+
+\title{Sonic anemometer's path-averaging effect on the estimation of
+  turbulent kinetic energy dissipation rates}
+
+\titlerunning{Path-averaging effects on second-order structure function}        % if too long for running head
+
+\author{Livia S. Freire \and  Nelson L. Dias \and Marcelo Chamecki}
+
+%\authorrunning{Short form of author list} % if too long for running head
+
+\institute{Livia S. Freire \at
+              Graduate Program in Environmental Engineering, Federal University of Paran{\'a}, Curitiba PR, Brazil \\
+              \email{liviagrion@gmail.com}           %  \\
+%             \emph{Present address:} of F. Author  %  if needed
+           \and
+           Nelson L. Dias \at
+              Department of Environmental Engineering, Federal University of
+              Paran\'a, Curitiba, PR, Brazil.
+              \email{nelsonluisdias@gmail.com}
+           \and
+           Marcelo Chamecki \at
+              Department of Atmospheric and Oceanic Sciences,
+              University of California, Los Angeles, CA, USA. 
+              \email{chamecki@ucla.edu}
+}
+
+\date{Received: DD Month YEAR / Accepted: DD Month YEAR}
+% The correct dates will be entered by the editor
+
+
+\maketitle
+
+\begin{abstract}
+
+  The turbulent kinetic energy dissipation rate is a fundamental
+  parameter in turbulent flows, but its direct measurement in the
+  atmospheric surface layer is still a challenge. Indirect estimates
+  are often obtained from inertial-subrange laws for turbulence
+  statistics of longitudinal wind velocity. In this study, synthetic
+  turbulence data are used to investigate the impact of path-averaging
+  effects present in sonic anemometer data on the inertial subrange of
+  the second-order structure function. Path-averaging reduces the
+  value of the second-order structure function, creating a negative
+  bias in the estimates of the dissipation rate. The effect is
+  dependent on the path-averaging transfer function, mean wind
+  velocity and path length. A simple correction for the bias on the
+  basis of existing transfer functions is applied and tested with data
+  measured from two different sonic anemometers. Compared to the
+  spectrum, after the correction the second-order structure function
+  becomes the best statistics for indirect estimation of the
+  dissipation rate, due to its lower random error and insensitivity to
+  aliasing effects.
+
+\end{abstract}
+
+%% \begin{keywords}
+
+%%   Second-order structure function
+
+%% \end{keywords}
+
+
+
+\section{Introduction}
+
+The mean dissipation rate of turbulent kinetic energy (hereafter TKE
+dissipation rate or $\varepsilon$) is one of the most fundamental
+parameters of turbulent flows, as it corresponds to the rate of energy
+transfer across the energy cascade of a stationary flow and it can be
+used to define length and time scales characteristic of the structures
+of turbulence \citep{Pop2000, Dav2004}. In the atmosphere, it has been
+used for different purposes such as the inertial dissipation method
+for flux estimation \citep{FaiLar1986,HsiKat1997,Hen1998}, to evaluate
+anisotropy \citep{War2000,ChaDia2004}, for evaluation of scalar
+similarity \citep{CanDia2012}, and for construction of a reduced TKE
+phase space used to characterize disturbed surface layer
+flows \citep{ChaDia2018}. Furthermore, recent studies have shown that the length scale
+$\ell_\varepsilon = u_*/\varepsilon$ (where $u_*$ is friction
+velocity) is the correct scale for the nondimensionalization of some
+statistics measured in the Atmospheric Surface Layer (ASL)
+\citep{DavKro2014, PanCha2016, ChaDia2017}. However, the lack of
+direct estimates of $\varepsilon$ in the atmosphere still poses a
+limitation in turbulence studies. To overcome this issue, indirect
+estimates are usually obtained from the inertial subrange laws derived
+by Kolmogorov for the velocity spectrum and structure function of the
+longitudinal wind velocity. This method is sensitive to measurement
+error, in addition to the error in the empirical Kolmogorov constants
+in the case of the spectrum and the second-order structure function
+\citep{ChaDia2004}. Although the third-order structure function does
+have an analytical constant (4/5), second-order structure functions
+usually display a clearer inertial subrange \citep{AlbPar1997}, so
+that they remain more popular in the atmospheric turbulence community.
+
+
+In studies of the ASL, discrepancies in the TKE dissipation rate
+values obtained from different inertial-subrange statistics have been
+observed. For example, \citet{ChaDia2004} obtained values estimated
+from second- and third-order structure functions that are, on average,
+10 and 30\% lower than the estimates using the spectrum,
+respectively. \citet{AlbPar1997} and \citet{ChaDia2017} obtained
+estimates from the third-order structure function that are
+respectively $\sim20\%$ and $\sim 30\%$ lower than the estimates from
+their second-order counterparts. Such systematic discrepancies are
+often justified by the errors in the empirical constants of the
+second-order statistics, or to deviations from the local isotropy
+hypothesis in the ASL.
+
+
+When velocity fluctuations are measured with sonic anemometers, path
+averaging effects can impact the spectrum and the structure functions
+in different degrees. In the atmospheric surface layer, the range of
+scales in the inertial subrange captured by sonic anemometer is not
+large enough to avoid these effects.  Despite this issue being well
+known, its impact on the estimates of TKE dissipation rates usually
+are not taken into account.
+
+In the present study, we generate synthetic data that mimic
+longitudinal velocity time series with imposed TKE dissipation rate,
+second-order statistics and random errors, which are used to compare
+errors and biases present in $\varepsilon$ estimates from the spectrum
+and the second-order structure function, before and after the
+introduction of path-averaging effects. A correction for the
+path-averaging bias in the second-order structure function is proposed
+and then tested with actual data from two different sonic anemometers.
+
+Despite its importance, the third-order structure function is not
+discussed in the present study, as it has a less clear inertial
+subrange than its second-order counterpart and it is more impacted by
+anisotropy \citep{ChaDia2004}. In addition, synthetic models that
+mimic third-order turbulence statistics have a large uncertainty in
+the dissipation rate, contaminating error and bias analyses such as
+those performed here. Therefore, we restrict our study to second-order
+statistics.
+
+
+\section{Theory}
+
+The one-dimensional, longitudinal velocity spectrum $E_{11}(k_1)$ can
+be defined as twice the Fourier transform of the longitudinal
+correlation function $R_{11}(r_1) = \langle
+u_1(x_1)u_1(x_1+r_1)\rangle$, i.e.,
+\begin{equation}
+  E_{11}(k_1) \equiv \frac{2}{\pi}\int_0^\infty R_{11}(r_1) \cos(k_1r_1) dr_1,
+\end{equation}
+ where $u_1$ is the longitudinal velocity fluctuation, $x_1$ is the
+ longitudinal spatial coordinate, $r_1$ is the longitudinal spatial
+ separation, $k_1$ is the longitudinal wavenumber and $\langle \,\,\,
+ \rangle$ represents ensemble average. In isotropic turbulence, 
+ statistics are invariant under reflections and rotations and $R_{11}$
+ can then be redefined as $u^2 f(r_1)$, where $u$ is a velocity scale
+ and $f(r_1)$ is a longitudinal dimensionless correlation function
+ \citep[][p. 89]{Dav2004}. Note that in this case $\int_0^\infty
+ E_{11}(k_1) dk_1 = u^2$.
+
+The $n^{\text{th}}$-order, longitudinal structure function is 
+\begin{equation}
+  \Delta u^n \equiv \langle [u_1(x_1+r_1) - u_1(x_1)]^n \rangle.
+\end{equation}
+For $n = 2$, it can also be redefined as a function of $f(r_1)$ as $\Delta u^2 =
+2u^2[1-f(r_1)]$, leading to a relation with the
+spectrum in the form \citep[][p. 226]{Pop2000}
+\begin{equation}
+  \Delta u^2(r_1) = 2 \int_0^\infty E_{11} \left[1 - \cos(k_1r_1) \right] dk_1. \label{eq:specstr}
+\end{equation}
+This relation highlights the fact that the spectrum and the
+second-order structure function are two different ways of representing
+the underlying spatial structure of the velocity field.
+
+For the special case of the inertial subrange, the spectrum and structure function laws obtained by Kolmogorov provide a suitable way to estimate $\varepsilon$ in situations where it cannot be measured directly. For $1/L \ll k_1 \ll 1/\eta$ and $\eta \ll r_1 \ll L$ (where $L$ and $\eta$ are the integral and dissipation length scales, respectively)
+\begin{equation}
+  E_{11}(k_1) = \alpha \varepsilon^{2/3} k_1^{-5/3}\label{eq:spec}
+\end{equation}
+and 
+\begin{equation}
+  \Delta u^2(r_1) = \beta \varepsilon^{2/3} r_1^{2/3}. \label{eq:strfun}
+\end{equation}
+From (\ref{eq:specstr}), in the idealized case of an infinitely large
+inertial subrange, a direct relation between the constants $\alpha$
+and $\beta$ can be obtained. The conditions that guarantee a good
+approximation for real turbulence data were presented by
+\citet{Web1964} and \citet[][p. 356]{MonYag1981}: if
+$1/k_{1,\mathrm{max}} \ll r_{1,\mathrm{min}} < r_{1,\mathrm{max}} \ll
+1/k_{1,\mathrm{min}}$ (where $k_{1,\mathrm{min}}, k_{1,\mathrm{max}},
+r_{1,\mathrm{min}}$ and $r_{1,\mathrm{max}}$ set the boundaries of the
+inertial subrange) the well known relation $\beta \approx 4\alpha$
+\citep[][p. 232]{Pop2000} is valid. This is usually the case for
+large Reynolds-number flows, such as those in the ASL. However, as
+will be seen in Section \ref{sec:res}, path-averaging introduced by
+sonic anemometers limits the practical length of the inertial
+subrange, affecting this relation. In this study, instead of
+correcting the constants to include path-averaging effects, we propose
+a correction to recover the condition in which $\beta \approx 4\alpha$
+is valid.
+
+
+\section{Data and the path-averaging effect}
+
+\subsection{Synthetic data}
+
+To investigate the effects of path-averaging in the estimation of
+$\varepsilon$ from inertial-subrange laws, we use a synthetic model
+that mimics measurements of longitudinal velocity from sonic
+anemometers with a known value of $\varepsilon$. Time series of a
+synthetic velocity $u_1^s$ were generated using the spectral method
+developed by \citet{ShiDeo1991}. The velocity time series is given by
+\begin{equation}
+  u_1^s(t) = \mathrm{Re}\left\{\mathrm{FFT}\left\{S(f) \Delta f \sqrt{2} \mathrm{e}^{i\phi(f)}\right\}\right\}, \label{eq:syntur}
+\end{equation}
+where Re\{\,\,\,\} denotes the real part of a complex number, FFT\{\,\,\,\} is
+the Fast Fourier Transform, $S(f)$ is the desired spectral density of $u_1^s(t)$
+as a function of frequency $f$, $\Delta f$ is the frequency increment and
+$\phi(f)$ is a random variable uniformly distributed between 0 and $2\pi$, used
+to obtain independent random phase angles that create the velocity fluctuations
+in the time domain. Although this model does not include non-Gaussian
+statistics present in real turbulence, it provides an opportunity to evaluate
+path-averaging effects separately from other sources of errors, by directly
+introducing these effects in the model for $S(f)$.
+
+Equation~(\ref{eq:syntur}) provides a time series with spectral
+density corresponding exactly to the chosen model for $S(f)$, except
+for small errors due to numeric truncation. To mimic the random errors
+inherent to real sonic anemometer data, we defined $S(f) = F_{11}(f) +
+\sigma(f)y$, where $F_{11}(f) = E_{11}(k_1) 2\pi/U$ is the spectrum in
+the frequency domain, $U$ is the mean longitudinal velocity,
+$\sigma(f)$ is the standard deviation of real spectra and $y$ is a
+random variable. In addition, assuming a quasi-normal hypothesis, the
+standard deviation of the spectrum is equal to its mean value
+\citep{BenPie2010,Dia2017}, which gives $S(f) = F_{11}(f)(1 + y)$ with
+$y \sim (\chi^2(2)/2 - 1)$, where $\chi^2(2)$ is a chi-square
+distribution with two degrees of freedom (since the spectrum
+corresponds to the square of a normally-distributed random
+variable). Note that the expected value and variance of $y$ are zero
+and one, respectively.
+
+Because in this study we are focused on the inertial subrange,
+$F_{11}(f)$ is chosen to correspond to Kolmogorov's law (given by
+Equation~(\ref{eq:spec}) multiplied by the factor $2\pi/U$) in the
+entire frequency range simulated ($5.56\times 10^{-4} \le f \le
+2$\,kHz). Aliasing effects present in measured data were introduced by
+resampling $u_1^s(t)$ at a frequency of 20\,Hz. Path-averaging was
+simulated by using
+\begin{equation}
+S(f) = F_{11}(f)(1 + y)H_u(fp\pi/U),
+\end{equation} 
+where $H_u(fp\pi/U)$ is a transfer function obtained from the ratio of
+the path-averaged to the true one-dimensional, longitudinal velocity
+spectrum \citep{KaiWyn1968,HorOnc2006}. For the synthetic data we test
+the simplest case where a single path length in the longitudinal
+direction is present, corresponding to $H_u(fp\pi/U) =
+\mathrm{sinc}^2(fp\pi/U)$, with a path-length $p = 0.15$\,m.
+
+Apart from the aforementioned random error introduced to mimic measurement
+errors, this model does not present any variability in the imposed value of
+$\varepsilon$. This was the crucial reason in the choice of this simple modeling
+approach over other synthetic models available in the literature (e.g. the model
+proposed by \citet{JunLat1994}). The final values of $u_1^s(t)$ at 20\,Hz are
+equivalent to a series obtained from a sonic anemometer, where both
+aliasing and path-averaging effects are present in the spectrum. The
+second-order structure function obtained from this series also presents
+path-averaging effects, as will be discussed in Section \ref{sec:res}.
+
+In order to test a path-averaging correction that can be applied to
+field data, the spectrum obtained from $u_1^s(t)$ is divided by
+$H_u(fp\pi/U)$ (recovering the spectrum without path-averaging), a new
+velocity series is obtained by performing an inverse FFT to the
+corrected spectrum, and from it a corrected second-order structure
+function can be estimated. Note that, although there are methods
+available to reduce the aliasing effect from the spectrum
+(e.g. \citet{ChaDia2004}), they should not be applied if the goal is
+to correct the second-order structure function, as the aliased energy
+is real and should be present in $\langle \Delta u^2\rangle$.
+
+To make calculations simpler, results presented in Section
+\ref{sec:res} were obtained with $U = 2\pi\,\mathrm{m\,s^{-1}}$ (so
+wavenumber and frequencies are equivalent) and an imposed dissipation
+rate equal to $1\,\mathrm{m^2s^{-3}}$. All calculations were performed
+for a 30--minute time series.
+
+\subsection{Field data \label{sec:fielddata}}
+
+Data collected at the \textit{Rio Verde} dam in Arauc\'aria county,
+state of Paran\'a, Brazil ($25^\circ31'30''$S, $49^\circ31'30''$W) are
+used to test the correction proposed for the second-order structure
+function. Data were measured simultaneously by a 81000 Ultrasonic
+Anemometer from Young and an IRGASON gas analyzer and sonic anemometer
+from Campbell Scientific, both at 20\,Hz, from September 25 to October
+4 2017. Sensors were installed a few meters above the water surface,
+at the border of the dam, facing the preferential mean wind
+direction. Data were separated into 30-min blocks starting at midnight
+local time. Post processing and data selection were performed
+following \citet{ZahCho2016}. To further select data in which an
+inertial subrange is likely present, a minimum mean velocity of
+$1\,\mathrm{m\,s^{-1}}$ was used as a criteria. A final number of 54
+and 28 blocks for the Young and Campbell anemometers, respectively,
+was obtained (the different number is due to small differences in the
+data obtained from each sensor).
+
+Estimations of TKE dissipation rate from spectrum and second-order
+structure function were obtained before and after the application of
+path-averaging correction. As in the synthetic data, the correction
+comprised four steps: (i) estimating the energy spectrum; (ii)
+estimating a corrected spectrum by dividing it by the transfer
+function $H_u$; (iii) performing an inverse FFT to create a time
+series whose spectrum corresponds to the corrected spectrum; and (iv)
+estimating a corrected second-order structure function from it. Note
+that this time series created by the inverse FFT is \textit{not} a
+corrected time series, but rather a time series whose spectrum is
+equal to the corrected spectrum. Based on the geometry of the sensors,
+the transfer functions calculated by \citet{HorOnc2006} for the Solent
+R3 and CSAT3 anemometers were used for the Young and Campbell
+anemometers, respectively (the values of $H_u$ are presented in
+Appendix B of \citet{HorOnc2006}).
+
+
+\section{Results \label{sec:res}}
+
+\subsection{Synthetic turbulence}
+
+\begin{figure}\centering
+  \includegraphics[width=1\textwidth]{specj.pdf}
+  \caption{Synthetic spectra (left panels) and second-order structure functions
+    (right panels) without path-averaging (a-b), with path-averaging (c-d) and
+    with path-averaging and correction (e-f). Full data (up to 2\,kHz) in
+    light-grey, resampled at 20\,Hz in dark-grey, average of 1000 tests in black
+    (a, c, e); path-averaging equation in blue (c); average of 1000 tests in
+    black, average $\pm$ standard deviation in grey (b, d, f). In all plots, red
+    line corresponds to Kolmogorov's inertial subrange law and vertical lines
+    delimit the range used to estimate $\varepsilon$.\label{fig:syntur}}
+\end{figure}
+
+Figure~\ref{fig:syntur}(a) shows an example of a spectrum generated by
+the synthetic model. The random error of the model, reflected in the
+level of scatter around Kolmogorov's law (imposed as the mean value),
+is similar to the observed in real turbulence data (see
+Figure~\ref{fig:specfield} for an example). The aliasing effect when
+data frequency is reduced from 2\,kHz to 20\,Hz is clearly observed in
+the mean spectrum (also shown in Figure~\ref{fig:syntur}(a)). As
+expected, at this stage the corresponding second-order structure
+function has a well-defined inertial subrange
+(Figure~\ref{fig:syntur}(b)).
+
+The path-averaging effect introduced in the model is shown in
+Figure~\ref{fig:syntur}(c), which counter-balances most of the
+aliasing in the 20\,Hz--spectrum, significantly reducing the region
+where the spectrum differs from Kolmogorov's law. The second-order
+structure function, on the other hand, is seriously affected by
+path-averaging; a consistent reduction in its value can be observed in
+the region corresponding to the inertial subrange, being larger for
+lower values of $r_1$ (see figure~\ref{fig:syntur}(d)). This situation
+is equivalent to the estimation of the TKE dissipation rate in the ASL
+from sonic anemometer data. Note that at this stage there is
+over/underestimation of the levels of the spectrum/structure function
+in the inertial subrange, which directly impacts the estimation of
+$\varepsilon$.
+
+The correction of the path-averaging effect in the 20\,Hz data is
+effective in recovering the original result in both the spectrum and
+the second-order structure function (Figures~\ref{fig:syntur}(e) and
+(f), respectively). Since aliasing affects the inertial subrange of
+the spectrum, this result indicates that the best approximation to the
+Kolmogorov's prediction is the structure function after the
+path-averaging correction. Figure~\ref{fig:synhist} summarizes the
+distribution of values of $\varepsilon$ obtained from each type of
+estimation, using 1000 runs of synthetic turbulence (exact values of
+mean and standard deviation are presented in Table
+\ref{tab:syntur}). Without path-averaging (dotted lines), the
+estimates from the spectrum have a positive bias of 31\% due to
+aliasing, whereas estimates from the second-order structure function
+have a negative bias of less than 1\%. With path-averaging (dashed
+lines), the negative bias of the structure function estimates reaches
+28\%, whereas the positive bias of the spectrum is greatly
+reduced. Note that in reality the balancing effect between aliasing
+and path-averaging in the spectrum will vary from run to run (among
+other factors, $H_u$ is a function of $U$, for example), which can
+generate different biases for the spectrum estimate depending on the
+data. This is another reason that makes structure function estimation
+more reliable. After correction (solid lines), estimates from
+the structure function have a small positive bias of less than
+1\%, whereas spectrum estimates return to their original value. This
+result, combined with its smaller standard deviation, makes the
+corrected structure function the best approach for estimating $\varepsilon$.
+
+\begin{figure}\centering
+  \includegraphics[width=0.5\textwidth]{hist.pdf}
+  \caption{Probability density functions obtained from 1000
+    realizations of synthetic turbulence resampled at 20\,Hz, without
+    path-averaging (dotted lines), with path-averaging (dashed lines)
+    and with path-averaging and correction (solid
+    lines). \label{fig:synhist}}
+\end{figure}
+
+\begin{table}
+  \begin{center}
+    \caption{Values of mean $\pm$ standard deviation of $\varepsilon/\varepsilon_{\text{imposed}}$ estimated from synthetic data.}
+    \begin{tabular}{lcc}
+      \hline\noalign{\smallskip}
+      & spectrum & 2$^{\text{nd}}$ str. fun. \\ 
+      \noalign{\smallskip}\hline\noalign{\smallskip}
+      without path-averaging & $1.31\pm 0.024$  & $0.99\pm 0.012$ \\
+      with path-averaging & $1.05\pm 0.019$  & $0.72\pm 0.009$ \\
+      corrected path-averaging & $1.32\pm 0.023$  & $1.01 \pm 0.012$ \\
+      \noalign{\smallskip}\hline
+    \end{tabular}
+    \label{tab:syntur}
+  \end{center}
+\end{table}
+
+
+It is important to point out that the exact values of bias are a
+function of the $f$ and $r_1$ intervals used to estimate $\varepsilon$
+from each function: in the present exercise, we chose typical values
+used in the literature. Also, errors in spectrum estimates can be
+reduced by averaging over a longer inertial subrange interval; we used
+a one-decade range which is similar to the range available in
+experimental data. The error in the estimation using the second-order
+structure function is also dependent on the $r_1$ interval used, being
+lower for smaller values (see Figure \ref{fig:syntur}). Note that
+because the random errors introduced in the synthetic model are
+similar to the ones present in real spectrum, these values of standard
+deviation are probably a good estimate of the random errors present in
+real $\varepsilon$ estimates from sonic anemometer data. Finally, the
+effects of path-averaging on $\varepsilon$ estimates are smaller the
+lower the path length of the sensor, as expected (for example, the
+second-order structure bias without correction is reduced to $-14$\%
+for $p = 0.05$m; not shown). Despite these variations in exact values
+of errors and biases, the overall conclusion that the smaller error
+and bias is obtained from the corrected second-order structure
+function remains solid.
+
+\subsection{Field data}
+
+Now we test the effect of the path-averaging correction on real
+turbulence data from two different sonic anemometers. Because there is
+no measurement of the real dissipation rate, there is no way to know
+exactly how much the error and bias are in each estimate of
+$\varepsilon$. However, based on the results obtained from the
+synthetic data, we expect that the estimate from the corrected
+second-order structure function is the most reliable one.
+
+Figure \ref{fig:transfer} presents examples of transfer functions
+calculated by \citet{HorOnc2006} for each anemometer. Note that, while
+the measurement frequency is fixed (it goes from $5.56\times 10^{-4}$
+to 20\,Hz), the transfer function is impacted by the mean longitudinal
+velocity. Therefore, each 30--min run will have a different
+path-averaging effect.
+
+\begin{figure}\centering
+  \includegraphics[width=1\textwidth]{transfer.pdf}
+  \caption{Transfer functions ($H_u$) for (a) Young and (b) Campbell
+    sonic anemometers. Black solid lines with dots correspond to the
+    values estimated by \citet{HorOnc2006}, as a function of the
+    wavenumber normalized by the path length ($\kappa p$). Dashed
+    lines correspond to $H_u$ as a function of the frequency ($f$),
+    for different values of mean wind velocity ($U$). Vertical line
+    corresponds to the Nyquist frequency of the measurements presented
+    here. \label{fig:transfer}}
+\end{figure}
+
+Figure \ref{fig:specfield} presents an example of measured spectrum
+and second-order structure function, for the run obtained on September
+25 2017 at 22:30 local time by each anemometer, before and after the
+path-averaging correction. Note that, as found with the synthetic
+data, the correction increases the overestimation of spectral
+densities due to aliasing, and it fixes the inertial subrange of the
+second-order structure function. For the Young anemometer, the final
+result is very close to the Kolmogorov law; for the Campbell
+anemometer, there is some underestimation left, possibly due to other
+sensor effects (see the average of all runs in Figure
+\ref{fig:strf}).
+
+Dissipation rates estimated from spectrum and second-order structure
+function before and after correction for all runs are presented in
+Figure \ref{fig:stat}. On average, dissipation increased by $\sim30\%$
+in both estimates for the Young data, and by $\sim20\%$ in both
+estimates for the Campbell data. Considering that the corrected
+second-order structure function provides the best estimate, the
+uncorrected spectrum has an overestimation of $\sim 20$--$30\%$ and the
+corrected spectrum has an overestimamtion of $\sim 60\%$, on average.
+
+\begin{figure}\centering
+  \includegraphics[width=1\textwidth]{spec-verde.pdf}
+  \caption{Longitudinal spectrum (left panels) and second-order
+    structure function (right panels) measured by the Young anemometer
+    (upper panels) and Campbell anemometers (lower panels). Light-grey
+    is original spectrum, black and blue lines are smoothed spectra
+    (moving average with a 100-point window). For both statistics, the
+    blue line is before the path-averaging correction, and the black
+    line is after. The orange line is the transfer function used. The
+    red line is the slope of Kolmogorov's law. Vertical lines
+    delimit the interval used for $\varepsilon$
+    estimation. Measurements were made on September 25 2017 at 22:30
+    local time. \label{fig:specfield}}
+\end{figure}
+
+\begin{figure}\centering
+  \includegraphics[width=1\textwidth]{strf.pdf}
+  \caption{Mean values (solid lines) $\pm$ one standard deviation (shaded area)
+    of the normalized second-order structure function before (blue) and after
+    (red) de path-averaging correction, for the Young (a) and Campbell (b)
+    anemometers. Horizontal line is a fit for the mean inertial subrange of the
+    Young anemometer. Values normalized by the dissipation length scale
+    $\ell_\varepsilon = u_*^3/\varepsilon$ and the friction velocity $u_*$
+    (values of $\varepsilon$ estimated after correction were
+    used).  \label{fig:strf}}
+\end{figure}
+
+\begin{figure}\centering
+  \includegraphics[width=1\textwidth]{stat2.pdf}
+  \caption{(a) Comparison between dissipation rates estimated from
+    spectrum (blue) and second-order structure function (red) before
+    and after correction, using Young (dots) and Campbell (squares)
+    anemometers. On average, spectrum estimates increased by 31\%
+    (Young) and 23\% (Campbell) after correction, whereas second-order
+    structure function estimates increased 33\% (Young) and 23\%
+    (Campbell). (b) Dissipation rates estimated from uncorrected (red)
+    and corrected (blue) spectrum, compared with corrected
+    second-order structure function estimates, using Young (dots) and
+    Campbell (squares) anemometers. On average, spectrum estimates
+    are overestimated by 23\% (Young) and 30\% (Campbell) when
+    uncorrected, and by 63\% (Young) and 60\% (Campbell) when
+    corrected.\label{fig:stat}}
+\end{figure}
+
+
+\section{A note on the CSAT3 sonic anemometer by Campbell Scientific}
+
+In the field experiment described in Section \ref{sec:fielddata}, data
+from a CSAT3 sonic anemometer by Campbell Scientific were also
+collected; therefore, a similar correction as performed in the IRGASON
+data could also be tested. However, the second-order structure
+function from CSAT3 sonics presents a distinct feature that cannot be
+explained by the path-averaging effect, or any other effect known to
+the authors. In the lowest values of the time lag $\tau$, within the
+inertial subrange, there is an increase in values of $\langle \Delta
+u^2\rangle$ compared to Kolmogorov's law, instead of the decrease
+observed due to path-averaging (Figure \ref{fig:csat}). This feature
+seems to be characteristic of the CSAT3 model (and not of a specific
+sensor), as a similar behavior can be observed in data measured by
+different sensors in different field experiments (see for example data
+from the AHATS \citep{SalCha2012} and the GoAmazon \citep{FueCha2016}
+experiments). None of the known sonic anemometer effects discussed in
+the literature (e.g. flow distortion by transducer shadowing,
+\citep{HorSem2015}) could be the cause of this behavior; an
+investigation is left for future studies.
+
+\begin{figure}\centering
+  \includegraphics[width=1\textwidth]{spec-csat.pdf}
+  \caption{Compensated longitudinal (a) spectrum and (b) second-order
+    structure function measured by CSAT3 sonic anemometer from
+    \textit{Rio Verde} dam experiment (September 25 2017 22:30 local
+    time, black), AHATS experiment (June 26 2008 03:30 local time
+    measured at 1.51\,m above ground, blue) and GoAmazon experiment
+    (March 29 2014 00:00 local time measured at $z/h = 1.38$, where $h
+    = 35$\,m is canopy height, grey). The corresponding IRGASON data
+    from \textit{Rio Verde} dam experiment is presented in
+    orange. Dashed red lines correspond to the slope of Kolmogorov's
+    law. No correction to the data is applied.\label{fig:csat}}
+\end{figure}
+
+\section{Conclusion}
+
+Let's make a deal: \cite{LETSMAKEADEAL--INFO}.
+
+Turbulence data measured by sonic anemometers present a discrepancy
+between the structure function and spectrum estimates of TKE
+dissipation rate using Kolmogorov's theory for the inertial
+subrange. While aliasing creates a positive bias in estimates from the
+spectrum depending on how close to the Nyquist frequency the
+estimation is made, it does not affect structure function
+estimates. Path-averaging effects, on the other hand, counter-balance
+part of the aliasing in spectrum estimates, while creating a negative
+bias in the value of $\varepsilon$ estimated from the second-order
+structure function. The ubiquitous presence of both effects in typical
+atmospheric turbulence data explains the difference in those estimates
+observed in the literature.
+
+Path-averaging effects, quantified here using synthetic
+data, can be observed in real turbulence data measured with two different sonic
+anemometers. Using transfer functions for the spectrum based on the anemometer
+geometry, it is possible to remove the path-averaging
+effect from the data, and reconstruct the inertial subrange in the
+second-order structure function. This correction increased the estimate of
+$\varepsilon$, and it was successful in recovering the inertial subrange
+from the 81000 Ultrasonic Anemometer by Young, whereas the recovery of data from
+the IRGASON gas analyzer and sonic anemometer by Campbell Scientific was
+partial. Although a similar correction could be applied to data from the
+CSAT3 sonic
+anemometer by Campbell Scientific, in this case the second-order structure
+function presented an inertial subrange behavior that does not correspond to
+path-averaging, and for this reason the correction could not be tested.
+
+Finally, the use of the corrected second-order structure function to
+estimate TKE dissipation rate is likely the best approach, as it is
+unbiased and presents smaller random error. This is valid for
+different types of sonic anemometers, as long as a transfer function
+derived from its geometry is available.
+
+\begin{acknowledgements}
+  LSF was funded by the Brazilian National Council for Scientific and
+  Technological Development (CNPq) under research grant 401019/2017-9;
+  NLD was also funded by CNPq under research grants 444462/2014-7 and
+  303581/2013-1. We thank Fernando Armani, Rodrigo Branco Rodakoviski,
+  Lucas Emilio B. Hoeltgebaum, Andr\'e Lu\'is Diniz dos Santos, Bianca
+  Luhm Crivellaro and Dornelles Vissotto Junior for data collection
+  and post processing of the \textit{Rio Verde} dam experiment, and
+  Andr\'e Luiz Grion for insightful discussions.
+\end{acknowledgements}
+
+% BibTeX users please use one of
+%\bibliographystyle{spbasic}      % basic style, author-year citations
+%\bibliographystyle{spmpsci}     % mathematics and physical sciences
+%\bibliographystyle{spphys}      % APS-like style for physics
+%\bibliography{pathavg}           % name your BibTeX data base
+
+\begin{thebibliography}{26}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{DOI~\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{DOI~\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{Albertson et~al.(1997)Albertson, Parlange, Kiely, and
+  Eichinger}]{AlbPar1997}
+Albertson JD, Parlange MB, Kiely G, Eichinger WE (1997) The average dissipation
+  rate of turbulent kinetic energy in the neutral and unstable atmospheric
+  surface layer. Journal of Geophysical Research: Atmospheres
+  102(D12):13423--13432, \doi{10.1029/96JD03346},
+  \urlprefix\url{http://dx.doi.org/10.1029/96JD03346}
+
+\bibitem[{Bendat and Piersol(2010)}]{BenPie2010}
+Bendat JS, Piersol AG (2010) Random Data, 4th edn. John Wiley \& Sons
+
+\bibitem[{Cancelli et~al.(2012)Cancelli, Dias, and Chamecki}]{CanDia2012}
+Cancelli DM, Dias NL, Chamecki M (2012) Dimensionless criteria for the
+  production-dissipation equilibrium of scalar fluctuations and their
+  implications for scalar similarity. Water Resources Research 48(10):n/a--n/a,
+  \doi{10.1029/2012WR012127},
+  \urlprefix\url{http://dx.doi.org/10.1029/2012WR012127}
+
+\bibitem[{Chamecki and Dias(2004)}]{ChaDia2004}
+Chamecki M, Dias NL (2004) The local isotropy hypothesis and the turbulent
+  kinetic energy dissipation rate in the atmospheric surface layer. Quarterly
+  Journal of the Royal Meteorological Society 130(603):2733--2752,
+  \doi{10.1256/qj.03.155}, \urlprefix\url{http://dx.doi.org/10.1256/qj.03.155}
+
+\bibitem[{Chamecki et~al.(2017)Chamecki, Dias, Salesky, and Pan}]{ChaDia2017}
+Chamecki M, Dias NL, Salesky ST, Pan Y (2017) Scaling laws for the longitudinal
+  structure function in the atmospheric surface layer. Journal of the
+  Atmospheric Sciences 74(4):1127--1147, \doi{10.1175/JAS-D-16-0228.1},
+  \urlprefix\url{https://doi.org/10.1175/JAS-D-16-0228.1}
+
+\bibitem[{Chamecki et~al.(2018)Chamecki, Dias, and Freire}]{ChaDia2018}
+Chamecki M, Dias NL, Freire LS (2018) A {TKE}-based framework for studying
+  disturbed atmospheric surface layer flows and application to vertical
+  velocity variance over canopies. Geophysical Research Letters
+  45(13):6734--6740, \doi{10.1029/2018GL077853},
+  \urlprefix\url{https://doi.org/10.1029/2018GL077853}
+
+\bibitem[{Davidson(2004)}]{Dav2004}
+Davidson P (2004) Turbulence, an Introduction for scientists and engineerers.
+  Oxford University Press
+
+\bibitem[{Davidson and Krogstad(2014)}]{DavKro2014}
+Davidson P, Krogstad P{\r A} (2014) A universal scaling for low-order structure
+  functions in the log-law region of smoothand rough-wall boundary layers.
+  Journal of Fluid Mechanics 752:140--156, \doi{10.1017/jfm.2014.286},
+  \urlprefix\url{http://dx.doi.org/10.1017/jfm.2014.286}
+
+\bibitem[{Dias(2017)}]{Dia2017}
+Dias NL (2017) Smoothed spectra, ogives, and error estimates for atmospheric
+  turbulence data. Boundary-Layer Meteorology 166(1):1--29,
+  \doi{10.1007/s10546-017-0293-7},
+  \urlprefix\url{https://doi.org/10.1007/s10546-017-0293-7}
+
+\bibitem[{Fairall and Larsen(1986)}]{FaiLar1986}
+Fairall CW, Larsen SE (1986) Inertial-dissipation methods and turbulent fluxes
+  at the air-ocean interface. Boundary-Layer Meteorology 34(3):287--301,
+  \doi{10.1007/BF00122383}, \urlprefix\url{https://doi.org/10.1007/BF00122383}
+
+\bibitem[{Fuentes et~al.(2016)Fuentes, Chamecki, dos Santos, Randow, Stoy,
+  Katul, Fitzjarrald, Manzi, Gerken, Trowbridge, Freire, Ruiz-Plancarte, Maia,
+  T\'{o}ta, Dias, Fisch, Schumacher, Acevedo, and Mercer}]{FueCha2016}
+Fuentes JD, Chamecki M, dos Santos RMN, Randow CV, Stoy PC, Katul G,
+  Fitzjarrald D, Manzi A, Gerken T, Trowbridge A, Freire LS, Ruiz-Plancarte J,
+  Maia JMF, T\'{o}ta J, Dias N, Fisch G, Schumacher C, Acevedo O, Mercer JR
+  (2016) Linking meteorology, turbulence, and air chemistry in the amazon
+  rainforest. Bulletin of the American Meteorological Society
+  97(12):2329--2342, \doi{10.1175/BAMS-D-15-00152.1},
+  \urlprefix\url{http://dx.doi.org/10.1175/BAMS-D-15-00152.1}
+
+\bibitem[{Henjes(1998)}]{Hen1998}
+Henjes K (1998) Justification of the inertial dissipation technique in
+  anisotropic mean flow. Boundary-Layer Meteorology 88(2):161--180,
+  \doi{10.1023/A:1001138218181},
+  \urlprefix\url{https://doi.org/10.1023/A:1001138218181}
+
+\bibitem[{Horst and Oncley(2006)}]{HorOnc2006}
+Horst TW, Oncley SP (2006) Corrections to inertial-range power spectra measured
+  by csat3 and solent sonic anemometers,1. path-averaging errors.
+  Boundary-Layer Meteorology 119(2):375--395, \doi{10.1007/s10546-005-9015-7},
+  \urlprefix\url{https://doi.org/10.1007/s10546-005-9015-7}
+
+\bibitem[{Horst et~al.(2015)Horst, Semmer, and Maclean}]{HorSem2015}
+Horst TW, Semmer SR, Maclean G (2015) Correction of a non-orthogonal,
+  three-component sonic anemometer for flow distortion by transducer shadowing.
+  Boundary-Layer Meteorology 155(3):371--395, \doi{10.1007/s10546-015-0010-3},
+  \urlprefix\url{http://dx.doi.org/10.1007/s10546-015-0010-3}
+
+\bibitem[{Hsieh and Katul(1997)}]{HsiKat1997}
+Hsieh CI, Katul GG (1997) Dissipation methods, taylor's hypothesis, and
+  stability correction functions in the atmospheric surface layer. Journal of
+  Geophysical Research: Atmospheres 102(D14):16391--16405,
+  \doi{10.1029/97JD00200},
+  \urlprefix\url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/
+  97JD00200}
+
+\bibitem[{Juneja et~al.(1994)Juneja, Lathrop, Sreenivasan, and
+  Stolovitzky}]{JunLat1994}
+Juneja A, Lathrop DP, Sreenivasan KR, Stolovitzky G (1994) Synthetic
+  turbulence. Phys Rev E 49:5179--5194, \doi{10.1103/PhysRevE.49.5179},
+  \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevE.49.5179}
+
+\bibitem[{Kaimal et~al.(1968)Kaimal, Wyngaard, and Haugen}]{KaiWyn1968}
+Kaimal JC, Wyngaard JC, Haugen DA (1968) Deriving power spectra from a
+  three-component sonic anemometer. Journal of Applied Meteorology
+  7(5):827--837, \doi{10.1175/1520-0450(1968)007<0827:DPSFAT>2.0.CO;2},
+  \urlprefix\url{https://doi.org/10.1175/1520-0450(1968)007<0827:
+  DPSFAT>2.0.CO;2}
+
+\bibitem[{Monin and Yaglom(1981)}]{MonYag1981}
+Monin A, Yaglom A (1981) Statistical Fluid Mechanics, Volume II: Mechanics of
+  Turbulence, 2nd edn. The MIT Press,
+  \urlprefix\url{https://books.google.com.br/books?id=6xPEAgAAQBAJ}
+
+\bibitem[{Pan and Chamecki(2016)}]{PanCha2016}
+Pan Y, Chamecki M (2016) A scaling law for the shear-production range of
+  second-order structure functions. Journal of Fluid Mechanics 801:459--474,
+  \doi{10.1017/jfm.2016.427},
+  \urlprefix\url{http://dx.doi.org/10.1017/jfm.2016.427}
+
+\bibitem[{Pope(2000)}]{Pop2000}
+Pope SB (2000) Turbulent Flows. Cambridge University Press
+
+\bibitem[{Salesky and Chamecki(2012)}]{SalCha2012}
+Salesky ST, Chamecki M (2012) Random errors in turbulence measurements in the
+  atmospheric surface layer: Implications for monin-obukhov similarity theory.
+  Journal of the Atmospheric Sciences 69(12):3700--3714,
+  \doi{10.1175/JAS-D-12-096.1},
+  \urlprefix\url{http://dx.doi.org/10.1175/JAS-D-12-096.1}
+
+\bibitem[{Shinozuka and Deodatis(1991)}]{ShiDeo1991}
+Shinozuka M, Deodatis G (1991) Simulation of stochastic processes by spectral
+  representation. Applied Mechanics Reviews 44(4):191--204,
+  \doi{10.1115/1.3119501}, \urlprefix\url{http://dx.doi.org/10.1115/1.3119501}
+
+\bibitem[{{The Official Let's Make a Deal Website}(2020)}]{LETSMAKEADEAL--INFO}
+{The Official Let's Make a Deal Website} (2020) Show info. Obtido em
+  \url{http://www.letsmakeadeal.com/showinfo.htm}
+
+\bibitem[{Warhaft(2000)}]{War2000}
+Warhaft Z (2000) Passive scalars in turbulent flows. Annual Review of Fluid
+  Mechanics 32(1):203--240, \doi{10.1146/annurev.fluid.32.1.203},
+  \urlprefix\url{https://doi.org/10.1146/annurev.fluid.32.1.203}
+
+\bibitem[{Webb(1964)}]{Web1964}
+Webb EK (1964) Ratio of spectrum and structure-function constants in the
+  inertial subrange. Quarterly Journal of the Royal Meteorological Society
+  90(385):344--346, \doi{10.1002/qj.49709038520},
+  \urlprefix\url{http://dx.doi.org/10.1002/qj.49709038520}
+
+\bibitem[{Zahn et~al.(2016)Zahn, Chor, and Dias}]{ZahCho2016}
+Zahn E, Chor TL, Dias NL (2016) A simple methodology for quality control of
+  micrometeorological datasets. American Journal of Environmental Engineering
+  6(4A):135--142, \doi{10.5923/s.ajee.201601.20},
+  \urlprefix\url{https://doi.org/10.5923/s.ajee.201601.20}
+
+\end{thebibliography}
+
+
+
+\end{document}
+% end of file template.tex
+
