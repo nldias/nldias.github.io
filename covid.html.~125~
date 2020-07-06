@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Covid19: Uma previsão dia-a-dia da extensão da crise</title>
-<!-- 2020-07-02 qui 08:56 -->
+<!-- 2020-07-05 dom 10:04 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -294,27 +294,19 @@ in the values, and their chronology, with respect to <a href="https://github.com
 <hr  />
 
 <p>
-2020-07-01T00:00:00
+2020-07-04T00:00:00
 </p>
 
 
 <p>
-\(P_\infty\) continua crescendo. Nas últimas duas semanas, \(P_\infty\)
-passou de um patamar de 1.500.000 para 2.000.000. Aumentou portanto em
-33% a previsão do número total de casos, e consequentemente de mortes:
-agora, é seguro prever que o número total de mortes chegará a 84.000
-(4,2%; dados oficiais). 
+Infelizmente, \(P_\infty\) continua crescendo sem dar sinais de estabilização. 
 </p>
 
 
 <p>
-\(P_\infty\) is still growing. During the last two weeks, \(P\infty\) has
-moved from a plateau around 1,500,000 to 2,000,000. 
-This is a 33% increase in the predicted number of total cases and,
-consequently, of deaths. Now it is safe to predict that the total
-number of dead will reach 84,000 (4.2%; official data). 
+Unfortunately, \(P_\infty\) is still growing without any signs of
+levelling off. 
 </p>
-
 
 
 
@@ -327,6 +319,40 @@ number of dead will reach 84,000 (4.2%; official data).
 Eis aqui o ajuste das curvas ao longo do tempo (das mais recentes para
 as mais antigas). Here are the curve fittings, from latest to earliest.
 </p>
+
+<p>
+2020-07-04:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0129.png" alt="cordtime-0129.png" />
+</p>
+</div>
+
+
+<p>
+2020-07-03:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0128.png" alt="cordtime-0128.png" />
+</p>
+</div>
+
+
+<p>
+2020-07-02:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0127.png" alt="cordtime-0127.png" />
+</p>
+</div>
+
+
 
 <p>
 2020-07-01:
@@ -1376,7 +1402,7 @@ as mais antigas). Here are the curve fittings, from latest to earliest.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2020-07-02 qui 08:56</p>
+<p class="date">Created: 2020-07-05 dom 10:04</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.2 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
