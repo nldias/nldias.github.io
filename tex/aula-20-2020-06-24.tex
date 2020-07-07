@@ -1,0 +1,85 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{lmodern}
+\usepackage{url}
+
+\title{Aula 20}
+\author{Nelson Luís Dias}
+\date{2020-06-24}
+
+
+\begin{document}
+
+\maketitle
+
+
+\url{http://gnuwin32.sourceforge.net/packages/libiconv.htm}
+
+Açafrão
+
+\section{UTF-8 e suas complexidades}
+
+\input{arqutf8.txt}
+
+Por quê?
+
+Tudo começou com a tabela ASCII, que codifica apenas 
+caracteres não acentuados, que são suficientes para a 
+língua Inglesa, e que tem $2^7 = 128$ símbolos.
+
+Latin-1 é uma codificação que usa \emph{um} e apenas 
+um byte para cada caractere.  Consequentemente, Latin-1 é 
+capaz de codificar apenas 256 caracteres distintos,
+já que $2^8 = 256$.
+
+Já UTF-8 é uma maneira de codificar a tabela Unicode. 
+
+\begin{verbatim}
+|_|_|_|_|
+***
+*****
+*******
+*********
+\end{verbatim}
+
+\section{O Zen do texto}
+
+Automação excessiva é um ``mal de época''!
+
+Evite excesso de interfaces e programas que fazem o trabalho por você. 
+
+Em \LaTeX\, Gnuplot, etc, ``tudo é texto'': os scripts (\texttt{*.tex}, \texttt{*.plt}) são texto, os arquivos de dados (sempre que possível) são texto, etc..
+
+A causa do erro que você está encontrando \emph{sempre} pode ser encontrada, desde que uma quantidade suficiente de trabalho seja dedicada à sua procura.
+
+Arquivos-texto podem ser gerados automaticamente, concatenados, filtrados, etc., 
+o que torna o seu processamento muito conveniente.
+
+\section{Classes que nós vimos neste curso até agora}
+
+\begin{description}
+\item[article] Para fazer um artigo científico, mas também para fazer um pequeno trabalho acadêmico, etc..
+\item[report] Para fazer um relatório técnico, uma dissertação ou tese ou TCC, etc.
+\item[marmot] Para fazer apresentações
+\end{description}
+
+Dicas a respeito de classes:
+\begin{itemize}
+\item Por exemplo, quando eu começo a escrever um \textit{paper}, eu uso \texttt{article} durante um bom tempo. É mais simples e não emprega comandos específicos de uma certa revista ou casa editorial, e me permite me concentrar no conteúdo.
+\item Muitas revistas aceitam apenas o arquivo pdf na primeira rodada de revisão. Com isso ganha-se algum tempo não precisando ``reformatar'' o  trabalho para uma outra classe de \LaTeX\ de uma outra revista!
+\item A respeito de livros, teses, etc.: para ficar bom muitas vezes o trabalho é bastante grande. 
+Uma package que ajuda muito a fazer modificações significativas na aparência com relativamente pouco trabalho é a \texttt{$\backslash$titlesec}.
+\end{itemize}
+
+
+
+
+
+
+
+
+
+\end{document}

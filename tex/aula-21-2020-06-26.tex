@@ -1,0 +1,342 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage[small,compact]{titlesec}
+\usepackage{authblk}
+\usepackage{newtxtext}
+\usepackage{newtxmath}
+\usepackage{booktabs}
+\usepackage{lipsum}
+\usepackage[defaultlines=4,all]{nowidow}
+\usepackage{url}
+
+\renewcommand\Authand{ e }
+\overfullrule=10mm
+
+\title{Aula 21: Listings, verbatim, etc..}
+
+
+\author[1]{Nelson Luís Dias}
+\author[2]{Zé Colmeia}
+
+\affil[1]{UFPR}
+\affil[2]{Yellowstone Park}
+
+\date{2020-06-26}
+
+\input{mylistings.tex}
+\input{mydescription.tex}
+
+\newcommand{\qs}{\textquotesingle}
+\newcommand{\qd}{\textquotedbl}
+%A primeira coisa a fazer muitas vezes é mudar o idioma:
+\renewcommand{\lstlistlistingname}{Lista de Listagens}
+\renewcommand{\lstlistingname}{Listagem}
+
+
+
+\begin{document}
+
+
+
+\maketitle
+
+\tableofcontents
+\listoftables
+\listoffigures
+\lstlistoflistings
+
+\begin{abstract}
+  \lipsum[7]
+\end{abstract}
+
+
+
+\section{Listings}
+
+\suppressfloats
+
+O que foi que eu fiz?
+Talvez: 
+\begin{lstlisting}
+\renewcommand{\lstlistlistingname}{Lista de Listagens}
+%%
+\renewcommand{\lstlistingname}{Listagem}
+\end{lstlisting}
+ou com um estilo simples:
+\begin{lstlisting}[style=lstsimple]
+\renewcommand{\lstlistlistingname}{Lista de Listagens}
+%%se eu fizer aspas (') elas vão aprecer 'assim' e não `assim'
+\renewcommand{\lstlistingname}{Listagem}
+\end{lstlisting}
+Na verdade, isso aí em cima está em \LaTeX\, e talvez eu devesse ter
+feito
+\begin{lstlisting}[style=lstlatex]
+\renewcommand{\lstlistlistingname}{Lista de Listagens}
+\renewcommand{\lstlistingname}{Listagem}
+\end{lstlisting}
+
+A tabela \ref{tab:qmaxobspatos} dá os valores da vazão máxima anual para o Rio dos Patos, PR,
+estação ANA (Agência Nacional de Águas do Brasil) 64620000, entre 1931 e 1999.
+
+\begin{table}\centering
+\caption{Vazões Máximas Anuais ($\mathrm{m^3\,s^{-1}}$) no Rio dos Patos, PR,
+  1931--1999\label{tab:qmaxobspatos}}
+\begin{tabular}{rrrrrrrr}
+\toprule
+Ano & Vaz Máx & Ano & Vaz Máx & Ano & Vaz Máx & Ano & Vaz Máx \\
+\midrule
+1931 &   272.00 & 1951 &     266.00 & 1971 &    188.00 & 1991 &    131.00 \\
+1932 &   278.00 & 1952 &     192.10 & 1972 &    198.00 & 1992 &    660.00 \\
+1933 &    61.60 & 1953 &     131.80 & 1973 &    252.50 & 1993 &    333.00 \\
+1934 &   178.30 & 1954 &     281.00 & 1974 &    119.00 & 1994 &    128.00 \\
+1935 &   272.00 & 1955 &     311.50 & 1975 &    172.00 & 1995 &    472.00 \\
+1936 &   133.40 & 1956 &     156.20 & 1976 &    174.00 & 1996 &    196.00 \\
+1937 &   380.00 & 1957 &     399.50 & 1977 &     75.40 & 1997 &    247.50 \\
+1938 &   272.00 & 1958 &     152.10 & 1978 &    146.80 & 1998 &    451.00 \\
+1939 &   251.00 & 1959 &     127.00 & 1979 &    222.00 & 1999 &    486.00 \\
+1940 &    56.10 & 1960 &     176.00 & 1980 &    182.00 \\
+1941 &   171.60 & 1961 &     257.00 & 1981 &    134.00 \\
+1942 &   169.40 & 1962 &     133.40 & 1982 &    275.00 \\
+1943 &   135.00 & 1963 &     248.00 & 1983 &    528.00 \\
+1944 &   146.40 & 1964 &     211.00 & 1984 &    190.00 \\
+1945 &   299.00 & 1965 &     208.60 & 1985 &    245.00 \\
+1946 &   206.20 & 1966 &     152.00 & 1986 &    146.80 \\
+1947 &   243.00 & 1967 &      92.75 & 1987 &    333.00 \\
+1948 &   223.00 & 1968 &     125.00 & 1988 &    255.00 \\
+1949 &    68.40 & 1969 &     135.60 & 1989 &    226.00 \\
+1950 &   165.00 & 1970 &     202.00 & 1990 &    275.00 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+umalarguraincrivelmenteimpossivelquevaiobrigarolatexaproduzzzzirumoverfullhboxtalvezse
+
+japossivelaquiddeumjeito
+
+umutocompicaododsdjadjaofjdoajfdoajfdafcceruifsiflseis
+
+Em seguida, seria legal eu gerar um lero-lero:
+
+\lipsum[1]
+
+\lstinputlisting[style=lstpython,
+caption={\texttt{binint.py} ---  Exemplo de \textit{strings}, 
+  e inteiros.},label=lis:binint]{binint.py}
+
+Agora eu vou me aventurar a incluir a listagem \ref{lis:binint} em Python.
+Vamos agora à saída do programa \texttt{binint.py}:
+
+\begin{lstlisting}[style=lstscript]
+açafrão
+7
+4294967295
+--- a:
+ord( a ) =  97
+ord( ç ) =  231
+ord( a ) =  97
+ord( f ) =  102
+ord( r ) =  114
+ord( ã ) =  227
+ord( o ) =  111
+--- b:
+ord( 4 ) =  52
+ord( 2 ) =  50
+ord( 9 ) =  57
+ord( 4 ) =  52
+ord( 9 ) =  57
+ord( 6 ) =  54
+ord( 7 ) =  55
+ord( 2 ) =  50
+ord( 9 ) =  57
+ord( 5 ) =  53
+ã
+\end{lstlisting}
+
+
+
+O programa \texttt{fqiemp.py}, mostrado na listagem \ref{lis:fqiemp}, calcula a
+curva de permanência, ou FDA empírica, para as vazões máximas anuais do Rio dos
+Patos.  Essa é, simplesmente, uma tabela de duas colunas: a vazão observada (em
+ordem crescente), e o valor de $(i+1)/n$.
+
+\noindent\begin{minipage}{\textwidth}
+\lstinputlisting[style=lstpython,
+label=lis:fqiemp,
+caption={\texttt{fqiemp.py} --- Cálculo de uma FDA
+  empírica}]{fqiemp.py}
+\end{minipage}
+
+\lstinputlisting[style=lstscript,
+firstline=1,
+lastline=5,
+label=lis:patos-medmax,
+caption={\texttt{patos-medmax.dat} --- Vazões média e máxima anuais, Rio dos
+  Patos}]{patos-medmax.dat}
+
+
+
+Como antes, os comentários em \texttt{fqiemp.py} explicam muito do que está acontecendo.  Mas há
+necessidade de explicações adicionais:
+
+\begin{bfdescription}{1cm}
+   \item[3] A função pré-definida \texttt{open} abre o arquivo \texttt{patos-medmax.dat},
+     descrito acima e exemplificado na listagem \ref{lis:patos-medmax}.  O segundo argumento de
+     \texttt{open}, a \textit{string} \texttt{\qs rt\qs}, diz duas coisas: com \texttt{r}, que
+     se trata de uma operação de \emph{leitura}, (\textit{read}), de um arquivo que já existe:
+     isso garante que \texttt{patos-medmax.dat} não será modificado por \texttt{fqiemp.py}; com
+     \texttt{t}, que se trata de um arquivo \emph{texto}.  Um arquivo texto é um arquivo formado
+     por linhas, sendo cada linha uma \textit{string}.  As linhas são separadas por caracteres
+     (invisíveis no editor de texto) de fim de linha, que convencionalmente nós indicamos por
+     \texttt{\textbackslash n}. Um arquivo texto é um objeto \emph{iterável}, que pode ser
+     acessado linha a linha.
+   \item[5] Nesta linha, \texttt{qmax} é inicializado como uma \emph{lista} vazia. Uma lista é
+     uma sequência de objetos quaisquer.  Dada uma lista \texttt{a}, seus elementos são
+     \texttt{a[0]}, \texttt{a[1]}, etc..  Uma lista \texttt{a} com $n$ objetos vai de
+     \texttt{a[0]} até \texttt{a[n-1]}.
+   \item[6] Este é o \textit{loop} de leitura do programa.  \texttt{linha} é uma
+     \textit{string} que contém em cada iteração uma das linhas de \texttt{patos-medmax.dat}.
+   \item[7] É preciso separar uma linha (veja a listagem \ref{lis:patos-medmax}) em seus 3
+     campos. O \emph{método}\footnote{Em Python, um método é uma rotina que ``pertence'' a uma
+       variável ou um tipo (a rigor, a uma classe, mas este não é um curso de programação).}
+     \texttt{split} separa a string \texttt{linha} em 3 strings, e as coloca em uma lista
+     \texttt{campo == [ campo[0], campo[1], campo[2] ]}, usando os espaços em branco como
+     separadores (que são eliminados).
+   \item[8] Cada um dos \texttt{campo}'s agora é ele mesmo uma \textit{string}, com os valores
+     separados. As 5 primeiras linhas que aparecem na tela devido ao comando \texttt{print} da
+     linha 7 são:
+     \begin{lstlisting}[style=lstscript]
+['1931', '21.57', '272.00']
+['1932', '25.65', '278.00']
+['1933', '4.76', '61.60']
+['1934', '11.46', '178.30']
+['1935', '28.10', '272.00']
+     \end{lstlisting}
+   \item[10] No entanto, esses campos ainda são \textit{strings}, e não \texttt{float}'s. Aqui o
+     terceiro campo é convertido em um \texttt{float} e vai para a variável \texttt{qi}.
+   \item[11] Finalmente, \texttt{qi} é incluída na lista \texttt{qmax}.
+   \item[12] É bom estilo de programação fechar cada arquivo previamente aberto.
+   \item[13] Agora o programa abre o arquivo de saída, \texttt{fqiemp.dat}.   \texttt{w}
+     significa abertura para escrita (\textit{write}); e \texttt{t} que o arquivo será texto.
+   \item[14] \texttt{sort} é um \emph{método} pré-definido para qualquer lista, que a ordena
+     (por \textit{default} em ordem crescente).\index{Python!\texttt{sort} (ordenação)}
+   \item[15] \texttt{len} é uma função pré-definida que retorna o número de elementos da lista.
+   \item[16] \textit{loop} para impressão no arquivo de saída.
+   \item[18] Obtém o \texttt{i}-ésimo elemento de \texttt{qmax}, colocado na variável
+     \texttt{qi}, que é re-utilizada para esse fim.
+   \item[19] Calcula a posição de plotagem, utilizando o operador \texttt{/} para dividir dois
+     \texttt{int}'s e gerar um resultado correto do tipo \texttt{float}.
+   \item[20] \texttt{write} é um método do arquivo
+     \texttt{fou}\index{Python!\texttt{write}}.  \texttt{write} sempre escreve
+     seu único argumento, que \emph{tem} que ser uma \textit{string}, no
+     arquivo. Trata-se portanto do problema inverso do \textit{loop} de leitura,
+     que transformava \textit{strings} em \texttt{float}'s: agora precisamos
+     transformar \texttt{float}'s em uma \emph{string}. É para isso que serve o
+     operador \texttt{\%}: ele tem à sua esquerda uma \textit{string} com os
+     campos de formatação especiais \texttt{\%8.2f} e \texttt{\%8.6f}; à sua
+     direita uma \emph{tupla}\footnote{Em Python, uma tupla é uma lista imutável.}
+     \texttt{(qi,Fi)} com tantos elementos quantos são os campos de formatação.
+     O primeiro elemento será substituído no primeiro campo de formatação por
+     uma \textit{string} com 8 caracteres, sendo 2 deles para casas decimais.  O
+     segundo elemento será substituído no segundo campo de formatação por uma
+     \textit{string} com 8 caracteres, sendo 6 deles para casas decimais.  A
+     \textit{string} resultante, que precisa conter explicitamente o caractere
+     de fim de linha \texttt{\textbackslash n}, será escrita no arquivo de
+     saída.
+\end{bfdescription}
+
+Passamos agora a mostrar mais uma listagem simples:
+\begin{lstlisting}[style=lstscript]
+# --------------------
+# BDMEP - INMET
+# --------------------
+# Estação           : BELO HORIZONTE - MG (OMM: 83587)
+# Latitude  (graus) : -19.93
+# Longitude (graus) : -43.93
+# Altitude  (metros): 915.00
+# Estação Operante
+# Inicio de operação: 03/03/1910
+# Periodo solicitado dos dados: 31/12/1980 a 31/12/2011
+# Os dados listados abaixo são os que encontram-se digitados no BDMEP
+# Hora em UTC
+# --------------------
+# Obs.: Os dados aparecem separados por ; (ponto e vírgula) no formato txt.
+#       Para o formato planilha XLS, siga as instruções
+# --------------------
+# Estacao;Data;Hora;PrecipitacaoTotal;
+83587;28/02/1981;0000;7.5;
+83587;31/03/1981;0000;195;
+83587;30/04/1981;0000;83.3;
+83587;31/05/1981;0000;7;
+83587;30/06/1981;0000;17.5;
+83587;31/07/1981;0000;0;
+83587;31/08/1981;0000;0;
+83587;30/09/1981;0000;0.8;
+83587;31/10/1981;0000;120.9;
+83587;30/11/1981;0000;404;
+83587;31/12/1981;0000;248.2;
+83587;31/01/1982;0000;330.5;
+83587;28/02/1982;0000;52;
+83587;31/03/1982;0000;374.4;
+\end{lstlisting}
+
+E agora, vamos mostrar na listagem \ref{lis:mulambdak} um programa em Maxima.
+
+\lstinputlisting[label=lis:mulambdak,
+caption={\texttt{mulambdak.max} --- Cálculo da média da distribuição Weibull em em função de 
+seus parâmetros $\lambda$ e $k$},
+style=lstmaxima]{mulambdak.max}
+
+
+\section{Colocando uma listagem \textit{here}?}
+
+A dissecação de \texttt{achapol.max} é a seguinte:
+\begin{mydescription}{1cm}
+\item[1--2] Define $f(x)$ e $g(x)$.
+\item[3--7] Define o valor de $f(x)$ em $x=0,1,2,4$, e o valor de $g(x)$ em $x=4$, em função de
+  $a,b,c,d,e$. 
+\item[8]    Resolve um sistema linear $5 \times 5$ em $a,b,c,d,e$.
+\end{mydescription}
+
+\lstinputlisting[label=lis:achapol,
+caption={\texttt{achapol.max} --- Polinômio com propriedades definidas},
+style=lstmaxima]{achapol.max}
+
+A saída de \texttt{achapol.max} é mostrada na listagem \ref{lis:achapol-out}
+
+\lstinputlisting[caption={Saída de \texttt{achapol.max}},
+label = lis:achapol-out,
+style=lstscript]{achapol.out}
+
+\section{Versos e citações}
+
+À beira do Rubicão, César disse:
+\begin{quote}
+  Vini, vidi, vici.
+\end{quote}
+Já Penman:
+\begin{quote}
+  In open country there are several causes of spurious high readings:
+  rabbits and birds appreciate an open pool on a hot day and although
+  the enclosure was refitted with wire netting for this experiment it
+  is impracticable to take measures to ensure 100\% freedom from intrusion.
+\end{quote}
+Mas hoje em dia seu professor (ou seu revisor!) de ``Metodologia Científica'' talvez exigisse algo diferente:
+\begin{quote}
+In natural biomes there are multifarious cases for outliers in environmental datasets, the reasons for which are likely impossible to pinpoint; one of them may be the fact that many species of the natural fauna may make incursions into the measuring devices producing undesirable readings. Although the enclosure was refitted with wire netting for this experiment it is not possible to take all precautionary measures necessary to ensure that there will be 0\% such incursions.
+\end{quote}
+Por outro lado, posso escrever um versinho:
+\begin{verse}
+  Minha terra tem palmeiras,\\
+  onde canta o sabiá.\\
+  As aves que aqui gorgeiam\\
+  não gorgeiam como lá.
+\end{verse}
+
+
+
+
+
+\end{document}
