@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Covid19: Uma previsão dia-a-dia da extensão da crise</title>
-<!-- 2020-07-03 sex 11:24 -->
+<!-- 2020-07-07 ter 08:24 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -294,27 +294,23 @@ in the values, and their chronology, with respect to <a href="https://github.com
 <hr  />
 
 <p>
-2020-07-02T00:00:00
+2020-07-06T00:00:00
 </p>
 
 
 <p>
-\(P_\infty\) continua crescendo. Nas últimas duas semanas, \(P_\infty\)
-passou de um patamar de 1.500.000 para 2.000.000. Aumentou portanto em
-33% a previsão do número total de casos, e consequentemente de mortes:
-agora, é seguro prever que o número total de mortes chegará a 84.000
-(4,2%; dados oficiais). 
+Desde o dia 17/06, \(P_\infty\) continua crescendo sem dar sinais de
+estabilização. É o mais longo período de crescimento
+contínuo. Claramente, as medidas de contenção não estão sendo
+suficientes para controlar a epidemia.
 </p>
 
 
 <p>
-\(P_\infty\) is still growing. During the last two weeks, \(P_\infty\) has
-moved from a plateau around 1,500,000 to 2,000,000. 
-This is a 33% increase in the predicted number of total cases and,
-consequently, of deaths. Now it is safe to predict that the total
-number of dead will reach 84,000 (4.2%; official data). 
+Since June 17, \(P_\infty\) has grown growing without any signs of
+levelling off. It is the longest span of continuous growth. Clearly,
+the measures taken so far against the epidemic are not being enough.
 </p>
-
 
 
 
@@ -327,6 +323,53 @@ number of dead will reach 84,000 (4.2%; official data).
 Eis aqui o ajuste das curvas ao longo do tempo (das mais recentes para
 as mais antigas). Here are the curve fittings, from latest to earliest.
 </p>
+
+<p>
+2020-07-06:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0131.png" alt="cordtime-0131.png" />
+</p>
+</div>
+
+
+
+
+<p>
+2020-07-05:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0130.png" alt="cordtime-0130.png" />
+</p>
+</div>
+
+
+
+<p>
+2020-07-04:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0129.png" alt="cordtime-0129.png" />
+</p>
+</div>
+
+
+<p>
+2020-07-03:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0128.png" alt="cordtime-0128.png" />
+</p>
+</div>
+
 
 <p>
 2020-07-02:
@@ -1388,7 +1431,7 @@ as mais antigas). Here are the curve fittings, from latest to earliest.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2020-07-03 sex 11:24</p>
+<p class="date">Created: 2020-07-07 ter 08:24</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.2 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
