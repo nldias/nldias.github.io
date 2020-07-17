@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Thoughts on computing, teaching, and most anything else &#x2026;</title>
-<!-- 2020-07-16 qui 19:57 -->
+<!-- 2020-07-17 sex 15:32 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -352,7 +352,7 @@ report) were able to produce better-looking, intermediate
 results. Look at the American translation (by NACA, a forerunner of
 NASA) of Blasius' PhD thesis [Blasius, H. The boundary layers in
 fluids with little friction. Translation of "Grenzschichten in
-Fl?ssigkeiten mit kleiner Reibung", Zeistschrift f?r Mathematik und
+Flüssigkeiten mit kleiner Reibung", Zeistschrift für Mathematik und
 Physik, Band 56, Heft 1, p. 1&#x2013;37, 1908 National Advisory Committee
 for Aeronautics, National Advisory Committee for Aeronautics, 1950]:
 </p>
@@ -379,13 +379,14 @@ allowed the user to switch fonts. It was the <i>Varityper</i>; look at its
 history at
 <a href="https://site.xavier.edu/polt/typewriters/varityper.html">https://site.xavier.edu/polt/typewriters/varityper.html</a>. With it, the
 typist could change the fonts as he typed, and this of course allowed
-the NACA technical memorandum to produce neatly aligned \(\epsilon\) 's
-and \(\partial\) 's (and actually many more other symbols along the
-document) as needed. In the 1960's, IBM introduced a smaller, lighter
-and cheaper electric typewriter, the Selectric. You changed fonts by
-changing "spheres". At the end of my undergraduate course (1983), we
-already had them in Brazil, and technical documents were beginning to
-look better, rather like the Blasius document above. 
+the typist of the NACA technical memorandum to produce neatly aligned
+\(\epsilon\) 's and \(\partial\) 's (and actually many more other symbols
+along the document) as needed. In the 1960's, IBM introduced a
+smaller, lighter and cheaper electric typewriter, the Selectric. You
+changed fonts by changing "spheres" or "golf balls". At the end of my
+undergraduate course (1983), we already had them in Brazil, and
+technical documents were beginning to look better, rather like the
+Blasius document above.
 </p>
 
 <p>
@@ -394,11 +395,11 @@ typewriter. But in the beginning, the math capabilities were rather
 limited or non-existent, which required again manually inserted and
 ugly-looking symbols. A very nice alternative came with a true "What
 you see is what you get" word processor named ChiWriter,
-circa 1986. It was effectively a typewriter, because all spacing,
-horizontal and vertical, had to be produced manually by the user, but
-you could choose from a repertoire of up to 20 fonts, that you
-selected via the function keys. Here is how ChiWriter looks in my
-attempt to reproduce one page from Blasius' report:
+circa 1986. It was effectively still a kind of typewriter, because all
+spacing, horizontal and vertical, had to be produced manually by the
+user, but you could choose from a repertoire of up to 20 fonts, that
+you selected via the function keys. Here is how ChiWriter looks in my
+attempt to reproduce one page from the Blasius' document:
 </p>
 
 
@@ -410,16 +411,61 @@ attempt to reproduce one page from Blasius' report:
 <p>
 The vertical and small spaces and half-spaces are shown by the small
 dots. Here we have the same \(\epsilon\) 's and \(\partial\) 's that NACA
-had (through its <i>Varytyper</i>, undoubtedly) to produce the document.
+had (through its <i>Varityper</i>, undoubtedly) to produce the document.
 </p>
 
 <p>
-The ChiWriter version that you see in action above is the latest,
-from 1996. It could do better than any typewriter, with justification
-and automatic hyphenation (I think). It could also use proportional
-fonts (like Times Roman) and produce Postscript output. Of course, it
-still ran in DOS, and the picture above is a screenshot of Dosbox
-running in my computer. 
+The ChiWriter version that you see in action above is the latest, from
+1996 (it is now freely available for download). It could do better
+than any mechanical or electrical typewriter, with justification and
+automatic hyphenation (I think). It could also use proportional fonts
+(like Times Roman) and produce Postscript output. But many things like
+inserting a bibliography, numbering equations and even leaving space
+for a figure still had to be done by hand (ChiWriter can insert tiff
+and pcx pictures in principle, but in my trial it chokes with large
+files). Of course, it still ran in DOS, and the picture above is a
+screenshot of Dosbox running in my computer.
+</p>
+
+<p>
+Easier to use and more sophisticated software was rapidly arriving,
+and ChiWriter (together with Word Perfect and WordStar) was debunked
+in the early 1990's by MS Word. Of course, one of the mainstays of
+word processing was still the ability to use many fonts in the same
+document. Justification and hyphenation became a matter of knowing how
+to use the software. 
+</p>
+
+<p>
+There are many lingering traces of a typewriter in wordprocessors like
+Word and LibreOffice Writer (in my opinion), though.  Many people
+still insist on using wordprocessors not too differently from how
+their parents and grand parents used typewriters. They just don't get
+the nice audio feedback of the clattering metal type hitting the
+paper, and the bell ringing at the end of the line (when it is time
+for a carriage return).
+</p>
+
+<p>
+Around 1991 I adopted TeX, and then LaTeX, which (since then) I use
+for everything longer than 2 pages, including my papers, booklets,
+books and exams. TeX is a real typesetting engine, and the document
+generation is fully automated. Much better than any typewriter, even
+if the typewriter is MS Word. The output looks very very
+nice: check out my reproduction, using LaTeX, of Gauckler's page:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/gauckler-tex.png" alt="gauckler-tex.png" />
+</p>
+</div>
+
+<p>
+M Gauckler would probably have been 100% satisfied if his paper
+had been prepared with LaTeX. So now, finally, we have caught up: the
+computer-assisted typist has a dedicated typesetter, and typing has
+merged into typesetting.
 </p>
 </div>
 </div>
@@ -2341,7 +2387,7 @@ coniventes: eles estão destruindo o futuro.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2020-07-16 qui 19:57</p>
+<p class="date">Created: 2020-07-17 sex 15:32</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.2 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
