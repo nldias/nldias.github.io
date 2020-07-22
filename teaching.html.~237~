@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Ensino (Teaching)</title>
-<!-- 2020-07-07 ter 09:52 -->
+<!-- 2020-07-22 qua 10:36 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -354,7 +354,7 @@ few times until HELP shows up).
 <div class="outline-text-2" id="text-1">
 
 <div class="figure">
-<p><img src="./png/ferracomred.png" alt="ferracomred.png" />
+<p><img src="./img/waterfall.jpg" alt="waterfall.jpg" width="300px" />
 </p>
 </div>
 </div>
@@ -462,9 +462,9 @@ bom estilo</b>.
 <li>O trabalho deve conter integralmente os arquivos de saída gerados
 pelos programas, em um anexo.
 </li>
-<li>O trabalho deverá conter obrigatoriamente uma tabela de
-auto-avaliação do grupo com a descrição da participação de cada
-membro, <b>contendo obrigatoriamente</b> os itens da tabela a seguir:
+<li>O trabalho deverá conter uma tabela de auto-avaliação do grupo
+com a descrição da participação de cada membro, <b>contendo
+obrigatoriamente</b> os itens da tabela a seguir:
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -541,7 +541,7 @@ membro, <b>contendo obrigatoriamente</b> os itens da tabela a seguir:
 </ul>
 
 <p>
-Veja <i>aqui</i> um exemplo completo de trabalho.
+Veja   <a href="./pdf/texmpl.pdf">aqui</a> um exemplo completo de trabalho.
 </p>
 </div>
 </div>
@@ -1615,7 +1615,7 @@ Faça o download do gabarito da P1: <a href="./pdf/eamb7009-2018-3-p01-sol.pdf">
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2020-07-07 ter 09:52</p>
+<p class="date">Created: 2020-07-22 qua 10:36</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.2 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
