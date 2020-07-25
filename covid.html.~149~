@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Covid19: Uma previsão dia-a-dia da extensão da crise</title>
-<!-- 2020-07-19 dom 11:10 -->
+<!-- 2020-07-24 sex 10:54 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -293,16 +293,18 @@ of Health has once more changed their data format. I am back to using
 <hr  />
 
 <p>
-2020-07-17T00:00:00
+2020-07-23T00:00:00
 </p>
 
 
 <p>
-\(P_{\infty}\) ainda está crescendo bastante.
+Olhando para os dados dos últimos 2 dias, \(P_{\infty}\) continua a
+crescer. Não há uma desaceleração consistente.
 </p>
 
 <p>
-\(P_{\infty}\) is still growing. 
+Looking at the last 2 days, \(P_{\infty}\) continues to grow, and there
+not a consistent deceleration.
 </p>
 
 
@@ -319,6 +321,61 @@ as mais antigas). Here are the curve fittings, from latest to earliest.
 </p>
 
 <p>
+2020-07-23:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0148.png" alt="cordtime-0148.png" />
+</p>
+</div>
+
+
+<p>
+2020-07-22:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0147.png" alt="cordtime-0147.png" />
+</p>
+</div>
+
+<p>
+2020-07-21:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0146.png" alt="cordtime-0146.png" />
+</p>
+</div>
+
+<p>
+2020-07-20:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0145.png" alt="cordtime-0145.png" />
+</p>
+</div>
+
+
+
+<p>
+2020-07-19:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0144.png" alt="cordtime-0144.png" />
+</p>
+</div>
+
+
+
+<p>
 2020-07-18:
 </p>
 
@@ -327,8 +384,6 @@ as mais antigas). Here are the curve fittings, from latest to earliest.
 <p><img src="./png/cordtime-0143.png" alt="cordtime-0143.png" />
 </p>
 </div>
-
-
 
 
 <p>
@@ -1559,7 +1614,7 @@ as mais antigas). Here are the curve fittings, from latest to earliest.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2020-07-19 dom 11:10</p>
+<p class="date">Created: 2020-07-24 sex 10:54</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.2 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
