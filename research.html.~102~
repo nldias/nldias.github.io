@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2019-05-24 Sex 14:09 -->
+<!-- 2019-12-09 Seg 09:03 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="viewport" content="width=device-width, initial-scale=1" />
 <title>Pesquisa (Research)</title>
@@ -269,8 +269,15 @@ Evaporation, Rainfall-Runoof Models, Air Quality Models, etc..
 <h2 id="orgheadline2"><span class="section-number-2">2</span> Talks</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-You  may have a glimpse of my research by looking at some of my talks. Here is a sample.
+You  may have a glimpse of my research by looking at some of my talks. Here is a
+sample.
 </p>
+
+<p>
+See <a href="https://www.dropbox.com/s/ta5am6uo1k00gkm/scproc.pdf?dl=0">here</a> my presentation at the XI Brazilian Micrometeorology Workshop &#x2013; 2019,
+São José dos Campos, SP, Brazil.
+</p>
+
 
 <p>
 See <a href="https://www.dropbox.com/s/aconc54ncs7nhb6/absummerlayer.pdf?dl=0">here</a> my presentation at the ICMC Meeting on Differential Equations &#x2013; 2019
@@ -424,6 +431,11 @@ e longo prazos.</li>
 <h2 id="orgheadline8"><span class="section-number-2">6</span> Publications</h2>
 <div class="outline-text-2" id="text-6">
 <ul class="org-ul">
+<li>Dias, Nelson L. ; Ribeiro Jr, Paulo Justiniano. Practical rules for summing
+the series of the Tweedie probability density function with high-precision
+arithmetic. Annals of the Brazilian Academy of
+Sciences, v. 91, n. 4, p. e20180268, 2019.</li>
+
 <li>Freire, L. S. ; Chamecki, M. ; Bou-Zeid, E. ; Dias, N. L. Critical flux
 Richardson number for Kolmogorov turbulence enabled by TKE
 transport. Quarterly Journal of the Royal Meteorological
@@ -432,6 +444,20 @@ Society, v. 1, p. 1, 2019.</li>
 <li>Chor, T. ; Ruiz de Zárate, A. ; Dias, N. L. A generalized series solution
 for the boussinesq equation with constant boundary conditions. Water
 Resources Research, v. 55, p. 3567-3575, 2019.</li>
+
+<li>Freire, Livia S. ; Dias, Nelson L. ; Chamecki, Marcelo. Effects of Path
+Averaging in a Sonic Anemometer on the Estimation of
+Turbulence-Kinetic-Energy Dissipation Rates. Boundary-Layer
+Meteorology, v. 1, p. 1-15, 2019.</li>
+
+<li>Dias-Júnior, Cléo Quaresma ; Dias, Nelson Luís ; Santos, Rosa Maria N. ;
+Sörgel, Matthias ; Araújo, Alessandro ; Tsokankunku, Anywhere ; Ditas,
+Florian ; Santana, Raoni Aquino ; Randow, Celso ; Sá, Marta ; Pöhlker,
+Christopher ; Toledo Machado, Luiz Augusto ; Sá, Leonardo Deane ;
+Moran'zuloaga, Daniel ; Janssen, Ruud ; Acevedo, Otávio ; Oliveira, Pablo ;
+Fisch, Gilberto ; Chor, Tomas ; Manzi, Antonio. Is There a Classical
+Inertial Sublayer Over the Amazon Forest?. Geophysical Research
+Letters, v. 46, p. 5614-5622, 2019.</li>
 
 <li>Dias, N. L. ; Crivellaro, B. L. ; Chamecki, M. The Hurst phenomenon
 in error estimates related to atmospheric turbulence. Boundary-Layer
@@ -736,7 +762,7 @@ Brasileira de Engenharia, Caderno de Recursos Hídricos, 1988, 6, 65-91.</li>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2019-05-24 Sex 14:09</p>
+<p class="date">Created: 2019-12-09 Seg 09:03</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
