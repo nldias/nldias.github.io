@@ -3,8 +3,8 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<title>Covid19: Uma previsão dia-a-dia da extensão da crise</title>
-<!-- 2020-10-25 dom 11:36 -->
+<title>covid</title>
+<!-- 2020-10-30 sex 12:03 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -211,7 +211,10 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Covid19: Uma previsão dia-a-dia da extensão da crise</h1>
+<h1 class="title">covid</h1>
+<p>
+c-0#+TITLE: Covid19: Uma previsão dia-a-dia da extensão da crise
+</p>
 <p>
 This site is searchable. See HELP on the right (you may need to click around a
 few times until HELP shows up). 
@@ -293,17 +296,23 @@ of Health has once more changed their data format. I am back to using
 <hr  />
 
 <p>
-2020-10-24T00:00:00
+2020-10-29T00:00:00
 </p>
 
 
 <p>
-\(P_{\infty}\) mantém uma taxa mais lenta de crescimento que antes.
+Há várias semanas, \(P_{\infty}\) mantém uma taxa mais lenta de
+crescimento que antes, porém constante. Não há nenhum sinal de que a
+epidemia esteja se aproximando da fase final, quando \(P_{\infty}\) se
+aproxima de uma constante.
 </p>
 
 
 <p>
-\(P_{\infty}\) keeps growing at a slower rate than before.
+For several weeks now, \(P_{\infty}\) has been  growing at a slower rate
+than before, but steady. There is no sign that the epidemic is
+approaching its final phase, when \(P_{\infty}\) approaches a constant
+value. 
 </p>
 
 
@@ -318,6 +327,56 @@ Eis aqui o ajuste das curvas ao longo do tempo (das mais recentes para
 as mais antigas). Here are the curve fittings, from latest to earliest.
 </p>
 
+
+<p>
+2020-10-29:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0246.png" alt="cordtime-0246.png" />
+</p>
+</div>
+
+<p>
+2020-10-28:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0245.png" alt="cordtime-0245.png" />
+</p>
+</div>
+
+<p>
+2020-10-27:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0244.png" alt="cordtime-0244.png" />
+</p>
+</div>
+
+<p>
+2020-10-26:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0243.png" alt="cordtime-0243.png" />
+</p>
+</div>
+
+<p>
+2020-10-25:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0242.png" alt="cordtime-0242.png" />
+</p>
+</div>
 
 <p>
 2020-10-24:
@@ -2688,7 +2747,7 @@ as mais antigas). Here are the curve fittings, from latest to earliest.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2020-10-25 dom 11:36</p>
+<p class="date">Created: 2020-10-30 sex 12:03</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.2 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
