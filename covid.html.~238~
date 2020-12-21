@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Covid19: Uma previsão dia-a-dia da extensão da crise</title>
-<!-- 2020-12-13 dom 11:38 -->
+<!-- 2020-12-21 seg 10:48 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -293,7 +293,7 @@ of Health has once more changed their data format. I am back to using
 <hr  />
 
 <p>
-2020-12-12T00:00:00
+2020-12-19T00:00:00
 </p>
 
 
@@ -326,6 +326,95 @@ people (\(P_{\infty}\)).
 Eis aqui o ajuste das curvas ao longo do tempo (das mais recentes para
 as mais antigas). Here are the curve fittings, from latest to earliest.
 </p>
+
+<p>
+2020-12-20:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0298.png" alt="cordtime-0298.png" />
+</p>
+</div>
+
+
+
+<p>
+2020-12-19:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0297.png" alt="cordtime-0297.png" />
+</p>
+</div>
+
+
+<p>
+2020-12-18:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0296.png" alt="cordtime-0296.png" />
+</p>
+</div>
+
+
+<p>
+2020-12-17:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0295.png" alt="cordtime-0295.png" />
+</p>
+</div>
+
+
+<p>
+2020-12-16:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0294.png" alt="cordtime-0294.png" />
+</p>
+</div>
+
+<p>
+2020-12-15:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0293.png" alt="cordtime-0293.png" />
+</p>
+</div>
+
+
+<p>
+2020-12-14:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0292.png" alt="cordtime-0292.png" />
+</p>
+</div>
+
+
+
+<p>
+2020-12-13:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0291.png" alt="cordtime-0291.png" />
+</p>
+</div>
+
 
 <p>
 2020-12-12:
@@ -3228,7 +3317,7 @@ as mais antigas). Here are the curve fittings, from latest to earliest.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2020-12-13 dom 11:38</p>
+<p class="date">Created: 2020-12-21 seg 10:48</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.2 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
