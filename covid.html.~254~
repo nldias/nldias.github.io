@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Covid19: Uma previsão dia-a-dia da extensão da crise</title>
-<!-- 2021-01-04 seg 12:35 -->
+<!-- 2021-01-11 seg 12:08 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -293,7 +293,7 @@ of Health has once more changed their data format. I am back to using
 <hr  />
 
 <p>
-2021-01-03T00:00:00
+2021-01-10T00:00:00
 </p>
 
 
@@ -326,6 +326,89 @@ people (\(P_{\infty}\)).
 Eis aqui o ajuste das curvas ao longo do tempo (das mais recentes para
 as mais antigas). Here are the curve fittings, from latest to earliest.
 </p>
+
+<p>
+2021-01-10:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0319.png" alt="cordtime-0319.png" />
+</p>
+</div>
+
+
+
+<p>
+2021-01-09:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0318.png" alt="cordtime-0318.png" />
+</p>
+</div>
+
+
+<p>
+2021-01-08:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0317.png" alt="cordtime-0317.png" />
+</p>
+</div>
+
+
+
+<p>
+2021-01-07:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0316.png" alt="cordtime-0316.png" />
+</p>
+</div>
+
+
+
+<p>
+2021-01-06:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0315.png" alt="cordtime-0315.png" />
+</p>
+</div>
+
+
+
+<p>
+2021-01-05:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0314.png" alt="cordtime-0314.png" />
+</p>
+</div>
+
+
+
+<p>
+2021-01-04:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0313.png" alt="cordtime-0313.png" />
+</p>
+</div>
+
+
 
 <p>
 2021-01-03:
@@ -3476,7 +3559,7 @@ as mais antigas). Here are the curve fittings, from latest to earliest.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2021-01-04 seg 12:35</p>
+<p class="date">Created: 2021-01-11 seg 12:08</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.2 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
