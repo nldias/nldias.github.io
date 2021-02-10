@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-02-07 dom 10:47 -->
+<!-- 2021-02-09 ter 14:59 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Covid19: Uma previsão dia-a-dia da extensão da crise</title>
@@ -385,14 +385,14 @@ of Health has once more changed their data format. I am back to using
 <hr />
 
 <p>
-2021-02-06T00:00:00
+2021-02-08T00:00:00
 </p>
 
 
 <p>
 A previsão do número total de casos, \(P_{\infty}\) curvou-se <b>claramente</b> para cima
 com o recrudescimento da epidemia no Brasil. Os novos casos aumentaram
-tanto que agora vez o número total de casos até o presente (\(P(t)\))
+tanto que agora o número total de casos até o presente (\(P(t)\))
 ultrapassa a própria previsão da curva logística para o número final
 de infectados (\(P_{\infty}\)). A escala de tempo dos gráficos agora é
 mensal, e foi estendida até o final de 2021.
@@ -402,10 +402,10 @@ mensal, e foi estendida até o final de 2021.
 <p>
 The prediction for the total number of cases, \(P_{\infty}\) has
 <b>clearly</b> curved upwards with the rebound of the epidemics in
-Brazil. The number of new cases has grown so much that for the first
-time the total number of cases at present (\(P(t)\)) is greater than the
-prediction of the logistic curve for the final number of infected
-people (\(P_{\infty}\)). The time scale of the plots has been changed to
+Brazil. The number of new cases has grown so much that now the total
+number of cases at present (\(P(t)\)) is greater than the prediction of
+the logistic curve for the final number of infected people
+(\(P_{\infty}\)). The time scale of the plots has been changed to
 monthly ticks, and extended to the end of 2021.
 </p>
 
@@ -422,7 +422,30 @@ as mais antigas). Here are the curve fittings, from latest to earliest.
 </p>
 
 <p>
-2021-02-05:
+2021-02-08:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0348.png" alt="cordtime-0348.png" />
+</p>
+</div>
+
+
+
+<p>
+2021-02-07:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0347.png" alt="cordtime-0347.png" />
+</p>
+</div>
+
+
+<p>
+2021-02-06:
 </p>
 
 
@@ -432,12 +455,22 @@ as mais antigas). Here are the curve fittings, from latest to earliest.
 </div>
 
 <p>
-2021-02-04:
+2021-02-05:
 </p>
 
 
 <div class="figure">
 <p><img src="./png/cordtime-0345.png" alt="cordtime-0345.png" />
+</p>
+</div>
+
+<p>
+2021-02-04:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0344.png" alt="cordtime-0344.png" />
 </p>
 </div>
 
@@ -2624,8 +2657,6 @@ as mais antigas). Here are the curve fittings, from latest to earliest.
 </div>
 
 
-
-
 <p>
 2020-07-25:
 </p>
@@ -3823,7 +3854,7 @@ as mais antigas). Here are the curve fittings, from latest to earliest.
 </div>
 
 <p>
-2020-04-06:
+2020-04-04:
 </p>
 
 
@@ -3833,7 +3864,7 @@ as mais antigas). Here are the curve fittings, from latest to earliest.
 </div>
 
 <p>
-2020-04-05:
+2020-04-03:
 </p>
 
 
@@ -3843,7 +3874,7 @@ as mais antigas). Here are the curve fittings, from latest to earliest.
 </div>
 
 <p>
-2020-04-04:
+2020-04-02:
 </p>
 
 
@@ -3853,7 +3884,7 @@ as mais antigas). Here are the curve fittings, from latest to earliest.
 </div>
 
 <p>
-2020-04-03:
+2020-04-01:
 </p>
 
 
@@ -3863,7 +3894,7 @@ as mais antigas). Here are the curve fittings, from latest to earliest.
 </div>
 
 <p>
-2020-04-02:
+2020-03-31:
 </p>
 
 
@@ -3873,7 +3904,7 @@ as mais antigas). Here are the curve fittings, from latest to earliest.
 </div>
 
 <p>
-2020-04-01:
+2020-03-30:
 </p>
 
 
@@ -3883,7 +3914,7 @@ as mais antigas). Here are the curve fittings, from latest to earliest.
 </div>
 
 <p>
-2020-03-31:
+2020-03-29:
 </p>
 
 
@@ -3893,7 +3924,7 @@ as mais antigas). Here are the curve fittings, from latest to earliest.
 </div>
 
 <p>
-2020-03-30:
+2020-03-28:
 </p>
 
 
@@ -3903,7 +3934,7 @@ as mais antigas). Here are the curve fittings, from latest to earliest.
 </div>
 
 <p>
-2020-03-29:
+2020-03-27:
 </p>
 
 
@@ -3913,7 +3944,7 @@ as mais antigas). Here are the curve fittings, from latest to earliest.
 </div>
 
 <p>
-2020-03-28:
+2020-03-26:
 </p>
 
 
@@ -3921,30 +3952,10 @@ as mais antigas). Here are the curve fittings, from latest to earliest.
 <p><img src="./png/cordtime-0029.png" alt="cordtime-0029.png" />
 </p>
 </div>
-
-<p>
-2020-03-27:
-</p>
-
-
-<div class="figure">
-<p><img src="./png/cordtime-0026.png" alt="cordtime-0026.png" />
-</p>
-</div>
-
-<p>
-2020-03-26:
-</p>
-
-
-<div class="figure">
-<p><img src="./png/cordtime-0025.png" alt="cordtime-0025.png" />
-</p>
-</div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2021-02-07 dom 10:47</p>
+<p class="date">Created: 2021-02-09 ter 14:59</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
