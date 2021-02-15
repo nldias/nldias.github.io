@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-02-08 seg 13:00 -->
+<!-- 2021-02-14 dom 09:46 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Covid19: Uma previsão dia-a-dia da extensão da crise</title>
@@ -385,14 +385,14 @@ of Health has once more changed their data format. I am back to using
 <hr />
 
 <p>
-2021-02-07T00:00:00
+2021-02-13T00:00:00
 </p>
 
 
 <p>
 A previsão do número total de casos, \(P_{\infty}\) curvou-se <b>claramente</b> para cima
 com o recrudescimento da epidemia no Brasil. Os novos casos aumentaram
-tanto que agora vez o número total de casos até o presente (\(P(t)\))
+tanto que agora o número total de casos até o presente (\(P(t)\))
 ultrapassa a própria previsão da curva logística para o número final
 de infectados (\(P_{\infty}\)). A escala de tempo dos gráficos agora é
 mensal, e foi estendida até o final de 2021.
@@ -402,10 +402,10 @@ mensal, e foi estendida até o final de 2021.
 <p>
 The prediction for the total number of cases, \(P_{\infty}\) has
 <b>clearly</b> curved upwards with the rebound of the epidemics in
-Brazil. The number of new cases has grown so much that for the first
-time the total number of cases at present (\(P(t)\)) is greater than the
-prediction of the logistic curve for the final number of infected
-people (\(P_{\infty}\)). The time scale of the plots has been changed to
+Brazil. The number of new cases has grown so much that now the total
+number of cases at present (\(P(t)\)) is greater than the prediction of
+the logistic curve for the final number of infected people
+(\(P_{\infty}\)). The time scale of the plots has been changed to
 monthly ticks, and extended to the end of 2021.
 </p>
 
@@ -420,6 +420,70 @@ monthly ticks, and extended to the end of 2021.
 Eis aqui o ajuste das curvas ao longo do tempo (das mais recentes para
 as mais antigas). Here are the curve fittings, from latest to earliest.
 </p>
+
+<p>
+2021-02-13:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0353.png" alt="cordtime-0353.png" />
+</p>
+</div>
+
+
+<p>
+2021-02-12:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0352.png" alt="cordtime-0352.png" />
+</p>
+</div>
+
+
+<p>
+2021-02-11:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0351.png" alt="cordtime-0351.png" />
+</p>
+</div>
+
+
+<p>
+2021-02-10:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0350.png" alt="cordtime-0350.png" />
+</p>
+</div>
+
+
+<p>
+2021-02-09:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0349.png" alt="cordtime-0349.png" />
+</p>
+</div>
+
+<p>
+2021-02-08:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0348.png" alt="cordtime-0348.png" />
+</p>
+</div>
 
 <p>
 2021-02-07:
@@ -3943,7 +4007,7 @@ as mais antigas). Here are the curve fittings, from latest to earliest.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2021-02-08 seg 13:00</p>
+<p class="date">Created: 2021-02-14 dom 09:46</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
