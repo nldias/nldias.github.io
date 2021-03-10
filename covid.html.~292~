@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-02-22 seg 09:36 -->
+<!-- 2021-03-04 qui 09:37 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Covid19: Uma previsão dia-a-dia da extensão da crise</title>
@@ -305,8 +305,8 @@ for the JavaScript code in this tag.
 <div id="content">
 <h1 class="title">Covid19: Uma previsão dia-a-dia da extensão da crise</h1>
 <p>
-This site is searchable. See HELP on the right (you may need to click around a
-few times until HELP shows up). 
+This site is searchable. See HELP on the right (you may need to click
+around a few times until HELP shows up).
 </p>
 
 <p>
@@ -385,16 +385,14 @@ of Health has once more changed their data format. I am back to using
 <hr />
 
 <p>
-2021-02-20T00:00:00
+2021-03-04T00:00:00
 </p>
 
 
 <p>
 A previsão do número total de casos, \(P_{\infty}\) curvou-se <b>claramente</b> para cima
-com o recrudescimento da epidemia no Brasil. Os novos casos aumentaram
-tanto que agora o número total de casos até o presente (\(P(t)\))
-ultrapassa a própria previsão da curva logística para o número final
-de infectados (\(P_{\infty}\)). A escala de tempo dos gráficos agora é
+com o recrudescimento da epidemia no Brasil.  
+A escala de tempo dos gráficos agora é
 mensal, e foi estendida até o final de 2021.
 </p>
 
@@ -402,10 +400,7 @@ mensal, e foi estendida até o final de 2021.
 <p>
 The prediction for the total number of cases, \(P_{\infty}\) has
 <b>clearly</b> curved upwards with the rebound of the epidemics in
-Brazil. The number of new cases has grown so much that now the total
-number of cases at present (\(P(t)\)) is greater than the prediction of
-the logistic curve for the final number of infected people
-(\(P_{\infty}\)). The time scale of the plots has been changed to
+Brazil. The time scale of the plots has been changed to
 monthly ticks, and extended to the end of 2021.
 </p>
 
@@ -422,6 +417,113 @@ as mais antigas). Here are the curve fittings, from latest to earliest.
 </p>
 
 <p>
+2021-03-03:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0371.png" alt="cordtime-0371.png" />
+</p>
+</div>
+
+
+<p>
+2021-03-02:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0370.png" alt="cordtime-0370.png" />
+</p>
+</div>
+
+
+<p>
+2021-03-01:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0369.png" alt="cordtime-0369.png" />
+</p>
+</div>
+
+
+<p>
+2021-02-28:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0368.png" alt="cordtime-0368.png" />
+</p>
+</div>
+
+
+<p>
+2021-02-27:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0367.png" alt="cordtime-0367.png" />
+</p>
+</div>
+
+
+<p>
+2021-02-26:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0366.png" alt="cordtime-0366.png" />
+</p>
+</div>
+
+<p>
+2021-02-25:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0365.png" alt="cordtime-0365.png" />
+</p>
+</div>
+
+<p>
+2021-02-24:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0364.png" alt="cordtime-0364.png" />
+</p>
+</div>
+
+
+<p>
+2021-02-23:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0363.png" alt="cordtime-0363.png" />
+</p>
+</div>
+
+
+<p>
+2021-02-22:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0362.png" alt="cordtime-0362.png" />
+</p>
+</div>
+
+<p>
 2021-02-21:
 </p>
 
@@ -430,7 +532,6 @@ as mais antigas). Here are the curve fittings, from latest to earliest.
 <p><img src="./png/cordtime-0361.png" alt="cordtime-0361.png" />
 </p>
 </div>
-
 
 <p>
 2021-02-20:
@@ -441,8 +542,6 @@ as mais antigas). Here are the curve fittings, from latest to earliest.
 <p><img src="./png/cordtime-0360.png" alt="cordtime-0360.png" />
 </p>
 </div>
-
-
 
 <p>
 2021-02-19:
@@ -4095,7 +4194,7 @@ as mais antigas). Here are the curve fittings, from latest to earliest.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2021-02-22 seg 09:36</p>
+<p class="date">Created: 2021-03-04 qui 09:37</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
