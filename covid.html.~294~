@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-02-25 qui 17:44 -->
+<!-- 2021-03-13 sáb 16:29 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Covid19: Uma previsão dia-a-dia da extensão da crise</title>
@@ -385,7 +385,7 @@ of Health has once more changed their data format. I am back to using
 <hr />
 
 <p>
-2021-02-24T00:00:00
+2021-03-12T00:00:00
 </p>
 
 
@@ -415,6 +415,173 @@ monthly ticks, and extended to the end of 2021.
 Eis aqui o ajuste das curvas ao longo do tempo (das mais recentes para
 as mais antigas). Here are the curve fittings, from latest to earliest.
 </p>
+
+<p>
+2021-03-12:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0380.png" alt="cordtime-0380.png" />
+</p>
+</div>
+
+
+<p>
+2021-03-11:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0379.png" alt="cordtime-0379.png" />
+</p>
+</div>
+
+
+<p>
+2021-03-10:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0378.png" alt="cordtime-0378.png" />
+</p>
+</div>
+
+
+<p>
+2021-03-09:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0377.png" alt="cordtime-0377.png" />
+</p>
+</div>
+
+<p>
+2021-03-08:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0376.png" alt="cordtime-0376.png" />
+</p>
+</div>
+
+<p>
+2021-03-07:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0375.png" alt="cordtime-0375.png" />
+</p>
+</div>
+
+<p>
+2021-03-06:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0374.png" alt="cordtime-0374.png" />
+</p>
+</div>
+
+<p>
+2021-03-05:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0373.png" alt="cordtime-0373.png" />
+</p>
+</div>
+
+<p>
+2021-03-04:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0372.png" alt="cordtime-0372.png" />
+</p>
+</div>
+
+<p>
+2021-03-03:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0371.png" alt="cordtime-0371.png" />
+</p>
+</div>
+
+<p>
+2021-03-02:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0370.png" alt="cordtime-0370.png" />
+</p>
+</div>
+
+
+<p>
+2021-03-01:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0369.png" alt="cordtime-0369.png" />
+</p>
+</div>
+
+
+<p>
+2021-02-28:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0368.png" alt="cordtime-0368.png" />
+</p>
+</div>
+
+
+<p>
+2021-02-27:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0367.png" alt="cordtime-0367.png" />
+</p>
+</div>
+
+
+<p>
+2021-02-26:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0366.png" alt="cordtime-0366.png" />
+</p>
+</div>
+
+<p>
+2021-02-25:
+</p>
+
+
+<div class="figure">
+<p><img src="./png/cordtime-0365.png" alt="cordtime-0365.png" />
+</p>
+</div>
 
 <p>
 2021-02-24:
@@ -4119,7 +4286,7 @@ as mais antigas). Here are the curve fittings, from latest to earliest.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2021-02-25 qui 17:44</p>
+<p class="date">Created: 2021-03-13 sáb 16:29</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
