@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-02-01 seg 16:17 -->
+<!-- 2021-07-06 Tue 14:18 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Nelson Luís Dias</title>
@@ -310,11 +310,11 @@ for the JavaScript code in this tag.
 <li><a href="#org8af6e9f">1. Bem-vindos (Welcome)</a></li>
 <li><a href="#org8eef6a0">2. Afiliação (Affiliation)</a></li>
 <li><a href="#org16c2884">3. Biografia (Biography)</a></li>
-<li><a href="#org4879a3b">4. Covid19</a></li>
-<li><a href="#org8d09b76">5. Blog</a></li>
-<li><a href="#orgefcc668">6. Pesquisa (Research)</a></li>
-<li><a href="#org6706488">7. Ensino (Teaching)</a></li>
-<li><a href="#org5ae5a0b">8. Livros e material didático (Books and educational material)</a></li>
+<li><a href="#org8d09b76">4. Blog</a></li>
+<li><a href="#orgefcc668">5. Pesquisa (Research)</a></li>
+<li><a href="#org6706488">6. Ensino (Teaching)</a></li>
+<li><a href="#org5ae5a0b">7. Livros e material didático (Books and educational material)</a></li>
+<li><a href="#org7cee332">8. Software</a></li>
 </ul>
 </div>
 </div>
@@ -323,7 +323,8 @@ for the JavaScript code in this tag.
 <h2 id="org8af6e9f"><span class="section-number-2">1</span> Bem-vindos (Welcome)</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-This site is searchable. See HELP on the right. 
+This site is searchable. See HELP on the right. And this is a
+test. And another
 </p>
 
 
@@ -404,7 +405,7 @@ Tel: +55-41-3320-2025
 </p>
 
 <p>
-<a href="mailto:nldias@ufpr.br">mailto:nldias@ufpr.br</a>
+<a href="mailto:nldias@ufpr.br">mailto:nldias@ufpr.br</a> 
 </p>
 </div>
 </div>
@@ -441,37 +442,33 @@ Program in Numerical Methods in Engineering, all at UFPR.
 </div>
 
 
-
-
-
-
-<div id="outline-container-org4879a3b" class="outline-2">
-<h2 id="org4879a3b"><span class="section-number-2">4</span> <a href="covid.html">Covid19</a></h2>
-</div>
-
 <div id="outline-container-org8d09b76" class="outline-2">
-<h2 id="org8d09b76"><span class="section-number-2">5</span> <a href="blog.html">Blog</a></h2>
+<h2 id="org8d09b76"><span class="section-number-2">4</span> <a href="blog.html">Blog</a></h2>
 </div>
+
 
 <div id="outline-container-orgefcc668" class="outline-2">
-<h2 id="orgefcc668"><span class="section-number-2">6</span> <a href="research.html">Pesquisa (Research)</a></h2>
+<h2 id="orgefcc668"><span class="section-number-2">5</span> <a href="research.html">Pesquisa (Research)</a></h2>
 </div>
 
 
 <div id="outline-container-org6706488" class="outline-2">
-<h2 id="org6706488"><span class="section-number-2">7</span> <a href="teaching.html">Ensino (Teaching)</a></h2>
-<div class="outline-text-2" id="text-7">
+<h2 id="org6706488"><span class="section-number-2">6</span> <a href="teaching.html">Ensino (Teaching)</a></h2>
+<div class="outline-text-2" id="text-6">
 </div>
 </div>
-
 
 <div id="outline-container-org5ae5a0b" class="outline-2">
-<h2 id="org5ae5a0b"><span class="section-number-2">8</span> <a href="books.html">Livros e material didático (Books and educational material)</a></h2>
+<h2 id="org5ae5a0b"><span class="section-number-2">7</span> <a href="books.html">Livros e material didático (Books and educational material)</a></h2>
+</div>
+
+<div id="outline-container-org7cee332" class="outline-2">
+<h2 id="org7cee332"><span class="section-number-2">8</span> <a href="software.html">Software</a></h2>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2021-02-01 seg 16:17</p>
+<p class="date">Created: 2021-07-06 Tue 14:18</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
