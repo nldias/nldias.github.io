@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-02-25 qui 17:16 -->
+<!-- 2021-02-27 sáb 12:35 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Nelson Luís Dias</title>
+<title>Software</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Nelson Luís Dias" />
 <style type="text/css">
@@ -249,7 +249,7 @@ org_html_manager.set("VIEW_BUTTONS", "1");
 org_html_manager.set("MOUSE_HINT", "underline");
 org_html_manager.set("FIXED_TOC", "0");
 org_html_manager.set("TOC", "1");
-org_html_manager.set("VIEW", "overview");
+org_html_manager.set("VIEW", "1");
 org_html_manager.setup();  // activate after the parameters are set
 /*]]>*///-->
 </script>
@@ -302,182 +302,56 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Nelson Luís Dias</h1>
+<h1 class="title">Software</h1>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org8af6e9f">1. Bem-vindos (Welcome)</a></li>
-<li><a href="#org8eef6a0">2. Afiliação (Affiliation)</a></li>
-<li><a href="#org16c2884">3. Biografia (Biography)</a></li>
-<li><a href="#org4879a3b">4. Covid19</a></li>
-<li><a href="#org8d09b76">5. Blog</a></li>
-<li><a href="#orgefcc668">6. Pesquisa (Research)</a></li>
-<li><a href="#org6706488">7. Ensino (Teaching)</a></li>
-<li><a href="#org5ae5a0b">8. Livros e material didático (Books and educational material)</a></li>
-<li><a href="#org7cee332">9. Software</a></li>
+<li><a href="#org13713f3">1. Chapel programming language</a>
+<ul>
+<li><a href="#orgbce8c1e">1.1. Geany syntax highlighting</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
+<p>
+This site is searchable. See HELP on the right (you may need to click around a
+few times until HELP shows up).
+</p>
 
-<div id="outline-container-org8af6e9f" class="outline-2">
-<h2 id="org8af6e9f"><span class="section-number-2">1</span> Bem-vindos (Welcome)</h2>
+
+<p>
+<a href="index.html">Home</a>
+</p>
+
+
+<div id="outline-container-org13713f3" class="outline-2">
+<h2 id="org13713f3"><span class="section-number-2">1</span> Chapel programming language</h2>
 <div class="outline-text-2" id="text-1">
-<p>
-This site is searchable. See HELP on the right. 
-</p>
-
-
-<div class="figure">
-<p><img src="img/nelson-points-smaller.jpg" alt="nelson-points-smaller.jpg" width="240px" />
-</p>
 </div>
-</div>
-</div>
-
-
-<div id="outline-container-org8eef6a0" class="outline-2">
-<h2 id="org8eef6a0"><span class="section-number-2">2</span> Afiliação (Affiliation)</h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-orgbce8c1e" class="outline-3">
+<h3 id="orgbce8c1e"><span class="section-number-3">1.1</span> Geany syntax highlighting</h3>
+<div class="outline-text-3" id="text-1-1">
 <p>
-Professor Titular, Departamento de Engenharia Ambiental, Universidade Federal
-do Paraná (<a href="http://www.dea.ufpr.br">http://www.dea.ufpr.br</a>)
-</p>
-<ul class="org-ul">
-<li>Curso de Graduação em Engenharia Ambiental (<a href="http://www.ambiental.ufpr.br">http://www.ambiental.ufpr.br</a>)</li>
-<li>Programa de Pós-Graduação em Engenharia Ambiental (<a href="http://www.ppgea.ufpr.br">http://www.ppgea.ufpr.br</a>)</li>
-<li>Programa de Pós-Graduação em Métodos Numéricos em Engenharia (<a href="http://www.ppgmne.ufpr.br">http://www.ppgmne.ufpr.br</a>)</li>
-</ul>
-
-<p>
-Atualmente:
-</p>
-<ul class="org-ul">
-<li>Coordenador do Lemma (Laboratório de Estudos em Monitoramento e Modelagem
-Ambiental: <a href="http://www.lemma.ufpr.br">http://www.lemma.ufpr.br</a>)</li>
-</ul>
-
-<hr />
-
-<p>
-Professor, Department of Environmental Engineering, Federal University of
-Paraná (<a href="http://www.dea.ufpr.br">http://www.dea.ufpr.br</a>)
-</p>
-<ul class="org-ul">
-<li>Environmental Engineering Course (<a href="http://www.ambiental.ufpr.br">http://www.ambiental.ufpr.br</a>)</li>
-<li>Graduate Program in Environmental Engineering (<a href="http://www.ppgea.ufpr.br">http://www.ppgea.ufpr.br</a>)</li>
-<li>Graduate Program in Numerical Methods in Engineering (<a href="http://www.ppgmne.ufpr.br">http://www.ppgmne.ufpr.br</a>)</li>
-</ul>
-
-<p>
-Currently:
-</p>
-<ul class="org-ul">
-<li>Head of Lemma (Lab for Environmental Monitoring and Modeling Analysis: <a href="http://www.lemma.ufpr.br">http://www.lemma.ufpr.br</a> )</li>
-</ul>
-
-<p>
-CV Lattes (Vita):  <a href="http://lattes.cnpq.br/5149356080083086">http://lattes.cnpq.br/5149356080083086</a>
+I have made a simple modification of the C syntax highlighter in Geany 
+(<a href="http://geany.org">http://geany.org</a>) to work with Chapel. The instructions are 
+<a href="./txt/geany-README.txt">here</a> and you will need these two files:
+<a href="./txt/filetype_extensions.conf">file type extensions</a> and <a href="./txt/filetypes.Chapel.conf">Chapel syntax highlighting for Geany</a>
 </p>
 
 <p>
-ORCID: <a href="https://orcid.org/0000-0002-9770-8595">https://orcid.org/0000-0002-9770-8595</a>​
-</p>
-
-<hr />
-
-<p>
-<a href="./pdf/dias--structure.pdf">Minha tese de doutorado | My PhD thesis</a> (com correções; with corrections)
-</p>
-
-
-<hr />
-
-<p>
-<a href="./pdf/memorial_nelsonluisdias.pdf">Memorial de progressão para o nível de Professor Titular</a>
-</p>
-
-<hr />
-
-
-<p>
-Tel: +55-41-3320-2025
-</p>
-
-<p>
-<a href="mailto:nldias@ufpr.br">mailto:nldias@ufpr.br</a> 
+<b>Note that these actions will not by themselves make the Geany IDE
+work, i.e., the buttons for compilation and building will not work if
+the path to the Chapel compiler is not recognized by Geany</b>
 </p>
 </div>
 </div>
-
-
-<div id="outline-container-org16c2884" class="outline-2">
-<h2 id="org16c2884"><span class="section-number-2">3</span> Biografia (Biography)</h2>
-<div class="outline-text-2" id="text-3">
-<p>
-Nasci no Rio de Janeiro em 1961. Fiz minha graduação em Engenharia Civil pela
-Universidade Federal do Rio de Janeiro (1983). Sou Mestre em Ciências em
-Engenharia Civil pela Universidade Federal do Rio de Janeiro (1986), e Doutor
-em Ciências em Engenharia Civil e Ambiental pela Universidade Cornell
-(1993). Em 2007, fiz um estágio sabático na Universidade da Geórgia. Desde
-1995, sou Professor da Universidade Federal do Paraná, onde atualmente sou
-Professor Titular no Departamento de Engenharia Ambiental. Leciono no Curso de
-Engenharia Ambiental, no Programa de Pós-Graduação em Métodos Numéricos em
-Engenharia, e no Programa de Pós-Graduação em Engenharia Ambiental.
-</p>
-
-<p>
-I was born in Rio de Janeiro, Brazil, in 1961. I graduated in Civil
-Engineering at the Federal University of Rio de Janeiro in 1983. In 1986, I
-got My Master's in Civil Engineering at the same university. I have a Ph.D. in
-Civil and Environmental Engineering from Cornell University (1993). In 2007, I
-spent a sabbatical year at the University of Georgia. Since 1995, I have been a
-professor at the Federal University of Paraná (UFPR) in Brazil. I am currently
-a Professor at the Environmental Engineering Department, and I teach
-undergraduate courses at the Environmental Engineering Course, and Graduate
-Courses at the Graduate Program in Environmental Engineering, and at the
-Program in Numerical Methods in Engineering, all at UFPR.
-</p>
-</div>
-</div>
-
-
-
-
-
-
-<div id="outline-container-org4879a3b" class="outline-2">
-<h2 id="org4879a3b"><span class="section-number-2">4</span> <a href="covid.html">Covid19</a></h2>
-</div>
-
-
-<div id="outline-container-org8d09b76" class="outline-2">
-<h2 id="org8d09b76"><span class="section-number-2">5</span> <a href="blog.html">Blog</a></h2>
-</div>
-
-
-<div id="outline-container-orgefcc668" class="outline-2">
-<h2 id="orgefcc668"><span class="section-number-2">6</span> <a href="research.html">Pesquisa (Research)</a></h2>
-</div>
-
-
-<div id="outline-container-org6706488" class="outline-2">
-<h2 id="org6706488"><span class="section-number-2">7</span> <a href="teaching.html">Ensino (Teaching)</a></h2>
-<div class="outline-text-2" id="text-7">
-</div>
-</div>
-
-<div id="outline-container-org5ae5a0b" class="outline-2">
-<h2 id="org5ae5a0b"><span class="section-number-2">8</span> <a href="books.html">Livros e material didático (Books and educational material)</a></h2>
-</div>
-
-<div id="outline-container-org7cee332" class="outline-2">
-<h2 id="org7cee332"><span class="section-number-2">9</span> <a href="software.html">Software</a></h2>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2021-02-25 qui 17:16</p>
+<p class="date">Created: 2021-02-27 sáb 12:35</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
