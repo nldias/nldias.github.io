@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Thoughts on computing, teaching, and most anything else &#x2026;</title>
-<!-- 2020-07-17 sex 15:34 -->
+<!-- 2021-12-22 Wed 14:39 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Nelson Luís Dias" />
@@ -461,11 +461,8 @@ nice: check out my reproduction, using LaTeX, of Gauckler's page:
 </p>
 </div>
 
-<ol class="org-ol">
-<li>Gauckler would probably have been 100% satisfied if his paper
-</li>
-</ol>
 <p>
+Monsieur Gauckler would probably have been 100% satisfied if his paper
 had been prepared with LaTeX. So now, finally, we have caught up: the
 computer-assisted typist has a dedicated typesetter, and typing has
 merged into typesetting.
@@ -511,8 +508,10 @@ Alas, there were a few quirks:
 
 <ol class="org-ol">
 <li>Jed does not have BASIC syntax highlighting
-</li>
+<ol class="org-ol">
 <li>Jed Cx-d (dired-mode) is broken inside a DOSbox.
+</li>
+</ol>
 </li>
 </ol>
 
@@ -2390,7 +2389,7 @@ coniventes: eles estão destruindo o futuro.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2020-07-17 sex 15:34</p>
+<p class="date">Created: 2021-12-22 Wed 14:39</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.2 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
