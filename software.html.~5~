@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="pt_BR" xml:lang="pt_BR">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-02-01 seg 16:17 -->
+<!-- 2022-02-25 sex 11:24 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Projeto da Escola Superior de Engenharia &amp; Tecnologia (ESSET) da UF&#x2026;</title>
+<title>Software</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Nelson Luís Dias" />
 <style type="text/css">
@@ -302,226 +302,56 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Projeto da Escola Superior de Engenharia &amp; Tecnologia (ESSET) da UF&#x2026;</h1>
+<h1 class="title">Software</h1>
 <div id="table-of-contents">
-<h2>&Iacute;ndice</h2>
+<h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgfea7f69">1. Motivação</a></li>
-<li><a href="#org0294d19">2. Princípios fundamentais da ESSET</a></li>
-<li><a href="#org1ca5560">3. A estrutura administrativa</a>
+<li><a href="#org4ea1243">1. Chapel programming language</a>
 <ul>
-<li><a href="#orgb929b40">3.1. A estrutura básica</a></li>
+<li><a href="#org5f83682">1.1. Geany syntax highlighting</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 <p>
+This site is searchable. See HELP on the right (you may need to click around a
+few times until HELP shows up).
+</p>
+
+
+<p>
 <a href="index.html">Home</a>
 </p>
 
 
-<div id="outline-container-orgfea7f69" class="outline-2">
-<h2 id="orgfea7f69"><span class="section-number-2">1</span> Motivação</h2>
+<div id="outline-container-org4ea1243" class="outline-2">
+<h2 id="org4ea1243"><span class="section-number-2">1</span> Chapel programming language</h2>
 <div class="outline-text-2" id="text-1">
-<p>
-Este é o projeto de uma Escola de Engenharia utópica. Colegas de Universidades Federais brasileiras, que o lerem, certamente notarão as grandes diferenças de nossas escolas reais. Provavelmente, o lugar em que trabalho, assim como tantos outros similares, nunca será assim. Mas não custa sonhar. E não custa sugerir que, partindo do que temos hoje, uma escola assim seria <i>possível</i>.
-</p>
-
-
-<p>
-Este é o projeto da <i>Escola Superior de Engenharia e Tecnologia</i> (ESSET) da
-UF&#x2026; Nossa visão é de que em 2030 a ESSET será:
-</p>
-
-
-<ul class="org-ul">
-<li>Uma Escola de Engenharia voltada para a pesquisa e para a inovação, ao par das
-melhores instituições nacionais de graduação e de pós-graduação em Engenharia.</li>
-<li>Uma escola onde o ensino de graduação e de pós-graduação sejam 100%
-integrados.</li>
-<li>Uma escola onde a educação dos alunos seja <i>flexível</i> e <i>continuada</i>,
-propiciando a melhor formação possível em todas as modalidades do ensino
-superior de Engenharia.</li>
-<li>Uma escola meritocrática, mas também justa, repleta de oportunidades para
-todos os seus alunos, independentemente de suas origens ou condições.</li>
-</ul>
-
-
-
-<p>
-A organização acadêmica e a organização institucional são as bases da construção
-de uma ESSET bem-sucedida. <i>Não é possível fazer ensino e pesquisa de alto  nível sem organização, cuidado com a eficiência, e bom uso do tempo e dos  recursos à nossa disposição</i>.
-</p>
-
-<p>
-Também não é possível fragmentar o ensino e a governança da ESSET em uma miríade
-de experiências e formatos locais (locais significando: departamentos, cursos de
-graduação e programas de pós-graduação), todos com suas virtudes e defeitos, se
-essas experiências e formatos criarem conflitos e <i>overhead</i> administrativo. Em
-vez disso, a ESSET deve construir a partir das fundações uma cultura acadêmica
-única, suficientemente flexível para abrigar todas as suas unidades
-administrativas e acadêmicas, porém ainda assim identificável por todos os seus
-membros, e conducente ao bom funcionamento e ao sucesso da ESSET.
-</p>
-
-<p>
-Eis portanto nossa visão: os departamentos deverão ser tanto quanto possível
-<i>pequenos</i>. Nossa principal preocupação deve ser com <i>qualidade</i>, e
-não com <i>quantidade</i>. Nossas disciplinas devem ser desenhadas com extremo
-cuidado e atenção à qualidade do conhecimento ensinado.  Além disso, as conexões
-entre as diversas disciplinas devem ser a parte mais importante, e mais
-cuidadosamente considerada, de cada projeto pedagógico.
-</p>
-
-<p>
-A experiência bem sucedida dos programas de pós-graduação brasileiros deve ser emulada na graduação. Isso deve ser feito <i>não para criar instâncias administrativas adicionais</i>, mas para tornar a administração acadêmica mais orgânica e simples. À imagem da Pós-Graduação, um conceito novo &#x2014; o Programa de Graduação de cada departamento &#x2014; poderá incluir vários cursos, sob um mesmo coordenador e
-administrado por um colegiado único. Neste momento, vislumbramos pelo menos dois cursos quase mandatórios: o Curso de Engenheiro, e o Curso de Tecnólogo (note a analogia com os Cursos de Mestrado e de Doutorado na Pós-Graduação).
-</p>
-
-<p>
-Pertencer à ESSET precisa ser motivo de orgulho e de entusiasmo. Queremos atrair
-alunos e professores de todo o País (e de todo o Mundo), porque queremos
-oferecer um ambiente altamente produtivo de trabalho e de estudo. Finalmente,
-</p>
-
-<blockquote>
-<p>
-Não queremos ser os melhores do País e do Mundo <i>ainda</i>, mas queremos ser tão
-bons quanto possível, e queremos ser vistos como uma escola que melhora sempre,
-com humildade e espírito de trabalho e superação.
-</p>
-</blockquote>
 </div>
-</div>
-
-
-
-<div id="outline-container-org0294d19" class="outline-2">
-<h2 id="org0294d19"><span class="section-number-2">2</span> Princípios fundamentais da ESSET</h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-org5f83682" class="outline-3">
+<h3 id="org5f83682"><span class="section-number-3">1.1</span> Geany syntax highlighting</h3>
+<div class="outline-text-3" id="text-1-1">
 <p>
-Para que o projeto da ESSET seja bem-sucedido, é fundamental que ela seja
-estabelecida sobre <i>princípios</i> a serem firmemente mantidos durante toda a sua
-construção. Esses princípios são os seguintes:
-</p>
-<dl class="org-dl">
-<dt>Ensino antes de tudo (<i>super omnes docentes</i>)</dt><dd>O principal objetivo da
-ESSET é a formação de engenheiros, tecnólogos e outros profissionais de
-nível superior <i>altamente qualificados</i>. Nossos egressos devem possuir
-um dos melhores ensinos superiores em Engenharia do país, e uma formação
-equivalente em nível, profundidade e abrangência de conhecimentos à das
-melhores escolas de Engenharia do mundo.  Nossos professores devem dar
-excelentes aulas, bem preparadas, que motivem os alunos e os entusiasmem
-para o exercício da Engenharia. Nossa sugestão é que <i>super omnes
-docentes</i> seja o lema da ESSET. <b>Atenção:</b> a frase em Latim não
-significa ``docentes acima de tudo'', mas sim ``Ensino acima de tudo''.</dd>
-
-<dt>Ética e Honestidade</dt><dd>Todas as atividades, processos seletivos, provas,
-pesquisas, etc., em suma, toda a vida acadêmica que ocorre dentro da
-ESSET dever ser norteada por um rígido código de ética e de conduta, que
-oriente as ações de professores, funcionários e de alunos sempre com
-base no respeito às leis, na convivência cordial e pacífica, na
-honestidade, e no respeito irrestrito a todos os seres humanos
-independentemente de suas origens e condições.</dd>
-
-<dt>Pesquisa de ponta</dt><dd>A pesquisa inovadora e de alto nível é uma condição
-<i>sine qua</i> para todo o corpo docente da ESSET, e é de fato um
-instrumento de melhoria constante do ensino. Nossos docentes devem estar
-entre os melhores pesquisadores do país em suas áreas de atuação,
-<i>sem prejuízo de nosso comprometimento com a formação em sala de aula de
-nossos alunos de graduação e de pós-graduação</i></dd>
-
-<dt>Projetos para mudar o Mundo</dt><dd>Nossa principal atividade de <i>extensão</i> deve
-ser a participação em projetos desafiadores de Engenharia no país e no
-exterior. Consequentemente, nossos professores e nossos alunos devem ser
-igualmente estimulados a participar de atividades de boa Engenharia, e
-de Engenharia de alto nível, além dos portões da ESSET.</dd>
-
-<dt>Igualdade</dt><dd>A visão meritocrática da ESSET não pode ser excludente:
-<ol class="org-ol">
-<li>O mérito apenas, e não considerações de classe, raça, ou gênero,
-deverão ser os critérios norteadores para a seleção de alunos e professores.</li>
-<li>A ESSET deverá implementar mecanismos de inclusão social que sejam
-<i>sustentáveis</i> e de <i>longo prazo</i>, incluindo atividades de nivelamento,
-e formação gradual (mais sobre isso a seguir) que permitam aos nossos
-alunos estender a sua formação ao longo de períodos mais longos durante
-os quais possam também trabalhar, etc..</li>
-</ol></dd>
-</dl>
-</div>
-</div>
-
-
-
-
-
-<div id="outline-container-org1ca5560" class="outline-2">
-<h2 id="org1ca5560"><span class="section-number-2">3</span> A estrutura administrativa</h2>
-<div class="outline-text-2" id="text-3">
-</div>
-
-
-<div id="outline-container-orgb929b40" class="outline-3">
-<h3 id="orgb929b40"><span class="section-number-3">3.1</span> A estrutura básica</h3>
-<div class="outline-text-3" id="text-3-1">
-<p>
-A ESSET deverá ser formada basicamente sobre departamentos. Esses departamentos
-precisam ser muito mais do que aquilo que entendemos hoje pelo nome. Eles devem
-<i>voltar a zelar diretamente pelo ensino e pela pesquisa</i>, além dos aspectos
-financeiros, administrativos, e de gestão de pessoal. Isso na verdade não é
-difícil, e será detalhado na sequência.
+I have made a simple modification of the C syntax highlighter in Geany 
+(<a href="http://geany.org">http://geany.org</a>) to work with Chapel. The instructions are 
+<a href="./txt/geany-README.txt">here</a> and you will need these two files:
+<a href="./txt/filetype_extensions.conf">file type extensions</a> and <a href="./txt/filetypes.Chapel.conf">Chapel syntax highlighting for Geany</a>
 </p>
 
 <p>
-A ESSET será constituída, portanto, dos seguintes departamentos:
+<b>Note that these actions will not by themselves make the Geany IDE
+work, i.e., the buttons for compilation and building will not work if
+the path to the Chapel compiler is not recognized by Geany</b>
 </p>
-<ol class="org-ol">
-<li>Departamento de Ciências de Engenharia (DCIE)</li>
-<li>Departamento de Engenharia Ambiental (DEA)</li>
-<li>Departamento de Engenharia Civil (DEC)</li>
-<li>Departamento de Engenharia Elétrica (DEE)</li>
-<li>Departamento de Engenharia Mecânica (DEM)</li>
-<li>Departamento de Engenharia de Materiais (DEMAT)</li>
-<li>Departamento de Engenharia de Produção (DEP)</li>
-<li>Departamento de Engenharia Química (DEQ)</li>
-</ol>
-
-
-<p>
-O órgão máximo da ESSET, o Conselho da Escola de Engenharia (CEE), será constituído
-pelos:
-</p>
-<ul class="org-ul">
-<li>Diretor-geral da ESSET.</li>
-<li>Diretor de graduação da ESSET (e 1<sup>o</sup> suplente).</li>
-<li>Diretor de pesquisa, pós-graduação e extensão da ESSET (e 2<sup>o</sup> suplente).</li>
-<li>Chefes de Departamento.</li>
-<li>Representantes técnico-administrativos, perfazendo um total de 10% dos membros do CEE.</li>
-<li>Representates discentes, dividos igualmente entre representantes discentes de graduação e de pós-graduação, perfazendo um total de 20% dos membros do CEE.</li>
-</ul>
-
-
-<p>
-A figura <a href="#org20ef3b8">1</a>  mostra essa estrutura.
-</p>
-
-
-
-
-<div id="org20ef3b8" class="figure">
-<p><img src="./img/cesset.jpg" alt="cesset.jpg" />
-</p>
-<p><span class="figure-number">Figura 1: </span>A estrutura departamental da ESSET</p>
-</div>
 </div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="author">Autor: Nelson Luís Dias</p>
-<p class="date">Created: 2021-02-01 seg 16:17</p>
+<p class="author">Author: Nelson Luís Dias</p>
+<p class="date">Created: 2022-02-25 sex 11:24</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
