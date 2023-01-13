@@ -1,0 +1,29 @@
+As I have argued in my 2022 CHIUW talk (you can watch the video at
+[https://l.facebook.com/l.php?u=https%3A%2F%2Fyoutube.com%2Fwatch%3Fv%3D400jmMzdzHQ%26fbclid%3DIwAR01DSFB0ynZnBbdGhyX0X2gD56yWzmVw1Tfeqtd4HD9zQwQwVUcl9n7tZU&h=AT2yy5TaDGS0_rzbnpMIbXjGqpgOmKhiBgl__S8okbIqrE9DPg5GJmNS3Ni3TJP8QymoIMtvo2Ep1ZKiBWOIEZ-Fo839mw7Zh-nR0Vma5-EnwT72lTLQDAzYhYFm0DwMxl-2VCJiRDk5&__tn__=-UK-R&c[0]=AT1_HdoPp5CKOyXBklt4MB8CKJziEe4kfYQM-PAdhbD-8MbwwIeSl6hSonGyU3seGswi_dFRuDZRGQHQbeCAJeXcq3ktBOq-EbHiW35cI7JsGG4QMqPoHJi-e2Eod5VcQ3H3qaG7CsOLmaIKPC4JBC6Me2-UOwN1YZ0HuKtxm4i57o1_sJ-F7mwUeJpac_0LEQzflGmhtFEx]),
+Chapel is rather usable as a general purpose programming language on
+the desktop for (in my case) engineering and scientific research, and
+is now my main language, substituting Fortran, C and Python.  "Desk
+dot chpl" is rather an ensemble of useful routines than a specific
+project; consider them an unpretentious, and far from professional,
+toolbox. Here is the list of the modules;  they can be found at
+[https://nldias.github.io/software.html]:
+   - angles :: from radians to decimals and the other way around.
+   - atmgas :: atmospheric gas properties and manipulation.
+   - dgrow :: dynamically grow an array to fit an index.
+   - nspectrum :: the spectrum from a single FFT.
+   - nstat :: statistical stuff.
+   - nstrings :: additional string manipulation.
+   - pmatrix :: parallel matrix operations.
+   - smatrix :: serial matrix operations.
+   - ssr :: sort, search, etc. in an array.
+   - water :: properties of liquid water.
+
+
+
+
+I am
+putting my personal Chapel modules under the
+[[https://www.gnu.org/licenses/gpl-3.0.en.html][GPL license]].  Note
+that these are not professional routines, but unpretentious stuff that
+I have found useful enough to put into modules for re-use. I cannot
+guarantee that they are bug-free. At any rate, here they are:
