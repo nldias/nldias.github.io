@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-03-06 Mon 10:09 -->
+<!-- 2023-04-05 qua 16:20 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Software</title>
@@ -161,19 +161,6 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
-  .equation-container {
-    display: table;
-    text-align: center;
-    width: 100%;
-  }
-  .equation {
-    vertical-align: middle;
-  }
-  .equation-label {
-    display: table-cell;
-    text-align: right;
-    vertical-align: middle;
-  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -203,7 +190,7 @@
  * @licstart  The following is the entire license notice for the
  *  JavaScript code in org-info.js.
  *
- * Copyright (C) 2012-2020 Free Software Foundation, Inc.
+ * Copyright (C) 2012-2019 Free Software Foundation, Inc.
  *
  *
  * The JavaScript code in this tag is free software: you can
@@ -232,7 +219,7 @@
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -271,7 +258,7 @@ org_html_manager.setup();  // activate after the parameters are set
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -320,10 +307,10 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org4ea1243">1. Chapel programming language</a>
+<li><a href="#org13713f3">1. Chapel programming language</a>
 <ul>
-<li><a href="#org083371a">1.1. Desk dot chpl</a></li>
-<li><a href="#org5f83682">1.2. Geany syntax highlighting</a></li>
+<li><a href="#org3023dee">1.1. Desk dot chpl</a></li>
+<li><a href="#orgbce8c1e">1.2. Geany syntax highlighting</a></li>
 </ul>
 </li>
 </ul>
@@ -340,15 +327,15 @@ few times until HELP shows up).
 </p>
 
 
-<div id="outline-container-org4ea1243" class="outline-2">
-<h2 id="org4ea1243"><span class="section-number-2">1</span> Chapel programming language</h2>
+<div id="outline-container-org13713f3" class="outline-2">
+<h2 id="org13713f3"><span class="section-number-2">1</span> Chapel programming language</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org083371a" class="outline-3">
-<h3 id="org083371a"><span class="section-number-3">1.1</span> Desk dot chpl</h3>
+<div id="outline-container-org3023dee" class="outline-3">
+<h3 id="org3023dee"><span class="section-number-3">1.1</span> Desk dot chpl</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
-As I have argued in my 2022 CHIUW talk (you can watch the video <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fyoutube.com%2Fwatch%3Fv%3D400jmMzdzHQ%26fbclid%3DIwAR01DSFB0ynZnBbdGhyX0X2gD56yWzmVw1Tfeqtd4HD9zQwQwVUcl9n7tZU&amp;h=AT2yy5TaDGS0_rzbnpMIbXjGqpgOmKhiBgl__S8okbIqrE9DPg5GJmNS3Ni3TJP8QymoIMtvo2Ep1ZKiBWOIEZ-Fo839mw7Zh-nR0Vma5-EnwT72lTLQDAzYhYFm0DwMxl-2VCJiRDk5&amp;__tn__=-UK-R&amp;c%5B0%5D=AT1_HdoPp5CKOyXBklt4MB8CKJziEe4kfYQM-PAdhbD-8MbwwIeSl6hSonGyU3seGswi_dFRuDZRGQHQbeCAJeXcq3ktBOq-EbHiW35cI7JsGG4QMqPoHJi-e2Eod5VcQ3H3qaG7CsOLmaIKPC4JBC6Me2-UOwN1YZ0HuKtxm4i57o1_sJ-F7mwUeJpac_0LEQzflGmhtFEx">here</a>),
+As I have argued in my 2022 CHIUW talk (you can watch the video [[<a href="https://l.facebook.com/l.php?u=https://youtube.com/watch?v=400jmMzdzHQ&amp;fbclid=IwAR01DSFB0ynZnBbdGhyX0X2gD56yWzmVw1Tfeqtd4HD9zQwQwVUcl9n7tZU&amp;h=AT2yy5TaDGS0_rzbnpMIbXjGqpgOmKhiBgl__S8okbIqrE9DPg5GJmNS3Ni3TJP8QymoIMtvo2Ep1ZKiBWOIEZ-Fo839mw7Zh-nR0Vma5-EnwT72lTLQDAzYhYFm0DwMxl-2VCJiRDk5&amp;__tn__=-UK-R&amp;c">https://l.facebook.com/l.php?u=https://youtube.com/watch?v=400jmMzdzHQ&amp;fbclid=IwAR01DSFB0ynZnBbdGhyX0X2gD56yWzmVw1Tfeqtd4HD9zQwQwVUcl9n7tZU&amp;h=AT2yy5TaDGS0_rzbnpMIbXjGqpgOmKhiBgl__S8okbIqrE9DPg5GJmNS3Ni3TJP8QymoIMtvo2Ep1ZKiBWOIEZ-Fo839mw7Zh-nR0Vma5-EnwT72lTLQDAzYhYFm0DwMxl-2VCJiRDk5&amp;__tn__=-UK-R&amp;c</a>[0]=AT1<sub>HdoPp5CKOyXBklt4MB8CKJziEe4kfYQM</sub>-PAdhbD-8MbwwIeSl6hSonGyU3seGswi<sub>dFRuDZRGQHQbeCAJeXcq3ktBOq</sub>-EbHiW35cI7JsGG4QMqPoHJi-e2Eod5VcQ3H3qaG7CsOLmaIKPC4JBC6Me2-UOwN1YZ0HuKtxm4i57o1<sub>sJ</sub>-F7mwUeJpac<sub>0LEQzflGmhtFEx</sub>][here]]),
 Chapel is rather usable as a general purpose programming language on
 the desktop for (in my case) engineering and scientific research, and
 is now my main language, substituting Fortran, C and Python.
@@ -374,8 +361,8 @@ cannot guarantee that they are bug-free. At any rate, here they are:
 </div>
 </div>
 
-<div id="outline-container-org5f83682" class="outline-3">
-<h3 id="org5f83682"><span class="section-number-3">1.2</span> Geany syntax highlighting</h3>
+<div id="outline-container-orgbce8c1e" class="outline-3">
+<h3 id="orgbce8c1e"><span class="section-number-3">1.2</span> Geany syntax highlighting</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 I have made a simple modification of the C syntax highlighter in Geany 
@@ -395,7 +382,7 @@ the path to the Chapel compiler is not recognized by Geany</b>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2023-03-06 Mon 10:09</p>
+<p class="date">Created: 2023-04-05 qua 16:20</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
