@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-02-25 sex 11:24 -->
+<!-- 2022-09-16 sex 20:16 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>&lrm;</title>
+<title>Livros e material didático (Books and educational material)</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Nelson Luís Dias" />
 <style type="text/css">
@@ -161,6 +161,19 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -180,12 +193,85 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
+<link rel="stylesheet" type="text/css" href="readtheorg.css" />
+
+<script type="text/javascript" src="org-info.js">
+/**
+ *
+ * @source: org-info.js
+ *
+ * @licstart  The following is the entire license notice for the
+ *  JavaScript code in org-info.js.
+ *
+ * Copyright (C) 2012-2020 Free Software Foundation, Inc.
+ *
+ *
+ * The JavaScript code in this tag is free software: you can
+ * redistribute it and/or modify it under the terms of the GNU
+ * General Public License (GNU GPL) as published by the Free Software
+ * Foundation, either version 3 of the License, or (at your option)
+ * any later version.  The code is distributed WITHOUT ANY WARRANTY;
+ * without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+ *
+ * As additional permission under GNU GPL version 3 section 7, you
+ * may distribute non-source (e.g., minimized or compacted) forms of
+ * that code without the copy of the GNU GPL normally required by
+ * section 4, provided you include this license notice and a URL
+ * through which recipients can access the Corresponding Source.
+ *
+ * @licend  The above is the entire license notice
+ * for the JavaScript code in org-info.js.
+ *
+ */
+</script>
+
+<script type="text/javascript">
+
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+
+<!--/*--><![CDATA[/*><!--*/
+org_html_manager.set("TOC_DEPTH", "4");
+org_html_manager.set("LINK_HOME", "");
+org_html_manager.set("LINK_UP", "");
+org_html_manager.set("LOCAL_TOC", "1");
+org_html_manager.set("VIEW_BUTTONS", "1");
+org_html_manager.set("MOUSE_HINT", "underline");
+org_html_manager.set("FIXED_TOC", "0");
+org_html_manager.set("TOC", "1");
+org_html_manager.set("VIEW", "1");
+org_html_manager.setup();  // activate after the parameters are set
+/*]]>*///-->
+</script>
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2019 Free Software Foundation, Inc.
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -229,24 +315,54 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
+<h1 class="title">Livros e material didático (Books and educational material)</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org552aa4d">1. Pequena Introdução aos Números: link da editora</a></li>
+<li><a href="#orgcd0f078">2. Uma Introdução aos Métodos Matemáticos para Engenharia (Portuguese): matappa-1ed.pdf</a></li>
+<li><a href="#org06578a9">3. Uma Introdução aos Métodos Matemáticos para Engenharia &#x2013; 2a edição em preparação (Portuguese): matappa-2ed.pdf</a></li>
+<li><a href="#orgf2cf0c0">4. Lições Práticas de Métodos Matemáticos em Engenharia Ambiental (Portuguese) (Notas de aula, TEA752): apple.pdf</a></li>
+<li><a href="#org3e94be3">5. Mecânica da Turbulência (Portuguese) (Notas de aula, TEA757): mecturbi.pdf</a></li>
+</ul>
+</div>
+</div>
 <p>
-Não é mais possível falar do coração, quase nunca,
-porque todos nos ouvem, e todos nos veem, a todo tempo.
-Com a modéstia e o respeito que temos de nós mesmos, nos retraímos. 
-Toda a liberdade de sermos o que somos vai se apagando, num silêncio
-reverencial aos microfones e câmeras em torno dos quais fomos
-aceitando que nossas vidas fossem circunscritas.
-Encontramos nossos códigos, nossas alternativas, para deixar o coração
-falar, da mesma maneira que fazíamos nos anos difíceis das muitas
-ditaduras que nos amordaçaram. Em uma guerra absurda de ideias
-(ideologias?), de falta de ideias, e de perda de rumo, quase todos nós
-preferimos nos calar. Deixamos, sem saber, que falassem os
-sem-sentido, e os sem-valores.
+This site is searchable. See HELP on the right (you may need to click around a
+few times until HELP shows up). 
 </p>
+
+<p>
+<a href="index.html">Home</a>
+</p>
+
+
+
+
+<div id="outline-container-org552aa4d" class="outline-2">
+<h2 id="org552aa4d"><span class="section-number-2">1</span> Pequena Introdução aos Números: <a href="http://www.intersaberes.com/item-catalogo/pequena-introducao-aos-numeros/">link da editora</a></h2>
+</div>
+
+
+<div id="outline-container-orgcd0f078" class="outline-2">
+<h2 id="orgcd0f078"><span class="section-number-2">2</span> Uma Introdução aos Métodos Matemáticos para Engenharia (Portuguese): <a href="./pdf/matappa-1ed.pdf">matappa-1ed.pdf</a></h2>
+</div>
+
+
+<div id="outline-container-org06578a9" class="outline-2">
+<h2 id="org06578a9"><span class="section-number-2">3</span> Uma Introdução aos Métodos Matemáticos para Engenharia &#x2013; 2a edição em preparação (Portuguese): <a href="./pdf/matappa-2ed.pdf">matappa-2ed.pdf</a></h2>
+</div>
+<div id="outline-container-orgf2cf0c0" class="outline-2">
+<h2 id="orgf2cf0c0"><span class="section-number-2">4</span> Lições Práticas de Métodos Matemáticos em Engenharia Ambiental (Portuguese) (Notas de aula, TEA752): <a href="./pdf/apple.pdf">apple.pdf</a></h2>
+</div>
+<div id="outline-container-org3e94be3" class="outline-2">
+<h2 id="org3e94be3"><span class="section-number-2">5</span> Mecânica da Turbulência (Portuguese) (Notas de aula, TEA757): <a href="./pdf/mecturbi.pdf">mecturbi.pdf</a></h2>
+</div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2022-02-25 sex 11:24</p>
+<p class="date">Created: 2022-09-16 sex 20:16</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
