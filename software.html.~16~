@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-03-06 Mon 10:09 -->
+<!-- 2023-05-03 qua 14:13 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Software</title>
@@ -348,6 +348,11 @@ few times until HELP shows up).
 <h3 id="org083371a"><span class="section-number-3">1.1</span> Desk dot chpl</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
+<a href="./pdf/deskdot.pdf">./pdf/deskdot.pdf</a>
+</p>
+
+
+<p>
 As I have argued in my 2022 CHIUW talk (you can watch the video <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fyoutube.com%2Fwatch%3Fv%3D400jmMzdzHQ%26fbclid%3DIwAR01DSFB0ynZnBbdGhyX0X2gD56yWzmVw1Tfeqtd4HD9zQwQwVUcl9n7tZU&amp;h=AT2yy5TaDGS0_rzbnpMIbXjGqpgOmKhiBgl__S8okbIqrE9DPg5GJmNS3Ni3TJP8QymoIMtvo2Ep1ZKiBWOIEZ-Fo839mw7Zh-nR0Vma5-EnwT72lTLQDAzYhYFm0DwMxl-2VCJiRDk5&amp;__tn__=-UK-R&amp;c%5B0%5D=AT1_HdoPp5CKOyXBklt4MB8CKJziEe4kfYQM-PAdhbD-8MbwwIeSl6hSonGyU3seGswi_dFRuDZRGQHQbeCAJeXcq3ktBOq-EbHiW35cI7JsGG4QMqPoHJi-e2Eod5VcQ3H3qaG7CsOLmaIKPC4JBC6Me2-UOwN1YZ0HuKtxm4i57o1_sJ-F7mwUeJpac_0LEQzflGmhtFEx">here</a>),
 Chapel is rather usable as a general purpose programming language on
 the desktop for (in my case) engineering and scientific research, and
@@ -395,7 +400,7 @@ the path to the Chapel compiler is not recognized by Geany</b>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2023-03-06 Mon 10:09</p>
+<p class="date">Created: 2023-05-03 qua 14:13</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
