@@ -3,14 +3,14 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-06-27 qui 16:27 -->
+<!-- 2024-09-13 Fri 13:55 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Software</title>
-<meta name="generator" content="Org mode" />
 <meta name="author" content="Nelson Luís Dias" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -31,8 +31,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -40,22 +41,22 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
+    overflow: auto;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -190,70 +191,17 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
-  /*]]>*/-->
+  .org-svg { }
 </style>
 <link rel="stylesheet" type="text/css" href="readtheorg.css" />
 
-<script type="text/javascript" src="org-info.js">
-/**
- *
- * @source: org-info.js
- *
- * @licstart  The following is the entire license notice for the
- *  JavaScript code in org-info.js.
- *
- * Copyright (C) 2012-2020 Free Software Foundation, Inc.
- *
- *
- * The JavaScript code in this tag is free software: you can
- * redistribute it and/or modify it under the terms of the GNU
- * General Public License (GNU GPL) as published by the Free Software
- * Foundation, either version 3 of the License, or (at your option)
- * any later version.  The code is distributed WITHOUT ANY WARRANTY;
- * without even the implied warranty of MERCHANTABILITY or FITNESS
- * FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
- *
- * As additional permission under GNU GPL version 3 section 7, you
- * may distribute non-source (e.g., minimized or compacted) forms of
- * that code without the copy of the GNU GPL normally required by
- * section 4, provided you include this license notice and a URL
- * through which recipients can access the Corresponding Source.
- *
- * @licend  The above is the entire license notice
- * for the JavaScript code in org-info.js.
- *
- */
+<script src="org-info.js">
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+// @license-end
 </script>
 
-<script type="text/javascript">
-
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-
-<!--/*--><![CDATA[/*><!--*/
+<script>
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
 org_html_manager.set("TOC_DEPTH", "4");
 org_html_manager.set("LINK_HOME", "");
 org_html_manager.set("LINK_UP", "");
@@ -264,66 +212,20 @@ org_html_manager.set("FIXED_TOC", "0");
 org_html_manager.set("TOC", "1");
 org_html_manager.set("VIEW", "1");
 org_html_manager.setup();  // activate after the parameters are set
-/*]]>*///-->
-</script>
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+// @license-end
 </script>
 </head>
 <body>
-<div id="content">
+<div id="content" class="content">
 <h1 class="title">Software</h1>
-<div id="table-of-contents">
+<div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents">
+<div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org5746a4e">1. Chapel programming language</a>
+<li><a href="#org7e171cd">1. Chapel programming language</a>
 <ul>
-<li><a href="#org1eb9aeb">1.1. Desk dot chpl</a></li>
-<li><a href="#org46dc962">1.2. Geany syntax highlighting</a></li>
+<li><a href="#org2f31cdb">1.1. Desk dot chpl</a></li>
+<li><a href="#org059a0e2">1.2. Geany syntax highlighting</a></li>
 </ul>
 </li>
 </ul>
@@ -340,22 +242,22 @@ few times until HELP shows up).
 </p>
 
 
-<div id="outline-container-org5746a4e" class="outline-2">
-<h2 id="org5746a4e"><span class="section-number-2">1</span> Chapel programming language</h2>
+<div id="outline-container-org7e171cd" class="outline-2">
+<h2 id="org7e171cd"><span class="section-number-2">1.</span> Chapel programming language</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org1eb9aeb" class="outline-3">
-<h3 id="org1eb9aeb"><span class="section-number-3">1.1</span> Desk dot chpl</h3>
+<div id="outline-container-org2f31cdb" class="outline-3">
+<h3 id="org2f31cdb"><span class="section-number-3">1.1.</span> Desk dot chpl</h3>
 <div class="outline-text-3" id="text-1-1">
 
-<div class="figure">
+<div id="org89d24a1" class="figure">
 <p><img src="./png/deskdot.png" alt="deskdot.png" />
 </p>
 </div>
 
 
 <p>
-As I have argued in my 2022 CHIUW talk (you can watch the video <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fyoutube.com%2Fwatch%3Fv%3D400jmMzdzHQ%26fbclid%3DIwAR01DSFB0ynZnBbdGhyX0X2gD56yWzmVw1Tfeqtd4HD9zQwQwVUcl9n7tZU&amp;h=AT2yy5TaDGS0_rzbnpMIbXjGqpgOmKhiBgl__S8okbIqrE9DPg5GJmNS3Ni3TJP8QymoIMtvo2Ep1ZKiBWOIEZ-Fo839mw7Zh-nR0Vma5-EnwT72lTLQDAzYhYFm0DwMxl-2VCJiRDk5&amp;__tn__=-UK-R&amp;c%5B0%5D=AT1_HdoPp5CKOyXBklt4MB8CKJziEe4kfYQM-PAdhbD-8MbwwIeSl6hSonGyU3seGswi_dFRuDZRGQHQbeCAJeXcq3ktBOq-EbHiW35cI7JsGG4QMqPoHJi-e2Eod5VcQ3H3qaG7CsOLmaIKPC4JBC6Me2-UOwN1YZ0HuKtxm4i57o1_sJ-F7mwUeJpac_0LEQzflGmhtFEx">here</a>),
+As I have argued in my 2022 CHIUW talk (you can watch the video [[<a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fyoutube.com%2Fwatch%3Fv%3D400jmMzdzHQ%26fbclid%3DIwAR01DSFB0ynZnBbdGhyX0X2gD56yWzmVw1Tfeqtd4HD9zQwQwVUcl9n7tZU&amp;h=AT2yy5TaDGS0_rzbnpMIbXjGqpgOmKhiBgl__S8okbIqrE9DPg5GJmNS3Ni3TJP8QymoIMtvo2Ep1ZKiBWOIEZ-Fo839mw7Zh-nR0Vma5-EnwT72lTLQDAzYhYFm0DwMxl-2VCJiRDk5&amp;__tn__=-UK-R&amp;c">https://l.facebook.com/l.php?u=https%3A%2F%2Fyoutube.com%2Fwatch%3Fv%3D400jmMzdzHQ%26fbclid%3DIwAR01DSFB0ynZnBbdGhyX0X2gD56yWzmVw1Tfeqtd4HD9zQwQwVUcl9n7tZU&amp;h=AT2yy5TaDGS0_rzbnpMIbXjGqpgOmKhiBgl__S8okbIqrE9DPg5GJmNS3Ni3TJP8QymoIMtvo2Ep1ZKiBWOIEZ-Fo839mw7Zh-nR0Vma5-EnwT72lTLQDAzYhYFm0DwMxl-2VCJiRDk5&amp;__tn__=-UK-R&amp;c</a>[0]=AT1<sub>HdoPp5CKOyXBklt4MB8CKJziEe4kfYQM</sub>-PAdhbD-8MbwwIeSl6hSonGyU3seGswi<sub>dFRuDZRGQHQbeCAJeXcq3ktBOq</sub>-EbHiW35cI7JsGG4QMqPoHJi-e2Eod5VcQ3H3qaG7CsOLmaIKPC4JBC6Me2-UOwN1YZ0HuKtxm4i57o1<sub>sJ</sub>-F7mwUeJpac<sub>0LEQzflGmhtFEx</sub>][here]]),
 Chapel is rather usable as a general purpose programming language on
 the desktop for (in my case) engineering and scientific research, and
 is now my main language, substituting Fortran, C and Python.
@@ -387,8 +289,8 @@ and meteorology:  <a href="https://www.dropbox.com/scl/fi/r7wjipsl0pzewdxm7txyd/
 </div>
 
 
-<div id="outline-container-org46dc962" class="outline-3">
-<h3 id="org46dc962"><span class="section-number-3">1.2</span> Geany syntax highlighting</h3>
+<div id="outline-container-org059a0e2" class="outline-3">
+<h3 id="org059a0e2"><span class="section-number-3">1.2.</span> Geany syntax highlighting</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 I have made a simple modification of the C syntax highlighter in Geany 
@@ -408,8 +310,8 @@ the path to the Chapel compiler is not recognized by Geany</b>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2024-06-27 qui 16:27</p>
-<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+<p class="date">Created: 2024-09-13 Fri 13:55</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>

@@ -3,14 +3,14 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-04-11 Tue 20:27 -->
+<!-- 2024-09-13 Fri 13:55 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Thoughts on computing, teaching, and most anything else &#x2026;</title>
-<meta name="generator" content="Org mode" />
 <meta name="author" content="Nelson Luís Dias" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -31,8 +31,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -40,22 +41,22 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
+    overflow: auto;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -190,70 +191,17 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
-  /*]]>*/-->
+  .org-svg { }
 </style>
 <link rel="stylesheet" type="text/css" href="readtheorg.css" />
 
-<script type="text/javascript" src="org-info.js">
-/**
- *
- * @source: org-info.js
- *
- * @licstart  The following is the entire license notice for the
- *  JavaScript code in org-info.js.
- *
- * Copyright (C) 2012-2020 Free Software Foundation, Inc.
- *
- *
- * The JavaScript code in this tag is free software: you can
- * redistribute it and/or modify it under the terms of the GNU
- * General Public License (GNU GPL) as published by the Free Software
- * Foundation, either version 3 of the License, or (at your option)
- * any later version.  The code is distributed WITHOUT ANY WARRANTY;
- * without even the implied warranty of MERCHANTABILITY or FITNESS
- * FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
- *
- * As additional permission under GNU GPL version 3 section 7, you
- * may distribute non-source (e.g., minimized or compacted) forms of
- * that code without the copy of the GNU GPL normally required by
- * section 4, provided you include this license notice and a URL
- * through which recipients can access the Corresponding Source.
- *
- * @licend  The above is the entire license notice
- * for the JavaScript code in org-info.js.
- *
- */
+<script src="org-info.js">
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+// @license-end
 </script>
 
-<script type="text/javascript">
-
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-
-<!--/*--><![CDATA[/*><!--*/
+<script>
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
 org_html_manager.set("TOC_DEPTH", "4");
 org_html_manager.set("LINK_HOME", "");
 org_html_manager.set("LINK_UP", "");
@@ -264,90 +212,44 @@ org_html_manager.set("FIXED_TOC", "0");
 org_html_manager.set("TOC", "1");
 org_html_manager.set("VIEW", "1");
 org_html_manager.setup();  // activate after the parameters are set
-/*]]>*///-->
-</script>
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+// @license-end
 </script>
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 <body>
-<div id="content">
+<div id="content" class="content">
 <h1 class="title">Thoughts on computing, teaching, and most anything else &#x2026;</h1>
-<div id="table-of-contents">
+<div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents">
+<div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org9a69c6c">1. 2020-07-16T18:36:42 &#x2013; Voyages in isolation: typewriting pursues typesetting</a></li>
-<li><a href="#org7c5495b">2. 2020-06-20T15:37:50 &#x2013; Voyages in isolation: the DOS editors</a></li>
-<li><a href="#orgc7603b2">3. 2020-06-14T10:30:37 &#x2013; Voyages in isolation: a working DOS environment</a></li>
-<li><a href="#orgcb3aed3">4. 2020-05-24T11:37:36 &#x2013; Voyages in isolation: Acentos em DOS (Box)</a></li>
-<li><a href="#org92198e9">5. 2020-04-26T08:56:35 &#x2013; Voyages in isolation: TinyTeX</a></li>
-<li><a href="#org56ca6bf">6. 2019-10-27T11:29:44 &#x2013; Linux has become boring</a></li>
-<li><a href="#orgec65f30">7. 2019-09-04T18:08:36 &#x2013; Ler, escrever, pensar</a></li>
-<li><a href="#org37dd5b2">8. 2019-05-24T08:04:46 &#x2013; O custo da Universidade, e como (começar a) reduzi-lo</a></li>
-<li><a href="#orgb080c1d">9. 2018-11-18T11:05:06 &#x2013; Quatro virtudes que se deve nutrir, para quem quer aprender e ser produtivo</a></li>
-<li><a href="#org3e23b75">10. 2018-03-11T03:44:08 &#x2013; Long time, no see</a></li>
-<li><a href="#orgc8718f6">11. 2017-06-23T14:46:52 &#x2013; Fim de semestre</a></li>
-<li><a href="#org48298d1">12. 2017-03-18T12:12:57 &#x2013; LaTeX on the go in an Android Tablet (and much more)</a></li>
-<li><a href="#orga729db7">13. 2017-03-16T19:28:07 &#x2013; O tempo do fim das ilusões</a></li>
-<li><a href="#orgeebb970">14. 2017-03-01T12:09:55 &#x2013; Prá tudo se acabar na 4<sup>a</sup> feira</a></li>
-<li><a href="#orgb1e274d">15. 2017-01-28T10:45:21 &#x2013; Installing miniconda in Linux and Windows</a></li>
-<li><a href="#org83ec7fa">16. 2016-11-19T17:36:35 &#x2013; Opinião</a></li>
-<li><a href="#orgf3d1bec">17. 2016-11-09T12:46:14 &#x2013; Serious work with Linux and Cinnamon</a></li>
-<li><a href="#orgcdeb3ce">18. 2016-11-05T19:45:22 &#x2013; Setting up a Homepage</a></li>
-<li><a href="#org5726516">19. 2009-06-23T00:00:00 &#x2013; Professores podem errar (mas quanto?)</a></li>
-<li><a href="#org62a922c">20. 2009-03-20T00:00:00 &#x2013; O esforço de pensar</a></li>
-<li><a href="#orgba12e81">21. 2009-03-12T00:00:00 &#x2013; O distante passado recente dos computadores</a></li>
-<li><a href="#org2a7dde1">22. 2008-08-06T00:00:00 &#x2013; Jovens e Velhos</a></li>
-<li><a href="#org5f10d6e">23. 2008-06-10T00:00:00 &#x2013; O olhar hipnótico da serpente</a></li>
-<li><a href="#org330259f">24. 2008-06-01T00:00:00 &#x2013; Faça da Internet uma amiga</a></li>
-<li><a href="#org727fec4">25. 2008-05-17T00:00:00 &#x2013; Ensino e Aprendizado são Diversão</a></li>
-<li><a href="#orga6578e3">26. 2008-04-08T00:00:00 Recuperando o Saber</a></li>
-<li><a href="#org8e1dc33">27. 2008-03-25: Disciplina</a></li>
+<li><a href="#org618ac2c">1. 2020-07-16T18:36:42 &#x2013; Voyages in isolation: typewriting pursues typesetting</a></li>
+<li><a href="#orgbcdfc37">2. 2020-06-20T15:37:50 &#x2013; Voyages in isolation: the DOS editors</a></li>
+<li><a href="#orgbcfbdc1">3. 2020-06-14T10:30:37 &#x2013; Voyages in isolation: a working DOS environment</a></li>
+<li><a href="#orgd20da88">4. 2020-05-24T11:37:36 &#x2013; Voyages in isolation: Acentos em DOS (Box)</a></li>
+<li><a href="#orgc3b3154">5. 2020-04-26T08:56:35 &#x2013; Voyages in isolation: TinyTeX</a></li>
+<li><a href="#org31e910a">6. 2019-10-27T11:29:44 &#x2013; Linux has become boring</a></li>
+<li><a href="#orgce339e2">7. 2019-09-04T18:08:36 &#x2013; Ler, escrever, pensar</a></li>
+<li><a href="#org58fb089">8. 2019-05-24T08:04:46 &#x2013; O custo da Universidade, e como (começar a) reduzi-lo</a></li>
+<li><a href="#org419fee4">9. 2018-11-18T11:05:06 &#x2013; Quatro virtudes que se deve nutrir, para quem quer aprender e ser produtivo</a></li>
+<li><a href="#org8f68554">10. 2018-03-11T03:44:08 &#x2013; Long time, no see</a></li>
+<li><a href="#org6331279">11. 2017-06-23T14:46:52 &#x2013; Fim de semestre</a></li>
+<li><a href="#orgfbadbc2">12. 2017-03-18T12:12:57 &#x2013; LaTeX on the go in an Android Tablet (and much more)</a></li>
+<li><a href="#org2517a4e">13. 2017-03-16T19:28:07 &#x2013; O tempo do fim das ilusões</a></li>
+<li><a href="#org506e948">14. 2017-03-01T12:09:55 &#x2013; Prá tudo se acabar na 4<sup>a</sup> feira</a></li>
+<li><a href="#org8258357">15. 2017-01-28T10:45:21 &#x2013; Installing miniconda in Linux and Windows</a></li>
+<li><a href="#orgd7fc776">16. 2016-11-19T17:36:35 &#x2013; Opinião</a></li>
+<li><a href="#orgac4582d">17. 2016-11-09T12:46:14 &#x2013; Serious work with Linux and Cinnamon</a></li>
+<li><a href="#org923afa0">18. 2016-11-05T19:45:22 &#x2013; Setting up a Homepage</a></li>
+<li><a href="#orga5c79cd">19. 2009-06-23T00:00:00 &#x2013; Professores podem errar (mas quanto?)</a></li>
+<li><a href="#org85dd810">20. 2009-03-20T00:00:00 &#x2013; O esforço de pensar</a></li>
+<li><a href="#org15c74f7">21. 2009-03-12T00:00:00 &#x2013; O distante passado recente dos computadores</a></li>
+<li><a href="#orgfd03a54">22. 2008-08-06T00:00:00 &#x2013; Jovens e Velhos</a></li>
+<li><a href="#org2c5a4b9">23. 2008-06-10T00:00:00 &#x2013; O olhar hipnótico da serpente</a></li>
+<li><a href="#org6fe5d2b">24. 2008-06-01T00:00:00 &#x2013; Faça da Internet uma amiga</a></li>
+<li><a href="#org08ebe3e">25. 2008-05-17T00:00:00 &#x2013; Ensino e Aprendizado são Diversão</a></li>
+<li><a href="#org01731b8">26. 2008-04-08T00:00:00 Recuperando o Saber</a></li>
+<li><a href="#orgced81e0">27. 2008-03-25: Disciplina</a></li>
 </ul>
 </div>
 </div>
@@ -382,8 +284,8 @@ can rest assured that your name will not appear here under criticism or any
 kind of attack, in no sense whatsoever.</li>
 </ul>
 
-<div id="outline-container-org9a69c6c" class="outline-2">
-<h2 id="org9a69c6c"><span class="section-number-2">1</span> 2020-07-16T18:36:42 &#x2013; Voyages in isolation: typewriting pursues typesetting</h2>
+<div id="outline-container-org618ac2c" class="outline-2">
+<h2 id="org618ac2c"><span class="section-number-2">1.</span> 2020-07-16T18:36:42 &#x2013; Voyages in isolation: typewriting pursues typesetting</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 The evolution of the typewriting and typesetting of technical
@@ -400,7 +302,7 @@ Mouvement des Eaux Comptes Rendus de l'Académie des Sciences, 1867,
 </p>
 
 
-<div class="figure">
+<div id="orgf7a1dcb" class="figure">
 <p><img src="./png/gauckler.png" alt="gauckler.png" />
 </p>
 </div>
@@ -431,7 +333,7 @@ Janeiro, 1974, 193 p.]
 </p>
 
 
-<div class="figure">
+<div id="org0228095" class="figure">
 <p><img src="./png/rondon.jpg" alt="rondon.jpg" />
 </p>
 </div>
@@ -461,7 +363,7 @@ for Aeronautics, National Advisory Committee for Aeronautics, 1950]:
 </p>
 
 
-<div class="figure">
+<div id="org2eaafec" class="figure">
 <p><img src="./png/nacabla.png" alt="nacabla.png" />
 </p>
 </div>
@@ -506,7 +408,7 @@ attempt to reproduce one page from the Blasius' document:
 </p>
 
 
-<div class="figure">
+<div id="org413f245" class="figure">
 <p><img src="./png/cwbla.png" alt="cwbla.png" />
 </p>
 </div>
@@ -559,7 +461,7 @@ nice: check out my reproduction, using LaTeX, of Gauckler's page:
 </p>
 
 
-<div class="figure">
+<div id="org9df88e5" class="figure">
 <p><img src="./png/gauckler-tex.png" alt="gauckler-tex.png" />
 </p>
 </div>
@@ -579,8 +481,8 @@ merged into typesetting.
 
 
 
-<div id="outline-container-org7c5495b" class="outline-2">
-<h2 id="org7c5495b"><span class="section-number-2">2</span> 2020-06-20T15:37:50 &#x2013; Voyages in isolation: the DOS editors</h2>
+<div id="outline-container-orgbcdfc37" class="outline-2">
+<h2 id="orgbcdfc37"><span class="section-number-2">2.</span> 2020-06-20T15:37:50 &#x2013; Voyages in isolation: the DOS editors</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 After an extensive search and trial of many possibilities, there are
@@ -665,7 +567,7 @@ what Jed looks like in DOS:
 </p>
 
 
-<div class="figure">
+<div id="org7c39db3" class="figure">
 <p><img src="./png/jedit.png" alt="jedit.png" />
 </p>
 </div>
@@ -681,8 +583,8 @@ this project.
 </div>
 
 
-<div id="outline-container-orgc7603b2" class="outline-2">
-<h2 id="orgc7603b2"><span class="section-number-2">3</span> 2020-06-14T10:30:37 &#x2013; Voyages in isolation: a working DOS environment</h2>
+<div id="outline-container-orgbcfbdc1" class="outline-2">
+<h2 id="orgbcfbdc1"><span class="section-number-2">3.</span> 2020-06-14T10:30:37 &#x2013; Voyages in isolation: a working DOS environment</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 Some 3 weeks ago, I found out that it is possible to have Portuguese
@@ -730,8 +632,8 @@ of yore, but will be close enough. Stay tuned.
 </div>
 
 
-<div id="outline-container-orgcb3aed3" class="outline-2">
-<h2 id="orgcb3aed3"><span class="section-number-2">4</span> 2020-05-24T11:37:36 &#x2013; Voyages in isolation: Acentos em DOS (Box)</h2>
+<div id="outline-container-orgd20da88" class="outline-2">
+<h2 id="orgd20da88"><span class="section-number-2">4.</span> 2020-05-24T11:37:36 &#x2013; Voyages in isolation: Acentos em DOS (Box)</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 É possível rodar DOS em Linux de diversas maneiras. A que está dando
@@ -753,7 +655,7 @@ c:
 No caso, o diretório é <code>/home/nldias/dosbox/</code>. Mas será possível
 escrever com acentos usando o teclado "clássico"
 <i>US-International</i>? Esse é o teclado que uso desde meus tempos de
-Windows 3.0, e até hoje em Linux. Para obter "átimo" eu bato <code>​'​atimo</code>;
+Windows 3.0, e até hoje em Linux. Para obter "átimo" eu bato =​'​atimo=;
 para obter "açafrão" eu bato <code>a​'​cafr​~​ao</code>, etc. No universo dos gostos
 pessoais, essa é a meu ver uma configuração de teclado infinitamente
 melhor do que a dos infames teclados ABNT (que todo mundo usa no
@@ -792,8 +694,8 @@ E isso é tudo, por hoje. P.S.: Sim, eu sei que o trema caiu.
 </div>
 
 
-<div id="outline-container-org92198e9" class="outline-2">
-<h2 id="org92198e9"><span class="section-number-2">5</span> 2020-04-26T08:56:35 &#x2013; Voyages in isolation: TinyTeX</h2>
+<div id="outline-container-orgc3b3154" class="outline-2">
+<h2 id="orgc3b3154"><span class="section-number-2">5.</span> 2020-04-26T08:56:35 &#x2013; Voyages in isolation: TinyTeX</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 There has been some time to explore new things. One of them is
@@ -808,7 +710,7 @@ enough: I also had to <code>tlmgr install hyphen-portuguese</code>).
 Just to
 make sure, the radical (but fast)
 </p>
-<pre class="example">
+<pre class="example" id="org329dde4">
 tlmgr update --self --all
 tlmgr path add
 fmtutil-sys --all
@@ -839,8 +741,8 @@ Stay home, stay safe.
 </div>
 
 
-<div id="outline-container-org56ca6bf" class="outline-2">
-<h2 id="org56ca6bf"><span class="section-number-2">6</span> 2019-10-27T11:29:44 &#x2013; Linux has become boring</h2>
+<div id="outline-container-org31e910a" class="outline-2">
+<h2 id="org31e910a"><span class="section-number-2">6.</span> 2019-10-27T11:29:44 &#x2013; Linux has become boring</h2>
 <div class="outline-text-2" id="text-6">
 <p>
 There was a time when being a Linux user required heavy maintenance. A lot of
@@ -877,8 +779,8 @@ system.
 </div>
 
 
-<div id="outline-container-orgec65f30" class="outline-2">
-<h2 id="orgec65f30"><span class="section-number-2">7</span> 2019-09-04T18:08:36 &#x2013; Ler, escrever, pensar</h2>
+<div id="outline-container-orgce339e2" class="outline-2">
+<h2 id="orgce339e2"><span class="section-number-2">7.</span> 2019-09-04T18:08:36 &#x2013; Ler, escrever, pensar</h2>
 <div class="outline-text-2" id="text-7">
 <p>
 Se você não lê bem, e se você não escreve bem, é muito possível que
@@ -945,8 +847,8 @@ pessoas que pensam menos, e pior. Vamos pensar/ler/escrever melhor?
 </div>
 
 
-<div id="outline-container-org37dd5b2" class="outline-2">
-<h2 id="org37dd5b2"><span class="section-number-2">8</span> 2019-05-24T08:04:46 &#x2013; O custo da Universidade, e como (começar a) reduzi-lo</h2>
+<div id="outline-container-org58fb089" class="outline-2">
+<h2 id="org58fb089"><span class="section-number-2">8.</span> 2019-05-24T08:04:46 &#x2013; O custo da Universidade, e como (começar a) reduzi-lo</h2>
 <div class="outline-text-2" id="text-8">
 <p>
 O custo da Universidade brasileira está em discussão, e não da melhor forma
@@ -1086,8 +988,8 @@ mais transparente para a sociedade que a custeia.
 
 
 
-<div id="outline-container-orgb080c1d" class="outline-2">
-<h2 id="orgb080c1d"><span class="section-number-2">9</span> 2018-11-18T11:05:06 &#x2013; Quatro virtudes que se deve nutrir, para quem quer aprender e ser produtivo</h2>
+<div id="outline-container-org419fee4" class="outline-2">
+<h2 id="org419fee4"><span class="section-number-2">9.</span> 2018-11-18T11:05:06 &#x2013; Quatro virtudes que se deve nutrir, para quem quer aprender e ser produtivo</h2>
 <div class="outline-text-2" id="text-9">
 <p>
 Existem quatro virtudes essenciais no processo de aprender. Eu pensava que
@@ -1176,8 +1078,8 @@ iniciativa de se construir. Hoje. Já.</li>
 </div>
 
 
-<div id="outline-container-org3e23b75" class="outline-2">
-<h2 id="org3e23b75"><span class="section-number-2">10</span> 2018-03-11T03:44:08 &#x2013; Long time, no see</h2>
+<div id="outline-container-org8f68554" class="outline-2">
+<h2 id="org8f68554"><span class="section-number-2">10.</span> 2018-03-11T03:44:08 &#x2013; Long time, no see</h2>
 <div class="outline-text-2" id="text-10">
 <p>
 Eu sei, foi tempo demais. Começo lentamente, dolorosamente, a colaborar em um
@@ -1210,8 +1112,8 @@ que não têm, tristes deles, nenhuma opção&#x2026;
 </div>
 
 
-<div id="outline-container-orgc8718f6" class="outline-2">
-<h2 id="orgc8718f6"><span class="section-number-2">11</span> 2017-06-23T14:46:52 &#x2013; Fim de semestre</h2>
+<div id="outline-container-org6331279" class="outline-2">
+<h2 id="org6331279"><span class="section-number-2">11.</span> 2017-06-23T14:46:52 &#x2013; Fim de semestre</h2>
 <div class="outline-text-2" id="text-11">
 <p>
 Em sala, última prova do ano antes da final . Dos 22 alunos que começaram o
@@ -1263,8 +1165,8 @@ me dirão se para eles valeu a pena ou não eu ter querido lhes ensinar algo.
 
 
 
-<div id="outline-container-org48298d1" class="outline-2">
-<h2 id="org48298d1"><span class="section-number-2">12</span> 2017-03-18T12:12:57 &#x2013; LaTeX on the go in an Android Tablet (and much more)</h2>
+<div id="outline-container-orgfbadbc2" class="outline-2">
+<h2 id="orgfbadbc2"><span class="section-number-2">12.</span> 2017-03-18T12:12:57 &#x2013; LaTeX on the go in an Android Tablet (and much more)</h2>
 <div class="outline-text-2" id="text-12">
 <p>
 A little more than a year ago, I decided that carrying a notebook and a slide
@@ -1361,7 +1263,7 @@ shif-option).
 <p>
 Redundancy (Termux and GnuRoot) is important in real life, so I kept the two
 of them. I go to Termux for Emacs and Python (but I may use Python in GnuRoot
-as well, particularly if I ever need <a href="#orgb1e274d">Miniconda</a> in the tablet), and (for now)
+as well, particularly if I ever need <a href="#org8258357">Miniconda</a> in the tablet), and (for now)
 to GnuRoot for LaTeX and Maxima. 
 </p>
 
@@ -1392,7 +1294,7 @@ via USB, I can copy and paste files in both directions. Whenever I come back
 from a trip, whatever documents and presentations I created in LaTeX can be
 backed up. I can also do it directly from the tablet using Dropbox. Very
 serious research work can be done in GnuRoot, as well, with Python, Gnuplot,
-Maxima, and if need be, FORTRAN, C, or <a href="#orgb1e274d">Miniconda</a> (for numba; Termux has numpy
+Maxima, and if need be, FORTRAN, C, or <a href="#org8258357">Miniconda</a> (for numba; Termux has numpy
 as well as GnuRoot).
 </p>
 
@@ -1413,7 +1315,7 @@ it.
 </p>
 
 
-<div class="figure">
+<div id="org07fdc3f" class="figure">
 <p><img src="img/a5tablet.jpg" alt="a5tablet.jpg" width="540px" />
 </p>
 </div>
@@ -1434,8 +1336,8 @@ Brazil. I hope to see it happen very soon.
 </div>
 
 
-<div id="outline-container-orga729db7" class="outline-2">
-<h2 id="orga729db7"><span class="section-number-2">13</span> 2017-03-16T19:28:07 &#x2013; O tempo do fim das ilusões</h2>
+<div id="outline-container-org2517a4e" class="outline-2">
+<h2 id="org2517a4e"><span class="section-number-2">13.</span> 2017-03-16T19:28:07 &#x2013; O tempo do fim das ilusões</h2>
 <div class="outline-text-2" id="text-13">
 <p>
 Por algum motivo, talvez alguma vantagem evolutiva, nós seres
@@ -1529,8 +1431,8 @@ muitas vezes, a respeito de si próprios.
 </div>
 
 
-<div id="outline-container-orgeebb970" class="outline-2">
-<h2 id="orgeebb970"><span class="section-number-2">14</span> 2017-03-01T12:09:55 &#x2013; Prá tudo se acabar na 4<sup>a</sup> feira</h2>
+<div id="outline-container-org506e948" class="outline-2">
+<h2 id="org506e948"><span class="section-number-2">14.</span> 2017-03-01T12:09:55 &#x2013; Prá tudo se acabar na 4<sup>a</sup> feira</h2>
 <div class="outline-text-2" id="text-14">
 <p>
 O primeiro dia depois do Carnaval, esta 4<sup>a</sup> feira, 1<sup>o</sup> de março de 2017,
@@ -1587,8 +1489,8 @@ próximo Carnaval. Feliz 2017.
 </div>
 
 
-<div id="outline-container-orgb1e274d" class="outline-2">
-<h2 id="orgb1e274d"><span class="section-number-2">15</span> 2017-01-28T10:45:21 &#x2013; Installing miniconda in Linux and Windows</h2>
+<div id="outline-container-org8258357" class="outline-2">
+<h2 id="org8258357"><span class="section-number-2">15.</span> 2017-01-28T10:45:21 &#x2013; Installing miniconda in Linux and Windows</h2>
 <div class="outline-text-2" id="text-15">
 <p>
 Python is very popular, for good reason. Programming, debugging, and testing in
@@ -1625,7 +1527,7 @@ I change my Python shebang to
 </p>
 
 <div class="org-src-container">
-<pre class="src src-python"><span style="color: #d2691e;">#</span><span style="color: #d2691e;">!/home/nldias/miniconda3/bin/python</span>
+<pre class="src src-python">#!/home/nldias/miniconda3/bin/python
 </pre>
 </div>
 
@@ -1634,7 +1536,7 @@ This is all that is needed: whenever I execute a python script having the
 comment above as the first line, it runs the local miniconda
 installation. You still want numpy and numba, however. For that, you should:
 </p>
-<pre class="example">
+<pre class="example" id="org4e801bf">
 cd ~/miniconda3/bin
 ./conda install numpy
 ./conda install numba
@@ -1663,13 +1565,13 @@ Make files with the <code>.PY</code> extension executable, by going to Control P
 -&gt; System and Security -&gt; System -&gt; Advanced Configurations, and editing
 the System Variable PATHEXT. The variable looks something like
 </p>
-<pre class="example">
+<pre class="example" id="orgf0898f4">
 .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
 </pre>
 <p>
 You should change it to something like
 </p>
-<pre class="example">
+<pre class="example" id="org5530bc6">
 .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY
 </pre></li>
 <li><p>
@@ -1677,7 +1579,7 @@ Go to File Explorer, right-click on any <code>*.py</code> file that you may have
 choose Properties, and tell Windows to open the files with <code>*.PY</code>
 extension with
 </p>
-<pre class="example">
+<pre class="example" id="orgf1c65fd">
 C:\Users\IEUser\Miniconda3\python
 </pre>
 <p>
@@ -1688,7 +1590,7 @@ That should do it.
 <p>
 You still want numpy and numba, however. For that, you should:
 </p>
-<pre class="example">
+<pre class="example" id="orge68fe1a">
 cd C:\Users\IEUser\Miniconda3
 conda install numpy
 conda install numba
@@ -1706,8 +1608,8 @@ fuss).
 </div>
 
 
-<div id="outline-container-org83ec7fa" class="outline-2">
-<h2 id="org83ec7fa"><span class="section-number-2">16</span> 2016-11-19T17:36:35 &#x2013; Opinião</h2>
+<div id="outline-container-orgd7fc776" class="outline-2">
+<h2 id="orgd7fc776"><span class="section-number-2">16.</span> 2016-11-19T17:36:35 &#x2013; Opinião</h2>
 <div class="outline-text-2" id="text-16">
 <p>
 Ter opinião, posicionar-se.  Ver, diante de cada fato da vida que se apresenta
@@ -1753,8 +1655,8 @@ E estamos precisando tanto avançar.
 </div>
 </div>
 
-<div id="outline-container-orgf3d1bec" class="outline-2">
-<h2 id="orgf3d1bec"><span class="section-number-2">17</span> 2016-11-09T12:46:14 &#x2013; Serious work with Linux and Cinnamon</h2>
+<div id="outline-container-orgac4582d" class="outline-2">
+<h2 id="orgac4582d"><span class="section-number-2">17.</span> 2016-11-09T12:46:14 &#x2013; Serious work with Linux and Cinnamon</h2>
 <div class="outline-text-2" id="text-17">
 <p>
 I have been a Linux user for a long time, and even before that I
@@ -1802,7 +1704,7 @@ being found, and solutions offered, quite quickly.
 </p>
 
 
-<div class="figure">
+<div id="org6120f71" class="figure">
 <p><img src="img/cinnamon.png" alt="cinnamon.png" width="540px" />
 </p>
 </div>
@@ -1826,8 +1728,8 @@ Linux way is a very good way.
 </div>
 </div>
 
-<div id="outline-container-orgcdeb3ce" class="outline-2">
-<h2 id="orgcdeb3ce"><span class="section-number-2">18</span> 2016-11-05T19:45:22 &#x2013; Setting up a Homepage</h2>
+<div id="outline-container-org923afa0" class="outline-2">
+<h2 id="org923afa0"><span class="section-number-2">18.</span> 2016-11-05T19:45:22 &#x2013; Setting up a Homepage</h2>
 <div class="outline-text-2" id="text-18">
 <p>
 It is painful not to be able to follow the pace of those who set up their
@@ -1855,8 +1757,8 @@ can only wish you all a good end of Weekend.
 </p>
 </div>
 </div>
-<div id="outline-container-org5726516" class="outline-2">
-<h2 id="org5726516"><span class="section-number-2">19</span> 2009-06-23T00:00:00 &#x2013; Professores podem errar (mas quanto?)</h2>
+<div id="outline-container-orga5c79cd" class="outline-2">
+<h2 id="orga5c79cd"><span class="section-number-2">19.</span> 2009-06-23T00:00:00 &#x2013; Professores podem errar (mas quanto?)</h2>
 <div class="outline-text-2" id="text-19">
 <p>
 Professores podem errar, e engana-se quem pensa o contrário. É impossível em
@@ -1919,8 +1821,8 @@ fé. Tudo aquilo que um mau professor não faz.
 </div>
 </div>
 
-<div id="outline-container-org62a922c" class="outline-2">
-<h2 id="org62a922c"><span class="section-number-2">20</span> 2009-03-20T00:00:00 &#x2013; O esforço de pensar</h2>
+<div id="outline-container-org85dd810" class="outline-2">
+<h2 id="org85dd810"><span class="section-number-2">20.</span> 2009-03-20T00:00:00 &#x2013; O esforço de pensar</h2>
 <div class="outline-text-2" id="text-20">
 <p>
 Na 4a feira, 2009-03-18, reuni-me com 3 alunos de pós-graduação para discutir
@@ -1982,8 +1884,8 @@ se este artigo vai ser aceito.
 </div>
 </div>
 
-<div id="outline-container-orgba12e81" class="outline-2">
-<h2 id="orgba12e81"><span class="section-number-2">21</span> 2009-03-12T00:00:00 &#x2013; O distante passado recente dos computadores</h2>
+<div id="outline-container-org15c74f7" class="outline-2">
+<h2 id="org15c74f7"><span class="section-number-2">21.</span> 2009-03-12T00:00:00 &#x2013; O distante passado recente dos computadores</h2>
 <div class="outline-text-2" id="text-21">
 <p>
 Segundo a Wikipedia, o primeiro compilador FORTRAN veio ao mundo em abril
@@ -2041,8 +1943,8 @@ filme.
 </div>
 </div>
 
-<div id="outline-container-org2a7dde1" class="outline-2">
-<h2 id="org2a7dde1"><span class="section-number-2">22</span> 2008-08-06T00:00:00 &#x2013; Jovens e Velhos</h2>
+<div id="outline-container-orgfd03a54" class="outline-2">
+<h2 id="orgfd03a54"><span class="section-number-2">22.</span> 2008-08-06T00:00:00 &#x2013; Jovens e Velhos</h2>
 <div class="outline-text-2" id="text-22">
 <p>
 <b>(Ou a dialética do bom conflito de gerações)</b>
@@ -2179,8 +2081,8 @@ urgentemente voltar aos hábitos da tribo: respeitar e ouvir os mais velhos.
 </div>
 </div>
 
-<div id="outline-container-org5f10d6e" class="outline-2">
-<h2 id="org5f10d6e"><span class="section-number-2">23</span> 2008-06-10T00:00:00 &#x2013; O olhar hipnótico da serpente</h2>
+<div id="outline-container-org2c5a4b9" class="outline-2">
+<h2 id="org2c5a4b9"><span class="section-number-2">23.</span> 2008-06-10T00:00:00 &#x2013; O olhar hipnótico da serpente</h2>
 <div class="outline-text-2" id="text-23">
 <p>
 Há quem diga, mas deve ser um mito, que a serpente hipnotiza sua presa antes
@@ -2248,8 +2150,8 @@ vencer. Só nos resta, como São Jorge, Santo Guerreiro, combater.
 </div>
 </div>
 
-<div id="outline-container-org330259f" class="outline-2">
-<h2 id="org330259f"><span class="section-number-2">24</span> 2008-06-01T00:00:00 &#x2013; Faça da Internet uma amiga</h2>
+<div id="outline-container-org6fe5d2b" class="outline-2">
+<h2 id="org6fe5d2b"><span class="section-number-2">24.</span> 2008-06-01T00:00:00 &#x2013; Faça da Internet uma amiga</h2>
 <div class="outline-text-2" id="text-24">
 <p>
 Tanto quanto eu sei, foi no século XVIII que se procurou fazer pela primeira
@@ -2296,8 +2198,8 @@ fofocas e abobrinhas na rede.
 </div>
 </div>
 
-<div id="outline-container-org727fec4" class="outline-2">
-<h2 id="org727fec4"><span class="section-number-2">25</span> 2008-05-17T00:00:00 &#x2013; Ensino e Aprendizado são Diversão</h2>
+<div id="outline-container-org08ebe3e" class="outline-2">
+<h2 id="org08ebe3e"><span class="section-number-2">25.</span> 2008-05-17T00:00:00 &#x2013; Ensino e Aprendizado são Diversão</h2>
 <div class="outline-text-2" id="text-25">
 <p>
 Nunca consigo formular um bom motivo para alguém estudar: por que você deveria
@@ -2379,8 +2281,8 @@ das coisas mais divertidas, mais prazeirosas, do mundo.
 </div>
 </div>
 
-<div id="outline-container-orga6578e3" class="outline-2">
-<h2 id="orga6578e3"><span class="section-number-2">26</span> 2008-04-08T00:00:00 Recuperando o Saber</h2>
+<div id="outline-container-org01731b8" class="outline-2">
+<h2 id="org01731b8"><span class="section-number-2">26.</span> 2008-04-08T00:00:00 Recuperando o Saber</h2>
 <div class="outline-text-2" id="text-26">
 <p>
 Enquanto o ensino médio continua em sua queda livre, a Universidade quer
@@ -2446,8 +2348,8 @@ realidade de nossa ignorância.
 </div>
 </div>
 
-<div id="outline-container-org8e1dc33" class="outline-2">
-<h2 id="org8e1dc33"><span class="section-number-2">27</span> 2008-03-25: Disciplina</h2>
+<div id="outline-container-orgced81e0" class="outline-2">
+<h2 id="orgced81e0"><span class="section-number-2">27.</span> 2008-03-25: Disciplina</h2>
 <div class="outline-text-2" id="text-27">
 <p>
 Hoje de manhã, na CBN, Cláudio Moura e Castro deu uma entrevista sobre a
@@ -2482,8 +2384,8 @@ coniventes: eles estão destruindo o futuro.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nelson Luís Dias</p>
-<p class="date">Created: 2023-04-11 Tue 20:27</p>
-<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+<p class="date">Created: 2024-09-13 Fri 13:55</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>
