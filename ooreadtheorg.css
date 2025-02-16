@@ -61,7 +61,7 @@ body{
 #content{
     background:#fcfcfc;
     /* height:100%; */
-    margin-left:20%; /* my */
+    margin-left:28%; /* my */
     /* margin:auto; */
     max-width:2560px;
     /* min-height:100%; */
@@ -696,7 +696,7 @@ hr{
     display:block;
     font-weight:bold;
     text-transform:uppercase;
-    font-size:75%;
+    font-size:80%;
     color:#2980B9;
     white-space:nowrap}
 
@@ -761,7 +761,7 @@ hr{
     padding:0.4045em 1.618em;
     display:block;
     position:relative;
-    font-size:75%;
+    font-size:90%;
     color:#b3b3b3;
     direction: ltr;
 }
@@ -778,7 +778,7 @@ hr{
     position:fixed;
     top:0;
     left:0;
-    width:20%; /* my */
+    width:28%; /* my */
     overflow-x:hidden;
     overflow-y:scroll;
     height:100%;
@@ -880,40 +880,34 @@ footer p{
     position:fixed;
     bottom:0;
     left:0;
-    width:0%; /* my */
+    width:28%; /* my */
     color:#2980B9;
     background:#1f1d1d;
-    border-top:solid 10px #343131; 
+    border-top:solid 10px #343131;
     font-family:"Lato","proxima-nova","Helvetica Neue",Arial,sans-serif;
     font-size: 90%;
     z-index:400;
-    /* padding:12px; */
-    visibility:hidden;
+    padding:12px;
 }
 
 #postamble .author {
-    font-size: 90%;
+    font-size: 100%;
     margin-bottom: 0px;
     color: #60B1F5;
-    visibility:hidden;
 }
 
 #postamble .date {
     font-size: 90%;
     margin-bottom: 0px;
-    visibility:hidden;
 }
 
 #postamble .creator,#postamble .validation {
     display:none;
-    visibility:hidden;
 }
 
 #copyright a{
     color:#2980B9;
-    text-decoration:none;
-    visibility:hidden;
-}
+    text-decoration:none}
 
 #copyright .rst-current-version{
     padding:12px;
@@ -923,9 +917,7 @@ footer p{
     font-size:90%;
     cursor:pointer;
     color:#27AE60;
-    *zoom:1;
-    visibility:hidden;
-}
+    *zoom:1}
 
 #content img{
     max-width:100%;
