@@ -1,0 +1,58 @@
+
+
+
+| 1    | <2025-03-10 seg> |Introdução à disciplina.
+| 2    | <2025-03-12 qua> |Exemplo 1.1: força sobre um cilindro submerso.  Exemplo 1.2: idem. Definição de dimensão.
+| 3    | <2025-03-14 sex> |Teorema dos Pis.
+| 4    | <2025-03-17 seg> |Livre.          
+| 5    | <2025-03-19 qua> |Livre.                           
+| 6    | <2025-03-21 sex> |Problemas de Análise Dimensional.
+| 7    | <2025-03-24 seg> |Revisão de números complexos.  
+| 8    | <2025-03-26 qua> |Geometria e Álgebra: vetores geométricos e algébricos:  bases, elementos, coordenadas.  Álgebra LInear: espaço vetorial.
+| 9    | <2025-03-28 sex> |5.3 Aplicações geomericas. Teoremas de Pitágoras e dos cossenos. Produto escalar. Exemplos.
+| 10   | <2025-03-31 seg> |Convenção de soma de Einstein. Ortogonalização de Gram-Schmmidt. Permutações, $\epsilon$, identidade polar, produto vetorial. Produto misto.
+| 11   | <2025-04-02 qua> |Determinante. Bases dextrógiras e levógiras.
+| 12   | <2025-04-04 sex> |Funções lineares, funcionais lineares. Teorema da representação. Transformações lineares. Base de  uma transformação linear.
+| 13   | <2025-04-07 seg> |Exemplos de transformações lineares.  Rotações.
+| 14   | <2025-04-09 qua> |Sistemas de equações lineares. Domínio, núcleo, imagem. Teorema dos Pis.
+| 15   | <2025-04-11 sex> |Autovalores e autovetores. Invariantes. Exemplos adicionais.
+| 16   | <2025-04-14 seg> |Transformações simétricas: autovalores reais, autovetores mutuamente perpendiculares.  Transformações definidas e indefinidas.
+| 17   | <2025-04-16 qua> |*P1* 
+| 18   | <2025-04-18 sex> |*Feriado:* Sext-feira Santa.
+| 19   | <2025-04-21 seg> |*Feriado:* Tiradentes.
+| 20   | <2025-04-23 qua> |Funções no $\mathbb{R}^n$. Regra da cadeia, séries de Taylor. Teorema da função implícita (2 dimensões).  Casos particulares $x=x(u,v)$, $y=y(u,v)$.
+| 21   | <2025-04-25 sex> |Teorema da função implícita. Caso geral. Jacobiano. Exemplos.
+| 22   | <2025-04-28 seg> |Regra de Leibnitz. Exemplos. 
+| 23   | <2025-04-30 qua> |Comprimentos, áreas, volumes. Integrais de linha. Integrais de superfície.
+| 24   | <2025-05-02 sex> |Livre
+| 25   | <2025-05-05 seg> |Integrais de volume.
+| 26   | <2025-05-07 qua> |Div, Grad. Exemplos.
+| 27   | <2025-05-09 sex> |Rotacional. Mais operadores e identidades.
+| 28   | <2025-05-12 seg> |Mudança de coordenadas. Gauss e Stokes. Campos irrotacionais.
+| 29   | <2025-05-14 qua> |Equações diferenciais ordinárias. Classificação. EDOs lineares de ordem 1. Equações linearizáveis (Bernoulli)
+| 30   | <2025-05-16 sex> |EDOs com coeficientes constantes de ordem 2. Equação de Euler.
+| 31   | <2025-05-19 seg> |Variáveis complexas: funções plurívocas. Derivada. Funções analíticas. Condições de Cauchy-Riemman.
+| 32   | <2025-05-21 qua> |Sequências e séries. 
+| 33   | <2025-05-23 sex> |Teorema de Cauchy. Deformação de caminho. Fórmula integral de Cauchy. Séries de Taylor e Laurent.
+| 34   | <2025-05-26 seg> |Séries de Laurent. Integração de contorno.
+| 35   | <2025-05-28 qua> |Integração de Contorno.
+| 36   | <2025-05-30 sex> |*P2*
+| 37   | <2025-06-02 seg> |Solução de EDOs em séries. O método de Frobenius.
+| 38   | <2025-06-04 qua> |Caso (i)     
+| 39   | <2025-06-06 sex> |Caso (ii)    
+| 40   | <2025-06-09 seg> |Caso (iii)-a 
+| 41   | <2025-06-11 qua> |Caso (iii)-b 
+| 42   | <2025-06-13 sex> |Problemas adicionais do método de Frobenius.
+| 43   | <2025-06-16 seg> |Transformada de Laplace: definição, existência, cálculo.
+| 44   | <2025-06-18 qua> |Transformada de Laplace: Propriedades.
+| 45   | <2025-06-20 sex> |Livre
+| 46   | <2025-06-23 seg> |Transformada de Laplace: Convolução.
+| 47   | <2025-06-25 qua> |Transformada de Laplace: truques adicionais e inversão.
+| 48   | <2025-06-27 sex> |Revisão antes da P3.
+| 49   | <2025-06-30 seg> |*P3*
+| 50   | <2025-07-02 qua> |*S*. Último dia letivo. 
+| 51   | <2025-07-07 seg> |*F*      
+
+
+
+
