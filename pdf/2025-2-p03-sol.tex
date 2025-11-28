@@ -1,0 +1,553 @@
+% -----------------------------------------------------------------------------------------------
+% 2025-2-p02
+%
+% Nelson Luís Dias
+% 2025-09-29T13:52:59
+% -----------------------------------------------------------------------------------------------
+\documentclass[a4paper]{article}
+% -----------------------------------------------------------------------------------------------
+% packages
+% -----------------------------------------------------------------------------------------------
+\usepackage[a4paper,dvips,textwidth=17cm,textheight=24cm,textheight=26cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{newtxtext}
+\usepackage{libertine}
+\input{math.tex}
+\usepackage[libertine,cmintegrals,cmbraces]{newtxmath}
+\usepackage{fixltx2e}
+\usepackage[brazil]{babel}
+\usepackage{listings}
+%\usepackage{amsmath}
+%\usepackage{amssymb}
+\usepackage[square]{natbib}
+\usepackage{enumerate}
+\usepackage{mathrsfs}
+\usepackage{accents}
+\usepackage{graphicx}
+\usepackage{pifont}
+\usepackage{verbatim}
+\usepackage{mathtools}
+\usepackage{booktabs}
+\usepackage{cancel}
+\renewcommand{\ttdefault}{lmtt}% default cmtt
+
+% -----------------------------------------------------------
+% macros
+% -----------------------------------------------------------
+\input{ira.tex}
+\input{biolmath.tex}
+
+
+\lstdefinestyle{lstpython}{
+upquote=true,
+numbers=left,
+numberstyle=\footnotesize\rmfamily,
+basicstyle=\footnotesize\ttfamily,
+upquote=true,
+aboveskip = \bigskipamount,
+language=Python,
+commentstyle=\ttfamily,
+keywordstyle=\underbar,
+frame=lines}
+
+%\lstset{basicstyle=\scriptsize\ttfamily}
+
+
+\pdfinclusioncopyfonts=1
+\parindent=0pt
+
+\begin{document}
+\rfoot{\small Continue a solução no verso $\Longrightarrow$}
+\cfoot{}\renewcommand{\headrulewidth}{0pt}
+\pagestyle{fancy}
+
+
+
+
+\newcommand{\ops}{\frac{(\vet{x},\vet{y})}{(\vet{y},\vet{y})}{\vet{y}}}
+\newcommand{\aba}{\leftrightarrow}
+\newcommand{\Cou}{\text{Co}}
+\newcommand{\Ka}{\text{Ka}}
+
+
+
+
+
+
+% -----------------------------------------------------------
+% loop sobre o número de alunos
+% -----------------------------------------------------------
+
+
+
+% -----------------------------------------------------------
+% o texto começa aqui
+% -----------------------------------------------------------
+\thispagestyle{fancy}
+\sloppy
+
+
+
+
+
+\noindent\begin{minipage}[t]{9cm}
+\vspace{0pt}
+\noindent TEA013 Matemática Aplicada II \\
+Curso de Engenharia Ambiental\\
+Departamento de Engenharia Ambiental, UFPR\\
+P03, 28 Nov 2025\\
+Prof. Nelson Luís Dias
+\end{minipage}
+\hfill
+\begin{minipage}[t]{5cm}
+\vspace{0pt}
+
+\framebox[5cm][c]{\Huge 0}
+\end{minipage}
+
+\vspace*{0.25cm}
+
+\noindent\makebox[10cm][l]{NOME: GABARITO}\hfill\makebox{Assinatura: \rule{5cm}{0.1mm}}
+
+\vspace*{0.25cm}
+
+\hrule
+
+\vspace*{0.25cm}
+
+AO REALIZAR ESTA PROVA, VOCÊ DEVE JUSTIFICAR TODAS AS PASSAGENS. EVITE
+``PULAR'' PARTES IMPORTANTES DO DESENVOLVIMENTO DE CADA
+QUESTÃO. JUSTIFIQUE CADA PASSO IMPORTANTE. SIMPLIFIQUE AO MÁXIMO SUAS
+RESPOSTAS.
+
+\vspace*{0.25cm}
+
+ATENÇÃO PARA A NOTAÇÃO VETORIAL E TENSORIAL!  VETORES MANUSCRITOS DEVEM SER
+ESCRITOS COMO $\vem{v}$; TENSORES DE ORDEM 2 COMO $\ven{A}$.
+
+%\noindent\rule{\textwidth}{0.1mm}
+
+\vspace*{0.25cm}
+
+\hrule
+
+\vspace*{0.25cm}
+
+
+
+
+
+\noindent{\Large \textbf{1}} [20] Encontre a função de Green do
+problema
+\[
+\mderiva{y}{x} - 2xy = \cos(x), \qquad y(0) = 1.
+\]
+
+
+\vspace*{0.25cm}
+
+\hrule
+
+\vspace*{0.25cm}
+
+\noindent SOLUÇÃO DA QUESTÃO:
+
+Multiplico por $G(x,\xi)$ e integro de 0 a infinito:
+\[
+\int_{\xi=0}^\infty G(x,\xi)\left[\mderiva{y}{\xi} - 2\xi y\right]\,\md{\xi} = \int_0^\infty G(x,\xi)\cos(\xi)\,\md{\xi}
+\]
+Integrando por partes,
+\[
+G(x,\xi)y(\xi)\Big|_{\xi=0}^\infty + \int_{\xi=0}^\infty y(\xi)\left[-\mderiva{G}{\xi} -
+2\xi G\right]\,\md{\xi} = \int_0^\infty G(x,\xi)\cos (\xi)\,\md{\xi}
+\]
+\begin{align*}
+\lim_{\xi\to\infty}G(x,\xi) &= 0 \Rightarrow \\
+- G(x,0)y(0) + \int_{\xi=0}^\infty y(\xi)\left[-\mderiva{G}{\xi} -
+2\xi G\right]\,\md{\xi} &= \int_0^\infty G(x,\xi)\cos (\xi)\,\md{\xi}
+\end{align*}
+\[
+-\mderiva{G}{\xi} - 2\xi G = \delta(\xi - x).
+\]
+\[
+\mderiva{G}{\xi} + 2\xi G = -\delta(\xi-x).
+\]
+Agora, $G = uv$, e
+\begin{align*}
+u\left[\mderiva{v}{\xi} + 2\xi v\right] + v\mderiva{u}{\xi} &= -\delta(\xi-x)\\
+\mderiva{v}{\xi} &= -2\xi v\\
+\frac{dv}{v} &= -2\xi\\
+\ln\left(\frac{v}{v_0(x)}\right) &= -\xi^2\\
+v &= v_0(x)\exp(-\xi^2)\\
+\mderiva{u}{\xi} &= -\frac{\exp(\xi^2)}{v_0(x)}\delta(\xi-x)\\
+{u}({\xi}) &= u_0(x) -\int_{\eta=0}^\xi \frac{\exp(\eta^2)}{v_0(x)}\delta(\eta-x)\,\md{\eta}\\
+&= u_0(x) -\frac{H(\xi-x)\exp(x^2)}{v_0(x)}\Rightarrow\\
+G(x,\xi) &= \left[u_0(x)v_0(x) - H(\xi-x)\exp(x^2)\right]\exp(-\xi^2)\\
+&= \left[G_0(x) - H(\xi-x)\exp(x^2)\right]\exp(-\xi^2).
+\end{align*}
+Mas
+\begin{align*}
+\lim_{\xi\to\infty} G(x,\xi) &= 0 \Rightarrow G_0(x) = \exp(x^2)\\
+G(x,\xi) &= \left[1 - H(\xi-x)\right]\exp(x^2-\xi^2)\blob
+\end{align*}
+
+
+
+
+
+\newpage
+
+\noindent{\Large \textbf{2}} [20] Encontre os  autovalores e
+autovetores do problema de Sturm-Liouville
+\[
+y''(x) - 2y'(x) + \lambda y = 0, \qquad y(0) = 0, \qquad y(\uppi) = 0.
+\]
+\textbf{\large Sugestão:} A equação característica envolve $\sqrt{1 -
+\lambda}$. Você deve estudar os sinais do radical segundo
+\begin{align*}
+1 - \lambda &= k^2 > 0,\qquad k > 0 \\
+1 - \lambda &= 0, \\
+1 - \lambda &= -k^2 < 0, \qquad k > 0.
+\end{align*}
+
+\vspace*{0.25cm}
+
+\hrule
+
+\vspace*{0.25cm}
+\noindent SOLUÇÃO DA QUESTÃO:
+
+\vspace*{0.25cm}
+
+A equação característica é
+\begin{align*}
+r^2 - 2r + \lambda &= 0,\\
+r &= \frac{2 \pm \sqrt{4 - 4\lambda}}{2}\\
+&= \frac{2 \pm 2\sqrt{1 - \lambda}}{2}\\
+&= 1 \pm \sqrt{1 - \lambda}.
+\end{align*}
+É preciso discutir os sinais de $\lambda $.
+
+a) $\lambda < 1 $. Neste caso, existem 2 raízes reais distintas. Faça
+\begin{align*}
+1 - \lambda = k^2 > 0, \\ 1 - k^2 &= \lambda, \\ \sqrt{1 - \lambda} = \sqrt{k^2} = k.
+\end{align*}
+As raízes são
+\[
+r_{1,2} = 1 \pm k,
+\]
+e a solução geral é do tipo
+\[
+y(x) = \me^{x}\left[ A\cosh(kx) + B\senh(kx)\right].
+\]
+A imposição das condições de contorno produz
+\begin{align*}
+y(0) &= 0 \qquad \Rightarrow \qquad A\cancelto{1}{\cosh(0)} +
+B\cancelto{0}{\senh(0)} = 0 \qquad
+\Rightarrow \qquad A = 0, \\
+y(\uppi) &= 0 \qquad \Rightarrow \qquad \me^{\uppi}B\senh(k\uppi)=0 \qquad \Rightarrow \qquad B =0,
+\end{align*}
+e portanto $\lambda < 1$ não pode ser autovalor.
+
+b) $\lambda = 1$. Neste caso há uma raiz dupla $r = 1$ e
+\[
+y(x) = A \me^{x} + B x\me^{x}
+\]
+A imposição das condições de contorno produz
+\begin{align*}
+y(0) &= 0 \qquad \Rightarrow \qquad A = 0,\\
+y(\uppi) &= 0 \qquad \Rightarrow \qquad B\uppi\me^{\uppi} = 0 \qquad
+\Rightarrow \qquad B = 0,
+\end{align*}
+e novamente $\lambda = 1$ não pode ser autovalor.
+
+c) $\lambda > 1$. Neste caso há duas raízes complexas conjugadas. Faça
+\begin{align*}
+1 - \lambda &= -k^2, \qquad k > 0, \\
+\lambda &= 1 + k^2, \\
+\sqrt{1 - \lambda} &= \sqrt{-k^2} = \mi k.
+\end{align*}
+As raízes são
+\[
+r_{1,2} = 1 \pm \mi k,
+\]
+e a solução geral é do tipo
+\[
+y(x) = \me^{x}\left[ A\cos(kx) + B\sen(kx)\right].
+\]
+A imposição das condições de contorno produz
+\begin{align*}
+y(0) &= 0 \qquad \Rightarrow \qquad A \cos(0) = 0 \qquad \Rightarrow  \qquad A = 0,\\
+y(\uppi) &= 0 \qquad \Rightarrow \qquad \me^{\uppi} B \sen(k\uppi) = 0 \qquad \Rightarrow \qquad \sen(k\uppi)= 0,\\
+k\uppi &= n\uppi, \qquad n = 1, 2, \ldots,\\
+k_n &= n.
+\end{align*}
+Portanto, os autovalores e as autofunções são
+\begin{align*}
+\lambda_n &= 1 + n^2,\\
+y_n(x) &= \me^{x}\sen(n \uppi x)\blob
+\end{align*}
+
+
+
+
+
+
+\newpage
+
+\noindent{\Large \textbf{3}} [20]  \textbf{Utilizando obrigatoriamente o método das características}, resolva
+\begin{align*}
+\parder{u}{t} + xt\parder{u}{x} &= 1,\\
+u(x,0) &= f(x).
+\end{align*}
+
+
+
+
+
+\vspace*{0.25cm}
+
+\hrule
+
+\vspace*{0.25cm}
+\noindent SOLUÇÃO DA QUESTÃO:
+
+\vspace*{0.25cm}
+
+Suponha que $t=T(s)$, $x = X(s)$. Então,
+\begin{align*}
+u(x,t) &= u(X(s),T(s)) = U(s), \\
+\mderiva{U}{s} &= \parder{u}{x}\mderiva{X}{s} + \parder{u}{t}\mderiva{T}{s}
+\end{align*}
+Comparando termo a termo com a equação diferencial parcial, impomos:
+\begin{align*}
+\mderiva{T}{s} & = 1, \\
+\mderiva{X}{s} &= X(s)T(s), \\
+\mderiva{U}{s} &= 1.
+\end{align*}
+Integrando,
+\begin{align*}
+\md{T} &= \md{s}, \\
+\int_{T_0}^T \md{\tau} &= \int_0^s\md{\sigma},\\
+T &= T_0 + s.
+\end{align*}
+O problema possui condição inicial em $t=0$. Faça, portanto, $T_0=0$.
+\begin{align*}
+\mderiva{X}{s} &= X(s) s, \\
+\frac{\md{X}}{X} &= s\,\md{s},\\
+\int_{X(0)}^{X(s)} \frac{\md{X}}{X} &= \int_0^s \sigma\,\md{\sigma}, \\
+\ln \left( \frac{X(s)}{X(0)}\right) &= \frac{1}{2}s^2,\\
+X(s) &= X(0) \exp\left( \frac{1}{2}s^2\right).
+\end{align*}
+Finalmente,
+\begin{align*}
+\mderiva{U}{s} &= 1, \\
+\md{U} &= \md{s}, \\
+\int_{U(0)}^{U(s)} &= \int_0^s \md{\sigma}, \\
+U(s) - U(0) &= s.
+\end{align*}
+Agora,
+\begin{align*}
+U(s) &= u(x,t), \\
+U(0) &= u(X(0),T(0)) = u(X(0),0) = f(X(0)), \\
+X(0) &= X(s)\exp\left( -\frac{1}{2}s^2\right) \\
+&= x \exp\left( -\frac{1}{2}t^2\right) \qquad \Rightarrow\\
+u(x,t) - f\left(x \exp\left( -\frac{1}{2}t^2\right)\right) &= t, \\
+u(x,t) &= t + f\left(x \exp\left( -\frac{1}{2}t^2\right)\right)\blob
+\end{align*}
+
+
+
+%% %if prova
+%% \newpage
+
+%% CONTINUAÇÃO DA SOLUÇÃO
+
+%% \hrule
+%% %endif
+
+
+\newpage
+
+
+\noindent{\Large \textbf{4}} [20] Considere a EDP
+\begin{align*}
+\parder{u}{t} &= {a^2}\parn{u}{x}{2} + \frac{{a^2}u_0}{L^{3}}x,\\
+u(x,0) &= u_0,\\
+u(0,t) &= 0, \\
+u(L,t) &= 0.
+%% {a^2} &= L^2 \mathcal{T}^{-1},\\
+%% \mathcal{T} {a^2} &= L^2, \\
+%% \mathcal{T} &= L^2{a^2}^{-1},\\
+%% \mathcal{T}^2 &= L^4{a^2}^{-2}
+\end{align*}
+\begin{itemize}
+\item[a)] [05] Este problema possui uma solução em regime permanente
+$u_\infty(x)$: quando $t\to\infty$, $\partial u/\partial t \to 0$. Substitua
+$\partial u/\partial t = 0$ na EDP, e obtenha uma equação diferencial
+ordinária em $u_{\infty}(x)$. Resolva a EDO e \textbf{mostre que}
+\[
+u_{\infty}(x) = \frac{u_0}{6L}x - \frac{u_0}{6L^{3}}x^3;
+\]
+as duas constantes de integração podem ser
+obtidas impondo $u_\infty(0) = 0$ e $u_\infty(L)=0$.
+\item[b)] [10] Faça a substituição de variável $v(x,t) = u(x,t) -
+u_{\infty}(x)$. Obtenha uma EDP em $v$; quem são $v(x,0)$, $v(0,t)$ e
+$v(L,t)$?
+\item[c)] [05] Finalmente, faça $v(x,t) = X(x)T(t)$, \textbf{separe
+as variáveis}, e obtenha um problema de Sturm-Liouville em $X(x)$.
+\textbf{Atenção: não é necessário encontrar autovalores e
+autofunções, nem é necessário resolver a EDP em $v$!}
+\end{itemize}
+
+
+\vspace*{0.25cm}
+
+\hrule
+\vspace*{0.25cm}
+\noindent SOLUÇÃO DA QUESTÃO:
+
+
+a)
+\begin{align*}
+\mdern{u_{\infty}}{x}{2} + \frac{u_0}{L^{3}}x &= 0, \\
+\mdern{u_{\infty}}{x}{2} &= - \frac{u_0}{L^{3}}x, \\
+\mderiva{u_{\infty}}{x} &= - \frac{u_0}{2L^{3}}x^2 + c_1, \\
+u_{\infty}(x) &= - \frac{u_0}{6L^{3}}x^3 + c_1x + c_2,\\
+u_{\infty}(0) &= 0 \Rightarrow c_2 = 0, \\
+u_{\infty}(L) &= 0 \Rightarrow -\frac{u_0}{6} + c_1 L = 0,\\
+c_1 &= \frac{u_0}{6L}, \\
+u_{\infty}(x) &= \frac{u_0}{6L}x - \frac{u_0}{6L^{3}}x^3.
+\end{align*}
+
+
+b)
+\begin{align*}
+u(x,t) &= v(x,t) + u_{\infty}; \\
+\parder{u}{t} &= \parder{v}{t}; \\
+\parder{u}{x} &= \parder{v}{x} + \mderiva{u_{\infty}}{x}; \\
+\parn{u}{x}{2} &= \parn{v}{x}{2} + \mdern{u_{\infty}}{x}{2}\\
+&= \parn{v}{x}{2} - \frac{u_0}{L^3}{x}; \\
+\parder{u}{t} &= a^2\left[ \parn{u}{x}{2} + \frac{u_0}{L^{3}}x\right],\\
+\parder{v}{t} &= a^2\left[ \parn{v}{x}{2} - \frac{u_0}{L^3}{x}+
+\frac{u_0}{L^{3}}x\right],\\
+\parder{v}{t} &= a^2\parn{v}{x}{2}, \\
+v(x,0) &= u(x,0) - u_\infty(x) = u_0\left[1 - \frac{1}{6L}x +    \frac{1}{6L^{3}}x^3\right], \\
+v(0,t) &= u(0,t) - u_\infty(0) = 0 - 0 = 0,\\
+v(L,t) &= u(L,t) - u_\infty(L) = 0 - \left[ \frac{u_0}{6L}L - \frac{u_0}{6L^{3}}L^3\right] = 0.
+\end{align*}
+
+c)
+
+\begin{align*}
+\parder{v}{t} &= a^2\parn{v}{x}{2}, \\
+v(x,t) &= X(x)T(t), \\
+X\mderiva{T}{t} &= a^2T\mdern{X}{x}{2}, \\
+\frac{1}{a^2T}\mderiva{T}{t} &= \frac{1}{X}\mdern{X}{x}{2} =
+\lambda, \\
+\mdern{X}{x}{2} &= \lambda X, \\
+X(0) &= 0, \\
+X(L) &= 0\blob
+\end{align*}
+
+
+
+
+
+
+
+\newpage
+
+
+
+\noindent{\Large \textbf{5}} [20]
+
+\begin{center}
+
+\includegraphics[width=0.6\textwidth]{quw.pdf}
+\end{center}
+
+
+Dada a equação diferencial de transporte de umidade (sem difusão)
+\begin{align*}
+u\parder{q}{x} + w\parder{q}{z} &= 0, \\
+q(0,z) &= q_a, \\
+q(x,0) &= q_0 > q_a,
+\end{align*}
+onde $u$ é uma velocidade horizontal, $w$ uma velocidade vertical, e
+$q(x,z)$ é uma concentração mássica de umidade, considere as seguintes
+dimensões:
+\begin{align*}
+\dimof{x} &= \mathsf{X} & \dimof{z} &= \mathsf{Z}, \\
+\dimof{u} &= \mathsf{XT^{-1}} & \dimof{w} &= \mathsf{ZT^{-1}},\\
+\dimof{q} &= \dimof{q_a} = \dimof{q_0} = \mathsf{M_v M^{-1}},
+\end{align*}
+onde $\mathsf{X}$ e $\mathsf{Z}$ são dimensões distintas de
+comprimento ao longo de cada eixo, $\mathsf{T}$ é tempo, e
+$\mathsf{M_v}$, $\mathsf{M}$ são massa de vapor d'água e massa total
+de ar,
+\begin{itemize}
+\item[ a)] [10] Mostre que
+\[
+\zeta \equiv \frac{uz}{wx}, \qquad \chi \equiv \frac{q - q_a}{q_0 -
+q_a}
+\]
+são duas variáveis adimensionais.
+\item[ b)] [10] Supondo que $\zeta$ e $\chi$ são as duas únicas
+variáveis adimensionais governando o problema, então devemos ter
+$\chi = \chi(\zeta)$. Obtenha uma equação diferencial ordinária de $\chi$ em
+$\zeta$. Determine os valores de $\chi(0)$ e $\chi(\infty)$. \textbf{Não
+tente resolver a EDO!!!}
+\end{itemize}
+
+\hfill
+
+\vspace*{0.25cm}
+
+
+\hrule
+\vspace*{0.25cm}
+\noindent SOLUÇÃO DA QUESTÃO:
+
+
+a)
+\begin{align*}
+\dimof{\zeta} &= \dimof{ \frac{uz}{wx} } = \frac{\mathsf{XT^{-1}Z}}{\mathsf{ZT^{-1}X}} = 1; \\
+\dimof{\chi} &= \dimof{ \frac{q - q_a}{q_0 - q_a}} = \frac{\mathsf{M_vM^{-1}}}{\mathsf{M_vM^{-1}}} = 1.
+\end{align*}
+
+b)
+\begin{align*}
+u\parder{q}{x} + w \parder{q}{z} &= 0, \\
+\chi &= \frac{q - q_a}{q_0 - q_a},\\
+q &= q_a + \chi(q_0 - q_a), \\
+u (q_0 - q_a)\parder{\chi}{x} + w (q_0 - q_a)\parder{\chi}{z} &= 0, \\
+u \parder{\chi}{x} + w \parder{\chi}{z} &= 0, \\
+\zeta &= \frac{ uz}{wx},\\
+\chi &= \chi(\zeta), \\
+\parder{\chi}{x} &= \mderiva{\chi}{\zeta}\parder{\zeta}{x} = \mderiva{\chi}{\zeta} \times -\frac{uz}{w}\frac{1}{x^2} = -\frac{\zeta}{x}\mderiva{\chi}{\zeta}, \\
+\parder{\chi}{z} &= \mderiva{\chi}{\zeta}\parder{\zeta}{z} = \mderiva{\chi}{\zeta}\frac{u}{wx},\\
+u \parder{\chi}{x} + w \parder{\chi}{z} &= - u \frac{\zeta}{x}\mderiva{\chi}{\zeta} + w\frac{u}{wx}\mderiva{\chi}{\zeta}\\
+&= \frac{u}{x}\left[ - \zeta\mderiva{\chi}{\zeta} + \mderiva{\chi}{\zeta}\right] = 0; \\
+\mderiva{\chi}{\zeta}(1 - \zeta) &= 0.
+\end{align*}
+As condições de contorno são:
+\begin{itemize}
+\item Em $z=0$, $\zeta = 0$, $q = q_a$, $\chi = 0$: $\chi(0) = 0$.
+\item Em $x=0$, $\zeta = \infty$, $q=q_0$, $\chi = 1$: $\chi(\infty) = 1$\blob
+\end{itemize}
+
+
+
+
+
+
+%% \bibliography{all}
+%% \bibliographystyle{balllike}
+
+\end{document}
+
+
+
