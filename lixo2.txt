@@ -1,0 +1,183 @@
+
+
+
+  Aula   Data              Conteúdo Previsto                                          
+                                                                                      
+  1      <2026 02 23 seg>  Introdução à disciplina. Motivação: como saber se um ponto 
+                           está dentro de uma bacia hidrográfica? "Winding point      
+                           algorithm", e uma implementação que quase não usa          
+                           operações de ponto flutuante.  Conexões com trigonometria, 
+                           análise complexa.                                          
+                           Aritmética e Álgebra.                                      
+                                                                                      
+  2      <2026 02 25 qua>  Introdução à Análise Dimensional. Força sobre cilindro.    
+                                                                                      
+                                                                                      
+  3      <2026 02 27 sex>  Definição de dimensão. Teorema dos Pis.                    
+                                                                                      
+                                                                                      
+  4      <2026 03 02 seg>  Similaridade imperfeita, significado de dimensão           
+                           fundamental.                                               
+                                                                                      
+  5      <2026 03 04 qua>  Problemas de Análise Dimensional.                          
+                                                                                      
+                                                                                      
+  6      <2026 03 06 sex>  Problemas de Análise Dimensional.                          
+                                                                                      
+                                                                                      
+  7      <2026 03 09 seg>  Revisão de números complexos.                              
+                                                                                      
+                                                                                      
+  8      <2026 03 11 qua>  Geometria e Álgebra: vetores geométricos e algébricos:     
+                           bases, elementos, coordenadas.  Álgebra LInear: espaço     
+                           vetorial.                                                  
+                                                                                      
+                                                                                      
+  9      <2026 03 13 sex>  Aplicações geomericas. Teoremas de Pitágoras e dos         
+                           cossenos. Produto escalar. Exemplos.                       
+                                                                                      
+                                                                                      
+  10     <2026 03 16 seg>  Convenção de soma de Einstein. Ortogonalização de          
+                           Gram Schmmidt. Permutações, \(\epsilon\).                  
+                                                                                      
+                                                                                      
+  11     <2026 03 18 qua>  Identidade polar, produto vetorial. Produto misto.         
+                                                                                      
+                                                                                      
+  12     <2026 03 20 sex>  Determinante. Bases dextrógiras e levógiras.               
+                                                                                      
+                                                                                      
+                                                                                      
+  13     <2026 03 23 seg>  Funções lineares, funcionais lineares. Teorema da          
+                           representação.                                             
+                                                                                      
+                                                                                      
+  14     <2026 03 25 qua>  Transformações lineares. Base de uma transformação linear. 
+                                                                                      
+                                                                                      
+  15     <2026 03 27 sex>  Rotações. Sistemas de equações lineares.                   
+                                                                                      
+                                                                                      
+  16     <2026 03 30 seg>  Domínio, núcleo, imagem. Teorema dos Pis. viga engastada:  
+                           posto menor do que o número de dimensões fundamentais.     
+                                                                                      
+  17     <2026 04 01 qua>   *P1*                                                      
+                                                                                      
+                                                                                      
+                                                                                      
+         <2026 04 03 sex>  *Feriado:* Paixão de Cristo.                               
+                                                                                      
+                                                                                      
+  18     <2026 04 06 seg>  Autovalores e autovetores: exemplo                         
+                           5.27. Invariantes. Exemplo 5.28. Transformações            
+                           simétricas. Autovalores a autovetores de uma matriz        
+                           simétrica real.                                            
+                                                                                      
+  19     <2026 04 08 qua>  Funções no \(\mathbb{R}^n\). Regra da cadeia, séries de    
+                           Taylor. Teorema da função implícita (2 dimensões).  Casos  
+                           particulares \(x=x(u,v)\), \(y=y(u,v)\).                   
+                                                                                      
+  20     <2026 04 10 sex>  Teorema da função implícita: caso geral. Jacobiano.        
+                           Exemplos.                                                  
+                                                                                      
+                                                                                      
+  21     <2026 04 13 seg>  Regra de Leibnitz. Exemplos.                               
+                                                                                      
+                                                                                      
+  22     <2026 04 15 qua>  Comprimentos, áreas, volumes. Integrais de linha.          
+                                                                                      
+                                                                                      
+  23     <2026 04 17 sex>  Integrais de superfície. Integrais de corpo (volume).      
+                                                                                      
+                                                                                      
+         <2026 04 20 seg>  *Feriado:* Tiradentes.                                     
+                                                                                      
+                                                                                      
+  24     <2026 04 22 qua>  Div, Grad. Exemplos.                                       
+                                                                                      
+                                                                                      
+  25     <2026 04 24 sex>  Rotacional. Mais operadores e identidades.                 
+                                                                                      
+                                                                                      
+  26     <2026 04 27 seg>  Mudança de coordenadas. Gauss e Stokes. Campos             
+                           irrotacionais.                                             
+                                                                                      
+  27     <2026 04 29 qua>  Campos irrotacionais                                       
+                                                                                      
+                                                                                      
+         <2026 05 01 sex>   *Feriado:* Dia do trabalho.                               
+                                                                                      
+                                                                                      
+  28     <2026 05 04 seg>  Equações diferenciais ordinárias. Classificação. EDOs      
+                           lineares de ordem 1.                                       
+                                                                                      
+  29     <2026 05 06 qua>  Exemplos de EDOs lineares de ordem 1. Equações             
+                           linearizáveis (Bernoulli). Diferenciais exatas.            
+                                                                                      
+                                                                                      
+  30     <2026 05 08 sex>   *P2*                                                      
+                                                                                      
+                                                                                      
+                                                                                      
+  31     <2026 05 11 seg>  EDOs com coeficientes constantes de ordem 2. Equação de    
+                           Euler.                                                     
+                                                                                      
+                                                                                      
+  32     <2026 05 13 qua>  Revisão geral de EDOs.                                     
+                                                                                      
+                                                                                      
+  33     <2026 05 15 sex>  Variáveis complexas: funções plurívocas. Derivada. Funções 
+                           analíticas. Condições de Cauchy Riemman.                   
+                                                                                      
+  34     <2026 05 18 seg>  Sequências e séries.                                       
+                                                                                      
+                                                                                      
+  35     <2026 05 25 seg>  Teorema de Cauchy. Deformação de caminho. Fórmula integral 
+                           de Cauchy. Séries de Taylor e Laurent.                     
+                                                                                      
+  36     <2026 05 27 qua>  Séries de Laurent.                                         
+                                                                                      
+                                                                                      
+  37     <2026 05 29 sex>  Integração de Contorno.                                    
+                                                                                      
+                                                                                      
+  38     <2026 06 01 seg>  Solução de EDOs em séries. O método de Frobenius.          
+                                                                                      
+                                                                                      
+  39     <2026 06 03 qua>  Caso (i)                                                   
+                                                                                      
+                                                                                      
+         <2026 06 05 sex>   *Feriado:* Corpus Christi                                 
+                                                                                      
+                                                                                      
+  41     <2026 06 08 seg>  Caso (ii)                                                  
+                                                                                      
+                                                                                      
+  42     <2026 06 10 qua>  Caso (iii) a                                               
+                                                                                      
+                                                                                      
+  43     <2026 06 12 sex>  Caso (iii) b                                               
+                                                                                      
+                                                                                      
+  44     <2026 06 15 seg>  Transformada de Laplace: definição, existência, cálculo.   
+                                                                                      
+                                                                                      
+  45     <2026 06 17 qua>  Transformada de Laplace: Propriedades.                     
+                                                                                      
+                                                                                      
+  46     <2026 06 19 sex>  Transformada de Laplace: Convolução.                       
+                                                                                      
+                                                                                      
+  43     <2026 06 22 seg>  Transformada de Laplace: truques adicionais e inversão.    
+                                                                                      
+                                                                                      
+  44     <2026 06 24 qua>   *P3*                                                      
+                                                                                      
+                                                                                      
+  45     <2026 06 26 sex>   *S*                                                       
+                                                                                      
+                                                                                      
+  46     <2026 07 03 sex>   *F*                                                       
+                                                                                      
+                                                                                      
+
