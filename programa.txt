@@ -1,0 +1,58 @@
+ Aula  Data             Conteúdo Previsto
+ 1     <2026-08-03 Mon> Transformadas de Laplace. Cálculo.
+ 2     <2026-08-05 Wed> Transformadas de Laplace: Propriedades. Convolução
+ 3     <2026-08-07 Fri> Transformadas de Laplace: outros truques, inversão.
+ 4     <2026-08-10 Mon> Delta de Dirac.
+ 5     <2026-08-12 Wed> Cálculo com distribuições.
+ 6     <2026-08-14 Fri> Delta de Dirac: Resultados adicionais e aplicações.
+ 7     <2026-08-17 Mon> Produto interno. Desigualdade de Schwarz.
+ 8     <2026-08-19 Wed> Espaços vetoriais de dimensão infinita. Produto
+                        interno.
+ 9     <2026-08-21 Fri> Séries de Fourier complexas. 
+ 10    <2026-08-24 Mon> Conclusão de séries de Fourier.
+ 11    <2026-08-26 Wed> Desigualdade de Bessel. Igualdade de Parseval.
+ 12    <2026-08-28 Fri> *P1*
+ 13    <2026-08-31 Mon> Igualdade de Parseval. Mínimos quadrados.
+ 14    <2026-09-02 Wed> Transformada de Fourier. Teorema da inversa. 
+ 15    <2026-09-04 Fri> Linearidade da Transformada de Fourier.
+       <2026-09-07 Mon> *Feriado*: Independência do Brasil.
+ 16    <2026-09-09 Wed> Solução de EDPs: difusão, advecção pura,difusão-adevecção.
+ 17    <2026-09-11 Fri> Teorema da Convolução. Convolução da inversa, filtros. Teorema de Parseval.
+ 18    <2026-09-14 Mon> Operadores auto-adjuntos. Matriz adjunta.
+ 19    <2026-09-16 Wed> Autovalores e autovetores de operadores
+                        auto-adjuntos. Funções de Green.
+      <2026-09-18 Fri>  Funções de Green.
+ 21    <2026-09-21 Mon> Teoria de flambagem de Euler. 
+ 22    <2026-09-23 Wed> A equação de Sturm-Liouville.
+ 23    <2026-09-25 Fri> Problemas de Sturm-Liouville.
+ 24    <2026-09-28 Mon> Revisão até a P2.
+ 25    <2026-09-30 Wed> Idem.
+ 26    <2026-10-02 Fri> *P2*
+ 27    <2026-10-05 Mon> Método das características.
+ 28    <2026-10-07 Wed> Idem: exemplos.
+ 29    <2026-10-09 Fri> Classificação de EDPs.
+       <2026-10-12 Mon> *Feriado* Nossa Senhora de Aparecida.
+ 31    <2026-10-14 Wed> Teoria de Sturm-Liouville: aplicações.
+ 32    <2026-10-16 Fri> Método das características.
+ 33    <2026-10-19 Mon> Idem: exemplos.
+ 34    <2026-10-21 Wed> Separação de variáveis: problemas parabólicos.
+ 35    <2026-10-23 Fri> Exemplos.
+ 36    <2026-10-26 Mon> Separação devariáveis: problemas elíticos.
+       <2026-10-28 Wed> *Feriado*: Dia do servidor público.
+ 37    <2026-10-30 Fri> Exemplos.
+       <2026-11-02 Mon>  *Feriado* Finados.
+ 38    <2026-11-04 Wed> Separação de variáveis: problemas elíticos.
+ 39    <2026-11-06 Fri> Exemplos.
+ 40    <2026-11-09 Mon> Revisão e problemas adicionais.
+ 41    <2026-11-11 Wed> Revisão e problemas adicionais
+ 42    <2026-11-13 Fri> Revisão e problemas adicionais
+ 43    <2026-11-16 Mon> Solução de d'Alembert.
+ 44    <2026-11-18 Wed> Solução de d'Alembert: continuação.
+       <2026-11-20 Fri> *Feriado*: Dia Nacional de Zumbi da Consciência Negra.
+ 45    <2026-11-23 Mon> Problemas difusivos com transformação de similaridade.
+ 46    <2026-11-25 Wed> Idem.
+ 47    <2026-11-30 Mon> Idem.
+ 48    <2026-12-02 Wed> Revisão.
+ 49    <2026-12-04 Fri> *P3*
+ 50    <2026-12-11 Fri> *F* 
+

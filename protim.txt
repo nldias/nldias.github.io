@@ -1,0 +1,38 @@
+| Aula | Data             | Conteúdo Previsto                                     
+| 1    | <2026-08-03 Mon> |A regressão linear \(y=ax+b\).                         
+| 2    | <2026-08-05 Wed> |A regressão linear \(y = ax\).                         
+| 3    | <2026-08-10 Mon> |Erros de \(a\) e \(b\) em \(y=ax+b\).                  
+| 4    | <2026-08-12 Wed> |Matrizes e concavidade.                                
+| 5    | <2026-08-17 Mon> |Steepest descent.                                      
+| 6    | <2026-08-19 Wed> |Steepest descent.                                       
+| 7    | <2026-08-24 Mon> |Steepest descent: testes e programação.                
+| 8    | <2026-08-26 Wed> |Gauss-Newton.                                          
+| 9    | <2026-08-31 Mon> |Gauss-Newton.                                          
+| 10   | <2026-09-02 Wed> |Gauss-Newton: testes e programação.                    
+|      | <2026-09-07 Mon> |*Feriado:* Independência do Brasil.                    
+| 11   | <2026-09-09 Wed> |Levenberg-Marquardt.                                   
+| 12   | <2026-09-14 Mon> |Levenberg-Marquardt.                                   
+| 13   | <2026-09-16 Wed> |Levenberg-Marquardt: testes e programação.             
+| 14   | <2026-09-21 Mon> |Longwave.                                              
+| 15   | <2026-09-23 Wed> |Longwave.                                              
+| 16   | <2026-09-28 Mon> |Longwave: testes e programação.                        
+| 17   | <2026-09-30 Wed> |Nelder-Mead.                                           
+| 18   | <2026-10-05 Mon> |Nelder-Mead.                                           
+| 19   | <2026-10-07 Wed> |Nelder-Mead: testes e programação.                     
+|      | <2026-10-12 Mon> |*Feriado:* Nossa Senhora de Aparecida.                 
+| 20   | <2026-10-14 Wed> |O modelo GR3                                           
+| 21   | <2026-10-19 Mon> |O modelo GR3                                           
+| 22   | <2026-10-21 Wed> |O modelo GR3                                           
+| 23   | <2026-10-26 Mon> |Uma bacia para o GR3.                                  
+| 24   | <2026-10-28 Wed> |Uma bacia para o GR3.                                  
+|      | <2026-11-02 Mon> | *Feriado* Finados.                                    
+| 25   | <2026-11-04 Wed> |Tradução do GR3 de Fortran para Chapel.                
+| 26   | <2026-11-09 Mon> |Tradução do GR3 de Fortran para Chapel.                
+| 27   | <2026-11-11 Wed> |Tradução do GR3 de Fortran para Chapel.                
+| 28   | <2026-11-16 Mon> |Otimização do GR3.                                     
+| 29   | <2026-11-18 Wed> |Otimização do GR3.                                     
+| 30   | <2026-11-23 Mon> |Otimização do GR3.                                     
+| 31   | <2026-11-25 Wed> |                                                       
+| 32   | <2026-11-30 Mon> |                                                       
+| 33   | <2026-12-02 Wed> |                                                       
+
